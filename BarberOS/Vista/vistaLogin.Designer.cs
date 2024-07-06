@@ -157,7 +157,7 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Location = new System.Drawing.Point(150, 67);
+            this.textBox1.Location = new System.Drawing.Point(318, 105);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(164, 68);
