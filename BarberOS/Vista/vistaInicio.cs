@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class Inicio : Form
+    public partial class vistaInicio : Form
     {
-        public Inicio()
+        public vistaInicio()
         {
             InitializeComponent();
         }
