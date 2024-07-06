@@ -48,7 +48,7 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnIngresar.BackColor = System.Drawing.Color.Coral;
             this.btnIngresar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnIngresar.Location = new System.Drawing.Point(275, 278);
             this.btnIngresar.Name = "btnIngresar";
