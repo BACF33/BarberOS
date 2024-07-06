@@ -246,9 +246,9 @@
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
             this.label6.Location = new System.Drawing.Point(643, 406);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(231, 25);
+            this.label6.Size = new System.Drawing.Size(220, 25);
             this.label6.TabIndex = 45;
-            this.label6.Text = "Ceja GARTIS  y Corte $5";
+            this.label6.Text = "Ceja GARTIS  y Corte 5";
             // 
             // label7
             // 
@@ -257,9 +257,9 @@
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
             this.label7.Location = new System.Drawing.Point(639, 296);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(218, 25);
+            this.label7.Size = new System.Drawing.Size(207, 25);
             this.label7.TabIndex = 44;
-            this.label7.Text = "Labado de Cabello $ 8";
+            this.label7.Text = "Labado de Cabello  8";
             // 
             // label8
             // 
@@ -268,9 +268,9 @@
             this.label8.ForeColor = System.Drawing.SystemColors.Control;
             this.label8.Location = new System.Drawing.Point(639, 183);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(218, 25);
+            this.label8.Size = new System.Drawing.Size(207, 25);
             this.label8.TabIndex = 43;
-            this.label8.Text = "Cortes $4 y Barba 1.20";
+            this.label8.Text = "Cortes 4 y Barba 1.20";
             // 
             // pictureBox9
             // 
