@@ -12,5 +12,29 @@ namespace BarberOS.Vista
             controladorLogin control = new controladorLogin(this);
         }
 
+        private void pictureBox2_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void txtUser_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void btnIngresar_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
