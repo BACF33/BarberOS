@@ -57,6 +57,13 @@
             this.button10 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -68,6 +75,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -177,7 +186,7 @@
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button4.Location = new System.Drawing.Point(85, 40);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(161, 44);
+            this.button4.Size = new System.Drawing.Size(107, 44);
             this.button4.TabIndex = 28;
             this.button4.Text = "BARBER\'OS";
             this.button4.UseVisualStyleBackColor = false;
@@ -350,11 +359,89 @@
             this.pictureBox10.TabIndex = 46;
             this.pictureBox10.TabStop = false;
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox12.Location = new System.Drawing.Point(-4, 0);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(892, 34);
+            this.pictureBox12.TabIndex = 53;
+            this.pictureBox12.TabStop = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button11.ForeColor = System.Drawing.SystemColors.Control;
+            this.button11.Location = new System.Drawing.Point(-4, 381);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(196, 44);
+            this.button11.TabIndex = 52;
+            this.button11.Text = "BARBEROS";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button12.ForeColor = System.Drawing.SystemColors.Control;
+            this.button12.Location = new System.Drawing.Point(-4, 317);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(196, 44);
+            this.button12.TabIndex = 51;
+            this.button12.Text = "INGRESAR";
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button13.ForeColor = System.Drawing.SystemColors.Control;
+            this.button13.Location = new System.Drawing.Point(-4, 253);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(196, 44);
+            this.button13.TabIndex = 50;
+            this.button13.Text = "CORTES";
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button14.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button14.Location = new System.Drawing.Point(-4, 185);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(196, 44);
+            this.button14.TabIndex = 49;
+            this.button14.Text = "INICIO";
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.Image = global::BarberOS.Properties.Resources.BarberOs;
+            this.button15.Location = new System.Drawing.Point(33, 45);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(115, 119);
+            this.button15.TabIndex = 48;
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictureBox13.Location = new System.Drawing.Point(-4, 31);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(225, 492);
+            this.pictureBox13.TabIndex = 47;
+            this.pictureBox13.TabStop = false;
+            // 
             // vistaRecompensas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 521);
+            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button15);
+            this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
@@ -399,6 +486,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -435,5 +524,12 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.PictureBox pictureBox13;
     }
 }
