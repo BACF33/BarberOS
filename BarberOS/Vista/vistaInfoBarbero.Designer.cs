@@ -76,7 +76,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::BarberOS.Properties.Resources.Estrella_amarilla;
-            this.pictureBox4.Location = new System.Drawing.Point(527, 94);
+            this.pictureBox4.Location = new System.Drawing.Point(438, 194);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(83, 78);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
