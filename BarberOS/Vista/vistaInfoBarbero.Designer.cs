@@ -225,7 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 561);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox6);
@@ -243,6 +243,8 @@
             this.Controls.Add(this.button7);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
+            this.MaximumSize = new System.Drawing.Size(1920, 1080);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "vistaInfoBarbero";
             this.Text = "vistaInfoBarbero";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

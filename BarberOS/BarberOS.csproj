@@ -78,6 +78,18 @@
     <Compile Include="Modelo\Dto\dtoLogin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\vistaInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaInicio.Designer.cs">
+      <DependentUpon>vistaInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaInventario.Designer.cs">
+      <DependentUpon>vistaInventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\vistaInfoBarbero.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,11 +102,11 @@
     <Compile Include="Vista\vistaInfoCliente.Designer.cs">
       <DependentUpon>vistaInfoCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaInicio.cs">
+    <Compile Include="Vista\vistaMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaInicio.Designer.cs">
-      <DependentUpon>vistaInicio.cs</DependentUpon>
+    <Compile Include="Vista\vistaMenu.Designer.cs">
+      <DependentUpon>vistaMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\vistaInicioGestion.cs">
       <SubType>Form</SubType>
@@ -139,6 +151,9 @@
     <EmbeddedResource Include="Vista\vistaBarberos.resx">
       <DependentUpon>vistaBarberos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaCortes.resx">
+      <DependentUpon>vistaCortes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaInfoBarbero.resx">
       <DependentUpon>vistaInfoBarbero.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaInicio.resx">
       <DependentUpon>vistaInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaMenu.resx">
+      <DependentUpon>vistaMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaInicioGestion.resx">
       <DependentUpon>vistaInicioGestion.cs</DependentUpon>
