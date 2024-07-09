@@ -34,15 +34,16 @@
             this.btnInicio = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.PanelContenedor = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnIngresar
             // 
             this.btnIngresar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnIngresar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnIngresar.Location = new System.Drawing.Point(3, 301);
+            this.btnIngresar.Location = new System.Drawing.Point(3, 336);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(196, 44);
             this.btnIngresar.TabIndex = 25;
@@ -54,7 +55,7 @@
             // 
             this.btnBarberos.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBarberos.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBarberos.Location = new System.Drawing.Point(3, 251);
+            this.btnBarberos.Location = new System.Drawing.Point(3, 286);
             this.btnBarberos.Name = "btnBarberos";
             this.btnBarberos.Size = new System.Drawing.Size(196, 44);
             this.btnBarberos.TabIndex = 26;
@@ -66,7 +67,7 @@
             // 
             this.btnCortes.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCortes.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCortes.Location = new System.Drawing.Point(3, 201);
+            this.btnCortes.Location = new System.Drawing.Point(3, 236);
             this.btnCortes.Name = "btnCortes";
             this.btnCortes.Size = new System.Drawing.Size(196, 44);
             this.btnCortes.TabIndex = 24;
@@ -78,7 +79,7 @@
             // 
             this.btnInicio.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnInicio.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnInicio.Location = new System.Drawing.Point(3, 151);
+            this.btnInicio.Location = new System.Drawing.Point(3, 186);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(196, 44);
             this.btnInicio.TabIndex = 23;
@@ -89,7 +90,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.DimGray;
-            this.flowLayoutPanel1.Controls.Add(this.button7);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
             this.flowLayoutPanel1.Controls.Add(this.btnInicio);
             this.flowLayoutPanel1.Controls.Add(this.btnCortes);
             this.flowLayoutPanel1.Controls.Add(this.btnBarberos);
@@ -112,14 +113,15 @@
             this.PanelContenedor.Size = new System.Drawing.Size(800, 600);
             this.PanelContenedor.TabIndex = 28;
             // 
-            // button7
+            // pictureBox1
             // 
-            this.button7.Image = global::BarberOS.Properties.Resources.BarberOs;
-            this.button7.Location = new System.Drawing.Point(3, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(197, 142);
-            this.button7.TabIndex = 22;
-            this.button7.UseVisualStyleBackColor = true;
+            this.pictureBox1.Image = global::BarberOS.Properties.Resources.BarberOs;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(196, 177);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // vistaMenu
             // 
@@ -134,6 +136,7 @@
             this.Name = "vistaMenu";
             this.Text = "Inicio";
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -144,8 +147,8 @@
         private System.Windows.Forms.Button btnBarberos;
         private System.Windows.Forms.Button btnCortes;
         private System.Windows.Forms.Button btnInicio;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel PanelContenedor;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

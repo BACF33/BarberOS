@@ -163,6 +163,9 @@
     <EmbeddedResource Include="Vista\vistaInicio.resx">
       <DependentUpon>vistaInicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaInventario.resx">
+      <DependentUpon>vistaInventario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaMenu.resx">
       <DependentUpon>vistaMenu.cs</DependentUpon>
     </EmbeddedResource>
