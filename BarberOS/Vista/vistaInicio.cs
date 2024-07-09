@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BarberOS.Vista
+namespace BarberOS.Vistas
 {
     public partial class vistaInicio : Form
     {
@@ -16,7 +16,5 @@ namespace BarberOS.Vista
         {
             InitializeComponent();
         }
-
-
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace BarberOS.Vista
+﻿namespace BarberOS.Vistas
 {
     partial class vistaInicio
     {
