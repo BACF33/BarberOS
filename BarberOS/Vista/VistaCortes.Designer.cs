@@ -68,43 +68,43 @@
             // button19
             // 
             this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button19.Font = new System.Drawing.Font("Freestyle Script", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button19.Location = new System.Drawing.Point(607, 232);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(158, 32);
             this.button19.TabIndex = 131;
-            this.button19.Text = "Corte clásico.";
+            this.button19.Text = "Corte fade.";
             this.button19.UseVisualStyleBackColor = false;
             // 
             // button18
             // 
             this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button18.Font = new System.Drawing.Font("Freestyle Script", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button18.Location = new System.Drawing.Point(607, 126);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(153, 32);
             this.button18.TabIndex = 130;
-            this.button18.Text = "Corte clásico.";
+            this.button18.Text = "Undercut.";
             this.button18.UseVisualStyleBackColor = false;
             // 
             // button17
             // 
             this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button17.Font = new System.Drawing.Font("Freestyle Script", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button17.Location = new System.Drawing.Point(606, 336);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(154, 32);
             this.button17.TabIndex = 129;
-            this.button17.Text = "Corte clásico.";
+            this.button17.Text = "Pompadour";
             this.button17.UseVisualStyleBackColor = false;
             // 
             // button13
             // 
             this.button13.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button13.Font = new System.Drawing.Font("Freestyle Script", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button13.Location = new System.Drawing.Point(606, 374);
             this.button13.Name = "button13";
@@ -116,7 +116,7 @@
             // button12
             // 
             this.button12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button12.Font = new System.Drawing.Font("Freestyle Script", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button12.Location = new System.Drawing.Point(607, 272);
             this.button12.Name = "button12";
@@ -128,7 +128,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Font = new System.Drawing.Font("Freestyle Script", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button6.Location = new System.Drawing.Point(607, 165);
             this.button6.Name = "button6";
@@ -140,11 +140,11 @@
             // button16
             // 
             this.button16.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button16.Font = new System.Drawing.Font("Freestyle Script", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button16.Location = new System.Drawing.Point(190, 369);
+            this.button16.Location = new System.Drawing.Point(181, 369);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(145, 27);
+            this.button16.Size = new System.Drawing.Size(173, 27);
             this.button16.TabIndex = 125;
             this.button16.Text = "Precio:";
             this.button16.UseVisualStyleBackColor = false;
@@ -152,11 +152,11 @@
             // button14
             // 
             this.button14.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button14.Font = new System.Drawing.Font("Freestyle Script", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button14.Location = new System.Drawing.Point(194, 165);
+            this.button14.Location = new System.Drawing.Point(185, 164);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(141, 27);
+            this.button14.Size = new System.Drawing.Size(169, 27);
             this.button14.TabIndex = 124;
             this.button14.Text = "Precio:";
             this.button14.UseVisualStyleBackColor = false;
@@ -164,11 +164,11 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button5.Font = new System.Drawing.Font("Freestyle Script", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(194, 127);
+            this.button5.Location = new System.Drawing.Point(185, 127);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(141, 32);
+            this.button5.Size = new System.Drawing.Size(169, 32);
             this.button5.TabIndex = 123;
             this.button5.Text = "Corte clásico.";
             this.button5.UseVisualStyleBackColor = false;
@@ -176,13 +176,13 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button3.Font = new System.Drawing.Font("Freestyle Script", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(190, 336);
+            this.button3.Location = new System.Drawing.Point(181, 336);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(145, 32);
+            this.button3.Size = new System.Drawing.Size(173, 32);
             this.button3.TabIndex = 122;
-            this.button3.Text = "Corte clásico.";
+            this.button3.Text = "Corte rapado.";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button20
@@ -197,13 +197,13 @@
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button15.Font = new System.Drawing.Font("Freestyle Script", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button15.Location = new System.Drawing.Point(190, 232);
+            this.button15.Location = new System.Drawing.Point(181, 232);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(145, 32);
+            this.button15.Size = new System.Drawing.Size(173, 32);
             this.button15.TabIndex = 120;
-            this.button15.Text = "Corte clásico.";
+            this.button15.Text = "Corte de cabello largo.";
             this.button15.UseVisualStyleBackColor = false;
             // 
             // label5
@@ -236,7 +236,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(191, 401);
+            this.label2.Location = new System.Drawing.Point(182, 401);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 116;
@@ -245,7 +245,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(191, 296);
+            this.label1.Location = new System.Drawing.Point(182, 296);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 115;
@@ -254,7 +254,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(191, 195);
+            this.label6.Location = new System.Drawing.Point(182, 195);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 13);
             this.label6.TabIndex = 114;
@@ -263,11 +263,11 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Font = new System.Drawing.Font("Freestyle Script", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(190, 266);
+            this.button4.Location = new System.Drawing.Point(181, 266);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(145, 27);
+            this.button4.Size = new System.Drawing.Size(173, 27);
             this.button4.TabIndex = 113;
             this.button4.Text = "Precio:";
             this.button4.UseVisualStyleBackColor = false;
@@ -275,7 +275,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.Font = new System.Drawing.Font("Freestyle Script", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(487, 51);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(273, 55);
@@ -286,10 +286,10 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Font = new System.Drawing.Font("Freestyle Script", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(70, 51);
+            this.button1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(61, 51);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(265, 55);
+            this.button1.Size = new System.Drawing.Size(293, 55);
             this.button1.TabIndex = 98;
             this.button1.Text = "Cortes de Pelo";
             this.button1.UseVisualStyleBackColor = false;
@@ -336,7 +336,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::BarberOS.Properties.Resources.Captura3;
-            this.pictureBox6.Location = new System.Drawing.Point(70, 325);
+            this.pictureBox6.Location = new System.Drawing.Point(61, 325);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(98, 92);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -346,7 +346,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::BarberOS.Properties.Resources.Captura2;
-            this.pictureBox5.Location = new System.Drawing.Point(70, 222);
+            this.pictureBox5.Location = new System.Drawing.Point(61, 222);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(98, 80);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -356,7 +356,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::BarberOS.Properties.Resources.Captura;
-            this.pictureBox4.Location = new System.Drawing.Point(70, 129);
+            this.pictureBox4.Location = new System.Drawing.Point(61, 129);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(98, 81);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -17,6 +17,19 @@ namespace BarberOS.Vista
             InitializeComponent();
         }
 
-      
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
