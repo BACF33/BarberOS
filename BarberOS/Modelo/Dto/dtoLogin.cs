@@ -2,10 +2,10 @@
 {
     public class DtoLogin : dbContext
     {
-        private string username;
-        private string password;
+        private string userName;
+        private string userPass;
 
-        public string Username { get => username; set => username = value; }
-        public string Password { get => password; set => password = value; }
+        public string UserName { get => userName; set => userName = value; }
+        public string UserPass { get => userPass; set => userPass = value; }
     }
 }
