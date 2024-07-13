@@ -35,17 +35,28 @@ namespace BarberOS.Controlador
         //Acceder a la base de datos
         private void DataAccess(object sender, EventArgs e)
         {
-            //Se crea un objeto dao (notarse que su rango es solo esta funcion) 
+            //Se crea un objeto dao (notarse que su rango es solo esta funcion)
             DaoLogin daoData = new DaoLogin();
             //Con la funcion login del objeto dao se obtiene un codigo sobre la conexion
+
+            daoData.UserName = objLogin.txtUser.Text;
+            daoData.UserPass = objLogin.txtPassword.Text;
+
             int answer = daoData.Login();
-            MessageBox.Show(answer.ToString());
+            if (answer == 1)
+            {
+                MessageBox.Show("Datos correctos", "Suceso al iniciar sesión", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Datos incorrectos", "Error al iniciar sesión", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void EnterUser(object sender, EventArgs e)
         {
             //Verifica si el usuario ingresado en el textbox existe en la base de datos
-            if (objLogin.txtUser.Text.Trim().Equals("Usuario"))
+            if (objLogin.txtUser.Text.Trim().Equals("userName"))
             {
                 objLogin.txtUser.Clear();
                 objLogin.lblUser.Visible = true;
@@ -56,14 +67,14 @@ namespace BarberOS.Controlador
         {
             if (objLogin.txtUser.Text.Trim().Equals(""))
             {
-                objLogin.txtUser.Text = "Usuario";
+                objLogin.txtUser.Text = "userName";
                 objLogin.lblUser.Visible = false;
             }
         }
 
         private void EnterPassword(object sender, EventArgs e)
         {
-            if (objLogin.txtPassword.Text.Trim().Equals("Contraseña"))
+            if (objLogin.txtPassword.Text.Trim().Equals("userPass"))
             {
                 objLogin.txtPassword.Clear();
                 objLogin.lblPassword.Visible = true;
@@ -77,7 +88,7 @@ namespace BarberOS.Controlador
             if (objLogin.txtPassword.Text.Trim().Equals(""))
             {
                 objLogin.lblPassword.Visible = false;
-                objLogin.txtPassword.Text = "Contraseña";
+                objLogin.txtPassword.Text = "userPass";
                 objLogin.txtPassword.PasswordChar = '\0';
             }
         }

@@ -57,7 +57,6 @@
             this.btnIngresar.TabIndex = 0;
             this.btnIngresar.Text = "Iniciar Sesion";
             this.btnIngresar.UseVisualStyleBackColor = false;
-            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // btnExit
             // 
@@ -75,7 +74,6 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(174, 20);
             this.txtUser.TabIndex = 2;
-            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // lblUser
             // 
@@ -94,7 +92,6 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(174, 20);
             this.txtPassword.TabIndex = 4;
-            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // lblPassword
             // 
@@ -127,7 +124,6 @@
             this.textBox1.Size = new System.Drawing.Size(164, 68);
             this.textBox1.TabIndex = 11;
             this.textBox1.Text = "Lets get you in Las tijeras doradas";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox1
             // 
@@ -155,7 +151,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(797, 451);
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox4
             // 
