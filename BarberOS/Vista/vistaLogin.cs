@@ -1,5 +1,7 @@
-﻿using System.Windows.Forms;
-using BarberOS.Controlador;
+﻿using System.Data.SqlClient;
+using System;
+using System.Windows.Forms;
+using System.Configuration;
 
 namespace BarberOS.Vista 
 { 
@@ -8,8 +10,39 @@ namespace BarberOS.Vista
         public vistaLogin()
         {
             InitializeComponent();
-            //Crear un objeto de tipo controladorLogin llamado control, le pasamos un objeto de la clase vista (en este mismo archivo) como argumento ya controlara la vista, cuyos datos son de InitializeComponent()
-            controladorLogin control = new controladorLogin(this);
+        }
+
+        public void login()
+        {
+            try
+            {
+                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
+                using (SqlConnection conexion = new SqlConnection(cnn))
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand("SELECT userName FROM tbUser WHERE userName='" + txtUser.Text + "'AND userPass ='" + txtPassword.Text + "'", conexion))
+                    {
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        if (reader.Read())
+                        {
+                            MessageBox.Show("Login exitoso");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Login fallido");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            login();
         }
     }
 }

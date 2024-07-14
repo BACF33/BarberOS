@@ -46,6 +46,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\lib\net46\System.Data.SQLite.dll</HintPath>
@@ -72,10 +73,6 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controlador\controladorLogin.cs" />
-    <Compile Include="Modelo\Dao\daoLogin.cs" />
-    <Compile Include="Modelo\dbContext.cs" />
-    <Compile Include="Modelo\Dto\dtoLogin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vista\vistaInicio.cs">
@@ -263,6 +260,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\barbe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controlador\" />
+    <Folder Include="Modelo\Dao\" />
+    <Folder Include="Modelo\Dto\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
