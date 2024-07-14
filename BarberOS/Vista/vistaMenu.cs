@@ -19,10 +19,6 @@ namespace BarberOS.Vista
         }
 
         Form currentForm = new Form();
-        /// <summary>
-        /// Método para abrir formularios dentro del panel contenedor del formulario principal
-        /// </summary>
-        /// <typeparam name="MiForm"></typeparam>
         private void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
 
