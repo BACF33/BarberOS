@@ -1,20 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
     public partial class vistaInicioGestion : Form
     {
-        public vistaInicioGestion()
+        private vistaMenu mainForm;
+        public vistaInicioGestion(vistaMenu mainForm)
         {
             InitializeComponent();
+            this.mainForm = mainForm;
+        }
+
+        private void btnPersonal_Click(object sender, EventArgs e)
+        {
+            mainForm.AbrirFormulario(new vistaListaBarbero());
         }
     }
 }
