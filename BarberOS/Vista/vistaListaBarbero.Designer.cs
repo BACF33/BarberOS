@@ -39,11 +39,14 @@
             this.txtNuevoFull = new System.Windows.Forms.TextBox();
             this.txtNuevoCargo = new System.Windows.Forms.TextBox();
             this.btnActualizarEmpleados = new System.Windows.Forms.Button();
+            this.btnBorrarEmpleados = new System.Windows.Forms.Button();
+            this.empleadoId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listEmpleados
             // 
             this.listEmpleados.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.empleadoId,
             this.empleadoNombre,
             this.empleadoContraseña,
             this.empleadoFull,
@@ -51,27 +54,31 @@
             this.listEmpleados.FullRowSelect = true;
             this.listEmpleados.GridLines = true;
             this.listEmpleados.HideSelection = false;
-            this.listEmpleados.Location = new System.Drawing.Point(64, 35);
+            this.listEmpleados.Location = new System.Drawing.Point(84, 33);
             this.listEmpleados.Name = "listEmpleados";
-            this.listEmpleados.Size = new System.Drawing.Size(338, 256);
+            this.listEmpleados.Size = new System.Drawing.Size(307, 256);
             this.listEmpleados.TabIndex = 0;
             this.listEmpleados.UseCompatibleStateImageBehavior = false;
             this.listEmpleados.View = System.Windows.Forms.View.Details;
             // 
             // empleadoNombre
             // 
+            this.empleadoNombre.DisplayIndex = 0;
             this.empleadoNombre.Text = "Nombre";
             // 
             // empleadoContraseña
             // 
+            this.empleadoContraseña.DisplayIndex = 1;
             this.empleadoContraseña.Text = "Contraseña";
             // 
             // empleadoFull
             // 
+            this.empleadoFull.DisplayIndex = 2;
             this.empleadoFull.Text = "Nombre completo";
             // 
             // empleadoCargo
             // 
+            this.empleadoCargo.DisplayIndex = 3;
             this.empleadoCargo.Text = "Cargo";
             // 
             // btnAgregarEmpleados
@@ -114,7 +121,7 @@
             // 
             // btnActualizarEmpleados
             // 
-            this.btnActualizarEmpleados.Location = new System.Drawing.Point(177, 329);
+            this.btnActualizarEmpleados.Location = new System.Drawing.Point(195, 329);
             this.btnActualizarEmpleados.Name = "btnActualizarEmpleados";
             this.btnActualizarEmpleados.Size = new System.Drawing.Size(75, 23);
             this.btnActualizarEmpleados.TabIndex = 6;
@@ -122,11 +129,25 @@
             this.btnActualizarEmpleados.UseVisualStyleBackColor = true;
             this.btnActualizarEmpleados.Click += new System.EventHandler(this.btnActualizarEmpleados_Click);
             // 
+            // btnBorrarEmpleados
+            // 
+            this.btnBorrarEmpleados.Location = new System.Drawing.Point(327, 329);
+            this.btnBorrarEmpleados.Name = "btnBorrarEmpleados";
+            this.btnBorrarEmpleados.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrarEmpleados.TabIndex = 7;
+            this.btnBorrarEmpleados.Text = "Borrar";
+            this.btnBorrarEmpleados.UseVisualStyleBackColor = true;
+            // 
+            // empleadoId
+            // 
+            this.empleadoId.DisplayIndex = 4;
+            // 
             // vistaListaBarbero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBorrarEmpleados);
             this.Controls.Add(this.btnActualizarEmpleados);
             this.Controls.Add(this.txtNuevoCargo);
             this.Controls.Add(this.txtNuevoFull);
@@ -154,5 +175,7 @@
         private System.Windows.Forms.TextBox txtNuevoFull;
         private System.Windows.Forms.TextBox txtNuevoCargo;
         private System.Windows.Forms.Button btnActualizarEmpleados;
+        private System.Windows.Forms.ColumnHeader empleadoId;
+        private System.Windows.Forms.Button btnBorrarEmpleados;
     }
 }
