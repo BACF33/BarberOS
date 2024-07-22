@@ -99,7 +99,7 @@
             this.flowLayoutPanel1.ForeColor = System.Drawing.Color.DimGray;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 561);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(281, 561);
             this.flowLayoutPanel1.TabIndex = 27;
             // 
             // pictureBox1
@@ -116,7 +116,7 @@
             // 
             this.PanelContenedor.BackColor = System.Drawing.Color.Silver;
             this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedor.Location = new System.Drawing.Point(200, 0);
+            this.PanelContenedor.Location = new System.Drawing.Point(281, 0);
             this.PanelContenedor.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.PanelContenedor.MinimumSize = new System.Drawing.Size(800, 600);
             this.PanelContenedor.Name = "PanelContenedor";
