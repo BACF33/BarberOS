@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.listEmpleados = new System.Windows.Forms.ListView();
+            this.empleadoId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoContraseña = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoFull = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -40,7 +41,7 @@
             this.txtNuevoCargo = new System.Windows.Forms.TextBox();
             this.btnActualizarEmpleados = new System.Windows.Forms.Button();
             this.btnBorrarEmpleados = new System.Windows.Forms.Button();
-            this.empleadoId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txtToKill = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // listEmpleados
@@ -60,6 +61,10 @@
             this.listEmpleados.TabIndex = 0;
             this.listEmpleados.UseCompatibleStateImageBehavior = false;
             this.listEmpleados.View = System.Windows.Forms.View.Details;
+            // 
+            // empleadoId
+            // 
+            this.empleadoId.DisplayIndex = 4;
             // 
             // empleadoNombre
             // 
@@ -137,16 +142,21 @@
             this.btnBorrarEmpleados.TabIndex = 7;
             this.btnBorrarEmpleados.Text = "Borrar";
             this.btnBorrarEmpleados.UseVisualStyleBackColor = true;
+            this.btnBorrarEmpleados.Click += new System.EventHandler(this.btnBorrarEmpleados_Click);
             // 
-            // empleadoId
+            // txtToKill
             // 
-            this.empleadoId.DisplayIndex = 4;
+            this.txtToKill.Location = new System.Drawing.Point(600, 332);
+            this.txtToKill.Name = "txtToKill";
+            this.txtToKill.Size = new System.Drawing.Size(100, 20);
+            this.txtToKill.TabIndex = 8;
             // 
             // vistaListaBarbero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtToKill);
             this.Controls.Add(this.btnBorrarEmpleados);
             this.Controls.Add(this.btnActualizarEmpleados);
             this.Controls.Add(this.txtNuevoCargo);
@@ -177,5 +187,6 @@
         private System.Windows.Forms.Button btnActualizarEmpleados;
         private System.Windows.Forms.ColumnHeader empleadoId;
         private System.Windows.Forms.Button btnBorrarEmpleados;
+        private System.Windows.Forms.TextBox txtToKill;
     }
 }

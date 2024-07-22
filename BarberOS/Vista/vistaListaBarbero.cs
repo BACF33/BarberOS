@@ -18,15 +18,19 @@ namespace BarberOS.Vista
         {
             InitializeComponent();
         }
+        private void btnActualizarEmpleados_Click(object sender, EventArgs e)
+        {
+            getData();
+        }
 
         private void btnAgregarEmpleados_Click(object sender, EventArgs e)
         {
-            //ListViewItem lista = new ListViewItem(txtNuevoNombre.Text);
-            //lista.SubItems.Add(txtNuevaContraseña.Text);
-            //lista.SubItems.Add(txtNuevoFull.Text);
-            //lista.SubItems.Add(txtNuevoCargo.Text); 
-            //listEmpleados.Items.Add(lista);
             insertData();
+        }
+
+        private void btnBorrarEmpleados_Click(object sender, EventArgs e)
+        {
+            deleteData();
         }
 
         public void getData()
@@ -94,9 +98,27 @@ namespace BarberOS.Vista
             }
         }
 
-        private void btnActualizarEmpleados_Click(object sender, EventArgs e)
+        public void deleteData()
         {
-            getData();
+            try
+            {
+                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
+                using (SqlConnection conexion = new SqlConnection(cnn))
+                {
+                    conexion.Open();
+                    string sql = "DELETE FROM tbUser WHERE userId = @toDelete";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conexion))
+                    {
+                        cmd.Parameters.AddWithValue("@toDelete", txtToKill.Text);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }
