@@ -136,6 +136,9 @@
   <data name="dinero" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dinero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="585e4bf3cb11b227491c339a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\585e4bf3cb11b227491c339a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imagenes 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imagenes 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,25 +172,31 @@
   <data name="grafico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grafico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imagenes5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imagenes5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="barbe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barbe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Captura11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura11.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Captura3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="00third-small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\00third-small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="comm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\comm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Captura3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura11.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Captura5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura5.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagenes5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagenes5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ba" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="barbe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\barbe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="61457" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\61457.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
