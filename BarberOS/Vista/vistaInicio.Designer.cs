@@ -70,7 +70,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ControlText;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(549, 135);
+            this.label4.Location = new System.Drawing.Point(522, 163);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 13);
             this.label4.TabIndex = 41;
@@ -79,9 +79,9 @@
             // button6
             // 
             this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button6.Location = new System.Drawing.Point(442, 117);
+            this.button6.Location = new System.Drawing.Point(415, 145);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(27, 109);
+            this.button6.Size = new System.Drawing.Size(31, 112);
             this.button6.TabIndex = 39;
             this.button6.Text = "<";
             this.button6.UseVisualStyleBackColor = true;
@@ -89,9 +89,9 @@
             // button5
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.Location = new System.Drawing.Point(645, 117);
+            this.button5.Location = new System.Drawing.Point(618, 145);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(27, 109);
+            this.button5.Size = new System.Drawing.Size(31, 112);
             this.button5.TabIndex = 38;
             this.button5.Text = ">";
             this.button5.UseVisualStyleBackColor = true;
@@ -100,9 +100,9 @@
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(500, 354);
+            this.button4.Location = new System.Drawing.Point(473, 382);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(114, 44);
+            this.button4.Size = new System.Drawing.Size(118, 47);
             this.button4.TabIndex = 37;
             this.button4.Text = "INGRESAR";
             this.button4.UseVisualStyleBackColor = false;
@@ -111,9 +111,9 @@
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.BackColor = System.Drawing.Color.Coral;
-            this.button3.Location = new System.Drawing.Point(442, 267);
+            this.button3.Location = new System.Drawing.Point(415, 295);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(230, 55);
+            this.button3.Size = new System.Drawing.Size(234, 58);
             this.button3.TabIndex = 35;
             this.button3.Text = "Recompensas";
             this.button3.UseVisualStyleBackColor = false;
@@ -122,9 +122,9 @@
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.Coral;
-            this.button2.Location = new System.Drawing.Point(442, 62);
+            this.button2.Location = new System.Drawing.Point(415, 90);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(230, 55);
+            this.button2.Size = new System.Drawing.Size(234, 58);
             this.button2.TabIndex = 33;
             this.button2.Text = "Barberos";
             this.button2.UseVisualStyleBackColor = false;
@@ -135,7 +135,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ControlText;
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(215, 354);
+            this.label3.Location = new System.Drawing.Point(188, 382);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 32;
@@ -147,7 +147,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ControlText;
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(212, 247);
+            this.label2.Location = new System.Drawing.Point(185, 275);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 31;
@@ -159,7 +159,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ControlText;
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(215, 135);
+            this.label1.Location = new System.Drawing.Point(188, 163);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 30;
@@ -169,9 +169,9 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.Color.Coral;
-            this.button1.Location = new System.Drawing.Point(130, 62);
+            this.button1.Location = new System.Drawing.Point(103, 90);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 55);
+            this.button1.Size = new System.Drawing.Size(234, 58);
             this.button1.TabIndex = 22;
             this.button1.Text = "Cortes";
             this.button1.UseVisualStyleBackColor = false;
@@ -179,9 +179,9 @@
             // pictureBox12
             // 
             this.pictureBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox12.Location = new System.Drawing.Point(475, 135);
+            this.pictureBox12.Location = new System.Drawing.Point(448, 163);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(68, 68);
+            this.pictureBox12.Size = new System.Drawing.Size(72, 71);
             this.pictureBox12.TabIndex = 40;
             this.pictureBox12.TabStop = false;
             // 
@@ -189,9 +189,9 @@
             // 
             this.pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox11.BackColor = System.Drawing.SystemColors.InfoText;
-            this.pictureBox11.Location = new System.Drawing.Point(442, 267);
+            this.pictureBox11.Location = new System.Drawing.Point(415, 295);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(230, 164);
+            this.pictureBox11.Size = new System.Drawing.Size(234, 167);
             this.pictureBox11.TabIndex = 36;
             this.pictureBox11.TabStop = false;
             // 
@@ -199,9 +199,9 @@
             // 
             this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox10.BackColor = System.Drawing.SystemColors.InfoText;
-            this.pictureBox10.Location = new System.Drawing.Point(442, 62);
+            this.pictureBox10.Location = new System.Drawing.Point(415, 90);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(230, 164);
+            this.pictureBox10.Size = new System.Drawing.Size(234, 167);
             this.pictureBox10.TabIndex = 34;
             this.pictureBox10.TabStop = false;
             // 
@@ -209,9 +209,9 @@
             // 
             this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox9.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox9.Location = new System.Drawing.Point(215, 398);
+            this.pictureBox9.Location = new System.Drawing.Point(188, 426);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(133, 12);
+            this.pictureBox9.Size = new System.Drawing.Size(137, 15);
             this.pictureBox9.TabIndex = 29;
             this.pictureBox9.TabStop = false;
             // 
@@ -219,9 +219,9 @@
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox8.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox8.Location = new System.Drawing.Point(215, 291);
+            this.pictureBox8.Location = new System.Drawing.Point(188, 319);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(133, 12);
+            this.pictureBox8.Size = new System.Drawing.Size(137, 15);
             this.pictureBox8.TabIndex = 28;
             this.pictureBox8.TabStop = false;
             // 
@@ -229,36 +229,36 @@
             // 
             this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox7.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox7.Location = new System.Drawing.Point(215, 178);
+            this.pictureBox7.Location = new System.Drawing.Point(188, 206);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(133, 12);
+            this.pictureBox7.Size = new System.Drawing.Size(137, 15);
             this.pictureBox7.TabIndex = 27;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox6.Location = new System.Drawing.Point(142, 343);
+            this.pictureBox6.Location = new System.Drawing.Point(115, 371);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(67, 67);
+            this.pictureBox6.Size = new System.Drawing.Size(71, 70);
             this.pictureBox6.TabIndex = 26;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox5.Location = new System.Drawing.Point(142, 236);
+            this.pictureBox5.Location = new System.Drawing.Point(115, 264);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(67, 67);
+            this.pictureBox5.Size = new System.Drawing.Size(71, 70);
             this.pictureBox5.TabIndex = 25;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox4.Location = new System.Drawing.Point(142, 123);
+            this.pictureBox4.Location = new System.Drawing.Point(115, 151);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(67, 67);
+            this.pictureBox4.Size = new System.Drawing.Size(71, 70);
             this.pictureBox4.TabIndex = 24;
             this.pictureBox4.TabStop = false;
             // 
@@ -266,9 +266,9 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.SystemColors.InfoText;
-            this.pictureBox1.Location = new System.Drawing.Point(130, 66);
+            this.pictureBox1.Location = new System.Drawing.Point(103, 94);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(230, 365);
+            this.pictureBox1.Size = new System.Drawing.Size(234, 368);
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
             // 
