@@ -293,7 +293,8 @@
     <Folder Include="Modelo\Dao\" />
     <Folder Include="Modelo\Dto\" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup>    <None Include="Resources\Captura21.PNG" />
+=======
     <None Include="Resources\00third-small.png" />
   </ItemGroup>
   <ItemGroup>
@@ -301,6 +302,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\61457.png" />
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
