@@ -105,11 +105,17 @@
     <Compile Include="Vista\vistaInfoCliente.Designer.cs">
       <DependentUpon>vistaInfoCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaListaBarbero.cs">
+    <Compile Include="Vista\vistaListaPersonalG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaListaBarbero.Designer.cs">
-      <DependentUpon>vistaListaBarbero.cs</DependentUpon>
+    <Compile Include="Vista\vistaListaPersonalG.Designer.cs">
+      <DependentUpon>vistaListaPersonalG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaListaCortesG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaListaCortesG.Designer.cs">
+      <DependentUpon>vistaListaCortesG.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\vistaMenu.cs">
       <SubType>Form</SubType>
@@ -184,8 +190,11 @@
     <EmbeddedResource Include="Vista\vistaInventario.resx">
       <DependentUpon>vistaInventario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaListaBarbero.resx">
-      <DependentUpon>vistaListaBarbero.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\vistaListaCortesG.resx">
+      <DependentUpon>vistaListaCortesG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaListaPersonalG.resx">
+      <DependentUpon>vistaListaPersonalG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaMenu.resx">
       <DependentUpon>vistaMenu.cs</DependentUpon>

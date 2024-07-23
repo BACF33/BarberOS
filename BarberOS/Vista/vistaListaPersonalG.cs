@@ -1,32 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaListaBarbero : Form
+    public partial class vistaListaPersonalG : Form
     {
-        public vistaListaBarbero()
+        private vistaMenu mainForm;
+        public vistaListaPersonalG(vistaMenu mainForm)
         {
             InitializeComponent();
+            this.mainForm = mainForm;
+        }
+        private void btnActualizarEmpleados_Click(object sender, EventArgs e)
+        {
+            getData();
         }
 
         private void btnAgregarEmpleados_Click(object sender, EventArgs e)
         {
-            //ListViewItem lista = new ListViewItem(txtNuevoNombre.Text);
-            //lista.SubItems.Add(txtNuevaContraseña.Text);
-            //lista.SubItems.Add(txtNuevoFull.Text);
-            //lista.SubItems.Add(txtNuevoCargo.Text); 
-            //listEmpleados.Items.Add(lista);
             insertData();
+        }
+
+        private void btnBorrarEmpleados_Click(object sender, EventArgs e)
+        {
+            deleteData();
+        }
+
+        private void btnACortes_Click(object sender, EventArgs e)
+        {
+            mainForm.AbrirFormulario(new vistaListaCortesG(mainForm));
         }
 
         public void getData()
@@ -41,22 +45,20 @@ namespace BarberOS.Vista
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
-                        // Clear existing items in ListView
                         listEmpleados.Items.Clear();
 
-                        // Read data and populate ListView
                         while (reader.Read())
                         {
                             ListViewItem item = new ListViewItem(reader["userId"].ToString());
-                            item.SubItems.Add(reader["userId"].ToString());
                             item.SubItems.Add(reader["userName"].ToString());
                             item.SubItems.Add(reader["userPass"].ToString());
                             item.SubItems.Add(reader["userRealName"].ToString());
                             item.SubItems.Add(reader["userRole"].ToString());
+                            item.SubItems.Add(reader["userId"].ToString());
                             listEmpleados.Items.Add(item);
                         }
 
-                        reader.Close(); // Close the reader
+                        reader.Close();
                     }
                 }
             }
@@ -94,9 +96,27 @@ namespace BarberOS.Vista
             }
         }
 
-        private void btnActualizarEmpleados_Click(object sender, EventArgs e)
+        public void deleteData()
         {
-            getData();
+            try
+            {
+                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
+                using (SqlConnection conexion = new SqlConnection(cnn))
+                {
+                    conexion.Open();
+                    string sql = "DELETE FROM tbUser WHERE userId = @toDelete";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conexion))
+                    {
+                        cmd.Parameters.AddWithValue("@toDelete", txtToKill.Text);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }
