@@ -199,6 +199,9 @@
     <EmbeddedResource Include="Vista\vistaRecompensas.resx">
       <DependentUpon>vistaRecompensas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaRegistroDetallado.resx">
+      <DependentUpon>vistaRegistroDetallado.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -290,8 +293,16 @@
     <Folder Include="Modelo\Dao\" />
     <Folder Include="Modelo\Dto\" />
   </ItemGroup>
+  <ItemGroup>    <None Include="Resources\Captura21.PNG" />
+=======
+    <None Include="Resources\00third-small.png" />
+  </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Captura21.PNG" />
+    <None Include="Resources\585e4bf3cb11b227491c339a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61457.png" />
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
