@@ -14,7 +14,7 @@ namespace BarberOS.Vista
 
         private void btnPersonal_Click(object sender, EventArgs e)
         {
-            mainForm.AbrirFormulario(new vistaListaBarbero());
+            mainForm.AbrirFormulario(new vistaListaPersonalG(mainForm));
         }
     }
 }

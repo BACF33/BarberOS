@@ -1,22 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaListaBarbero : Form
+    public partial class vistaListaPersonalG : Form
     {
-        public vistaListaBarbero()
+        private vistaMenu mainForm;
+        public vistaListaPersonalG(vistaMenu mainForm)
         {
             InitializeComponent();
+            this.mainForm = mainForm;
         }
         private void btnActualizarEmpleados_Click(object sender, EventArgs e)
         {
@@ -33,6 +28,11 @@ namespace BarberOS.Vista
             deleteData();
         }
 
+        private void btnACortes_Click(object sender, EventArgs e)
+        {
+            mainForm.AbrirFormulario(new vistaListaCortesG(mainForm));
+        }
+
         public void getData()
         {
             try
@@ -45,22 +45,20 @@ namespace BarberOS.Vista
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
-                        // Clear existing items in ListView
                         listEmpleados.Items.Clear();
 
-                        // Read data and populate ListView
                         while (reader.Read())
                         {
                             ListViewItem item = new ListViewItem(reader["userId"].ToString());
-                            item.SubItems.Add(reader["userId"].ToString());
                             item.SubItems.Add(reader["userName"].ToString());
                             item.SubItems.Add(reader["userPass"].ToString());
                             item.SubItems.Add(reader["userRealName"].ToString());
                             item.SubItems.Add(reader["userRole"].ToString());
+                            item.SubItems.Add(reader["userId"].ToString());
                             listEmpleados.Items.Add(item);
                         }
 
-                        reader.Close(); // Close the reader
+                        reader.Close();
                     }
                 }
             }
