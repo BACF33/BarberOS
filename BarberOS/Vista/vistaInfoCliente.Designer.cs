@@ -253,9 +253,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(0, 527);
+            this.panel2.Location = new System.Drawing.Point(0, 528);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(784, 33);
+            this.panel2.Size = new System.Drawing.Size(784, 32);
             this.panel2.TabIndex = 141;
             // 
             // vistaInfoCliente
