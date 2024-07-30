@@ -172,7 +172,6 @@
             this.btnACortes.TabIndex = 10;
             this.btnACortes.Text = "Cortes";
             this.btnACortes.UseVisualStyleBackColor = false;
-            this.btnACortes.Click += new System.EventHandler(this.btnACortes_Click);
             // 
             // vistaListaPersonalG
             // 

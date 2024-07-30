@@ -10,13 +10,13 @@ namespace BarberOS.Controlador
         private Form currentForm = null;
         vistaMenu controladaVista;
 
-        public controlMenu(vistaMenu vistaPasada) 
+        public controlMenu(vistaMenu vistaPasada)
         {
             controladaVista = vistaPasada;
             controladaVista.btnInicio.Click += (sender, e) => AbrirFormulario(new vistaInicio());
             controladaVista.btnCortes.Click += (sender, e) => AbrirFormulario(new vistaCortes());
             controladaVista.btnBarberos.Click += (sender, e) => AbrirFormulario(new vistaBarberos());
-            controladaVista.btnIngresar.Click += (sender, e) => AbrirFormulario(new vistaLogin(currentForm));
+            //controladaVista.btnIngresar.Click += (sender, e) => AbrirFormulario(new vistaLogin());
         }
 
         public void AbrirFormulario(Form form)

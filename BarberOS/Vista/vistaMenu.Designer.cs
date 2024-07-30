@@ -49,7 +49,6 @@
             this.btnIngresar.TabIndex = 25;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = false;
-            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // btnBarberos
             // 
@@ -61,7 +60,6 @@
             this.btnBarberos.TabIndex = 26;
             this.btnBarberos.Text = "BARBEROS";
             this.btnBarberos.UseVisualStyleBackColor = false;
-            this.btnBarberos.Click += new System.EventHandler(this.btnBarberos_Click);
             // 
             // btnCortes
             // 
@@ -73,7 +71,6 @@
             this.btnCortes.TabIndex = 24;
             this.btnCortes.Text = "CORTES";
             this.btnCortes.UseVisualStyleBackColor = false;
-            this.btnCortes.Click += new System.EventHandler(this.btnCortes_Click);
             // 
             // btnInicio
             // 
@@ -85,7 +82,6 @@
             this.btnInicio.TabIndex = 23;
             this.btnInicio.Text = "INICIO";
             this.btnInicio.UseVisualStyleBackColor = false;
-            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -142,13 +138,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnIngresar;
-        private System.Windows.Forms.Button btnBarberos;
-        private System.Windows.Forms.Button btnCortes;
-        private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel PanelContenedor;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Button btnIngresar;
+        public System.Windows.Forms.Button btnBarberos;
+        public System.Windows.Forms.Button btnCortes;
+        public System.Windows.Forms.Button btnInicio;
+        public System.Windows.Forms.Panel PanelContenedor;
     }
 }

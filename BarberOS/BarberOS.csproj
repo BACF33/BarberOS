@@ -73,6 +73,7 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\controlMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vista\panelInfoBarbero.cs">
@@ -304,7 +305,6 @@
     <None Include="Resources\barbe.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controlador\" />
     <Folder Include="Modelo\Dao\" />
     <Folder Include="Modelo\Dto\" />
   </ItemGroup>

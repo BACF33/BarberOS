@@ -28,11 +28,6 @@ namespace BarberOS.Vista
             deleteData();
         }
 
-        private void btnACortes_Click(object sender, EventArgs e)
-        {
-            mainForm.AbrirFormulario(new vistaListaCortesG(mainForm));
-        }
-
         public void getData()
         {
             try

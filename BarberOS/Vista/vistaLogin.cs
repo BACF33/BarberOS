@@ -33,7 +33,6 @@ namespace BarberOS.Vista
                         if (reader.Read())
                         {
                             MessageBox.Show("Login exitoso");
-                            mainForm.AbrirFormulario(new vistaInicioGestion(mainForm));
                         }
                         else
                         {

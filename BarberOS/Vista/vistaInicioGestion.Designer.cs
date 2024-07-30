@@ -83,7 +83,6 @@
             this.btnPersonal.TabIndex = 37;
             this.btnPersonal.Text = "PERSONAL";
             this.btnPersonal.UseVisualStyleBackColor = false;
-            this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
             // 
             // button6
             // 
