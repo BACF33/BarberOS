@@ -7,10 +7,11 @@ namespace BarberOS.Vista
 {
     public partial class vistaMenu : Form
     {
+        public controlMenu controladorMenu;
         public vistaMenu()
         {
             InitializeComponent();
-            controlMenu controladorMenu = new controlMenu(this);
+            controladorMenu = new controlMenu(this);
         }
     }
 }

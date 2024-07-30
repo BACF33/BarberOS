@@ -1,15 +1,16 @@
-﻿using System;
+﻿using BarberOS.Controlador;
+using System;
 using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
     public partial class vistaInicioGestion : Form
     {
-        private vistaMenu mainForm;
-        public vistaInicioGestion(vistaMenu mainForm)
+        private vistaMenu menuForm;
+        public vistaInicioGestion(vistaMenu passedForm)
         {
             InitializeComponent();
-            this.mainForm = mainForm;
+            controlInicioGestion controladorInicioGestion = new controlInicioGestion(this, menuForm);
         }
     }
 }

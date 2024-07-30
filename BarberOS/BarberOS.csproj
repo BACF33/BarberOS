@@ -73,6 +73,9 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\controlInicioGestion.cs" />
+    <Compile Include="Controlador\controlListaPersonalG.cs" />
+    <Compile Include="Controlador\controlLogin.cs" />
     <Compile Include="Controlador\controlMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

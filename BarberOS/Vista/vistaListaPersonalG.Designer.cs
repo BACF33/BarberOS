@@ -197,22 +197,21 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listEmpleados;
         private System.Windows.Forms.ColumnHeader empleadoNombre;
         private System.Windows.Forms.ColumnHeader empleadoContraseña;
         private System.Windows.Forms.ColumnHeader empleadoFull;
         private System.Windows.Forms.ColumnHeader empleadoCargo;
-        private System.Windows.Forms.Button btnAgregarEmpleados;
-        private System.Windows.Forms.TextBox txtNuevoNombre;
-        private System.Windows.Forms.TextBox txtNuevaContraseña;
-        private System.Windows.Forms.TextBox txtNuevoFull;
-        private System.Windows.Forms.TextBox txtNuevoCargo;
-        private System.Windows.Forms.Button btnActualizarEmpleados;
         private System.Windows.Forms.ColumnHeader empleadoId;
-        private System.Windows.Forms.Button btnBorrarEmpleados;
-        private System.Windows.Forms.TextBox txtToKill;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnACortes;
+        public System.Windows.Forms.Button btnAgregarEmpleados;
+        public System.Windows.Forms.Button btnActualizarEmpleados;
+        public System.Windows.Forms.Button btnBorrarEmpleados;
+        public System.Windows.Forms.ListView listEmpleados;
+        public System.Windows.Forms.TextBox txtNuevoNombre;
+        public System.Windows.Forms.TextBox txtNuevaContraseña;
+        public System.Windows.Forms.TextBox txtNuevoFull;
+        public System.Windows.Forms.TextBox txtNuevoCargo;
+        public System.Windows.Forms.TextBox txtToKill;
     }
 }

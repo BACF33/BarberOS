@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace BarberOS.Controlador
 {
-    internal class controlMenu
+    public class controlMenu
     {
         private Form currentForm = null;
         vistaMenu controladaVista;
@@ -16,7 +16,7 @@ namespace BarberOS.Controlador
             controladaVista.btnInicio.Click += (sender, e) => AbrirFormulario(new vistaInicio());
             controladaVista.btnCortes.Click += (sender, e) => AbrirFormulario(new vistaCortes());
             controladaVista.btnBarberos.Click += (sender, e) => AbrirFormulario(new vistaBarberos());
-            //controladaVista.btnIngresar.Click += (sender, e) => AbrirFormulario(new vistaLogin());
+            controladaVista.btnIngresar.Click += (sender, e) => AbrirFormulario(new vistaLogin(controladaVista));
         }
 
         public void AbrirFormulario(Form form)

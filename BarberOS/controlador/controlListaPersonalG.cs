@@ -1,32 +1,27 @@
-﻿using BarberOS.Controlador;
+﻿using BarberOS.Vista;
 using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BarberOS.Vista
+namespace BarberOS.Controlador
 {
-    public partial class vistaListaPersonalG : Form
+    internal class controlListaPersonalG
     {
-        public vistaListaPersonalG(vistaMenu menuForm)
-        {
-            InitializeComponent();
-            controlListaPersonalG controladorVista = new controlListaPersonalG(this, menuForm);
-        }
+        private vistaMenu menuForm;
+        private vistaListaPersonalG controladaVista;
 
-        private void btnActualizarEmpleados_Click(object sender, EventArgs e)
+        public controlListaPersonalG(vistaListaPersonalG vistaPasada ,vistaMenu passedMenuForm)
         {
-            getData();
-        }
-
-        private void btnAgregarEmpleados_Click(object sender, EventArgs e)
-        {
-            insertData();
-        }
-
-        private void btnBorrarEmpleados_Click(object sender, EventArgs e)
-        {
-            deleteData();
+            controladaVista = vistaPasada;
+            menuForm = passedMenuForm;
+            controladaVista.btnAgregarEmpleados.Click += (sender, e) => insertData();
+            controladaVista.btnActualizarEmpleados.Click += (sender, e) => getData();
+            controladaVista.btnBorrarEmpleados.Click += (sender, e) => deleteData();
         }
 
         public void getData()
@@ -41,7 +36,7 @@ namespace BarberOS.Vista
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
-                        listEmpleados.Items.Clear();
+                        controladaVista.listEmpleados.Items.Clear();
 
                         while (reader.Read())
                         {
@@ -51,7 +46,7 @@ namespace BarberOS.Vista
                             item.SubItems.Add(reader["userRealName"].ToString());
                             item.SubItems.Add(reader["userRole"].ToString());
                             item.SubItems.Add(reader["userId"].ToString());
-                            listEmpleados.Items.Add(item);
+                            controladaVista.listEmpleados.Items.Add(item);
                         }
 
                         reader.Close();
@@ -77,10 +72,10 @@ namespace BarberOS.Vista
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {
-                        cmd.Parameters.AddWithValue("@userName", txtNuevoNombre.Text);
-                        cmd.Parameters.AddWithValue("@userPass", txtNuevaContraseña.Text);
-                        cmd.Parameters.AddWithValue("@userRealName", txtNuevoFull.Text);
-                        cmd.Parameters.AddWithValue("@userRole", txtNuevoCargo.Text);
+                        cmd.Parameters.AddWithValue("@userName", controladaVista.txtNuevoNombre.Text);
+                        cmd.Parameters.AddWithValue("@userPass", controladaVista.txtNuevaContraseña.Text);
+                        cmd.Parameters.AddWithValue("@userRealName", controladaVista.txtNuevoFull.Text);
+                        cmd.Parameters.AddWithValue("@userRole", controladaVista.txtNuevoCargo.Text);
 
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
@@ -104,7 +99,7 @@ namespace BarberOS.Vista
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {
-                        cmd.Parameters.AddWithValue("@toDelete", txtToKill.Text);
+                        cmd.Parameters.AddWithValue("@toDelete", controladaVista.txtToKill.Text);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
                 }
@@ -116,3 +111,4 @@ namespace BarberOS.Vista
         }
     }
 }
+
