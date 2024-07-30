@@ -73,8 +73,21 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\controlInicio.cs" />
+    <Compile Include="Controlador\controlInicioGestion.cs" />
+    <Compile Include="Controlador\controlListaPersonal.cs" />
+    <Compile Include="Controlador\controlListaPersonalG.cs" />
+    <Compile Include="Controlador\controlLogin.cs" />
+    <Compile Include="Controlador\controlMenu.cs" />
+    <Compile Include="Controlador\controlPanelBarbero.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\panelBarbero.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\panelBarbero.Designer.cs">
+      <DependentUpon>panelBarbero.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\vistaFacturaTotal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,11 +118,23 @@
     <Compile Include="Vista\vistaInfoCliente.Designer.cs">
       <DependentUpon>vistaInfoCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaListaBarbero.cs">
+    <Compile Include="Vista\vistaListaPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaListaBarbero.Designer.cs">
-      <DependentUpon>vistaListaBarbero.cs</DependentUpon>
+    <Compile Include="Vista\vistaListaPersonal.Designer.cs">
+      <DependentUpon>vistaListaPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaListaPersonalG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaListaPersonalG.Designer.cs">
+      <DependentUpon>vistaListaPersonalG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaListaCortesG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaListaCortesG.Designer.cs">
+      <DependentUpon>vistaListaCortesG.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\vistaMenu.cs">
       <SubType>Form</SubType>
@@ -163,6 +188,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vista\panelBarbero.resx">
+      <DependentUpon>panelBarbero.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaBarberos.resx">
       <DependentUpon>vistaBarberos.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,8 +212,14 @@
     <EmbeddedResource Include="Vista\vistaInventario.resx">
       <DependentUpon>vistaInventario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaListaBarbero.resx">
-      <DependentUpon>vistaListaBarbero.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\vistaListaCortesG.resx">
+      <DependentUpon>vistaListaCortesG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaListaPersonal.resx">
+      <DependentUpon>vistaListaPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaListaPersonalG.resx">
+      <DependentUpon>vistaListaPersonalG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaMenu.resx">
       <DependentUpon>vistaMenu.cs</DependentUpon>
@@ -198,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaRecompensas.resx">
       <DependentUpon>vistaRecompensas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaRegistroDetallado.resx">
+      <DependentUpon>vistaRegistroDetallado.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -286,9 +323,17 @@
     <None Include="Resources\barbe.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controlador\" />
     <Folder Include="Modelo\Dao\" />
     <Folder Include="Modelo\Dto\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00third-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\585e4bf3cb11b227491c339a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61457.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
