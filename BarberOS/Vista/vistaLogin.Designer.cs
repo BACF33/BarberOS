@@ -58,7 +58,6 @@
             this.label1.Size = new System.Drawing.Size(123, 22);
             this.label1.TabIndex = 14;
             this.label1.Text = "¡Bienvenido!";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtUser
             // 
@@ -69,7 +68,6 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(328, 26);
             this.txtUser.TabIndex = 15;
-            this.txtUser.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblUser
             // 
@@ -92,7 +90,6 @@
             this.lblPassword.Size = new System.Drawing.Size(102, 18);
             this.lblPassword.TabIndex = 16;
             this.lblPassword.Text = "Contraseña";
-            this.lblPassword.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtPassword
             // 
@@ -103,7 +100,6 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(328, 26);
             this.txtPassword.TabIndex = 15;
-            this.txtPassword.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblLogin
             // 
@@ -117,7 +113,6 @@
             this.lblLogin.Size = new System.Drawing.Size(80, 24);
             this.lblLogin.TabIndex = 17;
             this.lblLogin.Text = "LOGIN";
-            this.lblLogin.Click += new System.EventHandler(this.lblLogin_Click);
             // 
             // pictureBox5
             // 
@@ -176,7 +171,6 @@
             this.label2.Size = new System.Drawing.Size(195, 18);
             this.label2.TabIndex = 16;
             this.label2.Text = "¿Olvidó su contraseña?";
-            this.label2.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox6
             // 
@@ -187,7 +181,6 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 20;
             this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // panel1
             // 
@@ -234,7 +227,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.vistaLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -246,18 +238,18 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Button btnLogin;
+        public System.Windows.Forms.TextBox txtUser;
+        public System.Windows.Forms.TextBox txtPassword;
     }
 }

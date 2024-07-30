@@ -1,5 +1,4 @@
 ﻿using BarberOS.Controlador;
-using BarberOS.Vista;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,14 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BarberOS.Vistas
+namespace BarberOS.Vista
 {
-    public partial class vistaInicio : Form
+    public partial class vistaListaPersonal : Form
     {
-        public vistaInicio(vistaMenu menuForm)
+        public vistaListaPersonal()
         {
             InitializeComponent();
-            controlInicio controladorInicio = new controlInicio(this, menuForm);
+            controlListaPersonal controladorVista = new controlListaPersonal(this);
         }
     }
 }

@@ -37,7 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCortes = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -154,15 +154,15 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "nombreCorte1";
             // 
-            // button1
+            // btnCortes
             // 
-            this.button1.BackColor = System.Drawing.Color.Coral;
-            this.button1.Location = new System.Drawing.Point(129, 40);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 55);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Cortes";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCortes.BackColor = System.Drawing.Color.Coral;
+            this.btnCortes.Location = new System.Drawing.Point(129, 40);
+            this.btnCortes.Name = "btnCortes";
+            this.btnCortes.Size = new System.Drawing.Size(230, 55);
+            this.btnCortes.TabIndex = 22;
+            this.btnCortes.Text = "Cortes";
+            this.btnCortes.UseVisualStyleBackColor = false;
             // 
             // pictureBox12
             // 
@@ -283,7 +283,7 @@
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCortes);
             this.Controls.Add(this.pictureBox1);
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.MinimumSize = new System.Drawing.Size(800, 600);
@@ -323,10 +323,10 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.Button btnCortes;
     }
 }

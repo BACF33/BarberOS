@@ -83,7 +83,6 @@
             this.btnPersonal.TabIndex = 37;
             this.btnPersonal.Text = "PERSONAL";
             this.btnPersonal.UseVisualStyleBackColor = false;
-            this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
             // 
             // button6
             // 
@@ -251,7 +250,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnPersonal;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
@@ -264,5 +262,6 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
+        public System.Windows.Forms.Button btnPersonal;
     }
 }

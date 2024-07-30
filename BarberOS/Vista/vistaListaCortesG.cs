@@ -14,11 +14,6 @@ namespace BarberOS.Vista
             this.mainForm = mainForm;
         }
 
-        private void btnACortes_Click(object sender, System.EventArgs e)
-        {
-            mainForm.AbrirFormulario(new vistaListaPersonalG(mainForm));
-        }
-
         private void btnAgregarCortes_Click(object sender, EventArgs e)
         {
             insertData();
