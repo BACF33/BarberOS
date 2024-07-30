@@ -33,9 +33,11 @@
             // 
             // flpPersonal
             // 
-            this.flpPersonal.Location = new System.Drawing.Point(12, 12);
+            this.flpPersonal.AutoScroll = true;
+            this.flpPersonal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpPersonal.Location = new System.Drawing.Point(0, 0);
             this.flpPersonal.Name = "flpPersonal";
-            this.flpPersonal.Size = new System.Drawing.Size(776, 416);
+            this.flpPersonal.Size = new System.Drawing.Size(800, 450);
             this.flpPersonal.TabIndex = 0;
             // 
             // vistaListaPersonal
@@ -45,13 +47,13 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.flpPersonal);
             this.Name = "vistaListaPersonal";
-            this.Text = "vistaListaClientes";
+            this.Text = "vistaListaPersonal";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flpPersonal;
+        public System.Windows.Forms.FlowLayoutPanel flpPersonal;
     }
 }

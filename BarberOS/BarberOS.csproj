@@ -73,17 +73,20 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\controlInicio.cs" />
     <Compile Include="Controlador\controlInicioGestion.cs" />
+    <Compile Include="Controlador\controlListaPersonal.cs" />
     <Compile Include="Controlador\controlListaPersonalG.cs" />
     <Compile Include="Controlador\controlLogin.cs" />
     <Compile Include="Controlador\controlMenu.cs" />
+    <Compile Include="Controlador\controlPanelBarbero.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vista\panelInfoBarbero.cs">
+    <Compile Include="Vista\panelBarbero.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Vista\panelInfoBarbero.Designer.cs">
-      <DependentUpon>panelInfoBarbero.cs</DependentUpon>
+    <Compile Include="Vista\panelBarbero.Designer.cs">
+      <DependentUpon>panelBarbero.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\vistaFacturaTotal.cs">
       <SubType>Form</SubType>
@@ -114,6 +117,12 @@
     </Compile>
     <Compile Include="Vista\vistaInfoCliente.Designer.cs">
       <DependentUpon>vistaInfoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaListaPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaListaPersonal.Designer.cs">
+      <DependentUpon>vistaListaPersonal.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\vistaListaPersonalG.cs">
       <SubType>Form</SubType>
@@ -179,6 +188,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vista\panelBarbero.resx">
+      <DependentUpon>panelBarbero.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaBarberos.resx">
       <DependentUpon>vistaBarberos.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaListaCortesG.resx">
       <DependentUpon>vistaListaCortesG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaListaPersonal.resx">
+      <DependentUpon>vistaListaPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaListaPersonalG.resx">
       <DependentUpon>vistaListaPersonalG.cs</DependentUpon>

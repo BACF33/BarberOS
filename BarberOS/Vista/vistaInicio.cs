@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BarberOS.Controlador;
+using BarberOS.Vista;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,10 @@ namespace BarberOS.Vistas
 {
     public partial class vistaInicio : Form
     {
-        public vistaInicio()
+        public vistaInicio(vistaMenu menuForm)
         {
             InitializeComponent();
+            controlInicio controladorInicio = new controlInicio(this, menuForm);
         }
     }
 }

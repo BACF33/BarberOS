@@ -6,11 +6,10 @@ namespace BarberOS.Vista
 {
     public partial class vistaInicioGestion : Form
     {
-        private vistaMenu menuForm;
         public vistaInicioGestion(vistaMenu passedForm)
         {
             InitializeComponent();
-            controlInicioGestion controladorInicioGestion = new controlInicioGestion(this, menuForm);
+            controlInicioGestion controladorInicioGestion = new controlInicioGestion(this, passedForm);
         }
     }
 }
