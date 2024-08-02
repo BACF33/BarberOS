@@ -73,10 +73,14 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\controlAgregarPersonal.cs" />
     <Compile Include="Controlador\controlInicio.cs" />
     <Compile Include="Controlador\controlInicioGestion.cs" />
+    <Compile Include="Controlador\controlListaClientesG.cs" />
+    <Compile Include="Controlador\controlListaCortesG.cs" />
     <Compile Include="Controlador\controlListaPersonal.cs" />
     <Compile Include="Controlador\controlListaPersonalG.cs" />
+    <Compile Include="Controlador\controlListaPromocionesG.cs" />
     <Compile Include="Controlador\controlLogin.cs" />
     <Compile Include="Controlador\controlMenu.cs" />
     <Compile Include="Controlador\controlPanelBarbero.cs" />
@@ -87,6 +91,12 @@
     </Compile>
     <Compile Include="Vista\panelBarbero.Designer.cs">
       <DependentUpon>panelBarbero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaAgregarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaAgregarPersonal.Designer.cs">
+      <DependentUpon>vistaAgregarPersonal.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\vistaFacturaTotal.cs">
       <SubType>Form</SubType>
@@ -118,6 +128,12 @@
     <Compile Include="Vista\vistaInfoCliente.Designer.cs">
       <DependentUpon>vistaInfoCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\vistaListaClientesG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaListaClientesG.Designer.cs">
+      <DependentUpon>vistaListaClientesG.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\vistaListaPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +151,12 @@
     </Compile>
     <Compile Include="Vista\vistaListaCortesG.Designer.cs">
       <DependentUpon>vistaListaCortesG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaListaPromocionesG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaListaPromocionesG.Designer.cs">
+      <DependentUpon>vistaListaPromocionesG.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\vistaMenu.cs">
       <SubType>Form</SubType>
@@ -191,6 +213,9 @@
     <EmbeddedResource Include="Vista\panelBarbero.resx">
       <DependentUpon>panelBarbero.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaAgregarPersonal.resx">
+      <DependentUpon>vistaAgregarPersonal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaBarberos.resx">
       <DependentUpon>vistaBarberos.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +237,9 @@
     <EmbeddedResource Include="Vista\vistaInventario.resx">
       <DependentUpon>vistaInventario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaListaClientesG.resx">
+      <DependentUpon>vistaListaClientesG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaListaCortesG.resx">
       <DependentUpon>vistaListaCortesG.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaListaPersonalG.resx">
       <DependentUpon>vistaListaPersonalG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaListaPromocionesG.resx">
+      <DependentUpon>vistaListaPromocionesG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaMenu.resx">
       <DependentUpon>vistaMenu.cs</DependentUpon>

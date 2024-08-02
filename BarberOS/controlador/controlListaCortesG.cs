@@ -6,22 +6,24 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
+using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace BarberOS.Controlador
 {
-    internal class controlListaPersonalG
+    internal class controlListaCortesG
     {
         private vistaMenu menuForm;
-        private vistaListaPersonalG controladaVista;
+        private vistaListaCortesG controladaVista;
 
-        public controlListaPersonalG(vistaListaPersonalG vistaPasada ,vistaMenu passedMenuForm)
+        public controlListaCortesG(vistaListaCortesG pasadaVista, vistaMenu passedMenuForm)
         {
-            controladaVista = vistaPasada;
+            controladaVista = pasadaVista;
             menuForm = passedMenuForm;
             controladaVista.btnActualizarEmpleados.Click += (sender, e) => getData();
             controladaVista.btnBorrarEmpleados.Click += (sender, e) => deleteData();
-            controladaVista.btnACortes.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaCortesG(passedMenuForm));
+            controladaVista.btnAPersonal.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaPersonalG(passedMenuForm));
             getData();
         }
 
@@ -37,7 +39,7 @@ namespace BarberOS.Controlador
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
-                        controladaVista.listEmpleados.Items.Clear();
+                        controladaVista.listCortes.Items.Clear();
 
                         while (reader.Read())
                         {
@@ -47,7 +49,7 @@ namespace BarberOS.Controlador
                             item.SubItems.Add(reader["userRealName"].ToString());
                             item.SubItems.Add(reader["userRole"].ToString());
                             item.SubItems.Add(reader["userId"].ToString());
-                            controladaVista.listEmpleados.Items.Add(item);
+                            controladaVista.listCortes.Items.Add(item);
                         }
 
                         reader.Close();
@@ -62,9 +64,9 @@ namespace BarberOS.Controlador
 
         public void deleteData()
         {
-            if (controladaVista.listEmpleados.SelectedItems.Count > 0)
+            if (controladaVista.listCortes.SelectedItems.Count > 0)
             {
-                string selectedId = controladaVista.listEmpleados.SelectedItems[0].Text;
+                string selectedId = controladaVista.listCortes.SelectedItems[0].Text;
                 try
                 {
                     string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
@@ -89,4 +91,3 @@ namespace BarberOS.Controlador
         }
     }
 }
-

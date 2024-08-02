@@ -1,6 +1,6 @@
 ﻿namespace BarberOS.Vista
 {
-    partial class vistaListaCortesG
+    partial class vistaListaPromocionesG
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAClientes = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAgregarEmpleados = new System.Windows.Forms.Button();
             this.btnActualizarEmpleados = new System.Windows.Forms.Button();
@@ -38,11 +40,28 @@
             this.cortePrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.corteTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.corteDisponible = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnAPersonal = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.btnAClientes);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(98, 450);
+            this.flowLayoutPanel2.TabIndex = 16;
+            // 
+            // btnAClientes
+            // 
+            this.btnAClientes.BackColor = System.Drawing.Color.Gold;
+            this.btnAClientes.Location = new System.Drawing.Point(3, 3);
+            this.btnAClientes.Name = "btnAClientes";
+            this.btnAClientes.Size = new System.Drawing.Size(96, 456);
+            this.btnAClientes.TabIndex = 16;
+            this.btnAClientes.Text = "Clientes";
+            this.btnAClientes.UseVisualStyleBackColor = false;
             // 
             // flowLayoutPanel1
             // 
@@ -54,7 +73,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(104, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(696, 450);
-            this.flowLayoutPanel1.TabIndex = 13;
+            this.flowLayoutPanel1.TabIndex = 15;
             // 
             // btnAgregarEmpleados
             // 
@@ -126,41 +145,25 @@
             this.corteDisponible.DisplayIndex = 3;
             this.corteDisponible.Text = "Disponible";
             // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.btnAPersonal);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(98, 450);
-            this.flowLayoutPanel2.TabIndex = 14;
-            // 
-            // btnAPersonal
-            // 
-            this.btnAPersonal.BackColor = System.Drawing.Color.Gold;
-            this.btnAPersonal.Location = new System.Drawing.Point(3, 3);
-            this.btnAPersonal.Name = "btnAPersonal";
-            this.btnAPersonal.Size = new System.Drawing.Size(96, 456);
-            this.btnAPersonal.TabIndex = 16;
-            this.btnAPersonal.Text = "Personal";
-            this.btnAPersonal.UseVisualStyleBackColor = false;
-            // 
-            // vistaListaCortesG
+            // vistaListaPromocionesG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Name = "vistaListaCortesG";
-            this.Text = "vistaListaCortesGcs";
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.Name = "vistaListaPromocionesG";
+            this.Text = "vistaListaPromocionesG";
             this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        public System.Windows.Forms.Button btnAClientes;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         public System.Windows.Forms.Button btnAgregarEmpleados;
         public System.Windows.Forms.Button btnActualizarEmpleados;
@@ -171,7 +174,5 @@
         private System.Windows.Forms.ColumnHeader cortePrecio;
         private System.Windows.Forms.ColumnHeader corteTipo;
         private System.Windows.Forms.ColumnHeader corteDisponible;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        public System.Windows.Forms.Button btnAPersonal;
     }
 }

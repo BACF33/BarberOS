@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
             this.btnPersonal = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -62,16 +62,16 @@
             this.button3.Text = "Informacion";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnClientes
             // 
-            this.button1.BackColor = System.Drawing.Color.Blue;
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(138, 326);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 114);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "CLIENTES";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnClientes.BackColor = System.Drawing.Color.Blue;
+            this.btnClientes.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnClientes.Location = new System.Drawing.Point(138, 326);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(118, 114);
+            this.btnClientes.TabIndex = 36;
+            this.btnClientes.Text = "CLIENTES";
+            this.btnClientes.UseVisualStyleBackColor = false;
             // 
             // btnPersonal
             // 
@@ -231,7 +231,7 @@
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.btnPersonal);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.pictureBox11);
             this.Name = "vistaInicioGestion";
             this.Text = "vistaInicioGestion";
@@ -249,7 +249,6 @@
         #endregion
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
@@ -263,5 +262,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         public System.Windows.Forms.Button btnPersonal;
+        public System.Windows.Forms.Button btnClientes;
     }
 }
