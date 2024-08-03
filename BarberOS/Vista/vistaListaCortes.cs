@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BarberOS.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,12 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaRegistroDetallado : Form
+    public partial class vistaListaCortes : Form
     {
-        public vistaRegistroDetallado()
+        public vistaListaCortes(vistaMenu pasadoMenu)
         {
             InitializeComponent();
+            controlListaCortes controladorVista = new controlListaCortes(this, pasadoMenu);
         }
     }
 }

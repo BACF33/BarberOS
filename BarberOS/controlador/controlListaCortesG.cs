@@ -35,7 +35,7 @@ namespace BarberOS.Controlador
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM tbUser", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM tbProductos", conexion))
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
@@ -43,12 +43,11 @@ namespace BarberOS.Controlador
 
                         while (reader.Read())
                         {
-                            ListViewItem item = new ListViewItem(reader["userId"].ToString());
-                            item.SubItems.Add(reader["userName"].ToString());
-                            item.SubItems.Add(reader["userPass"].ToString());
-                            item.SubItems.Add(reader["userRealName"].ToString());
-                            item.SubItems.Add(reader["userRole"].ToString());
-                            item.SubItems.Add(reader["userId"].ToString());
+                            ListViewItem item = new ListViewItem(reader["productoId"].ToString());
+                            item.SubItems.Add(reader["productoNombre"].ToString());
+                            item.SubItems.Add(reader["productoPrecio"].ToString());
+                            item.SubItems.Add(reader["productoTipo"].ToString());
+                            item.SubItems.Add(reader["productoId"].ToString());
                             controladaVista.listCortes.Items.Add(item);
                         }
 
@@ -73,7 +72,7 @@ namespace BarberOS.Controlador
                     using (SqlConnection conexion = new SqlConnection(cnn))
                     {
                         conexion.Open();
-                        string sql = "DELETE FROM tbUser WHERE userId = @toDelete";
+                        string sql = "DELETE FROM tbProductos WHERE productoId = @toDelete";
 
                         using (SqlCommand cmd = new SqlCommand(sql, conexion))
                         {

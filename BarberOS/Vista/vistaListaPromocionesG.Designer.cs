@@ -31,10 +31,10 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAClientes = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnAgregarEmpleados = new System.Windows.Forms.Button();
-            this.btnActualizarEmpleados = new System.Windows.Forms.Button();
-            this.btnBorrarEmpleados = new System.Windows.Forms.Button();
-            this.listCortes = new System.Windows.Forms.ListView();
+            this.btnAgregarPromocion = new System.Windows.Forms.Button();
+            this.btnActualizarPromocion = new System.Windows.Forms.Button();
+            this.btnBorrarPromocion = new System.Windows.Forms.Button();
+            this.listPromociones = new System.Windows.Forms.ListView();
             this.corteId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.corteNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cortePrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -65,60 +65,60 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.btnAgregarEmpleados);
-            this.flowLayoutPanel1.Controls.Add(this.btnActualizarEmpleados);
-            this.flowLayoutPanel1.Controls.Add(this.btnBorrarEmpleados);
-            this.flowLayoutPanel1.Controls.Add(this.listCortes);
+            this.flowLayoutPanel1.Controls.Add(this.btnAgregarPromocion);
+            this.flowLayoutPanel1.Controls.Add(this.btnActualizarPromocion);
+            this.flowLayoutPanel1.Controls.Add(this.btnBorrarPromocion);
+            this.flowLayoutPanel1.Controls.Add(this.listPromociones);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(104, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(696, 450);
             this.flowLayoutPanel1.TabIndex = 15;
             // 
-            // btnAgregarEmpleados
+            // btnAgregarPromocion
             // 
-            this.btnAgregarEmpleados.Location = new System.Drawing.Point(3, 3);
-            this.btnAgregarEmpleados.Name = "btnAgregarEmpleados";
-            this.btnAgregarEmpleados.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregarEmpleados.TabIndex = 1;
-            this.btnAgregarEmpleados.Text = "Agregar";
-            this.btnAgregarEmpleados.UseVisualStyleBackColor = true;
+            this.btnAgregarPromocion.Location = new System.Drawing.Point(3, 3);
+            this.btnAgregarPromocion.Name = "btnAgregarPromocion";
+            this.btnAgregarPromocion.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarPromocion.TabIndex = 1;
+            this.btnAgregarPromocion.Text = "Agregar";
+            this.btnAgregarPromocion.UseVisualStyleBackColor = true;
             // 
-            // btnActualizarEmpleados
+            // btnActualizarPromocion
             // 
-            this.btnActualizarEmpleados.Location = new System.Drawing.Point(84, 3);
-            this.btnActualizarEmpleados.Name = "btnActualizarEmpleados";
-            this.btnActualizarEmpleados.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizarEmpleados.TabIndex = 6;
-            this.btnActualizarEmpleados.Text = "Actualizar";
-            this.btnActualizarEmpleados.UseVisualStyleBackColor = true;
+            this.btnActualizarPromocion.Location = new System.Drawing.Point(84, 3);
+            this.btnActualizarPromocion.Name = "btnActualizarPromocion";
+            this.btnActualizarPromocion.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizarPromocion.TabIndex = 6;
+            this.btnActualizarPromocion.Text = "Actualizar";
+            this.btnActualizarPromocion.UseVisualStyleBackColor = true;
             // 
-            // btnBorrarEmpleados
+            // btnBorrarPromocion
             // 
-            this.btnBorrarEmpleados.Location = new System.Drawing.Point(165, 3);
-            this.btnBorrarEmpleados.Name = "btnBorrarEmpleados";
-            this.btnBorrarEmpleados.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrarEmpleados.TabIndex = 7;
-            this.btnBorrarEmpleados.Text = "Borrar";
-            this.btnBorrarEmpleados.UseVisualStyleBackColor = true;
+            this.btnBorrarPromocion.Location = new System.Drawing.Point(165, 3);
+            this.btnBorrarPromocion.Name = "btnBorrarPromocion";
+            this.btnBorrarPromocion.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrarPromocion.TabIndex = 7;
+            this.btnBorrarPromocion.Text = "Borrar";
+            this.btnBorrarPromocion.UseVisualStyleBackColor = true;
             // 
-            // listCortes
+            // listPromociones
             // 
-            this.listCortes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listPromociones.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.corteId,
             this.corteNombre,
             this.cortePrecio,
             this.corteTipo,
             this.corteDisponible});
-            this.listCortes.FullRowSelect = true;
-            this.listCortes.GridLines = true;
-            this.listCortes.HideSelection = false;
-            this.listCortes.Location = new System.Drawing.Point(3, 32);
-            this.listCortes.Name = "listCortes";
-            this.listCortes.Size = new System.Drawing.Size(684, 426);
-            this.listCortes.TabIndex = 0;
-            this.listCortes.UseCompatibleStateImageBehavior = false;
-            this.listCortes.View = System.Windows.Forms.View.Details;
+            this.listPromociones.FullRowSelect = true;
+            this.listPromociones.GridLines = true;
+            this.listPromociones.HideSelection = false;
+            this.listPromociones.Location = new System.Drawing.Point(3, 32);
+            this.listPromociones.Name = "listPromociones";
+            this.listPromociones.Size = new System.Drawing.Size(684, 426);
+            this.listPromociones.TabIndex = 0;
+            this.listPromociones.UseCompatibleStateImageBehavior = false;
+            this.listPromociones.View = System.Windows.Forms.View.Details;
             // 
             // corteId
             // 
@@ -165,10 +165,10 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         public System.Windows.Forms.Button btnAClientes;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        public System.Windows.Forms.Button btnAgregarEmpleados;
-        public System.Windows.Forms.Button btnActualizarEmpleados;
-        public System.Windows.Forms.Button btnBorrarEmpleados;
-        public System.Windows.Forms.ListView listCortes;
+        public System.Windows.Forms.Button btnAgregarPromocion;
+        public System.Windows.Forms.Button btnActualizarPromocion;
+        public System.Windows.Forms.Button btnBorrarPromocion;
+        public System.Windows.Forms.ListView listPromociones;
         private System.Windows.Forms.ColumnHeader corteId;
         private System.Windows.Forms.ColumnHeader corteNombre;
         private System.Windows.Forms.ColumnHeader cortePrecio;

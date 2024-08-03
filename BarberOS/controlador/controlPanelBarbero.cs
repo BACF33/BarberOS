@@ -16,6 +16,6 @@ namespace BarberOS.Controlador
         public controlPanelBarbero(panelBarbero pasadoPanel)
         {
             controladoPanel = pasadoPanel;
-            }
         }
     }
+ }

@@ -1,6 +1,6 @@
 ﻿namespace BarberOS.Vista
 {
-    partial class vistaFacturaTotal
+    partial class vistaListaPromociones
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.flpPromociones = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // vistaFacturaTotal
+            // flpPromociones
+            // 
+            this.flpPromociones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpPromociones.Location = new System.Drawing.Point(0, 0);
+            this.flpPromociones.Name = "flpPromociones";
+            this.flpPromociones.Size = new System.Drawing.Size(800, 450);
+            this.flpPromociones.TabIndex = 0;
+            // 
+            // vistaListaPromociones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "vistaFacturaTotal";
-            this.Text = "vistaFacturaTotal";
+            this.Controls.Add(this.flpPromociones);
+            this.Name = "vistaListaPromociones";
+            this.Text = "vistaListaPromociones";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        public System.Windows.Forms.FlowLayoutPanel flpPromociones;
     }
 }

@@ -13,6 +13,12 @@ namespace BarberOS.Vista
             InitializeComponent();
             controlListaCortesG controladorVista = new controlListaCortesG(this, menuForm);
         }
+
+        private void btnAgregarEmpleados_Click(object sender, EventArgs e)
+        {
+            vistaAgregarProducto agregarPersonal = new vistaAgregarProducto();
+            agregarPersonal.Show();
+        }
     }
 
 }

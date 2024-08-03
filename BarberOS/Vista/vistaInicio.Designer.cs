@@ -31,9 +31,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnCompra = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnBarberos = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -91,15 +91,15 @@
             this.button5.Text = ">";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnCompra
             // 
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(499, 332);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(114, 44);
-            this.button4.TabIndex = 37;
-            this.button4.Text = "INGRESAR";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnCompra.BackColor = System.Drawing.Color.Red;
+            this.btnCompra.Location = new System.Drawing.Point(499, 332);
+            this.btnCompra.Name = "btnCompra";
+            this.btnCompra.Size = new System.Drawing.Size(114, 44);
+            this.btnCompra.TabIndex = 37;
+            this.btnCompra.Text = "INGRESAR";
+            this.btnCompra.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -111,15 +111,15 @@
             this.button3.Text = "Recompensas";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnBarberos
             // 
-            this.button2.BackColor = System.Drawing.Color.Coral;
-            this.button2.Location = new System.Drawing.Point(441, 40);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(230, 55);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Barberos";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnBarberos.BackColor = System.Drawing.Color.Coral;
+            this.btnBarberos.Location = new System.Drawing.Point(441, 40);
+            this.btnBarberos.Name = "btnBarberos";
+            this.btnBarberos.Size = new System.Drawing.Size(230, 55);
+            this.btnBarberos.TabIndex = 33;
+            this.btnBarberos.Text = "Barberos";
+            this.btnBarberos.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -269,10 +269,10 @@
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnCompra);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnBarberos);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -311,9 +311,7 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -328,5 +326,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.Button btnCortes;
+        public System.Windows.Forms.Button btnCompra;
+        public System.Windows.Forms.Button btnBarberos;
     }
 }
