@@ -37,7 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.btnRegistros = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -145,15 +145,15 @@
             this.button12.Text = "GRAFICOS";
             this.button12.UseVisualStyleBackColor = false;
             // 
-            // button13
+            // btnRegistros
             // 
-            this.button13.BackColor = System.Drawing.Color.Coral;
-            this.button13.Location = new System.Drawing.Point(589, 194);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(98, 36);
-            this.button13.TabIndex = 47;
-            this.button13.Text = "REGISTROS";
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnRegistros.BackColor = System.Drawing.Color.Coral;
+            this.btnRegistros.Location = new System.Drawing.Point(589, 194);
+            this.btnRegistros.Name = "btnRegistros";
+            this.btnRegistros.Size = new System.Drawing.Size(98, 36);
+            this.btnRegistros.TabIndex = 47;
+            this.btnRegistros.Text = "REGISTROS";
+            this.btnRegistros.UseVisualStyleBackColor = false;
             // 
             // pictureBox5
             // 
@@ -219,7 +219,7 @@
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button13);
+            this.Controls.Add(this.btnRegistros);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label2);
@@ -258,10 +258,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         public System.Windows.Forms.Button btnPersonal;
         public System.Windows.Forms.Button btnClientes;
+        public System.Windows.Forms.Button btnRegistros;
     }
 }

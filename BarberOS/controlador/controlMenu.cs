@@ -1,4 +1,5 @@
-﻿using BarberOS.Vista;
+﻿using BarberOS.Modelo.Dto;
+using BarberOS.Vista;
 using BarberOS.Vistas;
 using System;
 using System.Windows.Forms;
@@ -9,6 +10,8 @@ namespace BarberOS.Controlador
     {
         private Form currentForm = null;
         vistaMenu controladaVista;
+
+        public dtoLogin userValues = null;
 
         public controlMenu(vistaMenu vistaPasada)
         {

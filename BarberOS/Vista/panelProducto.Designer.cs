@@ -30,7 +30,7 @@
         {
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblRole = new System.Windows.Forms.Label();
+            this.lblPrice = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnComprar = new System.Windows.Forms.Button();
@@ -55,14 +55,14 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Nombre";
             // 
-            // lblRole
+            // lblPrice
             // 
-            this.lblRole.AutoSize = true;
-            this.lblRole.Location = new System.Drawing.Point(284, 107);
-            this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(67, 13);
-            this.lblRole.TabIndex = 9;
-            this.lblRole.Text = "Especialidad";
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Location = new System.Drawing.Point(284, 107);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(67, 13);
+            this.lblPrice.TabIndex = 9;
+            this.lblPrice.Text = "Especialidad";
             // 
             // lblName
             // 
@@ -98,7 +98,7 @@
             this.Controls.Add(this.btnComprar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblRole);
+            this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox1);
             this.Name = "panelProducto";
@@ -113,7 +113,7 @@
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Label lblRole;
+        public System.Windows.Forms.Label lblPrice;
         public System.Windows.Forms.Label lblName;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Button btnComprar;

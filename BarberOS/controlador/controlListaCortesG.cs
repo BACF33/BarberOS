@@ -1,4 +1,5 @@
-﻿using BarberOS.Vista;
+﻿using BarberOS.Modelo.Dao;
+using BarberOS.Vista;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -16,6 +17,7 @@ namespace BarberOS.Controlador
     {
         private vistaMenu menuForm;
         private vistaListaCortesG controladaVista;
+        private daoListaCortesG dao = new daoListaCortesG();
 
         public controlListaCortesG(vistaListaCortesG pasadaVista, vistaMenu passedMenuForm)
         {
@@ -23,69 +25,39 @@ namespace BarberOS.Controlador
             menuForm = passedMenuForm;
             controladaVista.btnActualizarEmpleados.Click += (sender, e) => getData();
             controladaVista.btnBorrarEmpleados.Click += (sender, e) => deleteData();
+            controladaVista.btnActualizarEmpleados2.Click += (sender, e) => updateData();
+            controladaVista.btnAgregarEmpleados.Click -= (sender, e) => insertData();
             controladaVista.btnAPersonal.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaPersonalG(passedMenuForm));
             getData();
         }
 
+        public void insertData()
+        {
+            vistaAgregarProducto agregarPersonal = new vistaAgregarProducto();
+            agregarPersonal.Show();
+        }
+
         public void getData()
         {
-            try
-            {
-                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
-                using (SqlConnection conexion = new SqlConnection(cnn))
-                {
-                    conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM tbProductos", conexion))
-                    {
-                        SqlDataReader reader = cmd.ExecuteReader();
-
-                        controladaVista.listCortes.Items.Clear();
-
-                        while (reader.Read())
-                        {
-                            ListViewItem item = new ListViewItem(reader["productoId"].ToString());
-                            item.SubItems.Add(reader["productoNombre"].ToString());
-                            item.SubItems.Add(reader["productoPrecio"].ToString());
-                            item.SubItems.Add(reader["productoTipo"].ToString());
-                            item.SubItems.Add(reader["productoId"].ToString());
-                            controladaVista.listCortes.Items.Add(item);
-                        }
-
-                        reader.Close();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+            dao.Populate(controladaVista);
         }
 
         public void deleteData()
         {
             if (controladaVista.listCortes.SelectedItems.Count > 0)
+                dao.Delete(controladaVista);
+
+            getData();
+        }
+
+        public void updateData()
+        {
+            vistaActualizarCortes actualizar;
+            if (controladaVista.listCortes.SelectedItems.Count > 0)
             {
                 string selectedId = controladaVista.listCortes.SelectedItems[0].Text;
-                try
-                {
-                    string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
-                    using (SqlConnection conexion = new SqlConnection(cnn))
-                    {
-                        conexion.Open();
-                        string sql = "DELETE FROM tbProductos WHERE productoId = @toDelete";
-
-                        using (SqlCommand cmd = new SqlCommand(sql, conexion))
-                        {
-                            cmd.Parameters.AddWithValue("@toDelete", selectedId);
-                            int rowsAffected = cmd.ExecuteNonQuery();
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-                getData();
+                actualizar = new vistaActualizarCortes(selectedId);
+                actualizar.Show();
             }
         }
     }

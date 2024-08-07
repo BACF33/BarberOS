@@ -32,12 +32,15 @@
             this.btnAgregarEmpleados = new System.Windows.Forms.Button();
             this.btnActualizarEmpleados = new System.Windows.Forms.Button();
             this.btnBorrarEmpleados = new System.Windows.Forms.Button();
-            this.listEmpleados = new System.Windows.Forms.ListView();
-            this.empleadoId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.empleadoNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.empleadoContraseña = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.empleadoFull = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.empleadoCargo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listRegistros = new System.Windows.Forms.ListView();
+            this.registroId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.registroProductoNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.registroProductoTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.registroProductoPrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.registroPromocionNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.registroPromocionPrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.registroPromocionPoder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.registroPrecioTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +49,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btnAgregarEmpleados);
             this.flowLayoutPanel1.Controls.Add(this.btnActualizarEmpleados);
             this.flowLayoutPanel1.Controls.Add(this.btnBorrarEmpleados);
-            this.flowLayoutPanel1.Controls.Add(this.listEmpleados);
+            this.flowLayoutPanel1.Controls.Add(this.listRegistros);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -80,48 +83,58 @@
             this.btnBorrarEmpleados.Text = "Borrar";
             this.btnBorrarEmpleados.UseVisualStyleBackColor = true;
             // 
-            // listEmpleados
+            // listRegistros
             // 
-            this.listEmpleados.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.empleadoId,
-            this.empleadoNombre,
-            this.empleadoContraseña,
-            this.empleadoFull,
-            this.empleadoCargo});
-            this.listEmpleados.FullRowSelect = true;
-            this.listEmpleados.GridLines = true;
-            this.listEmpleados.HideSelection = false;
-            this.listEmpleados.Location = new System.Drawing.Point(3, 32);
-            this.listEmpleados.Name = "listEmpleados";
-            this.listEmpleados.Size = new System.Drawing.Size(684, 426);
-            this.listEmpleados.TabIndex = 0;
-            this.listEmpleados.UseCompatibleStateImageBehavior = false;
-            this.listEmpleados.View = System.Windows.Forms.View.Details;
+            this.listRegistros.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.registroId,
+            this.registroProductoNombre,
+            this.registroProductoTipo,
+            this.registroProductoPrecio,
+            this.registroPromocionNombre,
+            this.registroPromocionPrecio,
+            this.registroPromocionPoder,
+            this.registroPrecioTotal});
+            this.listRegistros.FullRowSelect = true;
+            this.listRegistros.GridLines = true;
+            this.listRegistros.HideSelection = false;
+            this.listRegistros.Location = new System.Drawing.Point(3, 32);
+            this.listRegistros.Name = "listRegistros";
+            this.listRegistros.Size = new System.Drawing.Size(684, 426);
+            this.listRegistros.TabIndex = 0;
+            this.listRegistros.UseCompatibleStateImageBehavior = false;
+            this.listRegistros.View = System.Windows.Forms.View.Details;
             // 
-            // empleadoId
+            // registroId
             // 
-            this.empleadoId.DisplayIndex = 4;
-            this.empleadoId.Text = "ID";
+            this.registroId.Text = "registroId";
             // 
-            // empleadoNombre
+            // registroProductoNombre
             // 
-            this.empleadoNombre.DisplayIndex = 0;
-            this.empleadoNombre.Text = "Nombre";
+            this.registroProductoNombre.Text = "registroProductoNombre";
             // 
-            // empleadoContraseña
+            // registroProductoTipo
             // 
-            this.empleadoContraseña.DisplayIndex = 1;
-            this.empleadoContraseña.Text = "Contraseña";
+            this.registroProductoTipo.Text = "registroProductoTipo";
             // 
-            // empleadoFull
+            // registroProductoPrecio
             // 
-            this.empleadoFull.DisplayIndex = 2;
-            this.empleadoFull.Text = "Nombre completo";
+            this.registroProductoPrecio.Text = "registroProductoPrecio";
             // 
-            // empleadoCargo
+            // registroPromocionNombre
             // 
-            this.empleadoCargo.DisplayIndex = 3;
-            this.empleadoCargo.Text = "Cargo";
+            this.registroPromocionNombre.Text = "registroPromocionNombre";
+            // 
+            // registroPromocionPrecio
+            // 
+            this.registroPromocionPrecio.Text = "registroPromocionPrecio";
+            // 
+            // registroPromocionPoder
+            // 
+            this.registroPromocionPoder.Text = "registroPromocionPoder";
+            // 
+            // registroPrecioTotal
+            // 
+            this.registroPrecioTotal.Text = "registroPrecioTotal";
             // 
             // vistaListaRegistros
             // 
@@ -139,14 +152,17 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        public System.Windows.Forms.ListView listRegistros;
+        private System.Windows.Forms.ColumnHeader registroId;
+        private System.Windows.Forms.ColumnHeader registroProductoNombre;
+        private System.Windows.Forms.ColumnHeader registroProductoTipo;
+        private System.Windows.Forms.ColumnHeader registroProductoPrecio;
+        private System.Windows.Forms.ColumnHeader registroPromocionNombre;
+        private System.Windows.Forms.ColumnHeader registroPromocionPrecio;
+        private System.Windows.Forms.ColumnHeader registroPromocionPoder;
+        private System.Windows.Forms.ColumnHeader registroPrecioTotal;
         public System.Windows.Forms.Button btnAgregarEmpleados;
         public System.Windows.Forms.Button btnActualizarEmpleados;
         public System.Windows.Forms.Button btnBorrarEmpleados;
-        public System.Windows.Forms.ListView listEmpleados;
-        private System.Windows.Forms.ColumnHeader empleadoId;
-        private System.Windows.Forms.ColumnHeader empleadoNombre;
-        private System.Windows.Forms.ColumnHeader empleadoContraseña;
-        private System.Windows.Forms.ColumnHeader empleadoFull;
-        private System.Windows.Forms.ColumnHeader empleadoCargo;
     }
 }

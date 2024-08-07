@@ -13,7 +13,7 @@ namespace BarberOS.Controlador
     internal class controlListaPromociones
     {
         vistaListaPromociones controladaVista;
-        public controlListaPromociones(vistaListaPromociones enviadaVista, vistaMenu pasadoMenu)
+        public controlListaPromociones(vistaListaPromociones enviadaVista, vistaMenu pasadoMenu, string seleccionadoNombre, string seleccionadoPrecio)
         {
             controladaVista = enviadaVista;
             try
@@ -31,25 +31,12 @@ namespace BarberOS.Controlador
 
                             while (reader.Read())
                             {
-                                // Create a new instance of UserControl1
-                                panelPromocion panelUsado = new panelPromocion(pasadoMenu);
-
-                                // Set properties or text of the UserControl based on the data
+                                panelPromocion panelUsado = new panelPromocion(pasadoMenu, seleccionadoNombre, seleccionadoPrecio);
                                 panelUsado.lblName.Text = reader["promocionNombre"].ToString();
                                 panelUsado.lblPoder.Text = reader["promocionPoder"].ToString();
                                 panelUsado.lblPrecio.Text = reader["promocionPrecio"].ToString();
                                 panelUsado.lblTipo.Text = reader["promocionTipo"].ToString();
-
-                                // Set the location of the UserControl
-                                //panelUsado.Location = new System.Drawing.Point(10, yOffset);
-                                //panelUsado.Width = this.controladaVista.flpPersonal.Width - 20; // Adjust width as needed
-                                //panelUsado.Height = controlHeight;
-
-                                // Add the UserControl to the Panel
                                 controladaVista.flpPromociones.Controls.Add(panelUsado);
-
-                                // Update vertical offset for the next UserControl
-                                //yOffset += controlHeight + spacing;
                             }
                         }
                     }

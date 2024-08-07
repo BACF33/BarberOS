@@ -35,11 +35,12 @@
             this.btnActualizarPromocion = new System.Windows.Forms.Button();
             this.btnBorrarPromocion = new System.Windows.Forms.Button();
             this.listPromociones = new System.Windows.Forms.ListView();
-            this.corteId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.corteNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cortePrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.corteTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.corteDisponible = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.promocionId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.promocionNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.promocionPrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.promocionTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.promocionPoder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnActualizarPromocion2 = new System.Windows.Forms.Button();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +69,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btnAgregarPromocion);
             this.flowLayoutPanel1.Controls.Add(this.btnActualizarPromocion);
             this.flowLayoutPanel1.Controls.Add(this.btnBorrarPromocion);
+            this.flowLayoutPanel1.Controls.Add(this.btnActualizarPromocion2);
             this.flowLayoutPanel1.Controls.Add(this.listPromociones);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(104, 0);
@@ -105,11 +107,11 @@
             // listPromociones
             // 
             this.listPromociones.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.corteId,
-            this.corteNombre,
-            this.cortePrecio,
-            this.corteTipo,
-            this.corteDisponible});
+            this.promocionId,
+            this.promocionNombre,
+            this.promocionPrecio,
+            this.promocionTipo,
+            this.promocionPoder});
             this.listPromociones.FullRowSelect = true;
             this.listPromociones.GridLines = true;
             this.listPromociones.HideSelection = false;
@@ -120,30 +122,34 @@
             this.listPromociones.UseCompatibleStateImageBehavior = false;
             this.listPromociones.View = System.Windows.Forms.View.Details;
             // 
-            // corteId
+            // promocionId
             // 
-            this.corteId.DisplayIndex = 4;
-            this.corteId.Text = "ID";
+            this.promocionId.Text = "ID";
             // 
-            // corteNombre
+            // promocionNombre
             // 
-            this.corteNombre.DisplayIndex = 0;
-            this.corteNombre.Text = "Nombre";
+            this.promocionNombre.Text = "Nombre";
             // 
-            // cortePrecio
+            // promocionPrecio
             // 
-            this.cortePrecio.DisplayIndex = 1;
-            this.cortePrecio.Text = "Precio";
+            this.promocionPrecio.Text = "Precio";
             // 
-            // corteTipo
+            // promocionTipo
             // 
-            this.corteTipo.DisplayIndex = 2;
-            this.corteTipo.Text = "Nombre completo";
+            this.promocionTipo.Text = "Tipo";
             // 
-            // corteDisponible
+            // promocionPoder
             // 
-            this.corteDisponible.DisplayIndex = 3;
-            this.corteDisponible.Text = "Disponible";
+            this.promocionPoder.Text = "Poder";
+            // 
+            // btnActualizarPromocion2
+            // 
+            this.btnActualizarPromocion2.Location = new System.Drawing.Point(246, 3);
+            this.btnActualizarPromocion2.Name = "btnActualizarPromocion2";
+            this.btnActualizarPromocion2.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizarPromocion2.TabIndex = 8;
+            this.btnActualizarPromocion2.Text = "button1";
+            this.btnActualizarPromocion2.UseVisualStyleBackColor = true;
             // 
             // vistaListaPromocionesG
             // 
@@ -169,10 +175,11 @@
         public System.Windows.Forms.Button btnActualizarPromocion;
         public System.Windows.Forms.Button btnBorrarPromocion;
         public System.Windows.Forms.ListView listPromociones;
-        private System.Windows.Forms.ColumnHeader corteId;
-        private System.Windows.Forms.ColumnHeader corteNombre;
-        private System.Windows.Forms.ColumnHeader cortePrecio;
-        private System.Windows.Forms.ColumnHeader corteTipo;
-        private System.Windows.Forms.ColumnHeader corteDisponible;
+        private System.Windows.Forms.ColumnHeader promocionId;
+        private System.Windows.Forms.ColumnHeader promocionNombre;
+        private System.Windows.Forms.ColumnHeader promocionPrecio;
+        private System.Windows.Forms.ColumnHeader promocionTipo;
+        private System.Windows.Forms.ColumnHeader promocionPoder;
+        public System.Windows.Forms.Button btnActualizarPromocion2;
     }
 }

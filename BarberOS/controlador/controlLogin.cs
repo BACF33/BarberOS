@@ -1,4 +1,5 @@
-﻿using BarberOS.Vista;
+﻿using BarberOS.Modelo.Dao;
+using BarberOS.Vista;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -24,34 +25,25 @@ namespace BarberOS.Controlador
 
         public void login()
         {
-            try
-            {
-                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
-                using (SqlConnection conexion = new SqlConnection(cnn))
-                {
-                    conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT userName FROM tbUser WHERE userName=@userName AND userPass=@userPass", conexion))
-                    {
-                        cmd.Parameters.AddWithValue("@userName", controladaVista.txtUser.Text);
-                        cmd.Parameters.AddWithValue("@userPass", controladaVista.txtPassword.Text);
+            daoLogin daoDa = new daoLogin();
 
-                        SqlDataReader reader = cmd.ExecuteReader();
-                        if (reader.Read())
-                        {
-                            MessageBox.Show("Login exitoso");
-                            menuForm.controladorMenu.AbrirFormulario(new vistaInicioGestion(menuForm));
-                        }
-                        else
-                        {
-                            MessageBox.Show("Login fallido");
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
+            daoDa.Username = controladaVista.txtUser.Text;
+            daoDa.Password = controladaVista.txtPassword.Text;
+            int answer = daoDa.login();
+            if(answer == 1)
             {
-                MessageBox.Show(ex.ToString());
+                menuForm.btnInicio.Visible = false;
+                menuForm.btnBarberos.Visible = false;
+                menuForm.btnCortes.Visible = false;
+                menuForm.btnIngresar.Text = "SALIR"; 
+                menuForm.btnCurrentUser.Text = daoDa.Username;
+
+                menuForm.controladorMenu.userValues = daoDa;
+
+                menuForm.controladorMenu.AbrirFormulario(new vistaInicioGestion(menuForm));
             }
+            else
+                MessageBox.Show("Login fallido");
         }
     }
 }

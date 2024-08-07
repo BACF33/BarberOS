@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BarberOS.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,10 @@ namespace BarberOS.Vista
 {
     public partial class vistaRecompensas : Form
     {
-        public vistaRecompensas()
+        public vistaRecompensas(panelPromocion pasadaPromocion, vistaMenu pasadoMenu, string pasadoName, string pasadoPrecio)
         {
             InitializeComponent();
+            controlTotal controladorVista = new controlTotal(pasadoMenu, this, pasadaPromocion, pasadoName, pasadoPrecio);
         }
-
-      
     }
 }

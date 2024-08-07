@@ -31,15 +31,16 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAProms = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnAgregarEmpleados = new System.Windows.Forms.Button();
-            this.btnActualizarEmpleados = new System.Windows.Forms.Button();
-            this.btnBorrarEmpleados = new System.Windows.Forms.Button();
-            this.listEmpleados = new System.Windows.Forms.ListView();
+            this.btnAgregarClientes = new System.Windows.Forms.Button();
+            this.btnActualizarClientes = new System.Windows.Forms.Button();
+            this.btnBorrarClientes = new System.Windows.Forms.Button();
+            this.listClientes = new System.Windows.Forms.ListView();
             this.empleadoId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoContraseña = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoFull = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoCargo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnActualizarClientes2 = new System.Windows.Forms.Button();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,85 +66,90 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.btnAgregarEmpleados);
-            this.flowLayoutPanel1.Controls.Add(this.btnActualizarEmpleados);
-            this.flowLayoutPanel1.Controls.Add(this.btnBorrarEmpleados);
-            this.flowLayoutPanel1.Controls.Add(this.listEmpleados);
+            this.flowLayoutPanel1.Controls.Add(this.btnAgregarClientes);
+            this.flowLayoutPanel1.Controls.Add(this.btnActualizarClientes);
+            this.flowLayoutPanel1.Controls.Add(this.btnBorrarClientes);
+            this.flowLayoutPanel1.Controls.Add(this.btnActualizarClientes2);
+            this.flowLayoutPanel1.Controls.Add(this.listClientes);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(696, 450);
             this.flowLayoutPanel1.TabIndex = 13;
             // 
-            // btnAgregarEmpleados
+            // btnAgregarClientes
             // 
-            this.btnAgregarEmpleados.Location = new System.Drawing.Point(3, 3);
-            this.btnAgregarEmpleados.Name = "btnAgregarEmpleados";
-            this.btnAgregarEmpleados.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregarEmpleados.TabIndex = 1;
-            this.btnAgregarEmpleados.Text = "Agregar";
-            this.btnAgregarEmpleados.UseVisualStyleBackColor = true;
+            this.btnAgregarClientes.Location = new System.Drawing.Point(3, 3);
+            this.btnAgregarClientes.Name = "btnAgregarClientes";
+            this.btnAgregarClientes.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarClientes.TabIndex = 1;
+            this.btnAgregarClientes.Text = "Agregar";
+            this.btnAgregarClientes.UseVisualStyleBackColor = true;
             // 
-            // btnActualizarEmpleados
+            // btnActualizarClientes
             // 
-            this.btnActualizarEmpleados.Location = new System.Drawing.Point(84, 3);
-            this.btnActualizarEmpleados.Name = "btnActualizarEmpleados";
-            this.btnActualizarEmpleados.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizarEmpleados.TabIndex = 6;
-            this.btnActualizarEmpleados.Text = "Actualizar";
-            this.btnActualizarEmpleados.UseVisualStyleBackColor = true;
+            this.btnActualizarClientes.Location = new System.Drawing.Point(84, 3);
+            this.btnActualizarClientes.Name = "btnActualizarClientes";
+            this.btnActualizarClientes.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizarClientes.TabIndex = 6;
+            this.btnActualizarClientes.Text = "Actualizar";
+            this.btnActualizarClientes.UseVisualStyleBackColor = true;
             // 
-            // btnBorrarEmpleados
+            // btnBorrarClientes
             // 
-            this.btnBorrarEmpleados.Location = new System.Drawing.Point(165, 3);
-            this.btnBorrarEmpleados.Name = "btnBorrarEmpleados";
-            this.btnBorrarEmpleados.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrarEmpleados.TabIndex = 7;
-            this.btnBorrarEmpleados.Text = "Borrar";
-            this.btnBorrarEmpleados.UseVisualStyleBackColor = true;
+            this.btnBorrarClientes.Location = new System.Drawing.Point(165, 3);
+            this.btnBorrarClientes.Name = "btnBorrarClientes";
+            this.btnBorrarClientes.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrarClientes.TabIndex = 7;
+            this.btnBorrarClientes.Text = "Borrar";
+            this.btnBorrarClientes.UseVisualStyleBackColor = true;
             // 
-            // listEmpleados
+            // listClientes
             // 
-            this.listEmpleados.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listClientes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.empleadoId,
             this.empleadoNombre,
             this.empleadoContraseña,
             this.empleadoFull,
             this.empleadoCargo});
-            this.listEmpleados.FullRowSelect = true;
-            this.listEmpleados.GridLines = true;
-            this.listEmpleados.HideSelection = false;
-            this.listEmpleados.Location = new System.Drawing.Point(3, 32);
-            this.listEmpleados.Name = "listEmpleados";
-            this.listEmpleados.Size = new System.Drawing.Size(684, 426);
-            this.listEmpleados.TabIndex = 0;
-            this.listEmpleados.UseCompatibleStateImageBehavior = false;
-            this.listEmpleados.View = System.Windows.Forms.View.Details;
+            this.listClientes.FullRowSelect = true;
+            this.listClientes.GridLines = true;
+            this.listClientes.HideSelection = false;
+            this.listClientes.Location = new System.Drawing.Point(3, 32);
+            this.listClientes.Name = "listClientes";
+            this.listClientes.Size = new System.Drawing.Size(684, 426);
+            this.listClientes.TabIndex = 0;
+            this.listClientes.UseCompatibleStateImageBehavior = false;
+            this.listClientes.View = System.Windows.Forms.View.Details;
             // 
             // empleadoId
             // 
-            this.empleadoId.DisplayIndex = 4;
             this.empleadoId.Text = "ID";
             // 
             // empleadoNombre
             // 
-            this.empleadoNombre.DisplayIndex = 0;
             this.empleadoNombre.Text = "Nombre";
             // 
             // empleadoContraseña
             // 
-            this.empleadoContraseña.DisplayIndex = 1;
             this.empleadoContraseña.Text = "Contraseña";
             // 
             // empleadoFull
             // 
-            this.empleadoFull.DisplayIndex = 2;
-            this.empleadoFull.Text = "Nombre completo";
+            this.empleadoFull.Text = "Puntos";
             // 
             // empleadoCargo
             // 
-            this.empleadoCargo.DisplayIndex = 3;
             this.empleadoCargo.Text = "Cargo";
+            // 
+            // btnActualizarClientes2
+            // 
+            this.btnActualizarClientes2.Location = new System.Drawing.Point(246, 3);
+            this.btnActualizarClientes2.Name = "btnActualizarClientes2";
+            this.btnActualizarClientes2.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizarClientes2.TabIndex = 8;
+            this.btnActualizarClientes2.Text = "Actualizar2";
+            this.btnActualizarClientes2.UseVisualStyleBackColor = true;
             // 
             // vistaListaClientesG
             // 
@@ -165,14 +171,15 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         public System.Windows.Forms.Button btnAProms;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        public System.Windows.Forms.Button btnAgregarEmpleados;
-        public System.Windows.Forms.Button btnActualizarEmpleados;
-        public System.Windows.Forms.Button btnBorrarEmpleados;
-        public System.Windows.Forms.ListView listEmpleados;
+        public System.Windows.Forms.Button btnAgregarClientes;
+        public System.Windows.Forms.Button btnActualizarClientes;
+        public System.Windows.Forms.Button btnBorrarClientes;
+        public System.Windows.Forms.ListView listClientes;
         private System.Windows.Forms.ColumnHeader empleadoId;
         private System.Windows.Forms.ColumnHeader empleadoNombre;
         private System.Windows.Forms.ColumnHeader empleadoContraseña;
         private System.Windows.Forms.ColumnHeader empleadoFull;
         private System.Windows.Forms.ColumnHeader empleadoCargo;
+        public System.Windows.Forms.Button btnActualizarClientes2;
     }
 }

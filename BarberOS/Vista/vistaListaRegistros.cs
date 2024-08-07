@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BarberOS.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace BarberOS.Vista
         public vistaListaRegistros()
         {
             InitializeComponent();
+            controlListaRegistros controladorVista = new controlListaRegistros(this);
         }
     }
 }

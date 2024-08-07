@@ -34,6 +34,7 @@
             this.btnInicio = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCurrentUser = new System.Windows.Forms.Button();
             this.PanelContenedor = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -43,7 +44,7 @@
             // 
             this.btnIngresar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnIngresar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnIngresar.Location = new System.Drawing.Point(3, 336);
+            this.btnIngresar.Location = new System.Drawing.Point(3, 386);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(196, 44);
             this.btnIngresar.TabIndex = 25;
@@ -65,7 +66,7 @@
             // 
             this.btnCortes.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCortes.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCortes.Location = new System.Drawing.Point(3, 236);
+            this.btnCortes.Location = new System.Drawing.Point(3, 336);
             this.btnCortes.Name = "btnCortes";
             this.btnCortes.Size = new System.Drawing.Size(196, 44);
             this.btnCortes.TabIndex = 24;
@@ -76,7 +77,7 @@
             // 
             this.btnInicio.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnInicio.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnInicio.Location = new System.Drawing.Point(3, 186);
+            this.btnInicio.Location = new System.Drawing.Point(3, 236);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(196, 44);
             this.btnInicio.TabIndex = 23;
@@ -87,9 +88,10 @@
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.DimGray;
             this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
+            this.flowLayoutPanel1.Controls.Add(this.btnCurrentUser);
             this.flowLayoutPanel1.Controls.Add(this.btnInicio);
-            this.flowLayoutPanel1.Controls.Add(this.btnCortes);
             this.flowLayoutPanel1.Controls.Add(this.btnBarberos);
+            this.flowLayoutPanel1.Controls.Add(this.btnCortes);
             this.flowLayoutPanel1.Controls.Add(this.btnIngresar);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.ForeColor = System.Drawing.Color.DimGray;
@@ -107,6 +109,17 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnCurrentUser
+            // 
+            this.btnCurrentUser.BackColor = System.Drawing.Color.Coral;
+            this.btnCurrentUser.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCurrentUser.Location = new System.Drawing.Point(3, 186);
+            this.btnCurrentUser.Name = "btnCurrentUser";
+            this.btnCurrentUser.Size = new System.Drawing.Size(196, 44);
+            this.btnCurrentUser.TabIndex = 27;
+            this.btnCurrentUser.Text = "No has iniciado sesion";
+            this.btnCurrentUser.UseVisualStyleBackColor = false;
             // 
             // PanelContenedor
             // 
@@ -145,5 +158,6 @@
         public System.Windows.Forms.Button btnCortes;
         public System.Windows.Forms.Button btnInicio;
         public System.Windows.Forms.Panel PanelContenedor;
+        public System.Windows.Forms.Button btnCurrentUser;
     }
 }

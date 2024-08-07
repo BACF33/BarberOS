@@ -32,12 +32,12 @@
             this.btnAgregarEmpleados = new System.Windows.Forms.Button();
             this.btnActualizarEmpleados = new System.Windows.Forms.Button();
             this.btnBorrarEmpleados = new System.Windows.Forms.Button();
+            this.btnActualizarEmpleados2 = new System.Windows.Forms.Button();
             this.listCortes = new System.Windows.Forms.ListView();
             this.corteId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.corteNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cortePrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.corteTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.corteDisponible = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAPersonal = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
@@ -49,6 +49,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btnAgregarEmpleados);
             this.flowLayoutPanel1.Controls.Add(this.btnActualizarEmpleados);
             this.flowLayoutPanel1.Controls.Add(this.btnBorrarEmpleados);
+            this.flowLayoutPanel1.Controls.Add(this.btnActualizarEmpleados2);
             this.flowLayoutPanel1.Controls.Add(this.listCortes);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(104, 0);
@@ -64,7 +65,6 @@
             this.btnAgregarEmpleados.TabIndex = 1;
             this.btnAgregarEmpleados.Text = "Agregar";
             this.btnAgregarEmpleados.UseVisualStyleBackColor = true;
-            this.btnAgregarEmpleados.Click += new System.EventHandler(this.btnAgregarEmpleados_Click);
             // 
             // btnActualizarEmpleados
             // 
@@ -84,14 +84,22 @@
             this.btnBorrarEmpleados.Text = "Borrar";
             this.btnBorrarEmpleados.UseVisualStyleBackColor = true;
             // 
+            // btnActualizarEmpleados2
+            // 
+            this.btnActualizarEmpleados2.Location = new System.Drawing.Point(246, 3);
+            this.btnActualizarEmpleados2.Name = "btnActualizarEmpleados2";
+            this.btnActualizarEmpleados2.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizarEmpleados2.TabIndex = 8;
+            this.btnActualizarEmpleados2.Text = "Actualizar2";
+            this.btnActualizarEmpleados2.UseVisualStyleBackColor = true;
+            // 
             // listCortes
             // 
             this.listCortes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.corteId,
             this.corteNombre,
             this.cortePrecio,
-            this.corteTipo,
-            this.corteDisponible});
+            this.corteTipo});
             this.listCortes.FullRowSelect = true;
             this.listCortes.GridLines = true;
             this.listCortes.HideSelection = false;
@@ -104,28 +112,19 @@
             // 
             // corteId
             // 
-            this.corteId.DisplayIndex = 4;
             this.corteId.Text = "ID";
             // 
             // corteNombre
             // 
-            this.corteNombre.DisplayIndex = 0;
             this.corteNombre.Text = "Nombre";
             // 
             // cortePrecio
             // 
-            this.cortePrecio.DisplayIndex = 1;
             this.cortePrecio.Text = "Precio";
             // 
             // corteTipo
             // 
-            this.corteTipo.DisplayIndex = 2;
-            this.corteTipo.Text = "Nombre completo";
-            // 
-            // corteDisponible
-            // 
-            this.corteDisponible.DisplayIndex = 3;
-            this.corteDisponible.Text = "Disponible";
+            this.corteTipo.Text = "Tipo";
             // 
             // flowLayoutPanel2
             // 
@@ -171,8 +170,8 @@
         private System.Windows.Forms.ColumnHeader corteNombre;
         private System.Windows.Forms.ColumnHeader cortePrecio;
         private System.Windows.Forms.ColumnHeader corteTipo;
-        private System.Windows.Forms.ColumnHeader corteDisponible;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         public System.Windows.Forms.Button btnAPersonal;
+        public System.Windows.Forms.Button btnActualizarEmpleados2;
     }
 }

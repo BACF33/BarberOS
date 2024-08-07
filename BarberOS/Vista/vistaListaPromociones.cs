@@ -13,10 +13,10 @@ namespace BarberOS.Vista
 {
     public partial class vistaListaPromociones : Form
     {
-        public vistaListaPromociones(vistaMenu pasadoMenu)
+        public vistaListaPromociones(vistaMenu pasadoMenu, string selectedName, string selectedPrice)
         {
             InitializeComponent();
-            controlListaPromociones controladorVista = new controlListaPromociones(this,  pasadoMenu);
+            controlListaPromociones controladorVista = new controlListaPromociones(this, pasadoMenu, selectedName, selectedPrice);
         }
     }
 }

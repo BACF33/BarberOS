@@ -1,21 +1,30 @@
-﻿using BarberOS.Vista;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BarberOS.Modelo.Dao;
+using BarberOS.Modelo.Dto;
+using BarberOS.Vista;
 
 namespace BarberOS.Controlador
 {
     internal class controlPanelProducto
     {
-        panelProducto controladoPanel = null;
-        vistaMenu menu = null;
-        public controlPanelProducto(panelProducto pasadoPanel, vistaMenu pasadoMenu)
+        panelProducto testPanel = null;
+        public controlPanelProducto(panelProducto pasadoPanel, vistaMenu pasadoMenu, string pasadaId, string pasadoName, string pasadoPrecio)
         {
-            controladoPanel = pasadoPanel;
-            menu = pasadoMenu;
-            controladoPanel.btnComprar.Click += (sender, e) => menu.controladorMenu.AbrirFormulario(new vistaListaPromociones(menu));
+            testPanel = pasadoPanel;
+            pasadoPanel.btnComprar.Click += (sender, e) => pasadoMenu.controladorMenu.AbrirFormulario(new vistaListaPromociones(pasadoMenu, pasadoName, pasadoPrecio));
+
+            dtoPanelProducto infoEste = new dtoPanelProducto();
+
+            infoEste.ProductoName = pasadoName;
+            infoEste.ProductoPrecio = pasadoPrecio;
+
+            pasadoPanel.lblName.Text = pasadoName;
+            pasadoPanel.lblPrice.Text = pasadoPrecio;
         }
+
+
+        //public void populate()
+        //{
+        //    daoPanelProducto daoThis = new daoPanelProducto();
+        //}
     }
 }

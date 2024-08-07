@@ -1,4 +1,5 @@
-﻿using BarberOS.Vista;
+﻿using BarberOS.Modelo.Dao;
+using BarberOS.Vista;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -14,79 +15,49 @@ namespace BarberOS.Controlador
     {
         private vistaMenu menuForm;
         private vistaListaPersonalG controladaVista;
+        private daoListaPersonalG dao = new daoListaPersonalG();
 
         public controlListaPersonalG(vistaListaPersonalG vistaPasada ,vistaMenu passedMenuForm)
         {
             controladaVista = vistaPasada;
             menuForm = passedMenuForm;
+
             controladaVista.btnActualizarEmpleados.Click += (sender, e) => getData();
             controladaVista.btnBorrarEmpleados.Click += (sender, e) => deleteData();
+            controladaVista.btnAgregarEmpleados.Click += (sender, e) => insertData();
             controladaVista.btnACortes.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaCortesG(passedMenuForm));
+            controladaVista.btnActualizarEmpleados2.Click += (sender, e) => updateData();
             getData();
+        }
+
+        public void updateData()
+        {
+            vistaActualizarPersonal actualizar;
+            if (controladaVista.listEmpleados.SelectedItems.Count > 0)
+            {
+                string selectedId = controladaVista.listEmpleados.SelectedItems[0].Text;
+                actualizar = new vistaActualizarPersonal(selectedId);
+                actualizar.Show();
+            }
+        }
+
+        public void insertData()
+        {
+            vistaAgregarPersonal agregarPersonal = new vistaAgregarPersonal();
+            agregarPersonal.Show();
         }
 
         public void getData()
         {
-            try
-            {
-                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
-                using (SqlConnection conexion = new SqlConnection(cnn))
-                {
-                    conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM tbUser", conexion))
-                    {
-                        SqlDataReader reader = cmd.ExecuteReader();
-
-                        controladaVista.listEmpleados.Items.Clear();
-
-                        while (reader.Read())
-                        {
-                            ListViewItem item = new ListViewItem(reader["userId"].ToString());
-                            item.SubItems.Add(reader["userName"].ToString());
-                            item.SubItems.Add(reader["userPass"].ToString());
-                            item.SubItems.Add(reader["userRealName"].ToString());
-                            item.SubItems.Add(reader["userRole"].ToString());
-                            item.SubItems.Add(reader["userId"].ToString());
-                            controladaVista.listEmpleados.Items.Add(item);
-                        }
-
-                        reader.Close();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+            dao.Populate(controladaVista);
         }
 
         public void deleteData()
         {
             if (controladaVista.listEmpleados.SelectedItems.Count > 0)
-            {
-                string selectedId = controladaVista.listEmpleados.SelectedItems[0].Text;
-                try
-                {
-                    string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
-                    using (SqlConnection conexion = new SqlConnection(cnn))
-                    {
-                        conexion.Open();
-                        string sql = "DELETE FROM tbUser WHERE userId = @toDelete";
+                dao.Delete(controladaVista);
 
-                        using (SqlCommand cmd = new SqlCommand(sql, conexion))
-                        {
-                            cmd.Parameters.AddWithValue("@toDelete", selectedId);
-                            int rowsAffected = cmd.ExecuteNonQuery();
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
                 getData();
-            }
         }
     }
 }
-

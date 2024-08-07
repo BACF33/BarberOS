@@ -1,4 +1,5 @@
-﻿using BarberOS.Vista;
+﻿using BarberOS.Modelo.Dao;
+using BarberOS.Vista;
 using BarberOS.Vistas;
 using System;
 using System.Collections.Generic;
@@ -22,30 +23,7 @@ namespace BarberOS.Controlador
 
         public void agregarPersonal() 
         {
-            try
-            {
-                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
-                using (SqlConnection conexion = new SqlConnection(cnn))
-                {
-                    conexion.Open();
-                    string sql = "INSERT INTO tbUser (userName, userPass, userRealName, userRole) " +
-                                 "VALUES (@userName, @userPass, @userRealName, @userRole)";
-
-                    using (SqlCommand cmd = new SqlCommand(sql, conexion))
-                    {
-                        cmd.Parameters.AddWithValue("@userName", controladaVista.txtNuevoNombre.Text);
-                        cmd.Parameters.AddWithValue("@userPass", controladaVista.txtNuevaContraseña.Text);
-                        cmd.Parameters.AddWithValue("@userRealName", controladaVista.txtNuevoFull.Text);
-                        cmd.Parameters.AddWithValue("@userRole", controladaVista.txtNuevoCargo.Text);
-
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+            daoAgregarPersonal daoThis = new daoAgregarPersonal(controladaVista);
         }
     }
 }

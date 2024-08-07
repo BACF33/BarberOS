@@ -1,4 +1,5 @@
-﻿using BarberOS.Vista;
+﻿using BarberOS.Modelo.Dao;
+using BarberOS.Vista;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -14,6 +15,7 @@ namespace BarberOS.Controlador
     {
         private vistaMenu menuForm;
         private vistaListaPromocionesG controladaVista;
+        private daoListaPromocionesG dao = new daoListaPromocionesG();
         public controlListaPromocionesG(vistaListaPromocionesG passedVista, vistaMenu passedMenu)
         {
             menuForm = passedMenu;
@@ -21,76 +23,39 @@ namespace BarberOS.Controlador
             controladaVista.btnActualizarPromocion.Click += (sender, e) => getData();
             controladaVista.btnBorrarPromocion.Click += (sender, e) => deleteData();
             controladaVista.btnAgregarPromocion.Click += (sender, e) => insertData();
+            controladaVista.btnActualizarPromocion2.Click += (sender, e) => updateData();
             getData();
         }
 
         public void getData()
         {
-            try
-            {
-                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
-                using (SqlConnection conexion = new SqlConnection(cnn))
-                {
-                    conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM tbPromociones", conexion))
-                    {
-                        SqlDataReader reader = cmd.ExecuteReader();
-
-                        controladaVista.listPromociones.Items.Clear();
-
-                        while (reader.Read())
-                        {
-                            ListViewItem item = new ListViewItem(reader["promocionId"].ToString());
-                            item.SubItems.Add(reader["promocionNombre"].ToString());
-                            item.SubItems.Add(reader["promocionPrecio"].ToString());
-                            item.SubItems.Add(reader["promocionTipo"].ToString());
-                            item.SubItems.Add(reader["promocionPoder"].ToString());
-                            item.SubItems.Add(reader["promocionId"].ToString());
-                            controladaVista.listPromociones.Items.Add(item);
-                        }
-
-                        reader.Close();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+            dao.Populate(controladaVista);
         }
 
         public void deleteData()
         {
             if (controladaVista.listPromociones.SelectedItems.Count > 0)
-            {
-                string selectedId = controladaVista.listPromociones.SelectedItems[0].Text;
-                try
-                {
-                    string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
-                    using (SqlConnection conexion = new SqlConnection(cnn))
-                    {
-                        conexion.Open();
-                        string sql = "DELETE FROM tbPromociones WHERE userId = @toDelete";
+                dao.Delete(controladaVista);
 
-                        using (SqlCommand cmd = new SqlCommand(sql, conexion))
-                        {
-                            cmd.Parameters.AddWithValue("@toDelete", selectedId);
-                            int rowsAffected = cmd.ExecuteNonQuery();
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-                getData();
-            }
+            getData();
         }
 
         public void insertData()
         {
             vistaAgregarPromocion agregarPromocion = new vistaAgregarPromocion();
             agregarPromocion.Show();
+        }
+
+        public void updateData()
+        {
+            vistaActualizarPromocion actualizar;
+            if (controladaVista.listPromociones.SelectedItems.Count > 0)
+            {
+                MessageBox.Show("aea");
+                string selectedId = controladaVista.listPromociones.SelectedItems[0].Text;
+                actualizar = new vistaActualizarPromocion(selectedId);
+                actualizar.Show();
+            }
         }
     }
 }

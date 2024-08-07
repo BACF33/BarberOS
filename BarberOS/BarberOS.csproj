@@ -73,9 +73,15 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\controlActualizarCliente.cs" />
+    <Compile Include="Controlador\controlActualizarCortes.cs" />
+    <Compile Include="Controlador\controlActualizarPersonal.cs" />
+    <Compile Include="Controlador\controlActualizarPromocion.cs" />
+    <Compile Include="Controlador\controlAgregarCliente.cs" />
     <Compile Include="Controlador\controlAgregarPersonal.cs" />
     <Compile Include="Controlador\controlAgregarProducto.cs" />
     <Compile Include="Controlador\controlAgregarPromocion.cs" />
+    <Compile Include="Controlador\controlBienVenida.cs" />
     <Compile Include="Controlador\controlInicio.cs" />
     <Compile Include="Controlador\controlInicioGestion.cs" />
     <Compile Include="Controlador\controlListaClientesG.cs" />
@@ -85,13 +91,54 @@
     <Compile Include="Controlador\controlListaPersonalG.cs" />
     <Compile Include="Controlador\controlListaPromociones.cs" />
     <Compile Include="Controlador\controlListaPromocionesG.cs" />
+    <Compile Include="Controlador\controlListaRegistros.cs" />
     <Compile Include="Controlador\controlLogin.cs" />
     <Compile Include="Controlador\controlMenu.cs" />
     <Compile Include="Controlador\controlPanelBarbero.cs" />
     <Compile Include="Controlador\controlPanelProducto.cs" />
     <Compile Include="Controlador\controlPanelPromocion.cs" />
+    <Compile Include="Controlador\controlTotal.cs" />
+    <Compile Include="Modelo\Dao\daoActualizarCliente.cs" />
+    <Compile Include="Modelo\Dao\daoActualizarCorte.cs" />
+    <Compile Include="Modelo\Dao\daoActualizarPersonal.cs" />
+    <Compile Include="Modelo\Dao\daoActualizarPromocion.cs" />
+    <Compile Include="Modelo\Dao\daoAgregarCliente.cs" />
+    <Compile Include="Modelo\Dao\daoAgregarPersonal.cs" />
+    <Compile Include="Modelo\Dao\daoAgregarProducto.cs" />
+    <Compile Include="Modelo\Dao\daoAgregarPromocion.cs" />
+    <Compile Include="Modelo\Dao\daoControlTotal.cs" />
+    <Compile Include="Modelo\Dao\daoListaClientesG.cs" />
+    <Compile Include="Modelo\Dao\daoListaCortes.cs" />
+    <Compile Include="Modelo\Dao\daoListaCortesG.cs" />
+    <Compile Include="Modelo\Dao\daoListaPersonal.cs" />
+    <Compile Include="Modelo\Dao\daoListaPersonalG.cs" />
+    <Compile Include="Modelo\Dao\daoListaPromocionesG.cs" />
+    <Compile Include="Modelo\Dao\daoListaRegistros.cs" />
+    <Compile Include="Modelo\Dao\daoLogin.cs" />
+    <Compile Include="Modelo\Dto\dtoLogin.cs" />
+    <Compile Include="Modelo\Dto\dtoPanelBarbero.cs" />
+    <Compile Include="Modelo\Dto\dtoPanelProducto.cs" />
+    <Compile Include="Modelo\Dto\dtoPanelPromocion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\vistaActualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaActualizarCliente.Designer.cs">
+      <DependentUpon>vistaActualizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaActualizarCortes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaActualizarCortes.Designer.cs">
+      <DependentUpon>vistaActualizarCortes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\guardado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\guardado.Designer.cs">
+      <DependentUpon>guardado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\panelBarbero.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -110,6 +157,24 @@
     <Compile Include="Vista\panelPromocion.Designer.cs">
       <DependentUpon>panelPromocion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\vistaActualizarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaActualizarPersonal.Designer.cs">
+      <DependentUpon>vistaActualizarPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaActualizarPromocion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaActualizarPromocion.Designer.cs">
+      <DependentUpon>vistaActualizarPromocion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaAgregarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaAgregarCliente.Designer.cs">
+      <DependentUpon>vistaAgregarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\vistaAgregarPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +192,12 @@
     </Compile>
     <Compile Include="Vista\vistaAgregarPromocion.Designer.cs">
       <DependentUpon>vistaAgregarPromocion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaBienVenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaBienVenida.Designer.cs">
+      <DependentUpon>vistaBienVenida.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\vistaInicio.cs">
       <SubType>Form</SubType>
@@ -246,6 +317,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vista\guardado.resx">
+      <DependentUpon>guardado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\panelBarbero.resx">
       <DependentUpon>panelBarbero.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +328,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\panelPromocion.resx">
       <DependentUpon>panelPromocion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaActualizarCliente.resx">
+      <DependentUpon>vistaActualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaActualizarCortes.resx">
+      <DependentUpon>vistaActualizarCortes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaActualizarPersonal.resx">
+      <DependentUpon>vistaActualizarPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaActualizarPromocion.resx">
+      <DependentUpon>vistaActualizarPromocion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaAgregarCliente.resx">
+      <DependentUpon>vistaAgregarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaAgregarPersonal.resx">
       <DependentUpon>vistaAgregarPersonal.cs</DependentUpon>
@@ -266,6 +355,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaBarberos.resx">
       <DependentUpon>vistaBarberos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaBienVenida.resx">
+      <DependentUpon>vistaBienVenida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaCortes.resx">
       <DependentUpon>vistaCortes.cs</DependentUpon>
@@ -404,10 +496,7 @@
   <ItemGroup>
     <None Include="Resources\barbe.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modelo\Dao\" />
-    <Folder Include="Modelo\Dto\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\00third-small.png" />
   </ItemGroup>
