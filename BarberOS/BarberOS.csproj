@@ -81,7 +81,6 @@
     <Compile Include="Controlador\controlAgregarPersonal.cs" />
     <Compile Include="Controlador\controlAgregarProducto.cs" />
     <Compile Include="Controlador\controlAgregarPromocion.cs" />
-    <Compile Include="Controlador\controlBienVenida.cs" />
     <Compile Include="Controlador\controlInicio.cs" />
     <Compile Include="Controlador\controlInicioGestion.cs" />
     <Compile Include="Controlador\controlListaClientesG.cs" />
@@ -97,6 +96,7 @@
     <Compile Include="Controlador\controlPanelBarbero.cs" />
     <Compile Include="Controlador\controlPanelProducto.cs" />
     <Compile Include="Controlador\controlPanelPromocion.cs" />
+    <Compile Include="Controlador\controlReestablecerAdmin.cs" />
     <Compile Include="Controlador\controlTotal.cs" />
     <Compile Include="Modelo\Dao\daoActualizarCliente.cs" />
     <Compile Include="Modelo\Dao\daoActualizarCorte.cs" />
@@ -115,12 +115,28 @@
     <Compile Include="Modelo\Dao\daoListaPromocionesG.cs" />
     <Compile Include="Modelo\Dao\daoListaRegistros.cs" />
     <Compile Include="Modelo\Dao\daoLogin.cs" />
+    <Compile Include="Modelo\Dao\daoRestablecerAdmin.cs" />
+    <Compile Include="Modelo\Dto\dtoAgregarCliente.cs" />
+    <Compile Include="Modelo\Dto\dtoAgregarPersonal.cs" />
     <Compile Include="Modelo\Dto\dtoLogin.cs" />
     <Compile Include="Modelo\Dto\dtoPanelBarbero.cs" />
     <Compile Include="Modelo\Dto\dtoPanelProducto.cs" />
     <Compile Include="Modelo\Dto\dtoPanelPromocion.cs" />
+    <Compile Include="Modelo\Dto\dtoRestablecerAdmin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\vistaPerfilUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaPerfilUsuario.Designer.cs">
+      <DependentUpon>vistaPerfilUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaReestablecerAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaReestablecerAdmin.Designer.cs">
+      <DependentUpon>vistaReestablecerAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\vistaActualizarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,12 +208,6 @@
     </Compile>
     <Compile Include="Vista\vistaAgregarPromocion.Designer.cs">
       <DependentUpon>vistaAgregarPromocion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\vistaBienVenida.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\vistaBienVenida.Designer.cs">
-      <DependentUpon>vistaBienVenida.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\vistaInicio.cs">
       <SubType>Form</SubType>
@@ -356,9 +366,6 @@
     <EmbeddedResource Include="Vista\vistaBarberos.resx">
       <DependentUpon>vistaBarberos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaBienVenida.resx">
-      <DependentUpon>vistaBienVenida.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaCortes.resx">
       <DependentUpon>vistaCortes.cs</DependentUpon>
     </EmbeddedResource>
@@ -409,6 +416,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaRecompensas.resx">
       <DependentUpon>vistaRecompensas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaReestablecerAdmin.resx">
+      <DependentUpon>vistaReestablecerAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

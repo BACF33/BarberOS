@@ -39,9 +39,11 @@
             this.btnBorrarEmpleados = new System.Windows.Forms.Button();
             this.btnACortes = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnActualizarEmpleados2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -92,7 +94,6 @@
             this.btnAgregarEmpleados.TabIndex = 1;
             this.btnAgregarEmpleados.Text = "Agregar";
             this.btnAgregarEmpleados.UseVisualStyleBackColor = true;
-            this.btnAgregarEmpleados.Click += new System.EventHandler(this.btnAgregarEmpleados_Click);
             // 
             // btnActualizarEmpleados
             // 
@@ -128,6 +129,8 @@
             this.flowLayoutPanel1.Controls.Add(this.btnActualizarEmpleados);
             this.flowLayoutPanel1.Controls.Add(this.btnBorrarEmpleados);
             this.flowLayoutPanel1.Controls.Add(this.btnActualizarEmpleados2);
+            this.flowLayoutPanel1.Controls.Add(this.btnSearch);
+            this.flowLayoutPanel1.Controls.Add(this.txtSearch);
             this.flowLayoutPanel1.Controls.Add(this.listEmpleados);
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -135,15 +138,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(696, 450);
             this.flowLayoutPanel1.TabIndex = 11;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.btnACortes);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(702, 0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(98, 450);
-            this.flowLayoutPanel2.TabIndex = 12;
             // 
             // btnActualizarEmpleados2
             // 
@@ -163,6 +157,31 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.btnACortes);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(702, 0);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(98, 450);
+            this.flowLayoutPanel2.TabIndex = 12;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(408, 3);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(157, 20);
+            this.txtSearch.TabIndex = 10;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(327, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 11;
+            this.btnSearch.Text = "Buscar";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
             // vistaListaPersonalG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,6 +192,7 @@
             this.Name = "vistaListaPersonalG";
             this.Text = "vistaListaBarbero";
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -193,5 +213,7 @@
         public System.Windows.Forms.Button btnACortes;
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.Button btnActualizarEmpleados2;
+        public System.Windows.Forms.TextBox txtSearch;
+        public System.Windows.Forms.Button btnSearch;
     }
 }

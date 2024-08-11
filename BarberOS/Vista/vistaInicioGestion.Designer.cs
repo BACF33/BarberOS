@@ -43,19 +43,19 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pnlAdmin = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.pnlAdmin.SuspendLayout();
             this.SuspendLayout();
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Coral;
-            this.button3.Location = new System.Drawing.Point(138, 276);
+            this.button3.Location = new System.Drawing.Point(90, 243);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(230, 55);
             this.button3.TabIndex = 34;
@@ -66,7 +66,7 @@
             // 
             this.btnClientes.BackColor = System.Drawing.Color.Blue;
             this.btnClientes.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnClientes.Location = new System.Drawing.Point(138, 326);
+            this.btnClientes.Location = new System.Drawing.Point(90, 293);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(118, 114);
             this.btnClientes.TabIndex = 36;
@@ -77,7 +77,7 @@
             // 
             this.btnPersonal.BackColor = System.Drawing.Color.Red;
             this.btnPersonal.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPersonal.Location = new System.Drawing.Point(251, 326);
+            this.btnPersonal.Location = new System.Drawing.Point(203, 293);
             this.btnPersonal.Name = "btnPersonal";
             this.btnPersonal.Size = new System.Drawing.Size(117, 114);
             this.btnPersonal.TabIndex = 37;
@@ -86,7 +86,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(457, 331);
+            this.button6.Location = new System.Drawing.Point(419, 298);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(27, 109);
             this.button6.TabIndex = 41;
@@ -95,7 +95,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(660, 331);
+            this.button5.Location = new System.Drawing.Point(622, 298);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(27, 109);
             this.button5.TabIndex = 40;
@@ -105,7 +105,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Coral;
-            this.button4.Location = new System.Drawing.Point(457, 276);
+            this.button4.Location = new System.Drawing.Point(419, 243);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(230, 55);
             this.button4.TabIndex = 38;
@@ -117,7 +117,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(574, 349);
+            this.label1.Location = new System.Drawing.Point(536, 316);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 43;
@@ -128,7 +128,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(574, 390);
+            this.label2.Location = new System.Drawing.Point(536, 357);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 44;
@@ -138,7 +138,7 @@
             // 
             this.button12.BackColor = System.Drawing.Color.Coral;
             this.button12.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button12.Location = new System.Drawing.Point(457, 194);
+            this.button12.Location = new System.Drawing.Point(419, 150);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(101, 36);
             this.button12.TabIndex = 46;
@@ -148,7 +148,7 @@
             // btnRegistros
             // 
             this.btnRegistros.BackColor = System.Drawing.Color.Coral;
-            this.btnRegistros.Location = new System.Drawing.Point(589, 194);
+            this.btnRegistros.Location = new System.Drawing.Point(551, 150);
             this.btnRegistros.Name = "btnRegistros";
             this.btnRegistros.Size = new System.Drawing.Size(98, 36);
             this.btnRegistros.TabIndex = 47;
@@ -158,7 +158,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::BarberOS.Properties.Resources.registros;
-            this.pictureBox5.Location = new System.Drawing.Point(589, 88);
+            this.pictureBox5.Location = new System.Drawing.Point(551, 44);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(98, 100);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -168,7 +168,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::BarberOS.Properties.Resources.grafico;
-            this.pictureBox4.Location = new System.Drawing.Point(457, 88);
+            this.pictureBox4.Location = new System.Drawing.Point(419, 44);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(101, 100);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,7 +178,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.DarkOrange;
-            this.pictureBox3.Location = new System.Drawing.Point(138, 66);
+            this.pictureBox3.Location = new System.Drawing.Point(90, 34);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(230, 164);
             this.pictureBox3.TabIndex = 45;
@@ -187,7 +187,7 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::BarberOS.Properties.Resources.dinero;
-            this.pictureBox12.Location = new System.Drawing.Point(490, 349);
+            this.pictureBox12.Location = new System.Drawing.Point(452, 316);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(68, 68);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -197,42 +197,40 @@
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.SystemColors.InfoText;
-            this.pictureBox10.Location = new System.Drawing.Point(457, 276);
+            this.pictureBox10.Location = new System.Drawing.Point(419, 243);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(230, 164);
             this.pictureBox10.TabIndex = 39;
             this.pictureBox10.TabStop = false;
             // 
-            // pictureBox11
+            // pnlAdmin
             // 
-            this.pictureBox11.BackColor = System.Drawing.SystemColors.InfoText;
-            this.pictureBox11.Location = new System.Drawing.Point(138, 276);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(230, 164);
-            this.pictureBox11.TabIndex = 35;
-            this.pictureBox11.TabStop = false;
+            this.pnlAdmin.Controls.Add(this.btnPersonal);
+            this.pnlAdmin.Controls.Add(this.label2);
+            this.pnlAdmin.Controls.Add(this.button3);
+            this.pnlAdmin.Controls.Add(this.btnClientes);
+            this.pnlAdmin.Controls.Add(this.pictureBox5);
+            this.pnlAdmin.Controls.Add(this.label1);
+            this.pnlAdmin.Controls.Add(this.pictureBox4);
+            this.pnlAdmin.Controls.Add(this.pictureBox12);
+            this.pnlAdmin.Controls.Add(this.pictureBox3);
+            this.pnlAdmin.Controls.Add(this.button6);
+            this.pnlAdmin.Controls.Add(this.btnRegistros);
+            this.pnlAdmin.Controls.Add(this.button5);
+            this.pnlAdmin.Controls.Add(this.button12);
+            this.pnlAdmin.Controls.Add(this.button4);
+            this.pnlAdmin.Controls.Add(this.pictureBox10);
+            this.pnlAdmin.Location = new System.Drawing.Point(48, 33);
+            this.pnlAdmin.Name = "pnlAdmin";
+            this.pnlAdmin.Size = new System.Drawing.Size(702, 427);
+            this.pnlAdmin.TabIndex = 50;
             // 
             // vistaInicioGestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.btnRegistros);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.btnPersonal);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.btnClientes);
-            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.pnlAdmin);
             this.Name = "vistaInicioGestion";
             this.Text = "vistaInicioGestion";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -240,15 +238,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.pnlAdmin.ResumeLayout(false);
+            this.pnlAdmin.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
@@ -263,5 +260,6 @@
         public System.Windows.Forms.Button btnPersonal;
         public System.Windows.Forms.Button btnClientes;
         public System.Windows.Forms.Button btnRegistros;
+        public System.Windows.Forms.Panel pnlAdmin;
     }
 }

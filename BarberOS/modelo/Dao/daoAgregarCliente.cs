@@ -1,4 +1,5 @@
-﻿using BarberOS.Vista;
+﻿using BarberOS.Modelo.Dto;
+using BarberOS.Vista;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -10,9 +11,9 @@ using System.Windows;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoAgregarCliente
+    internal class daoAgregarCliente : dtoAgregarPersonal
     {
-        public daoAgregarCliente(vistaAgregarCliente controladaVista)
+        public void agregar()
         {
             try
             {
@@ -20,15 +21,22 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    string sql = "INSERT INTO tbUser (userName, userPass, userPoints, userRole) " +
-                                 "VALUES (@userName, @userPass, @userPoints, @userRole)";
 
-                    using (SqlCommand cmd = new SqlCommand(sql, conexion))
+                    string query = @"
+                    INSERT INTO users (userName, userPassword, userPoints, userRole)
+                    VALUES (
+                    @userName, 
+                    @userPassword, 
+                    @userPoints, 
+                    (SELECT roleId FROM userRoles WHERE roleName = @roleName)
+                    )";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
-                        cmd.Parameters.AddWithValue("@userName", controladaVista.txtNuevoNombre.Text);
-                        cmd.Parameters.AddWithValue("@userPass", controladaVista.txtNuevaContraseña.Text);
-                        cmd.Parameters.AddWithValue("@userPoints", controladaVista.txtNuevoFull.Text);
-                        cmd.Parameters.AddWithValue("@userRole", controladaVista.txtNuevoCargo.Text);
+                        cmd.Parameters.AddWithValue("@userName", UserName);
+                        cmd.Parameters.AddWithValue("@userPassword", Password);
+                        cmd.Parameters.AddWithValue("@userPoints", Points);
+                        cmd.Parameters.AddWithValue("@roleName", "Cliente");
 
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }

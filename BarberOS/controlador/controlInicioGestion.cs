@@ -17,15 +17,6 @@ namespace BarberOS.Controlador
             controladaVista = vistaPasada;
             menuForm = passedMenuForm;
 
-            if (menuForm.controladorMenu.userValues.Role == "Cliente")
-            {
-                controladaVista.btnPersonal.Visible = false;
-                controladaVista.btnClientes.Visible = false;
-                controladaVista.btnRegistros.Visible = false;
-            }
-
-
-
 
 
             controladaVista.btnPersonal.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new vistaListaPersonalG(menuForm));

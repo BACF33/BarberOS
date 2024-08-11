@@ -42,6 +42,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnRestPass = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -200,12 +201,22 @@
             this.panel2.Size = new System.Drawing.Size(784, 43);
             this.panel2.TabIndex = 22;
             // 
+            // btnRestPass
+            // 
+            this.btnRestPass.Location = new System.Drawing.Point(633, 462);
+            this.btnRestPass.Name = "btnRestPass";
+            this.btnRestPass.Size = new System.Drawing.Size(139, 50);
+            this.btnRestPass.TabIndex = 23;
+            this.btnRestPass.Text = "Reestablecer contraseña";
+            this.btnRestPass.UseVisualStyleBackColor = true;
+            // 
             // vistaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(154)))), ((int)(((byte)(177)))));
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.btnRestPass);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnLogin);
@@ -251,5 +262,6 @@
         public System.Windows.Forms.Button btnLogin;
         public System.Windows.Forms.TextBox txtUser;
         public System.Windows.Forms.TextBox txtPassword;
+        public System.Windows.Forms.Button btnRestPass;
     }
 }

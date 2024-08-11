@@ -1,4 +1,5 @@
 ﻿using BarberOS.Controlador;
+using BarberOS.Modelo.Dto;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,12 +12,12 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaBienVenida : Form
+    public partial class vistaReestablecerAdmin : Form
     {
-        public vistaBienVenida()
+        public vistaReestablecerAdmin()
         {
             InitializeComponent();
-            controlBienVenida controladorVista = new controlBienVenida();
+            controlReestablecerAdmin reestablecer = new controlReestablecerAdmin(this);
         }
     }
 }

@@ -20,7 +20,10 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM tbUser WHERE userRole = 'Cliente'", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT u.userId, u.userName, u.userPassword, u.userPoints, r.roleName " +
+                        "FROM users u " +
+                        "INNER JOIN userRoles r ON u.userRole = r.roleId " +
+                        "WHERE r.roleName = 'Cliente'", conexion))
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
@@ -30,9 +33,9 @@ namespace BarberOS.Modelo.Dao
                         {
                             ListViewItem item = new ListViewItem(reader["userId"].ToString());
                             item.SubItems.Add(reader["userName"].ToString());
-                            item.SubItems.Add(reader["userPass"].ToString());
+                            item.SubItems.Add(reader["userPassword"].ToString());
                             item.SubItems.Add(reader["userPoints"].ToString());
-                            item.SubItems.Add(reader["userRole"].ToString());
+                            item.SubItems.Add(reader["roleName"].ToString());
                             vistaPasada.listClientes.Items.Add(item);
                         }
 
@@ -46,7 +49,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void Delete(vistaListaClientesG vistaPasada)
+            public void Delete(vistaListaClientesG vistaPasada)
         {
             string selectedId = vistaPasada.listClientes.SelectedItems[0].Text;
             try
@@ -55,7 +58,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    string sql = "DELETE FROM tbUser WHERE userId = @toDelete";
+                    string sql = "DELETE FROM users WHERE userId = @toDelete";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {

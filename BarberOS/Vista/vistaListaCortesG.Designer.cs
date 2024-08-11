@@ -33,6 +33,8 @@
             this.btnActualizarEmpleados = new System.Windows.Forms.Button();
             this.btnBorrarEmpleados = new System.Windows.Forms.Button();
             this.btnActualizarEmpleados2 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.listCortes = new System.Windows.Forms.ListView();
             this.corteId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.corteNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,6 +52,8 @@
             this.flowLayoutPanel1.Controls.Add(this.btnActualizarEmpleados);
             this.flowLayoutPanel1.Controls.Add(this.btnBorrarEmpleados);
             this.flowLayoutPanel1.Controls.Add(this.btnActualizarEmpleados2);
+            this.flowLayoutPanel1.Controls.Add(this.btnSearch);
+            this.flowLayoutPanel1.Controls.Add(this.txtSearch);
             this.flowLayoutPanel1.Controls.Add(this.listCortes);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(104, 0);
@@ -92,6 +96,22 @@
             this.btnActualizarEmpleados2.TabIndex = 8;
             this.btnActualizarEmpleados2.Text = "Actualizar2";
             this.btnActualizarEmpleados2.UseVisualStyleBackColor = true;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(327, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 10;
+            this.btnSearch.Text = "Buscar";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(408, 3);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(251, 20);
+            this.txtSearch.TabIndex = 9;
             // 
             // listCortes
             // 
@@ -155,6 +175,7 @@
             this.Name = "vistaListaCortesG";
             this.Text = "vistaListaCortesGcs";
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -173,5 +194,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         public System.Windows.Forms.Button btnAPersonal;
         public System.Windows.Forms.Button btnActualizarEmpleados2;
+        public System.Windows.Forms.TextBox txtSearch;
+        public System.Windows.Forms.Button btnSearch;
     }
 }

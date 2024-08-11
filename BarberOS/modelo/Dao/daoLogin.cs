@@ -21,17 +21,21 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT userName, userPoints, userRole FROM tbUser WHERE userName=@userName AND userPass=@userPass", conexion))
+                    using (SqlCommand cmd = new SqlCommand("" +
+                        "SELECT u.userPoints, r.roleName " +
+                        "FROM users u " +
+                        "INNER JOIN userRoles r ON u.userRole = r.roleId " +
+                        "WHERE u.userName = @userName AND u.userPassword = @userPassword ", conexion))
                     {
                         cmd.Parameters.AddWithValue("@userName", Username);
-                        cmd.Parameters.AddWithValue("@userPass", Password);
 
+                        cmd.Parameters.AddWithValue("@userPassword", Password);
 
                         SqlDataReader reader = cmd.ExecuteReader();
 
                         if (reader.Read())
                         {
-                            Role = reader["userRole"].ToString();
+                            Role = reader["roleName"].ToString();
                             Points = (int)reader["userPoints"];
                             return 1;
                         }

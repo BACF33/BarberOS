@@ -19,8 +19,14 @@ namespace BarberOS.Modelo.Dao
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
+                    string query = @"
+                    SELECT p.promotionId, p.promotionName, p.promotionPrice, p.promotionPower, t.promotionTypeName  
+                    FROM promotions p 
+                    INNER JOIN promotionTypes t ON p.promotionType = t.promotionTypeId ";
+
+
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM tbPromociones", conexion))
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
@@ -28,11 +34,11 @@ namespace BarberOS.Modelo.Dao
 
                         while (reader.Read())
                         {
-                            ListViewItem item = new ListViewItem(reader["promocionId"].ToString());
-                            item.SubItems.Add(reader["promocionNombre"].ToString());
-                            item.SubItems.Add(reader["promocionPrecio"].ToString());
-                            item.SubItems.Add(reader["promocionTipo"].ToString());
-                            item.SubItems.Add(reader["promocionPoder"].ToString());
+                            ListViewItem item = new ListViewItem(reader["promotionId"].ToString());
+                            item.SubItems.Add(reader["promotionName"].ToString());
+                            item.SubItems.Add(reader["promotionPrice"].ToString());
+                            item.SubItems.Add(reader["promotionTypeName"].ToString());
+                            item.SubItems.Add(reader["promotionPower"].ToString());
                             vistaPasada.listPromociones.Items.Add(item);
                         }
 

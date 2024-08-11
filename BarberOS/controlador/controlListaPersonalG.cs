@@ -27,6 +27,7 @@ namespace BarberOS.Controlador
             controladaVista.btnAgregarEmpleados.Click += (sender, e) => insertData();
             controladaVista.btnACortes.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaCortesG(passedMenuForm));
             controladaVista.btnActualizarEmpleados2.Click += (sender, e) => updateData();
+            controladaVista.btnSearch.Click += (sender, e) => searchData();
             getData();
         }
 
@@ -58,6 +59,12 @@ namespace BarberOS.Controlador
                 dao.Delete(controladaVista);
 
                 getData();
+        }
+
+        public void searchData()
+        {
+            string searchingFor = controladaVista.txtSearch.Text;
+            dao.searchData(searchingFor, controladaVista);
         }
     }
 }
