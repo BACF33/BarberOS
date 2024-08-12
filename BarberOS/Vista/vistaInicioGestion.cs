@@ -11,5 +11,6 @@ namespace BarberOS.Vista
             InitializeComponent();
             controlInicioGestion controladorInicioGestion = new controlInicioGestion(this, passedForm);
         }
+
     }
 }

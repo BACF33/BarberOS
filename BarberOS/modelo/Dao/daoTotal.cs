@@ -21,15 +21,15 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    string sql = "INSERT INTO registries (registryProductName, registryProductPrice, registryPromotionName, registryPromotionPower) " +
-                                 "VALUES (@registryProductName, @registryProductPrice, @registryPromotionName, @registryPromotionPower) ";
+                    string sql = "INSERT INTO registries (productName, productPrice, promotionName, promotionPower) " +
+                                 "VALUES (@productName, @productPrice, @promotionName, @promotionPower) ";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {
-                        cmd.Parameters.AddWithValue("@registryProductName", pasadoProducto.ProductoId);
-                        cmd.Parameters.AddWithValue("@registryProductPrice", pasadoProducto.ProductoId);
-                        cmd.Parameters.AddWithValue("@registryPromotionName", pasadaPromocion.PromocionId);
-                        cmd.Parameters.AddWithValue("@registryPromotionPower", pasadaPromocion.PromocionId);
+                        cmd.Parameters.AddWithValue("@productName", pasadoProducto.ProductoId);
+                        cmd.Parameters.AddWithValue("@productPrice", pasadoProducto.ProductoId);
+                        cmd.Parameters.AddWithValue("@promotionName", pasadaPromocion.PromocionId);
+                        cmd.Parameters.AddWithValue("@promotionPower", pasadaPromocion.PromocionId);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
                 }

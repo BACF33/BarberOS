@@ -13,5 +13,6 @@ namespace BarberOS.Vista
             InitializeComponent();
             controladorMenu = new controlMenu(this);
         }
+
     }
 }

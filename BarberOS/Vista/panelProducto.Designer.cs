@@ -34,66 +34,84 @@
             this.lblName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnComprar = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(206, 107);
+            this.label3.Location = new System.Drawing.Point(253, 154);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(46, 16);
             this.label3.TabIndex = 13;
             this.label3.Text = "Precio";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(206, 35);
+            this.label2.Location = new System.Drawing.Point(253, 65);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 12;
             this.label2.Text = "Nombre";
             // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(284, 107);
+            this.lblPrice.Location = new System.Drawing.Point(357, 154);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(67, 13);
+            this.lblPrice.Size = new System.Drawing.Size(87, 16);
             this.lblPrice.TabIndex = 9;
             this.lblPrice.Text = "Especialidad";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(284, 35);
+            this.lblName.Location = new System.Drawing.Point(357, 65);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(44, 13);
+            this.lblName.Size = new System.Drawing.Size(56, 16);
             this.lblName.TabIndex = 8;
             this.lblName.Text = "Nombre";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 63);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 159);
+            this.pictureBox1.Size = new System.Drawing.Size(212, 196);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
             // btnComprar
             // 
-            this.btnComprar.Location = new System.Drawing.Point(209, 154);
+            this.btnComprar.Location = new System.Drawing.Point(257, 212);
+            this.btnComprar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnComprar.Name = "btnComprar";
-            this.btnComprar.Size = new System.Drawing.Size(142, 38);
+            this.btnComprar.Size = new System.Drawing.Size(189, 47);
             this.btnComprar.TabIndex = 14;
             this.btnComprar.Text = "COMPRAR";
             this.btnComprar.UseVisualStyleBackColor = true;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BarberOS.Properties.Resources.pilar2;
+            this.pictureBox2.Location = new System.Drawing.Point(393, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(216, 309);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
             // panelProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnComprar);
             this.Controls.Add(this.label3);
@@ -101,9 +119,12 @@
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "panelProducto";
-            this.Size = new System.Drawing.Size(373, 225);
+            this.Size = new System.Drawing.Size(576, 312);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,5 +138,6 @@
         public System.Windows.Forms.Label lblName;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Button btnComprar;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

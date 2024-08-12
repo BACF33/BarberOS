@@ -203,6 +203,26 @@ namespace BarberOS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap casa {
+            get {
+                object obj = ResourceManager.GetObject("casa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap casa2 {
+            get {
+                object obj = ResourceManager.GetObject("casa2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap comm {
             get {
                 object obj = ResourceManager.GetObject("comm", resourceCulture);
@@ -316,6 +336,26 @@ namespace BarberOS.Properties {
         internal static System.Drawing.Bitmap Negro {
             get {
                 object obj = ResourceManager.GetObject("Negro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pilar {
+            get {
+                object obj = ResourceManager.GetObject("pilar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pilar2 {
+            get {
+                object obj = ResourceManager.GetObject("pilar2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

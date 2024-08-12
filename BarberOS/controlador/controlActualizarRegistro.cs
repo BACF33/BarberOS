@@ -11,15 +11,15 @@ namespace BarberOS.Controlador
     internal class controlActualizarRegistro
     {
             daoActualizarRegistro daoThis;
-            public controlActualizarRegistro(string selectedId, vistaActualizarPromocion pasadaVista)
+            public controlActualizarRegistro(string selectedId, vistaActualizarRegistro pasadaVista)
             {
                 pasadaVista.btnActualizar.Click += (sender, e) => execUpdate();
-                //daoThis = new daoActualizarRegistro(selectedId, pasadaVista);
+                daoThis = new daoActualizarRegistro(selectedId, pasadaVista);
             }
 
             public void execUpdate()
             {
-                //daoThis.update();
+                daoThis.update();
             }
     }
 }
