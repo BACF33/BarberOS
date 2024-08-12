@@ -97,6 +97,7 @@
     <Compile Include="Controlador\controlPanelProducto.cs" />
     <Compile Include="Controlador\controlPanelPromocion.cs" />
     <Compile Include="Controlador\controlReestablecerAdmin.cs" />
+    <Compile Include="Controlador\controlRegister.cs" />
     <Compile Include="Controlador\controlTotal.cs" />
     <Compile Include="Modelo\Dao\daoActualizarCliente.cs" />
     <Compile Include="Modelo\Dao\daoActualizarCorte.cs" />
@@ -115,6 +116,7 @@
     <Compile Include="Modelo\Dao\daoListaPromocionesG.cs" />
     <Compile Include="Modelo\Dao\daoListaRegistros.cs" />
     <Compile Include="Modelo\Dao\daoLogin.cs" />
+    <Compile Include="Modelo\Dao\daoRegister.cs" />
     <Compile Include="Modelo\Dao\daoRestablecerAdmin.cs" />
     <Compile Include="Modelo\Dto\dtoAgregarCliente.cs" />
     <Compile Include="Modelo\Dto\dtoAgregarPersonal.cs" />
@@ -122,6 +124,7 @@
     <Compile Include="Modelo\Dto\dtoPanelBarbero.cs" />
     <Compile Include="Modelo\Dto\dtoPanelProducto.cs" />
     <Compile Include="Modelo\Dto\dtoPanelPromocion.cs" />
+    <Compile Include="Modelo\Dto\dtoRegister.cs" />
     <Compile Include="Modelo\Dto\dtoRestablecerAdmin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -317,6 +320,12 @@
     <Compile Include="Vista\vistaLogin.Designer.cs">
       <DependentUpon>vistaLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\vistaRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaRegister.Designer.cs">
+      <DependentUpon>vistaRegister.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -419,6 +428,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaReestablecerAdmin.resx">
       <DependentUpon>vistaReestablecerAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaRegister.resx">
+      <DependentUpon>vistaRegister.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

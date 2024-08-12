@@ -23,6 +23,7 @@ namespace BarberOS.Controlador
             menuForm = passedMenu;
             controladaVista.btnLogin.Click += (sender, e) => login();
             controladaVista.btnRestPass.Click += (sender, e) => reestablecerContraseña();
+            controladaVista.btnCreate.Click += (sender, e) => register();
         }
 
         public void reestablecerContraseña()
@@ -62,6 +63,11 @@ namespace BarberOS.Controlador
             }
             else
                 MessageBox.Show("Login fallido");
+        }
+
+        public void register()
+        {
+            menuForm.controladorMenu.AbrirFormulario(new vistaRegister());
         }
     }
 }
