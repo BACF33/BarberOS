@@ -9,8 +9,7 @@ namespace BarberOS.Controlador
     public class controlMenu
     {
         private Form currentForm = null;
-        vistaMenu controladaVista;
-
+        vistaMenu controladaVista = null;
         public dtoLogin userValues = null;
 
         public controlMenu(vistaMenu vistaPasada)
@@ -19,7 +18,7 @@ namespace BarberOS.Controlador
             controladaVista.btnInicio.Click += (sender, e) => AbrirFormulario(new vistaInicio(controladaVista));
             controladaVista.btnCortes.Click += (sender, e) => AbrirFormulario(new vistaListaCortes(controladaVista));
             controladaVista.btnBarberos.Click += (sender, e) => AbrirFormulario(new vistaListaPersonal());
-            controladaVista.btnIngresar.Click += (sender, e) => AbrirFormulario(new vistaLogin(controladaVista));
+            controladaVista.btnIngresar.Click += (sender, e) => AbrirFormulario(new vistaLogin(vistaPasada));
         }
 
         public void AbrirFormulario(Form form)

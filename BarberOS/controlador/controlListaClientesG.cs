@@ -1,11 +1,5 @@
 ﻿using BarberOS.Modelo.Dao;
 using BarberOS.Vista;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace BarberOS.Controlador
 {
@@ -18,11 +12,14 @@ namespace BarberOS.Controlador
         {
             controladaVista = vistaPasada;
             menuForm = passedMenuForm;
+
+            //Logica de botones
             controladaVista.btnAProms.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaPromocionesG(passedMenuForm));
             controladaVista.btnAgregarClientes.Click += (sender, e) => insertData();
             controladaVista.btnActualizarClientes.Click += (sender, e) => getData();
             controladaVista.btnBorrarClientes.Click += (sender, e) => deleteData();
             controladaVista.btnActualizarClientes2.Click += (sender, e) => updateData();
+            //Logica de botones
 
             getData();
         }

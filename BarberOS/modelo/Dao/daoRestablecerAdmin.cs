@@ -24,11 +24,10 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT userName, userPoints, userRole FROM tbUser WHERE userName=@userName AND userPass=@userPass AND userRole = 'Admin'", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT userName, userPoints, userRole FROM users WHERE userName=@userName AND userPassword=@userPassword AND userRole = 1", conexion))
                     {
                         cmd.Parameters.AddWithValue("@userName", Username);
-                        cmd.Parameters.AddWithValue("@userPass", Password);
-
+                        cmd.Parameters.AddWithValue("@userPassword", Password);
 
                         SqlDataReader reader = cmd.ExecuteReader();
 
@@ -53,9 +52,9 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("UPDATE tbUser SET userPass = @userPass WHERE userName = @userName", conexion))
+                    using (SqlCommand cmd = new SqlCommand("UPDATE users SET userPassword = @userPassword WHERE userName = @userName", conexion))
                     {
-                        cmd.Parameters.AddWithValue("@userPass", NewPass);
+                        cmd.Parameters.AddWithValue("@userPassword", NewPass);
                         cmd.Parameters.AddWithValue("@userName", NewName);
 
                         SqlDataReader reader = cmd.ExecuteReader();

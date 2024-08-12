@@ -104,7 +104,7 @@
             this.pnl1.Controls.Add(this.label2);
             this.pnl1.Controls.Add(this.txtPass);
             this.pnl1.Controls.Add(this.txtUser);
-            this.pnl1.Location = new System.Drawing.Point(135, 33);
+            this.pnl1.Location = new System.Drawing.Point(489, 54);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(369, 323);
             this.pnl1.TabIndex = 6;
@@ -123,7 +123,7 @@
             // 
             // btnDo
             // 
-            this.btnDo.Location = new System.Drawing.Point(92, 157);
+            this.btnDo.Location = new System.Drawing.Point(93, 148);
             this.btnDo.Name = "btnDo";
             this.btnDo.Size = new System.Drawing.Size(75, 23);
             this.btnDo.TabIndex = 8;
@@ -133,7 +133,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(99, 91);
+            this.label5.Location = new System.Drawing.Point(73, 91);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 13);
             this.label5.TabIndex = 3;

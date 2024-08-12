@@ -30,7 +30,6 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.txtNuevoFull = new System.Windows.Forms.TextBox();
-            this.txtNuevoCargo = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -43,6 +42,7 @@
             this.txtNuevaContraseña = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtNuevoCargo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,13 +61,6 @@
             this.txtNuevoFull.Name = "txtNuevoFull";
             this.txtNuevoFull.Size = new System.Drawing.Size(217, 20);
             this.txtNuevoFull.TabIndex = 32;
-            // 
-            // txtNuevoCargo
-            // 
-            this.txtNuevoCargo.Location = new System.Drawing.Point(204, 254);
-            this.txtNuevoCargo.Name = "txtNuevoCargo";
-            this.txtNuevoCargo.Size = new System.Drawing.Size(100, 20);
-            this.txtNuevoCargo.TabIndex = 31;
             // 
             // button2
             // 
@@ -181,6 +174,13 @@
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 
+            // txtNuevoCargo
+            // 
+            this.txtNuevoCargo.Location = new System.Drawing.Point(204, 254);
+            this.txtNuevoCargo.Name = "txtNuevoCargo";
+            this.txtNuevoCargo.Size = new System.Drawing.Size(100, 20);
+            this.txtNuevoCargo.TabIndex = 31;
+            // 
             // vistaAgregarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -213,7 +213,6 @@
 
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox txtNuevoFull;
-        public System.Windows.Forms.TextBox txtNuevoCargo;
         private System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.RadioButton radioButton4;
@@ -226,5 +225,6 @@
         public System.Windows.Forms.TextBox txtNuevaContraseña;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.TextBox txtNuevoCargo;
     }
 }

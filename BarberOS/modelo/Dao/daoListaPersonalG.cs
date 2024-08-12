@@ -84,9 +84,9 @@ namespace BarberOS.Modelo.Dao
 
                     // Define the SQL query
                     string sql = @"
-                SELECT userId, userName, userPassword, userRole
+                SELECT userId, userName, userPassword, userPoints, userRole
                 FROM users
-                WHERE userName LIKE @searchingFor";
+                WHERE userName LIKE @searchingFor AND userRole = 1";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {
@@ -101,6 +101,7 @@ namespace BarberOS.Modelo.Dao
                             ListViewItem item = new ListViewItem(reader["userId"].ToString());
                             item.SubItems.Add(reader["userName"].ToString());
                             item.SubItems.Add(reader["userPassword"].ToString());
+                            item.SubItems.Add(reader["userPoints"].ToString());
                             item.SubItems.Add(reader["userRole"].ToString());
                             vistaPasada.listEmpleados.Items.Add(item);
                         }

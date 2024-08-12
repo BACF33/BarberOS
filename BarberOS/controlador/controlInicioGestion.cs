@@ -17,8 +17,6 @@ namespace BarberOS.Controlador
             controladaVista = vistaPasada;
             menuForm = passedMenuForm;
 
-
-
             controladaVista.btnPersonal.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new vistaListaPersonalG(menuForm));
             controladaVista.btnClientes.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new vistaListaClientesG(menuForm));
             controladaVista.btnRegistros.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new vistaListaRegistros());

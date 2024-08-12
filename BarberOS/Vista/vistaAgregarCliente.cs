@@ -18,5 +18,6 @@ namespace BarberOS.Vista
             InitializeComponent();
             controlAgregarCliente controladorVista = new controlAgregarCliente(this);
         }
+
     }
 }

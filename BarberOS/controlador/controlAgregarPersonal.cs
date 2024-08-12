@@ -37,7 +37,6 @@ namespace BarberOS.Controlador
             }
 
             daoThis.Points = int.Parse(controladaVista.txtNuevoFull.Text);
-            daoThis.Role = controladaVista.txtNuevoCargo.Text;
             daoThis.insert ();
         }
     }

@@ -38,7 +38,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -64,7 +63,7 @@
             // 
             this.txtUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(204)))), ((int)(((byte)(216)))));
-            this.txtUser.Location = new System.Drawing.Point(279, 247);
+            this.txtUser.Location = new System.Drawing.Point(251, 247);
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(328, 26);
@@ -75,7 +74,7 @@
             this.lblUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUser.AutoSize = true;
             this.lblUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.Location = new System.Drawing.Point(114, 247);
+            this.lblUser.Location = new System.Drawing.Point(99, 247);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(159, 18);
             this.lblUser.TabIndex = 16;
@@ -86,7 +85,7 @@
             this.lblPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(139, 300);
+            this.lblPassword.Location = new System.Drawing.Point(124, 300);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(102, 18);
             this.lblPassword.TabIndex = 16;
@@ -96,7 +95,7 @@
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(204)))), ((int)(((byte)(216)))));
-            this.txtPassword.Location = new System.Drawing.Point(279, 300);
+            this.txtPassword.Location = new System.Drawing.Point(251, 300);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(328, 26);
@@ -119,7 +118,7 @@
             // 
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.Image = global::BarberOS.Properties.Resources._61457;
-            this.pictureBox5.Location = new System.Drawing.Point(69, 285);
+            this.pictureBox5.Location = new System.Drawing.Point(54, 285);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(39, 33);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -130,7 +129,7 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::BarberOS.Properties.Resources._585e4bf3cb11b227491c339a;
-            this.pictureBox3.Location = new System.Drawing.Point(69, 240);
+            this.pictureBox3.Location = new System.Drawing.Point(54, 240);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(39, 33);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -161,17 +160,6 @@
             this.btnLogin.TabIndex = 19;
             this.btnLogin.Text = "Iniciar sesión";
             this.btnLogin.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(309, 417);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 18);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "¿Olvidó su contraseña?";
             // 
             // pictureBox6
             // 
@@ -223,7 +211,6 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lblLogin);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.txtPassword);
@@ -255,7 +242,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;

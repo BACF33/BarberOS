@@ -21,7 +21,6 @@ namespace BarberOS.Controlador
         {
             controladaVista = passedVista;
             menuForm = passedMenu;
-
             controladaVista.btnLogin.Click += (sender, e) => login();
             controladaVista.btnRestPass.Click += (sender, e) => reestablecerContraseña();
         }

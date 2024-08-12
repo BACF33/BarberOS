@@ -15,10 +15,10 @@ namespace BarberOS.Controlador
         public controlAgregarCliente(vistaAgregarCliente pasadaVista)
         {
             controladaVista = pasadaVista;
-            controladaVista.btnAgregar.Click += (sender, e) => agregarProducto();
+            controladaVista.btnAgregar.Click += (sender, e) => agregarCliente();
         }
 
-        public void agregarProducto()
+        public void agregarCliente()
         {
             daoAgregarCliente daoThis = new daoAgregarCliente();
             daoThis.UserName = controladaVista.txtNuevoNombre.Text;

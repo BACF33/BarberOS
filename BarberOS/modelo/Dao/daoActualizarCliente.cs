@@ -24,7 +24,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM tbUser WHERE userId = @selectedId", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM users WHERE userId = @selectedId", conexion))
                     {
                         cmd.Parameters.AddWithValue("@selectedId", selectedId);
                         SqlDataReader reader = cmd.ExecuteReader();
@@ -55,20 +55,17 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("UPDATE tbUser SET userName = @userName, userPoints = @userPoints, userRole = @userRole WHERE userId = @selectedId", conexion))
+                    using (SqlCommand cmd = new SqlCommand("UPDATE users SET userName = @userName, userPoints = @userPoints, userRole = @userRole WHERE userId = @selectedId", conexion))
                     {
                         cmd.Parameters.AddWithValue("@selectedId", selectedId);
                         cmd.Parameters.AddWithValue("@userName", pasadaVista.txtNuevoNombre.Text);
                         cmd.Parameters.AddWithValue("@userPoints", pasadaVista.txtNuevoPrecio.Text);
-                        cmd.Parameters.AddWithValue("@userType", pasadaVista.txtNuevoTipo.Text);
+                        cmd.Parameters.AddWithValue("@userRole", pasadaVista.txtNuevoTipo.Text);
 
                         SqlDataReader reader = cmd.ExecuteReader();
 
                         while (reader.Read())
                         {
-                            pasadaVista.txtNuevoNombre.Text = reader["userName"].ToString();
-                            pasadaVista.txtNuevoPrecio.Text = reader["userPoints"].ToString();
-                            pasadaVista.txtNuevoTipo.Text = reader["userType"].ToString();
                         }
 
                         reader.Close();
