@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace BarberOS.Modelo.Dao
 {
@@ -30,10 +31,10 @@ namespace BarberOS.Modelo.Dao
 
                         while (reader.Read())
                         {
-                            pasadaVista.tx
-                            pasadaVista.tx.Text = reader["promotionName"].ToString();
-                            pasadaVista.txtPNProducto.Text = reader["promotionPrice"].ToString();
-                            pasadaVista.txtNNPromocion.Text = reader["promotionType"].ToString();
+                            pasadaVista.txtNuevoNombre.Text = reader["productName"].ToString();
+                            pasadaVista.txtNuevoPrecio.Text = reader["productType"].ToString();
+                            pasadaVista.txtNuevoTipo.Text = reader["promotionName"].ToString();
+                            pasadaVista.txtNuevoPoder.Text = reader["promotionType"].ToString();
                         }
                         MessageBox.Show("test");
                         reader.Close();
@@ -53,20 +54,17 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("UPDATE promotions SET promotionName = @promocionNombre, promotionPrice = @promocionPrecio, promotionType = @promocionTipo WHERE promotionId = @selectedId", conexion))
+                    using (SqlCommand cmd = new SqlCommand("UPDATE Registries SET productName = @productName, productPrice = @producPrice, promotionType = @promotionName WHERE promotionPower = @promotionPower", conexion))
                     {
-                        cmd.Parameters.AddWithValue("@selectedId", selectedId);
-                        cmd.Parameters.AddWithValue("@promocionNombre", pasadaVista.txtNNProducto.Text);
-                        cmd.Parameters.AddWithValue("@promocionPrecio", pasadaVista.txtPNProducto.Text);
-                        cmd.Parameters.AddWithValue("@promocionTipo", pasadaVista.txtNNPromocion.Text);
+                        cmd.Parameters.AddWithValue("@productName", pasadaVista.txtNuevoNombre.Text);
+                        cmd.Parameters.AddWithValue("@producPrice", pasadaVista.txtNuevoPrecio.Text);
+                        cmd.Parameters.AddWithValue("@promotionName", pasadaVista.txtNuevoTipo.Text);
+                        cmd.Parameters.AddWithValue("@promotionPower", pasadaVista.txtNuevoPoder.Text);
 
                         SqlDataReader reader = cmd.ExecuteReader();
 
                         while (reader.Read())
                         {
-                            pasadaVista.txtNNProducto.Text = reader["promotionName"].ToString();
-                            pasadaVista.txtPNProducto.Text = reader["promotionPrice"].ToString();
-                            pasadaVista.txtNNPromocion.Text = reader["promotionType"].ToString();
                         }
 
                         reader.Close();

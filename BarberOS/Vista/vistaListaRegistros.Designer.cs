@@ -31,14 +31,14 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnActualizarRegistros = new System.Windows.Forms.Button();
             this.btnBorrarEmpleados = new System.Windows.Forms.Button();
+            this.btnUpdate2 = new System.Windows.Forms.Button();
             this.listRegistros = new System.Windows.Forms.ListView();
             this.registroId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.registroProductoNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.registroProductoPrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.regisroPromocionNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.registroPromocionPrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.registroPromocionPoder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.registroTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnUpdate2 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +72,15 @@
             this.btnBorrarEmpleados.Text = "Borrar";
             this.btnBorrarEmpleados.UseVisualStyleBackColor = true;
             // 
+            // btnUpdate2
+            // 
+            this.btnUpdate2.Location = new System.Drawing.Point(165, 3);
+            this.btnUpdate2.Name = "btnUpdate2";
+            this.btnUpdate2.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate2.TabIndex = 8;
+            this.btnUpdate2.Text = "Actualizar 2";
+            this.btnUpdate2.UseVisualStyleBackColor = true;
+            // 
             // listRegistros
             // 
             this.listRegistros.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -79,7 +88,7 @@
             this.registroProductoNombre,
             this.registroProductoPrecio,
             this.regisroPromocionNombre,
-            this.registroPromocionPrecio,
+            this.registroPromocionPoder,
             this.registroTotal});
             this.listRegistros.FullRowSelect = true;
             this.listRegistros.GridLines = true;
@@ -107,22 +116,13 @@
             // 
             this.regisroPromocionNombre.Text = "Nombre promocion";
             // 
-            // registroPromocionPrecio
+            // registroPromocionPoder
             // 
-            this.registroPromocionPrecio.Text = "Poder promocion";
+            this.registroPromocionPoder.Text = "Poder promocion";
             // 
             // registroTotal
             // 
             this.registroTotal.Text = "Total";
-            // 
-            // btnUpdate2
-            // 
-            this.btnUpdate2.Location = new System.Drawing.Point(165, 3);
-            this.btnUpdate2.Name = "btnUpdate2";
-            this.btnUpdate2.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate2.TabIndex = 8;
-            this.btnUpdate2.Text = "Actualizar 2";
-            this.btnUpdate2.UseVisualStyleBackColor = true;
             // 
             // vistaListaRegistros
             // 
@@ -145,7 +145,7 @@
         private System.Windows.Forms.ColumnHeader registroProductoNombre;
         private System.Windows.Forms.ColumnHeader registroProductoPrecio;
         private System.Windows.Forms.ColumnHeader regisroPromocionNombre;
-        private System.Windows.Forms.ColumnHeader registroPromocionPrecio;
+        private System.Windows.Forms.ColumnHeader registroPromocionPoder;
         private System.Windows.Forms.ColumnHeader registroTotal;
         public System.Windows.Forms.Button btnActualizarRegistros;
         public System.Windows.Forms.Button btnBorrarEmpleados;

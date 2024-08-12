@@ -37,14 +37,16 @@
             this.txtNuevoPrecio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtNuevoPoder = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNuevoTipo
             // 
-            this.txtNuevoTipo.Location = new System.Drawing.Point(204, 234);
+            this.txtNuevoTipo.Location = new System.Drawing.Point(204, 153);
             this.txtNuevoTipo.Name = "txtNuevoTipo";
-            this.txtNuevoTipo.Size = new System.Drawing.Size(100, 20);
+            this.txtNuevoTipo.Size = new System.Drawing.Size(217, 20);
             this.txtNuevoTipo.TabIndex = 70;
             // 
             // button2
@@ -68,7 +70,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 234);
+            this.label4.Location = new System.Drawing.Point(12, 153);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 13);
             this.label4.TabIndex = 63;
@@ -92,7 +94,7 @@
             // 
             // txtNuevoPrecio
             // 
-            this.txtNuevoPrecio.Location = new System.Drawing.Point(204, 93);
+            this.txtNuevoPrecio.Location = new System.Drawing.Point(204, 82);
             this.txtNuevoPrecio.Name = "txtNuevoPrecio";
             this.txtNuevoPrecio.Size = new System.Drawing.Size(217, 20);
             this.txtNuevoPrecio.TabIndex = 60;
@@ -100,7 +102,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 96);
+            this.label1.Location = new System.Drawing.Point(12, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 13);
             this.label1.TabIndex = 59;
@@ -115,11 +117,29 @@
             this.pictureBox2.TabIndex = 58;
             this.pictureBox2.TabStop = false;
             // 
+            // txtNuevoPoder
+            // 
+            this.txtNuevoPoder.Location = new System.Drawing.Point(204, 211);
+            this.txtNuevoPoder.Name = "txtNuevoPoder";
+            this.txtNuevoPoder.Size = new System.Drawing.Size(217, 20);
+            this.txtNuevoPoder.TabIndex = 72;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 211);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(123, 13);
+            this.label2.TabIndex = 71;
+            this.label2.Text = "Tipo del nuevo producto";
+            // 
             // vistaActualizarRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.txtNuevoPoder);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNuevoTipo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnActualizar);
@@ -148,5 +168,7 @@
         public System.Windows.Forms.TextBox txtNuevoPrecio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.TextBox txtNuevoPoder;
+        private System.Windows.Forms.Label label2;
     }
 }

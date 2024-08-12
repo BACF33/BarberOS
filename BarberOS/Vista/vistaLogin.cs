@@ -9,8 +9,8 @@ namespace BarberOS.Vista
 {
     public partial class vistaLogin : Form
     {
-        public vistaLogin(vistaMenu passedMenuForm)
-        {
+        public vistaLogin(vistaMenu passedMenuForm) 
+       {
             InitializeComponent();
             controlLogin controladorLogin = new controlLogin(this, passedMenuForm);
         }

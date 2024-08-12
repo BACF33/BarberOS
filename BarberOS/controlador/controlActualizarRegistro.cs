@@ -14,12 +14,12 @@ namespace BarberOS.Controlador
             public controlActualizarRegistro(string selectedId, vistaActualizarPromocion pasadaVista)
             {
                 pasadaVista.btnActualizar.Click += (sender, e) => execUpdate();
-                daoThis = new daoActualizarRegistro(selectedId, pasadaVista);
+                //daoThis = new daoActualizarRegistro(selectedId, pasadaVista);
             }
 
             public void execUpdate()
             {
-                daoThis.update();
+                //daoThis.update();
             }
     }
 }
