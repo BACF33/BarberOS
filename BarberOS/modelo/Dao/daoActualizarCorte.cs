@@ -24,7 +24,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM tbProductos WHERE productoId = @selectedId", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM products WHERE productId = @selectedId", conexion))
                     {
                         cmd.Parameters.AddWithValue("@selectedId", selectedId);
                         SqlDataReader reader = cmd.ExecuteReader();
@@ -32,9 +32,9 @@ namespace BarberOS.Modelo.Dao
                         while (reader.Read())
                         {
 
-                            pasadaVista.txtNuevoNombre.Text = reader["productoNombre"].ToString();
-                            pasadaVista.txtNuevoPrecio.Text = reader["productoPrecio"].ToString();
-                            pasadaVista.txtNuevoTipo.Text = reader["productoTipo"].ToString();
+                            pasadaVista.txtNuevoNombre.Text = reader["productName"].ToString();
+                            pasadaVista.txtNuevoPrecio.Text = reader["productPrice"].ToString();
+                            pasadaVista.txtNuevoTipo.Text = reader["productType"].ToString();
                         }
 
                         reader.Close();
@@ -55,7 +55,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("UPDATE tbProductos SET productoNombre = @productoNombre, productoPrecio = @productoPrecio, productoTipo = @productoTipo WHERE productoId = @selectedId", conexion))
+                    using (SqlCommand cmd = new SqlCommand("UPDATE products SET productName = @productoNombre, productPrice = @productoPrecio, productType = @productoTipo WHERE productId = @selectedId", conexion))
                     {
                         cmd.Parameters.AddWithValue("@selectedId", selectedId);
                         cmd.Parameters.AddWithValue("@productoNombre", pasadaVista.txtNuevoNombre.Text);
@@ -66,9 +66,9 @@ namespace BarberOS.Modelo.Dao
 
                         while (reader.Read())
                         {
-                            pasadaVista.txtNuevoNombre.Text = reader["productoNombre"].ToString();
-                            pasadaVista.txtNuevoPrecio.Text = reader["productoPrecio"].ToString();
-                            pasadaVista.txtNuevoTipo.Text = reader["productoTipo"].ToString();
+                            pasadaVista.txtNuevoNombre.Text = reader["productName"].ToString();
+                            pasadaVista.txtNuevoPrecio.Text = reader["productPrice"].ToString();
+                            pasadaVista.txtNuevoTipo.Text = reader["productType"].ToString();
                         }
 
                         reader.Close();

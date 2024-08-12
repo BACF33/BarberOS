@@ -97,7 +97,7 @@
             this.flowLayoutPanel1.ForeColor = System.Drawing.Color.DimGray;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(197, 561);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(197, 729);
             this.flowLayoutPanel1.TabIndex = 27;
             // 
             // pictureBox1
@@ -129,7 +129,7 @@
             this.PanelContenedor.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.PanelContenedor.MinimumSize = new System.Drawing.Size(800, 600);
             this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(800, 600);
+            this.PanelContenedor.Size = new System.Drawing.Size(1153, 729);
             this.PanelContenedor.TabIndex = 28;
             // 
             // vistaMenu
@@ -137,9 +137,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "vistaMenu";

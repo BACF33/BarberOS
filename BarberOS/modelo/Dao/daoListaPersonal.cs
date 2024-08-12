@@ -20,7 +20,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT userId, userName, userRole FROM tbUser WHERE userRole = 'Admin'";
+                    string query = "SELECT userId, userName, userRole FROM users WHERE userRole = 1";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {

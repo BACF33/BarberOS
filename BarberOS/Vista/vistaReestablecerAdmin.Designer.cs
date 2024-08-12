@@ -41,6 +41,9 @@
             this.txtNPass = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNUser = new System.Windows.Forms.TextBox();
+            this.btnRecoverId = new System.Windows.Forms.Button();
+            this.txtRecoverId = new System.Windows.Forms.TextBox();
+            this.txtUserId = new System.Windows.Forms.TextBox();
             this.pnl1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -104,7 +107,7 @@
             this.pnl1.Controls.Add(this.label2);
             this.pnl1.Controls.Add(this.txtPass);
             this.pnl1.Controls.Add(this.txtUser);
-            this.pnl1.Location = new System.Drawing.Point(489, 54);
+            this.pnl1.Location = new System.Drawing.Point(135, 34);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(369, 323);
             this.pnl1.TabIndex = 6;
@@ -116,7 +119,7 @@
             this.panel1.Controls.Add(this.txtNPass);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtNUser);
-            this.panel1.Location = new System.Drawing.Point(196, 104);
+            this.panel1.Location = new System.Drawing.Point(199, 92);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 195);
             this.panel1.TabIndex = 7;
@@ -162,11 +165,37 @@
             this.txtNUser.Size = new System.Drawing.Size(197, 20);
             this.txtNUser.TabIndex = 0;
             // 
+            // btnRecoverId
+            // 
+            this.btnRecoverId.Location = new System.Drawing.Point(185, 382);
+            this.btnRecoverId.Name = "btnRecoverId";
+            this.btnRecoverId.Size = new System.Drawing.Size(117, 47);
+            this.btnRecoverId.TabIndex = 8;
+            this.btnRecoverId.Text = "Recuerdas tu id?";
+            this.btnRecoverId.UseVisualStyleBackColor = true;
+            // 
+            // txtRecoverId
+            // 
+            this.txtRecoverId.Location = new System.Drawing.Point(308, 409);
+            this.txtRecoverId.Name = "txtRecoverId";
+            this.txtRecoverId.Size = new System.Drawing.Size(156, 20);
+            this.txtRecoverId.TabIndex = 9;
+            // 
+            // txtUserId
+            // 
+            this.txtUserId.Location = new System.Drawing.Point(308, 382);
+            this.txtUserId.Name = "txtUserId";
+            this.txtUserId.Size = new System.Drawing.Size(156, 20);
+            this.txtUserId.TabIndex = 10;
+            // 
             // vistaReestablecerAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.txtUserId);
+            this.Controls.Add(this.txtRecoverId);
+            this.Controls.Add(this.btnRecoverId);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel1);
             this.Name = "vistaReestablecerAdmin";
@@ -176,6 +205,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -193,5 +223,8 @@
         public System.Windows.Forms.Button btnDo;
         public System.Windows.Forms.TextBox txtNUser;
         public System.Windows.Forms.TextBox txtNPass;
+        public System.Windows.Forms.Button btnRecoverId;
+        public System.Windows.Forms.TextBox txtRecoverId;
+        public System.Windows.Forms.TextBox txtUserId;
     }
 }

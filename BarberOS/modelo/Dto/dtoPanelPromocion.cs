@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Modelo.Dto
 {
-    internal class dtoPanelPromocion
+    public class dtoPanelPromocion
     {
+        private int promocionId;
         private string promocionName;
         private string promocionPrecio;
         private string promocionTipo;
@@ -17,5 +18,6 @@ namespace BarberOS.Modelo.Dto
         public string ProductoPrecio { get => promocionPrecio; set => promocionPrecio = value; }
         public string PromocionTipo { get => promocionTipo; set => promocionTipo = value; }
         public string PromocionPoder { get => promocionPoder; set => promocionPoder = value; }
+        public int PromocionId { get => promocionId; set => promocionId = value; }
     }
 }

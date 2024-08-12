@@ -44,6 +44,36 @@ namespace BarberOS.Modelo.Dao
                 return -1;
             }
         }
+
+        public int restPass2()
+        {
+            try
+            {
+                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
+                using (SqlConnection conexion = new SqlConnection(cnn))
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand("SELECT userName, userPoints, userRole FROM users WHERE userId=@userId AND userName=@userName AND userRole = 1", conexion))
+                    {
+                        cmd.Parameters.AddWithValue("@userId", Id);
+                        cmd.Parameters.AddWithValue("@userName", UserName2);
+
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+                        if (reader.Read())
+                            return 1;
+                        else
+                            return 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return -1;
+            }
+        }
+
         public void doChange()
         {
             try

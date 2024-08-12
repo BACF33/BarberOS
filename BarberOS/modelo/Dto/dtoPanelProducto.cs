@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Modelo.Dto
 {
-    internal class dtoPanelProducto
+    public class dtoPanelProducto
     {
         private string productoId;
         private string productoName;

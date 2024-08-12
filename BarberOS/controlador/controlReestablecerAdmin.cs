@@ -18,6 +18,7 @@ namespace BarberOS.Controlador
         { 
             pasadaVista.btnRestablecer.Click += (sender, e) => checkAdmin();
             pasadaVista.btnDo.Click += (sender, e) => doChange();
+            pasadaVista.btnRecoverId.Click += (sender, e) => checkId();
             vistaControlada = pasadaVista;
         }
 
@@ -34,8 +35,18 @@ namespace BarberOS.Controlador
                 daoThis.Password = builder.ToString();
             }
 
-
             if (daoThis.restpass() == 1)
+            {
+                vistaControlada.pnl1.Visible = false;
+            }
+        }
+
+        public void checkId()
+        {
+            daoThis.UserName2 = vistaControlada.txtUserId.Text;
+            daoThis.Id = int.Parse(vistaControlada.txtRecoverId.Text); 
+
+            if (daoThis.restPass2() == 1)
             {
                 vistaControlada.pnl1.Visible = false;
             }

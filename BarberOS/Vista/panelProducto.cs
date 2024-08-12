@@ -13,10 +13,10 @@ namespace BarberOS.Vista
 {
     public partial class panelProducto : UserControl
     {
-        public panelProducto(vistaMenu pasadoMenu, string passedId, string passedName, string passedPrice, string passedTipo)
+        public panelProducto(vistaMenu pasadoMenu, string passedId, string passedName, string passedPrice, string passedType)
         {
             InitializeComponent();
-            controlPanelProducto pProducto = new controlPanelProducto(this, pasadoMenu, passedId, passedName, passedPrice);    
+            controlPanelProducto pProducto = new controlPanelProducto(this, pasadoMenu, passedId, passedName, passedPrice, passedType);    
         }
     }
 }

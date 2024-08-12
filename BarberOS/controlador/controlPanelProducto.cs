@@ -6,25 +6,18 @@ namespace BarberOS.Controlador
 {
     internal class controlPanelProducto
     {
-        panelProducto testPanel = null;
-        public controlPanelProducto(panelProducto pasadoPanel, vistaMenu pasadoMenu, string pasadaId, string pasadoName, string pasadoPrecio)
+        dtoPanelProducto dtoThis = new dtoPanelProducto();
+        public controlPanelProducto(panelProducto pasadoPanel, vistaMenu pasadoMenu, string passedId, string passedName, string passedPrice, string passedType)
         {
-            testPanel = pasadoPanel;
-            pasadoPanel.btnComprar.Click += (sender, e) => pasadoMenu.controladorMenu.AbrirFormulario(new vistaListaPromociones(pasadoMenu, pasadoName, pasadoPrecio));
+            dtoThis.ProductoId = passedId;
+            dtoThis.ProductoName = passedName;
+            dtoThis.ProductoPrecio = passedPrice;
+            dtoThis.ProductoTipo = passedType;
 
-            dtoPanelProducto infoEste = new dtoPanelProducto();
+            pasadoPanel.lblName.Text = dtoThis.ProductoName;
+            pasadoPanel.lblPrice.Text = dtoThis.ProductoPrecio;
 
-            infoEste.ProductoName = pasadoName;
-            infoEste.ProductoPrecio = pasadoPrecio;
-
-            pasadoPanel.lblName.Text = pasadoName;
-            pasadoPanel.lblPrice.Text = pasadoPrecio;
+            pasadoPanel.btnComprar.Click += (sender, e) => pasadoMenu.controladorMenu.AbrirFormulario(new vistaListaPromociones(pasadoMenu, dtoThis));
         }
-
-
-        //public void populate()
-        //{
-        //    daoPanelProducto daoThis = new daoPanelProducto();
-        //}
     }
 }

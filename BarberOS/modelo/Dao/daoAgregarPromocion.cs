@@ -20,7 +20,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    string sql = "INSERT INTO tbPromociones (promocionNombre, promocionPrecio, promocionPoder, promocionTipo) " +
+                    string sql = "INSERT INTO promotions (promotionName, promotionPrice, promotionPower, promotionType) " +
                                  "VALUES (@promocionNombre, @promocionPrecio, @promocionPoder, @promocionTipo)";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))

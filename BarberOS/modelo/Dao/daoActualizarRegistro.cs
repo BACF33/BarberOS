@@ -6,15 +6,14 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoActualizarPromocion
+    internal class daoActualizarRegistro
     {
         string selectedId;
-        vistaActualizarPromocion pasadaVista;
-        public daoActualizarPromocion(string selectedId2, vistaActualizarPromocion pasadaVista2)
+        vistaActualizarRegistro pasadaVista;
+        public daoActualizarRegistro(string selectedId2, vistaActualizarRegistro pasadaVista2)
         {
             selectedId = selectedId2;
             pasadaVista = pasadaVista2;
@@ -24,15 +23,15 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM promotions WHERE promotionId = @selectedId", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM registries WHERE registryId = @selectedId", conexion))
                     {
                         cmd.Parameters.AddWithValue("@selectedId", selectedId);
                         SqlDataReader reader = cmd.ExecuteReader();
 
                         while (reader.Read())
                         {
-
-                            pasadaVista.txtNNProducto.Text = reader["promotionName"].ToString();
+                            pasadaVista.tx
+                            pasadaVista.tx.Text = reader["promotionName"].ToString();
                             pasadaVista.txtPNProducto.Text = reader["promotionPrice"].ToString();
                             pasadaVista.txtNNPromocion.Text = reader["promotionType"].ToString();
                         }
@@ -81,3 +80,4 @@ namespace BarberOS.Modelo.Dao
         }
     }
 }
+

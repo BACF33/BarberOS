@@ -61,7 +61,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    string sql = "DELETE FROM productos WHERE productoId = @toDelete";
+                    string sql = "DELETE FROM products WHERE productId = @toDelete";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {

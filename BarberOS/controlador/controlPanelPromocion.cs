@@ -13,34 +13,26 @@ namespace BarberOS.Controlador
     {
         panelPromocion controladoPanel = null;
         vistaMenu menu = null;
-        string pasadoName2 = null;
-        string pasadoPrecio2 = null;
-        public controlPanelPromocion(panelPromocion pasadoPanel, vistaMenu pasadoMenu, string pasadoName, string pasadoPrecio)
+        dtoPanelProducto seleccionadoProducto = null;
+        dtoPanelPromocion infoEste = new dtoPanelPromocion();
+
+        public controlPanelPromocion(panelPromocion pasadoPanel, vistaMenu pasadoMenu, dtoPanelProducto pasadoProducto, int testId, string testName, string testPower, string testType)
         {
-            dtoPanelPromocion infoEste = new dtoPanelPromocion();
 
-            //infoEste.PromocionName = passedId;
-            //infoEste.BarberoName = passedName;
-            //infoEste.BarberoRole = passedRole;
-
-
-
-
+            infoEste.PromocionId = testId;
+            infoEste.PromocionName = testName;
+            infoEste.PromocionPoder = testPower;
+            infoEste.PromocionTipo = testType;
 
             controladoPanel = pasadoPanel;
             menu = pasadoMenu;
-            pasadoName2 = pasadoName;
-            pasadoPrecio2 = pasadoPrecio;
+            seleccionadoProducto = pasadoProducto;
 
             controladoPanel.btnAplicar.Click += (sender, e) => evaluarPuntosUsuario();
         }
         public void evaluarPuntosUsuario()
         {
-            //if (menu.controladorMenu.userValues.Points < ) 
-            //{ 
-
-            //}
-            menu.controladorMenu.AbrirFormulario(new vistaRecompensas(controladoPanel, menu, pasadoName2, pasadoPrecio2));
+            menu.controladorMenu.AbrirFormulario(new vistaRecompensas(infoEste, menu, seleccionadoProducto));
         }
     }
 }

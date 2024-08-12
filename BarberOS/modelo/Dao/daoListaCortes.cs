@@ -20,7 +20,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT productoId, productoNombre, productoPrecio, productoTipo FROM tbProductos";
+                    string query = "SELECT productId, productName, productPrice, productType FROM products";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -31,10 +31,10 @@ namespace BarberOS.Modelo.Dao
                             {
                                 string testId, testName, testPrecio, testTipo;
 
-                                testId = reader["productoId"].ToString();
-                                testName = reader["productoNombre"].ToString();
-                                testPrecio = reader["productoPrecio"].ToString();
-                                testTipo = reader["productoTipo"].ToString();
+                                testId = reader["productId"].ToString();
+                                testName = reader["productName"].ToString();
+                                testPrecio = reader["productPrice"].ToString();
+                                testTipo = reader["productType"].ToString();
                                 panelProducto panelUsado = new panelProducto(pasadoMenu, testId, testName, testPrecio, testTipo);
 
                                 enviadaVista.flpCabello.Controls.Add(panelUsado);
