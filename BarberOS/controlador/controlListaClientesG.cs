@@ -24,6 +24,8 @@ namespace BarberOS.Controlador
             //Si se presiona actualizar2 se ejecutara la funcion updateData
             controladaVista.btnActualizarClientes2.Click += (sender, e) => updateData();
 
+            controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaInicioGestion(passedMenuForm));
+
             getData();
         }
 

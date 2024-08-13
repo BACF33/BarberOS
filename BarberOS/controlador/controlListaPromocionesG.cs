@@ -24,7 +24,9 @@ namespace BarberOS.Controlador
             controladaVista.btnBorrarPromocion.Click += (sender, e) => deleteData();
             controladaVista.btnAgregarPromocion.Click += (sender, e) => insertData();
             controladaVista.btnActualizarPromocion2.Click += (sender, e) => updateData();
+            controladaVista.btnVolver.Click += (sender, e) => passedMenu.controladorMenu.AbrirFormulario(new vistaInicioGestion(passedMenu));
             getData();
+            controladaVista.btnSearch.Click += (sender, e) => searchData();
         }
 
         public void getData()
@@ -56,6 +58,12 @@ namespace BarberOS.Controlador
                 actualizar = new vistaActualizarPromocion(selectedId);
                 actualizar.Show();
             }
+        }
+
+        public void searchData()
+        {
+            string searchingFor = controladaVista.txtSearchingFor.Text;
+            dao.searchData(searchingFor, controladaVista);
         }
     }
 }

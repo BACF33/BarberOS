@@ -8,13 +8,14 @@ namespace BarberOS.Controlador
     {
         vistaListaRegistros controladaVista;
         daoListaRegistrosG daoThis;
-        public controlListaRegistros(vistaListaRegistros pasadaVista) 
+        public controlListaRegistros(vistaListaRegistros pasadaVista, vistaMenu passedMenu) 
         {
             controladaVista = pasadaVista;
             daoThis = new daoListaRegistrosG(controladaVista);
             controladaVista.btnActualizarRegistros.Click += (sender, e) => daoThis.getData();
             controladaVista.btnBorrarEmpleados.Click += (sender, e) => deleteData();
             controladaVista.btnUpdate2.Click += (sender, e) => updateData();
+            controladaVista.btnVolver.Click += (sender, e) => passedMenu.controladorMenu.AbrirFormulario(new vistaInicioGestion(passedMenu));
         }
         public void deleteData() 
         {
@@ -24,11 +25,11 @@ namespace BarberOS.Controlador
 
         public void updateData()
         {
-            vistaActualizarPersonal actualizar;
+            vistaActualizarRegistro actualizar;
             if (controladaVista.listRegistros.SelectedItems.Count > 0)
             {
                 string selectedId = controladaVista.listRegistros.SelectedItems[0].Text;
-                actualizar = new vistaActualizarPersonal(selectedId);
+                actualizar = new vistaActualizarRegistro(selectedId);
                 actualizar.Show();
             }
         }

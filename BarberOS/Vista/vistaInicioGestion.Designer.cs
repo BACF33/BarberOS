@@ -40,35 +40,33 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Coral;
-            this.button3.Location = new System.Drawing.Point(76, 68);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.BackColor = System.Drawing.Color.Gray;
+            this.button3.Location = new System.Drawing.Point(103, 140);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(563, 181);
+            this.button3.Size = new System.Drawing.Size(442, 130);
             this.button3.TabIndex = 34;
             this.button3.Text = "Informacion";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnClientes
             // 
-            this.btnClientes.BackColor = System.Drawing.Color.Gray;
+            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(104)))), ((int)(((byte)(138)))));
             this.btnClientes.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnClientes.Location = new System.Drawing.Point(76, 247);
-            this.btnClientes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClientes.Location = new System.Drawing.Point(103, 266);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(293, 403);
+            this.btnClientes.Size = new System.Drawing.Size(218, 310);
             this.btnClientes.TabIndex = 36;
             this.btnClientes.Text = "CLIENTES";
             this.btnClientes.UseVisualStyleBackColor = false;
             // 
             // btnPersonal
             // 
-            this.btnPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPersonal.BackColor = System.Drawing.Color.Coral;
             this.btnPersonal.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPersonal.Location = new System.Drawing.Point(364, 247);
-            this.btnPersonal.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPersonal.Location = new System.Drawing.Point(317, 266);
             this.btnPersonal.Name = "btnPersonal";
-            this.btnPersonal.Size = new System.Drawing.Size(275, 399);
+            this.btnPersonal.Size = new System.Drawing.Size(228, 310);
             this.btnPersonal.TabIndex = 37;
             this.btnPersonal.Text = "PERSONAL";
             this.btnPersonal.UseVisualStyleBackColor = false;
@@ -76,21 +74,20 @@
             // btnRegistros
             // 
             this.btnRegistros.BackColor = System.Drawing.Color.Coral;
-            this.btnRegistros.Location = new System.Drawing.Point(764, 520);
-            this.btnRegistros.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistros.Location = new System.Drawing.Point(623, 472);
             this.btnRegistros.Name = "btnRegistros";
-            this.btnRegistros.Size = new System.Drawing.Size(390, 138);
+            this.btnRegistros.Size = new System.Drawing.Size(327, 104);
             this.btnRegistros.TabIndex = 47;
             this.btnRegistros.Text = "REGISTROS";
             this.btnRegistros.UseVisualStyleBackColor = false;
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.Image = global::BarberOS.Properties.Resources.registros;
-            this.pictureBox5.Location = new System.Drawing.Point(764, 68);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Location = new System.Drawing.Point(623, 140);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(390, 455);
+            this.pictureBox5.Size = new System.Drawing.Size(327, 336);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 49;
             this.pictureBox5.TabStop = false;
@@ -102,19 +99,17 @@
             this.pnlAdmin.Controls.Add(this.btnClientes);
             this.pnlAdmin.Controls.Add(this.pictureBox5);
             this.pnlAdmin.Controls.Add(this.btnRegistros);
-            this.pnlAdmin.Location = new System.Drawing.Point(64, 41);
-            this.pnlAdmin.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlAdmin.Location = new System.Drawing.Point(1, 4);
             this.pnlAdmin.Name = "pnlAdmin";
-            this.pnlAdmin.Size = new System.Drawing.Size(1256, 667);
+            this.pnlAdmin.Size = new System.Drawing.Size(1132, 713);
             this.pnlAdmin.TabIndex = 50;
             // 
             // vistaInicioGestion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1348, 721);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.pnlAdmin);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "vistaInicioGestion";
             this.Text = "vistaInicioGestion";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

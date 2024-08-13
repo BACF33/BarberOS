@@ -17,7 +17,7 @@ namespace BarberOS.Controlador
         private vistaListaPersonalG controladaVista;
         private daoListaPersonalG dao = new daoListaPersonalG();
 
-        public controlListaPersonalG(vistaListaPersonalG vistaPasada ,vistaMenu passedMenuForm)
+        public controlListaPersonalG(vistaListaPersonalG vistaPasada, vistaMenu passedMenuForm)
         {
             controladaVista = vistaPasada;
             menuForm = passedMenuForm;
@@ -28,6 +28,7 @@ namespace BarberOS.Controlador
             controladaVista.btnACortes.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaCortesG(passedMenuForm));
             controladaVista.btnActualizarEmpleados2.Click += (sender, e) => updateData();
             controladaVista.btnSearch.Click += (sender, e) => searchData();
+            controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaInicioGestion(passedMenuForm));
             getData();
         }
 

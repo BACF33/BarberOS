@@ -28,96 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAProms = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAgregarClientes = new System.Windows.Forms.Button();
             this.btnActualizarClientes = new System.Windows.Forms.Button();
             this.btnBorrarClientes = new System.Windows.Forms.Button();
+            this.btnActualizarClientes2 = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.listClientes = new System.Windows.Forms.ListView();
             this.empleadoId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoContraseña = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoFull = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoCargo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnActualizarClientes2 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.btnAProms);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(702, 0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(98, 450);
-            this.flowLayoutPanel2.TabIndex = 14;
             // 
             // btnAProms
             // 
-            this.btnAProms.BackColor = System.Drawing.Color.Gold;
-            this.btnAProms.Location = new System.Drawing.Point(3, 3);
+            this.btnAProms.BackColor = System.Drawing.Color.Coral;
+            this.btnAProms.Location = new System.Drawing.Point(923, -3);
             this.btnAProms.Name = "btnAProms";
-            this.btnAProms.Size = new System.Drawing.Size(96, 456);
+            this.btnAProms.Size = new System.Drawing.Size(215, 734);
             this.btnAProms.TabIndex = 10;
             this.btnAProms.Text = "Promociones";
             this.btnAProms.UseVisualStyleBackColor = false;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.btnAgregarClientes);
-            this.flowLayoutPanel1.Controls.Add(this.btnActualizarClientes);
-            this.flowLayoutPanel1.Controls.Add(this.btnBorrarClientes);
-            this.flowLayoutPanel1.Controls.Add(this.btnActualizarClientes2);
-            this.flowLayoutPanel1.Controls.Add(this.listClientes);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(696, 450);
-            this.flowLayoutPanel1.TabIndex = 13;
-            // 
             // btnAgregarClientes
             // 
-            this.btnAgregarClientes.Location = new System.Drawing.Point(3, 3);
+            this.btnAgregarClientes.BackColor = System.Drawing.Color.Coral;
+            this.btnAgregarClientes.Location = new System.Drawing.Point(12, 12);
             this.btnAgregarClientes.Name = "btnAgregarClientes";
-            this.btnAgregarClientes.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarClientes.Size = new System.Drawing.Size(89, 46);
             this.btnAgregarClientes.TabIndex = 1;
             this.btnAgregarClientes.Text = "Agregar";
-            this.btnAgregarClientes.UseVisualStyleBackColor = true;
+            this.btnAgregarClientes.UseVisualStyleBackColor = false;
             // 
             // btnActualizarClientes
             // 
-            this.btnActualizarClientes.Location = new System.Drawing.Point(84, 3);
+            this.btnActualizarClientes.BackColor = System.Drawing.Color.Coral;
+            this.btnActualizarClientes.Location = new System.Drawing.Point(107, 12);
             this.btnActualizarClientes.Name = "btnActualizarClientes";
-            this.btnActualizarClientes.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizarClientes.Size = new System.Drawing.Size(89, 46);
             this.btnActualizarClientes.TabIndex = 6;
             this.btnActualizarClientes.Text = "Actualizar";
-            this.btnActualizarClientes.UseVisualStyleBackColor = true;
+            this.btnActualizarClientes.UseVisualStyleBackColor = false;
             // 
             // btnBorrarClientes
             // 
-            this.btnBorrarClientes.Location = new System.Drawing.Point(165, 3);
+            this.btnBorrarClientes.BackColor = System.Drawing.Color.Coral;
+            this.btnBorrarClientes.Location = new System.Drawing.Point(199, 12);
             this.btnBorrarClientes.Name = "btnBorrarClientes";
-            this.btnBorrarClientes.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrarClientes.Size = new System.Drawing.Size(89, 46);
             this.btnBorrarClientes.TabIndex = 7;
             this.btnBorrarClientes.Text = "Borrar";
-            this.btnBorrarClientes.UseVisualStyleBackColor = true;
+            this.btnBorrarClientes.UseVisualStyleBackColor = false;
+            // 
+            // btnActualizarClientes2
+            // 
+            this.btnActualizarClientes2.BackColor = System.Drawing.Color.Coral;
+            this.btnActualizarClientes2.Location = new System.Drawing.Point(294, 12);
+            this.btnActualizarClientes2.Name = "btnActualizarClientes2";
+            this.btnActualizarClientes2.Size = new System.Drawing.Size(89, 46);
+            this.btnActualizarClientes2.TabIndex = 8;
+            this.btnActualizarClientes2.Text = "Actualizar2";
+            this.btnActualizarClientes2.UseVisualStyleBackColor = false;
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.Color.Coral;
+            this.btnVolver.Location = new System.Drawing.Point(828, 12);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(89, 46);
+            this.btnVolver.TabIndex = 9;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
             // 
             // listClientes
             // 
+            this.listClientes.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.listClientes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.empleadoId,
             this.empleadoNombre,
             this.empleadoContraseña,
             this.empleadoFull,
             this.empleadoCargo});
+            this.listClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listClientes.FullRowSelect = true;
             this.listClientes.GridLines = true;
             this.listClientes.HideSelection = false;
-            this.listClientes.Location = new System.Drawing.Point(3, 32);
+            this.listClientes.Location = new System.Drawing.Point(-1, 64);
             this.listClientes.Name = "listClientes";
-            this.listClientes.Size = new System.Drawing.Size(684, 426);
+            this.listClientes.Size = new System.Drawing.Size(927, 667);
             this.listClientes.TabIndex = 0;
             this.listClientes.UseCompatibleStateImageBehavior = false;
             this.listClientes.View = System.Windows.Forms.View.Details;
@@ -129,48 +129,43 @@
             // empleadoNombre
             // 
             this.empleadoNombre.Text = "Nombre";
+            this.empleadoNombre.Width = 120;
             // 
             // empleadoContraseña
             // 
             this.empleadoContraseña.Text = "Contraseña";
+            this.empleadoContraseña.Width = 160;
             // 
             // empleadoFull
             // 
             this.empleadoFull.Text = "Puntos";
+            this.empleadoFull.Width = 120;
             // 
             // empleadoCargo
             // 
             this.empleadoCargo.Text = "Cargo";
-            // 
-            // btnActualizarClientes2
-            // 
-            this.btnActualizarClientes2.Location = new System.Drawing.Point(246, 3);
-            this.btnActualizarClientes2.Name = "btnActualizarClientes2";
-            this.btnActualizarClientes2.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizarClientes2.TabIndex = 8;
-            this.btnActualizarClientes2.Text = "Actualizar2";
-            this.btnActualizarClientes2.UseVisualStyleBackColor = true;
+            this.empleadoCargo.Width = 120;
             // 
             // vistaListaClientesG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.btnAProms);
+            this.Controls.Add(this.btnAgregarClientes);
+            this.Controls.Add(this.btnActualizarClientes);
+            this.Controls.Add(this.btnBorrarClientes);
+            this.Controls.Add(this.listClientes);
+            this.Controls.Add(this.btnActualizarClientes2);
+            this.Controls.Add(this.btnVolver);
             this.Name = "vistaListaClientesG";
             this.Text = "vistaListaClientesG";
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         public System.Windows.Forms.Button btnAProms;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         public System.Windows.Forms.Button btnAgregarClientes;
         public System.Windows.Forms.Button btnActualizarClientes;
         public System.Windows.Forms.Button btnBorrarClientes;
@@ -181,5 +176,6 @@
         private System.Windows.Forms.ColumnHeader empleadoFull;
         private System.Windows.Forms.ColumnHeader empleadoCargo;
         public System.Windows.Forms.Button btnActualizarClientes2;
+        public System.Windows.Forms.Button btnVolver;
     }
 }

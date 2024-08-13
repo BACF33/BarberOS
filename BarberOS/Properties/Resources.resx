@@ -118,11 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="barSim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barSim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imganes 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imganes 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Estrella_amarilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Estrella_amarilla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BarberOs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BarberOs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imagenes 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imagenes 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,8 +151,8 @@
   <data name="Fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BarberOs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BarberOs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="barSim2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barSim2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="barbe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\barbe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,19 +199,28 @@
   <data name="Captura" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Estrella_amarilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Estrella_amarilla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ba" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pilar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pilar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pilar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pilar2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Captura3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barSim3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barSim3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Negro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Negro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pilar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pilar2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mason" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mason.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

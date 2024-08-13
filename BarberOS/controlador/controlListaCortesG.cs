@@ -29,6 +29,7 @@ namespace BarberOS.Controlador
             controladaVista.btnAgregarEmpleados.Click += (sender, e) => insertData();
             controladaVista.btnSearch.Click += (sender, e) => searchData();
             controladaVista.btnAPersonal.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaPersonalG(passedMenuForm));
+            controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaInicioGestion(passedMenuForm));
             getData();
         }
 

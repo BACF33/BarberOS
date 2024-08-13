@@ -551,6 +551,18 @@
   <ItemGroup>
     <None Include="Resources\pilar2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barSim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barSim2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barSim3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mason.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

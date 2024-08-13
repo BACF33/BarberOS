@@ -31,10 +31,10 @@ namespace BarberOS.Modelo.Dao
 
                         while (reader.Read())
                         {
-                            pasadaVista.txtNuevoNombre.Text = reader["productName"].ToString();
-                            pasadaVista.txtNuevoPrecio.Text = reader["productType"].ToString();
-                            pasadaVista.txtNuevoTipo.Text = reader["promotionName"].ToString();
-                            pasadaVista.txtNuevoPoder.Text = reader["promotionType"].ToString();
+                            pasadaVista.txtNuevoNombre.Text = reader["registryProductName"].ToString();
+                            pasadaVista.txtNuevoPrecio.Text = reader["registryProductPrice"].ToString();
+                            pasadaVista.txtNuevoTipo.Text = reader["registryPromotionName"].ToString();
+                            pasadaVista.txtNuevoPoder.Text = reader["registryPromotionPower"].ToString();
                         }
                         MessageBox.Show("test");
                         reader.Close();
@@ -54,12 +54,12 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("UPDATE Registries SET productName = @productName, productPrice = @producPrice, promotionType = @promotionName WHERE promotionPower = @promotionPower", conexion))
+                    using (SqlCommand cmd = new SqlCommand("UPDATE registries SET registryProductName = @registryProductName, registryProductPrice = @registryProductName, registryPromotionName = @registryPromotionName WHERE registryPromotionPower = @registryPromotionName", conexion))
                     {
-                        cmd.Parameters.AddWithValue("@productName", pasadaVista.txtNuevoNombre.Text);
-                        cmd.Parameters.AddWithValue("@producPrice", pasadaVista.txtNuevoPrecio.Text);
-                        cmd.Parameters.AddWithValue("@promotionName", pasadaVista.txtNuevoTipo.Text);
-                        cmd.Parameters.AddWithValue("@promotionPower", pasadaVista.txtNuevoPoder.Text);
+                        cmd.Parameters.AddWithValue("@registryProductName", pasadaVista.txtNuevoNombre.Text);
+                        //cmd.Parameters.AddWithValue("@producPrice", pasadaVista.txtNuevoPrecio.Text);
+                        cmd.Parameters.AddWithValue("@registryPromotionName", pasadaVista.txtNuevoTipo.Text);
+                        //cmd.Parameters.AddWithValue("@promotionPower", pasadaVista.txtNuevoPoder.Text);
 
                         SqlDataReader reader = cmd.ExecuteReader();
 

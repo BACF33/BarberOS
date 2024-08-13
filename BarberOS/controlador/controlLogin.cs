@@ -23,6 +23,18 @@ namespace BarberOS.Controlador
         {
             controladaVista = passedVista;
             menuForm = passedMenu;
+
+            //Si el usuario le da a salir despues de haber iniciado sesion toda la informacion sobre el es borrada
+            //y los apartados visuales son restaurados
+            if (menuForm.btnIngresar.Text == "SALIR")
+            {
+                menuForm.btnIngresar.Text = "INGRESAR";
+                menuForm.controladorMenu.userValues.Username = null;
+                menuForm.controladorMenu.userValues.Password = null;
+                menuForm.controladorMenu.userValues.Role = null;
+                menuForm.controladorMenu.userValues.Points = 0;
+                menuForm.btnCurrentUser.Text = "No has iniciado sesion";
+            }
             //11 Las funciones de la derecha se ejecutaran cuando en la vista el usuario presione los botones designados 
 
             //Si se presiona ingresar se ejecutara la funcion login)
@@ -42,6 +54,7 @@ namespace BarberOS.Controlador
 
         public void login()
         {
+
             //1 Al dto o a la informacion que se usara en el query se le asigna la informacion que el usuario ingreso
             //en el textbox
             daoThis.Username = controladaVista.txtUser.Text;
@@ -61,9 +74,6 @@ namespace BarberOS.Controlador
             //8 Si el valor obtenido por answer es 1 (inicio de sesion correcto esto se ejecuta)
             if(answer == 1)
             {
-                menuForm.btnInicio.Visible = false;
-                menuForm.btnBarberos.Visible = false;
-                menuForm.btnCortes.Visible = false;
                 menuForm.btnIngresar.Text = "SALIR"; 
                 menuForm.btnCurrentUser.Text = daoThis.Username;
 

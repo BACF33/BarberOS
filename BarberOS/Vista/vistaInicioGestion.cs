@@ -12,5 +12,10 @@ namespace BarberOS.Vista
             //vistaInicioGestion creara su controlador al ser creada usando el constructor
             controlInicioGestion controladorInicioGestion = new controlInicioGestion(this, passedForm);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

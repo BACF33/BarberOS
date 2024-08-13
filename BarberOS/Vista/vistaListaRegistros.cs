@@ -13,10 +13,11 @@ namespace BarberOS.Vista
 {
     public partial class vistaListaRegistros : Form
     {
-        public vistaListaRegistros()
+        public vistaListaRegistros(vistaMenu passedMenu)
         {
             InitializeComponent();
-            controlListaRegistros controladorVista = new controlListaRegistros(this);
+            controlListaRegistros controladorVista = new controlListaRegistros(this, passedMenu);
         }
+
     }
 }

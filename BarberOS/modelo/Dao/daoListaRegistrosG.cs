@@ -34,8 +34,8 @@ namespace BarberOS.Modelo.Dao
                        prm.promotionName, prm.promotionPower,
                        r.registryTotal
                 FROM registries r
-                JOIN products p ON r.productName = p.productId
-                JOIN promotions prm ON r.promotionName = prm.promotionId";
+                JOIN products p ON r.registryProductName = p.productId
+                JOIN promotions prm ON r.registryPromotionName = prm.promotionId";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {

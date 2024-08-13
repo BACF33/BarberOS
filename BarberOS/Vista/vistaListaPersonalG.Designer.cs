@@ -28,43 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listEmpleados = new System.Windows.Forms.ListView();
+            this.btnACortes = new System.Windows.Forms.Button();
+            this.btnAgregarEmpleados = new System.Windows.Forms.Button();
+            this.btnActualizarEmpleados = new System.Windows.Forms.Button();
+            this.btnBorrarEmpleados = new System.Windows.Forms.Button();
             this.empleadoId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoContraseña = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoFull = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoCargo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnAgregarEmpleados = new System.Windows.Forms.Button();
-            this.btnActualizarEmpleados = new System.Windows.Forms.Button();
-            this.btnBorrarEmpleados = new System.Windows.Forms.Button();
-            this.btnACortes = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.listEmpleados = new System.Windows.Forms.ListView();
             this.btnActualizarEmpleados2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listEmpleados
+            // btnACortes
             // 
-            this.listEmpleados.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.empleadoId,
-            this.empleadoNombre,
-            this.empleadoContraseña,
-            this.empleadoFull,
-            this.empleadoCargo});
-            this.listEmpleados.FullRowSelect = true;
-            this.listEmpleados.GridLines = true;
-            this.listEmpleados.HideSelection = false;
-            this.listEmpleados.Location = new System.Drawing.Point(3, 32);
-            this.listEmpleados.Name = "listEmpleados";
-            this.listEmpleados.Size = new System.Drawing.Size(684, 426);
-            this.listEmpleados.TabIndex = 0;
-            this.listEmpleados.UseCompatibleStateImageBehavior = false;
-            this.listEmpleados.View = System.Windows.Forms.View.Details;
+            this.btnACortes.BackColor = System.Drawing.Color.Coral;
+            this.btnACortes.Location = new System.Drawing.Point(933, 2);
+            this.btnACortes.Name = "btnACortes";
+            this.btnACortes.Size = new System.Drawing.Size(238, 733);
+            this.btnACortes.TabIndex = 10;
+            this.btnACortes.Text = "Cortes";
+            this.btnACortes.UseVisualStyleBackColor = false;
+            // 
+            // btnAgregarEmpleados
+            // 
+            this.btnAgregarEmpleados.BackColor = System.Drawing.Color.Coral;
+            this.btnAgregarEmpleados.Location = new System.Drawing.Point(8, 2);
+            this.btnAgregarEmpleados.Name = "btnAgregarEmpleados";
+            this.btnAgregarEmpleados.Size = new System.Drawing.Size(95, 43);
+            this.btnAgregarEmpleados.TabIndex = 1;
+            this.btnAgregarEmpleados.Text = "Agregar";
+            this.btnAgregarEmpleados.UseVisualStyleBackColor = false;
+            // 
+            // btnActualizarEmpleados
+            // 
+            this.btnActualizarEmpleados.BackColor = System.Drawing.Color.Coral;
+            this.btnActualizarEmpleados.Location = new System.Drawing.Point(109, 2);
+            this.btnActualizarEmpleados.Name = "btnActualizarEmpleados";
+            this.btnActualizarEmpleados.Size = new System.Drawing.Size(93, 43);
+            this.btnActualizarEmpleados.TabIndex = 6;
+            this.btnActualizarEmpleados.Text = "Actualizar";
+            this.btnActualizarEmpleados.UseVisualStyleBackColor = false;
+            // 
+            // btnBorrarEmpleados
+            // 
+            this.btnBorrarEmpleados.BackColor = System.Drawing.Color.Coral;
+            this.btnBorrarEmpleados.Location = new System.Drawing.Point(208, 2);
+            this.btnBorrarEmpleados.Name = "btnBorrarEmpleados";
+            this.btnBorrarEmpleados.Size = new System.Drawing.Size(94, 43);
+            this.btnBorrarEmpleados.TabIndex = 7;
+            this.btnBorrarEmpleados.Text = "Borrar";
+            this.btnBorrarEmpleados.UseVisualStyleBackColor = false;
             // 
             // empleadoId
             // 
@@ -73,147 +91,119 @@
             // empleadoNombre
             // 
             this.empleadoNombre.Text = "Nombre";
+            this.empleadoNombre.Width = 120;
             // 
             // empleadoContraseña
             // 
             this.empleadoContraseña.Text = "Contraseña";
+            this.empleadoContraseña.Width = 180;
             // 
             // empleadoFull
             // 
-            this.empleadoFull.Text = "Nombre completo";
+            this.empleadoFull.Text = "Puntos";
+            this.empleadoFull.Width = 120;
             // 
             // empleadoCargo
             // 
             this.empleadoCargo.Text = "Cargo";
+            this.empleadoCargo.Width = 120;
             // 
-            // btnAgregarEmpleados
+            // listEmpleados
             // 
-            this.btnAgregarEmpleados.Location = new System.Drawing.Point(3, 3);
-            this.btnAgregarEmpleados.Name = "btnAgregarEmpleados";
-            this.btnAgregarEmpleados.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregarEmpleados.TabIndex = 1;
-            this.btnAgregarEmpleados.Text = "Agregar";
-            this.btnAgregarEmpleados.UseVisualStyleBackColor = true;
-            // 
-            // btnActualizarEmpleados
-            // 
-            this.btnActualizarEmpleados.Location = new System.Drawing.Point(84, 3);
-            this.btnActualizarEmpleados.Name = "btnActualizarEmpleados";
-            this.btnActualizarEmpleados.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizarEmpleados.TabIndex = 6;
-            this.btnActualizarEmpleados.Text = "Actualizar";
-            this.btnActualizarEmpleados.UseVisualStyleBackColor = true;
-            // 
-            // btnBorrarEmpleados
-            // 
-            this.btnBorrarEmpleados.Location = new System.Drawing.Point(165, 3);
-            this.btnBorrarEmpleados.Name = "btnBorrarEmpleados";
-            this.btnBorrarEmpleados.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrarEmpleados.TabIndex = 7;
-            this.btnBorrarEmpleados.Text = "Borrar";
-            this.btnBorrarEmpleados.UseVisualStyleBackColor = true;
-            // 
-            // btnACortes
-            // 
-            this.btnACortes.BackColor = System.Drawing.Color.Gold;
-            this.btnACortes.Location = new System.Drawing.Point(3, 3);
-            this.btnACortes.Name = "btnACortes";
-            this.btnACortes.Size = new System.Drawing.Size(96, 456);
-            this.btnACortes.TabIndex = 10;
-            this.btnACortes.Text = "Cortes";
-            this.btnACortes.UseVisualStyleBackColor = false;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.btnAgregarEmpleados);
-            this.flowLayoutPanel1.Controls.Add(this.btnActualizarEmpleados);
-            this.flowLayoutPanel1.Controls.Add(this.btnBorrarEmpleados);
-            this.flowLayoutPanel1.Controls.Add(this.btnActualizarEmpleados2);
-            this.flowLayoutPanel1.Controls.Add(this.btnSearch);
-            this.flowLayoutPanel1.Controls.Add(this.txtSearch);
-            this.flowLayoutPanel1.Controls.Add(this.listEmpleados);
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(696, 450);
-            this.flowLayoutPanel1.TabIndex = 11;
+            this.listEmpleados.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.listEmpleados.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.empleadoId,
+            this.empleadoNombre,
+            this.empleadoContraseña,
+            this.empleadoFull,
+            this.empleadoCargo});
+            this.listEmpleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listEmpleados.ForeColor = System.Drawing.Color.Black;
+            this.listEmpleados.FullRowSelect = true;
+            this.listEmpleados.GridLines = true;
+            this.listEmpleados.HideSelection = false;
+            this.listEmpleados.Location = new System.Drawing.Point(0, 51);
+            this.listEmpleados.Name = "listEmpleados";
+            this.listEmpleados.Size = new System.Drawing.Size(936, 684);
+            this.listEmpleados.TabIndex = 0;
+            this.listEmpleados.UseCompatibleStateImageBehavior = false;
+            this.listEmpleados.View = System.Windows.Forms.View.Details;
             // 
             // btnActualizarEmpleados2
             // 
-            this.btnActualizarEmpleados2.Location = new System.Drawing.Point(246, 3);
+            this.btnActualizarEmpleados2.BackColor = System.Drawing.Color.Coral;
+            this.btnActualizarEmpleados2.Location = new System.Drawing.Point(308, 2);
             this.btnActualizarEmpleados2.Name = "btnActualizarEmpleados2";
-            this.btnActualizarEmpleados2.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizarEmpleados2.Size = new System.Drawing.Size(99, 43);
             this.btnActualizarEmpleados2.TabIndex = 8;
             this.btnActualizarEmpleados2.Text = "Actualizar2";
-            this.btnActualizarEmpleados2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 464);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(8, 8);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.btnACortes);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(702, 0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(98, 450);
-            this.flowLayoutPanel2.TabIndex = 12;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(408, 3);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(157, 20);
-            this.txtSearch.TabIndex = 10;
+            this.btnActualizarEmpleados2.UseVisualStyleBackColor = false;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(327, 3);
+            this.btnSearch.BackColor = System.Drawing.Color.Coral;
+            this.btnSearch.Location = new System.Drawing.Point(592, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(97, 41);
             this.btnSearch.TabIndex = 11;
             this.btnSearch.Text = "Buscar";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(695, 10);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(232, 31);
+            this.txtSearch.TabIndex = 10;
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.Color.Coral;
+            this.btnVolver.Location = new System.Drawing.Point(480, 3);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(106, 41);
+            this.btnVolver.TabIndex = 12;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
             // 
             // vistaListaPersonalG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.btnAgregarEmpleados);
+            this.Controls.Add(this.btnACortes);
+            this.Controls.Add(this.btnActualizarEmpleados);
+            this.Controls.Add(this.btnBorrarEmpleados);
+            this.Controls.Add(this.listEmpleados);
+            this.Controls.Add(this.btnActualizarEmpleados2);
+            this.Controls.Add(this.btnVolver);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearch);
             this.Name = "vistaListaPersonalG";
             this.Text = "vistaListaBarbero";
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        public System.Windows.Forms.Button btnACortes;
+        public System.Windows.Forms.Button btnAgregarEmpleados;
+        public System.Windows.Forms.Button btnActualizarEmpleados;
+        public System.Windows.Forms.Button btnBorrarEmpleados;
+        private System.Windows.Forms.ColumnHeader empleadoId;
         private System.Windows.Forms.ColumnHeader empleadoNombre;
         private System.Windows.Forms.ColumnHeader empleadoContraseña;
         private System.Windows.Forms.ColumnHeader empleadoFull;
         private System.Windows.Forms.ColumnHeader empleadoCargo;
-        private System.Windows.Forms.ColumnHeader empleadoId;
-        public System.Windows.Forms.Button btnAgregarEmpleados;
-        public System.Windows.Forms.Button btnActualizarEmpleados;
-        public System.Windows.Forms.Button btnBorrarEmpleados;
         public System.Windows.Forms.ListView listEmpleados;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        public System.Windows.Forms.Button btnACortes;
-        private System.Windows.Forms.Button button1;
         public System.Windows.Forms.Button btnActualizarEmpleados2;
-        public System.Windows.Forms.TextBox txtSearch;
         public System.Windows.Forms.Button btnSearch;
+        public System.Windows.Forms.TextBox txtSearch;
+        public System.Windows.Forms.Button btnVolver;
     }
 }
