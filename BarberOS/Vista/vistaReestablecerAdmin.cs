@@ -17,6 +17,7 @@ namespace BarberOS.Vista
         public vistaReestablecerAdmin()
         {
             InitializeComponent();
+            //2 Se creara un controlador para este formulario
             controlReestablecerAdmin reestablecer = new controlReestablecerAdmin(this);
         }
     }

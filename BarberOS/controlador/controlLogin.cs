@@ -17,26 +17,36 @@ namespace BarberOS.Controlador
         daoLogin daoThis = new daoLogin();
         vistaMenu menuForm = null;
         vistaLogin controladaVista;
+
+        //10 Tambien constructor del controlador de login, cuando controlLogin se crea lo que esta dentro se ejecutara
         public controlLogin(vistaLogin passedVista, vistaMenu passedMenu) 
         {
             controladaVista = passedVista;
             menuForm = passedMenu;
+            //11 Las funciones de la derecha se ejecutaran cuando en la vista el usuario presione los botones designados 
+
+            //Si se presiona ingresar se ejecutara la funcion login)
             controladaVista.btnLogin.Click += (sender, e) => login();
+            //Si se presiona restablecer se ejecutara la funcion reestablecerContraseña)
             controladaVista.btnRestPass.Click += (sender, e) => reestablecerContraseña();
-            controladaVista.btnCreate.Click += (sender, e) => register();
+            //Si se presiona registrarse se ejecutara register
+            controladaVista.btnCreate.Click += (sender, e) => register();                   
         }
 
         public void reestablecerContraseña()
         {
+            //1 Se abrira como nueva ventana un formulario vistaReestablecerAdmin
             vistaReestablecerAdmin restpass = new vistaReestablecerAdmin();
             restpass.Show();
         }
 
         public void login()
         {
-
+            //1 Al dto o a la informacion que se usara en el query se le asigna la informacion que el usuario ingreso
+            //en el textbox
             daoThis.Username = controladaVista.txtUser.Text;
 
+            //2 Similar a como se obtiene la informacion del usuario pero con la contraseña que antes se usa con sha256
             using (SHA256 crypt = SHA256.Create())
             {
                 byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(controladaVista.txtPassword.Text));
@@ -46,7 +56,9 @@ namespace BarberOS.Controlador
                 daoThis.Password = builder.ToString();
             }
 
+            //3 Se ejecutara la funcion login del dao, el valor que este regrese se lo hara a la variable answer
             int answer = daoThis.login();
+            //8 Si el valor obtenido por answer es 1 (inicio de sesion correcto esto se ejecuta)
             if(answer == 1)
             {
                 menuForm.btnInicio.Visible = false;
@@ -56,17 +68,21 @@ namespace BarberOS.Controlador
                 menuForm.btnCurrentUser.Text = daoThis.Username;
 
                 menuForm.controladorMenu.userValues = daoThis;
+                //9 Aqui evalua si el tipo del usuario que inicio sesion era cliente o admin, dependiendo de eso mandara
+                //a un formulario diferente
                 if (daoThis.Role == "Cliente")
                     menuForm.controladorMenu.AbrirFormulario(new vistaPerfilUsuario());
                 else
                     menuForm.controladorMenu.AbrirFormulario(new vistaInicioGestion(menuForm));
             }
+            //10 Si el valor obtenido por answer no es 1 (inicio de sesion incorrecto esto se ejecuta)
             else
                 MessageBox.Show("Login fallido");
         }
 
         public void register()
         {
+            //1 Se abrira un formulario vistaRegister
             menuForm.controladorMenu.AbrirFormulario(new vistaRegister());
         }
     }

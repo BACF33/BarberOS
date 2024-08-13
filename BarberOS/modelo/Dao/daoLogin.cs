@@ -15,11 +15,15 @@ namespace BarberOS.Modelo.Dao
     {
         public int login() 
         {
+            //4 Se usara try para obtener un posible error con catch
             try
             {
+                //5 Se usara la string cnn en app.config para conectarse a la base de datos
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
+                    //5 Se abrira la conexion y en la base de datos se ejecutara este query de select con inner join dado
+                    //a que los roles de usuario estan en una tabla diferente, asi se mostrara como texto
                     conexion.Open();
                     using (SqlCommand cmd = new SqlCommand("" +
                         "SELECT u.userPoints, r.roleName " +
@@ -27,12 +31,16 @@ namespace BarberOS.Modelo.Dao
                         "INNER JOIN userRoles r ON u.userRole = r.roleId " +
                         "WHERE u.userName = @userName AND u.userPassword = @userPassword ", conexion))
                     {
+                        //6 El query usa parametros cuyos valores son los datos obtenidos anteriormente en el control
+                        //el username y el password
                         cmd.Parameters.AddWithValue("@userName", Username);
 
                         cmd.Parameters.AddWithValue("@userPassword", Password);
 
                         SqlDataReader reader = cmd.ExecuteReader();
 
+                        //7 Si existen datos que cumplan con los requisitos del query (hay datos con el mismo username y
+                        //password ingresados el inicio de sesion fue correcto se regresa 1, si no 0
                         if (reader.Read())
                         {
                             Role = reader["roleName"].ToString();
