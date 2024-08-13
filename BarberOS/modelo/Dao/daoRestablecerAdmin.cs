@@ -53,9 +53,9 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT userName, userPoints, userRole FROM users WHERE userId=@userId AND userName=@userName AND userRole = 1", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT userName, userPoints, userRole FROM users WHERE userPhone=@userPhone AND userName=@userName", conexion))
                     {
-                        cmd.Parameters.AddWithValue("@userId", Id);
+                        cmd.Parameters.AddWithValue("@userPhone", Id);
                         cmd.Parameters.AddWithValue("@userName", UserName2);
 
                         SqlDataReader reader = cmd.ExecuteReader();

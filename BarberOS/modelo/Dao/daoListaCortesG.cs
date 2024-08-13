@@ -21,6 +21,8 @@ namespace BarberOS.Modelo.Dao
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
+                    //Se ejecutara un query donde se obtendran los valores de la base de datos, se usa un inner join 
+                    //dado a que userType es una llave foranea
                     string query = @"
                     SELECT p.productId, p.productName, p.productPrice, t.productTypeName 
                     FROM products p
@@ -33,6 +35,7 @@ namespace BarberOS.Modelo.Dao
 
                         vistaPasada.listCortes.Items.Clear();
 
+                        //Se le añade a la lista presente en la vista los valores obtenidos con el query
                         while (reader.Read())
                         {
                             ListViewItem item = new ListViewItem(reader["productId"].ToString());
@@ -60,11 +63,14 @@ namespace BarberOS.Modelo.Dao
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
+                    //Usando la id de la fila seleccionada por el usuaio se eliminara el valor de la base de datos con
+                    //el mismo id 
                     conexion.Open();
                     string sql = "DELETE FROM products WHERE productId = @toDelete";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {
+                        //Se usara la string selectedId como parametro
                         cmd.Parameters.AddWithValue("@toDelete", selectedId);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
@@ -85,7 +91,8 @@ namespace BarberOS.Modelo.Dao
                 {
                     conexion.Open();
 
-                    // Define the SQL query
+                    //3 Se ejecutara un query donde se seleccionaran toos los datos de la tabla usuarios donde 
+                    //el nombre de usuario coincida con el ingresado
                     string sql = @"
                 SELECT productId, productName, productPrice, productType
                 FROM products
@@ -93,12 +100,14 @@ namespace BarberOS.Modelo.Dao
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {
+                        //4 Como parametro se utilizara el valor ingresado en la barra de busqueda
                         cmd.Parameters.AddWithValue("@searchingFor", "%" + searchingFor + "%");
 
                         SqlDataReader reader = cmd.ExecuteReader();
 
                         vistaPasada.listCortes.Items.Clear();
 
+                        //5 Se anadiran a la tabla del formulario los valores obtenidos con el query
                         while (reader.Read())
                         {
                             ListViewItem item = new ListViewItem(reader["productId"].ToString());

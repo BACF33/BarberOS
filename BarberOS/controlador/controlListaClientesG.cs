@@ -23,9 +23,10 @@ namespace BarberOS.Controlador
             controladaVista.btnBorrarClientes.Click += (sender, e) => deleteData();
             //Si se presiona actualizar2 se ejecutara la funcion updateData
             controladaVista.btnActualizarClientes2.Click += (sender, e) => updateData();
-
+            //Si se presiona volver se volvera a la vista inicio gestion
             controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaInicioGestion(passedMenuForm));
-
+            //Si se presiona buscar se ejecutara la funcion searchdata
+            controladaVista.btnBuscar.Click += (sender, e) => searhData();
             getData();
         }
 
@@ -53,18 +54,26 @@ namespace BarberOS.Controlador
 
         public void getData()
         {
-            //Se ejecutara la funcion populate del dao
+            //1 Se ejecutara la funcion populate del dao
             dao.Populate(controladaVista);
         }
 
         public void deleteData()
         {
-            //Si existe una fila en la tabla de la vista que el usuario haya seleccionado se ejecutara lo siguiente
+            //1 Si existe una fila en la tabla de la vista que el usuario haya seleccionado se ejecutara lo siguiente
             if (controladaVista.listClientes.SelectedItems.Count > 0)
-                //Se ejecutara la funcion delete del dao
+                //2 Se ejecutara la funcion delete del dao
                 dao.Delete(controladaVista);
 
             getData();
+        }
+
+        public void searhData()
+        {
+            //1 Se obtendran los datos que el usuario ingreso en la barra de busqueda
+            string searchingFor = controladaVista.txtSearchingFor.Text;
+            //2 Se ejecutara la funcion searchData del dao
+            dao.searchData(searchingFor, controladaVista);
         }
     }
 }

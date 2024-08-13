@@ -22,21 +22,26 @@ namespace BarberOS.Modelo.Dao
                 {
                     conexion.Open();
 
+                    //Se ejecutara un query donde se insertara a la tabla de la base de datos los valores ingresados por
+                    //el usuario en los textboxes
                     string query = @"
-                    INSERT INTO users (userName, userPassword, userPoints, userRole)
+                    INSERT INTO users (userName, userPassword, userPoints, userRole, userPhone)
                     VALUES (
                     @userName, 
                     @userPassword, 
                     @userPoints, 
-                    (SELECT roleId FROM userRoles WHERE roleName = @roleName)
+                    (SELECT roleId FROM userRoles WHERE roleName = @roleName),
+                    @userPhone
                     )";
 
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
+                        //Como parametros se utilizaran los valores obtenidos anteriormente de los textboxes
                         cmd.Parameters.AddWithValue("@userName", UserName);
                         cmd.Parameters.AddWithValue("@userPassword", Password);
                         cmd.Parameters.AddWithValue("@userPoints", Points);
                         cmd.Parameters.AddWithValue("@roleName", "Admin");
+                        cmd.Parameters.AddWithValue("@userPhone", Phone);
 
                         cmd.ExecuteNonQuery();
                     }

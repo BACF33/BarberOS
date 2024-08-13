@@ -29,56 +29,32 @@
         private void InitializeComponent()
         {
             this.flpCabello = new System.Windows.Forms.FlowLayoutPanel();
-            this.flpBarba = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.flpCabello.SuspendLayout();
             this.SuspendLayout();
             // 
             // flpCabello
             // 
             this.flpCabello.AutoScroll = true;
-            this.flpCabello.Controls.Add(this.button1);
-            this.flpCabello.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flpCabello.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpCabello.Location = new System.Drawing.Point(0, 0);
+            this.flpCabello.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flpCabello.Name = "flpCabello";
-            this.flpCabello.Size = new System.Drawing.Size(405, 450);
+            this.flpCabello.Size = new System.Drawing.Size(1800, 897);
             this.flpCabello.TabIndex = 0;
-            // 
-            // flpBarba
-            // 
-            this.flpBarba.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flpBarba.Location = new System.Drawing.Point(411, 0);
-            this.flpBarba.Name = "flpBarba";
-            this.flpBarba.Size = new System.Drawing.Size(389, 450);
-            this.flpBarba.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Coral;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(402, 98);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "CABELLO";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // vistaListaCortes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.flpBarba);
+            this.ClientSize = new System.Drawing.Size(1800, 897);
             this.Controls.Add(this.flpCabello);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "vistaListaCortes";
             this.Text = "vistaListaCortes";
-            this.flpCabello.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.FlowLayoutPanel flpBarba;
         public System.Windows.Forms.FlowLayoutPanel flpCabello;
-        private System.Windows.Forms.Button button1;
     }
 }

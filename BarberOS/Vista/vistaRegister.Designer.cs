@@ -37,55 +37,67 @@
             // 
             // txtNewUser
             // 
-            this.txtNewUser.Location = new System.Drawing.Point(205, 135);
+            this.txtNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewUser.Location = new System.Drawing.Point(409, 172);
+            this.txtNewUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNewUser.Name = "txtNewUser";
-            this.txtNewUser.Size = new System.Drawing.Size(199, 20);
+            this.txtNewUser.Size = new System.Drawing.Size(622, 75);
             this.txtNewUser.TabIndex = 0;
             // 
             // txtNewPass
             // 
-            this.txtNewPass.Location = new System.Drawing.Point(205, 232);
+            this.txtNewPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewPass.Location = new System.Drawing.Point(409, 506);
+            this.txtNewPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNewPass.Name = "txtNewPass";
-            this.txtNewPass.Size = new System.Drawing.Size(199, 20);
+            this.txtNewPass.Size = new System.Drawing.Size(622, 75);
             this.txtNewPass.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(268, 119);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(514, 72);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.Size = new System.Drawing.Size(414, 69);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nuevo usuario";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(259, 216);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(471, 360);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 13);
+            this.label2.Size = new System.Drawing.Size(513, 69);
             this.label2.TabIndex = 3;
             this.label2.Text = "Nueva contraseña";
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(205, 312);
+            this.btnRegister.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Location = new System.Drawing.Point(541, 679);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(199, 57);
+            this.btnRegister.Size = new System.Drawing.Size(407, 186);
             this.btnRegister.TabIndex = 4;
             this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.UseVisualStyleBackColor = false;
             // 
             // vistaRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 441);
+            this.ClientSize = new System.Drawing.Size(1800, 897);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNewPass);
             this.Controls.Add(this.txtNewUser);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "vistaRegister";
             this.Text = "vistaRegister";
             this.ResumeLayout(false);

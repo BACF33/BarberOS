@@ -42,48 +42,52 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(253, 154);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(80, 337);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 16);
+            this.label3.Size = new System.Drawing.Size(100, 36);
             this.label3.TabIndex = 13;
             this.label3.Text = "Precio";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(253, 65);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(60, 248);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 16);
+            this.label2.Size = new System.Drawing.Size(120, 36);
             this.label2.TabIndex = 12;
             this.label2.Text = "Nombre";
             // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(357, 154);
+            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Location = new System.Drawing.Point(258, 337);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(87, 16);
+            this.lblPrice.Size = new System.Drawing.Size(185, 36);
             this.lblPrice.TabIndex = 9;
             this.lblPrice.Text = "Especialidad";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(357, 65);
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(283, 248);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(56, 16);
+            this.lblName.Size = new System.Drawing.Size(120, 36);
             this.lblName.TabIndex = 8;
             this.lblName.Text = "Nombre";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 63);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(121, 23);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(212, 196);
             this.pictureBox1.TabIndex = 7;
@@ -91,10 +95,10 @@
             // 
             // btnComprar
             // 
-            this.btnComprar.Location = new System.Drawing.Point(257, 212);
-            this.btnComprar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnComprar.Location = new System.Drawing.Point(66, 387);
+            this.btnComprar.Margin = new System.Windows.Forms.Padding(4);
             this.btnComprar.Name = "btnComprar";
-            this.btnComprar.Size = new System.Drawing.Size(189, 47);
+            this.btnComprar.Size = new System.Drawing.Size(305, 102);
             this.btnComprar.TabIndex = 14;
             this.btnComprar.Text = "COMPRAR";
             this.btnComprar.UseVisualStyleBackColor = true;
@@ -102,9 +106,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::BarberOS.Properties.Resources.pilar2;
-            this.pictureBox2.Location = new System.Drawing.Point(393, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(453, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(216, 309);
+            this.pictureBox2.Size = new System.Drawing.Size(332, 600);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
@@ -120,9 +124,9 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "panelProducto";
-            this.Size = new System.Drawing.Size(576, 312);
+            this.Size = new System.Drawing.Size(711, 525);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

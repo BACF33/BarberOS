@@ -21,7 +21,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-
+                    //Se designara una query para insertar en users parametros como los nuevos datos del usuario
                     string query = @"
                     INSERT INTO users (userName, userPassword, userPoints, userRole)
                     VALUES (
@@ -33,6 +33,7 @@ namespace BarberOS.Modelo.Dao
 
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
+                        //Se usaran como parametros los valores obtenidos de los textboxes
                         cmd.Parameters.AddWithValue("@userName", NewUser);
                         cmd.Parameters.AddWithValue("@userPassword", NewPassword);
 

@@ -24,6 +24,11 @@ namespace BarberOS.Controlador
             infoEste.PromocionPoder = testPower;
             infoEste.PromocionTipo = testType;
 
+            pasadoPanel.lblName.Text = testName;
+            pasadoPanel.lblPoder.Text = testPower;
+            pasadoPanel.lblTipo.Text = testType;
+
+
             controladoPanel = pasadoPanel;
             menu = pasadoMenu;
             seleccionadoProducto = pasadoProducto;

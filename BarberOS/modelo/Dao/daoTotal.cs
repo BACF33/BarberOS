@@ -21,7 +21,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    string sql = "INSERT INTO registries (productName, productPrice, promotionName, promotionPower) " +
+                    string sql = "INSERT INTO registries (registryProductName, registryProductPrice, registryPromotionName, registryPromotionPower) " +
                                  "VALUES (@productName, @productPrice, @promotionName, @promotionPower) ";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))

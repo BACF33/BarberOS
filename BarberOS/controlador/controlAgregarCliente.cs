@@ -40,6 +40,8 @@ namespace BarberOS.Controlador
             //3 Similar a como se obtiene la informacion del usuario pero con puntos
             daoThis.Points = int.Parse(controladaVista.txtNuevoFull.Text);
 
+            daoThis.Phone = controladaVista.txtNuevoNumero.Text;
+
             //4 Se ejecutara la funcion agregar del dao
             daoThis.agregar();
         }

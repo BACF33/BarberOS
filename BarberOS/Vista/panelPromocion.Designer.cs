@@ -35,8 +35,6 @@
             this.lblTipo = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblPrecio = new System.Windows.Forms.Label();
             this.btnAplicar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -46,99 +44,85 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(256, 153);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(106, 332);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 16);
+            this.label3.Size = new System.Drawing.Size(63, 29);
             this.label3.TabIndex = 20;
             this.label3.Text = "Tipo";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(259, 41);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(106, 223);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 16);
+            this.label2.Size = new System.Drawing.Size(101, 29);
             this.label2.TabIndex = 19;
             this.label2.Text = "Nombre";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(259, 74);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(106, 279);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(79, 29);
             this.label1.TabIndex = 18;
             this.label1.Text = "Poder";
             // 
             // lblPoder
             // 
             this.lblPoder.AutoSize = true;
-            this.lblPoder.Location = new System.Drawing.Point(363, 74);
+            this.lblPoder.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPoder.Location = new System.Drawing.Point(236, 279);
             this.lblPoder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPoder.Name = "lblPoder";
-            this.lblPoder.Size = new System.Drawing.Size(44, 16);
+            this.lblPoder.Size = new System.Drawing.Size(79, 29);
             this.lblPoder.TabIndex = 17;
             this.lblPoder.Text = "Poder";
             // 
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
-            this.lblTipo.Location = new System.Drawing.Point(363, 153);
+            this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.Location = new System.Drawing.Point(227, 332);
             this.lblTipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(87, 16);
+            this.lblTipo.Size = new System.Drawing.Size(153, 29);
             this.lblTipo.TabIndex = 16;
             this.lblTipo.Text = "Especialidad";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(363, 41);
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(236, 223);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(56, 16);
+            this.lblName.Size = new System.Drawing.Size(101, 29);
             this.lblName.TabIndex = 15;
             this.lblName.Text = "Nombre";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 41);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(151, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(212, 196);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(256, 116);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 16);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Precio";
-            // 
-            // lblPrecio
-            // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(363, 116);
-            this.lblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(46, 16);
-            this.lblPrecio.TabIndex = 21;
-            this.lblPrecio.Text = "Precio";
-            // 
             // btnAplicar
             // 
-            this.btnAplicar.Location = new System.Drawing.Point(260, 190);
-            this.btnAplicar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAplicar.Location = new System.Drawing.Point(104, 372);
+            this.btnAplicar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAplicar.Name = "btnAplicar";
-            this.btnAplicar.Size = new System.Drawing.Size(189, 47);
+            this.btnAplicar.Size = new System.Drawing.Size(305, 108);
             this.btnAplicar.TabIndex = 23;
             this.btnAplicar.Text = "APLICAR";
             this.btnAplicar.UseVisualStyleBackColor = true;
@@ -146,9 +130,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::BarberOS.Properties.Resources.pilar2;
-            this.pictureBox2.Location = new System.Drawing.Point(373, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(466, -3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(216, 309);
+            this.pictureBox2.Size = new System.Drawing.Size(346, 522);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 24;
             this.pictureBox2.TabStop = false;
@@ -158,8 +142,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnAplicar);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -168,9 +150,9 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "panelPromocion";
-            this.Size = new System.Drawing.Size(557, 304);
+            this.Size = new System.Drawing.Size(711, 522);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -187,8 +169,6 @@
         public System.Windows.Forms.Label lblTipo;
         public System.Windows.Forms.Label lblName;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Label lblPrecio;
         public System.Windows.Forms.Button btnAplicar;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
