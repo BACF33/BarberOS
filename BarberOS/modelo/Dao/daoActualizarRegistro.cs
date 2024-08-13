@@ -57,9 +57,7 @@ namespace BarberOS.Modelo.Dao
                     using (SqlCommand cmd = new SqlCommand("UPDATE registries SET registryProductName = @registryProductName, registryProductPrice = @registryProductName, registryPromotionName = @registryPromotionName WHERE registryPromotionPower = @registryPromotionName", conexion))
                     {
                         cmd.Parameters.AddWithValue("@registryProductName", pasadaVista.txtNuevoNombre.Text);
-                        //cmd.Parameters.AddWithValue("@producPrice", pasadaVista.txtNuevoPrecio.Text);
                         cmd.Parameters.AddWithValue("@registryPromotionName", pasadaVista.txtNuevoTipo.Text);
-                        //cmd.Parameters.AddWithValue("@promotionPower", pasadaVista.txtNuevoPoder.Text);
 
                         SqlDataReader reader = cmd.ExecuteReader();
 

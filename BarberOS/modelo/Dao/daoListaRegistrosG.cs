@@ -27,15 +27,14 @@ namespace BarberOS.Modelo.Dao
                 {
                     conexion.Open();
 
-                    // Simplified SQL query with JOINs
                     string sql = @"
                 SELECT r.registryId, 
                        p.productName, p.productPrice, 
                        prm.promotionName, prm.promotionPower,
                        r.registryTotal
                 FROM registries r
-                JOIN products p ON r.registryProductName = p.productId
-                JOIN promotions prm ON r.registryPromotionName = prm.promotionId";
+                INNER JOIN products p ON r.registryProductName = p.productId
+                INNER JOIN promotions prm ON r.registryPromotionName = prm.promotionId";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {
@@ -81,6 +80,52 @@ namespace BarberOS.Modelo.Dao
                     {
                         cmd.Parameters.AddWithValue("@toDelete", selectedId);
                         int rowsAffected = cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        public void searchData(string searchingFor, vistaListaRegistros vistaPasada)
+        {
+            try
+            {
+                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
+                using (SqlConnection conexion = new SqlConnection(cnn))
+                {
+                    conexion.Open();
+
+                    //3 Se ejecutara un query donde se seleccionaran toos los datos de la tabla usuarios donde 
+                    //el nombre de usuario coincida con el ingresado
+                    string sql = @"
+                SELECT registryId, registryProductName, registryProductPrice, registryPromotionName, registryPromotionPower
+                FROM registries
+                WHERE registryId LIKE @searchingFor";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conexion))
+                    {
+                        //4 Como parametro se utilizara el valor ingresado en la barra de busqueda
+                        cmd.Parameters.AddWithValue("@searchingFor", "%" + searchingFor + "%");
+
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+                        vistaPasada.listRegistros.Items.Clear();
+
+                        //5 Se anadiran a la tabla del formulario los valores obtenidos con el query
+                        while (reader.Read())
+                        {
+                            ListViewItem item = new ListViewItem(reader["registryId"].ToString());
+                            item.SubItems.Add(reader["registryProductName"].ToString());
+                            item.SubItems.Add(reader["registryProductPrice"].ToString());
+                            item.SubItems.Add(reader["registryPromotionName"].ToString());
+                            item.SubItems.Add(reader["registryPromotionPower"].ToString());
+                            vistaPasada.listRegistros.Items.Add(item);
+                        }
+
+                        reader.Close();
                     }
                 }
             }

@@ -20,7 +20,6 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    conexion.Open();
                     //Se ejecutara un query donde se insertara a la tabla de la base de datos los valores ingresados por
                     //el usuario en los textboxes
                     string sql = "INSERT INTO promotions (promotionName, promotionPrice, promotionPower, promotionType) " +

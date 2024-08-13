@@ -85,7 +85,8 @@ namespace BarberOS.Modelo.Dao
                 {
                     conexion.Open();
 
-                    // Define the SQL query
+                    //3 Se ejecutara un query donde se seleccionaran toos los datos de la tabla usuarios donde 
+                    //el nombre de usuario coincida con el ingresado
                     string sql = @"
                 SELECT promotionId, promotionName, promotionPrice, promotionPower, promotionType
                 FROM promotions
@@ -93,12 +94,14 @@ namespace BarberOS.Modelo.Dao
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {
+                        //4 Como parametro se utilizara el valor ingresado en la barra de busqueda
                         cmd.Parameters.AddWithValue("@searchingFor", "%" + searchingFor + "%");
 
                         SqlDataReader reader = cmd.ExecuteReader();
 
                         vistaPasada.listPromociones.Items.Clear();
 
+                        //5 Se anadiran a la tabla del formulario los valores obtenidos con el query
                         while (reader.Read())
                         {
                             ListViewItem item = new ListViewItem(reader["promotionId"].ToString());

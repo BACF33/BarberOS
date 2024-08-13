@@ -39,6 +39,8 @@
             this.btnUpdate2 = new System.Windows.Forms.Button();
             this.btnBorrarEmpleados = new System.Windows.Forms.Button();
             this.btnActualizarRegistros = new System.Windows.Forms.Button();
+            this.txtSearchingFor = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listRegistros
@@ -55,9 +57,10 @@
             this.listRegistros.FullRowSelect = true;
             this.listRegistros.GridLines = true;
             this.listRegistros.HideSelection = false;
-            this.listRegistros.Location = new System.Drawing.Point(2, 57);
+            this.listRegistros.Location = new System.Drawing.Point(3, 70);
+            this.listRegistros.Margin = new System.Windows.Forms.Padding(4);
             this.listRegistros.Name = "listRegistros";
-            this.listRegistros.Size = new System.Drawing.Size(1160, 671);
+            this.listRegistros.Size = new System.Drawing.Size(1545, 825);
             this.listRegistros.TabIndex = 0;
             this.listRegistros.UseCompatibleStateImageBehavior = false;
             this.listRegistros.View = System.Windows.Forms.View.Details;
@@ -94,9 +97,10 @@
             // btnVolver
             // 
             this.btnVolver.BackColor = System.Drawing.Color.Coral;
-            this.btnVolver.Location = new System.Drawing.Point(350, 4);
+            this.btnVolver.Location = new System.Drawing.Point(977, 5);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(94, 47);
+            this.btnVolver.Size = new System.Drawing.Size(125, 58);
             this.btnVolver.TabIndex = 9;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
@@ -104,9 +108,10 @@
             // btnUpdate2
             // 
             this.btnUpdate2.BackColor = System.Drawing.Color.Coral;
-            this.btnUpdate2.Location = new System.Drawing.Point(241, 4);
+            this.btnUpdate2.Location = new System.Drawing.Point(321, 5);
+            this.btnUpdate2.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate2.Name = "btnUpdate2";
-            this.btnUpdate2.Size = new System.Drawing.Size(103, 47);
+            this.btnUpdate2.Size = new System.Drawing.Size(137, 58);
             this.btnUpdate2.TabIndex = 8;
             this.btnUpdate2.Text = "Actualizar 2";
             this.btnUpdate2.UseVisualStyleBackColor = false;
@@ -114,9 +119,10 @@
             // btnBorrarEmpleados
             // 
             this.btnBorrarEmpleados.BackColor = System.Drawing.Color.Coral;
-            this.btnBorrarEmpleados.Location = new System.Drawing.Point(132, 4);
+            this.btnBorrarEmpleados.Location = new System.Drawing.Point(176, 5);
+            this.btnBorrarEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnBorrarEmpleados.Name = "btnBorrarEmpleados";
-            this.btnBorrarEmpleados.Size = new System.Drawing.Size(103, 47);
+            this.btnBorrarEmpleados.Size = new System.Drawing.Size(137, 58);
             this.btnBorrarEmpleados.TabIndex = 7;
             this.btnBorrarEmpleados.Text = "Borrar";
             this.btnBorrarEmpleados.UseVisualStyleBackColor = false;
@@ -124,26 +130,49 @@
             // btnActualizarRegistros
             // 
             this.btnActualizarRegistros.BackColor = System.Drawing.Color.Coral;
-            this.btnActualizarRegistros.Location = new System.Drawing.Point(12, 4);
+            this.btnActualizarRegistros.Location = new System.Drawing.Point(16, 5);
+            this.btnActualizarRegistros.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizarRegistros.Name = "btnActualizarRegistros";
-            this.btnActualizarRegistros.Size = new System.Drawing.Size(114, 47);
+            this.btnActualizarRegistros.Size = new System.Drawing.Size(152, 58);
             this.btnActualizarRegistros.TabIndex = 6;
             this.btnActualizarRegistros.Text = "Actualizar";
             this.btnActualizarRegistros.UseVisualStyleBackColor = false;
             // 
+            // txtSearchingFor
+            // 
+            this.txtSearchingFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchingFor.Location = new System.Drawing.Point(1261, 5);
+            this.txtSearchingFor.Name = "txtSearchingFor";
+            this.txtSearchingFor.Size = new System.Drawing.Size(274, 41);
+            this.txtSearchingFor.TabIndex = 10;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Coral;
+            this.btnSearch.Location = new System.Drawing.Point(1119, 12);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(123, 51);
+            this.btnSearch.TabIndex = 11;
+            this.btnSearch.Text = "Buscar";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            // 
             // vistaListaRegistros
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1800, 897);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearchingFor);
             this.Controls.Add(this.listRegistros);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnUpdate2);
             this.Controls.Add(this.btnBorrarEmpleados);
             this.Controls.Add(this.btnActualizarRegistros);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "vistaListaRegistros";
             this.Text = "vistaListaRegistros";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -160,5 +189,7 @@
         public System.Windows.Forms.Button btnUpdate2;
         public System.Windows.Forms.Button btnBorrarEmpleados;
         public System.Windows.Forms.Button btnActualizarRegistros;
+        public System.Windows.Forms.Button btnSearch;
+        public System.Windows.Forms.TextBox txtSearchingFor;
     }
 }

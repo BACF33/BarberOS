@@ -17,11 +17,13 @@ namespace BarberOS.Controlador
         public controlAgregarProducto(vistaAgregarProducto pasadaVista)
         {
             controladaVista = pasadaVista;
+            //Cuando se presion agregar se ejecutara la funcion agregarProducto
             controladaVista.btnAgregar.Click += (sender, e) => agregarProducto();
         }
 
         public void agregarProducto()
         {
+            //Se ejecutara el constructor de daoAgregarProducto para agregar los queries
             daoAgregarProducto daoThis = new daoAgregarProducto(controladaVista);
         }
     }

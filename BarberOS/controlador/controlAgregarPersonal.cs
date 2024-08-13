@@ -25,8 +25,11 @@ namespace BarberOS.Controlador
         public void agregarPersonal() 
         {
             daoAgregarPersonal daoThis = new daoAgregarPersonal();
+            //1 Al dto o a la informacion que se usara en el query se le asigna la informacion que el usuario ingreso
+            //en el textbox
             daoThis.UserName = controladaVista.txtNuevoNombre.Text;
 
+            //2 Similar a como se obtiene la informacion del usuario pero con la contraseña que antes se usa con sha256
             using (SHA256 crypt = SHA256.Create())
             {
                 byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(controladaVista.txtNuevaContraseña.Text));
@@ -36,8 +39,10 @@ namespace BarberOS.Controlador
                 daoThis.Password = builder.ToString();
             }
 
+            //3 Similar a como se obtiene la informacion del usuario pero con puntos
             daoThis.Points = int.Parse(controladaVista.txtNuevoFull.Text);
             daoThis.Phone = controladaVista.txtNuevoNumero.Text;
+            //4 Se ejecutara la funcion agregar del dao
             daoThis.insert ();
         }
     }
