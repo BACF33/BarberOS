@@ -8,6 +8,7 @@ namespace BarberOS.Vista
         public vistaListaClientesG(vistaMenu passedMenu)
         {
             InitializeComponent();
+            //1 El formulario creara su controlador
             controlListaClientesG controladorVista = new controlListaClientesG(this, passedMenu);
         }
     }

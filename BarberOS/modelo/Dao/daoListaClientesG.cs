@@ -19,6 +19,8 @@ namespace BarberOS.Modelo.Dao
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
+                    //Se ejecutara un query donde se obtendran los valores de la base de datos, se usa un inner join 
+                    //dado a que userType es una llave foranea
                     conexion.Open();
                     using (SqlCommand cmd = new SqlCommand("SELECT u.userId, u.userName, u.userPassword, u.userPoints, r.roleName " +
                         "FROM users u " +
@@ -29,6 +31,7 @@ namespace BarberOS.Modelo.Dao
 
                         vistaPasada.listClientes.Items.Clear();
 
+                        //Se le añade a la lista presente en la vista los valores obtenidos con el query
                         while (reader.Read())
                         {
                             ListViewItem item = new ListViewItem(reader["userId"].ToString());
@@ -57,11 +60,14 @@ namespace BarberOS.Modelo.Dao
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
+                    //Usando la id de la fila seleccionada por el usuaio se eliminara el valor de la base de datos con
+                    //el mismo id 
                     conexion.Open();
                     string sql = "DELETE FROM users WHERE userId = @toDelete";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {
+                        //Se usara la string selectedId como parametro
                         cmd.Parameters.AddWithValue("@toDelete", selectedId);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }

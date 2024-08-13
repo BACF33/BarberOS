@@ -13,13 +13,16 @@ namespace BarberOS.Controlador
             controladaVista = vistaPasada;
             menuForm = passedMenuForm;
 
-            //Logica de botones
+            //Si se presiona promociones se abrira un formulario vistaListaPromocionesG
             controladaVista.btnAProms.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaPromocionesG(passedMenuForm));
+            //Si se presiona agregar se ejecutara la funcion insertData
             controladaVista.btnAgregarClientes.Click += (sender, e) => insertData();
+            //Si se presiona actualizar se ejecutara la funcion getData
             controladaVista.btnActualizarClientes.Click += (sender, e) => getData();
+            //Si se presiona borrar se ejecutara la funcion deleteData
             controladaVista.btnBorrarClientes.Click += (sender, e) => deleteData();
+            //Si se presiona actualizar2 se ejecutara la funcion updateData
             controladaVista.btnActualizarClientes2.Click += (sender, e) => updateData();
-            //Logica de botones
 
             getData();
         }
@@ -27,9 +30,12 @@ namespace BarberOS.Controlador
         public void updateData()
         {
             vistaActualizarCliente actualizar;
+            //1 Si en la vista el usuario selecciono una fila en la tabla se ejecutara lo siguiente
             if (controladaVista.listClientes.SelectedItems.Count > 0)
             {
+                //2 Se obtendra el primer valor de la fila seleccionada en la tabla, es decir la id
                 string selectedId = controladaVista.listClientes.SelectedItems[0].Text;
+                //3 Se abirar una vistaActualizarCliente como nueva ventana
                 actualizar = new vistaActualizarCliente(selectedId);
                 actualizar.Show();
             }
@@ -38,18 +44,22 @@ namespace BarberOS.Controlador
 
         public void insertData()
         {
+            //1 Se abirar un formulario agregarPersonal como nueva ventana
             vistaAgregarCliente agregarPersonal = new vistaAgregarCliente();
             agregarPersonal.Show();
         }
 
         public void getData()
         {
+            //Se ejecutara la funcion populate del dao
             dao.Populate(controladaVista);
         }
 
         public void deleteData()
         {
+            //Si existe una fila en la tabla de la vista que el usuario haya seleccionado se ejecutara lo siguiente
             if (controladaVista.listClientes.SelectedItems.Count > 0)
+                //Se ejecutara la funcion delete del dao
                 dao.Delete(controladaVista);
 
             getData();

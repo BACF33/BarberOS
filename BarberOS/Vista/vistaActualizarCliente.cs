@@ -16,6 +16,7 @@ namespace BarberOS.Vista
         public vistaActualizarCliente(string selectedId)
         {
             InitializeComponent();
+            //4 La vista creara su controlador
             controlActualizarCliente controladorVista = new controlActualizarCliente(selectedId, this);
         }
     }

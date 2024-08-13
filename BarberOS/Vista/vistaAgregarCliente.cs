@@ -16,6 +16,7 @@ namespace BarberOS.Vista
         public vistaAgregarCliente()
         {
             InitializeComponent();
+            //vistaAgregarCliente creara su controlador
             controlAgregarCliente controladorVista = new controlAgregarCliente(this);
         }
 
