@@ -13,7 +13,9 @@ namespace BarberOS.Vista
         public vistaLogin(vistaMenu passedMenuForm) 
        {
             InitializeComponent();
-            //9 Como todas las vistas se creara el controlador para el formulario vistaLogin y se pasara a si mismo, tambien se pasara el menu para que pueda acceder a su funcion para abrir formularios a su derecha con la funcion AbrirFormulario (ver controlMenu)
+            //9 Como todas las vistas se creara el controlador para el formulario vistaLogin y se pasara a si mismo,
+            //tambien se pasara el menu para que pueda acceder a su funcion para abrir formularios a su derecha con la
+            //funcion AbrirFormulario (ver controlMenu)
             controlLogin controladorLogin = new controlLogin(this, passedMenuForm);
         }
     }

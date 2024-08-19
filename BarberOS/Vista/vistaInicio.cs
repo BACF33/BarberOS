@@ -19,5 +19,6 @@ namespace BarberOS.Vistas
             InitializeComponent();
             controlInicio controladorInicio = new controlInicio(this, menuForm);
         }
+
     }
 }

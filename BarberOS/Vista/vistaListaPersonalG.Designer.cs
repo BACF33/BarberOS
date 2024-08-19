@@ -38,18 +38,18 @@
             this.empleadoFull = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoCargo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listEmpleados = new System.Windows.Forms.ListView();
+            this.empleadoNumero = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnActualizarEmpleados2 = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.empleadoNumero = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btnACortes
             // 
             this.btnACortes.BackColor = System.Drawing.Color.Coral;
             this.btnACortes.Location = new System.Drawing.Point(1244, 2);
-            this.btnACortes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnACortes.Margin = new System.Windows.Forms.Padding(4);
             this.btnACortes.Name = "btnACortes";
             this.btnACortes.Size = new System.Drawing.Size(317, 902);
             this.btnACortes.TabIndex = 10;
@@ -60,7 +60,7 @@
             // 
             this.btnAgregarEmpleados.BackColor = System.Drawing.Color.Coral;
             this.btnAgregarEmpleados.Location = new System.Drawing.Point(11, 2);
-            this.btnAgregarEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregarEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregarEmpleados.Name = "btnAgregarEmpleados";
             this.btnAgregarEmpleados.Size = new System.Drawing.Size(127, 53);
             this.btnAgregarEmpleados.TabIndex = 1;
@@ -71,7 +71,7 @@
             // 
             this.btnActualizarEmpleados.BackColor = System.Drawing.Color.Coral;
             this.btnActualizarEmpleados.Location = new System.Drawing.Point(145, 2);
-            this.btnActualizarEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActualizarEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizarEmpleados.Name = "btnActualizarEmpleados";
             this.btnActualizarEmpleados.Size = new System.Drawing.Size(124, 53);
             this.btnActualizarEmpleados.TabIndex = 6;
@@ -82,7 +82,7 @@
             // 
             this.btnBorrarEmpleados.BackColor = System.Drawing.Color.Coral;
             this.btnBorrarEmpleados.Location = new System.Drawing.Point(277, 2);
-            this.btnBorrarEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBorrarEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnBorrarEmpleados.Name = "btnBorrarEmpleados";
             this.btnBorrarEmpleados.Size = new System.Drawing.Size(125, 53);
             this.btnBorrarEmpleados.TabIndex = 7;
@@ -129,18 +129,23 @@
             this.listEmpleados.GridLines = true;
             this.listEmpleados.HideSelection = false;
             this.listEmpleados.Location = new System.Drawing.Point(0, 63);
-            this.listEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.listEmpleados.Name = "listEmpleados";
             this.listEmpleados.Size = new System.Drawing.Size(1247, 841);
             this.listEmpleados.TabIndex = 0;
             this.listEmpleados.UseCompatibleStateImageBehavior = false;
             this.listEmpleados.View = System.Windows.Forms.View.Details;
             // 
+            // empleadoNumero
+            // 
+            this.empleadoNumero.Text = "Numero";
+            this.empleadoNumero.Width = 480;
+            // 
             // btnActualizarEmpleados2
             // 
             this.btnActualizarEmpleados2.BackColor = System.Drawing.Color.Coral;
             this.btnActualizarEmpleados2.Location = new System.Drawing.Point(411, 2);
-            this.btnActualizarEmpleados2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActualizarEmpleados2.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizarEmpleados2.Name = "btnActualizarEmpleados2";
             this.btnActualizarEmpleados2.Size = new System.Drawing.Size(132, 53);
             this.btnActualizarEmpleados2.TabIndex = 8;
@@ -151,7 +156,7 @@
             // 
             this.btnSearch.BackColor = System.Drawing.Color.Coral;
             this.btnSearch.Location = new System.Drawing.Point(789, 2);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(129, 50);
             this.btnSearch.TabIndex = 11;
@@ -163,7 +168,7 @@
             this.txtSearch.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(927, 12);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(308, 37);
             this.txtSearch.TabIndex = 10;
@@ -172,17 +177,12 @@
             // 
             this.btnVolver.BackColor = System.Drawing.Color.Coral;
             this.btnVolver.Location = new System.Drawing.Point(640, 4);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(141, 50);
             this.btnVolver.TabIndex = 12;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
-            // 
-            // empleadoNumero
-            // 
-            this.empleadoNumero.Text = "Numero";
-            this.empleadoNumero.Width = 480;
             // 
             // vistaListaPersonalG
             // 
@@ -198,9 +198,10 @@
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "vistaListaPersonalG";
             this.Text = "vistaListaBarbero";
+            this.Load += new System.EventHandler(this.vistaListaPersonalG_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

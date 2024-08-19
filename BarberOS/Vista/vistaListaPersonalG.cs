@@ -13,5 +13,10 @@ namespace BarberOS.Vista
             InitializeComponent();
             controlListaPersonalG controladorVista = new controlListaPersonalG(this, menuForm);
         }
+
+        private void vistaListaPersonalG_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
