@@ -45,6 +45,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(442, 130);
             this.button3.TabIndex = 34;
+            this.button3.TabStop = false;
             this.button3.Text = "Informacion";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -56,7 +57,7 @@
             this.btnClientes.Location = new System.Drawing.Point(103, 266);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(218, 310);
-            this.btnClientes.TabIndex = 36;
+            this.btnClientes.TabIndex = 100;
             this.btnClientes.Text = "CLIENTES";
             this.btnClientes.UseVisualStyleBackColor = false;
             // 
@@ -67,7 +68,7 @@
             this.btnPersonal.Location = new System.Drawing.Point(317, 266);
             this.btnPersonal.Name = "btnPersonal";
             this.btnPersonal.Size = new System.Drawing.Size(228, 310);
-            this.btnPersonal.TabIndex = 37;
+            this.btnPersonal.TabIndex = 101;
             this.btnPersonal.Text = "PERSONAL";
             this.btnPersonal.UseVisualStyleBackColor = false;
             // 
@@ -77,7 +78,7 @@
             this.btnRegistros.Location = new System.Drawing.Point(623, 472);
             this.btnRegistros.Name = "btnRegistros";
             this.btnRegistros.Size = new System.Drawing.Size(327, 104);
-            this.btnRegistros.TabIndex = 47;
+            this.btnRegistros.TabIndex = 102;
             this.btnRegistros.Text = "REGISTROS";
             this.btnRegistros.UseVisualStyleBackColor = false;
             // 

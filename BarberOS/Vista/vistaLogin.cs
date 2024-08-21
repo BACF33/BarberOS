@@ -17,6 +17,28 @@ namespace BarberOS.Vista
             //tambien se pasara el menu para que pueda acceder a su funcion para abrir formularios a su derecha con la
             //funcion AbrirFormulario (ver controlMenu)
             controlLogin controladorLogin = new controlLogin(this, passedMenuForm);
+            this.KeyPreview = true;
+            this.KeyDown += Form_KeyDown;
+        }
+
+        private void nuevoUsuarioV(object sender, KeyPressEventArgs e)
+        {
+            if (txtUser.TextLength > 49)
+                e.Handled = true;
+        }
+
+        private void nuevaContraseñaV(object sender, KeyPressEventArgs e)
+        {
+            if (txtPassword.TextLength > 49)
+                e.Handled = true;
+        }
+
+        private void Form_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && (e.KeyCode == Keys.C || e.KeyCode == Keys.V))
+            {
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }

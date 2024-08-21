@@ -35,6 +35,8 @@ namespace BarberOS.Controlador
                 daoThis.NewPassword = builder.ToString();
             }
 
+            daoThis.NewEmail = controladaVista.txtNewMail.Text;
+
             //Se ejecutara la funcion register del dao
             daoThis.register();
         }

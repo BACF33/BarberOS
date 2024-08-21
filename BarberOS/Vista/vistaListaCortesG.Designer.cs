@@ -49,7 +49,7 @@
             this.btnAgregarEmpleados.Location = new System.Drawing.Point(12, 9);
             this.btnAgregarEmpleados.Name = "btnAgregarEmpleados";
             this.btnAgregarEmpleados.Size = new System.Drawing.Size(83, 43);
-            this.btnAgregarEmpleados.TabIndex = 1;
+            this.btnAgregarEmpleados.TabIndex = 100;
             this.btnAgregarEmpleados.Text = "Agregar";
             this.btnAgregarEmpleados.UseVisualStyleBackColor = false;
             // 
@@ -59,7 +59,7 @@
             this.btnActualizarEmpleados.Location = new System.Drawing.Point(101, 9);
             this.btnActualizarEmpleados.Name = "btnActualizarEmpleados";
             this.btnActualizarEmpleados.Size = new System.Drawing.Size(80, 43);
-            this.btnActualizarEmpleados.TabIndex = 6;
+            this.btnActualizarEmpleados.TabIndex = 101;
             this.btnActualizarEmpleados.Text = "Actualizar";
             this.btnActualizarEmpleados.UseVisualStyleBackColor = false;
             // 
@@ -69,7 +69,7 @@
             this.btnBorrarEmpleados.Location = new System.Drawing.Point(196, 9);
             this.btnBorrarEmpleados.Name = "btnBorrarEmpleados";
             this.btnBorrarEmpleados.Size = new System.Drawing.Size(81, 43);
-            this.btnBorrarEmpleados.TabIndex = 7;
+            this.btnBorrarEmpleados.TabIndex = 102;
             this.btnBorrarEmpleados.Text = "Borrar";
             this.btnBorrarEmpleados.UseVisualStyleBackColor = false;
             // 
@@ -79,7 +79,7 @@
             this.btnActualizarEmpleados2.Location = new System.Drawing.Point(292, 9);
             this.btnActualizarEmpleados2.Name = "btnActualizarEmpleados2";
             this.btnActualizarEmpleados2.Size = new System.Drawing.Size(82, 43);
-            this.btnActualizarEmpleados2.TabIndex = 8;
+            this.btnActualizarEmpleados2.TabIndex = 103;
             this.btnActualizarEmpleados2.Text = "Actualizar2";
             this.btnActualizarEmpleados2.UseVisualStyleBackColor = false;
             // 
@@ -89,7 +89,7 @@
             this.btnSearch.Location = new System.Drawing.Point(652, 9);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(78, 43);
-            this.btnSearch.TabIndex = 10;
+            this.btnSearch.TabIndex = 106;
             this.btnSearch.Text = "Buscar";
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
@@ -98,7 +98,7 @@
             this.txtSearch.Location = new System.Drawing.Point(736, 21);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(181, 20);
-            this.txtSearch.TabIndex = 9;
+            this.txtSearch.TabIndex = 105;
             // 
             // btnVolver
             // 
@@ -106,7 +106,7 @@
             this.btnVolver.Location = new System.Drawing.Point(566, 9);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(80, 43);
-            this.btnVolver.TabIndex = 11;
+            this.btnVolver.TabIndex = 104;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
             // 
@@ -154,7 +154,7 @@
             this.btnAPersonal.Location = new System.Drawing.Point(923, -2);
             this.btnAPersonal.Name = "btnAPersonal";
             this.btnAPersonal.Size = new System.Drawing.Size(217, 736);
-            this.btnAPersonal.TabIndex = 16;
+            this.btnAPersonal.TabIndex = 107;
             this.btnAPersonal.Text = "Personal";
             this.btnAPersonal.UseVisualStyleBackColor = false;
             // 

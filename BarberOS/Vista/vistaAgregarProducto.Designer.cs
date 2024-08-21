@@ -28,28 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNuevoTipo = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtNuevoNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNuevoPrecio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtNuevoTipo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtNuevoTipo
-            // 
-            this.txtNuevoTipo.Location = new System.Drawing.Point(204, 254);
-            this.txtNuevoTipo.Name = "txtNuevoTipo";
-            this.txtNuevoTipo.Size = new System.Drawing.Size(100, 20);
-            this.txtNuevoTipo.TabIndex = 31;
             // 
             // button2
             // 
@@ -69,65 +58,13 @@
             this.btnAgregar.Text = "Finalizar proceso";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(567, 229);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(45, 17);
-            this.radioButton4.TabIndex = 28;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Otro";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(460, 229);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(53, 17);
-            this.radioButton3.TabIndex = 27;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Barba";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(339, 229);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(60, 17);
-            this.radioButton2.TabIndex = 26;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Cabello";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(204, 230);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(88, 17);
-            this.radioButton1.TabIndex = 25;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Administrador";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 234);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 13);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Tipo del nuevo producto";
-            // 
             // txtNuevoNombre
             // 
             this.txtNuevoNombre.Location = new System.Drawing.Point(204, 12);
             this.txtNuevoNombre.Name = "txtNuevoNombre";
             this.txtNuevoNombre.Size = new System.Drawing.Size(217, 20);
             this.txtNuevoNombre.TabIndex = 23;
+            this.txtNuevoNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nuevoNombreV);
             // 
             // label3
             // 
@@ -144,15 +81,16 @@
             this.txtNuevoPrecio.Name = "txtNuevoPrecio";
             this.txtNuevoPrecio.Size = new System.Drawing.Size(217, 20);
             this.txtNuevoPrecio.TabIndex = 21;
+            this.txtNuevoPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nuevoPrecioV);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 13);
+            this.label1.Size = new System.Drawing.Size(132, 13);
             this.label1.TabIndex = 20;
-            this.label1.Text = "Precio del nuevo personal";
+            this.label1.Text = "Precio del nuevo producto";
             // 
             // pictureBox2
             // 
@@ -163,6 +101,23 @@
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 234);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(123, 13);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Tipo del nuevo producto";
+            // 
+            // txtNuevoTipo
+            // 
+            this.txtNuevoTipo.Location = new System.Drawing.Point(204, 254);
+            this.txtNuevoTipo.Name = "txtNuevoTipo";
+            this.txtNuevoTipo.Size = new System.Drawing.Size(100, 20);
+            this.txtNuevoTipo.TabIndex = 31;
+            this.txtNuevoTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nuevoTipoV);
+            // 
             // vistaAgregarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,10 +126,6 @@
             this.Controls.Add(this.txtNuevoTipo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtNuevoNombre);
             this.Controls.Add(this.label3);
@@ -190,18 +141,14 @@
         }
 
         #endregion
-        public System.Windows.Forms.TextBox txtNuevoTipo;
         private System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox txtNuevoNombre;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox txtNuevoPrecio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox txtNuevoTipo;
     }
 }

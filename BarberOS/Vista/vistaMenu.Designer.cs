@@ -48,7 +48,7 @@
             this.btnIngresar.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(196, 44);
-            this.btnIngresar.TabIndex = 25;
+            this.btnIngresar.TabIndex = 104;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = false;
             // 
@@ -60,7 +60,7 @@
             this.btnBarberos.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
             this.btnBarberos.Name = "btnBarberos";
             this.btnBarberos.Size = new System.Drawing.Size(196, 44);
-            this.btnBarberos.TabIndex = 26;
+            this.btnBarberos.TabIndex = 102;
             this.btnBarberos.Text = "BARBEROS";
             this.btnBarberos.UseVisualStyleBackColor = false;
             // 
@@ -72,7 +72,7 @@
             this.btnCortes.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
             this.btnCortes.Name = "btnCortes";
             this.btnCortes.Size = new System.Drawing.Size(196, 44);
-            this.btnCortes.TabIndex = 24;
+            this.btnCortes.TabIndex = 103;
             this.btnCortes.Text = "CORTES";
             this.btnCortes.UseVisualStyleBackColor = false;
             // 
@@ -84,7 +84,7 @@
             this.btnInicio.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(196, 44);
-            this.btnInicio.TabIndex = 23;
+            this.btnInicio.TabIndex = 101;
             this.btnInicio.Text = "INICIO";
             this.btnInicio.UseVisualStyleBackColor = false;
             // 
@@ -123,6 +123,7 @@
             this.btnCurrentUser.Name = "btnCurrentUser";
             this.btnCurrentUser.Size = new System.Drawing.Size(196, 44);
             this.btnCurrentUser.TabIndex = 27;
+            this.btnCurrentUser.TabStop = false;
             this.btnCurrentUser.Text = "No has iniciado sesion";
             this.btnCurrentUser.UseVisualStyleBackColor = false;
             // 
@@ -146,6 +147,7 @@
             this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1920, 1078);
             this.MinimumSize = new System.Drawing.Size(800, 597);
             this.Name = "vistaMenu";

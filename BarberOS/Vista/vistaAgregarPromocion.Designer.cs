@@ -31,10 +31,6 @@
             this.txtNuevoTipo = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNuevoNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -71,50 +67,6 @@
             this.btnAgregar.Text = "Finalizar proceso";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(567, 229);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(45, 17);
-            this.radioButton4.TabIndex = 41;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Otro";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(460, 229);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(53, 17);
-            this.radioButton3.TabIndex = 40;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Barba";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(339, 229);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(60, 17);
-            this.radioButton2.TabIndex = 39;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Cabello";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(204, 230);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(88, 17);
-            this.radioButton1.TabIndex = 38;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Administrador";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -130,6 +82,7 @@
             this.txtNuevoNombre.Name = "txtNuevoNombre";
             this.txtNuevoNombre.Size = new System.Drawing.Size(217, 20);
             this.txtNuevoNombre.TabIndex = 36;
+            this.txtNuevoNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nuevoNombreV);
             // 
             // label3
             // 
@@ -146,6 +99,7 @@
             this.txtNuevoPrecio.Name = "txtNuevoPrecio";
             this.txtNuevoPrecio.Size = new System.Drawing.Size(217, 20);
             this.txtNuevoPrecio.TabIndex = 34;
+            this.txtNuevoPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nuevoPrecioV);
             // 
             // label1
             // 
@@ -171,15 +125,16 @@
             this.txtNuevoPoder.Name = "txtNuevoPoder";
             this.txtNuevoPoder.Size = new System.Drawing.Size(217, 20);
             this.txtNuevoPoder.TabIndex = 46;
+            this.txtNuevoPoder.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nuevoDescuentoV);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 156);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 13);
+            this.label2.Size = new System.Drawing.Size(170, 13);
             this.label2.TabIndex = 45;
-            this.label2.Text = "Poder de la nueva promocion";
+            this.label2.Text = "Descuento de la nueva promocion";
             // 
             // vistaAgregarPromocion
             // 
@@ -191,10 +146,6 @@
             this.Controls.Add(this.txtNuevoTipo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtNuevoNombre);
             this.Controls.Add(this.label3);
@@ -214,10 +165,6 @@
         public System.Windows.Forms.TextBox txtNuevoTipo;
         private System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox txtNuevoNombre;
         private System.Windows.Forms.Label label3;

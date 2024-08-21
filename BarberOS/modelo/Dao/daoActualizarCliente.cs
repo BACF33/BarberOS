@@ -1,4 +1,5 @@
-﻿using BarberOS.Vista;
+﻿
+using BarberOS.Vista;
 using System;
 using System.Collections.Generic;
 using System.Configuration;

@@ -50,7 +50,7 @@
             this.btnAClientes.Location = new System.Drawing.Point(925, 1);
             this.btnAClientes.Name = "btnAClientes";
             this.btnAClientes.Size = new System.Drawing.Size(217, 728);
-            this.btnAClientes.TabIndex = 16;
+            this.btnAClientes.TabIndex = 107;
             this.btnAClientes.Text = "Clientes";
             this.btnAClientes.UseVisualStyleBackColor = false;
             // 
@@ -60,7 +60,7 @@
             this.btnAgregarPromocion.Location = new System.Drawing.Point(12, 12);
             this.btnAgregarPromocion.Name = "btnAgregarPromocion";
             this.btnAgregarPromocion.Size = new System.Drawing.Size(91, 48);
-            this.btnAgregarPromocion.TabIndex = 1;
+            this.btnAgregarPromocion.TabIndex = 100;
             this.btnAgregarPromocion.Text = "Agregar";
             this.btnAgregarPromocion.UseVisualStyleBackColor = false;
             // 
@@ -70,7 +70,7 @@
             this.btnActualizarPromocion.Location = new System.Drawing.Point(119, 12);
             this.btnActualizarPromocion.Name = "btnActualizarPromocion";
             this.btnActualizarPromocion.Size = new System.Drawing.Size(87, 48);
-            this.btnActualizarPromocion.TabIndex = 6;
+            this.btnActualizarPromocion.TabIndex = 101;
             this.btnActualizarPromocion.Text = "Actualizar";
             this.btnActualizarPromocion.UseVisualStyleBackColor = false;
             // 
@@ -80,7 +80,7 @@
             this.btnBorrarPromocion.Location = new System.Drawing.Point(223, 12);
             this.btnBorrarPromocion.Name = "btnBorrarPromocion";
             this.btnBorrarPromocion.Size = new System.Drawing.Size(90, 48);
-            this.btnBorrarPromocion.TabIndex = 7;
+            this.btnBorrarPromocion.TabIndex = 102;
             this.btnBorrarPromocion.Text = "Borrar";
             this.btnBorrarPromocion.UseVisualStyleBackColor = false;
             // 
@@ -90,7 +90,7 @@
             this.btnActualizarPromocion2.Location = new System.Drawing.Point(328, 12);
             this.btnActualizarPromocion2.Name = "btnActualizarPromocion2";
             this.btnActualizarPromocion2.Size = new System.Drawing.Size(89, 48);
-            this.btnActualizarPromocion2.TabIndex = 8;
+            this.btnActualizarPromocion2.TabIndex = 103;
             this.btnActualizarPromocion2.Text = "Actualizar 2";
             this.btnActualizarPromocion2.UseVisualStyleBackColor = false;
             // 
@@ -100,7 +100,7 @@
             this.btnVolver.Location = new System.Drawing.Point(568, 11);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(90, 48);
-            this.btnVolver.TabIndex = 9;
+            this.btnVolver.TabIndex = 104;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
             // 
@@ -155,7 +155,7 @@
             this.btnSearch.Location = new System.Drawing.Point(664, 10);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(88, 50);
-            this.btnSearch.TabIndex = 17;
+            this.btnSearch.TabIndex = 106;
             this.btnSearch.Text = "Buscar";
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
@@ -165,7 +165,7 @@
             this.txtSearchingFor.Location = new System.Drawing.Point(758, 19);
             this.txtSearchingFor.Name = "txtSearchingFor";
             this.txtSearchingFor.Size = new System.Drawing.Size(151, 29);
-            this.txtSearchingFor.TabIndex = 18;
+            this.txtSearchingFor.TabIndex = 105;
             // 
             // vistaListaPromocionesG
             // 

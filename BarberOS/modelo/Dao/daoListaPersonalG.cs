@@ -22,7 +22,7 @@ namespace BarberOS.Modelo.Dao
                     //Se ejecutara un query donde se obtendran los valores de la base de datos, se usa un inner join 
                     //dado a que userType es una llave foranea
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT u.userId, u.userName, u.userPassword, u.userPoints, r.roleName, u.userPhone " +
+                    using (SqlCommand cmd = new SqlCommand("SELECT u.userId, u.userName, u.userPassword, u.userPoints, r.roleName, u.userEmail " +
                         "FROM users u " +
                         "INNER JOIN userRoles r ON u.userRole = r.roleId " +
                         "WHERE r.roleName = 'Admin'", conexion))
@@ -39,7 +39,7 @@ namespace BarberOS.Modelo.Dao
                             item.SubItems.Add(reader["userPassword"].ToString());
                             item.SubItems.Add(reader["userPoints"].ToString());
                             item.SubItems.Add(reader["roleName"].ToString());
-                            item.SubItems.Add(reader["userPhone"].ToString());
+                            item.SubItems.Add(reader["userEmail"].ToString());
                             vistaPasada.listEmpleados.Items.Add(item);
                         }
 

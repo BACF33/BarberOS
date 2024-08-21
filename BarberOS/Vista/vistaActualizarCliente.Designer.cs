@@ -37,98 +37,109 @@
             this.txtNuevoPrecio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNuevoCorreo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNuevoTipo
             // 
-            this.txtNuevoTipo.Location = new System.Drawing.Point(262, 285);
-            this.txtNuevoTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNuevoTipo.Location = new System.Drawing.Point(204, 172);
             this.txtNuevoTipo.Name = "txtNuevoTipo";
-            this.txtNuevoTipo.Size = new System.Drawing.Size(132, 22);
-            this.txtNuevoTipo.TabIndex = 70;
+            this.txtNuevoTipo.Size = new System.Drawing.Size(100, 20);
+            this.txtNuevoTipo.TabIndex = 102;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(499, 414);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(374, 336);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(317, 114);
-            this.button2.TabIndex = 69;
+            this.button2.Size = new System.Drawing.Size(238, 93);
+            this.button2.TabIndex = 104;
             this.button2.Text = "Limpiar";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(20, 414);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActualizar.Location = new System.Drawing.Point(15, 336);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(317, 114);
-            this.btnActualizar.TabIndex = 68;
+            this.btnActualizar.Size = new System.Drawing.Size(238, 93);
+            this.btnActualizar.TabIndex = 103;
             this.btnActualizar.Text = "Finalizar proceso";
             this.btnActualizar.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 288);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(20, 174);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(166, 16);
+            this.label4.Size = new System.Drawing.Size(91, 13);
             this.label4.TabIndex = 63;
-            this.label4.Text = "Puntos del nuevo producto";
+            this.label4.Text = "Puntos del cliente";
             // 
             // txtNuevoNombre
             // 
-            this.txtNuevoNombre.Location = new System.Drawing.Point(272, 15);
-            this.txtNuevoNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNuevoNombre.Location = new System.Drawing.Point(204, 12);
             this.txtNuevoNombre.Name = "txtNuevoNombre";
-            this.txtNuevoNombre.Size = new System.Drawing.Size(288, 22);
-            this.txtNuevoNombre.TabIndex = 62;
+            this.txtNuevoNombre.Size = new System.Drawing.Size(217, 20);
+            this.txtNuevoNombre.TabIndex = 100;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 15);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(13, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 16);
+            this.label3.Size = new System.Drawing.Size(95, 13);
             this.label3.TabIndex = 61;
-            this.label3.Text = "Nombre del nuevo personal";
+            this.label3.Text = "Nombre del cliente";
             // 
             // txtNuevoPrecio
             // 
-            this.txtNuevoPrecio.Location = new System.Drawing.Point(272, 114);
-            this.txtNuevoPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNuevoPrecio.Location = new System.Drawing.Point(204, 93);
             this.txtNuevoPrecio.Name = "txtNuevoPrecio";
-            this.txtNuevoPrecio.Size = new System.Drawing.Size(288, 22);
-            this.txtNuevoPrecio.TabIndex = 60;
+            this.txtNuevoPrecio.Size = new System.Drawing.Size(217, 20);
+            this.txtNuevoPrecio.TabIndex = 101;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 118);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 16);
+            this.label1.Size = new System.Drawing.Size(112, 13);
             this.label1.TabIndex = 59;
-            this.label1.Text = "Contrasena del nuevo personal";
+            this.label1.Text = "Contraseña del cliente";
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox2.Location = new System.Drawing.Point(591, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(443, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(225, 198);
+            this.pictureBox2.Size = new System.Drawing.Size(169, 161);
             this.pictureBox2.TabIndex = 58;
             this.pictureBox2.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 256);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 13);
+            this.label2.TabIndex = 105;
+            this.label2.Text = "Correo del cliente";
+            // 
+            // txtNuevoCorreo
+            // 
+            this.txtNuevoCorreo.Location = new System.Drawing.Point(204, 256);
+            this.txtNuevoCorreo.Name = "txtNuevoCorreo";
+            this.txtNuevoCorreo.Size = new System.Drawing.Size(100, 20);
+            this.txtNuevoCorreo.TabIndex = 106;
+            // 
             // vistaActualizarCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 543);
+            this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.txtNuevoCorreo);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNuevoTipo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnActualizar);
@@ -138,7 +149,6 @@
             this.Controls.Add(this.txtNuevoPrecio);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "vistaActualizarCliente";
             this.Text = "vistaActualizarCLiente";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -158,5 +168,7 @@
         public System.Windows.Forms.TextBox txtNuevoPrecio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox txtNuevoCorreo;
     }
 }

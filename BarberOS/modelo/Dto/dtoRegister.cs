@@ -10,8 +10,10 @@ namespace BarberOS.Modelo.Dto
     {
         private string newUser;
         private string newPassword;
+        private string newEmail;
 
         public string NewUser { get => newUser; set => newUser = value; }
         public string NewPassword { get => newPassword; set => newPassword = value; }
+        public string NewEmail { get => newEmail; set => newEmail = value; }
     }
 }
