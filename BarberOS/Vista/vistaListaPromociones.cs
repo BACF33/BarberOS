@@ -18,6 +18,15 @@ namespace BarberOS.Vista
         {
             InitializeComponent();
             controlListaPromociones controladorVista = new controlListaPromociones(this, pasadoMenu, seleccionadoProducto);
+            this.KeyPreview = true;
+            this.KeyDown += Form_KeyDown;
+        }
+        private void Form_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && (e.KeyCode == Keys.C || e.KeyCode == Keys.V))
+            {
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }

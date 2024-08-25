@@ -23,9 +23,6 @@ namespace BarberOS.Vista
 
         private void nuevoDescuentoV(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
-                e.Handled = true;
-
             if (txtNuevoPoder.TextLength > 49)
                 e.Handled = true;
         }

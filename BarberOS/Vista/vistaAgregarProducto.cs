@@ -44,9 +44,6 @@ namespace BarberOS.Vista
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
                 e.Handled = true;
-
-            if (txtNuevoTipo.TextLength > 10)
-                e.Handled = true;
         }
 
         private void Form_KeyDown(object sender, KeyEventArgs e)

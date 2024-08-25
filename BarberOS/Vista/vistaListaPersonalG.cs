@@ -12,11 +12,15 @@ namespace BarberOS.Vista
         {
             InitializeComponent();
             controlListaPersonalG controladorVista = new controlListaPersonalG(this, menuForm);
+            this.KeyPreview = true;
+            this.KeyDown += Form_KeyDown;
         }
-
-        private void vistaListaPersonalG_Load(object sender, EventArgs e)
+        private void Form_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.Control && (e.KeyCode == Keys.C || e.KeyCode == Keys.V))
+            {
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNuevoTipo = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,15 +38,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtNuevoPoder = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtNuevoTipo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtNuevoTipo
-            // 
-            this.txtNuevoTipo.Location = new System.Drawing.Point(204, 254);
-            this.txtNuevoTipo.Name = "txtNuevoTipo";
-            this.txtNuevoTipo.Size = new System.Drawing.Size(100, 20);
-            this.txtNuevoTipo.TabIndex = 44;
             // 
             // button2
             // 
@@ -72,9 +65,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 234);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 13);
+            this.label4.Size = new System.Drawing.Size(139, 13);
             this.label4.TabIndex = 37;
-            this.label4.Text = "Tipo del nuevo producto";
+            this.label4.Text = "Tipo de la nueva promocion";
             // 
             // txtNuevoNombre
             // 
@@ -136,14 +129,22 @@
             this.label2.TabIndex = 45;
             this.label2.Text = "Descuento de la nueva promocion";
             // 
+            // txtNuevoTipo
+            // 
+            this.txtNuevoTipo.FormattingEnabled = true;
+            this.txtNuevoTipo.Location = new System.Drawing.Point(204, 234);
+            this.txtNuevoTipo.Name = "txtNuevoTipo";
+            this.txtNuevoTipo.Size = new System.Drawing.Size(121, 21);
+            this.txtNuevoTipo.TabIndex = 47;
+            // 
             // vistaAgregarPromocion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.txtNuevoTipo);
             this.Controls.Add(this.txtNuevoPoder);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtNuevoTipo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label4);
@@ -161,8 +162,6 @@
         }
 
         #endregion
-
-        public System.Windows.Forms.TextBox txtNuevoTipo;
         private System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label4;
@@ -173,5 +172,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.TextBox txtNuevoPoder;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.ComboBox txtNuevoTipo;
     }
 }

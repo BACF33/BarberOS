@@ -72,9 +72,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 153);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 13);
+            this.label4.Size = new System.Drawing.Size(122, 13);
             this.label4.TabIndex = 63;
-            this.label4.Text = "Tipo del nuevo producto";
+            this.label4.Text = "Nombre de la promocion";
             // 
             // txtNuevoNombre
             // 
@@ -88,9 +88,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(13, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 13);
+            this.label3.Size = new System.Drawing.Size(106, 13);
             this.label3.TabIndex = 61;
-            this.label3.Text = "Nombre del nuevo producto";
+            this.label3.Text = "Nombre del producto";
             // 
             // txtNuevoPrecio
             // 
@@ -104,9 +104,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 13);
+            this.label1.Size = new System.Drawing.Size(99, 13);
             this.label1.TabIndex = 59;
-            this.label1.Text = "Precio del nuevo personal";
+            this.label1.Text = "Precio del producto";
             // 
             // pictureBox2
             // 
@@ -129,9 +129,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 211);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 13);
+            this.label2.Size = new System.Drawing.Size(137, 13);
             this.label2.TabIndex = 71;
-            this.label2.Text = "Tipo del nuevo producto";
+            this.label2.Text = "Descuento de la promocion";
             // 
             // vistaActualizarRegistro
             // 

@@ -335,6 +335,12 @@
     <Compile Include="Vista\vistaRegister.Designer.cs">
       <DependentUpon>vistaRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\vistaRestablecerCorreo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaRestablecerCorreo.Designer.cs">
+      <DependentUpon>vistaRestablecerCorreo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -443,6 +449,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaRegister.resx">
       <DependentUpon>vistaRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaRestablecerCorreo.resx">
+      <DependentUpon>vistaRestablecerCorreo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

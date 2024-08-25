@@ -48,7 +48,7 @@ namespace BarberOS.Controlador
         public void reestablecerContraseña()
         {
             //1 Se abrira como nueva ventana un formulario vistaReestablecerAdmin
-            vistaReestablecerAdmin restpass = new vistaReestablecerAdmin();
+            vistaRestablecerCorreo restpass = new vistaRestablecerCorreo();
             restpass.Show();
         }
 

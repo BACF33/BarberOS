@@ -48,7 +48,6 @@
             this.button3.TabStop = false;
             this.button3.Text = "Informacion";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnClientes
             // 

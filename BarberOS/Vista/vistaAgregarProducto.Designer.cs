@@ -36,7 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtNuevoTipo = new System.Windows.Forms.TextBox();
+            this.txtNuevoTipo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,11 +112,11 @@
             // 
             // txtNuevoTipo
             // 
-            this.txtNuevoTipo.Location = new System.Drawing.Point(204, 254);
+            this.txtNuevoTipo.FormattingEnabled = true;
+            this.txtNuevoTipo.Location = new System.Drawing.Point(204, 234);
             this.txtNuevoTipo.Name = "txtNuevoTipo";
-            this.txtNuevoTipo.Size = new System.Drawing.Size(100, 20);
-            this.txtNuevoTipo.TabIndex = 31;
-            this.txtNuevoTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nuevoTipoV);
+            this.txtNuevoTipo.Size = new System.Drawing.Size(121, 21);
+            this.txtNuevoTipo.TabIndex = 32;
             // 
             // vistaAgregarProducto
             // 
@@ -149,6 +149,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox txtNuevoTipo;
+        public System.Windows.Forms.ComboBox txtNuevoTipo;
     }
 }

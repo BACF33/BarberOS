@@ -191,7 +191,6 @@
             this.Controls.Add(this.txtSearch);
             this.Name = "vistaListaPersonalG";
             this.Text = "vistaListaBarbero";
-            this.Load += new System.EventHandler(this.vistaListaPersonalG_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

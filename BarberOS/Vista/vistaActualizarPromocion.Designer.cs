@@ -37,14 +37,14 @@
             this.txtPNProducto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txtNPPromocion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtNPPromocion = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNNPromocion
             // 
-            this.txtNNPromocion.Location = new System.Drawing.Point(204, 131);
+            this.txtNNPromocion.Location = new System.Drawing.Point(204, 171);
             this.txtNNPromocion.Name = "txtNNPromocion";
             this.txtNNPromocion.Size = new System.Drawing.Size(217, 20);
             this.txtNNPromocion.TabIndex = 57;
@@ -70,11 +70,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 131);
+            this.label4.Location = new System.Drawing.Point(12, 171);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 13);
+            this.label4.Size = new System.Drawing.Size(137, 13);
             this.label4.TabIndex = 50;
-            this.label4.Text = "Tipo del nuevo producto";
+            this.label4.Text = "Descuento de la promocion";
             // 
             // txtNNProducto
             // 
@@ -88,13 +88,13 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(13, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 13);
+            this.label3.Size = new System.Drawing.Size(122, 13);
             this.label3.TabIndex = 48;
-            this.label3.Text = "Nombre del nuevo producto";
+            this.label3.Text = "Nombre de la promocion";
             // 
             // txtPNProducto
             // 
-            this.txtPNProducto.Location = new System.Drawing.Point(204, 71);
+            this.txtPNProducto.Location = new System.Drawing.Point(204, 93);
             this.txtPNProducto.Name = "txtPNProducto";
             this.txtPNProducto.Size = new System.Drawing.Size(217, 20);
             this.txtPNProducto.TabIndex = 47;
@@ -102,11 +102,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 74);
+            this.label1.Location = new System.Drawing.Point(12, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 13);
+            this.label1.Size = new System.Drawing.Size(115, 13);
             this.label1.TabIndex = 46;
-            this.label1.Text = "Precio del nuevo personal";
+            this.label1.Text = "Precio de la promocion";
             // 
             // pictureBox2
             // 
@@ -117,29 +117,33 @@
             this.pictureBox2.TabIndex = 45;
             this.pictureBox2.TabStop = false;
             // 
-            // txtNPPromocion
-            // 
-            this.txtNPPromocion.Location = new System.Drawing.Point(204, 189);
-            this.txtNPPromocion.Name = "txtNPPromocion";
-            this.txtNPPromocion.Size = new System.Drawing.Size(217, 20);
-            this.txtNPPromocion.TabIndex = 59;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 192);
+            this.label2.Location = new System.Drawing.Point(12, 255);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 13);
+            this.label2.Size = new System.Drawing.Size(106, 13);
             this.label2.TabIndex = 60;
-            this.label2.Text = "Tipo del nuevo producto";
+            this.label2.Text = "Tipo de la promocion";
+            // 
+            // txtNPPromocion
+            // 
+            this.txtNPPromocion.FormattingEnabled = true;
+            this.txtNPPromocion.Items.AddRange(new object[] {
+            "Cabello",
+            "Barba"});
+            this.txtNPPromocion.Location = new System.Drawing.Point(204, 255);
+            this.txtNPPromocion.Name = "txtNPPromocion";
+            this.txtNPPromocion.Size = new System.Drawing.Size(217, 21);
+            this.txtNPPromocion.TabIndex = 61;
             // 
             // vistaActualizarPromocion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNPPromocion);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNNPromocion);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnActualizar);
@@ -168,7 +172,7 @@
         public System.Windows.Forms.TextBox txtPNProducto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        public System.Windows.Forms.TextBox txtNPPromocion;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.ComboBox txtNPPromocion;
     }
 }
