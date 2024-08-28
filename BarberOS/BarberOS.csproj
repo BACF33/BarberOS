@@ -82,6 +82,7 @@
     <Compile Include="Controlador\controlAgregarPersonal.cs" />
     <Compile Include="Controlador\controlAgregarProducto.cs" />
     <Compile Include="Controlador\controlAgregarPromocion.cs" />
+    <Compile Include="Controlador\controlGetPin.cs" />
     <Compile Include="Controlador\controlInicio.cs" />
     <Compile Include="Controlador\controlInicioGestion.cs" />
     <Compile Include="Controlador\controlListaClientesG.cs" />
@@ -94,11 +95,13 @@
     <Compile Include="Controlador\controlListaRegistros.cs" />
     <Compile Include="Controlador\controlLogin.cs" />
     <Compile Include="Controlador\controlMenu.cs" />
+    <Compile Include="Controlador\controlNuevaContraseña.cs" />
     <Compile Include="Controlador\controlPanelBarbero.cs" />
     <Compile Include="Controlador\controlPanelProducto.cs" />
     <Compile Include="Controlador\controlPanelPromocion.cs" />
     <Compile Include="Controlador\controlReestablecerAdmin.cs" />
     <Compile Include="Controlador\controlRegister.cs" />
+    <Compile Include="Controlador\controlRestablecerCorreo.cs" />
     <Compile Include="Controlador\controlTotal.cs" />
     <Compile Include="Modelo\Dao\daoActualizarCliente.cs" />
     <Compile Include="Modelo\Dao\daoActualizarCorte.cs" />
@@ -109,6 +112,9 @@
     <Compile Include="Modelo\Dao\daoAgregarPersonal.cs" />
     <Compile Include="Modelo\Dao\daoAgregarProducto.cs" />
     <Compile Include="Modelo\Dao\daoAgregarPromocion.cs" />
+    <Compile Include="Modelo\Dao\daoNuevaContraseña.cs" />
+    <Compile Include="Modelo\Dao\daoRecuperar.cs" />
+    <Compile Include="Modelo\Dao\daoRestablecerCorreo.cs" />
     <Compile Include="Modelo\Dao\daoTotal.cs" />
     <Compile Include="Modelo\Dao\daoListaClientesG.cs" />
     <Compile Include="Modelo\Dao\daoListaCortes.cs" />
@@ -127,8 +133,10 @@
     <Compile Include="Modelo\Dto\dtoPanelBarbero.cs" />
     <Compile Include="Modelo\Dto\dtoPanelProducto.cs" />
     <Compile Include="Modelo\Dto\dtoPanelPromocion.cs" />
+    <Compile Include="Modelo\Dto\dtoRecuperar.cs" />
     <Compile Include="Modelo\Dto\dtoRegister.cs" />
     <Compile Include="Modelo\Dto\dtoRestablecerAdmin.cs" />
+    <Compile Include="Modelo\Dto\dtoServicioCorreo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vista\vistaActualizarRegistro.cs">
@@ -136,6 +144,18 @@
     </Compile>
     <Compile Include="Vista\vistaActualizarRegistro.Designer.cs">
       <DependentUpon>vistaActualizarRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaInsertarPin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaInsertarPin.Designer.cs">
+      <DependentUpon>vistaInsertarPin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaNuevaContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaNuevaContraseña.Designer.cs">
+      <DependentUpon>vistaNuevaContraseña.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\vistaPerfilUsuario.cs">
       <SubType>Form</SubType>
@@ -405,6 +425,9 @@
     <EmbeddedResource Include="Vista\vistaInicio.resx">
       <DependentUpon>vistaInicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaInsertarPin.resx">
+      <DependentUpon>vistaInsertarPin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaInventario.resx">
       <DependentUpon>vistaInventario.cs</DependentUpon>
     </EmbeddedResource>
@@ -440,6 +463,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaLogin.resx">
       <DependentUpon>vistaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaNuevaContraseña.resx">
+      <DependentUpon>vistaNuevaContraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaRecompensas.resx">
       <DependentUpon>vistaRecompensas.cs</DependentUpon>
