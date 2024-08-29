@@ -73,113 +73,113 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controlador\controlActualizarCliente.cs" />
-    <Compile Include="Controlador\controlActualizarCortes.cs" />
-    <Compile Include="Controlador\controlActualizarPersonal.cs" />
-    <Compile Include="Controlador\controlActualizarPromocion.cs" />
-    <Compile Include="Controlador\controlActualizarRegistro.cs" />
-    <Compile Include="Controlador\controlAgregarCliente.cs" />
-    <Compile Include="Controlador\controlAgregarPersonal.cs" />
-    <Compile Include="Controlador\controlAgregarProducto.cs" />
-    <Compile Include="Controlador\controlAgregarPromocion.cs" />
-    <Compile Include="Controlador\controlGetPin.cs" />
-    <Compile Include="Controlador\controlInicio.cs" />
-    <Compile Include="Controlador\controlInicioGestion.cs" />
-    <Compile Include="Controlador\controlListaClientesG.cs" />
-    <Compile Include="Controlador\controlListaCortes.cs" />
-    <Compile Include="Controlador\controlListaCortesG.cs" />
-    <Compile Include="Controlador\controlListaPersonal.cs" />
-    <Compile Include="Controlador\controlListaPersonalG.cs" />
-    <Compile Include="Controlador\controlListaPromociones.cs" />
-    <Compile Include="Controlador\controlListaPromocionesG.cs" />
-    <Compile Include="Controlador\controlListaRegistros.cs" />
-    <Compile Include="Controlador\controlLogin.cs" />
-    <Compile Include="Controlador\controlMenu.cs" />
-    <Compile Include="Controlador\controlNuevaContraseña.cs" />
-    <Compile Include="Controlador\controlPanelBarbero.cs" />
-    <Compile Include="Controlador\controlPanelProducto.cs" />
-    <Compile Include="Controlador\controlPanelPromocion.cs" />
-    <Compile Include="Controlador\controlReestablecerAdmin.cs" />
-    <Compile Include="Controlador\controlRegister.cs" />
-    <Compile Include="Controlador\controlRestablecerCorreo.cs" />
-    <Compile Include="Controlador\controlTotal.cs" />
-    <Compile Include="Modelo\Dao\daoActualizarCliente.cs" />
-    <Compile Include="Modelo\Dao\daoActualizarCorte.cs" />
-    <Compile Include="Modelo\Dao\daoActualizarPersonal.cs" />
-    <Compile Include="Modelo\Dao\daoActualizarPromocion.cs" />
-    <Compile Include="Modelo\Dao\daoActualizarRegistro.cs" />
-    <Compile Include="Modelo\Dao\daoAgregarCliente.cs" />
-    <Compile Include="Modelo\Dao\daoAgregarPersonal.cs" />
-    <Compile Include="Modelo\Dao\daoAgregarProducto.cs" />
-    <Compile Include="Modelo\Dao\daoAgregarPromocion.cs" />
-    <Compile Include="Modelo\Dao\daoNuevaContraseña.cs" />
-    <Compile Include="Modelo\Dao\daoRecuperar.cs" />
-    <Compile Include="Modelo\Dao\daoRestablecerCorreo.cs" />
-    <Compile Include="Modelo\Dao\daoTotal.cs" />
-    <Compile Include="Modelo\Dao\daoListaClientesG.cs" />
-    <Compile Include="Modelo\Dao\daoListaCortes.cs" />
-    <Compile Include="Modelo\Dao\daoListaCortesG.cs" />
-    <Compile Include="Modelo\Dao\daoListaPersonal.cs" />
-    <Compile Include="Modelo\Dao\daoListaPersonalG.cs" />
-    <Compile Include="Modelo\Dao\daoListaPromociones.cs" />
-    <Compile Include="Modelo\Dao\daoListaPromocionesG.cs" />
-    <Compile Include="Modelo\Dao\daoListaRegistrosG.cs" />
-    <Compile Include="Modelo\Dao\daoLogin.cs" />
-    <Compile Include="Modelo\Dao\daoRegister.cs" />
-    <Compile Include="Modelo\Dao\daoRestablecerAdmin.cs" />
-    <Compile Include="Modelo\Dto\dtoAgregarCliente.cs" />
-    <Compile Include="Modelo\Dto\dtoAgregarPersonal.cs" />
-    <Compile Include="Modelo\Dto\dtoLogin.cs" />
-    <Compile Include="Modelo\Dto\dtoPanelBarbero.cs" />
-    <Compile Include="Modelo\Dto\dtoPanelProducto.cs" />
-    <Compile Include="Modelo\Dto\dtoPanelPromocion.cs" />
-    <Compile Include="Modelo\Dto\dtoRecuperar.cs" />
-    <Compile Include="Modelo\Dto\dtoRegister.cs" />
-    <Compile Include="Modelo\Dto\dtoRestablecerAdmin.cs" />
-    <Compile Include="Modelo\Dto\dtoServicioCorreo.cs" />
+    <Compile Include="Controlador\ControlActualizarCliente.cs" />
+    <Compile Include="Controlador\ControlActualizarCortes.cs" />
+    <Compile Include="Controlador\ControlActualizarPersonal.cs" />
+    <Compile Include="Controlador\ControlActualizarPromocion.cs" />
+    <Compile Include="Controlador\ControlActualizarRegistro.cs" />
+    <Compile Include="Controlador\ControlAgregarCliente.cs" />
+    <Compile Include="Controlador\ControlAgregarPersonal.cs" />
+    <Compile Include="Controlador\ControlAgregarProducto.cs" />
+    <Compile Include="Controlador\ControlAgregarPromocion.cs" />
+    <Compile Include="Controlador\ControlObtenerPin.cs" />
+    <Compile Include="Controlador\ControlInicio.cs" />
+    <Compile Include="Controlador\ControlInicioGestion.cs" />
+    <Compile Include="Controlador\ControlListaClientesG.cs" />
+    <Compile Include="Controlador\ControlListaCortes.cs" />
+    <Compile Include="Controlador\ControlListaCortesG.cs" />
+    <Compile Include="Controlador\ControlListaPersonal.cs" />
+    <Compile Include="Controlador\ControlListaPersonalG.cs" />
+    <Compile Include="Controlador\ControlListaPromociones.cs" />
+    <Compile Include="Controlador\ControlListaPromocionesG.cs" />
+    <Compile Include="Controlador\ControlListaRegistros.cs" />
+    <Compile Include="Controlador\ControlLogin.cs" />
+    <Compile Include="Controlador\ControlMenu.cs" />
+    <Compile Include="Controlador\ControlNuevaContraseña.cs" />
+    <Compile Include="Controlador\ControlPanelBarbero.cs" />
+    <Compile Include="Controlador\ControlPanelProducto.cs" />
+    <Compile Include="Controlador\ControlPanelPromocion.cs" />
+    <Compile Include="Controlador\ControlReestablecerAdmin.cs" />
+    <Compile Include="Controlador\ControlRegistrarse.cs" />
+    <Compile Include="Controlador\ControlRestablecerCorreo.cs" />
+    <Compile Include="Controlador\ControlTotal.cs" />
+    <Compile Include="Modelo\Dao\DaoActualizarCliente.cs" />
+    <Compile Include="Modelo\Dao\DaoActualizarCorte.cs" />
+    <Compile Include="Modelo\Dao\DaoActualizarPersonal.cs" />
+    <Compile Include="Modelo\Dao\DaoActualizarPromocion.cs" />
+    <Compile Include="Modelo\Dao\DaoActualizarRegistro.cs" />
+    <Compile Include="Modelo\Dao\DaoAgregarCliente.cs" />
+    <Compile Include="Modelo\Dao\DaoAgregarPersonal.cs" />
+    <Compile Include="Modelo\Dao\DaoAgregarProducto.cs" />
+    <Compile Include="Modelo\Dao\DaoAgregarPromocion.cs" />
+    <Compile Include="Modelo\Dao\DaoNuevaContraseña.cs" />
+    <Compile Include="Modelo\Dao\DaoRecuperar.cs" />
+    <Compile Include="Modelo\Dao\DaoRestablecerCorreo.cs" />
+    <Compile Include="Modelo\Dao\DaoTotal.cs" />
+    <Compile Include="Modelo\Dao\DaoListaClientesG.cs" />
+    <Compile Include="Modelo\Dao\DaoListaCortes.cs" />
+    <Compile Include="Modelo\Dao\DaoListaCortesG.cs" />
+    <Compile Include="Modelo\Dao\DaoListaPersonal.cs" />
+    <Compile Include="Modelo\Dao\DaoListaPersonalG.cs" />
+    <Compile Include="Modelo\Dao\DaoListaPromociones.cs" />
+    <Compile Include="Modelo\Dao\DaoListaPromocionesG.cs" />
+    <Compile Include="Modelo\Dao\DaoListaRegistrosG.cs" />
+    <Compile Include="Modelo\Dao\DaoLogin.cs" />
+    <Compile Include="Modelo\Dao\DaoRegistrarse.cs" />
+    <Compile Include="Modelo\Dao\DaoRestablecerAdmin.cs" />
+    <Compile Include="Modelo\Dto\DtoAgregarCliente.cs" />
+    <Compile Include="Modelo\Dto\DtoAgregarPersonal.cs" />
+    <Compile Include="Modelo\Dto\DtoLogin.cs" />
+    <Compile Include="Modelo\Dto\DtoPanelBarbero.cs" />
+    <Compile Include="Modelo\Dto\DtoPanelProducto.cs" />
+    <Compile Include="Modelo\Dto\DtoPanelPromocion.cs" />
+    <Compile Include="Modelo\Dto\DtoRecuperar.cs" />
+    <Compile Include="Modelo\Dto\DtoRegister.cs" />
+    <Compile Include="Modelo\Dto\DtoRestablecerAdmin.cs" />
+    <Compile Include="Modelo\Dto\DtoServicioCorreo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vista\vistaActualizarRegistro.cs">
+    <Compile Include="Vista\VistaActualizarRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaActualizarRegistro.Designer.cs">
-      <DependentUpon>vistaActualizarRegistro.cs</DependentUpon>
+    <Compile Include="Vista\VistaActualizarRegistro.Designer.cs">
+      <DependentUpon>VistaActualizarRegistro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaInsertarPin.cs">
+    <Compile Include="Vista\VistaInsertarPin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaInsertarPin.Designer.cs">
-      <DependentUpon>vistaInsertarPin.cs</DependentUpon>
+    <Compile Include="Vista\VistaInsertarPin.Designer.cs">
+      <DependentUpon>VistaInsertarPin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaNuevaContraseña.cs">
+    <Compile Include="Vista\VistaNuevaContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaNuevaContraseña.Designer.cs">
-      <DependentUpon>vistaNuevaContraseña.cs</DependentUpon>
+    <Compile Include="Vista\VistaNuevaContraseña.Designer.cs">
+      <DependentUpon>VistaNuevaContraseña.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaPerfilUsuario.cs">
+    <Compile Include="Vista\VistaPerfilUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaPerfilUsuario.Designer.cs">
-      <DependentUpon>vistaPerfilUsuario.cs</DependentUpon>
+    <Compile Include="Vista\VistaPerfilUsuario.Designer.cs">
+      <DependentUpon>VistaPerfilUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaReestablecerAdmin.cs">
+    <Compile Include="Vista\VistaReestablecerAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaReestablecerAdmin.Designer.cs">
-      <DependentUpon>vistaReestablecerAdmin.cs</DependentUpon>
+    <Compile Include="Vista\VistaReestablecerAdmin.Designer.cs">
+      <DependentUpon>VistaReestablecerAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaActualizarCliente.cs">
+    <Compile Include="Vista\VistaActualizarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaActualizarCliente.Designer.cs">
-      <DependentUpon>vistaActualizarCliente.cs</DependentUpon>
+    <Compile Include="Vista\VistaActualizarCliente.Designer.cs">
+      <DependentUpon>VistaActualizarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaActualizarCortes.cs">
+    <Compile Include="Vista\VistaActualizarCortes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaActualizarCortes.Designer.cs">
-      <DependentUpon>vistaActualizarCortes.cs</DependentUpon>
+    <Compile Include="Vista\VistaActualizarCortes.Designer.cs">
+      <DependentUpon>VistaActualizarCortes.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\guardado.cs">
       <SubType>Form</SubType>
@@ -187,179 +187,179 @@
     <Compile Include="Vista\guardado.Designer.cs">
       <DependentUpon>guardado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\panelBarbero.cs">
+    <Compile Include="Vista\PanelBarbero.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Vista\panelBarbero.Designer.cs">
-      <DependentUpon>panelBarbero.cs</DependentUpon>
+    <Compile Include="Vista\PanelBarbero.Designer.cs">
+      <DependentUpon>PanelBarbero.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\panelProducto.cs">
+    <Compile Include="Vista\PanelProducto.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Vista\panelProducto.Designer.cs">
-      <DependentUpon>panelProducto.cs</DependentUpon>
+    <Compile Include="Vista\PanelProducto.Designer.cs">
+      <DependentUpon>PanelProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\panelPromocion.cs">
+    <Compile Include="Vista\PanelPromocion.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Vista\panelPromocion.Designer.cs">
-      <DependentUpon>panelPromocion.cs</DependentUpon>
+    <Compile Include="Vista\PanelPromocion.Designer.cs">
+      <DependentUpon>PanelPromocion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaActualizarPersonal.cs">
+    <Compile Include="Vista\VistaActualizarPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaActualizarPersonal.Designer.cs">
-      <DependentUpon>vistaActualizarPersonal.cs</DependentUpon>
+    <Compile Include="Vista\VistaActualizarPersonal.Designer.cs">
+      <DependentUpon>VistaActualizarPersonal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaActualizarPromocion.cs">
+    <Compile Include="Vista\VistaActualizarPromocion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaActualizarPromocion.Designer.cs">
-      <DependentUpon>vistaActualizarPromocion.cs</DependentUpon>
+    <Compile Include="Vista\VistaActualizarPromocion.Designer.cs">
+      <DependentUpon>VistaActualizarPromocion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaAgregarCliente.cs">
+    <Compile Include="Vista\VistaAgregarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaAgregarCliente.Designer.cs">
-      <DependentUpon>vistaAgregarCliente.cs</DependentUpon>
+    <Compile Include="Vista\VistaAgregarCliente.Designer.cs">
+      <DependentUpon>VistaAgregarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaAgregarPersonal.cs">
+    <Compile Include="Vista\VistaAgregarPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaAgregarPersonal.Designer.cs">
-      <DependentUpon>vistaAgregarPersonal.cs</DependentUpon>
+    <Compile Include="Vista\VistaAgregarPersonal.Designer.cs">
+      <DependentUpon>VistaAgregarPersonal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaAgregarProducto.cs">
+    <Compile Include="Vista\VistaAgregarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaAgregarProducto.Designer.cs">
-      <DependentUpon>vistaAgregarProducto.cs</DependentUpon>
+    <Compile Include="Vista\VistaAgregarProducto.Designer.cs">
+      <DependentUpon>VistaAgregarProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaAgregarPromocion.cs">
+    <Compile Include="Vista\VistaAgregarPromocion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaAgregarPromocion.Designer.cs">
-      <DependentUpon>vistaAgregarPromocion.cs</DependentUpon>
+    <Compile Include="Vista\VistaAgregarPromocion.Designer.cs">
+      <DependentUpon>VistaAgregarPromocion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaInicio.cs">
+    <Compile Include="Vista\VistaInicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaInicio.Designer.cs">
-      <DependentUpon>vistaInicio.cs</DependentUpon>
+    <Compile Include="Vista\VistaInicio.Designer.cs">
+      <DependentUpon>VistaInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaInventario.cs">
+    <Compile Include="Vista\VistaInventario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaInventario.Designer.cs">
-      <DependentUpon>vistaInventario.cs</DependentUpon>
+    <Compile Include="Vista\VistaInventario.Designer.cs">
+      <DependentUpon>VistaInventario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaInfoBarbero.cs">
+    <Compile Include="Vista\VistaInfoBarbero.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaInfoBarbero.Designer.cs">
-      <DependentUpon>vistaInfoBarbero.cs</DependentUpon>
+    <Compile Include="Vista\VistaInfoBarbero.Designer.cs">
+      <DependentUpon>VistaInfoBarbero.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaInfoCliente.cs">
+    <Compile Include="Vista\VistaInfoCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaInfoCliente.Designer.cs">
-      <DependentUpon>vistaInfoCliente.cs</DependentUpon>
+    <Compile Include="Vista\VistaInfoCliente.Designer.cs">
+      <DependentUpon>VistaInfoCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaListaClientesG.cs">
+    <Compile Include="Vista\VistaListaClientesG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaListaClientesG.Designer.cs">
-      <DependentUpon>vistaListaClientesG.cs</DependentUpon>
+    <Compile Include="Vista\VistaListaClientesG.Designer.cs">
+      <DependentUpon>VistaListaClientesG.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaListaCortes.cs">
+    <Compile Include="Vista\VistaListaCortes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaListaCortes.Designer.cs">
-      <DependentUpon>vistaListaCortes.cs</DependentUpon>
+    <Compile Include="Vista\VistaListaCortes.Designer.cs">
+      <DependentUpon>VistaListaCortes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaListaPersonal.cs">
+    <Compile Include="Vista\VistaListaPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaListaPersonal.Designer.cs">
-      <DependentUpon>vistaListaPersonal.cs</DependentUpon>
+    <Compile Include="Vista\VistaListaPersonal.Designer.cs">
+      <DependentUpon>VistaListaPersonal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaListaPersonalG.cs">
+    <Compile Include="Vista\VistaListaPersonalG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaListaPersonalG.Designer.cs">
-      <DependentUpon>vistaListaPersonalG.cs</DependentUpon>
+    <Compile Include="Vista\VistaListaPersonalG.Designer.cs">
+      <DependentUpon>VistaListaPersonalG.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaListaCortesG.cs">
+    <Compile Include="Vista\VistaListaCortesG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaListaCortesG.Designer.cs">
-      <DependentUpon>vistaListaCortesG.cs</DependentUpon>
+    <Compile Include="Vista\VistaListaCortesG.Designer.cs">
+      <DependentUpon>VistaListaCortesG.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaListaPromociones.cs">
+    <Compile Include="Vista\VistaListaPromociones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaListaPromociones.Designer.cs">
-      <DependentUpon>vistaListaPromociones.cs</DependentUpon>
+    <Compile Include="Vista\VistaListaPromociones.Designer.cs">
+      <DependentUpon>VistaListaPromociones.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaListaPromocionesG.cs">
+    <Compile Include="Vista\VistaListaPromocionesG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaListaPromocionesG.Designer.cs">
-      <DependentUpon>vistaListaPromocionesG.cs</DependentUpon>
+    <Compile Include="Vista\VistaListaPromocionesG.Designer.cs">
+      <DependentUpon>VistaListaPromocionesG.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaListaRegistros.cs">
+    <Compile Include="Vista\VistaListaRegistros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaListaRegistros.Designer.cs">
-      <DependentUpon>vistaListaRegistros.cs</DependentUpon>
+    <Compile Include="Vista\VistaListaRegistros.Designer.cs">
+      <DependentUpon>VistaListaRegistros.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaMenu.cs">
+    <Compile Include="Vista\VistaMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaMenu.Designer.cs">
-      <DependentUpon>vistaMenu.cs</DependentUpon>
+    <Compile Include="Vista\VistaMenu.Designer.cs">
+      <DependentUpon>VistaMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaInicioGestion.cs">
+    <Compile Include="Vista\VistaInicioGestion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaInicioGestion.Designer.cs">
-      <DependentUpon>vistaInicioGestion.cs</DependentUpon>
+    <Compile Include="Vista\VistaInicioGestion.Designer.cs">
+      <DependentUpon>VistaInicioGestion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaRecompensas.cs">
+    <Compile Include="Vista\VistaRecompensas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaRecompensas.Designer.cs">
-      <DependentUpon>vistaRecompensas.cs</DependentUpon>
+    <Compile Include="Vista\VistaRecompensas.Designer.cs">
+      <DependentUpon>VistaRecompensas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaBarberos.cs">
+    <Compile Include="Vista\guardado2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaBarberos.Designer.cs">
-      <DependentUpon>vistaBarberos.cs</DependentUpon>
+    <Compile Include="Vista\guardado2.Designer.cs">
+      <DependentUpon>guardado2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaCortes.cs">
+    <Compile Include="Vista\guardado3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaCortes.Designer.cs">
-      <DependentUpon>vistaCortes.cs</DependentUpon>
+    <Compile Include="Vista\guardado3.Designer.cs">
+      <DependentUpon>guardado3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaLogin.cs">
+    <Compile Include="Vista\VistaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaLogin.Designer.cs">
-      <DependentUpon>vistaLogin.cs</DependentUpon>
+    <Compile Include="Vista\VistaLogin.Designer.cs">
+      <DependentUpon>VistaLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaRegister.cs">
+    <Compile Include="Vista\VistaRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaRegister.Designer.cs">
-      <DependentUpon>vistaRegister.cs</DependentUpon>
+    <Compile Include="Vista\VistaRegister.Designer.cs">
+      <DependentUpon>VistaRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaRestablecerCorreo.cs">
+    <Compile Include="Vista\VistaRestablecerCorreo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaRestablecerCorreo.Designer.cs">
-      <DependentUpon>vistaRestablecerCorreo.cs</DependentUpon>
+    <Compile Include="Vista\VistaRestablecerCorreo.Designer.cs">
+      <DependentUpon>VistaRestablecerCorreo.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -374,110 +374,110 @@
     <EmbeddedResource Include="Vista\guardado.resx">
       <DependentUpon>guardado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\panelBarbero.resx">
-      <DependentUpon>panelBarbero.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\PanelBarbero.resx">
+      <DependentUpon>PanelBarbero.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\panelProducto.resx">
-      <DependentUpon>panelProducto.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\PanelProducto.resx">
+      <DependentUpon>PanelProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\panelPromocion.resx">
-      <DependentUpon>panelPromocion.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\PanelPromocion.resx">
+      <DependentUpon>PanelPromocion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaActualizarCliente.resx">
-      <DependentUpon>vistaActualizarCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaActualizarCliente.resx">
+      <DependentUpon>VistaActualizarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaActualizarCortes.resx">
-      <DependentUpon>vistaActualizarCortes.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaActualizarCortes.resx">
+      <DependentUpon>VistaActualizarCortes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaActualizarPersonal.resx">
-      <DependentUpon>vistaActualizarPersonal.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaActualizarPersonal.resx">
+      <DependentUpon>VistaActualizarPersonal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaActualizarPromocion.resx">
-      <DependentUpon>vistaActualizarPromocion.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaActualizarPromocion.resx">
+      <DependentUpon>VistaActualizarPromocion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaActualizarRegistro.resx">
-      <DependentUpon>vistaActualizarRegistro.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaActualizarRegistro.resx">
+      <DependentUpon>VistaActualizarRegistro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaAgregarCliente.resx">
-      <DependentUpon>vistaAgregarCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaAgregarCliente.resx">
+      <DependentUpon>VistaAgregarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaAgregarPersonal.resx">
-      <DependentUpon>vistaAgregarPersonal.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaAgregarPersonal.resx">
+      <DependentUpon>VistaAgregarPersonal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaAgregarProducto.resx">
-      <DependentUpon>vistaAgregarProducto.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaAgregarProducto.resx">
+      <DependentUpon>VistaAgregarProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaAgregarPromocion.resx">
-      <DependentUpon>vistaAgregarPromocion.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaAgregarPromocion.resx">
+      <DependentUpon>VistaAgregarPromocion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaBarberos.resx">
-      <DependentUpon>vistaBarberos.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\guardado2.resx">
+      <DependentUpon>guardado2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaCortes.resx">
-      <DependentUpon>vistaCortes.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\guardado3.resx">
+      <DependentUpon>guardado3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaInfoBarbero.resx">
-      <DependentUpon>vistaInfoBarbero.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaInfoBarbero.resx">
+      <DependentUpon>VistaInfoBarbero.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaInfoCliente.resx">
-      <DependentUpon>vistaInfoCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaInfoCliente.resx">
+      <DependentUpon>VistaInfoCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaInicio.resx">
-      <DependentUpon>vistaInicio.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaInicio.resx">
+      <DependentUpon>VistaInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaInsertarPin.resx">
-      <DependentUpon>vistaInsertarPin.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaInsertarPin.resx">
+      <DependentUpon>VistaInsertarPin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaInventario.resx">
-      <DependentUpon>vistaInventario.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaInventario.resx">
+      <DependentUpon>VistaInventario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaListaClientesG.resx">
-      <DependentUpon>vistaListaClientesG.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaListaClientesG.resx">
+      <DependentUpon>VistaListaClientesG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaListaCortes.resx">
-      <DependentUpon>vistaListaCortes.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaListaCortes.resx">
+      <DependentUpon>VistaListaCortes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaListaCortesG.resx">
-      <DependentUpon>vistaListaCortesG.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaListaCortesG.resx">
+      <DependentUpon>VistaListaCortesG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaListaPersonal.resx">
-      <DependentUpon>vistaListaPersonal.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaListaPersonal.resx">
+      <DependentUpon>VistaListaPersonal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaListaPersonalG.resx">
-      <DependentUpon>vistaListaPersonalG.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaListaPersonalG.resx">
+      <DependentUpon>VistaListaPersonalG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaListaPromociones.resx">
-      <DependentUpon>vistaListaPromociones.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaListaPromociones.resx">
+      <DependentUpon>VistaListaPromociones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaListaPromocionesG.resx">
-      <DependentUpon>vistaListaPromocionesG.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaListaPromocionesG.resx">
+      <DependentUpon>VistaListaPromocionesG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaListaRegistros.resx">
-      <DependentUpon>vistaListaRegistros.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaListaRegistros.resx">
+      <DependentUpon>VistaListaRegistros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaMenu.resx">
-      <DependentUpon>vistaMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaMenu.resx">
+      <DependentUpon>VistaMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaInicioGestion.resx">
-      <DependentUpon>vistaInicioGestion.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaInicioGestion.resx">
+      <DependentUpon>VistaInicioGestion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaLogin.resx">
-      <DependentUpon>vistaLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaLogin.resx">
+      <DependentUpon>VistaLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaNuevaContraseña.resx">
-      <DependentUpon>vistaNuevaContraseña.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaNuevaContraseña.resx">
+      <DependentUpon>VistaNuevaContraseña.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaRecompensas.resx">
-      <DependentUpon>vistaRecompensas.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaRecompensas.resx">
+      <DependentUpon>VistaRecompensas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaReestablecerAdmin.resx">
-      <DependentUpon>vistaReestablecerAdmin.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaReestablecerAdmin.resx">
+      <DependentUpon>VistaReestablecerAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaRegister.resx">
-      <DependentUpon>vistaRegister.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaRegister.resx">
+      <DependentUpon>VistaRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaRestablecerCorreo.resx">
-      <DependentUpon>vistaRestablecerCorreo.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaRestablecerCorreo.resx">
+      <DependentUpon>VistaRestablecerCorreo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

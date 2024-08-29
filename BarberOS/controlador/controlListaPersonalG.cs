@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace BarberOS.Controlador
 {
-    internal class controlListaPersonalG
+    internal class ControlListaPersonalG
     {
         private vistaMenu menuForm;
-        private vistaListaPersonalG controladaVista;
-        private daoListaPersonalG dao = new daoListaPersonalG();
+        private VistaListaPersonalG controladaVista;
+        private DaoListaPersonalG dao = new DaoListaPersonalG();
 
-        public controlListaPersonalG(vistaListaPersonalG vistaPasada, vistaMenu passedMenuForm)
+        public ControlListaPersonalG(VistaListaPersonalG vistaPasada, vistaMenu passedMenuForm)
         {
             controladaVista = vistaPasada;
             menuForm = passedMenuForm;
@@ -27,23 +27,23 @@ namespace BarberOS.Controlador
             controladaVista.btnActualizarEmpleados.Click += (sender, e) => getData();
             controladaVista.btnBorrarEmpleados.Click += (sender, e) => deleteData();
             controladaVista.btnAgregarEmpleados.Click += (sender, e) => insertData();
-            controladaVista.btnACortes.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaCortesG(passedMenuForm));
+            controladaVista.btnACortes.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaListaCortesG(passedMenuForm));
             controladaVista.btnActualizarEmpleados2.Click += (sender, e) => updateData();
             controladaVista.btnSearch.Click += (sender, e) => searchData();
-            controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaInicioGestion(passedMenuForm));
+            controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenuForm));
             getData();
         }
 
         public void updateData()
         {
-            vistaActualizarPersonal actualizar;
+            VistaActualizarPersonal actualizar;
             //1 Si en la vista el usuario selecciono una fila en la tabla se ejecutara lo siguiente
             if (controladaVista.listEmpleados.SelectedItems.Count > 0)
             {
                 //2 Se obtendra el primer valor de la fila seleccionada en la tabla, es decir la id
                 string selectedId = controladaVista.listEmpleados.SelectedItems[0].Text;
                 //3 Se abirar una vistaActualizarCorte como nueva ventana
-                actualizar = new vistaActualizarPersonal(selectedId);
+                actualizar = new VistaActualizarPersonal(selectedId);
                 actualizar.Show();
             }
         }
@@ -51,7 +51,7 @@ namespace BarberOS.Controlador
         public void insertData()
         {
             //1 Se abirar un formulario agregarPersonal como nueva ventana
-            vistaAgregarPersonal agregarPersonal = new vistaAgregarPersonal();
+            VistaAgregarPersonal agregarPersonal = new VistaAgregarPersonal();
             agregarPersonal.Show();
         }
 

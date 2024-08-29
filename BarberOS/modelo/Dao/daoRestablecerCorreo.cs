@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoRestablecerCorreo
+    internal class DaoRestablecerCorreo
     {
         public bool verificarCorreo(string usuario, string correo)
         {

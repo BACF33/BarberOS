@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaActualizarCliente : Form
+    public partial class VistaActualizarCliente : Form
     {
-        public vistaActualizarCliente(string selectedId)
+        public VistaActualizarCliente(string selectedId)
         {
             InitializeComponent();
-            controlActualizarCliente controladorVista = new controlActualizarCliente(selectedId, this);
+            ControlActualizarCliente controladorVista = new ControlActualizarCliente(selectedId, this);
             this.KeyPreview = true;
             this.KeyDown += Form_KeyDown;
         }

@@ -4,13 +4,13 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaInicioGestion : Form
+    public partial class VistaInicioGestion : Form
     {
-        public vistaInicioGestion(vistaMenu passedForm)
+        public VistaInicioGestion(vistaMenu passedForm)
         {
             InitializeComponent();
             //vistaInicioGestion creara su controlador al ser creada usando el constructor
-            controlInicioGestion controladorInicioGestion = new controlInicioGestion(this, passedForm);
+            ControlInicioGestion controladorInicioGestion = new ControlInicioGestion(this, passedForm);
             this.KeyPreview = true;
             this.KeyDown += Form_KeyDown;
         }

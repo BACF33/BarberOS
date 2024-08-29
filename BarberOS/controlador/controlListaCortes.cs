@@ -3,13 +3,13 @@ using BarberOS.Vista;
 
 namespace BarberOS.Controlador
 {
-    internal class controlListaCortes
+    internal class ControlListaCortes
     {
-        vistaListaCortes controladaVista;
-        public controlListaCortes(vistaListaCortes enviadaVista, vistaMenu pasadoMenu)
+        VistaListaCortes controladaVista;
+        public ControlListaCortes(VistaListaCortes enviadaVista, vistaMenu pasadoMenu)
         {
             controladaVista = enviadaVista;
-            daoListaCortes daoThis = new daoListaCortes(enviadaVista, pasadoMenu);
+            DaoListaCortes daoThis = new DaoListaCortes(enviadaVista, pasadoMenu);
         }
     }
 }

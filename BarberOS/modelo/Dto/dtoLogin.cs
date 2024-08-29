@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Modelo.Dto
 {
-    public class dtoLogin
+    public class DtoLogin
     {
         private string username;
         private string password;

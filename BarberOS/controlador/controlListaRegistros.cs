@@ -4,18 +4,18 @@ using System.Windows.Forms;
 
 namespace BarberOS.Controlador
 {
-    internal class controlListaRegistros
+    internal class ControlListaRegistros
     {
-        vistaListaRegistros controladaVista;
-        daoListaRegistrosG daoThis;
-        public controlListaRegistros(vistaListaRegistros pasadaVista, vistaMenu passedMenu) 
+        VistaListaRegistros controladaVista;
+        DaoListaRegistrosG daoThis;
+        public ControlListaRegistros(VistaListaRegistros pasadaVista, vistaMenu passedMenu) 
         {
             controladaVista = pasadaVista;
-            daoThis = new daoListaRegistrosG(controladaVista);
+            daoThis = new DaoListaRegistrosG(controladaVista);
             controladaVista.btnActualizarRegistros.Click += (sender, e) => daoThis.getData();
             controladaVista.btnBorrarEmpleados.Click += (sender, e) => deleteData();
             controladaVista.btnUpdate2.Click += (sender, e) => updateData();
-            controladaVista.btnVolver.Click += (sender, e) => passedMenu.controladorMenu.AbrirFormulario(new vistaInicioGestion(passedMenu));
+            controladaVista.btnVolver.Click += (sender, e) => passedMenu.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenu));
             controladaVista.btnSearch.Click += (sender, e) => searchData();
         }
         public void deleteData() 
@@ -26,11 +26,11 @@ namespace BarberOS.Controlador
 
         public void updateData()
         {
-            vistaActualizarRegistro actualizar;
+            VistaActualizarRegistro actualizar;
             if (controladaVista.listRegistros.SelectedItems.Count > 0)
             {
                 string selectedId = controladaVista.listRegistros.SelectedItems[0].Text;
-                actualizar = new vistaActualizarRegistro(selectedId);
+                actualizar = new VistaActualizarRegistro(selectedId);
                 actualizar.Show();
             }
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Modelo.Dto
 {
-    internal class dtoRegister
+    internal class DtoRegister
     {
         private string newUser;
         private string newPassword;

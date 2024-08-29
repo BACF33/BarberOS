@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vistas
 {
-    public partial class vistaInicio : Form
+    public partial class VistaInicio : Form
     {
-        public vistaInicio(vistaMenu menuForm)
+        public VistaInicio(vistaMenu menuForm)
         {
             InitializeComponent();
-            controlInicio controladorInicio = new controlInicio(this, menuForm);
+            ControlInicio controladorInicio = new ControlInicio(this, menuForm);
             this.KeyPreview = true;
             this.KeyDown += Form_KeyDown;
         }

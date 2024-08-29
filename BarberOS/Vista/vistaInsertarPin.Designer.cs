@@ -1,6 +1,6 @@
 ﻿namespace BarberOS.Vista
 {
-    partial class vistaInsertarPin
+    partial class VistaInsertarPin
     {
         /// <summary>
         /// Required designer variable.

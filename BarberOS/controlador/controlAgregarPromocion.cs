@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace BarberOS.Controlador
 {
-    internal class controlAgregarPromocion
+    internal class ControlAgregarPromocion
     {
-        vistaAgregarPromocion controladaVista = null;
-        public controlAgregarPromocion (vistaAgregarPromocion pasadaVista)
+        VistaAgregarPromocion controladaVista = null;
+        public ControlAgregarPromocion (VistaAgregarPromocion pasadaVista)
         {
             controladaVista = pasadaVista;
             //Cuando se presion agregar se ejecutara la funcion agregarPersonal
@@ -24,7 +24,7 @@ namespace BarberOS.Controlador
         public void agregarPersonal()
         {
             //Se ejecutara el constructor del dao donde se agregaran los queries
-            daoAgregarPromocion daoThis = new daoAgregarPromocion(controladaVista);
+            DaoAgregarPromocion daoThis = new DaoAgregarPromocion(controladaVista);
         }
     }
 }

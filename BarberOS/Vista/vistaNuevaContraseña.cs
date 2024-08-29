@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaNuevaContraseña : Form
+    public partial class VistaNuevaContraseña : Form
     {
-        public vistaNuevaContraseña(string userPasado)
+        public VistaNuevaContraseña(string userPasado)
         {
             InitializeComponent();
-            new controlNuevaContraseña(this, userPasado);
+            new ControlNuevaContraseña(this, userPasado);
         }
     }
 }

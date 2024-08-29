@@ -1,6 +1,6 @@
 ﻿namespace BarberOS.Vista
 {
-    partial class vistaListaClientesG
+    partial class VistaListaClientesG
     {
         /// <summary>
         /// Required designer variable.
@@ -72,7 +72,7 @@
             this.btnActualizarClientes.Name = "btnActualizarClientes";
             this.btnActualizarClientes.Size = new System.Drawing.Size(89, 46);
             this.btnActualizarClientes.TabIndex = 101;
-            this.btnActualizarClientes.Text = "Actualizar";
+            this.btnActualizarClientes.Text = "Obtener";
             this.btnActualizarClientes.UseVisualStyleBackColor = false;
             // 
             // btnBorrarClientes
@@ -92,7 +92,7 @@
             this.btnActualizarClientes2.Name = "btnActualizarClientes2";
             this.btnActualizarClientes2.Size = new System.Drawing.Size(89, 46);
             this.btnActualizarClientes2.TabIndex = 103;
-            this.btnActualizarClientes2.Text = "Actualizar2";
+            this.btnActualizarClientes2.Text = "Actualizar";
             this.btnActualizarClientes2.UseVisualStyleBackColor = false;
             // 
             // btnVolver
@@ -159,7 +159,7 @@
             // 
             this.txtSearchingFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchingFor.Location = new System.Drawing.Point(625, 13);
-            this.txtSearchingFor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearchingFor.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearchingFor.Name = "txtSearchingFor";
             this.txtSearchingFor.Size = new System.Drawing.Size(199, 35);
             this.txtSearchingFor.TabIndex = 104;
@@ -168,14 +168,14 @@
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.Coral;
             this.btnBuscar.Location = new System.Drawing.Point(537, 10);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(83, 48);
             this.btnBuscar.TabIndex = 105;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
-            // vistaListaClientesG
+            // VistaListaClientesG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -189,7 +189,7 @@
             this.Controls.Add(this.listClientes);
             this.Controls.Add(this.btnActualizarClientes2);
             this.Controls.Add(this.btnVolver);
-            this.Name = "vistaListaClientesG";
+            this.Name = "VistaListaClientesG";
             this.Text = "vistaListaClientesG";
             this.ResumeLayout(false);
             this.PerformLayout();

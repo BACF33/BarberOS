@@ -3,13 +3,13 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaListaClientesG : Form
+    public partial class VistaListaClientesG : Form
     {
-        public vistaListaClientesG(vistaMenu passedMenu)
+        public VistaListaClientesG(vistaMenu passedMenu)
         {
             InitializeComponent();
             //1 El formulario creara su controlador
-            controlListaClientesG controladorVista = new controlListaClientesG(this, passedMenu);
+            ControlListaClientesG controladorVista = new ControlListaClientesG(this, passedMenu);
             this.KeyPreview = true;
             this.KeyDown += Form_KeyDown;
         }

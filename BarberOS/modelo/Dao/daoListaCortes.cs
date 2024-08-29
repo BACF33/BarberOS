@@ -10,9 +10,9 @@ using System.Windows;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoListaCortes
+    internal class DaoListaCortes
     {
-        public daoListaCortes(vistaListaCortes enviadaVista, vistaMenu pasadoMenu)
+        public DaoListaCortes(VistaListaCortes enviadaVista, vistaMenu pasadoMenu)
         {
             try
             {
@@ -35,7 +35,7 @@ namespace BarberOS.Modelo.Dao
                                 testName = reader["productName"].ToString();
                                 testPrecio = reader["productPrice"].ToString();
                                 testTipo = reader["productType"].ToString();
-                                panelProducto panelUsado = new panelProducto(pasadoMenu, testId, testName, testPrecio, testTipo);
+                                PanelProducto panelUsado = new PanelProducto(pasadoMenu, testId, testName, testPrecio, testTipo);
 
                                 enviadaVista.flpCabello.Controls.Add(panelUsado);
 

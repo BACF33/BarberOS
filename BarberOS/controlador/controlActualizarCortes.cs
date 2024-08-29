@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Controlador
 {
-    internal class controlActualizarCortes
+    internal class ControlActualizarCortes
     {
-        daoActualizarCorte daoThis;
-        public controlActualizarCortes(string selectedId, vistaActualizarCortes pasadaVista) 
+        DaoActualizarCorte daoThis;
+        public ControlActualizarCortes(string selectedId, VistaActualizarCortes pasadaVista) 
         {
             //Cuando se presione el botnon actualizar del formulario vistaActualizarortes se ejecutara la funcion execUpdate
             pasadaVista.btnActualizar.Click += (sender, e) => execUpdate();
             //Se ejecutara la el constructor del daoActualizarCorte
-            daoThis = new daoActualizarCorte(selectedId, pasadaVista);
+            daoThis = new DaoActualizarCorte(selectedId, pasadaVista);
         }
 
         public void execUpdate()

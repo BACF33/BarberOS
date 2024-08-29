@@ -1,6 +1,6 @@
 ﻿namespace BarberOS.Vista
 {
-    partial class panelPromocion
+    partial class PanelPromocion
     {
         /// <summary> 
         /// Variable del diseñador necesaria.

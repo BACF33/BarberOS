@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Modelo.Dto
 {
-    public class dtoPanelPromocion
+    public class DtoPanelPromocion
     {
         private int promocionId;
         private string promocionName;

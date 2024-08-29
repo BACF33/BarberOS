@@ -11,10 +11,10 @@ using System.Windows;
 
 namespace BarberOS.Controlador
 {
-    internal class controlAgregarProducto
+    internal class ControlAgregarProducto
     {
-        vistaAgregarProducto controladaVista = null;
-        public controlAgregarProducto(vistaAgregarProducto pasadaVista)
+        VistaAgregarProducto controladaVista = null;
+        public ControlAgregarProducto(VistaAgregarProducto pasadaVista)
         {
             controladaVista = pasadaVista;
             //Cuando se presion agregar se ejecutara la funcion agregarProducto
@@ -24,7 +24,7 @@ namespace BarberOS.Controlador
         public void agregarProducto()
         {
             //Se ejecutara el constructor de daoAgregarProducto para agregar los queries
-            daoAgregarProducto daoThis = new daoAgregarProducto(controladaVista);
+            DaoAgregarProducto daoThis = new DaoAgregarProducto(controladaVista);
         }
     }
 }

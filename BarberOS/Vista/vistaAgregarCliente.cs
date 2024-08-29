@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaAgregarCliente : Form
+    public partial class VistaAgregarCliente : Form
     {
-        public vistaAgregarCliente()
+        public VistaAgregarCliente()
         {
             InitializeComponent();
             //vistaAgregarCliente creara su controlador
-            controlAgregarCliente controladorVista = new controlAgregarCliente(this);
+            ControlAgregarCliente controladorVista = new ControlAgregarCliente(this);
             this.KeyPreview = true;
             this.KeyDown += Form_KeyDown;
         }

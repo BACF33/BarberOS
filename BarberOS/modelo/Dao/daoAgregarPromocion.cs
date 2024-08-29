@@ -10,9 +10,9 @@ using System.Windows;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoAgregarPromocion
+    internal class DaoAgregarPromocion
     {
-        public daoAgregarPromocion(vistaAgregarPromocion controladaVista)
+        public DaoAgregarPromocion(VistaAgregarPromocion controladaVista)
         {
             try
             {

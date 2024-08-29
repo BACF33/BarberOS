@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaAgregarProducto : Form
+    public partial class VistaAgregarProducto : Form
     {
-        public vistaAgregarProducto()
+        public VistaAgregarProducto()
         {
             InitializeComponent();
-            controlAgregarProducto controladorVista = new controlAgregarProducto(this);
+            ControlAgregarProducto controladorVista = new ControlAgregarProducto(this);
             this.KeyPreview = true;
             this.KeyDown += Form_KeyDown;
         }

@@ -1,6 +1,6 @@
 ﻿namespace BarberOS.Vista
 {
-    partial class vistaListaRegistros
+    partial class VistaListaRegistros
     {
         /// <summary>
         /// Required designer variable.

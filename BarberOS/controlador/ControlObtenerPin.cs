@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Controlador
 {
-    internal class controlGetPin
+    internal class ControlObtenerPin
     {
-        vistaInsertarPin vistaControlada;
+        VistaInsertarPin vistaControlada;
         int pin2;
         string user2;
-        public controlGetPin(int pin, vistaInsertarPin vistaPasada, string user) 
+        public ControlObtenerPin(int pin, VistaInsertarPin vistaPasada, string user) 
         {
             pin2 = pin;
             user2 = user;
@@ -24,7 +24,7 @@ namespace BarberOS.Controlador
         {
             if (vistaControlada.txtPin.Text == pin2.ToString())
             {
-                vistaNuevaContraseña nPass = new vistaNuevaContraseña(user2);
+                VistaNuevaContraseña nPass = new VistaNuevaContraseña(user2);
                 nPass.Show();
                 vistaControlada.Close();
             }

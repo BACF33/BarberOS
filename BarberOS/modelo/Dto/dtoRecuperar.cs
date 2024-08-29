@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Modelo.Dto
 {
-    public class dtoRecuperar
+    public class DtoRecuperar
     {
         private SmtpClient cliente;
 
@@ -74,7 +74,7 @@ namespace BarberOS.Modelo.Dto
                             string userEMail = reader.GetString(3);
                             string userPassword = reader.GetString(5);
 
-                            var servicioCorreo = new dtoServicioCorreo();
+                            var servicioCorreo = new DtoServicioCorreo();
                             servicioCorreo.EnviarCorreo(
                                 asunto: "Reestablecimiento de contraseña",
                                 contenido: "Test",

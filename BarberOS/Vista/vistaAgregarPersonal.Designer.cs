@@ -1,6 +1,6 @@
 ﻿namespace BarberOS.Vista
 {
-    partial class vistaAgregarPersonal
+    partial class VistaAgregarPersonal
     {
         /// <summary>
         /// Required designer variable.

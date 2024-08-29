@@ -11,9 +11,9 @@ using System.Windows;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoTotal
+    internal class DaoTotal
     {
-        public daoTotal(dtoPanelPromocion pasadaPromocion, dtoPanelProducto pasadoProducto) 
+        public DaoTotal(DtoPanelPromocion pasadaPromocion, DtoPanelProducto pasadoProducto) 
         {
             try
             {

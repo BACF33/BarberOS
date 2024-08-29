@@ -1,6 +1,6 @@
 ﻿namespace BarberOS.Vista
 {
-    partial class vistaActualizarCortes
+    partial class VistaActualizarCortes
     {
         /// <summary>
         /// Required designer variable.

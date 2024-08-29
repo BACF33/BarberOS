@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Modelo.Dao
 {
-    public class daoRecuperar
+    public class DaoRecuperar
     {
         public string Recuperar(string solicitando)
         {
-            return new dtoRecuperar().restablecer(solicitando);
+            return new DtoRecuperar().restablecer(solicitando);
         }
     }
 }

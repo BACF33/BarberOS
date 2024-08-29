@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoNuevaContraseña
+    internal class DaoNuevaContraseña
     {
-        public void nuevaContaseña(vistaNuevaContraseña vistaPasada, string user)
+        public void nuevaContaseña(VistaNuevaContraseña vistaPasada, string user)
         {
             try
             {

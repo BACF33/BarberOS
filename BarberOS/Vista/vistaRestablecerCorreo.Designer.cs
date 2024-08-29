@@ -1,6 +1,6 @@
 ﻿namespace BarberOS.Vista
 {
-    partial class vistaRestablecerCorreo
+    partial class VistaRestablecerCorreo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnOtroMetodo = new System.Windows.Forms.Button();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,14 +38,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnOtroMetodo
             // 
-            this.button1.Location = new System.Drawing.Point(139, 521);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(215, 104);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Reestablecer por otro metodo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnOtroMetodo.Location = new System.Drawing.Point(139, 521);
+            this.btnOtroMetodo.Name = "btnOtroMetodo";
+            this.btnOtroMetodo.Size = new System.Drawing.Size(215, 104);
+            this.btnOtroMetodo.TabIndex = 0;
+            this.btnOtroMetodo.Text = "Reestablecer por otro metodo";
+            this.btnOtroMetodo.UseVisualStyleBackColor = true;
             // 
             // txtUser
             // 
@@ -103,7 +103,7 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // vistaRestablecerCorreo
+            // VistaRestablecerCorreo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -114,8 +114,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtUser);
-            this.Controls.Add(this.button1);
-            this.Name = "vistaRestablecerCorreo";
+            this.Controls.Add(this.btnOtroMetodo);
+            this.Name = "VistaRestablecerCorreo";
             this.Text = "vistaRestablecerCorreo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -125,7 +125,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnOtroMetodo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;

@@ -1,6 +1,6 @@
 ﻿namespace BarberOS.Vista
 {
-    partial class vistaLogin
+    partial class VistaLogin
     {
         /// <summary>
         /// Required designer variable.

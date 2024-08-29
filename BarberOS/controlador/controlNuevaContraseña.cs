@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Controlador
 {
-    internal class controlNuevaContraseña
+    internal class ControlNuevaContraseña
     {
-        vistaNuevaContraseña vistaControlada;
-        daoNuevaContraseña daoThis;
+        VistaNuevaContraseña vistaControlada;
+        DaoNuevaContraseña daoThis;
         string user;
-        public controlNuevaContraseña(vistaNuevaContraseña vistaPasada, string userPasado)
+        public ControlNuevaContraseña(VistaNuevaContraseña vistaPasada, string userPasado)
         {
             vistaControlada = vistaPasada;
-            daoThis = new daoNuevaContraseña();
+            daoThis = new DaoNuevaContraseña();
             user = userPasado;
             vistaPasada.btnNueva.Click += (sender, e) => nuevaContraseña();
         }

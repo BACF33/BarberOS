@@ -11,7 +11,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoLogin : dtoLogin
+    internal class DaoLogin : DtoLogin
     {
         public int login() 
         {

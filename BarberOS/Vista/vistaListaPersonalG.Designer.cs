@@ -1,6 +1,6 @@
 ﻿namespace BarberOS.Vista
 {
-    partial class vistaListaPersonalG
+    partial class VistaListaPersonalG
     {
         /// <summary>
         /// Required designer variable.

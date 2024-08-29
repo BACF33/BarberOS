@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaInsertarPin : Form
+    public partial class VistaInsertarPin : Form
     {
-        public vistaInsertarPin(int pin, string user)
+        public VistaInsertarPin(int pin, string user)
         {
             InitializeComponent();
-            new controlGetPin(pin, this, user);
+            new ControlObtenerPin(pin, this, user);
         }
     }
 }

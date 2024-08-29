@@ -13,14 +13,14 @@ using System.Windows;
 
 namespace BarberOS.Controlador
 {
-    internal class controlListaPersonal
+    internal class ControlListaPersonal
     {
-        vistaListaPersonal controladaVista;
-        public controlListaPersonal(vistaListaPersonal enviadaVista) 
+        VistaListaPersonal controladaVista;
+        public ControlListaPersonal(VistaListaPersonal enviadaVista) 
         {
             controladaVista = enviadaVista;
 
-            daoListaPersonal daoThis = new daoListaPersonal(enviadaVista);
+            DaoListaPersonal daoThis = new DaoListaPersonal(enviadaVista);
         }
     }
 }

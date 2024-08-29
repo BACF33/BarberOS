@@ -9,14 +9,14 @@ using System.Windows;
 
 namespace BarberOS.Controlador
 {
-    internal class controlPanelPromocion
+    internal class ControlPanelPromocion
     {
-        panelPromocion controladoPanel = null;
+        PanelPromocion controladoPanel = null;
         vistaMenu menu = null;
-        dtoPanelProducto seleccionadoProducto = null;
-        dtoPanelPromocion infoEste = new dtoPanelPromocion();
+        DtoPanelProducto seleccionadoProducto = null;
+        DtoPanelPromocion infoEste = new DtoPanelPromocion();
 
-        public controlPanelPromocion(panelPromocion pasadoPanel, vistaMenu pasadoMenu, dtoPanelProducto pasadoProducto, int testId, string testName, string testPower, string testType)
+        public ControlPanelPromocion(PanelPromocion pasadoPanel, vistaMenu pasadoMenu, DtoPanelProducto pasadoProducto, int testId, string testName, string testPower, string testType)
         {
 
             infoEste.PromocionId = testId;
@@ -37,7 +37,7 @@ namespace BarberOS.Controlador
         }
         public void evaluarPuntosUsuario()
         {
-            menu.controladorMenu.AbrirFormulario(new vistaRecompensas(infoEste, menu, seleccionadoProducto));
+            menu.controladorMenu.AbrirFormulario(new VistaRecompensas(infoEste, menu, seleccionadoProducto));
         }
     }
 }

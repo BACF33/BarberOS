@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoListaRegistrosG
+    internal class DaoListaRegistrosG
     {
-        vistaListaRegistros controladaVista;
+        VistaListaRegistros controladaVista;
 
-        public daoListaRegistrosG(vistaListaRegistros pasadaVista) 
+        public DaoListaRegistrosG(VistaListaRegistros pasadaVista) 
         {
             controladaVista = pasadaVista;
         }
@@ -65,7 +65,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void deleteData(vistaListaRegistros vistaPasada)
+        public void deleteData(VistaListaRegistros vistaPasada)
         {
             string selectedId = vistaPasada.listRegistros.SelectedItems[0].Text;
             try
@@ -89,7 +89,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void searchData(string searchingFor, vistaListaRegistros vistaPasada)
+        public void searchData(string searchingFor, VistaListaRegistros vistaPasada)
         {
             try
             {

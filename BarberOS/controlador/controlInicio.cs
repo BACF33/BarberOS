@@ -9,17 +9,17 @@ using System.Windows.Forms;
 
 namespace BarberOS.Controlador
 {
-    internal class controlInicio
+    internal class ControlInicio
     {
-        vistaInicio controladaVista = null;
+        VistaInicio controladaVista = null;
         vistaMenu menuForm;
-        public controlInicio(vistaInicio vistaPasada, vistaMenu passedMenu)
+        public ControlInicio(VistaInicio vistaPasada, vistaMenu passedMenu)
         {
             controladaVista = vistaPasada;
             menuForm = passedMenu;
 
-            controladaVista.btnCortes.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new vistaListaCortes(menuForm));
-            controladaVista.btnBarberos.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new vistaListaPersonal());
+            controladaVista.btnCortes.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaCortes(menuForm));
+            controladaVista.btnBarberos.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaPersonal());
         }
     }
 }

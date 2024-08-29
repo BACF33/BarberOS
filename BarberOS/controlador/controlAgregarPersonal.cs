@@ -13,10 +13,10 @@ using System.Windows;
 
 namespace BarberOS.Controlador
 {
-    internal class controlAgregarPersonal
+    internal class ControlAgregarPersonal
     {
-        vistaAgregarPersonal controladaVista = null;
-        public controlAgregarPersonal(vistaAgregarPersonal pasadaVista)
+        VistaAgregarPersonal controladaVista = null;
+        public ControlAgregarPersonal(VistaAgregarPersonal pasadaVista)
         {
             controladaVista = pasadaVista;
             controladaVista.btnAgregar.Click += (sender, e) => agregarPersonal();
@@ -24,7 +24,7 @@ namespace BarberOS.Controlador
 
         public void agregarPersonal() 
         {
-            daoAgregarPersonal daoThis = new daoAgregarPersonal();
+            DaoAgregarPersonal daoThis = new DaoAgregarPersonal();
             //1 Al dto o a la informacion que se usara en el query se le asigna la informacion que el usuario ingreso
             //en el textbox
             daoThis.UserName = controladaVista.txtNuevoNombre.Text;

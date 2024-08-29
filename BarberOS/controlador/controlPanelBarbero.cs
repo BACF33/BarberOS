@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace BarberOS.Controlador
 {
-    internal class controlPanelBarbero
+    internal class ControlPanelBarbero
     {
-        panelBarbero controladoPanel = null;
-        public controlPanelBarbero(panelBarbero pasadoPanel, string passedId, string passedName, string passedRole)
+        PanelBarbero controladoPanel = null;
+        public ControlPanelBarbero(PanelBarbero pasadoPanel, string passedId, string passedName, string passedRole)
         {
             controladoPanel = pasadoPanel;
-            dtoPanelBarbero infoEste = new dtoPanelBarbero();
+            DtoPanelBarbero infoEste = new DtoPanelBarbero();
             infoEste.BarberoId = passedId;
             infoEste.BarberoName = passedName;
             infoEste.BarberoRole = passedRole;

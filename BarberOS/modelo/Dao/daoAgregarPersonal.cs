@@ -11,7 +11,7 @@ using System.Windows;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoAgregarPersonal : dtoAgregarPersonal
+    internal class DaoAgregarPersonal : DtoAgregarPersonal
     {
         public void insert()
         {

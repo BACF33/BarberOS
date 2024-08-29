@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaListaPromociones : Form
+    public partial class VistaListaPromociones : Form
     {
-        public vistaListaPromociones(vistaMenu pasadoMenu, dtoPanelProducto seleccionadoProducto)
+        public VistaListaPromociones(vistaMenu pasadoMenu, DtoPanelProducto seleccionadoProducto)
         {
             InitializeComponent();
-            controlListaPromociones controladorVista = new controlListaPromociones(this, pasadoMenu, seleccionadoProducto);
+            ControlListaPromociones controladorVista = new ControlListaPromociones(this, pasadoMenu, seleccionadoProducto);
             this.KeyPreview = true;
             this.KeyDown += Form_KeyDown;
         }

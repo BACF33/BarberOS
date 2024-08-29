@@ -10,9 +10,9 @@ using System.Windows;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoListaPersonal
+    internal class DaoListaPersonal
     {
-        public daoListaPersonal(vistaListaPersonal enviadaVista)
+        public DaoListaPersonal(VistaListaPersonal enviadaVista)
         {
             try
             {
@@ -34,7 +34,7 @@ namespace BarberOS.Modelo.Dao
                                 testId = reader["userId"].ToString();
                                 testName = reader["userName"].ToString();
                                 testRole = reader["userRole"].ToString();
-                                panelBarbero panelUsado = new panelBarbero(testId, testName, testRole);
+                                PanelBarbero panelUsado = new PanelBarbero(testId, testName, testRole);
 
                                 enviadaVista.flpPersonal.Controls.Add(panelUsado);
                             }

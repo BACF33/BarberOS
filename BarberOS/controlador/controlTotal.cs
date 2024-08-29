@@ -5,25 +5,25 @@ using BarberOS.Vistas;
 
 namespace BarberOS.Controlador
 {
-    internal class controlTotal
+    internal class ControlTotal
     {
-        public controlTotal(vistaMenu pasadoMenu, vistaRecompensas enviadaVista, dtoPanelPromocion pasadaPromocion, dtoPanelProducto seleccionadoProducto) 
+        public ControlTotal(vistaMenu pasadoMenu, VistaRecompensas enviadaVista, DtoPanelPromocion pasadaPromocion, DtoPanelProducto seleccionadoProducto) 
         {
 
             enviadaVista.btnConfirmar.Click += (sender, e) => ConfirmarYSalir(pasadoMenu, pasadaPromocion, seleccionadoProducto);
 
-            panelProducto testBarbero = new panelProducto(pasadoMenu, seleccionadoProducto.ProductoId, seleccionadoProducto.ProductoName, seleccionadoProducto.ProductoPrecio, seleccionadoProducto.ProductoTipo);
+            PanelProducto testBarbero = new PanelProducto(pasadoMenu, seleccionadoProducto.ProductoId, seleccionadoProducto.ProductoName, seleccionadoProducto.ProductoPrecio, seleccionadoProducto.ProductoTipo);
 
-            panelPromocion testPromocion = new panelPromocion(pasadoMenu, seleccionadoProducto, pasadaPromocion.PromocionId, pasadaPromocion.PromocionName, pasadaPromocion.PromocionPoder, pasadaPromocion.PromocionTipo);
+            PanelPromocion testPromocion = new PanelPromocion(pasadoMenu, seleccionadoProducto, pasadaPromocion.PromocionId, pasadaPromocion.PromocionName, pasadaPromocion.PromocionPoder, pasadaPromocion.PromocionTipo);
 
 
             enviadaVista.flpPromocion.Controls.Add(testPromocion);
             enviadaVista.flpPromocion.Controls.Add(testBarbero);
         }
-        public void ConfirmarYSalir(vistaMenu pasadoMenu, dtoPanelPromocion pasadaPromocion, dtoPanelProducto seleccionadoProducto) 
+        public void ConfirmarYSalir(vistaMenu pasadoMenu, DtoPanelPromocion pasadaPromocion, DtoPanelProducto seleccionadoProducto) 
         {
-            new daoTotal(pasadaPromocion, seleccionadoProducto);
-            pasadoMenu.controladorMenu.AbrirFormulario(new vistaInicio(pasadoMenu));
+            new DaoTotal(pasadaPromocion, seleccionadoProducto);
+            pasadoMenu.controladorMenu.AbrirFormulario(new VistaInicio(pasadoMenu));
 
         }
     }

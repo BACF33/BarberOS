@@ -11,11 +11,11 @@ using BarberOS.Modelo.Dao;
 
 namespace BarberOS.Controlador
 {
-    internal class controlRestablecerCorreo
+    internal class ControlRestablecerCorreo
     {
-        daoRestablecerCorreo daoThis = new daoRestablecerCorreo();
-        vistaRestablecerCorreo vistaControlada;
-        public controlRestablecerCorreo(vistaRestablecerCorreo vistaPasada) 
+        DaoRestablecerCorreo daoThis = new DaoRestablecerCorreo();
+        VistaRestablecerCorreo vistaControlada;
+        public ControlRestablecerCorreo(VistaRestablecerCorreo vistaPasada) 
         {
             vistaControlada = vistaPasada;
             vistaControlada.btnEnviar.Click += (sender, e) => Enviar();
@@ -38,7 +38,7 @@ namespace BarberOS.Controlador
 
         private void getPin(int pin)
         {
-            vistaInsertarPin insertarPin = new vistaInsertarPin(pin, vistaControlada.txtUser.Text);
+            VistaInsertarPin insertarPin = new VistaInsertarPin(pin, vistaControlada.txtUser.Text);
             insertarPin.Show();
             vistaControlada.Close();
         }

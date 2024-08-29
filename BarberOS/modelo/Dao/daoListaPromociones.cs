@@ -11,9 +11,9 @@ using System.Windows;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoListaPromociones
+    internal class DaoListaPromociones
     {
-        public daoListaPromociones(vistaListaPromociones enviadaVista, vistaMenu pasadoMenu, dtoPanelProducto seleccionadoProducto)
+        public DaoListaPromociones(VistaListaPromociones enviadaVista, vistaMenu pasadoMenu, DtoPanelProducto seleccionadoProducto)
         {
             try
             {
@@ -36,7 +36,7 @@ namespace BarberOS.Modelo.Dao
                                 testPrice = reader["promotionPrice"].ToString();
                                 testPower = reader["promotionPower"].ToString();
                                 testType = reader["promotionType"].ToString();
-                                panelPromocion panelUsado = new panelPromocion(pasadoMenu, seleccionadoProducto, int.Parse(testId), testName, testPower, testType);
+                                PanelPromocion panelUsado = new PanelPromocion(pasadoMenu, seleccionadoProducto, int.Parse(testId), testName, testPower, testType);
 
                                 enviadaVista.flpPromociones.Controls.Add(panelUsado);
 

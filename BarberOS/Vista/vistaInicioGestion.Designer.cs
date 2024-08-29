@@ -1,6 +1,6 @@
 ﻿namespace BarberOS.Vista
 {
-    partial class vistaInicioGestion
+    partial class VistaInicioGestion
     {
         /// <summary>
         /// Required designer variable.

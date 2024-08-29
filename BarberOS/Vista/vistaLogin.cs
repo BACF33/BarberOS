@@ -7,16 +7,16 @@ using BarberOS.Controlador;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaLogin : Form
+    public partial class VistaLogin : Form
     {
         //8 Constructo del formulario login, cuando se cree se ejecutara lo de aqui
-        public vistaLogin(vistaMenu passedMenuForm) 
+        public VistaLogin(vistaMenu passedMenuForm) 
        {
             InitializeComponent();
             //9 Como todas las vistas se creara el controlador para el formulario vistaLogin y se pasara a si mismo,
             //tambien se pasara el menu para que pueda acceder a su funcion para abrir formularios a su derecha con la
             //funcion AbrirFormulario (ver controlMenu)
-            controlLogin controladorLogin = new controlLogin(this, passedMenuForm);
+            ControlLogin controladorLogin = new ControlLogin(this, passedMenuForm);
             this.KeyPreview = true;
             this.KeyDown += Form_KeyDown;
         }

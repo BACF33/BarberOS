@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Modelo.Dto
 {
-    internal class dtoRestablecerAdmin
+    internal class DtoRestablecerAdmin
     {
         private string username;
         private string password;

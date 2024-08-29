@@ -11,7 +11,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoRegister : dtoRegister
+    internal class DaoRegistrarse : DtoRegister
     {
         public void register() 
         {

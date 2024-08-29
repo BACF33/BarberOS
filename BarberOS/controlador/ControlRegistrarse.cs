@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Controlador
 {
-    internal class controlRegister
+    internal class ControlRegistrarse
     {
-        vistaRegister controladaVista;
-        daoRegister daoThis = new daoRegister();
-        public controlRegister(vistaRegister pasadaVista) 
+        VistaRegister controladaVista;
+        DaoRegistrarse daoThis = new DaoRegistrarse();
+        public ControlRegistrarse(VistaRegister pasadaVista) 
         {
             controladaVista = pasadaVista;
             //Cuando se presione el boton de registrarse se ejecutara la funcion reister

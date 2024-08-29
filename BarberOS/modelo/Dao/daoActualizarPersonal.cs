@@ -10,11 +10,11 @@ using System.Windows;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoActualizarPersonal
+    internal class DaoActualizarPersonal
     {
         string selectedId;
-        vistaActualizarPersonal pasadaVista;
-        public daoActualizarPersonal(string selectedId2, vistaActualizarPersonal pasadaVista2)
+        VistaActualizarPersonal pasadaVista;
+        public DaoActualizarPersonal(string selectedId2, VistaActualizarPersonal pasadaVista2)
         {
             //6 Se obtendra la id de la fila de la tabla al que el usuario le dio click en el formulario controlListaPersonalG
             selectedId = selectedId2;

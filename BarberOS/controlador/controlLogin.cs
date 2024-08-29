@@ -12,14 +12,14 @@ using System.Windows.Forms;
 
 namespace BarberOS.Controlador
 {
-    internal class controlLogin
+    internal class ControlLogin
     {
-        daoLogin daoThis = new daoLogin();
+        DaoLogin daoThis = new DaoLogin();
         vistaMenu menuForm = null;
-        vistaLogin controladaVista;
+        VistaLogin controladaVista;
 
         //10 Tambien constructor del controlador de login, cuando controlLogin se crea lo que esta dentro se ejecutara
-        public controlLogin(vistaLogin passedVista, vistaMenu passedMenu) 
+        public ControlLogin(VistaLogin passedVista, vistaMenu passedMenu) 
         {
             controladaVista = passedVista;
             menuForm = passedMenu;
@@ -48,7 +48,7 @@ namespace BarberOS.Controlador
         public void reestablecerContraseña()
         {
             //1 Se abrira como nueva ventana un formulario vistaReestablecerAdmin
-            vistaRestablecerCorreo restpass = new vistaRestablecerCorreo();
+            VistaRestablecerCorreo restpass = new VistaRestablecerCorreo();
             restpass.Show();
         }
 
@@ -81,9 +81,9 @@ namespace BarberOS.Controlador
                 //9 Aqui evalua si el tipo del usuario que inicio sesion era cliente o admin, dependiendo de eso mandara
                 //a un formulario diferente
                 if (daoThis.Role == "Cliente")
-                    menuForm.controladorMenu.AbrirFormulario(new vistaPerfilUsuario());
+                    menuForm.controladorMenu.AbrirFormulario(new VistaPerfilUsuario());
                 else
-                    menuForm.controladorMenu.AbrirFormulario(new vistaInicioGestion(menuForm));
+                    menuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(menuForm));
             }
             //10 Si el valor obtenido por answer no es 1 (inicio de sesion incorrecto esto se ejecuta)
             else
@@ -93,7 +93,7 @@ namespace BarberOS.Controlador
         public void register()
         {
             //1 Se abrira un formulario vistaRegister
-            menuForm.controladorMenu.AbrirFormulario(new vistaRegister());
+            menuForm.controladorMenu.AbrirFormulario(new VistaRegister());
         }
     }
 }

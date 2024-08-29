@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Controlador
 {
-    internal class controlAgregarCliente
+    internal class ControlAgregarCliente
     {
-        vistaAgregarCliente controladaVista = null;
-        public controlAgregarCliente(vistaAgregarCliente pasadaVista)
+        VistaAgregarCliente controladaVista = null;
+        public ControlAgregarCliente(VistaAgregarCliente pasadaVista)
         {
             controladaVista = pasadaVista;
             //Cuando se presion agregar se ejecutara la funcion agregarCliente
@@ -21,7 +21,7 @@ namespace BarberOS.Controlador
 
         public void agregarCliente()
         {
-            daoAgregarCliente daoThis = new daoAgregarCliente();
+            DaoAgregarCliente daoThis = new DaoAgregarCliente();
 
             //1 Al dto o a la informacion que se usara en el query se le asigna la informacion que el usuario ingreso
             //en el textbox

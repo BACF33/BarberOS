@@ -3,12 +3,12 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaAgregarPersonal : Form
+    public partial class VistaAgregarPersonal : Form
     {
-        public vistaAgregarPersonal()
+        public VistaAgregarPersonal()
         {
             InitializeComponent();
-            controlAgregarPersonal controladorVista = new controlAgregarPersonal(this);
+            ControlAgregarPersonal controladorVista = new ControlAgregarPersonal(this);
             this.KeyPreview = true;
             this.KeyDown += Form_KeyDown;
         }

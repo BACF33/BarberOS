@@ -12,13 +12,13 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaReestablecerAdmin : Form
+    public partial class VistaReestablecerAdmin : Form
     {
-        public vistaReestablecerAdmin()
+        public VistaReestablecerAdmin()
         {
             InitializeComponent();
             //2 Se creara un controlador para este formulario
-            controlReestablecerAdmin reestablecer = new controlReestablecerAdmin(this);
+            ControlReestablecerAdmin reestablecer = new ControlReestablecerAdmin(this);
             this.KeyPreview = true;
             this.KeyDown += Form_KeyDown;
         }

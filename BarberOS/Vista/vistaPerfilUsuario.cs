@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaPerfilUsuario : Form
+    public partial class VistaPerfilUsuario : Form
     {
-        public vistaPerfilUsuario()
+        public VistaPerfilUsuario()
         {
             InitializeComponent();
             this.KeyPreview = true;

@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Controlador
 {
-    internal class controlReestablecerAdmin
+    internal class ControlReestablecerAdmin
     {
-        vistaReestablecerAdmin vistaControlada;
-        daoRestablecerAdmin daoThis = new daoRestablecerAdmin();
+        VistaReestablecerAdmin vistaControlada;
+        DaoRestablecerAdmin daoThis = new DaoRestablecerAdmin();
 
         //3 Constructor para este controlador
-        public controlReestablecerAdmin(vistaReestablecerAdmin pasadaVista) 
+        public ControlReestablecerAdmin(VistaReestablecerAdmin pasadaVista) 
         {
             //4 Las funciones de la derecha se ejecutaran cuando en la vista el usuario presione los botones designados 
 

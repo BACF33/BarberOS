@@ -14,7 +14,7 @@ using BarberOS.Modelo.Dto;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoRestablecerAdmin : dtoRestablecerAdmin
+    internal class DaoRestablecerAdmin : DtoRestablecerAdmin
     {
         public int restpass()
         {

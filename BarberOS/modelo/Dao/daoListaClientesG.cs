@@ -6,9 +6,9 @@ using System.Windows.Forms;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoListaClientesG
+    internal class DaoListaClientesG
     {
-        public void Populate(vistaListaClientesG vistaPasada)
+        public void Populate(VistaListaClientesG vistaPasada)
         {
             try
             {
@@ -49,7 +49,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void Delete(vistaListaClientesG vistaPasada)
+        public void Delete(VistaListaClientesG vistaPasada)
         {
             string selectedId = vistaPasada.listClientes.SelectedItems[0].Text;
             try
@@ -76,7 +76,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void searchData(string searchingFor, vistaListaClientesG controladaVista)
+        public void searchData(string searchingFor, VistaListaClientesG controladaVista)
         {
             try
             {

@@ -10,11 +10,11 @@ using System.Windows;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoActualizarRegistro
+    internal class DaoActualizarRegistro
     {
         string selectedId;
-        vistaActualizarRegistro pasadaVista;
-        public daoActualizarRegistro(string selectedId2, vistaActualizarRegistro pasadaVista2)
+        VistaActualizarRegistro pasadaVista;
+        public DaoActualizarRegistro(string selectedId2, VistaActualizarRegistro pasadaVista2)
         {
             selectedId = selectedId2;
             pasadaVista = pasadaVista2;

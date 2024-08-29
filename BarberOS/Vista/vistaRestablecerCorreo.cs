@@ -14,12 +14,12 @@ using BarberOS.Controlador;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaRestablecerCorreo : Form
+    public partial class VistaRestablecerCorreo : Form
     {
-        public vistaRestablecerCorreo()
+        public VistaRestablecerCorreo()
         {
             InitializeComponent();
-            new controlRestablecerCorreo(this);
+            new ControlRestablecerCorreo(this);
         }
     }
 }

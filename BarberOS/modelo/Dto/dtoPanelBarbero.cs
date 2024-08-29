@@ -7,7 +7,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace BarberOS.Modelo.Dto
 {
-    internal class dtoPanelBarbero
+    internal class DtoPanelBarbero
     {
         private string barberoId;
         private string barberoName;

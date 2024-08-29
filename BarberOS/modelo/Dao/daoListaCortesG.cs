@@ -12,9 +12,9 @@ using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace BarberOS.Modelo.Dao
 {
-    internal class daoListaCortesG
+    internal class DaoListaCortesG
     {
-        public void Populate(vistaListaCortesG vistaPasada)
+        public void Populate(VistaListaCortesG vistaPasada)
         {
             try
             {
@@ -55,7 +55,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void Delete(vistaListaCortesG vistaPasada)
+        public void Delete(VistaListaCortesG vistaPasada)
         {
             string selectedId = vistaPasada.listCortes.SelectedItems[0].Text;
             try
@@ -82,7 +82,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void searchData(string searchingFor, vistaListaCortesG vistaPasada)
+        public void searchData(string searchingFor, VistaListaCortesG vistaPasada)
         {
             try
             {

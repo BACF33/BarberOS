@@ -12,13 +12,13 @@ using System.Windows;
 
 namespace BarberOS.Controlador
 {
-    internal class controlListaPromociones
+    internal class ControlListaPromociones
     {
-        vistaListaPromociones controladaVista;
-        public controlListaPromociones(vistaListaPromociones enviadaVista, vistaMenu pasadoMenu, dtoPanelProducto seleccionadoProducto)
+        VistaListaPromociones controladaVista;
+        public ControlListaPromociones(VistaListaPromociones enviadaVista, vistaMenu pasadoMenu, DtoPanelProducto seleccionadoProducto)
         {
             controladaVista = enviadaVista;
-            daoListaPromociones daoThis = new daoListaPromociones(enviadaVista, pasadoMenu, seleccionadoProducto);
+            DaoListaPromociones daoThis = new DaoListaPromociones(enviadaVista, pasadoMenu, seleccionadoProducto);
         }
     }
 }

@@ -4,10 +4,10 @@ using BarberOS.Vista;
 
 namespace BarberOS.Controlador
 {
-    internal class controlPanelProducto
+    internal class ControlPanelProducto
     {
-        dtoPanelProducto dtoThis = new dtoPanelProducto();
-        public controlPanelProducto(panelProducto pasadoPanel, vistaMenu pasadoMenu, string passedId, string passedName, string passedPrice, string passedType)
+        DtoPanelProducto dtoThis = new DtoPanelProducto();
+        public ControlPanelProducto(PanelProducto pasadoPanel, vistaMenu pasadoMenu, string passedId, string passedName, string passedPrice, string passedType)
         {
             dtoThis.ProductoId = passedId;
             dtoThis.ProductoName = passedName;
@@ -17,7 +17,7 @@ namespace BarberOS.Controlador
             pasadoPanel.lblName.Text = dtoThis.ProductoName;
             pasadoPanel.lblPrice.Text = dtoThis.ProductoPrecio;
 
-            pasadoPanel.btnComprar.Click += (sender, e) => pasadoMenu.controladorMenu.AbrirFormulario(new vistaListaPromociones(pasadoMenu, dtoThis));
+            pasadoPanel.btnComprar.Click += (sender, e) => pasadoMenu.controladorMenu.AbrirFormulario(new VistaListaPromociones(pasadoMenu, dtoThis));
         }
     }
 }

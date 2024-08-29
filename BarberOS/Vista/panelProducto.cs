@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class panelProducto : UserControl
+    public partial class PanelProducto : UserControl
     {
-        public panelProducto(vistaMenu pasadoMenu, string passedId, string passedName, string passedPrice, string passedType)
+        public PanelProducto(vistaMenu pasadoMenu, string passedId, string passedName, string passedPrice, string passedType)
         {
             InitializeComponent();
-            controlPanelProducto pProducto = new controlPanelProducto(this, pasadoMenu, passedId, passedName, passedPrice, passedType);    
+            ControlPanelProducto pProducto = new ControlPanelProducto(this, pasadoMenu, passedId, passedName, passedPrice, passedType);    
         }
     }
 }

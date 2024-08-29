@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Modelo.Dto
 {
-    public class dtoServicioCorreo : dtoRecuperar
+    public class DtoServicioCorreo : DtoRecuperar
     {
-        public dtoServicioCorreo() 
+        public DtoServicioCorreo() 
         {
             remitente = "bacubias76@gmail.com";
             password = "czfn rlzl hveh ifan";

@@ -3,18 +3,18 @@ using BarberOS.Vista;
 
 namespace BarberOS.Controlador
 {
-    internal class controlListaClientesG
+    internal class ControlListaClientesG
     {
         private vistaMenu menuForm;
-        private vistaListaClientesG controladaVista;
-        private daoListaClientesG dao = new daoListaClientesG();
-        public controlListaClientesG(vistaListaClientesG vistaPasada, vistaMenu passedMenuForm)
+        private VistaListaClientesG controladaVista;
+        private DaoListaClientesG dao = new DaoListaClientesG();
+        public ControlListaClientesG(VistaListaClientesG vistaPasada, vistaMenu passedMenuForm)
         {
             controladaVista = vistaPasada;
             menuForm = passedMenuForm;
 
             //Si se presiona promociones se abrira un formulario vistaListaPromocionesG
-            controladaVista.btnAProms.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaPromocionesG(passedMenuForm));
+            controladaVista.btnAProms.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaListaPromocionesG(passedMenuForm));
             //Si se presiona agregar se ejecutara la funcion insertData
             controladaVista.btnAgregarClientes.Click += (sender, e) => insertData();
             //Si se presiona actualizar se ejecutara la funcion getData
@@ -24,7 +24,7 @@ namespace BarberOS.Controlador
             //Si se presiona actualizar2 se ejecutara la funcion updateData
             controladaVista.btnActualizarClientes2.Click += (sender, e) => updateData();
             //Si se presiona volver se volvera a la vista inicio gestion
-            controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaInicioGestion(passedMenuForm));
+            controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenuForm));
             //Si se presiona buscar se ejecutara la funcion searchdata
             controladaVista.btnBuscar.Click += (sender, e) => searhData();
             getData();
@@ -32,14 +32,14 @@ namespace BarberOS.Controlador
 
         public void updateData()
         {
-            vistaActualizarCliente actualizar;
+            VistaActualizarCliente actualizar;
             //1 Si en la vista el usuario selecciono una fila en la tabla se ejecutara lo siguiente
             if (controladaVista.listClientes.SelectedItems.Count > 0)
             {
                 //2 Se obtendra el primer valor de la fila seleccionada en la tabla, es decir la id
                 string selectedId = controladaVista.listClientes.SelectedItems[0].Text;
                 //3 Se abirar una vistaActualizarCliente como nueva ventana
-                actualizar = new vistaActualizarCliente(selectedId);
+                actualizar = new VistaActualizarCliente(selectedId);
                 actualizar.Show();
             }
         }
@@ -48,7 +48,7 @@ namespace BarberOS.Controlador
         public void insertData()
         {
             //1 Se abirar un formulario agregarPersonal como nueva ventana
-            vistaAgregarCliente agregarPersonal = new vistaAgregarCliente();
+            VistaAgregarCliente agregarPersonal = new VistaAgregarCliente();
             agregarPersonal.Show();
         }
 

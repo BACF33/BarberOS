@@ -5,14 +5,14 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class panelPromocion : UserControl
+    public partial class PanelPromocion : UserControl
     {
         vistaMenu vistaMenua = null;
-        public panelPromocion(vistaMenu pasadoMenu, dtoPanelProducto seleccionadoProducto, int testId, string testName, string testPower, string testType)
+        public PanelPromocion(vistaMenu pasadoMenu, DtoPanelProducto seleccionadoProducto, int testId, string testName, string testPower, string testType)
         {
             InitializeComponent();
             vistaMenua = pasadoMenu;
-            controlPanelPromocion controladorVista = new controlPanelPromocion(this, pasadoMenu, seleccionadoProducto, testId, testName, testPower, testType);
+            ControlPanelPromocion controladorVista = new ControlPanelPromocion(this, pasadoMenu, seleccionadoProducto, testId, testName, testPower, testType);
         }
 
     }

@@ -8,21 +8,21 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Controlador
 {
-    internal class controlActualizarCliente
+    internal class ControlActualizarCliente
     {
-        daoActualizarCliente daoThis;
-        public controlActualizarCliente(string selectedId, vistaActualizarCliente pasadaVista)
+        DaoActualizarCliente daoThis;
+        public ControlActualizarCliente(string selectedId, VistaActualizarCliente pasadaVista)
         {
-            //Si se presiona actualizar se ejecutara la funcion execUpdate)
-            pasadaVista.btnActualizar.Click += (sender, e) => execUpdate();
+            //Si se presiona actualizar se ejecutara la funcion ExecUpdate)
+            pasadaVista.btnActualizar.Click += (sender, e) => ExecUpdate();
             //5 Se ejecutara el constructor del dao
-            daoThis = new daoActualizarCliente(selectedId, pasadaVista);
+            daoThis = new DaoActualizarCliente(selectedId, pasadaVista);
         }
 
-        public void execUpdate()
+        public void ExecUpdate()
         {
             //5 Se ejecutara la funcion update del dao
-            daoThis.update();
+            daoThis.Update();
         }
     }
 }

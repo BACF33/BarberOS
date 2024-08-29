@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Controlador
 {
-    internal class controlActualizarRegistro
+    internal class ControlActualizarRegistro
     {
-            daoActualizarRegistro daoThis;
-            public controlActualizarRegistro(string selectedId, vistaActualizarRegistro pasadaVista)
+            DaoActualizarRegistro daoThis;
+            public ControlActualizarRegistro(string selectedId, VistaActualizarRegistro pasadaVista)
             {
                 pasadaVista.btnActualizar.Click += (sender, e) => execUpdate();
-                daoThis = new daoActualizarRegistro(selectedId, pasadaVista);
+                daoThis = new DaoActualizarRegistro(selectedId, pasadaVista);
             }
 
             public void execUpdate()

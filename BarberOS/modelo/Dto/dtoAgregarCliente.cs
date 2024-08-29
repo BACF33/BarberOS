@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BarberOS.Modelo.Dto
 {
-    internal class dtoAgregarCliente
+    internal class DtoAgregarCliente
     {
         private string userName;
         private string password;
