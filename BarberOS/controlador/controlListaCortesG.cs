@@ -26,10 +26,10 @@ namespace BarberOS.Controlador
 
             //Cuando se presionen los botones marcados en la izquierda se ejecutaran las funciones a la derech
             //por ejemplo si se presiona personal se abrira una lista de personal
-            controladaVista.btnActualizarEmpleados.Click += (sender, e) => getData();
+            controladaVista.btnActualizar2.Click += (sender, e) => getData();
             controladaVista.btnBorrarEmpleados.Click += (sender, e) => deleteData();
-            controladaVista.btnActualizarEmpleados2.Click += (sender, e) => updateData();
-            controladaVista.btnAgregarEmpleados.Click += (sender, e) => insertData();
+            controladaVista.btnActualizar2.Click += (sender, e) => updateData();
+            controladaVista.btnAgregar.Click += (sender, e) => insertData();
             controladaVista.btnSearch.Click += (sender, e) => searchData();
             controladaVista.btnAPersonal.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaListaPersonalG(passedMenuForm));
             controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenuForm));
@@ -76,7 +76,7 @@ namespace BarberOS.Controlador
         public void searchData()
         {
             //1 Se obtendran los datos que el usuario ingreso en la barra de busqueda
-            string searchingFor = controladaVista.txtSearch.Text;
+            string searchingFor = controladaVista.txtSearchingFor.Text;
             //2 Se ejecutara la funcion searchData del dao
             dao.searchData(searchingFor, controladaVista);
         }

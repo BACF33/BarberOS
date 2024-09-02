@@ -22,6 +22,36 @@ namespace BarberOS.Vista
                 e.SuppressKeyPress = true;
             }
         }
+
+        private void btnAgregarEmpleados_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAPersonal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VistaListaCortesG_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
