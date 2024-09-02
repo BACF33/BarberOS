@@ -124,7 +124,7 @@
             this.listEmpleados.FullRowSelect = true;
             this.listEmpleados.GridLines = true;
             this.listEmpleados.HideSelection = false;
-            this.listEmpleados.Location = new System.Drawing.Point(0, 51);
+            this.listEmpleados.Location = new System.Drawing.Point(8, 51);
             this.listEmpleados.Name = "listEmpleados";
             this.listEmpleados.Size = new System.Drawing.Size(936, 684);
             this.listEmpleados.TabIndex = 0;
@@ -175,7 +175,7 @@
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
             // 
-            // vistaListaPersonalG
+            // VistaListaPersonalG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -189,7 +189,7 @@
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
-            this.Name = "vistaListaPersonalG";
+            this.Name = "VistaListaPersonalG";
             this.Text = "vistaListaBarbero";
             this.ResumeLayout(false);
             this.PerformLayout();

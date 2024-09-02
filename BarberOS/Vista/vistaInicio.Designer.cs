@@ -32,6 +32,7 @@
             this.btnCortes = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnAgendar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -39,10 +40,9 @@
             // btnBarberos
             // 
             this.btnBarberos.BackColor = System.Drawing.Color.Coral;
-            this.btnBarberos.Location = new System.Drawing.Point(825, 166);
-            this.btnBarberos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBarberos.Location = new System.Drawing.Point(430, 134);
             this.btnBarberos.Name = "btnBarberos";
-            this.btnBarberos.Size = new System.Drawing.Size(266, 166);
+            this.btnBarberos.Size = new System.Drawing.Size(200, 135);
             this.btnBarberos.TabIndex = 33;
             this.btnBarberos.Text = "Barberos";
             this.btnBarberos.UseVisualStyleBackColor = false;
@@ -50,10 +50,9 @@
             // btnCortes
             // 
             this.btnCortes.BackColor = System.Drawing.Color.Coral;
-            this.btnCortes.Location = new System.Drawing.Point(447, 166);
-            this.btnCortes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCortes.Location = new System.Drawing.Point(146, 134);
             this.btnCortes.Name = "btnCortes";
-            this.btnCortes.Size = new System.Drawing.Size(265, 166);
+            this.btnCortes.Size = new System.Drawing.Size(199, 135);
             this.btnCortes.TabIndex = 22;
             this.btnCortes.Text = "Cortes";
             this.btnCortes.UseVisualStyleBackColor = false;
@@ -62,10 +61,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pictureBox1.Image = global::BarberOS.Properties.Resources.barLog;
-            this.pictureBox1.Location = new System.Drawing.Point(425, 428);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(313, 279);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(730, 391);
+            this.pictureBox1.Size = new System.Drawing.Size(548, 318);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
@@ -73,27 +71,35 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox2.Location = new System.Drawing.Point(13, 1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(10, 1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1565, 123);
+            this.pictureBox2.Size = new System.Drawing.Size(1174, 100);
             this.pictureBox2.TabIndex = 43;
             this.pictureBox2.TabStop = false;
             // 
-            // vistaInicio
+            // btnAgendar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.btnAgendar.Location = new System.Drawing.Point(737, 134);
+            this.btnAgendar.Name = "btnAgendar";
+            this.btnAgendar.Size = new System.Drawing.Size(186, 135);
+            this.btnAgendar.TabIndex = 45;
+            this.btnAgendar.Text = "button1";
+            this.btnAgendar.UseVisualStyleBackColor = true;
+            // 
+            // VistaInicio
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1900, 971);
+            this.ClientSize = new System.Drawing.Size(1028, 609);
+            this.Controls.Add(this.btnAgendar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnBarberos);
             this.Controls.Add(this.btnCortes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(1918, 1018);
-            this.MinimumSize = new System.Drawing.Size(1818, 944);
-            this.Name = "vistaInicio";
+            this.MaximumSize = new System.Drawing.Size(1442, 834);
+            this.MinimumSize = new System.Drawing.Size(1027, 597);
+            this.Name = "VistaInicio";
             this.Text = "vistaInicio";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -106,5 +112,6 @@
         public System.Windows.Forms.Button btnCortes;
         public System.Windows.Forms.Button btnBarberos;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAgendar;
     }
 }

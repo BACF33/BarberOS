@@ -36,6 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCurrentUser = new System.Windows.Forms.Button();
             this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.btnAgendar = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -97,6 +98,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btnBarberos);
             this.flowLayoutPanel1.Controls.Add(this.btnCortes);
             this.flowLayoutPanel1.Controls.Add(this.btnIngresar);
+            this.flowLayoutPanel1.Controls.Add(this.btnAgendar);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.ForeColor = System.Drawing.Color.DimGray;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -138,6 +140,18 @@
             this.PanelContenedor.Size = new System.Drawing.Size(1153, 729);
             this.PanelContenedor.TabIndex = 28;
             // 
+            // btnAgendar
+            // 
+            this.btnAgendar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAgendar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAgendar.Location = new System.Drawing.Point(3, 514);
+            this.btnAgendar.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
+            this.btnAgendar.Name = "btnAgendar";
+            this.btnAgendar.Size = new System.Drawing.Size(196, 44);
+            this.btnAgendar.TabIndex = 105;
+            this.btnAgendar.Text = "AGENDAR";
+            this.btnAgendar.UseVisualStyleBackColor = false;
+            // 
             // vistaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,5 +181,6 @@
         public System.Windows.Forms.Button btnInicio;
         public System.Windows.Forms.Panel PanelContenedor;
         public System.Windows.Forms.Button btnCurrentUser;
+        public System.Windows.Forms.Button btnAgendar;
     }
 }

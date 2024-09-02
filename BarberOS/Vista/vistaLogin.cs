@@ -7,10 +7,10 @@ using BarberOS.Controlador;
 
 namespace BarberOS.Vista
 {
-    public partial class VistaLogin : Form
+    public partial class vistaLogin : Form
     {
         //8 Constructo del formulario login, cuando se cree se ejecutara lo de aqui
-        public VistaLogin(vistaMenu passedMenuForm) 
+        public vistaLogin(vistaMenu passedMenuForm) 
        {
             InitializeComponent();
             //9 Como todas las vistas se creara el controlador para el formulario vistaLogin y se pasara a si mismo,
@@ -23,6 +23,7 @@ namespace BarberOS.Vista
 
         private void nuevoUsuarioV(object sender, KeyPressEventArgs e)
         {
+
             if (txtUser.TextLength > 49)
                 e.Handled = true;
         }
@@ -39,6 +40,16 @@ namespace BarberOS.Vista
             {
                 e.SuppressKeyPress = true;
             }
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

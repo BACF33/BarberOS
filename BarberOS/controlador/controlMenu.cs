@@ -22,7 +22,8 @@ namespace BarberOS.Controlador
             controladaVista.btnInicio.Click += (sender, e) => AbrirFormulario(new VistaInicio(controladaVista));
             controladaVista.btnCortes.Click += (sender, e) => AbrirFormulario(new VistaListaCortes(controladaVista));
             controladaVista.btnBarberos.Click += (sender, e) => AbrirFormulario(new VistaListaPersonal());
-            controladaVista.btnIngresar.Click += (sender, e) => AbrirFormulario(new VistaLogin(vistaPasada));
+            controladaVista.btnIngresar.Click += (sender, e) => AbrirFormulario(new vistaLogin(vistaPasada));
+            controladaVista.btnAgendar.Click += (sender, e) => AbrirFormulario(new vistaCitas());
         }
 
         //7 Esta es una funcion para que el formulario que se abra quede a la derecha del menu y no como una nueva ventana

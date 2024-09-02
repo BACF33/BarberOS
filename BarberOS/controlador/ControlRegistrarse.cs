@@ -11,9 +11,9 @@ namespace BarberOS.Controlador
 {
     internal class ControlRegistrarse
     {
-        VistaRegister controladaVista;
+        vistaRegister controladaVista;
         DaoRegistrarse daoThis = new DaoRegistrarse();
-        public ControlRegistrarse(VistaRegister pasadaVista) 
+        public ControlRegistrarse(vistaRegister pasadaVista) 
         {
             controladaVista = pasadaVista;
             //Cuando se presione el boton de registrarse se ejecutara la funcion reister

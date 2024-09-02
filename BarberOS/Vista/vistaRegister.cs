@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class VistaRegister : Form
+    public partial class vistaRegister : Form
     {
-        public VistaRegister()
+        public vistaRegister()
         {
             InitializeComponent();
             ControlRegistrarse controladorThis = new ControlRegistrarse(this);

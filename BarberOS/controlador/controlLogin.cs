@@ -16,10 +16,10 @@ namespace BarberOS.Controlador
     {
         DaoLogin daoThis = new DaoLogin();
         vistaMenu menuForm = null;
-        VistaLogin controladaVista;
+        vistaLogin controladaVista;
 
         //10 Tambien constructor del controlador de login, cuando controlLogin se crea lo que esta dentro se ejecutara
-        public ControlLogin(VistaLogin passedVista, vistaMenu passedMenu) 
+        public ControlLogin(vistaLogin passedVista, vistaMenu passedMenu) 
         {
             controladaVista = passedVista;
             menuForm = passedMenu;
@@ -48,7 +48,7 @@ namespace BarberOS.Controlador
         public void reestablecerContraseña()
         {
             //1 Se abrira como nueva ventana un formulario vistaReestablecerAdmin
-            VistaRestablecerCorreo restpass = new VistaRestablecerCorreo();
+            vistaRestablecerCorreo restpass = new vistaRestablecerCorreo();
             restpass.Show();
         }
 
@@ -93,7 +93,7 @@ namespace BarberOS.Controlador
         public void register()
         {
             //1 Se abrira un formulario vistaRegister
-            menuForm.controladorMenu.AbrirFormulario(new VistaRegister());
+            menuForm.controladorMenu.AbrirFormulario(new vistaRegister());
         }
     }
 }

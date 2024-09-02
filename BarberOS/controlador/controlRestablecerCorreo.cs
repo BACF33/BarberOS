@@ -14,8 +14,8 @@ namespace BarberOS.Controlador
     internal class ControlRestablecerCorreo
     {
         DaoRestablecerCorreo daoThis = new DaoRestablecerCorreo();
-        VistaRestablecerCorreo vistaControlada;
-        public ControlRestablecerCorreo(VistaRestablecerCorreo vistaPasada) 
+        vistaRestablecerCorreo vistaControlada;
+        public ControlRestablecerCorreo(vistaRestablecerCorreo vistaPasada) 
         {
             vistaControlada = vistaPasada;
             vistaControlada.btnEnviar.Click += (sender, e) => Enviar();

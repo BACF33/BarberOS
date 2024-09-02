@@ -20,5 +20,40 @@ namespace BarberOS.Vista
                 e.SuppressKeyPress = true;
             }
         }
+
+        private void btnAProms_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void btnBorrarClientes_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void btnActualizarClientes2_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void txtSearchingFor_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void VistaListaClientesG_Load(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void listClientes_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

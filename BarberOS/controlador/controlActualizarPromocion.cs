@@ -14,12 +14,12 @@ namespace BarberOS.Controlador
         public ControlActualizarPromocion(string selectedId, VistaActualizarPromocion pasadaVista)
         {
             //Cuando se presione el boton actualizar se ejecutara la funcion execUpdate
-            pasadaVista.btnActualizar.Click += (sender, e) => execUpdate();
+            pasadaVista.btnActualizar.Click += (sender, e) => ExecUpdate();
             //Se ejecutara el constructor de daoActualizarPromocion
             daoThis = new DaoActualizarPromocion(selectedId, pasadaVista);
         }
 
-        public void execUpdate()
+        public void ExecUpdate()
         {
             //Se ejecutara la funcion update del dao
             daoThis.update();
