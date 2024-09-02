@@ -53,6 +53,76 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
+        public void Insert(VistaListaPersonalG vistaPasada)
+        {
+            try
+            {
+                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
+                using (SqlConnection conexion = new SqlConnection(cnn))
+                {
+                    //Usando la id de la fila seleccionada por el usuaio se eliminara el valor de la base de datos con
+                    //el mismo id 
+                    conexion.Open();
+                    string query = @"
+                    INSERT INTO users (userName, userPassword, userPoints, userRole, userEmail)
+                    VALUES (
+                    @userName, 
+                    @userPassword, 
+                    @userPoints, 
+                    (SELECT roleId FROM userRoles WHERE roleName = @roleName),
+                    @userEmail
+                    )";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        //Se usara la string selectedId como parametro
+                        cmd.Parameters.AddWithValue("@userName", vistaPasada.txtName.Text);
+                        cmd.Parameters.AddWithValue("@userPassword", vistaPasada.txtContraseña.Text);
+                        cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtPuntos.Text);
+                        cmd.Parameters.AddWithValue("@roleName", vistaPasada.txtCargo.Text);
+                        cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        public void Update(VistaListaPersonalG vistaPasada) 
+        {
+            try
+            {
+                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
+                using (SqlConnection conexion = new SqlConnection(cnn))
+                {
+                    conexion.Open();
+                    //Se ejecutara un query update donde se hara que  valores de la tabla usuarios en la base de datos
+                    //sean iguales a los que estan en las textboxes
+                    using (SqlCommand cmd = new SqlCommand("" +
+                        "UPDATE users SET roleId = @role " +
+                        "WHERE userName = @username", conexion))
+                    {
+                        //Los parametros de la query seran los valores obtenidos de los textboxes
+                        cmd.Parameters.AddWithValue("@selectedId", vistaPasada.txtId.Text);
+                        cmd.Parameters.AddWithValue("@userName", vistaPasada.txtName.Text);
+                        cmd.Parameters.AddWithValue("@userPassword", vistaPasada.txtContraseña.Text);
+                        cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtPuntos.Text);
+                        cmd.Parameters.AddWithValue("@roleName", vistaPasada.txtCargo.Text);
+                        cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
         public void Delete(VistaListaPersonalG vistaPasada)
         {
             string selectedId = vistaPasada.listEmpleados.SelectedItems[0].Text;
