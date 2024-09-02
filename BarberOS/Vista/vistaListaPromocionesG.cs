@@ -27,5 +27,45 @@ namespace BarberOS.Vista
                 e.SuppressKeyPress = true;
             }
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnActualizarPromocion2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBorrarPromocion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnActualizarPromocion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregarPromocion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnRestablecer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBorrarClientes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

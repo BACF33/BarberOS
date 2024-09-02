@@ -22,13 +22,13 @@ namespace BarberOS.Controlador
             controladaVista = passedVista;
             //Cuando se presionen los botones marcados en la izquierda se ejecutaran las funciones a la derech
             //por ejemplo si se presiona eliminar se ejecutara la funcion deleteData
-            controladaVista.btnActualizarPromocion.Click += (sender, e) => getData();
-            controladaVista.btnBorrarPromocion.Click += (sender, e) => deleteData();
-            controladaVista.btnAgregarPromocion.Click += (sender, e) => insertData();
-            controladaVista.btnActualizarPromocion2.Click += (sender, e) => updateData();
+            controladaVista.btnActualizar.Click += (sender, e) => getData();
+            controladaVista.btnBuscar.Click += (sender, e) => deleteData();
+            controladaVista.btnAgregar.Click += (sender, e) => insertData();
+            controladaVista.btnActualizar2.Click += (sender, e) => updateData();
             controladaVista.btnVolver.Click += (sender, e) => passedMenu.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenu));
             getData();
-            controladaVista.btnSearch.Click += (sender, e) => searchData();
+            controladaVista.btnBuscar.Click += (sender, e) => searchData();
         }
 
         public void getData()
