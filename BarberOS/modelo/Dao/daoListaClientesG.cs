@@ -49,7 +49,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void Insert(VistaListaPersonalG vistaPasada)
+        public void Insert(VistaListaClientesG vistaPasada)
         {
             try
             {
@@ -87,7 +87,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void Update(VistaListaPersonalG vistaPasada)
+        public void Update(VistaListaClientesG vistaPasada)
         {
             try
             {
