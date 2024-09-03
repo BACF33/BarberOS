@@ -114,7 +114,7 @@
             this.pnl1.Controls.Add(this.label2);
             this.pnl1.Controls.Add(this.txtPass);
             this.pnl1.Controls.Add(this.txtUser);
-            this.pnl1.Location = new System.Drawing.Point(335, 231);
+            this.pnl1.Location = new System.Drawing.Point(225, 108);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(539, 373);
             this.pnl1.TabIndex = 6;
@@ -126,7 +126,7 @@
             this.panel1.Controls.Add(this.txtNPass);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtNUser);
-            this.panel1.Location = new System.Drawing.Point(403, 262);
+            this.panel1.Location = new System.Drawing.Point(293, 146);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(328, 304);
             this.panel1.TabIndex = 7;
@@ -207,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 609);
+            this.ClientSize = new System.Drawing.Size(1019, 606);
             this.Controls.Add(this.txtUserId);
             this.Controls.Add(this.txtRecoverId);
             this.Controls.Add(this.btnRecoverId);

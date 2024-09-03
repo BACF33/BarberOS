@@ -20,7 +20,7 @@ namespace BarberOS.Controlador
         {
             controladaVista = vistaPasada;
 
-            daoThis.VerificarPrimerUso();
+            daoThis.VerificarPrimerUso(vistaPasada);
 
             //6 Aqui se evaluara cuando el usuario presione uno de los botones del menu, dependiendo del que toque la 
             //funcion de la izquierda se evaluara (si toca el boton ingresar se creara un nuevo formulario login)
@@ -51,6 +51,15 @@ namespace BarberOS.Controlador
             controladaVista.PanelContenedor.Tag = form;
             form.Show();
             form.BringToFront();
+
+            if (controladaVista.btnIngresar.Text == "SALIR")
+            {
+                controladaVista.btnBarberos.Visible = false; 
+                controladaVista.btnCortes.Visible = false;
+            }
+
+               
+            
         }
     }
 }

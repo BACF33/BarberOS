@@ -12,7 +12,7 @@ namespace BarberOS.Modelo.Dao
 {
     public class DaoMenu
     {
-        public void VerificarPrimerUso()
+        public void VerificarPrimerUso(vistaMenu vistaPasada)
         {
             try
             {
@@ -35,10 +35,8 @@ namespace BarberOS.Modelo.Dao
                         {
                             VistaPrimerUsoUsuario Vistausuario = new VistaPrimerUsoUsuario();
                             Vistausuario.Show();
-
+                            vistaPasada.Hide();    
                         }
-                        //Test
-
                         reader.Close();
                     }
                 }

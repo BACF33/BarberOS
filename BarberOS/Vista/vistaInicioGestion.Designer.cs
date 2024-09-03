@@ -104,13 +104,13 @@
             this.pnlAdmin.Size = new System.Drawing.Size(1132, 713);
             this.pnlAdmin.TabIndex = 50;
             // 
-            // vistaInicioGestion
+            // VistaInicioGestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.pnlAdmin);
-            this.Name = "vistaInicioGestion";
+            this.Name = "VistaInicioGestion";
             this.Text = "vistaInicioGestion";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.pnlAdmin.ResumeLayout(false);
