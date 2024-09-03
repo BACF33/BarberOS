@@ -108,6 +108,7 @@
     <Compile Include="Modelo\Dao\DaoAgregarCliente.cs" />
     <Compile Include="Modelo\Dao\DaoAgregarProducto.cs" />
     <Compile Include="Modelo\Dao\DaoAgregarPromocion.cs" />
+    <Compile Include="Modelo\Dao\DaoMenu.cs" />
     <Compile Include="Modelo\Dao\DaoNuevaContraseña.cs" />
     <Compile Include="Modelo\Dao\DaoRecuperar.cs" />
     <Compile Include="Modelo\Dao\DaoRestablecerCorreo.cs" />

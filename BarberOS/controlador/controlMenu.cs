@@ -1,4 +1,5 @@
-﻿using BarberOS.Modelo.Dto;
+﻿using BarberOS.Modelo.Dao;
+using BarberOS.Modelo.Dto;
 using BarberOS.Vista;
 using BarberOS.Vistas;
 using System;
@@ -12,11 +13,15 @@ namespace BarberOS.Controlador
         private Form currentForm = null;
         vistaMenu controladaVista = null;
         public DtoLogin userValues = null;
+        public DaoMenu daoThis = new DaoMenu();
 
         //5 Este es el constructor del controlador del formulario menu, cuando el controlador se ejecute esto lo hara
         public ControlMenu(vistaMenu vistaPasada)
         {
             controladaVista = vistaPasada;
+
+            daoThis.VerificarPrimerUso();
+
             //6 Aqui se evaluara cuando el usuario presione uno de los botones del menu, dependiendo del que toque la 
             //funcion de la izquierda se evaluara (si toca el boton ingresar se creara un nuevo formulario login)
             controladaVista.btnInicio.Click += (sender, e) => AbrirFormulario(new VistaInicio(controladaVista));
@@ -24,6 +29,7 @@ namespace BarberOS.Controlador
             controladaVista.btnBarberos.Click += (sender, e) => AbrirFormulario(new VistaListaPersonal());
             controladaVista.btnIngresar.Click += (sender, e) => AbrirFormulario(new vistaLogin(vistaPasada));
             controladaVista.btnAgendar.Click += (sender, e) => AbrirFormulario(new VistaPrimerUsoUsuario());
+
         }
 
         //7 Esta es una funcion para que el formulario que se abra quede a la derecha del menu y no como una nueva ventana
