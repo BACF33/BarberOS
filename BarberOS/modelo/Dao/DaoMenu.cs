@@ -37,6 +37,7 @@ namespace BarberOS.Modelo.Dao
                             Vistausuario.Show();
 
                         }
+                        //Test
 
                         reader.Close();
                     }
