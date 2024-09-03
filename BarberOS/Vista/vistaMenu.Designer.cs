@@ -35,8 +35,8 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCurrentUser = new System.Windows.Forms.Button();
-            this.PanelContenedor = new System.Windows.Forms.Panel();
             this.btnAgendar = new System.Windows.Forms.Button();
+            this.PanelContenedor = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -129,17 +129,6 @@
             this.btnCurrentUser.Text = "No has iniciado sesion";
             this.btnCurrentUser.UseVisualStyleBackColor = false;
             // 
-            // PanelContenedor
-            // 
-            this.PanelContenedor.BackColor = System.Drawing.Color.Silver;
-            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedor.Location = new System.Drawing.Point(197, 0);
-            this.PanelContenedor.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.PanelContenedor.MinimumSize = new System.Drawing.Size(800, 600);
-            this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(1153, 729);
-            this.PanelContenedor.TabIndex = 28;
-            // 
             // btnAgendar
             // 
             this.btnAgendar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -151,6 +140,17 @@
             this.btnAgendar.TabIndex = 105;
             this.btnAgendar.Text = "AGENDAR";
             this.btnAgendar.UseVisualStyleBackColor = false;
+            // 
+            // PanelContenedor
+            // 
+            this.PanelContenedor.BackColor = System.Drawing.Color.Silver;
+            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelContenedor.Location = new System.Drawing.Point(197, 0);
+            this.PanelContenedor.MaximumSize = new System.Drawing.Size(1920, 1080);
+            this.PanelContenedor.MinimumSize = new System.Drawing.Size(800, 600);
+            this.PanelContenedor.Name = "PanelContenedor";
+            this.PanelContenedor.Size = new System.Drawing.Size(1153, 729);
+            this.PanelContenedor.TabIndex = 28;
             // 
             // vistaMenu
             // 

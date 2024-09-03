@@ -41,15 +41,5 @@ namespace BarberOS.Vista
                 e.SuppressKeyPress = true;
             }
         }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCreate_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

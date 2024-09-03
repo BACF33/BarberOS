@@ -25,5 +25,6 @@ namespace BarberOS.Vista
                 e.SuppressKeyPress = true;
             }
         }
+
     }
 }

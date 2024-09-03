@@ -75,11 +75,9 @@
   <ItemGroup>
     <Compile Include="Controlador\ControlActualizarCliente.cs" />
     <Compile Include="Controlador\ControlActualizarCortes.cs" />
-    <Compile Include="Controlador\ControlActualizarPersonal.cs" />
     <Compile Include="Controlador\ControlActualizarPromocion.cs" />
     <Compile Include="Controlador\ControlActualizarRegistro.cs" />
     <Compile Include="Controlador\ControlAgregarCliente.cs" />
-    <Compile Include="Controlador\ControlAgregarPersonal.cs" />
     <Compile Include="Controlador\ControlAgregarProducto.cs" />
     <Compile Include="Controlador\ControlAgregarPromocion.cs" />
     <Compile Include="Controlador\ControlObtenerPin.cs" />
@@ -105,11 +103,9 @@
     <Compile Include="Controlador\ControlTotal.cs" />
     <Compile Include="Modelo\Dao\DaoActualizarCliente.cs" />
     <Compile Include="Modelo\Dao\DaoActualizarCorte.cs" />
-    <Compile Include="Modelo\Dao\DaoActualizarPersonal.cs" />
     <Compile Include="Modelo\Dao\DaoActualizarPromocion.cs" />
     <Compile Include="Modelo\Dao\DaoActualizarRegistro.cs" />
     <Compile Include="Modelo\Dao\DaoAgregarCliente.cs" />
-    <Compile Include="Modelo\Dao\DaoAgregarPersonal.cs" />
     <Compile Include="Modelo\Dao\DaoAgregarProducto.cs" />
     <Compile Include="Modelo\Dao\DaoAgregarPromocion.cs" />
     <Compile Include="Modelo\Dao\DaoNuevaContraseña.cs" />

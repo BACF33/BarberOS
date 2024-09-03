@@ -7,9 +7,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Forms;
-using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace BarberOS.Controlador
 {
@@ -19,33 +17,57 @@ namespace BarberOS.Controlador
         private VistaListaCortesG controladaVista;
         private DaoListaCortesG dao = new DaoListaCortesG();
 
-        public ControlListaCortesG(VistaListaCortesG pasadaVista, vistaMenu passedMenuForm)
+        public ControlListaCortesG(VistaListaCortesG vistaPasada, vistaMenu passedMenuForm)
         {
-            controladaVista = pasadaVista;
+            controladaVista = vistaPasada;
             menuForm = passedMenuForm;
 
+            controladaVista.listCortes.SelectedIndexChanged += (sender, e) => ShowData();
+
+
             //Cuando se presionen los botones marcados en la izquierda se ejecutaran las funciones a la derech
-            //por ejemplo si se presiona personal se abrira una lista de personal
-            controladaVista.btnActualizar2.Click += (sender, e) => getData();
-            controladaVista.btnBorrarEmpleados.Click += (sender, e) => deleteData();
-            controladaVista.btnActualizar2.Click += (sender, e) => updateData();
-            controladaVista.btnAgregar.Click += (sender, e) => insertData();
-            controladaVista.btnSearch.Click += (sender, e) => searchData();
-            controladaVista.btnAPersonal.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaListaPersonalG(passedMenuForm));
+            //por ejemplo si se presiona agregar se ejecutara la funcion insertData
+            controladaVista.btnBorrar.Click += (sender, e) => deleteData();
+            controladaVista.btnAgregar.Click += (sender, e) => InsertData();
+            controladaVista.btnACortes.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaListaCortesG(passedMenuForm));
+            controladaVista.btnActualizar2.Click += (sender, e) => UpdateData();
+            controladaVista.btnBuscar.Click += (sender, e) => searchData();
             controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenuForm));
-            getData();
+            dao.Populate(controladaVista);
         }
 
-        public void insertData()
+        public void ShowData()
         {
-            //1 Se abirar un formulario agregarPersonal como nueva ventana
-            VistaAgregarProducto agregarPersonal = new VistaAgregarProducto();
-            agregarPersonal.Show();
+            if (controladaVista.listCortes.SelectedItems.Count > 0)
+            {
+                ListViewItem seleccionado = controladaVista.listCortes.SelectedItems[0];
+                controladaVista.txtId.Text = seleccionado.SubItems[0].Text;
+                controladaVista.txtName.Text = seleccionado.SubItems[1].Text;
+                controladaVista.txtContraseña.Text = seleccionado.SubItems[2].Text;
+                controladaVista.txtPuntos.Text = seleccionado.SubItems[3].Text;
+                controladaVista.txtCargo.Text = seleccionado.SubItems[4].Text;
+                controladaVista.txtEmail.Text = seleccionado.SubItems[5].Text;
+            }
+            else
+            {
+                controladaVista.txtId.Text = null;
+                controladaVista.txtName.Text = null;
+                controladaVista.txtContraseña.Text = null;
+                controladaVista.txtPuntos.Text = null;
+                controladaVista.txtCargo.Text = null;
+                controladaVista.txtEmail.Text = null;
+            }
         }
 
-        public void getData()
+        public void InsertData()
         {
-            //1 Se ejecutara la funcion populate del dao
+            dao.Insert(controladaVista);
+            dao.Populate(controladaVista);
+        }
+
+        public void UpdateData()
+        {
+            dao.Update(controladaVista);
             dao.Populate(controladaVista);
         }
 
@@ -56,21 +78,7 @@ namespace BarberOS.Controlador
                 //2 Se ejecutara la funcion delete del dao
                 dao.Delete(controladaVista);
 
-            getData();
-        }
-
-        public void updateData()
-        {
-            VistaActualizarCortes actualizar;
-            //1 Si en la vista el usuario selecciono una fila en la tabla se ejecutara lo siguiente
-            if (controladaVista.listCortes.SelectedItems.Count > 0)
-            {
-                //2 Se obtendra el primer valor de la fila seleccionada en la tabla, es decir la id
-                string selectedId = controladaVista.listCortes.SelectedItems[0].Text;
-                //3 Se abirar una vistaActualizarCorte como nueva ventana
-                actualizar = new VistaActualizarCortes(selectedId);
-                actualizar.Show();
-            }
+            dao.Populate(controladaVista);
         }
 
         public void searchData()

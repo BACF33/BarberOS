@@ -102,8 +102,13 @@ namespace BarberOS.Modelo.Dao
                     //Se ejecutara un query update donde se hara que  valores de la tabla usuarios en la base de datos
                     //sean iguales a los que estan en las textboxes
                     using (SqlCommand cmd = new SqlCommand("" +
-                        "UPDATE users SET roleId = @role " +
-                        "WHERE userName = @username", conexion))
+                        "UPDATE users SET " +
+                        "userName = @userName, " +
+                        "userPoints = @userPoints, " +
+                        "userPassword = @userPassword, " +
+                        "userRole = (SELECT roleId FROM userRoles WHERE roleName = @roleName), " +
+                        "userEmail = @userEmail " +
+                        "WHERE userId = @selectedId", conexion))
                     {
                         //Los parametros de la query seran los valores obtenidos de los textboxes
                         cmd.Parameters.AddWithValue("@selectedId", vistaPasada.txtId.Text);
@@ -162,7 +167,7 @@ namespace BarberOS.Modelo.Dao
                     //3 Se ejecutara un query donde se seleccionaran toos los datos de la tabla usuarios donde 
                     //el nombre de usuario coincida con el ingresado
                     string sql = @"
-                SELECT userId, userName, userPassword, userPoints, userRole, userPhone
+                SELECT userId, userName, userPassword, userPoints, userRole, userEmail
                 FROM users
                 WHERE userName LIKE @searchingFor AND userRole = 1";
 
@@ -183,11 +188,11 @@ namespace BarberOS.Modelo.Dao
                             item.SubItems.Add(reader["userPassword"].ToString());
                             item.SubItems.Add(reader["userPoints"].ToString());
                             item.SubItems.Add(reader["userRole"].ToString());
-                            item.SubItems.Add(reader["userPhone"].ToString());
+                            item.SubItems.Add(reader["userEmail"].ToString());
                             vistaPasada.listEmpleados.Items.Add(item);
                         }
-
                         reader.Close();
+
                     }
                 }
             }

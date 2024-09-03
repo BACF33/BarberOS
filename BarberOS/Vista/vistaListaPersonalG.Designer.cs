@@ -71,13 +71,12 @@
             // 
             this.btnACortes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnACortes.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnACortes.Location = new System.Drawing.Point(208, 617);
+            this.btnACortes.Location = new System.Drawing.Point(154, 617);
             this.btnACortes.Name = "btnACortes";
             this.btnACortes.Size = new System.Drawing.Size(180, 52);
             this.btnACortes.TabIndex = 107;
             this.btnACortes.Text = "Cortes";
-            this.btnACortes.UseVisualStyleBackColor = false;
-            this.btnACortes.Click += new System.EventHandler(this.btnACortes_Click);
+            this.btnACortes.UseVisualStyleBackColor = false;            
             // 
             // btnActualizarEmpleados
             // 
@@ -129,7 +128,7 @@
             this.listEmpleados.FullRowSelect = true;
             this.listEmpleados.GridLines = true;
             this.listEmpleados.HideSelection = false;
-            this.listEmpleados.Location = new System.Drawing.Point(593, 114);
+            this.listEmpleados.Location = new System.Drawing.Point(525, 114);
             this.listEmpleados.Name = "listEmpleados";
             this.listEmpleados.Size = new System.Drawing.Size(725, 555);
             this.listEmpleados.TabIndex = 0;
@@ -145,7 +144,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(193, 562);
+            this.label1.Location = new System.Drawing.Point(136, 572);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(212, 36);
             this.label1.TabIndex = 117;
@@ -169,13 +168,12 @@
             // 
             this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnVolver.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(1246, 21);
+            this.btnVolver.Location = new System.Drawing.Point(1036, 24);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(90, 35);
             this.btnVolver.TabIndex = 104;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
-            this.btnVolver.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -210,13 +208,12 @@
             this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnBorrar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrar.ForeColor = System.Drawing.Color.Black;
-            this.btnBorrar.Location = new System.Drawing.Point(1145, 21);
+            this.btnBorrar.Location = new System.Drawing.Point(922, 22);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(95, 35);
             this.btnBorrar.TabIndex = 102;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = false;
-            this.btnBorrar.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnBuscar
             // 
@@ -250,7 +247,7 @@
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.label4);
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(62, 144);
+            this.panel1.Location = new System.Drawing.Point(26, 144);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(455, 423);
@@ -431,7 +428,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(169, 91);
+            this.label2.Location = new System.Drawing.Point(112, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(236, 38);
             this.label2.TabIndex = 130;
@@ -442,7 +439,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1348, 698);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
@@ -452,7 +449,6 @@
             this.Controls.Add(this.listEmpleados);
             this.Name = "VistaListaPersonalG";
             this.Text = "vistaListaBarbero";
-            this.Load += new System.EventHandler(this.VistaListaPersonalG_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
