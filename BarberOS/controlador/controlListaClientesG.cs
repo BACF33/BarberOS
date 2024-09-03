@@ -61,13 +61,13 @@ namespace BarberOS.Controlador
 
         public void InsertData()
         {
-            //dao.Insert(controladaVista);
+            dao.Insert(controladaVista);
             dao.Populate(controladaVista);
         }
 
         public void UpdateData()
         {
-            //dao.Update(controladaVista);
+            dao.Update(controladaVista);
             dao.Populate(controladaVista);
         }
 
