@@ -40,7 +40,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPoder = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.txtId = new System.Windows.Forms.ToolStripTextBox();
@@ -48,16 +48,18 @@
             this.label13 = new System.Windows.Forms.Label();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnActualizar2 = new System.Windows.Forms.Button();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnVolver = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtSearchingFor = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtTipo = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -141,17 +143,19 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.txtTipo);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.LblNombre);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtPoder);
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.btnActualizar);
             this.panel1.Controls.Add(this.btnActualizar2);
-            this.panel1.Controls.Add(this.txtFirstName);
-            this.panel1.Controls.Add(this.txtLastName);
+            this.panel1.Controls.Add(this.txtPrecio);
+            this.panel1.Controls.Add(this.txtNombre);
             this.panel1.Controls.Add(this.label4);
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(76, 191);
@@ -164,12 +168,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(88, 209);
+            this.label6.Location = new System.Drawing.Point(88, 177);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 13);
+            this.label6.Size = new System.Drawing.Size(113, 13);
             this.label6.TabIndex = 123;
-            this.label6.Text = "Tipo";
+            this.label6.Text = "Poder de la promocion";
             // 
             // LblNombre
             // 
@@ -181,16 +185,16 @@
             this.LblNombre.Size = new System.Drawing.Size(0, 25);
             this.LblNombre.TabIndex = 0;
             // 
-            // textBox1
+            // txtPoder
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtPoder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(91, 227);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox1.MaxLength = 60;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(292, 20);
-            this.textBox1.TabIndex = 122;
+            this.txtPoder.Location = new System.Drawing.Point(91, 195);
+            this.txtPoder.Margin = new System.Windows.Forms.Padding(5);
+            this.txtPoder.MaxLength = 60;
+            this.txtPoder.Name = "txtPoder";
+            this.txtPoder.Size = new System.Drawing.Size(292, 20);
+            this.txtPoder.TabIndex = 122;
             // 
             // btnAgregar
             // 
@@ -226,7 +230,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(100, 32);
+            this.label5.Location = new System.Drawing.Point(84, 10);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(271, 38);
             this.label5.TabIndex = 121;
@@ -235,7 +239,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(88, 104);
+            this.label13.Location = new System.Drawing.Point(88, 69);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(126, 13);
@@ -268,31 +272,31 @@
             this.btnActualizar2.Text = "Actualizar";
             this.btnActualizar2.UseVisualStyleBackColor = true;
             // 
-            // txtFirstName
+            // txtPrecio
             // 
-            this.txtFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFirstName.Location = new System.Drawing.Point(91, 175);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(5);
-            this.txtFirstName.MaxLength = 60;
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(292, 20);
-            this.txtFirstName.TabIndex = 0;
+            this.txtPrecio.Location = new System.Drawing.Point(91, 143);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(5);
+            this.txtPrecio.MaxLength = 60;
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(292, 20);
+            this.txtPrecio.TabIndex = 0;
             // 
-            // txtLastName
+            // txtNombre
             // 
-            this.txtLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLastName.Location = new System.Drawing.Point(91, 122);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(5);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(292, 20);
-            this.txtLastName.TabIndex = 1;
+            this.txtNombre.Location = new System.Drawing.Point(91, 87);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(5);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(292, 20);
+            this.txtNombre.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(88, 157);
+            this.label4.Location = new System.Drawing.Point(88, 125);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 13);
@@ -306,7 +310,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.txtSearchingFor);
-            this.panel2.Controls.Add(this.btnBuscar);
+            this.panel2.Controls.Add(this.btnBorrar);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -352,17 +356,17 @@
             this.txtSearchingFor.Size = new System.Drawing.Size(394, 29);
             this.txtSearchingFor.TabIndex = 123;
             // 
-            // btnBuscar
+            // btnBorrar
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnBuscar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscar.Location = new System.Drawing.Point(1147, 17);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(95, 35);
-            this.btnBuscar.TabIndex = 102;
-            this.btnBuscar.Text = "Borrar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBorrar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.ForeColor = System.Drawing.Color.Black;
+            this.btnBorrar.Location = new System.Drawing.Point(1147, 17);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(95, 35);
+            this.btnBorrar.TabIndex = 102;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -375,6 +379,23 @@
             this.button1.TabIndex = 124;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // txtTipo
+            // 
+            this.txtTipo.Location = new System.Drawing.Point(91, 250);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(292, 20);
+            this.txtTipo.TabIndex = 124;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(88, 234);
+            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(106, 13);
+            this.label8.TabIndex = 125;
+            this.label8.Text = "Tipo de la promocion";
             // 
             // VistaListaPromocionesG
             // 
@@ -415,22 +436,24 @@
         public System.Windows.Forms.Button btnAgregar;
         public System.Windows.Forms.Button btnActualizar;
         public System.Windows.Forms.Button btnActualizar2;
-        public System.Windows.Forms.TextBox txtLastName;
-        public System.Windows.Forms.TextBox txtFirstName;
+        public System.Windows.Forms.TextBox txtNombre;
+        public System.Windows.Forms.TextBox txtPrecio;
         public System.Windows.Forms.Label LblNombre;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.MenuStrip menuStrip1;
         public System.Windows.Forms.ToolStripTextBox txtId;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txtPoder;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txtSearchingFor;
-        public System.Windows.Forms.Button btnBuscar;
+        public System.Windows.Forms.Button btnBorrar;
         public System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox txtTipo;
     }
 }
