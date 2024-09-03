@@ -56,6 +56,7 @@ namespace BarberOS.Controlador
             {
                 controladaVista.btnBarberos.Visible = false; 
                 controladaVista.btnCortes.Visible = false;
+                //Lo que sea 
             }
 
                
