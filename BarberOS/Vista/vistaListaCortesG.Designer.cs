@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBorrarEmpleados = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.listCortes = new System.Windows.Forms.ListView();
             this.corteId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -41,38 +41,36 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTipo = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.txtId = new System.Windows.Forms.ToolStripTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnActualizar2 = new System.Windows.Forms.Button();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearchingFor = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnBorrarEmpleados
+            // btnBorrar
             // 
-            this.btnBorrarEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnBorrarEmpleados.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrarEmpleados.ForeColor = System.Drawing.Color.Black;
-            this.btnBorrarEmpleados.Location = new System.Drawing.Point(1147, 18);
-            this.btnBorrarEmpleados.Name = "btnBorrarEmpleados";
-            this.btnBorrarEmpleados.Size = new System.Drawing.Size(95, 35);
-            this.btnBorrarEmpleados.TabIndex = 102;
-            this.btnBorrarEmpleados.Text = "Borrar";
-            this.btnBorrarEmpleados.UseVisualStyleBackColor = false;
+            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBorrar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.ForeColor = System.Drawing.Color.Black;
+            this.btnBorrar.Location = new System.Drawing.Point(1147, 18);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(95, 35);
+            this.btnBorrar.TabIndex = 102;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = false;
             // 
             // btnVolver
             // 
@@ -160,17 +158,17 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.LblNombre);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtTipo);
             this.panel1.Controls.Add(this.btnAgregar);
-            this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.btnActualizar);
             this.panel1.Controls.Add(this.btnActualizar2);
-            this.panel1.Controls.Add(this.txtFirstName);
-            this.panel1.Controls.Add(this.txtLastName);
+            this.panel1.Controls.Add(this.txtPrecio);
+            this.panel1.Controls.Add(this.txtNombre);
             this.panel1.Controls.Add(this.label4);
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(99, 184);
@@ -199,16 +197,16 @@
             this.LblNombre.Size = new System.Drawing.Size(0, 25);
             this.LblNombre.TabIndex = 0;
             // 
-            // textBox1
+            // txtTipo
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtTipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(91, 227);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox1.MaxLength = 60;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(292, 20);
-            this.textBox1.TabIndex = 122;
+            this.txtTipo.Location = new System.Drawing.Point(91, 227);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(5);
+            this.txtTipo.MaxLength = 60;
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(292, 20);
+            this.txtTipo.TabIndex = 122;
             // 
             // btnAgregar
             // 
@@ -223,29 +221,11 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.txtId});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(554, 31);
-            this.menuStrip1.TabIndex = 12;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.Visible = false;
-            // 
-            // txtId
-            // 
-            this.txtId.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(116, 27);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(140, 39);
+            this.label5.Location = new System.Drawing.Point(84, 38);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(201, 38);
             this.label5.TabIndex = 121;
@@ -288,26 +268,26 @@
             this.btnActualizar2.Text = "Actualizar";
             this.btnActualizar2.UseVisualStyleBackColor = true;
             // 
-            // txtFirstName
+            // txtPrecio
             // 
-            this.txtFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFirstName.Location = new System.Drawing.Point(91, 175);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(5);
-            this.txtFirstName.MaxLength = 60;
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(292, 20);
-            this.txtFirstName.TabIndex = 0;
+            this.txtPrecio.Location = new System.Drawing.Point(91, 175);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(5);
+            this.txtPrecio.MaxLength = 60;
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(292, 20);
+            this.txtPrecio.TabIndex = 0;
             // 
-            // txtLastName
+            // txtNombre
             // 
-            this.txtLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLastName.Location = new System.Drawing.Point(91, 122);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(5);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(292, 20);
-            this.txtLastName.TabIndex = 1;
+            this.txtNombre.Location = new System.Drawing.Point(91, 122);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(5);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(292, 20);
+            this.txtNombre.TabIndex = 1;
             // 
             // label4
             // 
@@ -337,17 +317,17 @@
             this.txtSearchingFor.Size = new System.Drawing.Size(394, 29);
             this.txtSearchingFor.TabIndex = 123;
             // 
-            // btnSearch
+            // btnBuscar
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.White;
-            this.btnSearch.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSearch.Location = new System.Drawing.Point(246, 24);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(88, 28);
-            this.btnSearch.TabIndex = 124;
-            this.btnSearch.Text = "Buscar";
-            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnBuscar.BackColor = System.Drawing.Color.White;
+            this.btnBuscar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnBuscar.Location = new System.Drawing.Point(246, 24);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(88, 28);
+            this.btnBuscar.TabIndex = 124;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // label7
             // 
@@ -366,12 +346,19 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtSearchingFor);
-            this.panel2.Controls.Add(this.btnBorrarEmpleados);
-            this.panel2.Controls.Add(this.btnSearch);
+            this.panel2.Controls.Add(this.btnBorrar);
+            this.panel2.Controls.Add(this.btnBuscar);
             this.panel2.Location = new System.Drawing.Point(0, -2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1350, 72);
             this.panel2.TabIndex = 127;
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(291, 38);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 124;
             // 
             // VistaListaCortesG
             // 
@@ -390,8 +377,6 @@
             this.Load += new System.EventHandler(this.VistaListaCortesG_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -400,7 +385,7 @@
         }
 
         #endregion
-        public System.Windows.Forms.Button btnBorrarEmpleados;
+        public System.Windows.Forms.Button btnBorrar;
         public System.Windows.Forms.ListView listCortes;
         private System.Windows.Forms.ColumnHeader corteId;
         private System.Windows.Forms.ColumnHeader corteNombre;
@@ -413,21 +398,20 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label LblNombre;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txtTipo;
         public System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        public System.Windows.Forms.ToolStripTextBox txtId;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label13;
         public System.Windows.Forms.Button btnActualizar;
         public System.Windows.Forms.Button btnActualizar2;
-        public System.Windows.Forms.TextBox txtFirstName;
-        public System.Windows.Forms.TextBox txtLastName;
+        public System.Windows.Forms.TextBox txtPrecio;
+        public System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox txtSearchingFor;
-        public System.Windows.Forms.Button btnSearch;
+        public System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.TextBox txtId;
     }
 }

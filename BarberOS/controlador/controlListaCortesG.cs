@@ -29,7 +29,7 @@ namespace BarberOS.Controlador
             //por ejemplo si se presiona agregar se ejecutara la funcion insertData
             controladaVista.btnBorrar.Click += (sender, e) => deleteData();
             controladaVista.btnAgregar.Click += (sender, e) => InsertData();
-            controladaVista.btnACortes.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaListaCortesG(passedMenuForm));
+            controladaVista.btnAPersonal.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaListaCortesG(passedMenuForm));
             controladaVista.btnActualizar2.Click += (sender, e) => UpdateData();
             controladaVista.btnBuscar.Click += (sender, e) => searchData();
             controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenuForm));
@@ -42,20 +42,16 @@ namespace BarberOS.Controlador
             {
                 ListViewItem seleccionado = controladaVista.listCortes.SelectedItems[0];
                 controladaVista.txtId.Text = seleccionado.SubItems[0].Text;
-                controladaVista.txtName.Text = seleccionado.SubItems[1].Text;
-                controladaVista.txtContraseña.Text = seleccionado.SubItems[2].Text;
-                controladaVista.txtPuntos.Text = seleccionado.SubItems[3].Text;
-                controladaVista.txtCargo.Text = seleccionado.SubItems[4].Text;
-                controladaVista.txtEmail.Text = seleccionado.SubItems[5].Text;
+                controladaVista.txtNombre.Text = seleccionado.SubItems[1].Text;
+                controladaVista.txtPrecio.Text = seleccionado.SubItems[2].Text;
+                controladaVista.txtTipo.Text = seleccionado.SubItems[2].Text;
             }
             else
             {
                 controladaVista.txtId.Text = null;
-                controladaVista.txtName.Text = null;
-                controladaVista.txtContraseña.Text = null;
-                controladaVista.txtPuntos.Text = null;
-                controladaVista.txtCargo.Text = null;
-                controladaVista.txtEmail.Text = null;
+                controladaVista.txtNombre.Text = null;
+                controladaVista.txtPrecio.Text = null;
+                controladaVista.txtTipo.Text = null;
             }
         }
 

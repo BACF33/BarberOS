@@ -22,7 +22,7 @@ namespace BarberOS.Controlador
             controladaVista = vistaPasada;
             menuForm = passedMenuForm;
 
-            controladaVista.listEmpleados.SelectedIndexChanged += (sender, e) => ShowData();
+            controladaVista.listClientes.SelectedIndexChanged += (sender, e) => ShowData();
 
 
             //Cuando se presionen los botones marcados en la izquierda se ejecutaran las funciones a la derech
@@ -38,9 +38,9 @@ namespace BarberOS.Controlador
 
         public void ShowData()
         {
-            if (controladaVista.listEmpleados.SelectedItems.Count > 0)
+            if (controladaVista.listClientes.SelectedItems.Count > 0)
             {
-                ListViewItem seleccionado = controladaVista.listEmpleados.SelectedItems[0];
+                ListViewItem seleccionado = controladaVista.listClientes.SelectedItems[0];
                 controladaVista.txtId.Text = seleccionado.SubItems[0].Text;
                 controladaVista.txtName.Text = seleccionado.SubItems[1].Text;
                 controladaVista.txtContraseña.Text = seleccionado.SubItems[2].Text;
@@ -61,20 +61,20 @@ namespace BarberOS.Controlador
 
         public void InsertData()
         {
-            dao.Insert(controladaVista);
+            //dao.Insert(controladaVista);
             dao.Populate(controladaVista);
         }
 
         public void UpdateData()
         {
-            dao.Update(controladaVista);
+            //dao.Update(controladaVista);
             dao.Populate(controladaVista);
         }
 
         public void deleteData()
         {
             //1 Si existe una fila en la tabla de la vista que el usuario haya seleccionado se ejecutara lo siguiente
-            if (controladaVista.listEmpleados.SelectedItems.Count > 0)
+            if (controladaVista.listClientes.SelectedItems.Count > 0)
                 //2 Se ejecutara la funcion delete del dao
                 dao.Delete(controladaVista);
 
