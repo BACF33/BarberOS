@@ -24,7 +24,7 @@ namespace BarberOS.Modelo.Dao
                     //Se ejecutara un query donde se obtendran los valores de la base de datos, se usa un inner join 
                     //dado a que userType es una llave foranea
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT u.userId, u.userName, u.userPassword, u.userPoints, r.roleName, u.userEmail " +
+                    using (SqlCommand cmd = new SqlCommand("SELECT u.productId, u.productName, u.productType, r.roleName, " +
                         "FROM users u " +
                         "INNER JOIN userRoles r ON u.userRole = r.roleId " +
                         "WHERE r.roleName = 'Admin'", conexion))
