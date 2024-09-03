@@ -16,24 +16,54 @@ namespace BarberOS.Controlador
         private vistaMenu menuForm;
         private VistaListaPromocionesG controladaVista;
         private DaoListaPromocionesG dao = new DaoListaPromocionesG();
-        public ControlListaPromocionesG(VistaListaPromocionesG passedVista, vistaMenu passedMenu)
+
+        public ControlListaPromocionesG(VistaListaPromocionesG vistaPasada, vistaMenu passedMenuForm)
         {
-            menuForm = passedMenu;
-            controladaVista = passedVista;
+            controladaVista = vistaPasada;
+            menuForm = passedMenuForm;
+
+            controladaVista.listPromociones.SelectedIndexChanged += (sender, e) => ShowData();
+
+
             //Cuando se presionen los botones marcados en la izquierda se ejecutaran las funciones a la derech
-            //por ejemplo si se presiona eliminar se ejecutara la funcion deleteData
-            controladaVista.btnActualizar.Click += (sender, e) => getData();
-            controladaVista.btnBuscar.Click += (sender, e) => deleteData();
-            controladaVista.btnAgregar.Click += (sender, e) => insertData();
-            controladaVista.btnActualizar2.Click += (sender, e) => updateData();
-            controladaVista.btnVolver.Click += (sender, e) => passedMenu.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenu));
-            getData();
-            controladaVista.btnBuscar.Click += (sender, e) => searchData();
+            //por ejemplo si se presiona agregar se ejecutara la funcion insertData
+            controladaVista.btnBorrar.Click += (sender, e) => deleteData();
+            controladaVista.btnAgregar.Click += (sender, e) => InsertData();
+            controladaVista.btnAClientes.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaListaPromocionesG(passedMenuForm));
+            controladaVista.btnActualizar2.Click += (sender, e) => UpdateData();
+            controladaVista.btnBorrar.Click += (sender, e) => searchData();
+            controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenuForm));
+            dao.Populate(controladaVista);
         }
 
-        public void getData()
+        public void ShowData()
         {
-            //Se ejecutara la funcion populate del dao 
+            if (controladaVista.listPromociones.SelectedItems.Count > 0)
+            {
+                ListViewItem seleccionado = controladaVista.listPromociones.SelectedItems[0];
+                controladaVista.txtId.Text = seleccionado.SubItems[0].Text;
+                controladaVista.txtNombre.Text = seleccionado.SubItems[1].Text;
+                controladaVista.txtPrecio.Text = seleccionado.SubItems[2].Text;
+                controladaVista.txtTipo.Text = seleccionado.SubItems[3].Text;
+            }
+            else
+            {
+                controladaVista.txtId.Text = null;
+                controladaVista.txtNombre.Text = null;
+                controladaVista.txtPrecio.Text = null;
+                controladaVista.txtTipo.Text = null;
+            }
+        }
+
+        public void InsertData()
+        {
+            dao.Insert(controladaVista);
+            dao.Populate(controladaVista);
+        }
+
+        public void UpdateData()
+        {
+            dao.Update(controladaVista);
             dao.Populate(controladaVista);
         }
 
@@ -44,29 +74,7 @@ namespace BarberOS.Controlador
                 //2 Se ejecutara la funcion delete del dao
                 dao.Delete(controladaVista);
 
-            getData();
-        }
-
-        public void insertData()
-        {
-            //1 Se obtendran los datos que el usuario ingreso en la barra de busqueda
-            VistaAgregarPromocion agregarPromocion = new VistaAgregarPromocion();
-            //2 Se ejecutara la funcion searchData del dao
-            agregarPromocion.Show();
-        }
-
-        public void updateData()
-        {
-            VistaActualizarPromocion actualizar;
-            //1 Si en la vista el usuario selecciono una fila en la tabla se ejecutara lo siguiente
-            if (controladaVista.listPromociones.SelectedItems.Count > 0)
-            {
-                //2 Se obtendra el primer valor de la fila seleccionada en la tabla, es decir la id
-                string selectedId = controladaVista.listPromociones.SelectedItems[0].Text;
-                //3 Se abirar una vistaActualizarCorte como nueva ventana
-                actualizar = new VistaActualizarPromocion(selectedId);
-                actualizar.Show();
-            }
+            dao.Populate(controladaVista);
         }
 
         public void searchData()

@@ -29,7 +29,7 @@ namespace BarberOS.Controlador
             //por ejemplo si se presiona agregar se ejecutara la funcion insertData
             controladaVista.btnBorrar.Click += (sender, e) => deleteData();
             controladaVista.btnAgregar.Click += (sender, e) => InsertData();
-            controladaVista.btnAPersonal.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaListaCortesG(passedMenuForm));
+            controladaVista.btnAPersonal.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaListaPersonalG(passedMenuForm));
             controladaVista.btnActualizar2.Click += (sender, e) => UpdateData();
             controladaVista.btnBuscar.Click += (sender, e) => searchData();
             controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenuForm));
@@ -44,7 +44,7 @@ namespace BarberOS.Controlador
                 controladaVista.txtId.Text = seleccionado.SubItems[0].Text;
                 controladaVista.txtNombre.Text = seleccionado.SubItems[1].Text;
                 controladaVista.txtPrecio.Text = seleccionado.SubItems[2].Text;
-                controladaVista.txtTipo.Text = seleccionado.SubItems[2].Text;
+                controladaVista.txtTipo.Text = seleccionado.SubItems[3].Text;
             }
             else
             {

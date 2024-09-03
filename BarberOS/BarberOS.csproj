@@ -73,13 +73,7 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controlador\ControlActualizarCliente.cs" />
-    <Compile Include="Controlador\ControlActualizarCortes.cs" />
-    <Compile Include="Controlador\ControlActualizarPromocion.cs" />
     <Compile Include="Controlador\ControlActualizarRegistro.cs" />
-    <Compile Include="Controlador\ControlAgregarCliente.cs" />
-    <Compile Include="Controlador\ControlAgregarProducto.cs" />
-    <Compile Include="Controlador\ControlAgregarPromocion.cs" />
     <Compile Include="Controlador\ControlObtenerPin.cs" />
     <Compile Include="Controlador\ControlInicio.cs" />
     <Compile Include="Controlador\ControlInicioGestion.cs" />
@@ -101,13 +95,7 @@
     <Compile Include="Controlador\ControlRegistrarse.cs" />
     <Compile Include="Controlador\ControlRestablecerCorreo.cs" />
     <Compile Include="Controlador\ControlTotal.cs" />
-    <Compile Include="Modelo\Dao\DaoActualizarCliente.cs" />
-    <Compile Include="Modelo\Dao\DaoActualizarCorte.cs" />
-    <Compile Include="Modelo\Dao\DaoActualizarPromocion.cs" />
     <Compile Include="Modelo\Dao\DaoActualizarRegistro.cs" />
-    <Compile Include="Modelo\Dao\DaoAgregarCliente.cs" />
-    <Compile Include="Modelo\Dao\DaoAgregarProducto.cs" />
-    <Compile Include="Modelo\Dao\DaoAgregarPromocion.cs" />
     <Compile Include="Modelo\Dao\DaoMenu.cs" />
     <Compile Include="Modelo\Dao\DaoNuevaContraseña.cs" />
     <Compile Include="Modelo\Dao\DaoRecuperar.cs" />
@@ -124,8 +112,6 @@
     <Compile Include="Modelo\Dao\DaoLogin.cs" />
     <Compile Include="Modelo\Dao\DaoRegistrarse.cs" />
     <Compile Include="Modelo\Dao\DaoRestablecerAdmin.cs" />
-    <Compile Include="Modelo\Dto\DtoAgregarCliente.cs" />
-    <Compile Include="Modelo\Dto\DtoAgregarPersonal.cs" />
     <Compile Include="Modelo\Dto\DtoLogin.cs" />
     <Compile Include="Modelo\Dto\DtoPanelBarbero.cs" />
     <Compile Include="Modelo\Dto\DtoPanelProducto.cs" />
@@ -190,18 +176,6 @@
     <Compile Include="Vista\VistaReestablecerAdmin.Designer.cs">
       <DependentUpon>VistaReestablecerAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\VistaActualizarCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\VistaActualizarCliente.Designer.cs">
-      <DependentUpon>VistaActualizarCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\VistaActualizarCortes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\VistaActualizarCortes.Designer.cs">
-      <DependentUpon>VistaActualizarCortes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vista\guardado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,30 +199,6 @@
     </Compile>
     <Compile Include="Vista\PanelPromocion.Designer.cs">
       <DependentUpon>PanelPromocion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\VistaActualizarPromocion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\VistaActualizarPromocion.Designer.cs">
-      <DependentUpon>VistaActualizarPromocion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\VistaAgregarCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\VistaAgregarCliente.Designer.cs">
-      <DependentUpon>VistaAgregarCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\VistaAgregarProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\VistaAgregarProducto.Designer.cs">
-      <DependentUpon>VistaAgregarProducto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\VistaAgregarPromocion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\VistaAgregarPromocion.Designer.cs">
-      <DependentUpon>VistaAgregarPromocion.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\VistaInicio.cs">
       <SubType>Form</SubType>
@@ -392,26 +342,8 @@
     <EmbeddedResource Include="Vista\PanelPromocion.resx">
       <DependentUpon>PanelPromocion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\VistaActualizarCliente.resx">
-      <DependentUpon>VistaActualizarCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\VistaActualizarCortes.resx">
-      <DependentUpon>VistaActualizarCortes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\VistaActualizarPromocion.resx">
-      <DependentUpon>VistaActualizarPromocion.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaActualizarRegistro.resx">
       <DependentUpon>VistaActualizarRegistro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\VistaAgregarCliente.resx">
-      <DependentUpon>VistaAgregarCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\VistaAgregarProducto.resx">
-      <DependentUpon>VistaAgregarProducto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\VistaAgregarPromocion.resx">
-      <DependentUpon>VistaAgregarPromocion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\guardado2.resx">
       <DependentUpon>guardado2.cs</DependentUpon>
