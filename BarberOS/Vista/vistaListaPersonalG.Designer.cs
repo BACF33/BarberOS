@@ -69,7 +69,7 @@
             // 
             this.btnACortes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnACortes.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnACortes.Location = new System.Drawing.Point(154, 617);
+            this.btnACortes.Location = new System.Drawing.Point(124, 603);
             this.btnACortes.Name = "btnACortes";
             this.btnACortes.Size = new System.Drawing.Size(180, 52);
             this.btnACortes.TabIndex = 107;
@@ -126,9 +126,9 @@
             this.listEmpleados.FullRowSelect = true;
             this.listEmpleados.GridLines = true;
             this.listEmpleados.HideSelection = false;
-            this.listEmpleados.Location = new System.Drawing.Point(525, 114);
+            this.listEmpleados.Location = new System.Drawing.Point(451, 114);
             this.listEmpleados.Name = "listEmpleados";
-            this.listEmpleados.Size = new System.Drawing.Size(725, 555);
+            this.listEmpleados.Size = new System.Drawing.Size(675, 541);
             this.listEmpleados.TabIndex = 0;
             this.listEmpleados.UseCompatibleStateImageBehavior = false;
             this.listEmpleados.View = System.Windows.Forms.View.Details;
@@ -142,7 +142,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(136, 572);
+            this.label1.Location = new System.Drawing.Point(106, 558);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(212, 36);
             this.label1.TabIndex = 117;
@@ -157,6 +157,7 @@
             this.panel2.Controls.Add(this.txtSearchingFor);
             this.panel2.Controls.Add(this.btnBorrar);
             this.panel2.Controls.Add(this.btnBuscar);
+            this.panel2.Controls.Add(this.btnActualizar);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1350, 73);
@@ -166,9 +167,9 @@
             // 
             this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnVolver.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(1036, 24);
+            this.btnVolver.Location = new System.Drawing.Point(1023, 24);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(90, 35);
+            this.btnVolver.Size = new System.Drawing.Size(90, 31);
             this.btnVolver.TabIndex = 104;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
@@ -196,7 +197,7 @@
             // txtSearchingFor
             // 
             this.txtSearchingFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchingFor.Location = new System.Drawing.Point(349, 24);
+            this.txtSearchingFor.Location = new System.Drawing.Point(333, 24);
             this.txtSearchingFor.Name = "txtSearchingFor";
             this.txtSearchingFor.Size = new System.Drawing.Size(394, 29);
             this.txtSearchingFor.TabIndex = 123;
@@ -206,9 +207,9 @@
             this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnBorrar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrar.ForeColor = System.Drawing.Color.Black;
-            this.btnBorrar.Location = new System.Drawing.Point(922, 22);
+            this.btnBorrar.Location = new System.Drawing.Point(922, 21);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(95, 35);
+            this.btnBorrar.Size = new System.Drawing.Size(95, 36);
             this.btnBorrar.TabIndex = 102;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = false;
@@ -218,7 +219,7 @@
             this.btnBuscar.BackColor = System.Drawing.Color.White;
             this.btnBuscar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnBuscar.Location = new System.Drawing.Point(246, 24);
+            this.btnBuscar.Location = new System.Drawing.Point(230, 24);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(88, 28);
             this.btnBuscar.TabIndex = 124;
@@ -237,16 +238,15 @@
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.btnActualizar);
             this.panel1.Controls.Add(this.btnActualizar2);
             this.panel1.Controls.Add(this.txtContraseña);
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.label4);
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(26, 144);
+            this.panel1.Location = new System.Drawing.Point(26, 147);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(455, 423);
+            this.panel1.Size = new System.Drawing.Size(387, 389);
             this.panel1.TabIndex = 131;
             // 
             // txtId
@@ -256,24 +256,24 @@
             this.txtId.Location = new System.Drawing.Point(316, 33);
             this.txtId.Margin = new System.Windows.Forms.Padding(5);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(73, 20);
+            this.txtId.Size = new System.Drawing.Size(5, 20);
             this.txtId.TabIndex = 128;
             // 
             // txtEmail
             // 
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.Location = new System.Drawing.Point(72, 326);
+            this.txtEmail.Location = new System.Drawing.Point(51, 269);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
             this.txtEmail.MaxLength = 60;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(292, 20);
+            this.txtEmail.Size = new System.Drawing.Size(284, 20);
             this.txtEmail.TabIndex = 127;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(181, 308);
+            this.label9.Location = new System.Drawing.Point(48, 251);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(76, 13);
             this.label9.TabIndex = 126;
@@ -282,7 +282,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(164, 206);
+            this.label6.Location = new System.Drawing.Point(51, 208);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(84, 13);
@@ -303,21 +303,21 @@
             // 
             this.txtPuntos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPuntos.Location = new System.Drawing.Point(72, 224);
+            this.txtPuntos.Location = new System.Drawing.Point(51, 226);
             this.txtPuntos.Margin = new System.Windows.Forms.Padding(5);
             this.txtPuntos.MaxLength = 60;
             this.txtPuntos.Name = "txtPuntos";
-            this.txtPuntos.Size = new System.Drawing.Size(292, 20);
+            this.txtPuntos.Size = new System.Drawing.Size(284, 20);
             this.txtPuntos.TabIndex = 122;
             // 
             // btnAgregar
             // 
             this.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAgregar.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregar.Location = new System.Drawing.Point(28, 370);
+            this.btnAgregar.Location = new System.Drawing.Point(60, 314);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(117, 31);
+            this.btnAgregar.Size = new System.Drawing.Size(127, 31);
             this.btnAgregar.TabIndex = 9;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -326,7 +326,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 23);
+            this.label5.Location = new System.Drawing.Point(66, 46);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(242, 38);
             this.label5.TabIndex = 121;
@@ -335,7 +335,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(160, 100);
+            this.label13.Location = new System.Drawing.Point(48, 122);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(88, 13);
@@ -346,11 +346,12 @@
             // 
             this.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.Color.Black;
-            this.btnActualizar.Location = new System.Drawing.Point(316, 370);
+            this.btnActualizar.Location = new System.Drawing.Point(796, 21);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(119, 31);
+            this.btnActualizar.Size = new System.Drawing.Size(119, 35);
             this.btnActualizar.TabIndex = 6;
             this.btnActualizar.Text = "Restablecer";
             this.btnActualizar.UseVisualStyleBackColor = false;
@@ -359,10 +360,10 @@
             // 
             this.btnActualizar2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnActualizar2.ForeColor = System.Drawing.Color.Black;
-            this.btnActualizar2.Location = new System.Drawing.Point(175, 370);
+            this.btnActualizar2.Location = new System.Drawing.Point(190, 314);
             this.btnActualizar2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnActualizar2.Name = "btnActualizar2";
-            this.btnActualizar2.Size = new System.Drawing.Size(113, 31);
+            this.btnActualizar2.Size = new System.Drawing.Size(135, 31);
             this.btnActualizar2.TabIndex = 6;
             this.btnActualizar2.Text = "Actualizar";
             this.btnActualizar2.UseVisualStyleBackColor = true;
@@ -371,27 +372,27 @@
             // 
             this.txtContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtContraseña.Location = new System.Drawing.Point(72, 170);
+            this.txtContraseña.Location = new System.Drawing.Point(51, 183);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(5);
             this.txtContraseña.MaxLength = 60;
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(292, 20);
+            this.txtContraseña.Size = new System.Drawing.Size(284, 20);
             this.txtContraseña.TabIndex = 0;
             // 
             // txtName
             // 
             this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.Location = new System.Drawing.Point(72, 118);
+            this.txtName.Location = new System.Drawing.Point(51, 140);
             this.txtName.Margin = new System.Windows.Forms.Padding(5);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(292, 20);
+            this.txtName.Size = new System.Drawing.Size(284, 20);
             this.txtName.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(152, 152);
+            this.label4.Location = new System.Drawing.Point(48, 165);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 13);
@@ -403,7 +404,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(112, 101);
+            this.label2.Location = new System.Drawing.Point(19, 104);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(236, 38);
             this.label2.TabIndex = 130;
@@ -413,8 +414,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(1152, 693);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);

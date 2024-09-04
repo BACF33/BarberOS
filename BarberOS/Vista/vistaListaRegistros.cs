@@ -28,5 +28,9 @@ namespace BarberOS.Vista
             }
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

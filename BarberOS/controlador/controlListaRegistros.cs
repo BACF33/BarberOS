@@ -12,9 +12,9 @@ namespace BarberOS.Controlador
         {
             controladaVista = pasadaVista;
             daoThis = new DaoListaRegistrosG(controladaVista);
-            controladaVista.btnActualizarRegistros.Click += (sender, e) => daoThis.getData();
-            controladaVista.btnBorrarEmpleados.Click += (sender, e) => deleteData();
-            controladaVista.btnUpdate2.Click += (sender, e) => updateData();
+            controladaVista.a.Click += (sender, e) => daoThis.getData();
+            controladaVista.s.Click += (sender, e) => deleteData();
+            controladaVista.d.Click += (sender, e) => updateData();
             controladaVista.btnVolver.Click += (sender, e) => passedMenu.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenu));
             controladaVista.btnSearch.Click += (sender, e) => searchData();
         }

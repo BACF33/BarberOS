@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -96,7 +96,7 @@
             this.listCortes.FullRowSelect = true;
             this.listCortes.GridLines = true;
             this.listCortes.HideSelection = false;
-            this.listCortes.Location = new System.Drawing.Point(654, 101);
+            this.listCortes.Location = new System.Drawing.Point(656, 100);
             this.listCortes.Name = "listCortes";
             this.listCortes.Size = new System.Drawing.Size(660, 599);
             this.listCortes.TabIndex = 0;
@@ -176,6 +176,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(455, 334);
             this.panel1.TabIndex = 122;
+            // 
+            // cmbTipo
+            // 
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "Cabello",
+            "Barba"});
+            this.cmbTipo.Location = new System.Drawing.Point(91, 225);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(292, 21);
+            this.cmbTipo.TabIndex = 128;
             // 
             // txtId
             // 
@@ -348,17 +359,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1350, 72);
             this.panel2.TabIndex = 127;
-            // 
-            // cmbTipo
-            // 
-            this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Items.AddRange(new object[] {
-            "Cabello",
-            "Barba"});
-            this.cmbTipo.Location = new System.Drawing.Point(91, 225);
-            this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(292, 21);
-            this.cmbTipo.TabIndex = 128;
             // 
             // VistaListaCortesG
             // 
