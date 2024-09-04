@@ -88,7 +88,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void Update(VistaListaCortesG vistaPasada)
+        public void Update(VistaListaPromocionesG vistaPasada)
         {
             try
             {
@@ -121,9 +121,9 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void Delete(VistaListaCortesG vistaPasada)
+        public void Delete(VistaListaPromocionesG vistaPasada)
         {
-            string selectedId = vistaPasada.listCortes.SelectedItems[0].Text;
+            string selectedId = vistaPasada.listPromociones.SelectedItems[0].Text;
             try
             {
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
@@ -148,7 +148,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void searchData(string searchingFor, VistaListaCortesG vistaPasada)
+        public void searchData(string searchingFor, VistaListaPromocionesG vistaPasada)
         {
             try
             {
@@ -171,7 +171,7 @@ namespace BarberOS.Modelo.Dao
 
                         SqlDataReader reader = cmd.ExecuteReader();
 
-                        vistaPasada.listCortes.Items.Clear();
+                        vistaPasada.listPromociones.Items.Clear();
 
                         //5 Se anadiran a la tabla del formulario los valores obtenidos con el query
                         while (reader.Read())
@@ -180,7 +180,7 @@ namespace BarberOS.Modelo.Dao
                             item.SubItems.Add(reader["productName"].ToString());
                             item.SubItems.Add(reader["productPrice"].ToString());
                             item.SubItems.Add(reader["productType"].ToString());
-                            vistaPasada.listCortes.Items.Add(item);
+                            vistaPasada.listPromociones.Items.Add(item);
                         }
                         reader.Close();
 
