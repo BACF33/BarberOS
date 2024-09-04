@@ -40,7 +40,7 @@ namespace BarberOS.Controlador
                             item.SubItems.Add(reader["pr.promotionName"].ToString());
                             item.SubItems.Add(reader["pr.promotionPrice"].ToString());
                             item.SubItems.Add(reader["r.total"].ToString());
-
+                            //Test
                             vistaPasada.listPromociones.Items.Add(item);
                         }
 
