@@ -16,7 +16,7 @@ namespace BarberOS.Vista
         public VistaListaRegistros(vistaMenu passedMenu)
         {
             InitializeComponent();
-            ControlListaRegistros controladorVista = new ControlListaRegistros(this, passedMenu);
+            ControlListaRegistros controladorVista = new ControlListaRegistros();
             this.KeyPreview = true;
             this.KeyDown += Form_KeyDown;
         }
