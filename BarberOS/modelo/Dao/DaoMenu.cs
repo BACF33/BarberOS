@@ -1,4 +1,5 @@
-﻿using BarberOS.Vista;
+﻿using BarberOS.Controlador;
+using BarberOS.Vista;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -12,7 +13,7 @@ namespace BarberOS.Modelo.Dao
 {
     public class DaoMenu
     {
-        public void VerificarPrimerUso(vistaMenu vistaPasada)
+        public void VerificarPrimerUso(ControlMenu controlPasado)
         {
             try
             {
@@ -21,7 +22,7 @@ namespace BarberOS.Modelo.Dao
                 {
                     conexion.Open();
                     //7 Se ejecutara un query que obtenga la informacion que tenga la casilla con la id seleccionada
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM users", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM users WHERE userId= 999", conexion))
                     {
 
                         SqlDataReader reader = cmd.ExecuteReader();
@@ -33,9 +34,13 @@ namespace BarberOS.Modelo.Dao
                         else
 
                         {
-                            VistaPrimerUsoUsuario Vistausuario = new VistaPrimerUsoUsuario();
-                            Vistausuario.Show();
-                            vistaPasada.Hide();    
+                            controlPasado.AbrirFormulario(new VistaPrimerUsoUsuario());
+                            controlPasado.controladaVista.btnAgendar.Visible = false;
+                            controlPasado.controladaVista.btnBarberos.Visible = false;
+                            controlPasado.controladaVista.btnCortes.Visible = false; 
+                            controlPasado.controladaVista.btnCurrentUser.Visible = false;
+                            controlPasado.controladaVista.btnInicio.Visible = false;
+                            controlPasado.controladaVista.btnIngresar.Visible = false;
                         }
                         reader.Close();
                     }

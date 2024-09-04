@@ -1,4 +1,4 @@
-﻿using BarberOS.Modelo.Dao;
+﻿ using BarberOS.Modelo.Dao;
 using BarberOS.Vista;
 using System;
 using System.Collections.Generic;

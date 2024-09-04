@@ -11,7 +11,7 @@ namespace BarberOS.Controlador
     {
         //4 Estas variables nulas se declaran aqui para que puedan usar en todo el archivo
         private Form currentForm = null;
-        vistaMenu controladaVista = null;
+         public vistaMenu controladaVista = null;
         public DtoLogin userValues = null;
         public DaoMenu daoThis = new DaoMenu();
 
@@ -20,7 +20,7 @@ namespace BarberOS.Controlador
         {
             controladaVista = vistaPasada;
 
-            daoThis.VerificarPrimerUso(vistaPasada);
+            daoThis.VerificarPrimerUso(this);
 
             //6 Aqui se evaluara cuando el usuario presione uno de los botones del menu, dependiendo del que toque la 
             //funcion de la izquierda se evaluara (si toca el boton ingresar se creara un nuevo formulario login)
