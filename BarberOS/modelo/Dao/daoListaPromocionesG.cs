@@ -22,7 +22,7 @@ namespace BarberOS.Modelo.Dao
                     //Se ejecutara un query donde se obtendran los valores de la base de datos, se usa un inner join 
                     //dado a que userType es una llave foranea
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT  p.promotionId, p.promotionName, p.promotionPrice, t.promotionTypeName " +
+                    using (SqlCommand cmd = new SqlCommand("SELECT  p.promotionId, p.promotionName, p.promotionPrice, p.promotionPower,  t.promotionTypeName " +
                         "FROM promotions p " +
                         "INNER JOIN promotionTypes t ON promotionType = t.promotionTypeId ", conexion))
                     {
@@ -37,7 +37,7 @@ namespace BarberOS.Modelo.Dao
                             item.SubItems.Add(reader["promotionName"].ToString());
                             item.SubItems.Add(reader["promotionPrice"].ToString());
                             item.SubItems.Add(reader["promotionPower"].ToString());
-                            item.SubItems.Add(reader["promotionType"].ToString());
+                            item.SubItems.Add(reader["promotionTypeName"].ToString());
                             vistaPasada.listPromociones.Items.Add(item);
                         }
 
@@ -66,18 +66,17 @@ namespace BarberOS.Modelo.Dao
                     VALUES (
                     @Name, 
                     @Price, 
-                    @Poder, 
-                    @Type
-                    (SELECT promotionTypeId FROM promotionTypes WHERE promotionTypeName = @Tipo)
+                    @Power, 
+                    (SELECT promotionTypeId FROM promotionTypes WHERE promotionTypeName = @Type)
                     )";
 
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
                         //Se usara la string selectedId como parametro
-                        cmd.Parameters.AddWithValue("@Nombre", vistaPasada.txtNombre.Text);
-                        cmd.Parameters.AddWithValue("@Precio", vistaPasada.txtPrecio.Text);
-                        cmd.Parameters.AddWithValue("@Poder", vistaPasada.txtPoder.Text);
-                        cmd.Parameters.AddWithValue("@Tipo", vistaPasada.txtTipo.Text);
+                        cmd.Parameters.AddWithValue("@Name", vistaPasada.txtNombre.Text);
+                        cmd.Parameters.AddWithValue("@Price", vistaPasada.txtPrecio.Text);
+                        cmd.Parameters.AddWithValue("@Power", vistaPasada.txtPoder.Text);
+                        cmd.Parameters.AddWithValue("@Type", vistaPasada.cmbTipo.Text);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
                 }
@@ -102,14 +101,16 @@ namespace BarberOS.Modelo.Dao
                         "UPDATE promotions SET " +
                         "promotionName = @Name, " +
                         "promotionPrice = @Price, " +
+                        "promotionPower = @Power, " +
                         "promotionType = (SELECT promotionTypeId FROM promotionTypes WHERE promotionTypeName = @Type)" +
-                        "WHERE productId = @selectedId", conexion))
+                        "WHERE promotionId = @selectedId", conexion))
                     {
                         //Los parametros de la query seran los valores obtenidos de los textboxes
                         cmd.Parameters.AddWithValue("@selectedId", vistaPasada.txtId.Text);
                         cmd.Parameters.AddWithValue("@Name", vistaPasada.txtNombre.Text);
                         cmd.Parameters.AddWithValue("@Price", vistaPasada.txtPrecio.Text);
-                        cmd.Parameters.AddWithValue("@Type", vistaPasada.txtTipo.Text);
+                        cmd.Parameters.AddWithValue("@Power", vistaPasada.txtPoder.Text);
+                        cmd.Parameters.AddWithValue("@Type", vistaPasada.cmbTipo.Text);
 
                         cmd.ExecuteNonQuery();
                     }
@@ -132,7 +133,7 @@ namespace BarberOS.Modelo.Dao
                     //Usando la id de la fila seleccionada por el usuaio se eliminara el valor de la base de datos con
                     //el mismo id 
                     conexion.Open();
-                    string sql = "DELETE FROM products WHERE productId = @toDelete";
+                    string sql = "DELETE FROM promotions WHERE promotionId = @toDelete";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {
@@ -159,10 +160,9 @@ namespace BarberOS.Modelo.Dao
 
                     //3 Se ejecutara un query donde se seleccionaran toos los datos de la tabla usuarios donde 
                     //el nombre de usuario coincida con el ingresado
-                    string sql = @"
-                SELECT productId, productName, productPrice, productType
-                FROM products
-                WHERE productName LIKE @searchingFor";
+                    string sql = "SELECT  p.promotionId, p.promotionName, p.promotionPrice, t.promotionTypeName " +
+                        "FROM promotions p " +
+                        "INNER JOIN promotionTypes t ON promotionType = t.promotionTypeId LIKE @searchingFor AND userRole = 1 ";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {
@@ -176,10 +176,11 @@ namespace BarberOS.Modelo.Dao
                         //5 Se anadiran a la tabla del formulario los valores obtenidos con el query
                         while (reader.Read())
                         {
-                            ListViewItem item = new ListViewItem(reader["productId"].ToString());
-                            item.SubItems.Add(reader["productName"].ToString());
-                            item.SubItems.Add(reader["productPrice"].ToString());
-                            item.SubItems.Add(reader["productType"].ToString());
+                            ListViewItem item = new ListViewItem(reader["promotionId"].ToString());
+                            item.SubItems.Add(reader["promotionName"].ToString());
+                            item.SubItems.Add(reader["promotionPrice"].ToString());
+                            item.SubItems.Add(reader["promotionPower"].ToString());
+                            item.SubItems.Add(reader["promotionType"].ToString());
                             vistaPasada.listPromociones.Items.Add(item);
                         }
                         reader.Close();

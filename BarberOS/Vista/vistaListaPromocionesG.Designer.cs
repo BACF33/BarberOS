@@ -38,12 +38,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
             this.txtPoder = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.txtId = new System.Windows.Forms.ToolStripTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.btnActualizar = new System.Windows.Forms.Button();
@@ -58,10 +58,8 @@
             this.txtSearchingFor = new System.Windows.Forms.TextBox();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtTipo = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,13 +141,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.cmbTipo);
+            this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.txtTipo);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.LblNombre);
             this.panel1.Controls.Add(this.txtPoder);
             this.panel1.Controls.Add(this.btnAgregar);
-            this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.btnActualizar);
@@ -164,6 +162,23 @@
             this.panel1.Size = new System.Drawing.Size(455, 334);
             this.panel1.TabIndex = 121;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(362, 23);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(70, 20);
+            this.txtId.TabIndex = 126;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(88, 234);
+            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(106, 13);
+            this.label8.TabIndex = 125;
+            this.label8.Text = "Tipo de la promocion";
             // 
             // label6
             // 
@@ -207,24 +222,6 @@
             this.btnAgregar.TabIndex = 9;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.txtId});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(554, 31);
-            this.menuStrip1.TabIndex = 12;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.Visible = false;
-            // 
-            // txtId
-            // 
-            this.txtId.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(116, 27);
             // 
             // label5
             // 
@@ -380,22 +377,16 @@
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // txtTipo
+            // cmbTipo
             // 
-            this.txtTipo.Location = new System.Drawing.Point(91, 250);
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(292, 20);
-            this.txtTipo.TabIndex = 124;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(88, 234);
-            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 13);
-            this.label8.TabIndex = 125;
-            this.label8.Text = "Tipo de la promocion";
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "Cabello",
+            "Promocion"});
+            this.cmbTipo.Location = new System.Drawing.Point(91, 249);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(292, 21);
+            this.cmbTipo.TabIndex = 127;
             // 
             // VistaListaPromocionesG
             // 
@@ -413,8 +404,6 @@
             this.Text = "vistaListaPromocionesG";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -440,8 +429,6 @@
         public System.Windows.Forms.TextBox txtPrecio;
         public System.Windows.Forms.Label LblNombre;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        public System.Windows.Forms.ToolStripTextBox txtId;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.TextBox txtPoder;
@@ -454,6 +441,7 @@
         public System.Windows.Forms.Button btnBorrar;
         public System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.TextBox txtTipo;
+        public System.Windows.Forms.TextBox txtId;
+        public System.Windows.Forms.ComboBox cmbTipo;
     }
 }

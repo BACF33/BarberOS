@@ -44,14 +44,14 @@ namespace BarberOS.Controlador
                 controladaVista.txtId.Text = seleccionado.SubItems[0].Text;
                 controladaVista.txtNombre.Text = seleccionado.SubItems[1].Text;
                 controladaVista.txtPrecio.Text = seleccionado.SubItems[2].Text;
-                controladaVista.txtTipo.Text = seleccionado.SubItems[3].Text;
+                controladaVista.cmbTipo.Text = seleccionado.SubItems[3].Text;
             }
             else
             {
                 controladaVista.txtId.Text = null;
                 controladaVista.txtNombre.Text = null;
                 controladaVista.txtPrecio.Text = null;
-                controladaVista.txtTipo.Text = null;
+                controladaVista.cmbTipo.Text = null;
             }
         }
 

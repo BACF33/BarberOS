@@ -75,7 +75,7 @@ namespace BarberOS.Modelo.Dao
                         //Se usara la string selectedId como parametro
                         cmd.Parameters.AddWithValue("@Nombre", vistaPasada.txtNombre.Text);
                         cmd.Parameters.AddWithValue("@Precio", vistaPasada.txtPrecio.Text);
-                        cmd.Parameters.AddWithValue("@Tipo", vistaPasada.txtTipo.Text);
+                        cmd.Parameters.AddWithValue("@Tipo", vistaPasada.cmbTipo.Text);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
                 }
@@ -107,7 +107,7 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@selectedId", vistaPasada.txtId.Text);
                         cmd.Parameters.AddWithValue("@Name", vistaPasada.txtNombre.Text);
                         cmd.Parameters.AddWithValue("@Price", vistaPasada.txtPrecio.Text);
-                        cmd.Parameters.AddWithValue("@Type", vistaPasada.txtTipo.Text);
+                        cmd.Parameters.AddWithValue("@Type", vistaPasada.cmbTipo.Text);
 
                         cmd.ExecuteNonQuery();
                     }

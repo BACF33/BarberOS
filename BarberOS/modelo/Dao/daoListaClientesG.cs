@@ -2,6 +2,8 @@
 using System;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
+using System.Text;
 using System.Windows.Forms;
 
 namespace BarberOS.Modelo.Dao
@@ -71,11 +73,22 @@ namespace BarberOS.Modelo.Dao
 
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
+
+                        string password = vistaPasada.txtContraseña.Text;
+                        using (SHA256 crypt = SHA256.Create())
+                        {
+                            byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(password));
+                            StringBuilder builder = new StringBuilder();
+                            for (int i = 0; i < bytes.Length; i++)
+                                builder.Append(bytes[i].ToString("X2"));
+                            password = builder.ToString();
+                        }
+
                         //Se usara la string selectedId como parametro
                         cmd.Parameters.AddWithValue("@userName", vistaPasada.txtName.Text);
-                        cmd.Parameters.AddWithValue("@userPassword", vistaPasada.txtContraseña.Text);
+                        cmd.Parameters.AddWithValue("@userPassword", password);
                         cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtPuntos.Text);
-                        cmd.Parameters.AddWithValue("@roleName", vistaPasada.txtCargo.Text);
+                        cmd.Parameters.AddWithValue("@roleName", "Cliente");
                         cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
@@ -106,12 +119,23 @@ namespace BarberOS.Modelo.Dao
                         "userEmail = @userEmail " +
                         "WHERE userId = @selectedId", conexion))
                     {
+
+                        string password = vistaPasada.txtContraseña.Text;
+                        using (SHA256 crypt = SHA256.Create())
+                        {
+                            byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(password));
+                            StringBuilder builder = new StringBuilder();
+                            for (int i = 0; i < bytes.Length; i++)
+                                builder.Append(bytes[i].ToString("X2"));
+                            password = builder.ToString();
+                        }
+
                         //Los parametros de la query seran los valores obtenidos de los textboxes
                         cmd.Parameters.AddWithValue("@selectedId", vistaPasada.txtId.Text);
                         cmd.Parameters.AddWithValue("@userName", vistaPasada.txtName.Text);
-                        cmd.Parameters.AddWithValue("@userPassword", vistaPasada.txtContraseña.Text);
+                        cmd.Parameters.AddWithValue("@userPassword", password);
                         cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtPuntos.Text);
-                        cmd.Parameters.AddWithValue("@roleName", vistaPasada.txtCargo.Text);
+                        cmd.Parameters.AddWithValue("@roleName", "Admin");
                         cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
 
                         cmd.ExecuteNonQuery();

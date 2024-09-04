@@ -39,9 +39,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
-            this.txtTipo = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtId = new System.Windows.Forms.TextBox();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -158,10 +158,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.cmbTipo);
             this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.LblNombre);
-            this.panel1.Controls.Add(this.txtTipo);
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label13);
@@ -176,6 +176,13 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(455, 334);
             this.panel1.TabIndex = 122;
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(291, 38);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 124;
             // 
             // label6
             // 
@@ -196,17 +203,6 @@
             this.LblNombre.Name = "LblNombre";
             this.LblNombre.Size = new System.Drawing.Size(0, 25);
             this.LblNombre.TabIndex = 0;
-            // 
-            // txtTipo
-            // 
-            this.txtTipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTipo.Location = new System.Drawing.Point(91, 227);
-            this.txtTipo.Margin = new System.Windows.Forms.Padding(5);
-            this.txtTipo.MaxLength = 60;
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(292, 20);
-            this.txtTipo.TabIndex = 122;
             // 
             // btnAgregar
             // 
@@ -353,12 +349,16 @@
             this.panel2.Size = new System.Drawing.Size(1350, 72);
             this.panel2.TabIndex = 127;
             // 
-            // txtId
+            // cmbTipo
             // 
-            this.txtId.Location = new System.Drawing.Point(291, 38);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(100, 20);
-            this.txtId.TabIndex = 124;
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "Cabello",
+            "Barba"});
+            this.cmbTipo.Location = new System.Drawing.Point(91, 225);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(292, 21);
+            this.cmbTipo.TabIndex = 128;
             // 
             // VistaListaCortesG
             // 
@@ -398,7 +398,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label LblNombre;
-        public System.Windows.Forms.TextBox txtTipo;
         public System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label13;
@@ -413,5 +412,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.TextBox txtId;
+        public System.Windows.Forms.ComboBox cmbTipo;
     }
 }

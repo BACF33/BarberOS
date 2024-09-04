@@ -32,8 +32,6 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtCargo = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
             this.txtPuntos = new System.Windows.Forms.TextBox();
@@ -73,8 +71,6 @@
             this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.txtCargo);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.LblNombre);
             this.panel1.Controls.Add(this.txtPuntos);
@@ -107,7 +103,7 @@
             // 
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.Location = new System.Drawing.Point(72, 326);
+            this.txtEmail.Location = new System.Drawing.Point(72, 300);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
             this.txtEmail.MaxLength = 60;
             this.txtEmail.Name = "txtEmail";
@@ -117,32 +113,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(181, 308);
+            this.label9.Location = new System.Drawing.Point(181, 282);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 13);
+            this.label9.Size = new System.Drawing.Size(67, 13);
             this.label9.TabIndex = 126;
-            this.label9.Text = "Personal Email";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(172, 265);
-            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 13);
-            this.label8.TabIndex = 125;
-            this.label8.Text = "Personal Cargo";
-            // 
-            // txtCargo
-            // 
-            this.txtCargo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCargo.Location = new System.Drawing.Point(72, 283);
-            this.txtCargo.Margin = new System.Windows.Forms.Padding(5);
-            this.txtCargo.MaxLength = 60;
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(292, 20);
-            this.txtCargo.TabIndex = 124;
+            this.label9.Text = "Cliente Email";
             // 
             // label6
             // 
@@ -150,9 +125,9 @@
             this.label6.Location = new System.Drawing.Point(164, 206);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 13);
+            this.label6.Size = new System.Drawing.Size(75, 13);
             this.label6.TabIndex = 123;
-            this.label6.Text = "Personal Puntos";
+            this.label6.Text = "Cliente Puntos";
             // 
             // LblNombre
             // 
@@ -203,9 +178,9 @@
             this.label13.Location = new System.Drawing.Point(160, 100);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(88, 13);
+            this.label13.Size = new System.Drawing.Size(79, 13);
             this.label13.TabIndex = 0;
-            this.label13.Text = "Personal Nombre";
+            this.label13.Text = "Cliente Nombre";
             // 
             // btnActualizar
             // 
@@ -259,9 +234,9 @@
             this.label4.Location = new System.Drawing.Point(152, 152);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 13);
+            this.label4.Size = new System.Drawing.Size(96, 13);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Personal Contraseña";
+            this.label4.Text = "Cliente Contraseña";
             // 
             // label2
             // 
@@ -278,11 +253,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(173, 551);
+            this.label1.Location = new System.Drawing.Point(140, 551);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 36);
+            this.label1.Size = new System.Drawing.Size(287, 36);
             this.label1.TabIndex = 134;
-            this.label1.Text = "Acceder a Cortes";
+            this.label1.Text = "Acceder a Promociones";
             // 
             // btnACortes
             // 
@@ -292,7 +267,7 @@
             this.btnACortes.Name = "btnACortes";
             this.btnACortes.Size = new System.Drawing.Size(180, 52);
             this.btnACortes.TabIndex = 133;
-            this.btnACortes.Text = "Cortes";
+            this.btnACortes.Text = "Promociones";
             this.btnACortes.UseVisualStyleBackColor = false;
             // 
             // listClientes
@@ -465,8 +440,6 @@
         public System.Windows.Forms.TextBox txtId;
         public System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label LblNombre;
         public System.Windows.Forms.TextBox txtPuntos;
