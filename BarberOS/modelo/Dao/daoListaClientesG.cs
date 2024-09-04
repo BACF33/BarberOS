@@ -23,7 +23,7 @@ namespace BarberOS.Modelo.Dao
                     using (SqlCommand cmd = new SqlCommand("SELECT u.userId, u.userName, u.userPassword, u.userPoints, r.roleName, u.userEmail " +
                         "FROM users u " +
                         "INNER JOIN userRoles r ON u.userRole = r.roleId " +
-                        "WHERE r.roleName = 'Admin'", conexion))
+                        "WHERE r.roleName = 'Cliente'", conexion))
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
@@ -135,7 +135,7 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@userName", vistaPasada.txtName.Text);
                         cmd.Parameters.AddWithValue("@userPassword", password);
                         cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtPuntos.Text);
-                        cmd.Parameters.AddWithValue("@roleName", "Admin");
+                        cmd.Parameters.AddWithValue("@roleName", "Cliente");
                         cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
 
                         cmd.ExecuteNonQuery();
@@ -189,7 +189,7 @@ namespace BarberOS.Modelo.Dao
                     string sql = @"
                 SELECT userId, userName, userPassword, userPoints, userRole, userEmail
                 FROM users
-                WHERE userName LIKE @searchingFor AND userRole = 1";
+                WHERE userName LIKE @searchingFor AND userRole = 2";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {

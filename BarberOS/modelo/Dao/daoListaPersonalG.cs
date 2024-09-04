@@ -90,7 +90,7 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@userName", vistaPasada.txtName.Text);
                         cmd.Parameters.AddWithValue("@userPassword", password);
                         cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtPuntos.Text);
-                        cmd.Parameters.AddWithValue("@roleName", "Cliente");
+                        cmd.Parameters.AddWithValue("@roleName", "Admin");
                         cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }

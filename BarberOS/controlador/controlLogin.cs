@@ -1,5 +1,6 @@
 ﻿ using BarberOS.Modelo.Dao;
 using BarberOS.Vista;
+using BarberOS.Vistas;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -81,9 +82,18 @@ namespace BarberOS.Controlador
                 //9 Aqui evalua si el tipo del usuario que inicio sesion era cliente o admin, dependiendo de eso mandara
                 //a un formulario diferente
                 if (daoThis.Role == "Cliente")
-                    menuForm.controladorMenu.AbrirFormulario(new VistaPerfilUsuario());
+                {
+                    menuForm.controladorMenu.AbrirFormulario(new VistaInicio(menuForm));
+
+                }
                 else
+                {
                     menuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(menuForm));
+                    menuForm.btnBarberos.Visible = false;
+                    menuForm.btnCortes.Visible = false;
+                    menuForm.btnAgendar.Visible = false;
+                    menuForm.btnInicio.Visible = false;
+                }
             }
             //10 Si el valor obtenido por answer no es 1 (inicio de sesion incorrecto esto se ejecuta)
             else

@@ -52,12 +52,12 @@ namespace BarberOS.Controlador
             form.Show();
             form.BringToFront();
 
-            if (controladaVista.btnIngresar.Text == "SALIR")
+            if (controladaVista.btnIngresar.Text != "SALIR")
             {
-                controladaVista.btnBarberos.Visible = false; 
-                controladaVista.btnCortes.Visible = false;
-                controladaVista.btnAgendar.Visible = false;
-                controladaVista.btnInicio.Visible = false;
+                controladaVista.btnBarberos.Visible = true; 
+                controladaVista.btnCortes.Visible = true;
+                controladaVista.btnAgendar.Visible = true;
+                controladaVista.btnInicio.Visible = true;
                 //Lo que sea 
             }
 
