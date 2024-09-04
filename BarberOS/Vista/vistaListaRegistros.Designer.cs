@@ -41,11 +41,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnUpdate2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnBorrar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.btnActualizarRegistros = new System.Windows.Forms.Button();
-            this.btnUpdate2 = new System.Windows.Forms.Button();
             this.btnBorrarEmpleados = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -128,7 +128,7 @@
             this.panel2.Controls.Add(this.btnUpdate2);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.btnBorrar);
-            this.panel2.Controls.Add(this.btnBuscar);
+            this.panel2.Controls.Add(this.btnSearch);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1350, 72);
@@ -165,6 +165,20 @@
             this.label3.TabIndex = 114;
             this.label3.Text = "BarberOs";
             // 
+            // btnUpdate2
+            // 
+            this.btnUpdate2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnUpdate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnUpdate2.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate2.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdate2.Location = new System.Drawing.Point(856, 18);
+            this.btnUpdate2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnUpdate2.Name = "btnUpdate2";
+            this.btnUpdate2.Size = new System.Drawing.Size(119, 31);
+            this.btnUpdate2.TabIndex = 129;
+            this.btnUpdate2.Text = "Restablecer";
+            this.btnUpdate2.UseVisualStyleBackColor = false;
+            // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,17 +199,17 @@
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = false;
             // 
-            // btnBuscar
+            // btnSearch
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.White;
-            this.btnBuscar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnBuscar.Location = new System.Drawing.Point(246, 24);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(88, 28);
-            this.btnBuscar.TabIndex = 124;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnSearch.BackColor = System.Drawing.Color.White;
+            this.btnSearch.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSearch.Location = new System.Drawing.Point(246, 24);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(88, 28);
+            this.btnSearch.TabIndex = 124;
+            this.btnSearch.Text = "Buscar";
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // btnActualizarRegistros
             // 
@@ -209,20 +223,6 @@
             this.btnActualizarRegistros.TabIndex = 131;
             this.btnActualizarRegistros.Text = "Agregar";
             this.btnActualizarRegistros.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate2
-            // 
-            this.btnUpdate2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnUpdate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnUpdate2.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate2.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate2.Location = new System.Drawing.Point(856, 18);
-            this.btnUpdate2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnUpdate2.Name = "btnUpdate2";
-            this.btnUpdate2.Size = new System.Drawing.Size(119, 31);
-            this.btnUpdate2.TabIndex = 129;
-            this.btnUpdate2.Text = "Restablecer";
-            this.btnUpdate2.UseVisualStyleBackColor = false;
             // 
             // btnBorrarEmpleados
             // 
@@ -410,7 +410,7 @@
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.Button btnBorrar;
-        public System.Windows.Forms.Button btnBuscar;
+        public System.Windows.Forms.Button btnSearch;
         public System.Windows.Forms.Button btnActualizarRegistros;
         public System.Windows.Forms.Button btnUpdate2;
         public System.Windows.Forms.Button btnBorrarEmpleados;
