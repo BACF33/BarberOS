@@ -94,6 +94,7 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
+                    //Test
                 }
             }
             catch (Exception ex)
