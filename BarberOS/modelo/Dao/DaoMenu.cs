@@ -22,7 +22,7 @@ namespace BarberOS.Modelo.Dao
                 {
                     conexion.Open();
                     //7 Se ejecutara un query que obtenga la informacion que tenga la casilla con la id seleccionada
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM users WHERE userId= 999", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM users", conexion))
                     {
 
                         SqlDataReader reader = cmd.ExecuteReader();
