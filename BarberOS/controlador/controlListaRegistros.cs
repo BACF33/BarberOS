@@ -19,9 +19,12 @@ namespace BarberOS.Controlador
                     //Se ejecutara un query donde se obtendran los valores de la base de datos, se usa un inner join 
                     //dado a que userType es una llave foranea
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT  p.promotionId, p.promotionName, p.promotionPrice, p.promotionPower,  t.promotionTypeName " +
-                        "FROM promotions p " +
-                        "INNER JOIN promotionTypes t ON promotionType = t.promotionTypeId ", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT r.registryId, u.userName, p.productName, p.productPrice,  pr.promotionName, pr.promomotionPrice r.total " +
+                        "FROM registries r " +
+                        "INNER JOIN users u ON userId = r.userId, " +
+                        "INNER JOIN products p ON productId = r.productId, " +
+                        "INNER JOIN promotions p ON promotionId = r.promotionId, " +
+                        conexion))
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
@@ -30,11 +33,14 @@ namespace BarberOS.Controlador
                         //Se le añade a la lista presente en la vista los valores obtenidos con el query
                         while (reader.Read())
                         {
-                            ListViewItem item = new ListViewItem(reader["promotionId"].ToString());
-                            item.SubItems.Add(reader["promotionName"].ToString());
-                            item.SubItems.Add(reader["promotionPrice"].ToString());
-                            item.SubItems.Add(reader["promotionPower"].ToString());
-                            item.SubItems.Add(reader["promotionTypeName"].ToString());
+                            ListViewItem item = new ListViewItem(reader["r.registryId"].ToString());
+                            item.SubItems.Add(reader["u.userName"].ToString());
+                            item.SubItems.Add(reader["p.productName"].ToString());
+                            item.SubItems.Add(reader["p.productPrice"].ToString());
+                            item.SubItems.Add(reader["pr.promotionName"].ToString());
+                            item.SubItems.Add(reader["pr.promotionPrice"].ToString());
+                            item.SubItems.Add(reader["r.total"].ToString());
+
                             vistaPasada.listPromociones.Items.Add(item);
                         }
 
