@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.listRegistros = new System.Windows.Forms.ListView();
             this.registroId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.registroProductoNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -36,27 +35,25 @@
             this.regisroPromocionNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.registroPromocionPoder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.registroTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnUpdate2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.btnActualizarRegistros = new System.Windows.Forms.Button();
-            this.btnBorrarEmpleados = new System.Windows.Forms.Button();
+            this.btnInsertar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
-            this.txtPuntos = new System.Windows.Forms.TextBox();
+            this.txtPromotion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtProduct = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
@@ -77,7 +74,7 @@
             this.listRegistros.FullRowSelect = true;
             this.listRegistros.GridLines = true;
             this.listRegistros.HideSelection = false;
-            this.listRegistros.Location = new System.Drawing.Point(469, 150);
+            this.listRegistros.Location = new System.Drawing.Point(479, 150);
             this.listRegistros.Name = "listRegistros";
             this.listRegistros.Size = new System.Drawing.Size(694, 460);
             this.listRegistros.TabIndex = 0;
@@ -113,20 +110,14 @@
             this.registroTotal.Text = "Total";
             this.registroTotal.Width = 120;
             // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnVolver);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.btnUpdate2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Controls.Add(this.btnBorrar);
             this.panel2.Controls.Add(this.btnSearch);
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -134,16 +125,16 @@
             this.panel2.Size = new System.Drawing.Size(1350, 72);
             this.panel2.TabIndex = 128;
             // 
-            // button1
+            // btnVolver
             // 
-            this.button1.BackColor = System.Drawing.Color.Gray;
-            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1083, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 35);
-            this.button1.TabIndex = 104;
-            this.button1.Text = "Volver";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnVolver.BackColor = System.Drawing.Color.Gray;
+            this.btnVolver.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.Location = new System.Drawing.Point(1083, 18);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(90, 35);
+            this.btnVolver.TabIndex = 104;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -179,13 +170,13 @@
             this.btnUpdate2.Text = "Restablecer";
             this.btnUpdate2.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(349, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(394, 29);
-            this.textBox1.TabIndex = 123;
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(349, 24);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(394, 29);
+            this.txtSearch.TabIndex = 123;
             // 
             // btnBorrar
             // 
@@ -211,46 +202,45 @@
             this.btnSearch.Text = "Buscar";
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
-            // btnActualizarRegistros
+            // btnInsertar
             // 
-            this.btnActualizarRegistros.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnActualizarRegistros.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarRegistros.ForeColor = System.Drawing.Color.Black;
-            this.btnActualizarRegistros.Location = new System.Drawing.Point(54, 352);
-            this.btnActualizarRegistros.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnActualizarRegistros.Name = "btnActualizarRegistros";
-            this.btnActualizarRegistros.Size = new System.Drawing.Size(136, 31);
-            this.btnActualizarRegistros.TabIndex = 131;
-            this.btnActualizarRegistros.Text = "Agregar";
-            this.btnActualizarRegistros.UseVisualStyleBackColor = true;
+            this.btnInsertar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnInsertar.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertar.ForeColor = System.Drawing.Color.Black;
+            this.btnInsertar.Location = new System.Drawing.Point(54, 352);
+            this.btnInsertar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnInsertar.Name = "btnInsertar";
+            this.btnInsertar.Size = new System.Drawing.Size(136, 31);
+            this.btnInsertar.TabIndex = 131;
+            this.btnInsertar.Text = "Agregar";
+            this.btnInsertar.UseVisualStyleBackColor = true;
             // 
-            // btnBorrarEmpleados
+            // btnActualizar
             // 
-            this.btnBorrarEmpleados.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnBorrarEmpleados.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrarEmpleados.ForeColor = System.Drawing.Color.Black;
-            this.btnBorrarEmpleados.Location = new System.Drawing.Point(198, 352);
-            this.btnBorrarEmpleados.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnBorrarEmpleados.Name = "btnBorrarEmpleados";
-            this.btnBorrarEmpleados.Size = new System.Drawing.Size(141, 31);
-            this.btnBorrarEmpleados.TabIndex = 130;
-            this.btnBorrarEmpleados.Text = "Actualizar";
-            this.btnBorrarEmpleados.UseVisualStyleBackColor = true;
+            this.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnActualizar.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.ForeColor = System.Drawing.Color.Black;
+            this.btnActualizar.Location = new System.Drawing.Point(198, 352);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(141, 31);
+            this.btnActualizar.TabIndex = 130;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.txtEmail);
-            this.panel1.Controls.Add(this.btnActualizarRegistros);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.btnBorrarEmpleados);
+            this.panel1.Controls.Add(this.txtId);
+            this.panel1.Controls.Add(this.btnInsertar);
+            this.panel1.Controls.Add(this.btnActualizar);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.LblNombre);
-            this.panel1.Controls.Add(this.txtPuntos);
+            this.panel1.Controls.Add(this.txtPromotion);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.txtContraseña);
-            this.panel1.Controls.Add(this.txtName);
+            this.panel1.Controls.Add(this.txtProduct);
+            this.panel1.Controls.Add(this.txtUser);
             this.panel1.Controls.Add(this.label4);
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(48, 184);
@@ -260,25 +250,12 @@
             this.panel1.TabIndex = 133;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // txtEmail
+            // txtId
             // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.Location = new System.Drawing.Point(55, 280);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
-            this.txtEmail.MaxLength = 60;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(284, 20);
-            this.txtEmail.TabIndex = 127;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(52, 262);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 13);
-            this.label9.TabIndex = 126;
-            this.label9.Text = "Personal Email";
+            this.txtId.Location = new System.Drawing.Point(289, 36);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(70, 20);
+            this.txtId.TabIndex = 132;
             // 
             // label6
             // 
@@ -300,22 +277,22 @@
             this.LblNombre.Size = new System.Drawing.Size(0, 25);
             this.LblNombre.TabIndex = 0;
             // 
-            // txtPuntos
+            // txtPromotion
             // 
-            this.txtPuntos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtPromotion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPuntos.Location = new System.Drawing.Point(55, 237);
-            this.txtPuntos.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPuntos.MaxLength = 60;
-            this.txtPuntos.Name = "txtPuntos";
-            this.txtPuntos.Size = new System.Drawing.Size(284, 20);
-            this.txtPuntos.TabIndex = 122;
+            this.txtPromotion.Location = new System.Drawing.Point(55, 237);
+            this.txtPromotion.Margin = new System.Windows.Forms.Padding(5);
+            this.txtPromotion.MaxLength = 60;
+            this.txtPromotion.Name = "txtPromotion";
+            this.txtPromotion.Size = new System.Drawing.Size(284, 20);
+            this.txtPromotion.TabIndex = 122;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(66, 46);
+            this.label5.Location = new System.Drawing.Point(3, 36);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(242, 38);
             this.label5.TabIndex = 121;
@@ -331,26 +308,26 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Personal Nombre";
             // 
-            // txtContraseña
+            // txtProduct
             // 
-            this.txtContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtProduct.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtContraseña.Location = new System.Drawing.Point(55, 194);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(5);
-            this.txtContraseña.MaxLength = 60;
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(284, 20);
-            this.txtContraseña.TabIndex = 0;
+            this.txtProduct.Location = new System.Drawing.Point(55, 194);
+            this.txtProduct.Margin = new System.Windows.Forms.Padding(5);
+            this.txtProduct.MaxLength = 60;
+            this.txtProduct.Name = "txtProduct";
+            this.txtProduct.Size = new System.Drawing.Size(284, 20);
+            this.txtProduct.TabIndex = 0;
             // 
-            // txtName
+            // txtUser
             // 
-            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.Location = new System.Drawing.Point(55, 151);
-            this.txtName.Margin = new System.Windows.Forms.Padding(5);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(284, 20);
-            this.txtName.TabIndex = 1;
+            this.txtUser.Location = new System.Drawing.Point(55, 151);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(5);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(284, 20);
+            this.txtUser.TabIndex = 1;
             // 
             // label4
             // 
@@ -403,28 +380,26 @@
         private System.Windows.Forms.ColumnHeader regisroPromocionNombre;
         private System.Windows.Forms.ColumnHeader registroPromocionPoder;
         private System.Windows.Forms.ColumnHeader registroTotal;
-        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Panel panel2;
-        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txtSearch;
         public System.Windows.Forms.Button btnBorrar;
         public System.Windows.Forms.Button btnSearch;
-        public System.Windows.Forms.Button btnActualizarRegistros;
+        public System.Windows.Forms.Button btnInsertar;
         public System.Windows.Forms.Button btnUpdate2;
-        public System.Windows.Forms.Button btnBorrarEmpleados;
+        public System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label LblNombre;
-        public System.Windows.Forms.TextBox txtPuntos;
+        public System.Windows.Forms.TextBox txtPromotion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label13;
-        public System.Windows.Forms.TextBox txtContraseña;
-        public System.Windows.Forms.TextBox txtName;
+        public System.Windows.Forms.TextBox txtProduct;
+        public System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox txtId;
     }
 }

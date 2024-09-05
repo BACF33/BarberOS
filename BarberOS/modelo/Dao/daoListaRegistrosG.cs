@@ -12,7 +12,7 @@ namespace BarberOS.Modelo.Dao
 {
     internal class DaoListaRegistrosG
     {
-        public void Populate(VistaListaPromocionesG vistaPasada)
+        public void Populate(VistaListaRegistros vistaPasada)
         {
             try
             {
@@ -22,25 +22,28 @@ namespace BarberOS.Modelo.Dao
                     //Se ejecutara un query donde se obtendran los valores de la base de datos, se usa un inner join 
                     //dado a que userType es una llave foranea
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT  p.promotionId, p.promotionName, p.promotionPrice, p.promotionPower,  t.promotionTypeName " +
-                        "FROM promotions p " +
-                        "INNER JOIN promotionTypes t ON promotionType = t.promotionTypeId ", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT r.registryId, u.userName, p.productName, p.productPrice, pr.promotionName, pr.promotionPower, r.total " +
+                        "FROM registries r " +
+                        "INNER JOIN users u ON r.userId = u.userId " +
+                        "INNER JOIN products p ON r.productId = p.productId " +
+                        "INNER JOIN promotions pr ON r.promotion = pr.promotionId", conexion))
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
-                        vistaPasada.listPromociones.Items.Clear();
+                        vistaPasada.listRegistros.Items.Clear();
 
-                        //Se le añade a la lista presente en la vista los valores obtenidos con el query
+                        // Se le añade a la lista presente en la vista los valores obtenidos con el query
                         while (reader.Read())
                         {
-                            ListViewItem item = new ListViewItem(reader["promotionId"].ToString());
+                            ListViewItem item = new ListViewItem(reader["registryId"].ToString());
+                            item.SubItems.Add(reader["userName"].ToString());
+                            item.SubItems.Add(reader["productName"].ToString());
+                            item.SubItems.Add(reader["productPrice"].ToString());
                             item.SubItems.Add(reader["promotionName"].ToString());
-                            item.SubItems.Add(reader["promotionPrice"].ToString());
                             item.SubItems.Add(reader["promotionPower"].ToString());
-                            item.SubItems.Add(reader["promotionTypeName"].ToString());
-                            vistaPasada.listPromociones.Items.Add(item);
+                            item.SubItems.Add(reader["total"].ToString());
+                            vistaPasada.listRegistros.Items.Add(item);
                         }
-
                         reader.Close();
                     }
                 }
@@ -51,7 +54,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void Insert(VistaListaPromocionesG vistaPasada)
+        public void Insert(VistaListaRegistros vistaPasada)
         {
             try
             {
@@ -62,21 +65,20 @@ namespace BarberOS.Modelo.Dao
                     //el mismo id 
                     conexion.Open();
                     string query = @"
-                    INSERT INTO promotions (promotionName, promotionPrice, promotionPower, promotionType )
+                    INSERT INTO registries (userId, productId, promotion, total)
                     VALUES (
-                    @Name, 
-                    @Price, 
-                    @Power, 
-                    (SELECT promotionTypeId FROM promotionTypes WHERE promotionTypeName = @Type)
+                    (SELECT userId FROM users WHERE userName = @userName),
+                    (SELECT productId FROM products WHERE productName = @productName),
+                    (SELECT promotionId FROM promotions WHERE promotionName = @promotionName),
+                    @total
                     )";
 
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
                         //Se usara la string selectedId como parametro
-                        cmd.Parameters.AddWithValue("@Name", vistaPasada.txtNombre.Text);
-                        cmd.Parameters.AddWithValue("@Price", vistaPasada.txtPrecio.Text);
-                        cmd.Parameters.AddWithValue("@Power", vistaPasada.txtPoder.Text);
-                        cmd.Parameters.AddWithValue("@Type", vistaPasada.cmbTipo.Text);
+                        cmd.Parameters.AddWithValue("@userName", vistaPasada.txtUser.Text);
+                        cmd.Parameters.AddWithValue("@productName", vistaPasada.txtProduct.Text);
+                        cmd.Parameters.AddWithValue("@promotionName", vistaPasada.txtPromotion.Text);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
                 }
@@ -87,7 +89,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void Update(VistaListaPromocionesG vistaPasada)
+        public void Update(VistaListaRegistros vistaPasada)
         {
             try
             {
@@ -107,10 +109,9 @@ namespace BarberOS.Modelo.Dao
                     {
                         //Los parametros de la query seran los valores obtenidos de los textboxes
                         cmd.Parameters.AddWithValue("@selectedId", vistaPasada.txtId.Text);
-                        cmd.Parameters.AddWithValue("@Name", vistaPasada.txtNombre.Text);
-                        cmd.Parameters.AddWithValue("@Price", vistaPasada.txtPrecio.Text);
-                        cmd.Parameters.AddWithValue("@Power", vistaPasada.txtPoder.Text);
-                        cmd.Parameters.AddWithValue("@Type", vistaPasada.cmbTipo.Text);
+                        cmd.Parameters.AddWithValue("@Name", vistaPasada.txtUser.Text);
+                        cmd.Parameters.AddWithValue("@Price", vistaPasada.txtProduct.Text);
+                        cmd.Parameters.AddWithValue("@Power", vistaPasada.txtPromotion.Text);
 
                         cmd.ExecuteNonQuery();
                     }
@@ -122,9 +123,9 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void Delete(VistaListaPromocionesG vistaPasada)
+        public void Delete(VistaListaRegistros vistaPasada)
         {
-            string selectedId = vistaPasada.listPromociones.SelectedItems[0].Text;
+            string selectedId = vistaPasada.listRegistros.SelectedItems[0].Text;
             try
             {
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
@@ -149,7 +150,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
-        public void searchData(string searchingFor, VistaListaPromocionesG vistaPasada)
+        public void searchData(string searchingFor, VistaListaRegistros vistaPasada)
         {
             try
             {
@@ -171,7 +172,7 @@ namespace BarberOS.Modelo.Dao
 
                         SqlDataReader reader = cmd.ExecuteReader();
 
-                        vistaPasada.listPromociones.Items.Clear();
+                        vistaPasada.listRegistros.Items.Clear();
 
                         //5 Se anadiran a la tabla del formulario los valores obtenidos con el query
                         while (reader.Read())
@@ -181,7 +182,7 @@ namespace BarberOS.Modelo.Dao
                             item.SubItems.Add(reader["promotionPrice"].ToString());
                             item.SubItems.Add(reader["promotionPower"].ToString());
                             item.SubItems.Add(reader["promotionType"].ToString());
-                            vistaPasada.listPromociones.Items.Add(item);
+                            vistaPasada.listRegistros.Items.Add(item);
                         }
                         reader.Close();
 

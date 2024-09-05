@@ -13,7 +13,7 @@ namespace BarberOS.Modelo.Dao
 {
     internal class DaoTotal
     {
-        public DaoTotal(DtoPanelPromocion pasadaPromocion, DtoPanelProducto pasadoProducto) 
+        public DaoTotal(DtoPanelPromocion pasadaPromocion, DtoPanelProducto pasadoProducto, vistaMenu pasadoMenu) 
         {
             try
             {
@@ -21,15 +21,21 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    string sql = "INSERT INTO registries (registryProductName, registryProductPrice, registryPromotionName, registryPromotionPower) " +
-                                 "VALUES (@productName, @productPrice, @promotionName, @promotionPower) ";
+                    string query = @"
+                    INSERT INTO registries (userId, productId, promotion, total)
+                    VALUES (
+                    (SELECT userId FROM users WHERE userName = @userName),
+                    (SELECT productId FROM products WHERE productName = @productName),
+                    (SELECT promotionId FROM promotions WHERE promotionName = @promotionName),
+                    @total
+                    )";
 
-                    using (SqlCommand cmd = new SqlCommand(sql, conexion))
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
-                        cmd.Parameters.AddWithValue("@productName", pasadoProducto.ProductoId);
-                        cmd.Parameters.AddWithValue("@productPrice", pasadoProducto.ProductoId);
-                        cmd.Parameters.AddWithValue("@promotionName", pasadaPromocion.PromocionId);
-                        cmd.Parameters.AddWithValue("@promotionPower", pasadaPromocion.PromocionId);
+                        cmd.Parameters.AddWithValue("@userName", pasadoMenu.btnCurrentUser.Text);
+                        cmd.Parameters.AddWithValue("@productName", pasadoProducto.ProductoName);
+                        cmd.Parameters.AddWithValue("@promotionName", pasadaPromocion.PromocionName);
+                        cmd.Parameters.AddWithValue("@total", pasadaPromocion.PromocionId);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
                 }

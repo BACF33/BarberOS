@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace BarberOS.Modelo.Dao
 {
@@ -34,9 +35,9 @@ namespace BarberOS.Modelo.Dao
                                 testPrice = reader["promotionPrice"].ToString();
                                 testPower = reader["promotionPower"].ToString();
                                 testType = reader["promotionType"].ToString();
-                                PanelPromocion panelUsado = new PanelPromocion(pasadoMenu, seleccionadoProducto, int.Parse(testId), testName, testPower, testType);
+                                //PanelPromocion panelUsado = new PanelPromocion(pasadoMenu, seleccionadoProducto, int.Parse(testId), testName, testPower, testType);
 
-                                enviadaVista.flpPromociones.Controls.Add(panelUsado);
+                                //enviadaVista.flpPromociones.Controls.Add(panelUsado);
 
                             }
                         }
