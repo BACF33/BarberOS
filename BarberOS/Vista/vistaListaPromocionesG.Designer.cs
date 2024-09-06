@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -58,7 +59,6 @@
             this.txtSearchingFor = new System.Windows.Forms.TextBox();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -161,7 +161,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(455, 334);
             this.panel1.TabIndex = 121;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // cmbTipo
+            // 
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "Cabello",
+            "Promocion"});
+            this.cmbTipo.Location = new System.Drawing.Point(91, 249);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(292, 21);
+            this.cmbTipo.TabIndex = 127;
             // 
             // txtId
             // 
@@ -210,6 +220,7 @@
             this.txtPoder.Name = "txtPoder";
             this.txtPoder.Size = new System.Drawing.Size(292, 20);
             this.txtPoder.TabIndex = 122;
+            this.txtPoder.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
             // btnAgregar
             // 
@@ -255,7 +266,6 @@
             this.btnActualizar.TabIndex = 6;
             this.btnActualizar.Text = "Restablecer";
             this.btnActualizar.UseVisualStyleBackColor = false;
-            this.btnActualizar.Click += new System.EventHandler(this.btnRestablecer_Click);
             // 
             // btnActualizar2
             // 
@@ -279,6 +289,7 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(292, 20);
             this.txtPrecio.TabIndex = 0;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
             // txtNombre
             // 
@@ -376,17 +387,6 @@
             this.button1.TabIndex = 124;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // cmbTipo
-            // 
-            this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Items.AddRange(new object[] {
-            "Cabello",
-            "Promocion"});
-            this.cmbTipo.Location = new System.Drawing.Point(91, 249);
-            this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(292, 21);
-            this.cmbTipo.TabIndex = 127;
             // 
             // VistaListaPromocionesG
             // 

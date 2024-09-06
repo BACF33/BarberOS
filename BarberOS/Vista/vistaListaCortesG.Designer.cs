@@ -82,7 +82,6 @@
             this.btnVolver.TabIndex = 104;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // listCortes
             // 
@@ -132,7 +131,6 @@
             this.btnAPersonal.TabIndex = 107;
             this.btnAPersonal.Text = "Personal";
             this.btnAPersonal.UseVisualStyleBackColor = false;
-            this.btnAPersonal.Click += new System.EventHandler(this.btnAPersonal_Click);
             // 
             // label2
             // 
@@ -143,7 +141,6 @@
             this.label2.Size = new System.Drawing.Size(243, 36);
             this.label2.TabIndex = 113;
             this.label2.Text = "Acceder al Personal";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -285,6 +282,7 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(292, 20);
             this.txtPrecio.TabIndex = 0;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
             // txtNombre
             // 
@@ -374,7 +372,6 @@
             this.Controls.Add(this.listCortes);
             this.Name = "VistaListaCortesG";
             this.Text = "vistaListaCortesGcs";
-            this.Load += new System.EventHandler(this.VistaListaCortesG_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

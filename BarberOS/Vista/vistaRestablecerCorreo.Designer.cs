@@ -35,9 +35,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -137,17 +137,6 @@
             this.panel1.Size = new System.Drawing.Size(747, 541);
             this.panel1.TabIndex = 9;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(374, 54);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(354, 33);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Restablecer contraseña";
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::BarberOS.Properties.Resources.Email_Reset;
@@ -167,6 +156,17 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(374, 54);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(354, 33);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Restablecer contraseña";
             // 
             // pictureBox1
             // 

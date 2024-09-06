@@ -23,34 +23,12 @@ namespace BarberOS.Vista
             }
         }
 
-        private void btnAgregarEmpleados_Click(object sender, EventArgs e)
+        private void SoloNumeros(object sender, KeyPressEventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAPersonal_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void VistaListaCortesG_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVolver_Click(object sender, EventArgs e)
-        {
-
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 

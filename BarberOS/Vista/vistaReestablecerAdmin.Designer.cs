@@ -114,7 +114,7 @@
             this.pnl1.Controls.Add(this.label2);
             this.pnl1.Controls.Add(this.txtPass);
             this.pnl1.Controls.Add(this.txtUser);
-            this.pnl1.Location = new System.Drawing.Point(225, 108);
+            this.pnl1.Location = new System.Drawing.Point(208, 112);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(539, 373);
             this.pnl1.TabIndex = 6;

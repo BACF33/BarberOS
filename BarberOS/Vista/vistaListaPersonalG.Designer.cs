@@ -45,6 +45,7 @@
             this.txtSearchingFor = new System.Windows.Forms.TextBox();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.btnActualizar = new System.Windows.Forms.Button();
             this.btnActualizar2 = new System.Windows.Forms.Button();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -226,6 +226,20 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.ForeColor = System.Drawing.Color.Black;
+            this.btnActualizar.Location = new System.Drawing.Point(796, 21);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(119, 35);
+            this.btnActualizar.TabIndex = 6;
+            this.btnActualizar.Text = "Restablecer";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
@@ -309,6 +323,7 @@
             this.txtPuntos.Name = "txtPuntos";
             this.txtPuntos.Size = new System.Drawing.Size(284, 20);
             this.txtPuntos.TabIndex = 122;
+            this.txtPuntos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
             // btnAgregar
             // 
@@ -341,20 +356,6 @@
             this.label13.Size = new System.Drawing.Size(88, 13);
             this.label13.TabIndex = 0;
             this.label13.Text = "Personal Nombre";
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.ForeColor = System.Drawing.Color.Black;
-            this.btnActualizar.Location = new System.Drawing.Point(796, 21);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(119, 35);
-            this.btnActualizar.TabIndex = 6;
-            this.btnActualizar.Text = "Restablecer";
-            this.btnActualizar.UseVisualStyleBackColor = false;
             // 
             // btnActualizar2
             // 

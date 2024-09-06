@@ -149,6 +149,7 @@
             this.txtPuntos.Name = "txtPuntos";
             this.txtPuntos.Size = new System.Drawing.Size(292, 20);
             this.txtPuntos.TabIndex = 122;
+            this.txtPuntos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
             // btnAgregar
             // 
@@ -424,7 +425,6 @@
             this.Controls.Add(this.listClientes);
             this.Name = "VistaListaClientesG";
             this.Text = "vistaListaClientesG";
-            this.Load += new System.EventHandler(this.VistaListaClientesG_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

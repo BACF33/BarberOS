@@ -22,5 +22,14 @@ namespace BarberOS.Vista
                 e.SuppressKeyPress = true;
             }
         }
+
+        private void SoloPuntos(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
     }
 }
