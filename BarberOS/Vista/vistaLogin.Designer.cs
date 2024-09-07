@@ -81,7 +81,7 @@
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtUser.Location = new System.Drawing.Point(210, 219);
+            this.txtUser.Location = new System.Drawing.Point(191, 213);
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(328, 26);
@@ -95,7 +95,7 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtPassword.Location = new System.Drawing.Point(210, 274);
+            this.txtPassword.Location = new System.Drawing.Point(191, 268);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(328, 26);
@@ -123,7 +123,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1231, 41);
+            this.panel1.Size = new System.Drawing.Size(1197, 41);
             this.panel1.TabIndex = 21;
             // 
             // panel6
@@ -137,9 +137,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(33)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 708);
+            this.panel2.Location = new System.Drawing.Point(0, 705);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1231, 44);
+            this.panel2.Size = new System.Drawing.Size(1197, 44);
             this.panel2.TabIndex = 0;
             // 
             // btnRestPass
@@ -238,7 +238,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(202, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Padding = new System.Windows.Forms.Padding(40, 30, 23, 24);
-            this.pictureBox2.Size = new System.Drawing.Size(220, 178);
+            this.pictureBox2.Size = new System.Drawing.Size(220, 173);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
@@ -303,10 +303,11 @@
             this.pictureBox1.Image = global::BarberOS.Properties.Resources.Background_BarberOS;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1231, 752);
+            this.pictureBox1.Size = new System.Drawing.Size(1197, 749);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 106;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // vistaLogin
             // 
@@ -314,7 +315,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1231, 752);
+            this.ClientSize = new System.Drawing.Size(1197, 749);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.panel3);
