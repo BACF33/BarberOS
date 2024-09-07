@@ -161,7 +161,6 @@
             this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1920, 1078);
             this.MinimumSize = new System.Drawing.Size(800, 597);
             this.Name = "vistaMenu";
