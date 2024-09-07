@@ -178,12 +178,6 @@
     <Compile Include="Vista\VistaReestablecerAdmin.Designer.cs">
       <DependentUpon>VistaReestablecerAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\guardado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\guardado.Designer.cs">
-      <DependentUpon>guardado.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vista\PanelBarbero.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -292,18 +286,6 @@
     <Compile Include="Vista\VistaRecompensas.Designer.cs">
       <DependentUpon>VistaRecompensas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\guardado2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\guardado2.Designer.cs">
-      <DependentUpon>guardado2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\guardado3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\guardado3.Designer.cs">
-      <DependentUpon>guardado3.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vista\VistaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -332,9 +314,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Vista\guardado.resx">
-      <DependentUpon>guardado.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vista\PanelBarbero.resx">
       <DependentUpon>PanelBarbero.cs</DependentUpon>
     </EmbeddedResource>
@@ -346,12 +325,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaActualizarRegistro.resx">
       <DependentUpon>VistaActualizarRegistro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\guardado2.resx">
-      <DependentUpon>guardado2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\guardado3.resx">
-      <DependentUpon>guardado3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaCitas.resx">
       <DependentUpon>vistaCitas.cs</DependentUpon>

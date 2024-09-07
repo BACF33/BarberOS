@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblLugar = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtCargo = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
@@ -53,6 +55,7 @@
             this.empleadoFull = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoCargo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.empleadoNumero = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnVolver = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,6 +64,8 @@
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnActualizarEmpleados = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtLugar = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -68,8 +73,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.txtId);
+            this.panel1.Controls.Add(this.txtLugar);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.lblLugar);
             this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.txtId);
+            this.panel1.Controls.Add(this.txtCargo);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.LblNombre);
@@ -89,6 +98,26 @@
             this.panel1.Size = new System.Drawing.Size(455, 423);
             this.panel1.TabIndex = 136;
             // 
+            // lblLugar
+            // 
+            this.lblLugar.AutoSize = true;
+            this.lblLugar.Location = new System.Drawing.Point(164, 252);
+            this.lblLugar.Name = "lblLugar";
+            this.lblLugar.Size = new System.Drawing.Size(67, 13);
+            this.lblLugar.TabIndex = 130;
+            this.lblLugar.Text = "Cliente Email";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEmail.Location = new System.Drawing.Point(72, 271);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
+            this.txtEmail.MaxLength = 60;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(292, 20);
+            this.txtEmail.TabIndex = 129;
+            // 
             // txtId
             // 
             this.txtId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -99,30 +128,30 @@
             this.txtId.Size = new System.Drawing.Size(73, 20);
             this.txtId.TabIndex = 128;
             // 
-            // txtEmail
+            // txtCargo
             // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtCargo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.Location = new System.Drawing.Point(72, 300);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
-            this.txtEmail.MaxLength = 60;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(292, 20);
-            this.txtEmail.TabIndex = 127;
+            this.txtCargo.Location = new System.Drawing.Point(72, 227);
+            this.txtCargo.Margin = new System.Windows.Forms.Padding(5);
+            this.txtCargo.MaxLength = 60;
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(292, 20);
+            this.txtCargo.TabIndex = 127;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(181, 282);
+            this.label9.Location = new System.Drawing.Point(164, 209);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 13);
+            this.label9.Size = new System.Drawing.Size(70, 13);
             this.label9.TabIndex = 126;
-            this.label9.Text = "Cliente Email";
+            this.label9.Text = "Cliente Cargo";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(164, 206);
+            this.label6.Location = new System.Drawing.Point(164, 166);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 13);
@@ -143,7 +172,7 @@
             // 
             this.txtPuntos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPuntos.Location = new System.Drawing.Point(72, 224);
+            this.txtPuntos.Location = new System.Drawing.Point(72, 184);
             this.txtPuntos.Margin = new System.Windows.Forms.Padding(5);
             this.txtPuntos.MaxLength = 60;
             this.txtPuntos.Name = "txtPuntos";
@@ -176,7 +205,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(160, 100);
+            this.label13.Location = new System.Drawing.Point(160, 80);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(79, 13);
@@ -212,7 +241,7 @@
             // 
             this.txtContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtContraseña.Location = new System.Drawing.Point(72, 170);
+            this.txtContraseña.Location = new System.Drawing.Point(72, 141);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(5);
             this.txtContraseña.MaxLength = 60;
             this.txtContraseña.Name = "txtContraseña";
@@ -223,7 +252,7 @@
             // 
             this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.Location = new System.Drawing.Point(72, 118);
+            this.txtName.Location = new System.Drawing.Point(72, 98);
             this.txtName.Margin = new System.Windows.Forms.Padding(5);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(292, 20);
@@ -232,7 +261,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(152, 152);
+            this.label4.Location = new System.Drawing.Point(160, 123);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 13);
@@ -280,15 +309,16 @@
             this.empleadoContraseña,
             this.empleadoFull,
             this.empleadoCargo,
-            this.empleadoNumero});
+            this.empleadoNumero,
+            this.columnHeader1});
             this.listClientes.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listClientes.ForeColor = System.Drawing.Color.Black;
             this.listClientes.FullRowSelect = true;
             this.listClientes.GridLines = true;
             this.listClientes.HideSelection = false;
-            this.listClientes.Location = new System.Drawing.Point(562, 93);
+            this.listClientes.Location = new System.Drawing.Point(546, 83);
             this.listClientes.Name = "listClientes";
-            this.listClientes.Size = new System.Drawing.Size(725, 555);
+            this.listClientes.Size = new System.Drawing.Size(642, 555);
             this.listClientes.TabIndex = 132;
             this.listClientes.UseCompatibleStateImageBehavior = false;
             this.listClientes.View = System.Windows.Forms.View.Details;
@@ -296,6 +326,7 @@
             // empleadoId
             // 
             this.empleadoId.Text = "ID";
+            this.empleadoId.Width = 40;
             // 
             // empleadoNombre
             // 
@@ -310,17 +341,17 @@
             // empleadoFull
             // 
             this.empleadoFull.Text = "Puntos";
-            this.empleadoFull.Width = 129;
+            this.empleadoFull.Width = 80;
             // 
             // empleadoCargo
             // 
             this.empleadoCargo.Text = "Cargo";
-            this.empleadoCargo.Width = 118;
+            this.empleadoCargo.Width = 80;
             // 
             // empleadoNumero
             // 
             this.empleadoNumero.Text = "Numero";
-            this.empleadoNumero.Width = 480;
+            this.empleadoNumero.Width = 100;
             // 
             // panel2
             // 
@@ -410,6 +441,27 @@
             this.btnActualizarEmpleados.Text = "Actualizar";
             this.btnActualizarEmpleados.UseVisualStyleBackColor = false;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(164, 296);
+            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(69, 13);
+            this.label8.TabIndex = 131;
+            this.label8.Text = "Cliente Lugar";
+            // 
+            // txtLugar
+            // 
+            this.txtLugar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLugar.Location = new System.Drawing.Point(72, 314);
+            this.txtLugar.Margin = new System.Windows.Forms.Padding(5);
+            this.txtLugar.MaxLength = 60;
+            this.txtLugar.Name = "txtLugar";
+            this.txtLugar.Size = new System.Drawing.Size(292, 20);
+            this.txtLugar.TabIndex = 132;
+            // 
             // VistaListaClientesG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -438,7 +490,7 @@
 
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.TextBox txtId;
-        public System.Windows.Forms.TextBox txtEmail;
+        public System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label LblNombre;
@@ -469,5 +521,10 @@
         public System.Windows.Forms.Button btnBorrar;
         public System.Windows.Forms.Button btnBuscar;
         public System.Windows.Forms.Button btnActualizarEmpleados;
+        public System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label lblLugar;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        public System.Windows.Forms.TextBox txtLugar;
+        private System.Windows.Forms.Label label8;
     }
 }
