@@ -51,7 +51,7 @@
             // 
             // txtNewUser
             // 
-            this.txtNewUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
+            this.txtNewUser.BackColor = System.Drawing.Color.White;
             this.txtNewUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewUser.Location = new System.Drawing.Point(107, 189);
@@ -61,7 +61,7 @@
             // 
             // txtNewPass
             // 
-            this.txtNewPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
+            this.txtNewPass.BackColor = System.Drawing.Color.White;
             this.txtNewPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNewPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewPass.Location = new System.Drawing.Point(107, 290);
@@ -73,11 +73,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(237)))), ((int)(((byte)(233)))));
             this.label1.Location = new System.Drawing.Point(102, 148);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 29);
+            this.label1.Size = new System.Drawing.Size(103, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "Usuario";
             // 
@@ -85,23 +85,23 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(237)))), ((int)(((byte)(233)))));
             this.label2.Location = new System.Drawing.Point(102, 249);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 29);
+            this.label2.Size = new System.Drawing.Size(146, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Contraseña";
             // 
             // btnRegister
             // 
-            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
+            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 29.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.Transparent;
-            this.btnRegister.Location = new System.Drawing.Point(256, 471);
+            this.btnRegister.Location = new System.Drawing.Point(254, 461);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(232, 77);
+            this.btnRegister.Size = new System.Drawing.Size(214, 77);
             this.btnRegister.TabIndex = 4;
             this.btnRegister.Text = "Registrar";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -110,17 +110,17 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(237)))), ((int)(((byte)(233)))));
             this.label3.Location = new System.Drawing.Point(102, 352);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 29);
+            this.label3.Size = new System.Drawing.Size(231, 29);
             this.label3.TabIndex = 6;
             this.label3.Text = "Correo electronico";
             // 
             // txtNewMail
             // 
-            this.txtNewMail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
+            this.txtNewMail.BackColor = System.Drawing.Color.White;
             this.txtNewMail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNewMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewMail.Location = new System.Drawing.Point(107, 393);
@@ -130,7 +130,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(103)))));
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);

@@ -18,5 +18,10 @@ namespace BarberOS.Vista
             InitializeComponent();
             new ControlNuevaContraseña(this, userPasado);
         }
+
+        private void btnNueva_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -568,6 +568,63 @@
   <ItemGroup>
     <None Include="Resources\13%3b 27%3b 33.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32374721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6195699 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password-icon-1903x2048-m0d1f305.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-warning-icon-png-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93569283.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\456112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7847599.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo negro de barberia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78475991.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9131529.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5246290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93569284.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email-IconPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\92529432.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background BarberOS1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\92529433.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91876041.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\92529434.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
