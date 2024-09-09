@@ -30,9 +30,9 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnCortes = new System.Windows.Forms.Button();
             this.btnBarberos = new System.Windows.Forms.Button();
             this.btnAgendar = new System.Windows.Forms.Button();
-            this.btnCortes = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -53,6 +53,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -67,6 +68,17 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(778, 274);
             this.tableLayoutPanel1.TabIndex = 46;
+            // 
+            // btnCortes
+            // 
+            this.btnCortes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCortes.BackColor = System.Drawing.Color.Coral;
+            this.btnCortes.Location = new System.Drawing.Point(35, 74);
+            this.btnCortes.Name = "btnCortes";
+            this.btnCortes.Size = new System.Drawing.Size(189, 125);
+            this.btnCortes.TabIndex = 22;
+            this.btnCortes.Text = "Cortes";
+            this.btnCortes.UseVisualStyleBackColor = false;
             // 
             // btnBarberos
             // 
@@ -88,17 +100,6 @@
             this.btnAgendar.TabIndex = 45;
             this.btnAgendar.Text = "button1";
             this.btnAgendar.UseVisualStyleBackColor = true;
-            // 
-            // btnCortes
-            // 
-            this.btnCortes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCortes.BackColor = System.Drawing.Color.Coral;
-            this.btnCortes.Location = new System.Drawing.Point(35, 74);
-            this.btnCortes.Name = "btnCortes";
-            this.btnCortes.Size = new System.Drawing.Size(189, 125);
-            this.btnCortes.TabIndex = 22;
-            this.btnCortes.Text = "Cortes";
-            this.btnCortes.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel2
             // 
