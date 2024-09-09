@@ -60,8 +60,8 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.btnPersonal, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.btnRegistros, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.btnClientes, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnRegistros, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -91,9 +91,9 @@
             this.btnRegistros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
             this.btnRegistros.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnRegistros.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnRegistros.Location = new System.Drawing.Point(41, 304);
+            this.btnRegistros.Location = new System.Drawing.Point(66, 286);
             this.btnRegistros.Name = "btnRegistros";
-            this.btnRegistros.Size = new System.Drawing.Size(469, 127);
+            this.btnRegistros.Size = new System.Drawing.Size(420, 163);
             this.btnRegistros.TabIndex = 141;
             this.btnRegistros.Text = "REGISTROS";
             this.btnRegistros.UseVisualStyleBackColor = false;
@@ -142,8 +142,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         public System.Windows.Forms.Button btnPersonal;
-        public System.Windows.Forms.Button btnRegistros;
         public System.Windows.Forms.Button btnClientes;
+        public System.Windows.Forms.Button btnRegistros;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

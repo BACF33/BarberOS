@@ -185,6 +185,7 @@
             this.txtPoder.Name = "txtPoder";
             this.txtPoder.Size = new System.Drawing.Size(292, 20);
             this.txtPoder.TabIndex = 122;
+            this.txtPoder.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
             // LblNombre
             // 
@@ -405,6 +406,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "VistaListaPromocionesG";
             this.Text = "vistaListaPromocionesG";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

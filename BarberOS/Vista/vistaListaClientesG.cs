@@ -23,6 +23,11 @@ namespace BarberOS.Vista
 
         private void SoloNumeros(object sender, KeyPressEventArgs e)
         {
+
+        }
+
+        private void SoloPuntos(object sender, KeyPressEventArgs e)
+        {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;

@@ -17,7 +17,19 @@ namespace BarberOS.Vista
         {
             InitializeComponent();
             new ControlNuevaContraseña(this, userPasado);
+            this.KeyPreview = true;
+            this.KeyDown += Form_KeyDown;
         }
+
+        private void Form_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && (e.KeyCode == Keys.C || e.KeyCode == Keys.V))
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+
 
         private void btnNueva_Click(object sender, EventArgs e)
         {

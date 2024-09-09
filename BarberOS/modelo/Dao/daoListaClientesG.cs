@@ -63,7 +63,7 @@ namespace BarberOS.Modelo.Dao
                     //el mismo id 
                     conexion.Open();
                     string query = @"
-                    INSERT INTO users (userName, userPassword, userPoints, userRole, userEmail)
+                    INSERT INTO users (userName, userPassword, userPoints, userRole, userEmail, userBirthPlace)
                     VALUES (
                     @userName, 
                     @userPassword, 

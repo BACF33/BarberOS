@@ -259,6 +259,7 @@
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(365, 20);
             this.txtCargo.TabIndex = 127;
+            this.txtCargo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
             // label9
             // 
@@ -312,6 +313,7 @@
             this.txtPuntos.Name = "txtPuntos";
             this.txtPuntos.Size = new System.Drawing.Size(365, 20);
             this.txtPuntos.TabIndex = 122;
+            this.txtPuntos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
             // btnAgregar
             // 
