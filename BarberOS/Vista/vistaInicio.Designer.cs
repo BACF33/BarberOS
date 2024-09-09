@@ -28,38 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBarberos = new System.Windows.Forms.Button();
-            this.btnCortes = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAgendar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnBarberos = new System.Windows.Forms.Button();
+            this.btnAgendar = new System.Windows.Forms.Button();
+            this.btnCortes = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnBarberos
-            // 
-            this.btnBarberos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBarberos.BackColor = System.Drawing.Color.Coral;
-            this.btnBarberos.Location = new System.Drawing.Point(294, 74);
-            this.btnBarberos.Name = "btnBarberos";
-            this.btnBarberos.Size = new System.Drawing.Size(189, 125);
-            this.btnBarberos.TabIndex = 33;
-            this.btnBarberos.Text = "Barberos";
-            this.btnBarberos.UseVisualStyleBackColor = false;
-            // 
-            // btnCortes
-            // 
-            this.btnCortes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCortes.BackColor = System.Drawing.Color.Coral;
-            this.btnCortes.Location = new System.Drawing.Point(35, 74);
-            this.btnCortes.Name = "btnCortes";
-            this.btnCortes.Size = new System.Drawing.Size(189, 125);
-            this.btnCortes.TabIndex = 22;
-            this.btnCortes.Text = "Cortes";
-            this.btnCortes.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -73,6 +51,34 @@
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Controls.Add(this.btnCortes, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnBarberos, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnAgendar, 2, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(778, 274);
+            this.tableLayoutPanel1.TabIndex = 46;
+            // 
+            // btnBarberos
+            // 
+            this.btnBarberos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBarberos.BackColor = System.Drawing.Color.Coral;
+            this.btnBarberos.Location = new System.Drawing.Point(294, 74);
+            this.btnBarberos.Name = "btnBarberos";
+            this.btnBarberos.Size = new System.Drawing.Size(189, 125);
+            this.btnBarberos.TabIndex = 33;
+            this.btnBarberos.Text = "Barberos";
+            this.btnBarberos.UseVisualStyleBackColor = false;
+            // 
             // btnAgendar
             // 
             this.btnAgendar.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -83,22 +89,16 @@
             this.btnAgendar.Text = "button1";
             this.btnAgendar.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel1
+            // btnCortes
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.btnCortes, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnAgendar, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnBarberos, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(778, 274);
-            this.tableLayoutPanel1.TabIndex = 46;
+            this.btnCortes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCortes.BackColor = System.Drawing.Color.Coral;
+            this.btnCortes.Location = new System.Drawing.Point(35, 74);
+            this.btnCortes.Name = "btnCortes";
+            this.btnCortes.Size = new System.Drawing.Size(189, 125);
+            this.btnCortes.TabIndex = 22;
+            this.btnCortes.Text = "Cortes";
+            this.btnCortes.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel2
             // 
@@ -114,6 +114,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(784, 561);
             this.tableLayoutPanel2.TabIndex = 47;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // VistaInicio
             // 
@@ -134,11 +135,12 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         public System.Windows.Forms.Button btnCortes;
         public System.Windows.Forms.Button btnBarberos;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnAgendar;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }

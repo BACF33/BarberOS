@@ -38,7 +38,7 @@ namespace BarberOS.Controlador
             if (currentForm != null)
             {
                 currentForm.Close();
-                controladaVista.panelContenedor.Controls.Remove(currentForm);
+                controladaVista.PanelContenedor.Controls.Remove(currentForm);
             }
 
             currentForm = form;
@@ -47,8 +47,8 @@ namespace BarberOS.Controlador
             form.Dock = DockStyle.Fill;
             form.Opacity = 0.75;
 
-            controladaVista.panelContenedor.Controls.Add(form);
-            controladaVista.panelContenedor.Tag = form;
+            controladaVista.PanelContenedor.Controls.Add(form);
+            controladaVista.PanelContenedor.Tag = form;
             form.Show();
             form.BringToFront();
 
