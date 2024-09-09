@@ -26,5 +26,9 @@ namespace BarberOS.Vista
             }
         }
 
+        private void vistaMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

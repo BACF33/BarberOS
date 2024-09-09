@@ -160,11 +160,11 @@
             this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximumSize = new System.Drawing.Size(1920, 1078);
             this.MinimumSize = new System.Drawing.Size(800, 597);
             this.Name = "vistaMenu";
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.vistaMenu_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
