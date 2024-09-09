@@ -94,12 +94,13 @@
             // btnAgendar
             // 
             this.btnAgendar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgendar.BackColor = System.Drawing.Color.Coral;
             this.btnAgendar.Location = new System.Drawing.Point(555, 74);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(186, 125);
             this.btnAgendar.TabIndex = 45;
-            this.btnAgendar.Text = "button1";
-            this.btnAgendar.UseVisualStyleBackColor = true;
+            this.btnAgendar.Text = "Agendar";
+            this.btnAgendar.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel2
             // 

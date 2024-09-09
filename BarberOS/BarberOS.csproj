@@ -639,6 +639,19 @@
   <ItemGroup>
     <None Include="Resources\direccion1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1427060.png" />
+    <None Include="Resources\52462902.png" />
+    <None Include="Resources\14270601.png" />
+    <Content Include="Resources\52462901.png" />
+    <Content Include="Resources\BarberOS Logo oficial Blanco.png" />
+    <Content Include="Resources\Cortes icon blue png1.png" />
+    <None Include="Resources\Cortes icon blue png11.png" />
+    <Content Include="Resources\Home icon1.png" />
+    <None Include="Resources\Proyecto nuevo %288%291.png" />
+    <None Include="Resources\Home icon11.png" />
+    <Content Include="Resources\Proyecto nuevo %288%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

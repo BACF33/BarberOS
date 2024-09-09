@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace BarberOS.Controlador
 {
+    //Test
     internal class ControlInicio
     {
         VistaInicio controladaVista = null;

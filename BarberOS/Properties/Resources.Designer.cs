@@ -93,6 +93,16 @@ namespace BarberOS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1427060 {
+            get {
+                object obj = ResourceManager.GetObject("1427060", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3237472 {
             get {
                 object obj = ResourceManager.GetObject("3237472", resourceCulture);
@@ -126,6 +136,16 @@ namespace BarberOS.Properties {
         internal static System.Drawing.Bitmap _5246290 {
             get {
                 object obj = ResourceManager.GetObject("5246290", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _52462901 {
+            get {
+                object obj = ResourceManager.GetObject("52462901", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -553,6 +573,16 @@ namespace BarberOS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cortes_icon_blue_png1 {
+            get {
+                object obj = ResourceManager.GetObject("Cortes icon blue png1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dinero {
             get {
                 object obj = ResourceManager.GetObject("dinero", resourceCulture);
@@ -646,6 +676,16 @@ namespace BarberOS.Properties {
         internal static System.Drawing.Bitmap grafico {
             get {
                 object obj = ResourceManager.GetObject("grafico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Home_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("Home icon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -756,6 +796,16 @@ namespace BarberOS.Properties {
         internal static System.Drawing.Bitmap pilar2 {
             get {
                 object obj = ResourceManager.GetObject("pilar2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Proyecto_nuevo__8_ {
+            get {
+                object obj = ResourceManager.GetObject("Proyecto nuevo (8)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

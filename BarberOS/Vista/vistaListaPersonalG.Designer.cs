@@ -63,12 +63,19 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
+=======
+            this.label2 = new System.Windows.Forms.Label();
+>>>>>>> Vista menu mejorado
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+<<<<<<< HEAD
             this.tableLayoutPanel2.SuspendLayout();
+=======
+>>>>>>> Vista menu mejorado
             this.SuspendLayout();
             // 
             // btnACortes
@@ -468,13 +475,47 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1243, 635);
             this.tableLayoutPanel2.TabIndex = 133;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(557, 79);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.tableLayoutPanel1.TabIndex = 132;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 56);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(194, 41);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
             // VistaListaPersonalG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(224)))));
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1249, 724);
             this.Controls.Add(this.tableLayoutPanel1);
+=======
+            this.ClientSize = new System.Drawing.Size(1152, 724);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnACortes);
+>>>>>>> Vista menu mejorado
             this.Controls.Add(this.btnActualizarEmpleados);
             this.Name = "VistaListaPersonalG";
             this.Text = "vistaListaBarbero";
@@ -483,7 +524,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+<<<<<<< HEAD
             this.tableLayoutPanel2.ResumeLayout(false);
+=======
+>>>>>>> Vista menu mejorado
             this.ResumeLayout(false);
 
         }
