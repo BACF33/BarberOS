@@ -154,6 +154,9 @@
   <data name="imagenes 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imagenes 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="92529434" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\92529434.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="5246290" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5246290.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -174,6 +177,9 @@
   </data>
   <data name="Captura4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura4.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="92529432" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\92529432.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="grafico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grafico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -213,6 +219,9 @@
   </data>
   <data name="imagenes5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imagenes5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telefono1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telefono1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="61457" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\61457.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,11 +283,11 @@
   <data name="Captura5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura5.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="telefono" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telefono.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Captura6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura6.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="6220807 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6220807 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Estrella_amarilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Estrella_amarilla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,8 +322,8 @@
   <data name="pilar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pilar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="92529432" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\92529432.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="6220807 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6220807 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="9131529" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\9131529.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,7 +334,10 @@
   <data name="00third-small" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\00third-small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="92529434" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\92529434.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="direccion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\direccion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="direccion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\direccion1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

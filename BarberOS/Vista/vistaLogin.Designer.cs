@@ -118,6 +118,7 @@
             // 
             // btnRestPass
             // 
+            this.btnRestPass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnRestPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
             this.btnRestPass.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRestPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -131,6 +132,7 @@
             // 
             // btnCreate
             // 
+            this.btnCreate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
             this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -161,6 +163,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.Image = global::BarberOS.Properties.Resources._6220807__1_1;
             this.pictureBox4.Location = new System.Drawing.Point(32, 255);
             this.pictureBox4.Name = "pictureBox4";
@@ -171,6 +174,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::BarberOS.Properties.Resources._3237472;
             this.pictureBox3.Location = new System.Drawing.Point(32, 191);
             this.pictureBox3.Name = "pictureBox3";
@@ -181,6 +185,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -193,10 +198,11 @@
             // 
             // lblUsuario
             // 
+            this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblUsuario.Location = new System.Drawing.Point(84, 202);
+            this.lblUsuario.Location = new System.Drawing.Point(105, 202);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(17, 15, 5, 0);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(90, 24);
@@ -218,6 +224,7 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(42)))), ((int)(((byte)(68)))));
             this.panel3.Controls.Add(this.lblLogin);
             this.panel3.Location = new System.Drawing.Point(298, 65);
@@ -227,6 +234,7 @@
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
             this.pictureBox7.Image = global::BarberOS.Properties.Resources._9252943;
             this.pictureBox7.Location = new System.Drawing.Point(649, 609);
@@ -238,6 +246,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
             this.pictureBox5.Image = global::BarberOS.Properties.Resources._93569281;
             this.pictureBox5.Location = new System.Drawing.Point(308, 609);

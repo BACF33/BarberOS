@@ -563,6 +563,26 @@ namespace BarberOS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap direccion {
+            get {
+                object obj = ResourceManager.GetObject("direccion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap direccion1 {
+            get {
+                object obj = ResourceManager.GetObject("direccion1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Email_IconPNG {
             get {
                 object obj = ResourceManager.GetObject("Email-IconPNG", resourceCulture);
@@ -756,6 +776,26 @@ namespace BarberOS.Properties {
         internal static System.Drawing.Bitmap sign_warning_icon_png_7 {
             get {
                 object obj = ResourceManager.GetObject("sign-warning-icon-png-7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap telefono {
+            get {
+                object obj = ResourceManager.GetObject("telefono", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap telefono1 {
+            get {
+                object obj = ResourceManager.GetObject("telefono1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
