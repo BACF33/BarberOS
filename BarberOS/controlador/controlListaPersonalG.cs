@@ -16,7 +16,7 @@ namespace BarberOS.Controlador
         private vistaMenu menuForm;
         private VistaListaPersonalG controladaVista;
         private DaoListaPersonalG dao = new DaoListaPersonalG();
-
+        //test
         public ControlListaPersonalG(VistaListaPersonalG vistaPasada, vistaMenu passedMenuForm)
         {
             controladaVista = vistaPasada;
