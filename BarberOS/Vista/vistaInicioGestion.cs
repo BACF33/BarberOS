@@ -14,7 +14,7 @@ namespace BarberOS.Vista
             this.KeyPreview = true;
             this.KeyDown += Form_KeyDown;
         }
-
+        //c//
         private void Form_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Control && (e.KeyCode == Keys.C || e.KeyCode == Keys.V))
