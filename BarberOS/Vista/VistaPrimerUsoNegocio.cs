@@ -16,7 +16,7 @@ namespace BarberOS.Vista
         {
             InitializeComponent();
         }
-
+        //hola//
        
     }
 }
