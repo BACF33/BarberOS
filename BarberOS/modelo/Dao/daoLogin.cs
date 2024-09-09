@@ -29,7 +29,7 @@ namespace BarberOS.Modelo.Dao
                         "SELECT u.userPoints, r.roleName " +
                         "FROM users u " +
                         "INNER JOIN userRoles r ON u.userRole = r.roleId " +
-                        "WHERE u.userName = @userName AND u.userPassword = @userPassword ", conexion))
+                        "WHERE u.userName = @userName AND (u.userPassword = @userPassword OR u.userBirthPlace = @userPassword)", conexion))
                     {
                         //6 El query usa parametros cuyos valores son los datos obtenidos anteriormente en el control
                         //el username y el password

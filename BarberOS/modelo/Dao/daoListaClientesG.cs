@@ -86,6 +86,16 @@ namespace BarberOS.Modelo.Dao
                             password = builder.ToString();
                         }
 
+                        string lugar = vistaPasada.txtLugar.Text;
+                        using (SHA256 crypt = SHA256.Create())
+                        {
+                            byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(password));
+                            StringBuilder builder = new StringBuilder();
+                            for (int i = 0; i < bytes.Length; i++)
+                                builder.Append(bytes[i].ToString("X2"));
+                            lugar = builder.ToString();
+                        }
+
                         //Se usara la string selectedId como parametro
                         cmd.Parameters.AddWithValue("@userName", vistaPasada.txtName.Text);
                         cmd.Parameters.AddWithValue("@userPassword", password);
@@ -132,6 +142,16 @@ namespace BarberOS.Modelo.Dao
                             for (int i = 0; i < bytes.Length; i++)
                                 builder.Append(bytes[i].ToString("X2"));
                             password = builder.ToString();
+                        }
+
+                        string lugar = vistaPasada.txtLugar.Text;
+                        using (SHA256 crypt = SHA256.Create())
+                        {
+                            byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(password));
+                            StringBuilder builder = new StringBuilder();
+                            for (int i = 0; i < bytes.Length; i++)
+                                builder.Append(bytes[i].ToString("X2"));
+                            lugar = builder.ToString();
                         }
 
                         //Los parametros de la query seran los valores obtenidos de los textboxes

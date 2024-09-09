@@ -35,6 +35,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnRestablecer = new System.Windows.Forms.Button();
             this.pnl1 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnRecoverId = new System.Windows.Forms.Button();
             this.txtRecoverId = new System.Windows.Forms.TextBox();
             this.txtUserId = new System.Windows.Forms.TextBox();
@@ -44,20 +48,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnDo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.pnl1.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -128,7 +129,7 @@
             this.btnRestablecer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRestablecer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRestablecer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnRestablecer.Location = new System.Drawing.Point(274, 462);
+            this.btnRestablecer.Location = new System.Drawing.Point(265, 437);
             this.btnRestablecer.Name = "btnRestablecer";
             this.btnRestablecer.Size = new System.Drawing.Size(186, 65);
             this.btnRestablecer.TabIndex = 5;
@@ -138,6 +139,7 @@
             // pnl1
             // 
             this.pnl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(103)))));
+            this.pnl1.Controls.Add(this.label6);
             this.pnl1.Controls.Add(this.pictureBox5);
             this.pnl1.Controls.Add(this.pictureBox4);
             this.pnl1.Controls.Add(this.pictureBox3);
@@ -148,10 +150,50 @@
             this.pnl1.Controls.Add(this.label2);
             this.pnl1.Controls.Add(this.txtPass);
             this.pnl1.Controls.Add(this.txtUser);
-            this.pnl1.Location = new System.Drawing.Point(191, 27);
+            this.pnl1.Location = new System.Drawing.Point(158, 23);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(698, 557);
             this.pnl1.TabIndex = 6;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::BarberOS.Properties.Resources.sign_warning_icon_png_7;
+            this.pictureBox5.Location = new System.Drawing.Point(19, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(58, 45);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 9;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::BarberOS.Properties.Resources.password_icon_1903x2048_m0d1f305;
+            this.pictureBox4.Location = new System.Drawing.Point(152, 336);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(58, 47);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::BarberOS.Properties.Resources._6195699__1_;
+            this.pictureBox3.Location = new System.Drawing.Point(274, 61);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(155, 145);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BarberOS.Properties.Resources._32374721;
+            this.pictureBox2.Location = new System.Drawing.Point(155, 227);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(58, 51);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
             // 
             // btnRecoverId
             // 
@@ -251,46 +293,6 @@
             this.panel1.Size = new System.Drawing.Size(472, 419);
             this.panel1.TabIndex = 7;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::BarberOS.Properties.Resources.sign_warning_icon_png_7;
-            this.pictureBox5.Location = new System.Drawing.Point(19, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(58, 45);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::BarberOS.Properties.Resources.password_icon_1903x2048_m0d1f305;
-            this.pictureBox4.Location = new System.Drawing.Point(152, 336);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(58, 47);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::BarberOS.Properties.Resources._6195699__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(274, 61);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(155, 145);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::BarberOS.Properties.Resources._32374721;
-            this.pictureBox2.Location = new System.Drawing.Point(155, 227);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(58, 51);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::BarberOS.Properties.Resources._7847599;
@@ -332,6 +334,18 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(59, 526);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(615, 20);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Tambien puede iniciar sesion en la pantalla usando su lugar de nacimiento si se b" +
+    "rindo\r\n";
+            // 
             // VistaReestablecerAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -348,12 +362,12 @@
             this.Text = "reestablecer";
             this.pnl1.ResumeLayout(false);
             this.pnl1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -388,5 +402,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label6;
     }
 }

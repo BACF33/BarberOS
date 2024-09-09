@@ -43,21 +43,21 @@ namespace BarberOS.Controlador
                 ListViewItem seleccionado = controladaVista.listEmpleados.SelectedItems[0];
                 controladaVista.txtId.Text = seleccionado.SubItems[0].Text;
                 controladaVista.txtName.Text = seleccionado.SubItems[1].Text;
-                controladaVista.txtContraseña.Text = seleccionado.SubItems[2].Text;
+                //controladaVista.txtContraseña.Text = seleccionado.SubItems[2].Text;
                 controladaVista.txtPuntos.Text = seleccionado.SubItems[3].Text;
                 controladaVista.txtCargo.Text = seleccionado.SubItems[4].Text;
                 controladaVista.txtEmail.Text = seleccionado.SubItems[5].Text;
-                controladaVista.txtLugar.Text = seleccionado.SubItems[6].Text;
+                //controladaVista.txtLugar.Text = seleccionado.SubItems[6].Text;
             }
             else
             {
                 controladaVista.txtId.Text = null;
                 controladaVista.txtName.Text = null;
-                controladaVista.txtContraseña.Text = null;
+                //controladaVista.txtContraseña.Text = null;
                 controladaVista.txtPuntos.Text = null;
                 controladaVista.txtCargo.Text = null;
                 controladaVista.txtEmail.Text = null;
-                controladaVista.txtLugar.Text = null;
+                //controladaVista.txtLugar.Text = null;
             }
         }
 
