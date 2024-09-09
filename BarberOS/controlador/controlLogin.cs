@@ -95,7 +95,7 @@ namespace BarberOS.Controlador
                     menuForm.btnInicio.Visible = false;
                 }
             }
-            //10 Si el valor obtenido por answer no es 1 (inicio de sesion incorrecto esto se ejecuta)
+            //10 Si el valor obtenido por answer no es 1 (inicio de sesion incorrecto esto se ejecuta) test
             else
                 MessageBox.Show("Login fallido");
         }
