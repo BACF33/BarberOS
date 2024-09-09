@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controlador\ControlActualizarRegistro.cs" />
+    <Compile Include="Controlador\ControlCitas.cs" />
     <Compile Include="Controlador\ControlObtenerPin.cs" />
     <Compile Include="Controlador\ControlInicio.cs" />
     <Compile Include="Controlador\ControlInicioGestion.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Controlador\ControlRestablecerCorreo.cs" />
     <Compile Include="Controlador\ControlTotal.cs" />
     <Compile Include="Modelo\Dao\DaoActualizarRegistro.cs" />
+    <Compile Include="Modelo\Dao\DaoCitas.cs" />
     <Compile Include="Modelo\Dao\DaoMenu.cs" />
     <Compile Include="Modelo\Dao\DaoNuevaContraseña.cs" />
     <Compile Include="Modelo\Dao\DaoPrimerUsoUsuario.cs" />
