@@ -31,5 +31,9 @@ namespace BarberOS.Vista
             }
         }
 
+        private void btnACortes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

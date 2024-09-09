@@ -30,6 +30,11 @@ namespace BarberOS.Vista
                 e.Handled = true;
             }
         }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
