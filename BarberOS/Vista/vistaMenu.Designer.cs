@@ -158,7 +158,7 @@
             this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.flowLayoutPanel1);
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.MinimumSize = new System.Drawing.Size(800, 726);
+            this.MinimumSize = new System.Drawing.Size(997, 600);
             this.Name = "vistaMenu";
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.vistaMenu_Load);
