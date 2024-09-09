@@ -11,5 +11,5 @@ namespace BarberOS.Controlador
             controladaVista = enviadaVista;
             DaoListaCortes daoThis = new DaoListaCortes(enviadaVista, pasadoMenu);
         }
-    }
+    }//s
 }
