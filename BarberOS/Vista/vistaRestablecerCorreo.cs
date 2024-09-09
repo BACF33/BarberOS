@@ -16,10 +16,10 @@ namespace BarberOS.Vista
 {
     public partial class vistaRestablecerCorreo : Form
     {
-        public vistaRestablecerCorreo()
+        public vistaRestablecerCorreo(vistaMenu pasadoMenu)
         {
             InitializeComponent();
-            new ControlRestablecerCorreo(this);
+            new ControlRestablecerCorreo(this, pasadoMenu);
 
         }
     }

@@ -203,7 +203,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLugar.Location = new System.Drawing.Point(70, 377);
             this.txtLugar.Margin = new System.Windows.Forms.Padding(5);
-            this.txtLugar.MaxLength = 60;
+            this.txtLugar.MaxLength = 50;
             this.txtLugar.Name = "txtLugar";
             this.txtLugar.Size = new System.Drawing.Size(365, 20);
             this.txtLugar.TabIndex = 132;
@@ -233,7 +233,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmail.Location = new System.Drawing.Point(70, 334);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
-            this.txtEmail.MaxLength = 60;
+            this.txtEmail.MaxLength = 50;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(365, 20);
             this.txtEmail.TabIndex = 129;
@@ -244,6 +244,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtId.Location = new System.Drawing.Point(71, 118);
             this.txtId.Margin = new System.Windows.Forms.Padding(5);
+            this.txtId.MaxLength = 50;
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(146, 20);
             this.txtId.TabIndex = 128;
@@ -254,7 +255,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCargo.Location = new System.Drawing.Point(70, 290);
             this.txtCargo.Margin = new System.Windows.Forms.Padding(5);
-            this.txtCargo.MaxLength = 60;
+            this.txtCargo.MaxLength = 50;
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(365, 20);
             this.txtCargo.TabIndex = 127;
@@ -307,7 +308,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPuntos.Location = new System.Drawing.Point(70, 247);
             this.txtPuntos.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPuntos.MaxLength = 60;
+            this.txtPuntos.MaxLength = 50;
             this.txtPuntos.Name = "txtPuntos";
             this.txtPuntos.Size = new System.Drawing.Size(365, 20);
             this.txtPuntos.TabIndex = 122;
@@ -365,7 +366,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtContraseña.Location = new System.Drawing.Point(70, 204);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(5);
-            this.txtContraseña.MaxLength = 60;
+            this.txtContraseña.MaxLength = 500;
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(365, 20);
             this.txtContraseña.TabIndex = 0;
@@ -376,6 +377,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtName.Location = new System.Drawing.Point(70, 161);
             this.txtName.Margin = new System.Windows.Forms.Padding(5);
+            this.txtName.MaxLength = 50;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(365, 20);
             this.txtName.TabIndex = 1;

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnVolver = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,7 +36,17 @@
             this.txtSearchingFor = new System.Windows.Forms.TextBox();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.listCortes = new System.Windows.Forms.ListView();
+            this.corteId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.corteNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cortePrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.corteTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAPersonal = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.txtId = new System.Windows.Forms.TextBox();
@@ -51,20 +60,11 @@
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnAPersonal = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.listCortes = new System.Windows.Forms.ListView();
-            this.corteId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.corteNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cortePrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.corteTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -87,20 +87,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1226, 729);
             this.tableLayoutPanel1.TabIndex = 126;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 612F));
-            this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 82);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1220, 644);
-            this.tableLayoutPanel2.TabIndex = 0;
             // 
             // panel2
             // 
@@ -179,6 +165,92 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 612F));
+            this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 81);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1220, 644);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.listCortes);
+            this.panel3.ForeColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(613, 5);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(602, 634);
+            this.panel3.TabIndex = 137;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(12, 23);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(254, 38);
+            this.label7.TabIndex = 136;
+            this.label7.Text = "Lista de Productos";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(34, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 25);
+            this.label2.TabIndex = 0;
+            // 
+            // listCortes
+            // 
+            this.listCortes.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.listCortes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.corteId,
+            this.corteNombre,
+            this.cortePrecio,
+            this.corteTipo});
+            this.listCortes.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listCortes.FullRowSelect = true;
+            this.listCortes.GridLines = true;
+            this.listCortes.HideSelection = false;
+            this.listCortes.Location = new System.Drawing.Point(3, 77);
+            this.listCortes.Name = "listCortes";
+            this.listCortes.Size = new System.Drawing.Size(599, 562);
+            this.listCortes.TabIndex = 133;
+            this.listCortes.UseCompatibleStateImageBehavior = false;
+            this.listCortes.View = System.Windows.Forms.View.Details;
+            // 
+            // corteId
+            // 
+            this.corteId.Text = "ID";
+            // 
+            // corteNombre
+            // 
+            this.corteNombre.Text = "Nombre";
+            this.corteNombre.Width = 176;
+            // 
+            // cortePrecio
+            // 
+            this.cortePrecio.Text = "Precio";
+            this.cortePrecio.Width = 239;
+            // 
+            // corteTipo
+            // 
+            this.corteTipo.Text = "Tipo";
+            this.corteTipo.Width = 207;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
@@ -204,6 +276,18 @@
             this.panel1.TabIndex = 136;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // btnAPersonal
+            // 
+            this.btnAPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnAPersonal.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAPersonal.ForeColor = System.Drawing.Color.Black;
+            this.btnAPersonal.Location = new System.Drawing.Point(195, 515);
+            this.btnAPersonal.Name = "btnAPersonal";
+            this.btnAPersonal.Size = new System.Drawing.Size(205, 60);
+            this.btnAPersonal.TabIndex = 135;
+            this.btnAPersonal.Text = "Personal";
+            this.btnAPersonal.UseVisualStyleBackColor = false;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -221,6 +305,7 @@
             "Cabello",
             "Barba"});
             this.cmbTipo.Location = new System.Drawing.Point(74, 343);
+            this.cmbTipo.MaxLength = 50;
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(441, 21);
             this.cmbTipo.TabIndex = 128;
@@ -228,6 +313,7 @@
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(74, 199);
+            this.txtId.MaxLength = 50;
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 124;
@@ -320,7 +406,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPrecio.Location = new System.Drawing.Point(74, 293);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPrecio.MaxLength = 60;
+            this.txtPrecio.MaxLength = 50;
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(435, 20);
             this.txtPrecio.TabIndex = 0;
@@ -331,6 +417,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombre.Location = new System.Drawing.Point(74, 240);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(5);
+            this.txtNombre.MaxLength = 50;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(435, 20);
             this.txtNombre.TabIndex = 1;
@@ -345,90 +432,6 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Precio del Nuevo Producto";
             // 
-            // btnAPersonal
-            // 
-            this.btnAPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnAPersonal.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAPersonal.ForeColor = System.Drawing.Color.Black;
-            this.btnAPersonal.Location = new System.Drawing.Point(195, 515);
-            this.btnAPersonal.Name = "btnAPersonal";
-            this.btnAPersonal.Size = new System.Drawing.Size(205, 60);
-            this.btnAPersonal.TabIndex = 135;
-            this.btnAPersonal.Text = "Personal";
-            this.btnAPersonal.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.listCortes);
-            this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(613, 5);
-            this.panel3.Margin = new System.Windows.Forms.Padding(5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(602, 634);
-            this.panel3.TabIndex = 137;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(12, 23);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(254, 38);
-            this.label7.TabIndex = 136;
-            this.label7.Text = "Lista de Productos";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 23);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 25);
-            this.label2.TabIndex = 0;
-            // 
-            // listCortes
-            // 
-            this.listCortes.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.listCortes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.corteId,
-            this.corteNombre,
-            this.cortePrecio,
-            this.corteTipo});
-            this.listCortes.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listCortes.FullRowSelect = true;
-            this.listCortes.GridLines = true;
-            this.listCortes.HideSelection = false;
-            this.listCortes.Location = new System.Drawing.Point(3, 77);
-            this.listCortes.Name = "listCortes";
-            this.listCortes.Size = new System.Drawing.Size(599, 562);
-            this.listCortes.TabIndex = 133;
-            this.listCortes.UseCompatibleStateImageBehavior = false;
-            this.listCortes.View = System.Windows.Forms.View.Details;
-            // 
-            // corteId
-            // 
-            this.corteId.Text = "ID";
-            // 
-            // corteNombre
-            // 
-            this.corteNombre.Text = "Nombre";
-            this.corteNombre.Width = 176;
-            // 
-            // cortePrecio
-            // 
-            this.cortePrecio.Text = "Precio";
-            this.cortePrecio.Width = 239;
-            // 
-            // corteTipo
-            // 
-            this.corteTipo.Text = "Tipo";
-            this.corteTipo.Width = 207;
-            // 
             // VistaListaCortesG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -439,13 +442,13 @@
             this.Name = "VistaListaCortesG";
             this.Text = "vistaListaCortesGcs";
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

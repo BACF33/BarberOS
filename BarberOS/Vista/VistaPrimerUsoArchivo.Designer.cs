@@ -96,6 +96,7 @@
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox3.Location = new System.Drawing.Point(101, 337);
+            this.textBox3.MaxLength = 500;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(206, 20);
             this.textBox3.TabIndex = 103;
@@ -141,6 +142,7 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Location = new System.Drawing.Point(101, 259);
+            this.textBox1.MaxLength = 50;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(206, 20);
             this.textBox1.TabIndex = 99;
@@ -211,6 +213,7 @@
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.Location = new System.Drawing.Point(102, 176);
+            this.textBox2.MaxLength = 50;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(206, 20);
             this.textBox2.TabIndex = 17;
@@ -219,6 +222,7 @@
             // 
             this.txtNuevoNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNuevoNombre.Location = new System.Drawing.Point(102, 99);
+            this.txtNuevoNombre.MaxLength = 50;
             this.txtNuevoNombre.Name = "txtNuevoNombre";
             this.txtNuevoNombre.Size = new System.Drawing.Size(206, 20);
             this.txtNuevoNombre.TabIndex = 15;

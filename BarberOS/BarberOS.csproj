@@ -92,6 +92,7 @@
     <Compile Include="Controlador\ControlPanelBarbero.cs" />
     <Compile Include="Controlador\ControlPanelProducto.cs" />
     <Compile Include="Controlador\ControlPanelPromocion.cs" />
+    <Compile Include="Controlador\ControlPrimerUsoNegocio.cs" />
     <Compile Include="Controlador\ControlPrimerUsoUsuario.cs" />
     <Compile Include="Controlador\ControlReestablecerAdmin.cs" />
     <Compile Include="Controlador\ControlRegistrarse.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Modelo\Dao\DaoCitas.cs" />
     <Compile Include="Modelo\Dao\DaoMenu.cs" />
     <Compile Include="Modelo\Dao\DaoNuevaContraseña.cs" />
+    <Compile Include="Modelo\Dao\DaoPrimerUsoNegocio.cs" />
     <Compile Include="Modelo\Dao\DaoPrimerUsoUsuario.cs" />
     <Compile Include="Modelo\Dao\DaoRecuperar.cs" />
     <Compile Include="Modelo\Dao\DaoRestablecerCorreo.cs" />

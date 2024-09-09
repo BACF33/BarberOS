@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnOtro = new System.Windows.Forms.Button();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -47,18 +47,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnOtro
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(401, 424);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(297, 77);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Reestablecer por otro metodo";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnOtro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
+            this.btnOtro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnOtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOtro.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnOtro.Location = new System.Drawing.Point(401, 424);
+            this.btnOtro.Name = "btnOtro";
+            this.btnOtro.Size = new System.Drawing.Size(297, 77);
+            this.btnOtro.TabIndex = 0;
+            this.btnOtro.Text = "Reestablecer por otro metodo";
+            this.btnOtro.UseVisualStyleBackColor = false;
             // 
             // txtUser
             // 
@@ -129,24 +129,13 @@
             this.panel1.Controls.Add(this.btnEnviar);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnOtro);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.txtUser);
             this.panel1.Location = new System.Drawing.Point(93, 55);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(747, 541);
             this.panel1.TabIndex = 9;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(374, 54);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(354, 33);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Restablecer contraseña";
             // 
             // pictureBox4
             // 
@@ -167,6 +156,17 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(374, 54);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(354, 33);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Restablecer contraseña";
             // 
             // pictureBox1
             // 
@@ -210,8 +210,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox txtUser;
@@ -223,5 +221,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        public System.Windows.Forms.Button btnOtro;
     }
 }

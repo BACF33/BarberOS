@@ -22,6 +22,7 @@ namespace BarberOS.Controlador
 
             daoThis.VerificarPrimerUso(this);
 
+
             //6 Aqui se evaluara cuando el usuario presione uno de los botones del menu, dependiendo del que toque la 
             //funcion de la izquierda se evaluara (si toca el boton ingresar se creara un nuevo formulario login)
             controladaVista.btnInicio.Click += (sender, e) => AbrirFormulario(new VistaInicio(controladaVista));

@@ -15,12 +15,12 @@ namespace BarberOS.Controlador
     {
         DaoRestablecerCorreo daoThis = new DaoRestablecerCorreo();
         vistaRestablecerCorreo vistaControlada;
-        public ControlRestablecerCorreo(vistaRestablecerCorreo vistaPasada) 
+        public ControlRestablecerCorreo(vistaRestablecerCorreo vistaPasada, vistaMenu menuPasado)
         {
             vistaControlada = vistaPasada;
             vistaControlada.btnEnviar.Click += (sender, e) => Enviar();
+            vistaControlada.btnOtro.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new VistaReestablecerAdmin());
         }
-
         public void SendEmail(string recipientEmail, string subject, string body)
         {
                 SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);

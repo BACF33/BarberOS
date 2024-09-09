@@ -89,7 +89,7 @@ namespace BarberOS.Modelo.Dao
                         string lugar = vistaPasada.txtLugar.Text;
                         using (SHA256 crypt = SHA256.Create())
                         {
-                            byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(password));
+                            byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(lugar));
                             StringBuilder builder = new StringBuilder();
                             for (int i = 0; i < bytes.Length; i++)
                                 builder.Append(bytes[i].ToString("X2"));

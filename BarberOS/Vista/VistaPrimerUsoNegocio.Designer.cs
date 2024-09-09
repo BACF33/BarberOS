@@ -32,8 +32,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNuevoNombre = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtLema = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -69,9 +69,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(204, 413);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 20);
+            this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Numero de Teléfono:";
+            this.label3.Text = "Lema";
             // 
             // label4
             // 
@@ -93,21 +93,21 @@
             this.txtNuevoNombre.Size = new System.Drawing.Size(217, 20);
             this.txtNuevoNombre.TabIndex = 10;
             // 
-            // textBox2
+            // txtLema
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Location = new System.Drawing.Point(206, 451);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(217, 20);
-            this.textBox2.TabIndex = 12;
+            this.txtLema.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtLema.Location = new System.Drawing.Point(206, 451);
+            this.txtLema.Name = "txtLema";
+            this.txtLema.Size = new System.Drawing.Size(217, 20);
+            this.txtLema.TabIndex = 12;
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Location = new System.Drawing.Point(206, 369);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(217, 20);
-            this.textBox3.TabIndex = 13;
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmail.Location = new System.Drawing.Point(206, 369);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(217, 20);
+            this.txtEmail.TabIndex = 13;
             // 
             // panel1
             // 
@@ -116,9 +116,9 @@
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.btnEnviar);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.txtNuevoNombre);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtLema);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
@@ -233,8 +233,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox txtNuevoNombre;
-        public System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox txtLema;
+        public System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.PictureBox pictureBox4;

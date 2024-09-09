@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,41 +13,64 @@ namespace BarberOS.Modelo.Dao
 {
     internal class DaoPrimerUsoUsuario
     {
-    public void Registrar()
+    public void Registrar(VistaPrimerUsoUsuario vistaPasada)
         {
             try
             {
-                string connectionString = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
+                using (SqlConnection conexion = new SqlConnection(cnn))
                 {
-                    connection.Open();
-                    string query = "INSERT INTO users ";
+                    //Usando la id de la fila seleccionada por el usuaio se eliminara el valor de la base de datos con
+                    //el mismo id 
+                    conexion.Open();
+                    string query = @"
+                    INSERT INTO users (userName, userPassword, userPoints, userRole, userEmail, userBirthPlace)
+                    VALUES (
+                    @userName, 
+                    @userPassword, 
+                    @userPoints, 
+                    (SELECT roleId FROM userRoles WHERE roleName = @roleName),
+                    @userEmail,
+                    @userBirthPlace
+                    )";
 
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    string password = vistaPasada.txtContraseña.Text;
+                    using (SHA256 crypt = SHA256.Create())
                     {
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-
-                            while (reader.Read())
-                            {
-                                string testId, testName, testPrice, testPower, testType;
-                                testId = reader["promotionId"].ToString();
-                                testName = reader["promotionName"].ToString();
-                                testPrice = reader["promotionPrice"].ToString();
-                                testPower = reader["promotionPower"].ToString();
-                                testType = reader["promotionType"].ToString();
-                                //PanelPromocion panelUsado = new PanelPromocion(pasadoMenu, seleccionadoProducto, int.Parse(testId), testName, testPower, testType);
-
-                                //enviadaVista.flpPromociones.Controls.Add(panelUsado);
-
-                            }
-                        }
+                        byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(password));
+                        StringBuilder builder = new StringBuilder();
+                        for (int i = 0; i < bytes.Length; i++)
+                            builder.Append(bytes[i].ToString("X2"));
+                        password = builder.ToString();
                     }
+
+                    string lugar = vistaPasada.txtLugar.Text;
+                    using (SHA256 crypt = SHA256.Create())
+                    {
+                        byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(lugar));
+                        StringBuilder builder = new StringBuilder();
+                        for (int i = 0; i < bytes.Length; i++)
+                            builder.Append(bytes[i].ToString("X2"));
+                        lugar = builder.ToString();
+                    }
+
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        //Se usara la string selectedId como parametro
+                        cmd.Parameters.AddWithValue("@userName", vistaPasada.txtName.Text);
+                        cmd.Parameters.AddWithValue("@userPassword", password);
+                        cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtPuntos.Text);
+                        cmd.Parameters.AddWithValue("@roleName", "Admin");
+                        cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
+                        cmd.Parameters.AddWithValue("@userBirthPlace", lugar);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                    }
+                    //Test
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred: " + ex.Message);
+                MessageBox.Show(ex.ToString());
             }
         }
     }

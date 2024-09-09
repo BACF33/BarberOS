@@ -101,6 +101,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombre.Location = new System.Drawing.Point(83, 167);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(5);
+            this.txtNombre.MaxLength = 50;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(292, 20);
             this.txtNombre.TabIndex = 1;
@@ -111,7 +112,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPrecio.Location = new System.Drawing.Point(83, 210);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPrecio.MaxLength = 60;
+            this.txtPrecio.MaxLength = 50;
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(292, 20);
             this.txtPrecio.TabIndex = 0;
@@ -180,7 +181,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPoder.Location = new System.Drawing.Point(83, 253);
             this.txtPoder.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPoder.MaxLength = 60;
+            this.txtPoder.MaxLength = 50;
             this.txtPoder.Name = "txtPoder";
             this.txtPoder.Size = new System.Drawing.Size(292, 20);
             this.txtPoder.TabIndex = 122;
@@ -228,6 +229,7 @@
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(83, 126);
+            this.txtId.MaxLength = 50;
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(292, 20);
             this.txtId.TabIndex = 126;
@@ -239,6 +241,7 @@
             "Cabello",
             "Promocion"});
             this.cmbTipo.Location = new System.Drawing.Point(83, 294);
+            this.cmbTipo.MaxLength = 50;
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(292, 21);
             this.cmbTipo.TabIndex = 127;

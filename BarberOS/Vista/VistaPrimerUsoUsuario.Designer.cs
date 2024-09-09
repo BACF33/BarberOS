@@ -35,29 +35,29 @@
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtNuevoNombre = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPuntos = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnEnviar = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtLugar = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -69,9 +69,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(231, 256);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 24);
+            this.label1.Size = new System.Drawing.Size(116, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Fecha de nacimiento";
+            this.label1.Text = "Contraseña";
             // 
             // label2
             // 
@@ -121,16 +121,16 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(231, 493);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 24);
+            this.label6.Size = new System.Drawing.Size(201, 24);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Contraseña";
+            this.label6.Text = "Lugar de nacimiento";
             // 
             // pictureBox8
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox8.Image = global::BarberOS.Properties.Resources._92529432;
-            this.pictureBox8.Location = new System.Drawing.Point(185, 481);
+            this.pictureBox8.Location = new System.Drawing.Point(181, 339);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(44, 46);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -149,24 +149,12 @@
             this.pictureBox7.TabIndex = 68;
             this.pictureBox7.TabStop = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox6.Image = global::BarberOS.Properties.Resources._93569284;
-            this.pictureBox6.Location = new System.Drawing.Point(185, 328);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(44, 46);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 67;
-            this.pictureBox6.TabStop = false;
-            // 
             // pictureBox5
             // 
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox5.Image = global::BarberOS.Properties.Resources._5246290;
-            this.pictureBox5.Location = new System.Drawing.Point(185, 246);
+            this.pictureBox5.Location = new System.Drawing.Point(181, 482);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(44, 46);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -194,9 +182,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(231, 339);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 24);
+            this.label7.Size = new System.Drawing.Size(74, 24);
             this.label7.TabIndex = 64;
-            this.label7.Text = "Usuario";
+            this.label7.Text = "Puntos";
             // 
             // pictureBox2
             // 
@@ -210,45 +198,46 @@
             this.pictureBox2.TabIndex = 63;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox3
+            // txtContraseña
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(235, 283);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(238, 26);
-            this.textBox3.TabIndex = 17;
+            this.txtContraseña.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtContraseña.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Location = new System.Drawing.Point(235, 283);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(238, 26);
+            this.txtContraseña.TabIndex = 17;
             // 
-            // textBox2
+            // txtEmail
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(235, 443);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(238, 26);
-            this.textBox2.TabIndex = 16;
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(235, 443);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(238, 26);
+            this.txtEmail.TabIndex = 16;
             // 
-            // textBox1
+            // txtPuntos
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(235, 366);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(238, 26);
-            this.textBox1.TabIndex = 15;
+            this.txtPuntos.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtPuntos.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtPuntos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPuntos.Location = new System.Drawing.Point(235, 366);
+            this.txtPuntos.Name = "txtPuntos";
+            this.txtPuntos.Size = new System.Drawing.Size(238, 26);
+            this.txtPuntos.TabIndex = 15;
+            this.txtPuntos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
-            // txtNuevoNombre
+            // txtName
             // 
-            this.txtNuevoNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtNuevoNombre.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtNuevoNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNuevoNombre.Location = new System.Drawing.Point(235, 206);
-            this.txtNuevoNombre.Name = "txtNuevoNombre";
-            this.txtNuevoNombre.Size = new System.Drawing.Size(238, 26);
-            this.txtNuevoNombre.TabIndex = 14;
+            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtName.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(235, 206);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(238, 26);
+            this.txtName.TabIndex = 14;
             // 
             // pictureBox3
             // 
@@ -288,33 +277,33 @@
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = false;
             // 
-            // textBox5
+            // txtLugar
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(235, 520);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(238, 26);
-            this.textBox5.TabIndex = 19;
+            this.txtLugar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtLugar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtLugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLugar.Location = new System.Drawing.Point(235, 520);
+            this.txtLugar.Name = "txtLugar";
+            this.txtLugar.Size = new System.Drawing.Size(238, 26);
+            this.txtLugar.TabIndex = 19;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(103)))));
+            this.panel1.Controls.Add(this.pictureBox9);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtContraseña);
+            this.panel1.Controls.Add(this.txtLugar);
+            this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.btnEnviar);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtPuntos);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.txtNuevoNombre);
+            this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
@@ -325,6 +314,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(607, 659);
             this.panel1.TabIndex = 13;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::BarberOS.Properties.Resources._7847599;
+            this.pictureBox9.Location = new System.Drawing.Point(173, 256);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 70;
+            this.pictureBox9.TabStop = false;
             // 
             // VistaPrimerUsoUsuario
             // 
@@ -338,7 +337,6 @@
             this.Text = "rio ,";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -346,6 +344,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -357,21 +356,21 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox txtPuntos;
+        public System.Windows.Forms.TextBox txtEmail;
+        public System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        public System.Windows.Forms.TextBox txtNuevoNombre;
+        public System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         public System.Windows.Forms.Button btnEnviar;
-        public System.Windows.Forms.TextBox textBox5;
+        public System.Windows.Forms.TextBox txtLugar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }

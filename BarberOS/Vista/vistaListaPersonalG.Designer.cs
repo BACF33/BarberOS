@@ -47,6 +47,7 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.txtLugar = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -65,7 +66,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtId = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -271,13 +271,20 @@
             this.panel1.Size = new System.Drawing.Size(404, 625);
             this.panel1.TabIndex = 131;
             // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(301, 23);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 133;
+            // 
             // txtLugar
             // 
             this.txtLugar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLugar.Location = new System.Drawing.Point(59, 344);
             this.txtLugar.Margin = new System.Windows.Forms.Padding(5);
-            this.txtLugar.MaxLength = 60;
+            this.txtLugar.MaxLength = 50;
             this.txtLugar.Name = "txtLugar";
             this.txtLugar.Size = new System.Drawing.Size(299, 20);
             this.txtLugar.TabIndex = 132;
@@ -298,7 +305,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmail.Location = new System.Drawing.Point(61, 301);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
-            this.txtEmail.MaxLength = 60;
+            this.txtEmail.MaxLength = 50;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(299, 20);
             this.txtEmail.TabIndex = 130;
@@ -319,7 +326,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCargo.Location = new System.Drawing.Point(61, 258);
             this.txtCargo.Margin = new System.Windows.Forms.Padding(5);
-            this.txtCargo.MaxLength = 60;
+            this.txtCargo.MaxLength = 50;
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(299, 20);
             this.txtCargo.TabIndex = 127;
@@ -359,7 +366,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPuntos.Location = new System.Drawing.Point(61, 215);
             this.txtPuntos.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPuntos.MaxLength = 60;
+            this.txtPuntos.MaxLength = 50;
             this.txtPuntos.Name = "txtPuntos";
             this.txtPuntos.Size = new System.Drawing.Size(299, 20);
             this.txtPuntos.TabIndex = 122;
@@ -415,7 +422,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtContraseña.Location = new System.Drawing.Point(59, 172);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(5);
-            this.txtContraseña.MaxLength = 60;
+            this.txtContraseña.MaxLength = 50;
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(301, 20);
             this.txtContraseña.TabIndex = 0;
@@ -426,6 +433,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtName.Location = new System.Drawing.Point(59, 129);
             this.txtName.Margin = new System.Windows.Forms.Padding(5);
+            this.txtName.MaxLength = 50;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(301, 20);
             this.txtName.TabIndex = 1;
@@ -469,13 +477,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1243, 635);
             this.tableLayoutPanel2.TabIndex = 133;
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(301, 23);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(100, 20);
-            this.txtId.TabIndex = 133;
             // 
             // VistaListaPersonalG
             // 

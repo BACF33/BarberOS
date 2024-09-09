@@ -1,4 +1,5 @@
-﻿using BarberOS.Vista;
+﻿using BarberOS.Modelo.Dao;
+using BarberOS.Vista;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,15 +9,20 @@ using System.Threading.Tasks;
 namespace BarberOS.Controlador
 {
     internal class ControlPrimerUsoUsuario
-        
     {
-        public ControlPrimerUsoUsuario(VistaPrimerUsoUsuario vistaPasada)
+        DaoPrimerUsoUsuario primer = new DaoPrimerUsoUsuario();
+        DaoMenu porNegocio = new DaoMenu();
+        ControlMenu control;
+        public ControlPrimerUsoUsuario(VistaPrimerUsoUsuario vistaPasada, ControlMenu pasadoControl)
         {
-            vistaPasada.btnEnviar.Click += (sender, e) => RegistrarFormulario();
+            control = pasadoControl;
+            vistaPasada.btnEnviar.Click += (sender, e) => RegistrarFormulario(vistaPasada);
         }
-        public void RegistrarFormulario()
+        public void RegistrarFormulario(VistaPrimerUsoUsuario vistaPasada)
         {
-          
+            primer.Registrar(vistaPasada);
+            porNegocio.PrimerNegocio(control);
+            
         }
     }
 }

@@ -82,6 +82,7 @@
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.SystemColors.Desktop;
             this.txtUser.Location = new System.Drawing.Point(220, 212);
+            this.txtUser.MaxLength = 50;
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(328, 26);
@@ -96,6 +97,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.SystemColors.Desktop;
             this.txtPassword.Location = new System.Drawing.Point(220, 277);
+            this.txtPassword.MaxLength = 50;
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(328, 26);
