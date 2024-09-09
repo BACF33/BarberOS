@@ -36,7 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCurrentUser = new System.Windows.Forms.Button();
             this.btnAgendar = new System.Windows.Forms.Button();
-            this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.panelContenedor = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -141,16 +141,13 @@
             this.btnAgendar.Text = "AGENDAR";
             this.btnAgendar.UseVisualStyleBackColor = false;
             // 
-            // PanelContenedor
+            // panelContenedor
             // 
-            this.PanelContenedor.BackColor = System.Drawing.Color.Silver;
-            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedor.Location = new System.Drawing.Point(197, 0);
-            this.PanelContenedor.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.PanelContenedor.MinimumSize = new System.Drawing.Size(800, 600);
-            this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(1153, 729);
-            this.PanelContenedor.TabIndex = 28;
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(197, 0);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1153, 729);
+            this.panelContenedor.TabIndex = 28;
             // 
             // vistaMenu
             // 
@@ -158,10 +155,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1350, 729);
-            this.Controls.Add(this.PanelContenedor);
+            this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.MaximumSize = new System.Drawing.Size(1920, 1078);
-            this.MinimumSize = new System.Drawing.Size(800, 597);
+            this.MaximumSize = new System.Drawing.Size(1920, 1080);
+            this.MinimumSize = new System.Drawing.Size(800, 726);
             this.Name = "vistaMenu";
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.vistaMenu_Load);
@@ -178,8 +175,8 @@
         public System.Windows.Forms.Button btnBarberos;
         public System.Windows.Forms.Button btnCortes;
         public System.Windows.Forms.Button btnInicio;
-        public System.Windows.Forms.Panel PanelContenedor;
         public System.Windows.Forms.Button btnCurrentUser;
         public System.Windows.Forms.Button btnAgendar;
+        public System.Windows.Forms.FlowLayoutPanel panelContenedor;
     }
 }

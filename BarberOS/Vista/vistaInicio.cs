@@ -28,5 +28,10 @@ namespace BarberOS.Vistas
                 e.SuppressKeyPress = true;
             }
         }
+
+        private void VistaInicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
