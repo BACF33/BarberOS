@@ -66,11 +66,11 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(237, 178);
+            this.label1.Location = new System.Drawing.Point(229, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 28);
+            this.label1.Size = new System.Drawing.Size(216, 39);
             this.label1.TabIndex = 14;
             this.label1.Text = "¡Bienvenido!";
             // 
@@ -81,7 +81,7 @@
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtUser.Location = new System.Drawing.Point(220, 212);
+            this.txtUser.Location = new System.Drawing.Point(179, 242);
             this.txtUser.MaxLength = 50;
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
@@ -96,7 +96,7 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtPassword.Location = new System.Drawing.Point(220, 277);
+            this.txtPassword.Location = new System.Drawing.Point(179, 324);
             this.txtPassword.MaxLength = 50;
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
@@ -109,13 +109,13 @@
             this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLogin.Location = new System.Drawing.Point(229, 331);
+            this.btnLogin.Location = new System.Drawing.Point(236, 395);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(165, 54);
+            this.btnLogin.Size = new System.Drawing.Size(183, 63);
             this.btnLogin.TabIndex = 103;
-            this.btnLogin.Text = "Iniciar sesión";
+            this.btnLogin.Text = "INICIAR SESION";
             this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // btnRestPass
@@ -123,27 +123,28 @@
             this.btnRestPass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnRestPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
             this.btnRestPass.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRestPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestPass.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRestPass.ForeColor = System.Drawing.Color.White;
-            this.btnRestPass.Location = new System.Drawing.Point(638, 596);
+            this.btnRestPass.Location = new System.Drawing.Point(34, 605);
             this.btnRestPass.Name = "btnRestPass";
-            this.btnRestPass.Size = new System.Drawing.Size(259, 74);
+            this.btnRestPass.Size = new System.Drawing.Size(215, 52);
             this.btnRestPass.TabIndex = 105;
-            this.btnRestPass.Text = "Reestablecer contraseña";
+            this.btnRestPass.Text = "Restablecer Contraseña";
             this.btnRestPass.UseVisualStyleBackColor = false;
+            this.btnRestPass.Click += new System.EventHandler(this.btnRestPass_Click);
             // 
             // btnCreate
             // 
             this.btnCreate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
             this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.Font = new System.Drawing.Font("Microsoft Uighur", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.Color.White;
-            this.btnCreate.Location = new System.Drawing.Point(298, 596);
+            this.btnCreate.Location = new System.Drawing.Point(34, 461);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(251, 74);
+            this.btnCreate.Size = new System.Drawing.Size(215, 52);
             this.btnCreate.TabIndex = 104;
-            this.btnCreate.Text = "Crear cuenta";
+            this.btnCreate.Text = " Crear Cuenta";
             this.btnCreate.UseVisualStyleBackColor = false;
             // 
             // panel4
@@ -158,18 +159,19 @@
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.txtUser);
             this.panel4.Controls.Add(this.btnLogin);
-            this.panel4.Location = new System.Drawing.Point(298, 164);
+            this.panel4.Location = new System.Drawing.Point(266, 163);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(599, 402);
+            this.panel4.Size = new System.Drawing.Size(639, 504);
             this.panel4.TabIndex = 1;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.Image = global::BarberOS.Properties.Resources._6220807__1_1;
-            this.pictureBox4.Location = new System.Drawing.Point(32, 255);
+            this.pictureBox4.Location = new System.Drawing.Point(134, 315);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(53, 49);
+            this.pictureBox4.Size = new System.Drawing.Size(39, 35);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 107;
             this.pictureBox4.TabStop = false;
@@ -178,9 +180,9 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::BarberOS.Properties.Resources._3237472;
-            this.pictureBox3.Location = new System.Drawing.Point(32, 191);
+            this.pictureBox3.Location = new System.Drawing.Point(130, 232);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(53, 48);
+            this.pictureBox3.Size = new System.Drawing.Size(43, 36);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 107;
             this.pictureBox3.TabStop = false;
@@ -191,7 +193,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(84, 268);
+            this.label2.Location = new System.Drawing.Point(130, 286);
             this.label2.Margin = new System.Windows.Forms.Padding(17, 15, 20, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 24);
@@ -204,7 +206,7 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblUsuario.Location = new System.Drawing.Point(105, 202);
+            this.lblUsuario.Location = new System.Drawing.Point(130, 196);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(17, 15, 5, 0);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(90, 24);
@@ -217,10 +219,10 @@
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox2.Image = global::BarberOS.Properties.Resources._13__27__33__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(200, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(236, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Padding = new System.Windows.Forms.Padding(40, 30, 23, 24);
-            this.pictureBox2.Size = new System.Drawing.Size(220, 173);
+            this.pictureBox2.Size = new System.Drawing.Size(193, 127);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
@@ -230,22 +232,21 @@
             this.lblLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLogin.AutoSize = true;
             this.lblLogin.BackColor = System.Drawing.Color.Transparent;
-            this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.Font = new System.Drawing.Font("Microsoft Uighur", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblLogin.Location = new System.Drawing.Point(184, 34);
+            this.lblLogin.Location = new System.Drawing.Point(213, 20);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(271, 39);
+            this.lblLogin.Size = new System.Drawing.Size(246, 57);
             this.lblLogin.TabIndex = 17;
             this.lblLogin.Text = "Inicio de sesión";
             // 
             // panel3
             // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(42)))), ((int)(((byte)(68)))));
             this.panel3.Controls.Add(this.lblLogin);
-            this.panel3.Location = new System.Drawing.Point(298, 65);
+            this.panel3.Location = new System.Drawing.Point(266, 73);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(599, 100);
+            this.panel3.Size = new System.Drawing.Size(639, 95);
             this.panel3.TabIndex = 25;
             // 
             // pictureBox7
@@ -253,7 +254,7 @@
             this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
             this.pictureBox7.Image = global::BarberOS.Properties.Resources._9252943;
-            this.pictureBox7.Location = new System.Drawing.Point(649, 609);
+            this.pictureBox7.Location = new System.Drawing.Point(115, 551);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(43, 48);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -265,9 +266,9 @@
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
             this.pictureBox5.Image = global::BarberOS.Properties.Resources._93569281;
-            this.pictureBox5.Location = new System.Drawing.Point(308, 609);
+            this.pictureBox5.Location = new System.Drawing.Point(115, 405);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(46, 48);
+            this.pictureBox5.Size = new System.Drawing.Size(51, 46);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 107;
             this.pictureBox5.TabStop = false;
@@ -288,7 +289,7 @@
             this.pictureBox1.Image = global::BarberOS.Properties.Resources.Background_BarberOS;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1197, 749);
+            this.pictureBox1.Size = new System.Drawing.Size(1079, 707);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 106;
             this.pictureBox1.TabStop = false;
@@ -297,9 +298,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(42)))), ((int)(((byte)(68)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 705);
+            this.panel2.Location = new System.Drawing.Point(0, 663);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1197, 44);
+            this.panel2.Size = new System.Drawing.Size(1079, 44);
             this.panel2.TabIndex = 0;
             // 
             // panel6
@@ -316,7 +317,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1197, 41);
+            this.panel1.Size = new System.Drawing.Size(1079, 41);
             this.panel1.TabIndex = 21;
             // 
             // vistaLogin
@@ -325,12 +326,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1197, 749);
+            this.ClientSize = new System.Drawing.Size(1079, 707);
             this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnRestPass);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.panel1);

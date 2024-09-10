@@ -42,5 +42,15 @@ namespace BarberOS.Vista
                 e.SuppressKeyPress = true;
             }
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnRestPass_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

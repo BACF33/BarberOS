@@ -34,21 +34,20 @@
             // flpCabello
             // 
             this.flpCabello.AutoScroll = true;
+            this.flpCabello.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS;
             this.flpCabello.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpCabello.Location = new System.Drawing.Point(0, 0);
-            this.flpCabello.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flpCabello.Name = "flpCabello";
-            this.flpCabello.Size = new System.Drawing.Size(1800, 897);
+            this.flpCabello.Size = new System.Drawing.Size(1350, 729);
             this.flpCabello.TabIndex = 0;
             // 
-            // vistaListaCortes
+            // VistaListaCortes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1800, 897);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.flpCabello);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "vistaListaCortes";
+            this.Name = "VistaListaCortes";
             this.Text = "vistaListaCortes";
             this.ResumeLayout(false);
 

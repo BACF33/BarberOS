@@ -34,19 +34,20 @@
             // flpPersonal
             // 
             this.flpPersonal.AutoScroll = true;
+            this.flpPersonal.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS;
             this.flpPersonal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpPersonal.Location = new System.Drawing.Point(0, 0);
             this.flpPersonal.Name = "flpPersonal";
             this.flpPersonal.Size = new System.Drawing.Size(800, 450);
             this.flpPersonal.TabIndex = 0;
             // 
-            // vistaListaPersonal
+            // VistaListaPersonal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.flpPersonal);
-            this.Name = "vistaListaPersonal";
+            this.Name = "VistaListaPersonal";
             this.Text = "vistaListaPersonal";
             this.ResumeLayout(false);
 

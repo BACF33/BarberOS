@@ -18,5 +18,10 @@ namespace BarberOS.Vista
             InitializeComponent();
             ControlPanelBarbero controladorPanelBarbero = new ControlPanelBarbero(this, passedId, passedName, passedRole);
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
