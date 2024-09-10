@@ -72,7 +72,8 @@ namespace BarberOS.Controlador
             //3 Se ejecutara la funcion login del dao, el valor que este regrese se lo hara a la variable answer
             int answer = daoThis.login();
             //8 Si el valor obtenido por answer es 1 (inicio de sesion correcto esto se ejecuta)
-            if(answer == 1)
+
+            if(answer == 1 && daoThis.FirstLogin == false)
             {
                 menuForm.btnIngresar.Text = "SALIR"; 
                 menuForm.btnCurrentUser.Text = daoThis.Username;
@@ -93,6 +94,10 @@ namespace BarberOS.Controlador
                     menuForm.btnAgendar.Visible = false;
                     menuForm.btnInicio.Visible = false;
                 }
+            }
+            else if (answer == 1 && daoThis.FirstLogin == true)
+            {
+                menuForm.controladorMenu.AbrirFormulario(new VistaPrimerLogin());
             }
             //10 Si el valor obtenido por answer no es 1 (inicio de sesion incorrecto esto se ejecuta) test
             else

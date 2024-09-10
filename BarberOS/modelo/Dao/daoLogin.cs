@@ -26,7 +26,7 @@ namespace BarberOS.Modelo.Dao
                     //a que los roles de usuario estan en una tabla diferente, asi se mostrara como texto
                     conexion.Open();
                     using (SqlCommand cmd = new SqlCommand("" +
-                        "SELECT u.userPoints, r.roleName " +
+                        "SELECT u.userPoints, r.roleName, u.userRequiresRestart " +
                         "FROM users u " +
                         "INNER JOIN userRoles r ON u.userRole = r.roleId " +
                         "WHERE u.userName = @userName AND (u.userPassword = @userPassword OR u.userBirthPlace = @userPassword)", conexion))
@@ -45,6 +45,7 @@ namespace BarberOS.Modelo.Dao
                         {
                             Role = reader["roleName"].ToString();
                             Points = (int)reader["userPoints"];
+                            FirstLogin = (bool)reader["userRequiresRestart"];
                             return 1;
                         }
                         else

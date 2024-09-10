@@ -12,11 +12,13 @@ namespace BarberOS.Modelo.Dto
         private string password;
         private string role;
         private int points;
+        private bool firstLogin;
 
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
         public string Role { get => role; set => role = value; }
         public int Points { get => points; set => points = value;}
+        public bool FirstLogin { get => firstLogin; set => firstLogin = value; }
         
     }
 }
