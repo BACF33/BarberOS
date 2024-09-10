@@ -28,12 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listAgendar = new System.Windows.Forms.ListView();
-            this.promocionId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.promocionNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.promocionPrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.promocionTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.promocionPoder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,9 +37,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -53,57 +47,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // listAgendar
-            // 
-            this.listAgendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(42)))), ((int)(((byte)(68)))));
-            this.listAgendar.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.promocionId,
-            this.promocionNombre,
-            this.promocionPrecio,
-            this.promocionTipo,
-            this.promocionPoder});
-            this.listAgendar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listAgendar.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listAgendar.FullRowSelect = true;
-            this.listAgendar.GridLines = true;
-            this.listAgendar.HideSelection = false;
-            this.listAgendar.Location = new System.Drawing.Point(335, 3);
-            this.listAgendar.Name = "listAgendar";
-            this.listAgendar.Size = new System.Drawing.Size(606, 491);
-            this.listAgendar.TabIndex = 152;
-            this.listAgendar.UseCompatibleStateImageBehavior = false;
-            this.listAgendar.View = System.Windows.Forms.View.Details;
-            // 
-            // promocionId
-            // 
-            this.promocionId.Text = "ID";
-            // 
-            // promocionNombre
-            // 
-            this.promocionNombre.Text = "Nombre";
-            this.promocionNombre.Width = 120;
-            // 
-            // promocionPrecio
-            // 
-            this.promocionPrecio.Text = "Precio";
-            this.promocionPrecio.Width = 124;
-            // 
-            // promocionTipo
-            // 
-            this.promocionTipo.Text = "Tipo";
-            this.promocionTipo.Width = 149;
-            // 
-            // promocionPoder
-            // 
-            this.promocionPoder.Text = "Descuento";
-            this.promocionPoder.Width = 120;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(59, 258);
+            this.button1.Location = new System.Drawing.Point(318, 264);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 45);
             this.button1.TabIndex = 143;
@@ -113,45 +62,45 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(20, 119);
+            this.label2.Location = new System.Drawing.Point(305, 151);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 13);
+            this.label2.Size = new System.Drawing.Size(174, 27);
             this.label2.TabIndex = 142;
             this.label2.Text = "Seleccionar hora";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(20, 23);
+            this.label1.Location = new System.Drawing.Point(305, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.Size = new System.Drawing.Size(163, 23);
             this.label1.TabIndex = 141;
             this.label1.Text = "Seleccionar fecha";
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(23, 169);
+            this.dateTimePicker2.Location = new System.Drawing.Point(308, 201);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(212, 20);
             this.dateTimePicker2.TabIndex = 140;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(23, 58);
+            this.dateTimePicker1.Location = new System.Drawing.Point(308, 90);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(212, 20);
             this.dateTimePicker1.TabIndex = 139;
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 612F));
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.17605F));
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.listAgendar, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 77);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -170,7 +119,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(326, 491);
+            this.panel2.Size = new System.Drawing.Size(938, 491);
             this.panel2.TabIndex = 155;
             // 
             // tableLayoutPanel2
@@ -200,16 +149,15 @@
             this.panel1.Size = new System.Drawing.Size(944, 66);
             this.panel1.TabIndex = 138;
             // 
-            // label10
+            // pictureBox1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(733, 12);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(203, 38);
-            this.label10.TabIndex = 138;
-            this.label10.Text = "Agendar Citas";
+            this.pictureBox1.Image = global::BarberOS.Properties.Resources.BarberOS_Logo_oficial_Blanco;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 63);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 140;
+            this.pictureBox1.TabStop = false;
             // 
             // label7
             // 
@@ -222,15 +170,16 @@
             this.label7.TabIndex = 139;
             this.label7.Text = "BarberOs";
             // 
-            // pictureBox1
+            // label10
             // 
-            this.pictureBox1.Image = global::BarberOS.Properties.Resources.BarberOS_Logo_oficial_Blanco;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 63);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 140;
-            this.pictureBox1.TabStop = false;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(733, 12);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(203, 38);
+            this.label10.TabIndex = 138;
+            this.label10.Text = "Agendar Citas";
             // 
             // vistaCitas
             // 
@@ -252,12 +201,6 @@
         }
 
         #endregion
-        public System.Windows.Forms.ListView listAgendar;
-        private System.Windows.Forms.ColumnHeader promocionId;
-        private System.Windows.Forms.ColumnHeader promocionNombre;
-        private System.Windows.Forms.ColumnHeader promocionPrecio;
-        private System.Windows.Forms.ColumnHeader promocionTipo;
-        private System.Windows.Forms.ColumnHeader promocionPoder;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
