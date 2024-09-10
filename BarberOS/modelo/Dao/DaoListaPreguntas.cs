@@ -32,7 +32,7 @@ namespace BarberOS.Modelo.Dao
                     (SELECT roleId FROM userRoles WHERE roleName = @roleName),
                     @userEmail,
                     @userBirthPlace
-                    )";
+                    )"; //Test
 
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
