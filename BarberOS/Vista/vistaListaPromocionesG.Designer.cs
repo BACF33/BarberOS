@@ -31,7 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnAClientes = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.btnActualizar2 = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
@@ -46,6 +45,7 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.promocionId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionPrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -95,17 +95,6 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Precio de la Promocion";
             // 
-            // txtNombre
-            // 
-            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(83, 167);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(5);
-            this.txtNombre.MaxLength = 50;
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(292, 20);
-            this.txtNombre.TabIndex = 1;
-            // 
             // txtPrecio
             // 
             this.txtPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -116,6 +105,7 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(292, 20);
             this.txtPrecio.TabIndex = 0;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
             // btnActualizar2
             // 
@@ -229,6 +219,7 @@
             // 
             // txtId
             // 
+            this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(83, 126);
             this.txtId.MaxLength = 50;
             this.txtId.Name = "txtId";
@@ -237,6 +228,7 @@
             // 
             // cmbTipo
             // 
+            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipo.FormattingEnabled = true;
             this.cmbTipo.Items.AddRange(new object[] {
             "Cabello",
@@ -250,6 +242,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.txtNombre);
             this.panel1.Controls.Add(this.cmbTipo);
             this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.label9);
@@ -263,7 +256,6 @@
             this.panel1.Controls.Add(this.btnActualizar);
             this.panel1.Controls.Add(this.btnActualizar2);
             this.panel1.Controls.Add(this.txtPrecio);
-            this.panel1.Controls.Add(this.txtNombre);
             this.panel1.Controls.Add(this.label4);
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(65, 173);
@@ -271,6 +263,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(455, 420);
             this.panel1.TabIndex = 133;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(83, 166);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(292, 20);
+            this.txtNombre.TabIndex = 130;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras);
             // 
             // promocionId
             // 
@@ -406,7 +406,6 @@
             this.Controls.Add(this.panel2);
             this.Name = "VistaListaPromocionesG";
             this.Text = "vistaListaPromocionesG";
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -421,7 +420,6 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Button btnAClientes;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox txtNombre;
         public System.Windows.Forms.TextBox txtPrecio;
         public System.Windows.Forms.Button btnActualizar2;
         public System.Windows.Forms.Button btnActualizar;
@@ -449,5 +447,6 @@
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.TextBox txtNombre;
     }
 }

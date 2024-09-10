@@ -87,7 +87,7 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(328, 26);
             this.txtUser.TabIndex = 100;
-            this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nuevoUsuarioV);
+            this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras);
             // 
             // txtPassword
             // 

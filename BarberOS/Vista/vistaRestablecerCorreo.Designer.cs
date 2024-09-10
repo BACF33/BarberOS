@@ -35,9 +35,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnPreguntas = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -57,7 +58,7 @@
             this.btnOtro.Name = "btnOtro";
             this.btnOtro.Size = new System.Drawing.Size(297, 77);
             this.btnOtro.TabIndex = 0;
-            this.btnOtro.Text = "Reestablecer por otro metodo";
+            this.btnOtro.Text = "Reestablecer por intervencion";
             this.btnOtro.UseVisualStyleBackColor = false;
             // 
             // txtUser
@@ -122,6 +123,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(103)))));
+            this.panel1.Controls.Add(this.btnPreguntas);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.label3);
@@ -132,10 +134,34 @@
             this.panel1.Controls.Add(this.btnOtro);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.txtUser);
-            this.panel1.Location = new System.Drawing.Point(93, 55);
+            this.panel1.Location = new System.Drawing.Point(236, 45);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(747, 541);
             this.panel1.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(374, 54);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(354, 33);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Restablecer contraseña";
+            // 
+            // btnPreguntas
+            // 
+            this.btnPreguntas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
+            this.btnPreguntas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreguntas.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnPreguntas.Location = new System.Drawing.Point(55, 424);
+            this.btnPreguntas.Name = "btnPreguntas";
+            this.btnPreguntas.Size = new System.Drawing.Size(297, 77);
+            this.btnPreguntas.TabIndex = 10;
+            this.btnPreguntas.Text = "Reestablecer por preguntas";
+            this.btnPreguntas.UseVisualStyleBackColor = false;
             // 
             // pictureBox4
             // 
@@ -157,17 +183,6 @@
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(374, 54);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(354, 33);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Restablecer contraseña";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BarberOS.Properties.Resources._78475991;
@@ -185,7 +200,7 @@
             this.pictureBox2.Image = global::BarberOS.Properties.Resources.Fondo_negro_de_barberia;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(935, 650);
+            this.pictureBox2.Size = new System.Drawing.Size(1264, 681);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -194,7 +209,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 650);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Name = "vistaRestablecerCorreo";
@@ -222,5 +237,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         public System.Windows.Forms.Button btnOtro;
+        public System.Windows.Forms.Button btnPreguntas;
     }
 }

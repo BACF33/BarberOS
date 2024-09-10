@@ -21,11 +21,12 @@ namespace BarberOS.Vista
             this.KeyDown += Form_KeyDown;
         }
 
-        private void nuevoUsuarioV(object sender, KeyPressEventArgs e)
+        private void SoloLetras(object sender, KeyPressEventArgs e)
         {
-
-            if (txtUser.TextLength > 49)
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
                 e.Handled = true;
+            }
         }
 
         private void nuevaContraseñaV(object sender, KeyPressEventArgs e)

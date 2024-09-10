@@ -31,6 +31,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -44,7 +45,6 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnACortes = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtCargo = new System.Windows.Forms.TextBox();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -100,7 +100,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.2807F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.7193F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1400, 730);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1370, 730);
             this.tableLayoutPanel1.TabIndex = 134;
             // 
             // tableLayoutPanel2
@@ -115,12 +115,13 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1394, 635);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1364, 635);
             this.tableLayoutPanel2.TabIndex = 133;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(42)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.cmbCargo);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.pictureBox6);
@@ -134,7 +135,6 @@
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.btnACortes);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.txtCargo);
             this.panel1.Controls.Add(this.btnActualizar);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label6);
@@ -152,9 +152,21 @@
             this.panel1.Location = new System.Drawing.Point(5, 5);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(687, 625);
+            this.panel1.Size = new System.Drawing.Size(672, 625);
             this.panel1.TabIndex = 131;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // cmbCargo
+            // 
+            this.cmbCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCargo.FormattingEnabled = true;
+            this.cmbCargo.Items.AddRange(new object[] {
+            "Admin",
+            "Cliente"});
+            this.cmbCargo.Location = new System.Drawing.Point(84, 331);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(565, 21);
+            this.cmbCargo.TabIndex = 141;
             // 
             // pictureBox8
             // 
@@ -247,9 +259,9 @@
             this.txtLugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLugar.Location = new System.Drawing.Point(82, 459);
             this.txtLugar.Margin = new System.Windows.Forms.Padding(5);
-            this.txtLugar.MaxLength = 60;
+            this.txtLugar.MaxLength = 50;
             this.txtLugar.Name = "txtLugar";
-            this.txtLugar.Size = new System.Drawing.Size(582, 29);
+            this.txtLugar.Size = new System.Drawing.Size(567, 29);
             this.txtLugar.TabIndex = 132;
             // 
             // label10
@@ -270,9 +282,9 @@
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(82, 396);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
-            this.txtEmail.MaxLength = 60;
+            this.txtEmail.MaxLength = 50;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(582, 29);
+            this.txtEmail.Size = new System.Drawing.Size(567, 29);
             this.txtEmail.TabIndex = 130;
             // 
             // btnACortes
@@ -298,18 +310,6 @@
             this.label8.TabIndex = 129;
             this.label8.Text = "Personal Email";
             // 
-            // txtCargo
-            // 
-            this.txtCargo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCargo.Location = new System.Drawing.Point(82, 333);
-            this.txtCargo.Margin = new System.Windows.Forms.Padding(5);
-            this.txtCargo.MaxLength = 60;
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(582, 29);
-            this.txtCargo.TabIndex = 127;
-            // 
             // btnActualizar
             // 
             this.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -317,7 +317,7 @@
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.Color.White;
-            this.btnActualizar.Location = new System.Drawing.Point(213, 555);
+            this.btnActualizar.Location = new System.Drawing.Point(206, 555);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(132, 50);
@@ -363,9 +363,9 @@
             this.txtPuntos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPuntos.Location = new System.Drawing.Point(84, 270);
             this.txtPuntos.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPuntos.MaxLength = 60;
+            this.txtPuntos.MaxLength = 50;
             this.txtPuntos.Name = "txtPuntos";
-            this.txtPuntos.Size = new System.Drawing.Size(582, 29);
+            this.txtPuntos.Size = new System.Drawing.Size(567, 29);
             this.txtPuntos.TabIndex = 122;
             this.txtPuntos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
@@ -376,7 +376,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(212, 506);
+            this.btnAgregar.Location = new System.Drawing.Point(205, 506);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(132, 43);
@@ -412,7 +412,7 @@
             this.btnActualizar2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnActualizar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar2.ForeColor = System.Drawing.Color.White;
-            this.btnActualizar2.Location = new System.Drawing.Point(352, 506);
+            this.btnActualizar2.Location = new System.Drawing.Point(345, 506);
             this.btnActualizar2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnActualizar2.Name = "btnActualizar2";
             this.btnActualizar2.Size = new System.Drawing.Size(138, 43);
@@ -427,9 +427,9 @@
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.Location = new System.Drawing.Point(82, 205);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(5);
-            this.txtContraseña.MaxLength = 60;
+            this.txtContraseña.MaxLength = 500;
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(584, 31);
+            this.txtContraseña.Size = new System.Drawing.Size(569, 31);
             this.txtContraseña.TabIndex = 0;
             // 
             // txtName
@@ -439,9 +439,11 @@
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(82, 142);
             this.txtName.Margin = new System.Windows.Forms.Padding(5);
+            this.txtName.MaxLength = 50;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(584, 29);
+            this.txtName.Size = new System.Drawing.Size(569, 29);
             this.txtName.TabIndex = 1;
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras);
             // 
             // label4
             // 
@@ -471,9 +473,9 @@
             this.listEmpleados.FullRowSelect = true;
             this.listEmpleados.GridLines = true;
             this.listEmpleados.HideSelection = false;
-            this.listEmpleados.Location = new System.Drawing.Point(700, 3);
+            this.listEmpleados.Location = new System.Drawing.Point(685, 3);
             this.listEmpleados.Name = "listEmpleados";
-            this.listEmpleados.Size = new System.Drawing.Size(691, 629);
+            this.listEmpleados.Size = new System.Drawing.Size(676, 629);
             this.listEmpleados.TabIndex = 0;
             this.listEmpleados.UseCompatibleStateImageBehavior = false;
             this.listEmpleados.View = System.Windows.Forms.View.Details;
@@ -521,7 +523,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1394, 83);
+            this.panel2.Size = new System.Drawing.Size(1364, 83);
             this.panel2.TabIndex = 129;
             // 
             // pictureBox2
@@ -619,7 +621,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1400, 724);
+            this.ClientSize = new System.Drawing.Size(1370, 724);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnActualizarEmpleados);
             this.Name = "VistaListaPersonalG";
@@ -660,7 +662,6 @@
         public System.Windows.Forms.TextBox txtEmail;
         public System.Windows.Forms.Button btnACortes;
         private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.TextBox txtCargo;
         public System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
@@ -690,5 +691,6 @@
         public System.Windows.Forms.Button btnBorrar;
         public System.Windows.Forms.Button btnBuscar;
         public System.Windows.Forms.Button btnActualizarEmpleados;
+        public System.Windows.Forms.ComboBox cmbCargo;
     }
 }

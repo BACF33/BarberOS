@@ -19,7 +19,10 @@ namespace BarberOS.Controlador
         {
             vistaControlada = vistaPasada;
             vistaControlada.btnEnviar.Click += (sender, e) => Enviar();
-            vistaControlada.btnOtro.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new VistaReestablecerAdmin());
+            vistaControlada.btnOtro.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new 
+VistaReestablecerAdmin());
+            vistaControlada.btnPreguntas.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new
+vistaRestablecerPreguntas());
         }
         public void SendEmail(string recipientEmail, string subject, string body)
         {

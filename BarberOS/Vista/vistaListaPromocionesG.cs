@@ -34,5 +34,12 @@ namespace BarberOS.Vista
                 e.Handled = true;
             }
         }
+        private void SoloLetras(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

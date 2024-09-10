@@ -18,47 +18,17 @@ namespace BarberOS.Controlador
             controladaVista = vistaPasada;
             menuForm = passedMenuForm;
 
-            controladaVista.listRegistros.SelectedIndexChanged += (sender, e) => ShowData();
-
 
             //Cuando se presionen los botones marcados en la izquierda se ejecutaran las funciones a la derech
             //por ejemplo si se presiona agregar se ejecutara la funcion insertData
             controladaVista.btnBorrar.Click += (sender, e) => deleteData();
-            controladaVista.btnInsertar.Click += (sender, e) => InsertData();
-            controladaVista.btnActualizar.Click += (sender, e) => UpdateData();
             controladaVista.btnBorrar.Click += (sender, e) => searchData();
             controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenuForm));
             dao.Populate(controladaVista);
         }
 
-        public void ShowData()
-        {
-            if (controladaVista.listRegistros.SelectedItems.Count > 0)
-            {
-                ListViewItem seleccionado = controladaVista.listRegistros.SelectedItems[0];
-                controladaVista.txtId.Text = seleccionado.SubItems[1].Text;
-                controladaVista.txtUser.Text = seleccionado.SubItems[2].Text;
-                controladaVista.txtProduct.Text = seleccionado.SubItems[3].Text;
-                controladaVista.txtPromotion.Text = seleccionado.SubItems[4].Text;
-            }
-            else
-            {
-                controladaVista.txtId.Text = null;
-                controladaVista.txtUser.Text = null;
-                controladaVista.txtProduct.Text = null;
-                controladaVista.txtPromotion.Text = null;
-            }
-        }
-
-        public void InsertData()
-        {
-            dao.Insert(controladaVista);
-            dao.Populate(controladaVista);
-        }
-
         public void UpdateData()
         {
-            dao.Update(controladaVista);
             dao.Populate(controladaVista);
         }
 

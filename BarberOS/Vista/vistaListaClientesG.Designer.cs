@@ -37,13 +37,13 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnActualizarEmpleados = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtLugar = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.lblLugar = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
-            this.txtCargo = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnActualizar2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -161,13 +161,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.cmbCargo);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.txtLugar);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.lblLugar);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.txtId);
-            this.panel1.Controls.Add(this.txtCargo);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.btnActualizar2);
             this.panel1.Controls.Add(this.label6);
@@ -186,6 +186,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(528, 521);
             this.panel1.TabIndex = 142;
+            // 
+            // cmbCargo
+            // 
+            this.cmbCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCargo.FormattingEnabled = true;
+            this.cmbCargo.Items.AddRange(new object[] {
+            "Admin",
+            "Cliente"});
+            this.cmbCargo.Location = new System.Drawing.Point(70, 288);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(365, 21);
+            this.cmbCargo.TabIndex = 134;
             // 
             // label10
             // 
@@ -242,24 +254,13 @@
             // 
             this.txtId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(71, 118);
             this.txtId.Margin = new System.Windows.Forms.Padding(5);
             this.txtId.MaxLength = 50;
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(146, 20);
             this.txtId.TabIndex = 128;
-            // 
-            // txtCargo
-            // 
-            this.txtCargo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCargo.Location = new System.Drawing.Point(70, 290);
-            this.txtCargo.Margin = new System.Windows.Forms.Padding(5);
-            this.txtCargo.MaxLength = 50;
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(365, 20);
-            this.txtCargo.TabIndex = 127;
-            this.txtCargo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
             // label9
             // 
@@ -383,6 +384,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(365, 20);
             this.txtName.TabIndex = 1;
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras);
             // 
             // label4
             // 
@@ -508,7 +510,6 @@
         private System.Windows.Forms.Label lblLugar;
         public System.Windows.Forms.TextBox txtEmail;
         public System.Windows.Forms.TextBox txtId;
-        public System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.Label label9;
         public System.Windows.Forms.Button btnActualizar2;
         private System.Windows.Forms.Label label6;
@@ -531,5 +532,6 @@
         private System.Windows.Forms.ColumnHeader empleadoCargo;
         private System.Windows.Forms.ColumnHeader empleadoNumero;
         private System.Windows.Forms.ColumnHeader columnHeader1;
+        public System.Windows.Forms.ComboBox cmbCargo;
     }
 }
