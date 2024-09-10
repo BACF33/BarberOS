@@ -8,7 +8,8 @@ namespace BarberOS.Vista
 {
     public partial class VistaListaPersonalG : Form
     {
-        public VistaListaPersonalG(vistaMenu menuForm)
+     //Test
+     public VistaListaPersonalG(vistaMenu menuForm)
         {
             InitializeComponent();
             ControlListaPersonalG controladorVista = new ControlListaPersonalG(this, menuForm);
