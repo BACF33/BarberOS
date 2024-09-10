@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btnAClientes = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.btnActualizar2 = new System.Windows.Forms.Button();
@@ -73,17 +72,6 @@
             this.label1.Size = new System.Drawing.Size(291, 38);
             this.label1.TabIndex = 132;
             this.label1.Text = "Lista de Promociones";
-            // 
-            // btnAClientes
-            // 
-            this.btnAClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnAClientes.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAClientes.Location = new System.Drawing.Point(210, 623);
-            this.btnAClientes.Name = "btnAClientes";
-            this.btnAClientes.Size = new System.Drawing.Size(193, 60);
-            this.btnAClientes.TabIndex = 134;
-            this.btnAClientes.Text = "Clientes";
-            this.btnAClientes.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -399,7 +387,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1170, 729);
-            this.Controls.Add(this.btnAClientes);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listPromociones);
             this.Controls.Add(this.label1);
@@ -418,7 +405,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Button btnAClientes;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox txtPrecio;
         public System.Windows.Forms.Button btnActualizar2;

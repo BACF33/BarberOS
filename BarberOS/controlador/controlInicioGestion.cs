@@ -20,6 +20,13 @@ namespace BarberOS.Controlador
             controladaVista.btnPersonal.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaPersonalG(menuForm));
             //Si se presiona clientes se abrirar un formulario vistaListaClientesG
             controladaVista.btnClientes.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaClientesG(menuForm));
+
+            controladaVista.btnProductos.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaCortesG(menuForm));
+
+            controladaVista.btnPromo.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaPromocionesG(menuForm));
+
+
+
             //Si se presiona registros se abrirar un formulario vistaListaRegistrosG
             controladaVista.btnRegistros.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaRegistros(passedMenuForm));
         }

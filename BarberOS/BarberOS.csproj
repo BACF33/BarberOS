@@ -154,6 +154,12 @@
     <Compile Include="Vista\vistaListaPersonalG.Designer.cs">
       <DependentUpon>vistaListaPersonalG.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\vistaListaPreguntas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaListaPreguntas.Designer.cs">
+      <DependentUpon>vistaListaPreguntas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\VistaNuevaContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -370,6 +376,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaListaPersonalG.resx">
       <DependentUpon>vistaListaPersonalG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaListaPreguntas.resx">
+      <DependentUpon>vistaListaPreguntas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaListaPromociones.resx">
       <DependentUpon>VistaListaPromociones.cs</DependentUpon>

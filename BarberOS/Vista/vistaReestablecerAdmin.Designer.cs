@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnRestablecer = new System.Windows.Forms.Button();
             this.pnl1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -52,7 +53,6 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.pnl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -154,6 +154,18 @@
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(698, 557);
             this.pnl1.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(59, 526);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(615, 20);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Tambien puede iniciar sesion en la pantalla usando su lugar de nacimiento si se b" +
+    "rindo\r\n";
             // 
             // pictureBox5
             // 
@@ -333,18 +345,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(59, 526);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(615, 20);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Tambien puede iniciar sesion en la pantalla usando su lugar de nacimiento si se b" +
-    "rindo\r\n";
             // 
             // VistaReestablecerAdmin
             // 
