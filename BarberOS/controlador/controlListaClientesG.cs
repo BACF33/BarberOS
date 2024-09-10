@@ -63,14 +63,29 @@ namespace BarberOS.Controlador
 
         public void InsertData()
         {
-            dao.Insert(controladaVista);
-            dao.Populate(controladaVista);
+            if(controladaVista.txtName.Text.Equals("") || controladaVista.txtContraseña.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.cmbCargo.Text.Equals("") || controladaVista.txtEmail.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.txtLugar.Text.Equals(""))
+            {
+                MessageBox.Show("Hay campos vacios");
+            }
+            else
+            {
+                dao.Insert(controladaVista);
+                dao.Populate(controladaVista);
+
+            }
         }
 
         public void UpdateData()
         {
-            dao.Update(controladaVista);
-            dao.Populate(controladaVista);
+            if (controladaVista.txtName.Text.Equals("") || controladaVista.txtContraseña.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.cmbCargo.Text.Equals("") || controladaVista.txtEmail.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.txtLugar.Text.Equals(""))
+            {
+                MessageBox.Show("Hay campos vacios");
+            }
+            else
+            {
+                dao.Update(controladaVista);
+                dao.Populate(controladaVista);
+            }
         }
 
         public void deleteData()

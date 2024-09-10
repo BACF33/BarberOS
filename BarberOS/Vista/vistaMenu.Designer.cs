@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnAgendar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.PanelContenedor.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -75,6 +75,13 @@
             this.PanelContenedor.Name = "PanelContenedor";
             this.PanelContenedor.Size = new System.Drawing.Size(1074, 729);
             this.PanelContenedor.TabIndex = 32;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(0, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1074, 706);
+            this.panel1.TabIndex = 0;
             // 
             // flowLayoutPanel1
             // 
@@ -165,6 +172,7 @@
             this.btnBarberos.Name = "btnBarberos";
             this.btnBarberos.Size = new System.Drawing.Size(281, 66);
             this.btnBarberos.TabIndex = 102;
+            this.btnBarberos.TabStop = false;
             this.btnBarberos.Text = "     BARBEROS";
             this.btnBarberos.UseVisualStyleBackColor = false;
             // 
@@ -200,6 +208,7 @@
             this.btnCortes.Name = "btnCortes";
             this.btnCortes.Size = new System.Drawing.Size(273, 66);
             this.btnCortes.TabIndex = 103;
+            this.btnCortes.TabStop = false;
             this.btnCortes.Text = "    CORTES";
             this.btnCortes.UseVisualStyleBackColor = false;
             // 
@@ -235,6 +244,7 @@
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(270, 66);
             this.btnInicio.TabIndex = 101;
+            this.btnInicio.TabStop = false;
             this.btnInicio.Text = "INICIO";
             this.btnInicio.UseVisualStyleBackColor = false;
             // 
@@ -270,6 +280,7 @@
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(271, 58);
             this.btnIngresar.TabIndex = 104;
+            this.btnIngresar.TabStop = false;
             this.btnIngresar.Text = "         INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = false;
             // 
@@ -305,15 +316,9 @@
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(270, 54);
             this.btnAgendar.TabIndex = 105;
+            this.btnAgendar.TabStop = false;
             this.btnAgendar.Text = "         AGENDAR";
             this.btnAgendar.UseVisualStyleBackColor = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(0, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1074, 706);
-            this.panel1.TabIndex = 0;
             // 
             // vistaMenu
             // 
