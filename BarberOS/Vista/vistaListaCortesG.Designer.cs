@@ -52,7 +52,6 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnAPersonal = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.txtId = new System.Windows.Forms.TextBox();
@@ -289,7 +288,6 @@
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.btnAPersonal);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.cmbTipo);
             this.panel1.Controls.Add(this.txtId);
@@ -364,19 +362,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 136;
             this.pictureBox3.TabStop = false;
-            // 
-            // btnAPersonal
-            // 
-            this.btnAPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnAPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAPersonal.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAPersonal.ForeColor = System.Drawing.Color.White;
-            this.btnAPersonal.Location = new System.Drawing.Point(219, 549);
-            this.btnAPersonal.Name = "btnAPersonal";
-            this.btnAPersonal.Size = new System.Drawing.Size(205, 60);
-            this.btnAPersonal.TabIndex = 135;
-            this.btnAPersonal.Text = "Personal";
-            this.btnAPersonal.UseVisualStyleBackColor = false;
             // 
             // label8
             // 
@@ -585,7 +570,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        public System.Windows.Forms.Button btnAPersonal;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.ComboBox cmbTipo;
         public System.Windows.Forms.TextBox txtId;

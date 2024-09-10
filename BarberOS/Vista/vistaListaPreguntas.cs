@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BarberOS.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,18 +11,17 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaCitas : Form
+    public partial class vistaListaPreguntas : Form
     {
-        public vistaCitas()
+        public vistaListaPreguntas()
         {
             InitializeComponent();
+            new ControlListaPregunas(this);
         }
 
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
-      
     }
 }

@@ -75,6 +75,7 @@
   <ItemGroup>
     <Compile Include="Controlador\ControlActualizarRegistro.cs" />
     <Compile Include="Controlador\ControlCitas.cs" />
+    <Compile Include="Controlador\ControlListaPregunas.cs" />
     <Compile Include="Controlador\ControlObtenerPin.cs" />
     <Compile Include="Controlador\ControlInicio.cs" />
     <Compile Include="Controlador\ControlInicioGestion.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Controlador\ControlTotal.cs" />
     <Compile Include="Modelo\Dao\DaoActualizarRegistro.cs" />
     <Compile Include="Modelo\Dao\DaoCitas.cs" />
+    <Compile Include="Modelo\Dao\DaoListaPreguntas.cs" />
     <Compile Include="Modelo\Dao\DaoMenu.cs" />
     <Compile Include="Modelo\Dao\DaoNuevaContraseña.cs" />
     <Compile Include="Modelo\Dao\DaoPrimerUsoNegocio.cs" />
@@ -153,6 +155,12 @@
     </Compile>
     <Compile Include="Vista\vistaListaPersonalG.Designer.cs">
       <DependentUpon>vistaListaPersonalG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaListaPreguntas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaListaPreguntas.Designer.cs">
+      <DependentUpon>vistaListaPreguntas.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\VistaNuevaContraseña.cs">
       <SubType>Form</SubType>
@@ -370,6 +378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaListaPersonalG.resx">
       <DependentUpon>vistaListaPersonalG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaListaPreguntas.resx">
+      <DependentUpon>vistaListaPreguntas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaListaPromociones.resx">
       <DependentUpon>VistaListaPromociones.cs</DependentUpon>
@@ -678,6 +689,7 @@
     <None Include="Resources\Cortes icon blue png11.png" />
     <None Include="Resources\Cortes icon blue png12.png" />
     <None Include="Resources\Etiqueta png.png" />
+    <None Include="Resources\escuela.png" />
     <Content Include="Resources\Home icon1.png" />
     <None Include="Resources\Proyecto nuevo %288%291.png" />
     <None Include="Resources\Home icon11.png" />

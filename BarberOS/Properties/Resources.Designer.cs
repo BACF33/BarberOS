@@ -793,6 +793,16 @@ namespace BarberOS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap escuela {
+            get {
+                object obj = ResourceManager.GetObject("escuela", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Estrella_amarilla {
             get {
                 object obj = ResourceManager.GetObject("Estrella_amarilla", resourceCulture);
