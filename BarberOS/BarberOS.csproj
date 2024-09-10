@@ -75,6 +75,7 @@
   <ItemGroup>
     <Compile Include="Controlador\ControlActualizarRegistro.cs" />
     <Compile Include="Controlador\ControlCitas.cs" />
+    <Compile Include="Controlador\ControlListaPregunas.cs" />
     <Compile Include="Controlador\ControlObtenerPin.cs" />
     <Compile Include="Controlador\ControlInicio.cs" />
     <Compile Include="Controlador\ControlInicioGestion.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Controlador\ControlTotal.cs" />
     <Compile Include="Modelo\Dao\DaoActualizarRegistro.cs" />
     <Compile Include="Modelo\Dao\DaoCitas.cs" />
+    <Compile Include="Modelo\Dao\DaoListaPreguntas.cs" />
     <Compile Include="Modelo\Dao\DaoMenu.cs" />
     <Compile Include="Modelo\Dao\DaoNuevaContraseña.cs" />
     <Compile Include="Modelo\Dao\DaoPrimerUsoNegocio.cs" />
@@ -687,6 +689,7 @@
     <None Include="Resources\Cortes icon blue png11.png" />
     <None Include="Resources\Cortes icon blue png12.png" />
     <None Include="Resources\Etiqueta png.png" />
+    <None Include="Resources\escuela.png" />
     <Content Include="Resources\Home icon1.png" />
     <None Include="Resources\Proyecto nuevo %288%291.png" />
     <None Include="Resources\Home icon11.png" />

@@ -415,7 +415,7 @@
             this.btnACortes.Name = "btnACortes";
             this.btnACortes.Size = new System.Drawing.Size(190, 64);
             this.btnACortes.TabIndex = 140;
-            this.btnACortes.Text = "Promociones";
+            this.btnACortes.Text = "Preguntas";
             this.btnACortes.UseVisualStyleBackColor = false;
             // 
             // listClientes

@@ -1,4 +1,4 @@
-﻿using BarberOS.Modelo.Dao;
+﻿   using BarberOS.Modelo.Dao;
 using BarberOS.Vista;
 using System;
 using System.Collections.Generic;
@@ -29,7 +29,7 @@ namespace BarberOS.Controlador
             //por ejemplo si se presiona agregar se ejecutara la funcion insertData
             controladaVista.btnBorrar.Click += (sender, e) => deleteData();
             controladaVista.btnAgregar.Click += (sender, e) => InsertData();
-            controladaVista.btnACortes.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaListaCortesG(passedMenuForm));
+            controladaVista.btnACortes.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaPreguntas());
             controladaVista.btnActualizar2.Click += (sender, e) => UpdateData();
             controladaVista.btnBuscar.Click += (sender, e) => searchData();
             controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenuForm));
