@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BarberOS.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace BarberOS.Vista
         public vistaCitas()
         {
             InitializeComponent();
+            new ControlCitas(this);
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
@@ -22,6 +24,9 @@ namespace BarberOS.Vista
 
         }
 
-      
+        private void dateTimePicker2_ValueChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

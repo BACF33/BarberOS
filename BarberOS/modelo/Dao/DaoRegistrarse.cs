@@ -40,7 +40,7 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@userName", NewUser);
                         cmd.Parameters.AddWithValue("@userPassword", NewPassword);
                         cmd.Parameters.AddWithValue("@userEmail", NewEmail);
-                        cmd.Parameters.AddWithValue("@userRequiresRestart", true);
+                        cmd.Parameters.AddWithValue("@userRequiresRestart", false);
 
                         cmd.ExecuteNonQuery();
                     }
@@ -48,6 +48,7 @@ namespace BarberOS.Modelo.Dao
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.ToString());
             }
         }

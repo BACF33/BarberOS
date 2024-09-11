@@ -29,7 +29,7 @@ namespace BarberOS.Controlador
             //por ejemplo si se presiona agregar se ejecutara la funcion insertData
             controladaVista.btnBorrar.Click += (sender, e) => deleteData();
             controladaVista.btnAgregar.Click += (sender, e) => InsertData();
-            controladaVista.btnACortes.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaPreguntas());
+            controladaVista.btnACortes.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new vistaListaPreguntas(passedMenuForm));
             controladaVista.btnActualizar2.Click += (sender, e) => UpdateData();
             controladaVista.btnBuscar.Click += (sender, e) => searchData();
             controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenuForm));
@@ -45,7 +45,6 @@ namespace BarberOS.Controlador
                 controladaVista.txtName.Text = seleccionado.SubItems[1].Text;
                 //controladaVista.txtContraseña.Text = seleccionado.SubItems[2].Text;
                 controladaVista.txtPuntos.Text = seleccionado.SubItems[3].Text;
-                controladaVista.cmbCargo.Text = seleccionado.SubItems[4].Text;
                 controladaVista.txtEmail.Text = seleccionado.SubItems[5].Text;
                 //controladaVista.txtLugar.Text = seleccionado.SubItems[6].Text;
             }
@@ -55,7 +54,6 @@ namespace BarberOS.Controlador
                 controladaVista.txtName.Text = null;
                 //controladaVista.txtContraseña.Text = null;
                 controladaVista.txtPuntos.Text = null;
-                controladaVista.cmbCargo.Text = null;
                 controladaVista.txtEmail.Text = null;
                 //controladaVista.txtLugar.Text = null;
             }
@@ -63,7 +61,7 @@ namespace BarberOS.Controlador
 
         public void InsertData()
         {
-            if(controladaVista.txtName.Text.Equals("") || controladaVista.txtContraseña.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.cmbCargo.Text.Equals("") || controladaVista.txtEmail.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.txtLugar.Text.Equals(""))
+            if(controladaVista.txtName.Text.Equals("") || controladaVista.txtContraseña.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.txtEmail.Text.Equals("") || controladaVista.txtPuntos.Text.Equals(""))
             {
                 MessageBox.Show("Hay campos vacios");
             }
@@ -77,7 +75,7 @@ namespace BarberOS.Controlador
 
         public void UpdateData()
         {
-            if (controladaVista.txtName.Text.Equals("") || controladaVista.txtContraseña.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.cmbCargo.Text.Equals("") || controladaVista.txtEmail.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.txtLugar.Text.Equals(""))
+            if (controladaVista.txtName.Text.Equals("") || controladaVista.txtContraseña.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.txtEmail.Text.Equals("") || controladaVista.txtPuntos.Text.Equals(""))
             {
                 MessageBox.Show("Hay campos vacios");
             }

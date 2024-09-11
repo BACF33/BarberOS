@@ -28,384 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnACortes = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnBorrar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtSearchingFor = new System.Windows.Forms.TextBox();
-            this.btnBorrar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnActualizarEmpleados = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.cmbCargo = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtLugar = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblLugar = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnActualizar2 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.LblNombre = new System.Windows.Forms.Label();
-            this.txtPuntos = new System.Windows.Forms.TextBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnACortes = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.listClientes = new System.Windows.Forms.ListView();
-            this.empleadoId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.empleadoNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.empleadoContraseña = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.empleadoFull = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.empleadoCargo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.empleadoNumero = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.promocionId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.promocionNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.promocionPrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.promocionTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.promocionPoder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtPuntos = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnActualizar2 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.tableLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Controls.Add(this.btnVolver);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.txtSearchingFor);
-            this.panel2.Controls.Add(this.btnBorrar);
-            this.panel2.Controls.Add(this.btnBuscar);
-            this.panel2.Location = new System.Drawing.Point(2, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1350, 73);
-            this.panel2.TabIndex = 138;
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnVolver.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(1039, 23);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(90, 35);
-            this.btnVolver.TabIndex = 104;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 44);
-            this.label3.TabIndex = 125;
-            this.label3.Text = "BarberOs";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(18, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(151, 44);
-            this.label7.TabIndex = 114;
-            this.label7.Text = "BarberOs";
-            // 
-            // txtSearchingFor
-            // 
-            this.txtSearchingFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchingFor.Location = new System.Drawing.Point(349, 24);
-            this.txtSearchingFor.Name = "txtSearchingFor";
-            this.txtSearchingFor.Size = new System.Drawing.Size(394, 29);
-            this.txtSearchingFor.TabIndex = 123;
-            // 
-            // btnBorrar
-            // 
-            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnBorrar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.ForeColor = System.Drawing.Color.Black;
-            this.btnBorrar.Location = new System.Drawing.Point(939, 23);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(95, 35);
-            this.btnBorrar.TabIndex = 102;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = false;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.White;
-            this.btnBuscar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnBuscar.Location = new System.Drawing.Point(246, 24);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(88, 28);
-            this.btnBuscar.TabIndex = 124;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // btnActualizarEmpleados
-            // 
-            this.btnActualizarEmpleados.BackColor = System.Drawing.Color.White;
-            this.btnActualizarEmpleados.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarEmpleados.Location = new System.Drawing.Point(843, 15);
-            this.btnActualizarEmpleados.Name = "btnActualizarEmpleados";
-            this.btnActualizarEmpleados.Size = new System.Drawing.Size(93, 29);
-            this.btnActualizarEmpleados.TabIndex = 137;
-            this.btnActualizarEmpleados.Text = "Actualizar";
-            this.btnActualizarEmpleados.UseVisualStyleBackColor = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.cmbCargo);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.txtLugar);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.lblLugar);
-            this.panel1.Controls.Add(this.txtEmail);
-            this.panel1.Controls.Add(this.txtId);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.btnActualizar2);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.LblNombre);
-            this.panel1.Controls.Add(this.txtPuntos);
-            this.panel1.Controls.Add(this.btnAgregar);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.btnActualizar);
-            this.panel1.Controls.Add(this.txtContraseña);
-            this.panel1.Controls.Add(this.txtName);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(14, 175);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(528, 521);
-            this.panel1.TabIndex = 142;
-            // 
-            // cmbCargo
-            // 
-            this.cmbCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCargo.FormattingEnabled = true;
-            this.cmbCargo.Items.AddRange(new object[] {
-            "Admin",
-            "Cliente"});
-            this.cmbCargo.Location = new System.Drawing.Point(70, 288);
-            this.cmbCargo.Name = "cmbCargo";
-            this.cmbCargo.Size = new System.Drawing.Size(365, 21);
-            this.cmbCargo.TabIndex = 134;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(71, 100);
-            this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 13);
-            this.label10.TabIndex = 133;
-            this.label10.Text = "Cliente Nombre";
-            // 
-            // txtLugar
-            // 
-            this.txtLugar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLugar.Location = new System.Drawing.Point(70, 377);
-            this.txtLugar.Margin = new System.Windows.Forms.Padding(5);
-            this.txtLugar.MaxLength = 50;
-            this.txtLugar.Name = "txtLugar";
-            this.txtLugar.Size = new System.Drawing.Size(365, 20);
-            this.txtLugar.TabIndex = 132;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(68, 359);
-            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 13);
-            this.label8.TabIndex = 131;
-            this.label8.Text = "Cliente Lugar";
-            // 
-            // lblLugar
-            // 
-            this.lblLugar.AutoSize = true;
-            this.lblLugar.Location = new System.Drawing.Point(67, 316);
-            this.lblLugar.Name = "lblLugar";
-            this.lblLugar.Size = new System.Drawing.Size(67, 13);
-            this.lblLugar.TabIndex = 130;
-            this.lblLugar.Text = "Cliente Email";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.Location = new System.Drawing.Point(70, 334);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
-            this.txtEmail.MaxLength = 50;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(365, 20);
-            this.txtEmail.TabIndex = 129;
-            // 
-            // txtId
-            // 
-            this.txtId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(71, 118);
-            this.txtId.Margin = new System.Windows.Forms.Padding(5);
-            this.txtId.MaxLength = 50;
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(146, 20);
-            this.txtId.TabIndex = 128;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(67, 272);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 13);
-            this.label9.TabIndex = 126;
-            this.label9.Text = "Cliente Cargo";
-            // 
-            // btnActualizar2
-            // 
-            this.btnActualizar2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnActualizar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar2.ForeColor = System.Drawing.Color.Black;
-            this.btnActualizar2.Location = new System.Drawing.Point(188, 433);
-            this.btnActualizar2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnActualizar2.Name = "btnActualizar2";
-            this.btnActualizar2.Size = new System.Drawing.Size(127, 54);
-            this.btnActualizar2.TabIndex = 6;
-            this.btnActualizar2.Text = "Actualizar";
-            this.btnActualizar2.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(67, 229);
-            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 13);
-            this.label6.TabIndex = 123;
-            this.label6.Text = "Cliente Puntos";
-            // 
-            // LblNombre
-            // 
-            this.LblNombre.AutoSize = true;
-            this.LblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNombre.Location = new System.Drawing.Point(34, 23);
-            this.LblNombre.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.LblNombre.Name = "LblNombre";
-            this.LblNombre.Size = new System.Drawing.Size(0, 25);
-            this.LblNombre.TabIndex = 0;
-            // 
-            // txtPuntos
-            // 
-            this.txtPuntos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPuntos.Location = new System.Drawing.Point(70, 247);
-            this.txtPuntos.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPuntos.MaxLength = 50;
-            this.txtPuntos.Name = "txtPuntos";
-            this.txtPuntos.Size = new System.Drawing.Size(365, 20);
-            this.txtPuntos.TabIndex = 122;
-            this.txtPuntos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregar.Location = new System.Drawing.Point(63, 433);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(117, 54);
-            this.btnAgregar.TabIndex = 9;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(155, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(242, 38);
-            this.label5.TabIndex = 121;
-            this.label5.Text = "Agregar Barberos";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(67, 143);
-            this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(79, 13);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Cliente Nombre";
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.ForeColor = System.Drawing.Color.Black;
-            this.btnActualizar.Location = new System.Drawing.Point(323, 433);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(145, 54);
-            this.btnActualizar.TabIndex = 6;
-            this.btnActualizar.Text = "Restablecer";
-            this.btnActualizar.UseVisualStyleBackColor = false;
-            // 
-            // txtContraseña
-            // 
-            this.txtContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtContraseña.Location = new System.Drawing.Point(70, 204);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(5);
-            this.txtContraseña.MaxLength = 500;
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(365, 20);
-            this.txtContraseña.TabIndex = 0;
-            // 
-            // txtName
-            // 
-            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.Location = new System.Drawing.Point(70, 161);
-            this.txtName.Margin = new System.Windows.Forms.Padding(5);
-            this.txtName.MaxLength = 50;
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(365, 20);
-            this.txtName.TabIndex = 1;
-            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(67, 186);
-            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Cliente Contraseña";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(21, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(228, 38);
-            this.label2.TabIndex = 141;
-            this.label2.Text = "Lista de Clientes";
             // 
             // btnACortes
             // 
@@ -418,58 +89,434 @@
             this.btnACortes.Text = "Preguntas";
             this.btnACortes.UseVisualStyleBackColor = false;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.09392F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.90607F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1154, 729);
+            this.tableLayoutPanel1.TabIndex = 141;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 5;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.80924F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.65574F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.2459F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.53485F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.65444F));
+            this.tableLayoutPanel2.Controls.Add(this.btnVolver, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnBorrar, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtSearchingFor, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnBuscar, 2, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1148, 125);
+            this.tableLayoutPanel2.TabIndex = 1;
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnVolver.ForeColor = System.Drawing.Color.White;
+            this.btnVolver.Location = new System.Drawing.Point(977, 25);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(147, 75);
+            this.btnVolver.TabIndex = 4;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            // 
+            // btnBorrar
+            // 
+            this.btnBorrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnBorrar.ForeColor = System.Drawing.Color.White;
+            this.btnBorrar.Location = new System.Drawing.Point(779, 25);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(148, 75);
+            this.btnBorrar.TabIndex = 3;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = false;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.Control;
+            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(35, 40);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(157, 44);
+            this.label7.TabIndex = 126;
+            this.label7.Text = "BarberOs";
+            // 
+            // txtSearchingFor
+            // 
+            this.txtSearchingFor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSearchingFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchingFor.Location = new System.Drawing.Point(230, 48);
+            this.txtSearchingFor.Name = "txtSearchingFor";
+            this.txtSearchingFor.Size = new System.Drawing.Size(288, 29);
+            this.txtSearchingFor.TabIndex = 1;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBuscar.Location = new System.Drawing.Point(548, 27);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(178, 71);
+            this.btnBuscar.TabIndex = 2;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.listClientes, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 134);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1148, 592);
+            this.tableLayoutPanel3.TabIndex = 2;
+            // 
             // listClientes
             // 
-            this.listClientes.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.listClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(42)))), ((int)(((byte)(68)))));
             this.listClientes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.empleadoId,
-            this.empleadoNombre,
-            this.empleadoContraseña,
-            this.empleadoFull,
-            this.empleadoCargo,
-            this.empleadoNumero,
-            this.columnHeader1});
+            this.promocionId,
+            this.promocionNombre,
+            this.promocionPrecio,
+            this.promocionTipo,
+            this.promocionPoder});
+            this.listClientes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listClientes.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listClientes.ForeColor = System.Drawing.Color.Black;
             this.listClientes.FullRowSelect = true;
             this.listClientes.GridLines = true;
             this.listClientes.HideSelection = false;
-            this.listClientes.Location = new System.Drawing.Point(565, 176);
+            this.listClientes.Location = new System.Drawing.Point(577, 3);
             this.listClientes.Name = "listClientes";
-            this.listClientes.Size = new System.Drawing.Size(566, 520);
-            this.listClientes.TabIndex = 139;
+            this.listClientes.Size = new System.Drawing.Size(568, 586);
+            this.listClientes.TabIndex = 153;
             this.listClientes.UseCompatibleStateImageBehavior = false;
             this.listClientes.View = System.Windows.Forms.View.Details;
             // 
-            // empleadoId
+            // promocionId
             // 
-            this.empleadoId.Text = "ID";
-            this.empleadoId.Width = 40;
+            this.promocionId.Text = "ID";
             // 
-            // empleadoNombre
+            // promocionNombre
             // 
-            this.empleadoNombre.Text = "Nombre";
-            this.empleadoNombre.Width = 128;
+            this.promocionNombre.Text = "Nombre";
+            this.promocionNombre.Width = 120;
             // 
-            // empleadoContraseña
+            // promocionPrecio
             // 
-            this.empleadoContraseña.Text = "Contraseña";
-            this.empleadoContraseña.Width = 153;
+            this.promocionPrecio.Text = "Precio";
+            this.promocionPrecio.Width = 124;
             // 
-            // empleadoFull
+            // promocionTipo
             // 
-            this.empleadoFull.Text = "Puntos";
-            this.empleadoFull.Width = 80;
+            this.promocionTipo.Text = "Tipo";
+            this.promocionTipo.Width = 149;
             // 
-            // empleadoCargo
+            // promocionPoder
             // 
-            this.empleadoCargo.Text = "Cargo";
-            this.empleadoCargo.Width = 80;
+            this.promocionPoder.Text = "Descuento";
+            this.promocionPoder.Width = 120;
             // 
-            // empleadoNumero
+            // tableLayoutPanel4
             // 
-            this.empleadoNumero.Text = "Numero";
-            this.empleadoNumero.Width = 100;
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel6, 0, 1);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.68297F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84.31703F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(568, 586);
+            this.tableLayoutPanel4.TabIndex = 1;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.46864F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.53136F));
+            this.tableLayoutPanel5.Controls.Add(this.label5, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.txtId, 1, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(562, 85);
+            this.tableLayoutPanel5.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(63, 23);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(230, 39);
+            this.label5.TabIndex = 122;
+            this.label5.Text = "Agregar Cliente";
+            // 
+            // txtId
+            // 
+            this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Location = new System.Drawing.Point(398, 25);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(121, 35);
+            this.txtId.TabIndex = 123;
+            this.txtId.TabStop = false;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel7, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel8, 0, 1);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 94);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 2;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.18623F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.81376F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(562, 489);
+            this.tableLayoutPanel6.TabIndex = 1;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 3;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.38622F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.29518F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.41566F));
+            this.tableLayoutPanel7.Controls.Add(this.txtPuntos, 2, 2);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox3, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox1, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.txtName, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.txtContraseña, 2, 1);
+            this.tableLayoutPanel7.Controls.Add(this.label13, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.label1, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.label2, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox2, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.label4, 1, 3);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox5, 0, 3);
+            this.tableLayoutPanel7.Controls.Add(this.txtEmail, 2, 3);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 4;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.11934F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.88066F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(556, 395);
+            this.tableLayoutPanel7.TabIndex = 2;
+            // 
+            // txtPuntos
+            // 
+            this.txtPuntos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPuntos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPuntos.Location = new System.Drawing.Point(328, 227);
+            this.txtPuntos.Name = "txtPuntos";
+            this.txtPuntos.Size = new System.Drawing.Size(225, 35);
+            this.txtPuntos.TabIndex = 147;
+            this.txtPuntos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::BarberOS.Properties.Resources.Proyecto_nuevo__8_1;
+            this.pictureBox3.Location = new System.Drawing.Point(27, 14);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(69, 56);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 136;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::BarberOS.Properties.Resources.password_icon_1903x2048_m0d1f305;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 112);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 137;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txtName
+            // 
+            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(328, 24);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(225, 35);
+            this.txtName.TabIndex = 5;
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras);
+            // 
+            // txtContraseña
+            // 
+            this.txtContraseña.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Location = new System.Drawing.Point(328, 122);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(225, 35);
+            this.txtContraseña.TabIndex = 6;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(146, 30);
+            this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(156, 24);
+            this.label13.TabIndex = 140;
+            this.label13.Text = "Cliente Nombre";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(131, 128);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(187, 24);
+            this.label1.TabIndex = 141;
+            this.label1.Text = "Cliente Contraseña";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(152, 233);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 24);
+            this.label2.TabIndex = 142;
+            this.label2.Text = "Cliente Puntos";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Image = global::BarberOS.Properties.Resources.Points_png_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(27, 217);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 56);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 138;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(158, 332);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(133, 24);
+            this.label4.TabIndex = 146;
+            this.label4.Text = "Cliente Email";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox5.Image = global::BarberOS.Properties.Resources.Email_IconPNG;
+            this.pictureBox5.Location = new System.Drawing.Point(12, 319);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 144;
+            this.pictureBox5.TabStop = false;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(328, 327);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(225, 35);
+            this.txtEmail.TabIndex = 148;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 2;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.btnAgregar, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btnActualizar2, 0, 0);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 404);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 1;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(556, 82);
+            this.tableLayoutPanel8.TabIndex = 3;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Location = new System.Drawing.Point(343, 3);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(147, 75);
+            this.btnAgregar.TabIndex = 9;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            // 
+            // btnActualizar2
+            // 
+            this.btnActualizar2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnActualizar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
+            this.btnActualizar2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnActualizar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnActualizar2.ForeColor = System.Drawing.Color.White;
+            this.btnActualizar2.Location = new System.Drawing.Point(65, 3);
+            this.btnActualizar2.Name = "btnActualizar2";
+            this.btnActualizar2.Size = new System.Drawing.Size(147, 75);
+            this.btnActualizar2.TabIndex = 8;
+            this.btnActualizar2.Text = "Actualizar";
+            this.btnActualizar2.UseVisualStyleBackColor = false;
             // 
             // VistaListaClientesG
             // 
@@ -477,61 +524,66 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1154, 729);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnACortes);
-            this.Controls.Add(this.listClientes);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.btnActualizarEmpleados);
             this.Name = "VistaListaClientesG";
             this.Text = "vistaListaClientesG";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.tableLayoutPanel8.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel2;
+
+        public System.Windows.Forms.Button btnACortes;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         public System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txtSearchingFor;
-        public System.Windows.Forms.Button btnBorrar;
         public System.Windows.Forms.Button btnBuscar;
-        public System.Windows.Forms.Button btnActualizarEmpleados;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label10;
-        public System.Windows.Forms.TextBox txtLugar;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblLugar;
-        public System.Windows.Forms.TextBox txtEmail;
-        public System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Label label9;
-        public System.Windows.Forms.Button btnActualizar2;
-        private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.Label LblNombre;
-        public System.Windows.Forms.TextBox txtPuntos;
-        public System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label13;
-        public System.Windows.Forms.Button btnActualizar;
-        public System.Windows.Forms.TextBox txtContraseña;
-        public System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Button btnACortes;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         public System.Windows.Forms.ListView listClientes;
-        private System.Windows.Forms.ColumnHeader empleadoId;
-        private System.Windows.Forms.ColumnHeader empleadoNombre;
-        private System.Windows.Forms.ColumnHeader empleadoContraseña;
-        private System.Windows.Forms.ColumnHeader empleadoFull;
-        private System.Windows.Forms.ColumnHeader empleadoCargo;
-        private System.Windows.Forms.ColumnHeader empleadoNumero;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        public System.Windows.Forms.ComboBox cmbCargo;
+        private System.Windows.Forms.ColumnHeader promocionId;
+        private System.Windows.Forms.ColumnHeader promocionNombre;
+        private System.Windows.Forms.ColumnHeader promocionPrecio;
+        private System.Windows.Forms.ColumnHeader promocionTipo;
+        private System.Windows.Forms.ColumnHeader promocionPoder;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        public System.Windows.Forms.TextBox txtPuntos;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.TextBox txtName;
+        public System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        public System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        public System.Windows.Forms.Button btnAgregar;
+        public System.Windows.Forms.Button btnActualizar2;
     }
 }

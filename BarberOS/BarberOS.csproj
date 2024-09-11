@@ -75,7 +75,9 @@
   <ItemGroup>
     <Compile Include="Controlador\ControlActualizarRegistro.cs" />
     <Compile Include="Controlador\ControlCitas.cs" />
+    <Compile Include="Controlador\ControlListaCitas.cs" />
     <Compile Include="Controlador\ControlListaPregunas.cs" />
+    <Compile Include="Controlador\ControlListaRespuestas.cs" />
     <Compile Include="Controlador\ControlObtenerPin.cs" />
     <Compile Include="Controlador\ControlInicio.cs" />
     <Compile Include="Controlador\ControlInicioGestion.cs" />
@@ -103,7 +105,9 @@
     <Compile Include="Controlador\ControlTotal.cs" />
     <Compile Include="Modelo\Dao\DaoActualizarRegistro.cs" />
     <Compile Include="Modelo\Dao\DaoCitas.cs" />
+    <Compile Include="Modelo\Dao\DaoListaCitas.cs" />
     <Compile Include="Modelo\Dao\DaoListaPreguntas.cs" />
+    <Compile Include="Modelo\Dao\DaoListaRespuestas.cs" />
     <Compile Include="Modelo\Dao\DaoMenu.cs" />
     <Compile Include="Modelo\Dao\DaoNuevaContraseña.cs" />
     <Compile Include="Modelo\Dao\DaoPrimerLogin.cs" />
@@ -152,6 +156,12 @@
     <Compile Include="Vista\VistaInsertarPin.Designer.cs">
       <DependentUpon>VistaInsertarPin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\VistaListaAgendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaListaAgendas.Designer.cs">
+      <DependentUpon>VistaListaAgendas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\vistaListaPersonalG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +173,12 @@
     </Compile>
     <Compile Include="Vista\vistaListaPreguntas.Designer.cs">
       <DependentUpon>vistaListaPreguntas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaListaRespuestas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaListaRespuestas.Designer.cs">
+      <DependentUpon>VistaListaRespuestas.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\VistaNuevaContraseña.cs">
       <SubType>Form</SubType>
@@ -372,6 +388,9 @@
     <EmbeddedResource Include="Vista\VistaInventario.resx">
       <DependentUpon>VistaInventario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaListaAgendas.resx">
+      <DependentUpon>VistaListaAgendas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaListaClientesG.resx">
       <DependentUpon>VistaListaClientesG.cs</DependentUpon>
     </EmbeddedResource>
@@ -398,6 +417,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaListaRegistros.resx">
       <DependentUpon>VistaListaRegistros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaListaRespuestas.resx">
+      <DependentUpon>VistaListaRespuestas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaMenu.resx">
       <DependentUpon>VistaMenu.cs</DependentUpon>
@@ -675,6 +697,7 @@
     <None Include="Resources\direccion1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\question.png" />
     <None Include="Resources\13%3b 27%3b 33 %281%291.png" />
     <None Include="Resources\13%3b 27%3b 331.png" />
     <None Include="Resources\13%3b 27%3b 33 %281%292.png" />

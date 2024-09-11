@@ -30,7 +30,7 @@ namespace BarberOS.Controlador
             controladaVista.btnBorrar.Click += (sender, e) => deleteData();
             controladaVista.btnAgregar.Click += (sender, e) => InsertData();
             controladaVista.btnActualizar2.Click += (sender, e) => UpdateData();
-            controladaVista.btnBorrar.Click += (sender, e) => searchData();
+            controladaVista.btnBuscar.Click += (sender, e) => searchData();
             controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenuForm));
             dao.Populate(controladaVista);
         }

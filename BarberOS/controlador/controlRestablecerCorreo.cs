@@ -22,7 +22,7 @@ namespace BarberOS.Controlador
             vistaControlada.btnOtro.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new 
 VistaReestablecerAdmin());
             vistaControlada.btnPreguntas.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new
-vistaRestablecerPreguntas());
+vistaRestablecerPreguntas(menuPasado));
         }
         public void SendEmail(string recipientEmail, string subject, string body)
         {

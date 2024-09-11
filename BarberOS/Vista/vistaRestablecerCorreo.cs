@@ -21,15 +21,15 @@ namespace BarberOS.Vista
             InitializeComponent();
             new ControlRestablecerCorreo(this, pasadoMenu);
             this.KeyPreview = true;
-            this.KeyDown += Form_KeyDown;
+            //this.KeyDown += Form_KeyDown;
         }
 
-        private void Form_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Control && (e.KeyCode == Keys.C || e.KeyCode == Keys.V))
-            {
-                e.SuppressKeyPress = true;
-            }
-        }
+        //private void Form_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //    if (e.Control && (e.KeyCode == Keys.C || e.KeyCode == Keys.V))
+        //    {
+        //        e.SuppressKeyPress = true;
+        //    }
+        //}
     }
 }

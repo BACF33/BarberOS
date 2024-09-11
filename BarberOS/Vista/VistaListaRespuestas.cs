@@ -11,12 +11,17 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class VistaPrimerLogin : Form
+    public partial class VistaListaRespuestas : Form
     {
-        public VistaPrimerLogin(string userPasado, vistaMenu menuPasado)
+        public VistaListaRespuestas()
         {
             InitializeComponent();
-            new ControlPrimerLogin(this, userPasado, menuPasado);
+            new ControlListaRespuestas(this);
+        }
+
+        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

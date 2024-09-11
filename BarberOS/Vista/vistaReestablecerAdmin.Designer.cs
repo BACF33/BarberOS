@@ -70,7 +70,7 @@
             this.txtUser.BackColor = System.Drawing.Color.White;
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.ForeColor = System.Drawing.SystemColors.Info;
+            this.txtUser.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtUser.Location = new System.Drawing.Point(152, 295);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(448, 24);
@@ -81,7 +81,7 @@
             this.txtPass.BackColor = System.Drawing.Color.White;
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtPass.ForeColor = System.Drawing.Color.Black;
             this.txtPass.Location = new System.Drawing.Point(152, 395);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(445, 24);

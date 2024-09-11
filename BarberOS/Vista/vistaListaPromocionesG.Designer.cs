@@ -28,237 +28,190 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.btnActualizar2 = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.txtPoder = new System.Windows.Forms.TextBox();
-            this.LblNombre = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.cmbTipo = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnVolver = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtSearchingFor = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.listPromociones = new System.Windows.Forms.ListView();
             this.promocionId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionPrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionPoder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listPromociones = new System.Windows.Forms.ListView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnBorrar = new System.Windows.Forms.Button();
-            this.txtSearchingFor = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtPoder = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnVolver = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnActualizar2 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tableLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // tableLayoutPanel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(58, 118);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 38);
-            this.label1.TabIndex = 132;
-            this.label1.Text = "Lista de Promociones";
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.09392F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.90607F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1170, 729);
+            this.tableLayoutPanel1.TabIndex = 4;
             // 
-            // label4
+            // tableLayoutPanel2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(80, 192);
-            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Precio de la Promocion";
+            this.tableLayoutPanel2.ColumnCount = 5;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.80924F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.65574F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.2459F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.53485F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.65444F));
+            this.tableLayoutPanel2.Controls.Add(this.btnVolver, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnBorrar, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtSearchingFor, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnBuscar, 2, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1164, 125);
+            this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // txtPrecio
+            // btnVolver
             // 
-            this.txtPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPrecio.Location = new System.Drawing.Point(83, 210);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPrecio.MaxLength = 50;
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(292, 20);
-            this.txtPrecio.TabIndex = 0;
-            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
+            this.btnVolver.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnVolver.ForeColor = System.Drawing.Color.White;
+            this.btnVolver.Location = new System.Drawing.Point(992, 25);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(147, 75);
+            this.btnVolver.TabIndex = 4;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
             // 
-            // btnActualizar2
+            // btnBorrar
             // 
-            this.btnActualizar2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnActualizar2.ForeColor = System.Drawing.Color.Black;
-            this.btnActualizar2.Location = new System.Drawing.Point(172, 343);
-            this.btnActualizar2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnActualizar2.Name = "btnActualizar2";
-            this.btnActualizar2.Size = new System.Drawing.Size(113, 42);
-            this.btnActualizar2.TabIndex = 6;
-            this.btnActualizar2.Text = "Actualizar";
-            this.btnActualizar2.UseVisualStyleBackColor = true;
+            this.btnBorrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnBorrar.ForeColor = System.Drawing.Color.White;
+            this.btnBorrar.Location = new System.Drawing.Point(791, 25);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(148, 75);
+            this.btnBorrar.TabIndex = 3;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = false;
             // 
-            // btnActualizar
+            // label7
             // 
-            this.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.ForeColor = System.Drawing.Color.Black;
-            this.btnActualizar.Location = new System.Drawing.Point(293, 343);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(119, 42);
-            this.btnActualizar.TabIndex = 6;
-            this.btnActualizar.Text = "Restablecer";
-            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.Control;
+            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(36, 40);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(157, 44);
+            this.label7.TabIndex = 126;
+            this.label7.Text = "BarberOs";
             // 
-            // label13
+            // txtSearchingFor
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(80, 149);
-            this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(126, 13);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Nombre de la  Promocion";
+            this.txtSearchingFor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSearchingFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchingFor.Location = new System.Drawing.Point(233, 48);
+            this.txtSearchingFor.Name = "txtSearchingFor";
+            this.txtSearchingFor.Size = new System.Drawing.Size(292, 29);
+            this.txtSearchingFor.TabIndex = 1;
             // 
-            // label5
+            // btnBuscar
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(95, 39);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(271, 38);
-            this.label5.TabIndex = 121;
-            this.label5.Text = "Agregar Promocion";
+            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBuscar.Location = new System.Drawing.Point(556, 27);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(178, 71);
+            this.btnBuscar.TabIndex = 2;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
-            // btnAgregar
+            // tableLayoutPanel3
             // 
-            this.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnAgregar.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregar.Location = new System.Drawing.Point(47, 343);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(117, 42);
-            this.btnAgregar.TabIndex = 9;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.listPromociones, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 134);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1164, 592);
+            this.tableLayoutPanel3.TabIndex = 2;
             // 
-            // txtPoder
+            // listPromociones
             // 
-            this.txtPoder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPoder.Location = new System.Drawing.Point(83, 253);
-            this.txtPoder.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPoder.MaxLength = 50;
-            this.txtPoder.Name = "txtPoder";
-            this.txtPoder.Size = new System.Drawing.Size(292, 20);
-            this.txtPoder.TabIndex = 122;
-            this.txtPoder.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
-            // 
-            // LblNombre
-            // 
-            this.LblNombre.AutoSize = true;
-            this.LblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNombre.Location = new System.Drawing.Point(34, 23);
-            this.LblNombre.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.LblNombre.Name = "LblNombre";
-            this.LblNombre.Size = new System.Drawing.Size(0, 25);
-            this.LblNombre.TabIndex = 0;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(80, 235);
-            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 13);
-            this.label6.TabIndex = 123;
-            this.label6.Text = "Poder de la promocion";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(80, 278);
-            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 13);
-            this.label8.TabIndex = 125;
-            this.label8.Text = "Tipo de la promocion";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(80, 110);
-            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 13);
-            this.label9.TabIndex = 129;
-            this.label9.Text = "Cliente Nombre";
-            // 
-            // txtId
-            // 
-            this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(83, 126);
-            this.txtId.MaxLength = 50;
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(292, 20);
-            this.txtId.TabIndex = 126;
-            // 
-            // cmbTipo
-            // 
-            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Items.AddRange(new object[] {
-            "Cabello",
-            "Promocion"});
-            this.cmbTipo.Location = new System.Drawing.Point(83, 294);
-            this.cmbTipo.MaxLength = 50;
-            this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(292, 21);
-            this.cmbTipo.TabIndex = 127;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.txtNombre);
-            this.panel1.Controls.Add(this.cmbTipo);
-            this.panel1.Controls.Add(this.txtId);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.LblNombre);
-            this.panel1.Controls.Add(this.txtPoder);
-            this.panel1.Controls.Add(this.btnAgregar);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.btnActualizar);
-            this.panel1.Controls.Add(this.btnActualizar2);
-            this.panel1.Controls.Add(this.txtPrecio);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(65, 173);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(455, 420);
-            this.panel1.TabIndex = 133;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(83, 166);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(292, 20);
-            this.txtNombre.TabIndex = 130;
-            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras);
+            this.listPromociones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(42)))), ((int)(((byte)(68)))));
+            this.listPromociones.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.promocionId,
+            this.promocionNombre,
+            this.promocionPrecio,
+            this.promocionTipo,
+            this.promocionPoder});
+            this.listPromociones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listPromociones.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listPromociones.FullRowSelect = true;
+            this.listPromociones.GridLines = true;
+            this.listPromociones.HideSelection = false;
+            this.listPromociones.Location = new System.Drawing.Point(585, 3);
+            this.listPromociones.Name = "listPromociones";
+            this.listPromociones.Size = new System.Drawing.Size(576, 586);
+            this.listPromociones.TabIndex = 153;
+            this.listPromociones.UseCompatibleStateImageBehavior = false;
+            this.listPromociones.View = System.Windows.Forms.View.Details;
             // 
             // promocionId
             // 
@@ -284,102 +237,280 @@
             this.promocionPoder.Text = "Descuento";
             this.promocionPoder.Width = 120;
             // 
-            // listPromociones
+            // tableLayoutPanel4
             // 
-            this.listPromociones.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.listPromociones.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.promocionId,
-            this.promocionNombre,
-            this.promocionPrecio,
-            this.promocionTipo,
-            this.promocionPoder});
-            this.listPromociones.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listPromociones.FullRowSelect = true;
-            this.listPromociones.GridLines = true;
-            this.listPromociones.HideSelection = false;
-            this.listPromociones.Location = new System.Drawing.Point(570, 173);
-            this.listPromociones.Name = "listPromociones";
-            this.listPromociones.Size = new System.Drawing.Size(571, 510);
-            this.listPromociones.TabIndex = 131;
-            this.listPromociones.UseCompatibleStateImageBehavior = false;
-            this.listPromociones.View = System.Windows.Forms.View.Details;
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel6, 0, 1);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.68297F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84.31703F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(576, 586);
+            this.tableLayoutPanel4.TabIndex = 1;
             // 
-            // button1
+            // tableLayoutPanel5
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(246, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 28);
-            this.button1.TabIndex = 124;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.46864F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.53136F));
+            this.tableLayoutPanel5.Controls.Add(this.label5, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.txtId, 1, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(570, 85);
+            this.tableLayoutPanel5.TabIndex = 0;
             // 
-            // btnBorrar
+            // label5
             // 
-            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnBorrar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.ForeColor = System.Drawing.Color.Black;
-            this.btnBorrar.Location = new System.Drawing.Point(950, 21);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(95, 35);
-            this.btnBorrar.TabIndex = 102;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = false;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(57, 23);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(247, 39);
+            this.label5.TabIndex = 122;
+            this.label5.Text = "Agregar Personal";
             // 
-            // txtSearchingFor
+            // txtId
             // 
-            this.txtSearchingFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchingFor.Location = new System.Drawing.Point(349, 24);
-            this.txtSearchingFor.Name = "txtSearchingFor";
-            this.txtSearchingFor.Size = new System.Drawing.Size(394, 29);
-            this.txtSearchingFor.TabIndex = 123;
+            this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Location = new System.Drawing.Point(405, 25);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(121, 35);
+            this.txtId.TabIndex = 123;
+            this.txtId.TabStop = false;
             // 
-            // label7
+            // tableLayoutPanel6
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(18, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(151, 44);
-            this.label7.TabIndex = 114;
-            this.label7.Text = "BarberOs";
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel7, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel8, 0, 1);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 94);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 2;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.18623F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.81376F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(570, 489);
+            this.tableLayoutPanel6.TabIndex = 1;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 3;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.38622F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.29518F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.41566F));
+            this.tableLayoutPanel7.Controls.Add(this.txtPoder, 2, 2);
+            this.tableLayoutPanel7.Controls.Add(this.label3, 1, 3);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox3, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox1, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.txtNombre, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.txtPrecio, 2, 1);
+            this.tableLayoutPanel7.Controls.Add(this.label13, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.label1, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox4, 0, 3);
+            this.tableLayoutPanel7.Controls.Add(this.label2, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox2, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.cmbTipo, 2, 3);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 4;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.11934F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.88066F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(564, 395);
+            this.tableLayoutPanel7.TabIndex = 2;
+            // 
+            // txtPoder
+            // 
+            this.txtPoder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPoder.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPoder.Location = new System.Drawing.Point(333, 227);
+            this.txtPoder.Name = "txtPoder";
+            this.txtPoder.Size = new System.Drawing.Size(228, 35);
+            this.txtPoder.TabIndex = 147;
+            this.txtPoder.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 12);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(148, 332);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 44);
-            this.label3.TabIndex = 125;
-            this.label3.Text = "BarberOs";
+            this.label3.Size = new System.Drawing.Size(159, 24);
+            this.label3.TabIndex = 145;
+            this.label3.Text = "Promocion Tipo";
             // 
-            // btnVolver
+            // pictureBox3
             // 
-            this.btnVolver.BackColor = System.Drawing.Color.Gray;
-            this.btnVolver.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(1051, 24);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(90, 32);
-            this.btnVolver.TabIndex = 104;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = false;
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::BarberOS.Properties.Resources.Proyecto_nuevo__8_1;
+            this.pictureBox3.Location = new System.Drawing.Point(28, 14);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(69, 56);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 136;
+            this.pictureBox3.TabStop = false;
             // 
-            // panel2
+            // pictureBox1
             // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Controls.Add(this.btnVolver);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.txtSearchingFor);
-            this.panel2.Controls.Add(this.btnBorrar);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1350, 73);
-            this.panel2.TabIndex = 128;
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::BarberOS.Properties.Resources.password_icon_1903x2048_m0d1f305;
+            this.pictureBox1.Location = new System.Drawing.Point(28, 112);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 137;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(333, 24);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(228, 35);
+            this.txtNombre.TabIndex = 5;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras);
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecio.Location = new System.Drawing.Point(333, 122);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(228, 35);
+            this.txtPrecio.TabIndex = 6;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(132, 30);
+            this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(192, 24);
+            this.label13.TabIndex = 140;
+            this.label13.Text = "Promocion Nombre";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(139, 128);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(177, 24);
+            this.label1.TabIndex = 141;
+            this.label1.Text = "Promocion Precio";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox4.Image = global::BarberOS.Properties.Resources._54751231;
+            this.pictureBox4.Location = new System.Drawing.Point(13, 311);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(100, 67);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 143;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(169, 221);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 48);
+            this.label2.TabIndex = 142;
+            this.label2.Text = "Promocion Descuento";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Image = global::BarberOS.Properties.Resources.Points_png_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(28, 217);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 56);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 138;
+            this.pictureBox2.TabStop = false;
+            // 
+            // cmbTipo
+            // 
+            this.cmbTipo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "Cabello ",
+            "Barba"});
+            this.cmbTipo.Location = new System.Drawing.Point(333, 326);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(228, 37);
+            this.cmbTipo.TabIndex = 7;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 2;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.btnAgregar, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btnActualizar2, 0, 0);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 404);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 1;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(564, 82);
+            this.tableLayoutPanel8.TabIndex = 3;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Location = new System.Drawing.Point(349, 3);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(147, 75);
+            this.btnAgregar.TabIndex = 9;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            // 
+            // btnActualizar2
+            // 
+            this.btnActualizar2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnActualizar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
+            this.btnActualizar2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnActualizar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnActualizar2.ForeColor = System.Drawing.Color.White;
+            this.btnActualizar2.Location = new System.Drawing.Point(67, 3);
+            this.btnActualizar2.Name = "btnActualizar2";
+            this.btnActualizar2.Size = new System.Drawing.Size(147, 75);
+            this.btnActualizar2.TabIndex = 8;
+            this.btnActualizar2.Text = "Actualizar";
+            this.btnActualizar2.UseVisualStyleBackColor = false;
             // 
             // VistaListaPromocionesG
             // 
@@ -387,52 +518,64 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1170, 729);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.listPromociones);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "VistaListaPromocionesG";
             this.Text = "vistaListaPromocionesG";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tableLayoutPanel8.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox txtPrecio;
-        public System.Windows.Forms.Button btnActualizar2;
-        public System.Windows.Forms.Button btnActualizar;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label5;
-        public System.Windows.Forms.Button btnAgregar;
-        public System.Windows.Forms.TextBox txtPoder;
-        public System.Windows.Forms.Label LblNombre;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        public System.Windows.Forms.TextBox txtId;
-        public System.Windows.Forms.ComboBox cmbTipo;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        public System.Windows.Forms.Button btnVolver;
+        public System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.TextBox txtSearchingFor;
+        public System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        public System.Windows.Forms.ListView listPromociones;
         private System.Windows.Forms.ColumnHeader promocionId;
         private System.Windows.Forms.ColumnHeader promocionNombre;
         private System.Windows.Forms.ColumnHeader promocionPrecio;
         private System.Windows.Forms.ColumnHeader promocionTipo;
         private System.Windows.Forms.ColumnHeader promocionPoder;
-        public System.Windows.Forms.ListView listPromociones;
-        public System.Windows.Forms.Button button1;
-        public System.Windows.Forms.Button btnBorrar;
-        public System.Windows.Forms.TextBox txtSearchingFor;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        public System.Windows.Forms.TextBox txtPoder;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.TextBox txtNombre;
+        public System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.ComboBox cmbTipo;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        public System.Windows.Forms.Button btnAgregar;
+        public System.Windows.Forms.Button btnActualizar2;
     }
 }

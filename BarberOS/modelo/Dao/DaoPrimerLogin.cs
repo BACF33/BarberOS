@@ -13,7 +13,7 @@ namespace BarberOS.Modelo.Dao
 {
     internal class DaoPrimerLogin
     {
-        public DaoPrimerLogin(VistaPrimerLogin vistaPasada, int idPasada)
+        public void Insert(VistaPrimerLogin vistaPasada, string userPasado)
         {
             try
             {
@@ -24,9 +24,10 @@ namespace BarberOS.Modelo.Dao
                     //Se ejecutara un query update donde se hara que  valores de la tabla usuarios en la base de datos
                     //sean iguales a los que estan en las textboxes
                     using (SqlCommand cmd = new SqlCommand("" +
-                        "userPassword = @userPassword, " +
+                        "UPDATE users SET " +
+                        "userPassword = @newPassword, " +
                         "userRequiresRestart = @newState " +
-                        "WHERE userId = @selectedId", conexion))
+                        "WHERE userName = @userName", conexion))
                     {
 
                         string password = vistaPasada.txtNueva.Text;
@@ -41,9 +42,9 @@ namespace BarberOS.Modelo.Dao
 
 
                         //Los parametros de la query seran los valores obtenidos de los textboxes
-                        cmd.Parameters.AddWithValue("@newPassword", vistaPasada.txtNueva);
+                        cmd.Parameters.AddWithValue("@newPassword", password);
                         cmd.Parameters.AddWithValue("@newState", false);
-                        cmd.Parameters.AddWithValue("@selectedId", idPasada);
+                        cmd.Parameters.AddWithValue("@userName", userPasado);
 
                         cmd.ExecuteNonQuery();
                     }

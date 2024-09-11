@@ -23,7 +23,7 @@ namespace BarberOS.Modelo.Dao
                     //Se ejecutara un query donde se obtendran los valores de la base de datos, se usa un inner join 
                     //dado a que userType es una llave foranea
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT u.userId, u.userName, u.userPassword, u.userPoints, r.roleName, u.userEmail, u.userBirthPlace " +
+                    using (SqlCommand cmd = new SqlCommand("SELECT u.userId, u.userName, u.userPassword, u.userPoints, r.roleName, u.userEmail " +
                         "FROM users u " +
                         "INNER JOIN userRoles r ON u.userRole = r.roleId " +
                         "WHERE r.roleName = 'Admin'", conexion))
@@ -41,7 +41,6 @@ namespace BarberOS.Modelo.Dao
                             item.SubItems.Add(reader["userPoints"].ToString());
                             item.SubItems.Add(reader["roleName"].ToString());
                             item.SubItems.Add(reader["userEmail"].ToString());
-                            item.SubItems.Add(reader["userBirthPlace"].ToString());
                             vistaPasada.listEmpleados.Items.Add(item);
                         }
 
@@ -66,14 +65,14 @@ namespace BarberOS.Modelo.Dao
                     //el mismo id 
                     conexion.Open();
                     string query = @"
-                    INSERT INTO users (userName, userPassword, userPoints, userRole, userEmail, userBirthPlace)
+                    INSERT INTO users (userName, userPassword, userPoints, userRole, userEmail, userRequiresRestart)
                     VALUES (
                     @userName, 
                     @userPassword, 
                     @userPoints, 
                     (SELECT roleId FROM userRoles WHERE roleName = @roleName),
                     @userEmail,
-                    @userBirthPlace
+                    @userRequiresRestart
                     )";
 
                     string password = vistaPasada.txtContraseña.Text;
@@ -86,16 +85,6 @@ namespace BarberOS.Modelo.Dao
                         password = builder.ToString();
                     }
 
-                    string lugar = vistaPasada.txtLugar.Text;
-                    using (SHA256 crypt = SHA256.Create())
-                    {
-                        byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(lugar));
-                        StringBuilder builder = new StringBuilder();
-                        for (int i = 0; i < bytes.Length; i++)
-                            builder.Append(bytes[i].ToString("X2"));
-                        lugar = builder.ToString();
-                    }
-
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
                         //Se usara la string selectedId como parametro
@@ -104,7 +93,7 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtPuntos.Text);
                         cmd.Parameters.AddWithValue("@roleName", "Admin");
                         cmd.Parameters.AddWithValue("@userEmail", vistaPasada.cmbCargo.Text);
-                        cmd.Parameters.AddWithValue("@userBirthPlace", lugar);
+                        cmd.Parameters.AddWithValue("@userRequiresRestart", true);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
                     //Test
@@ -126,14 +115,13 @@ namespace BarberOS.Modelo.Dao
                     conexion.Open();
                     //Se ejecutara un query update donde se hara que  valores de la tabla usuarios en la base de datos
                     //sean iguales a los que estan en las textboxes
-                    using (SqlCommand cmd = new SqlCommand("" +
+                    using (SqlCommand cmd = new SqlCommand(
                         "UPDATE users SET " +
                         "userName = @userName, " +
                         "userPoints = @userPoints, " +
                         "userPassword = @userPassword, " +
                         "userRole = (SELECT roleId FROM userRoles WHERE roleName = @roleName), " +
-                        "userEmail = @userEmail, " +
-                        "userBirthPlace = @userBirthPlace " +
+                        "userEmail = @userEmail " +
                         "WHERE userId = @selectedId", conexion))
                     {
 
@@ -147,15 +135,6 @@ namespace BarberOS.Modelo.Dao
                             password = builder.ToString();
                         }
 
-                        string lugar = vistaPasada.txtLugar.Text;
-                        using (SHA256 crypt = SHA256.Create())
-                        {
-                            byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(lugar));
-                            StringBuilder builder = new StringBuilder();
-                            for (int i = 0; i < bytes.Length; i++)
-                                builder.Append(bytes[i].ToString("X2"));
-                            lugar = builder.ToString();
-                        }
 
                         //Los parametros de la query seran los valores obtenidos de los textboxes
                         cmd.Parameters.AddWithValue("@selectedId", vistaPasada.txtId.Text);
@@ -164,7 +143,6 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtPuntos.Text);
                         cmd.Parameters.AddWithValue("@roleName", "Admin");
                         cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
-                        cmd.Parameters.AddWithValue("@userBirthPlace", lugar);
 
                         cmd.ExecuteNonQuery();
                     }

@@ -97,7 +97,7 @@ namespace BarberOS.Controlador
             }
             else if (answer == 1 && daoThis.FirstLogin == true)
             {
-                menuForm.controladorMenu.AbrirFormulario(new VistaPrimerLogin());
+                menuForm.controladorMenu.AbrirFormulario(new VistaPrimerLogin(daoThis.Username, menuForm));
             }
             //10 Si el valor obtenido por answer no es 1 (inicio de sesion incorrecto esto se ejecuta) test
             else

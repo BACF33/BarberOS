@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BarberOS.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,10 @@ namespace BarberOS.Vista
 {
     public partial class vistaRestablecerPreguntas : Form
     {
-        public vistaRestablecerPreguntas()
+        public vistaRestablecerPreguntas(vistaMenu menuPasado)
         {
             InitializeComponent();
+            new ControlReestablecerPreguntas(this, menuPasado);
         }
     }
 }
