@@ -58,6 +58,11 @@ namespace BarberOS.Vista
         {
 
         }
+
+        private void cmbTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

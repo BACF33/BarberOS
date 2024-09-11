@@ -30,11 +30,11 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.txtSearchingFor = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.listCortes = new System.Windows.Forms.ListView();
             this.promocionId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -57,6 +57,9 @@
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar2 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -105,19 +108,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1220, 125);
             this.tableLayoutPanel2.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.Control;
-            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(42, 40);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(157, 44);
-            this.label7.TabIndex = 126;
-            this.label7.Text = "BarberOs";
             // 
             // btnVolver
             // 
@@ -169,6 +159,19 @@
             this.btnBuscar.TabIndex = 9;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.Control;
+            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(42, 40);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(157, 44);
+            this.label7.TabIndex = 126;
+            this.label7.Text = "BarberOs";
             // 
             // tableLayoutPanel3
             // 
@@ -269,7 +272,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(267, 39);
             this.label5.TabIndex = 122;
-            this.label5.Text = "Agregar Preguntas";
+            this.label5.Text = "Agregar Productos";
             // 
             // txtId
             // 
@@ -298,15 +301,19 @@
             // 
             // tableLayoutPanel7
             // 
-            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.57933F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.42066F));
-            this.tableLayoutPanel7.Controls.Add(this.txtPrecio, 1, 1);
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 364F));
+            this.tableLayoutPanel7.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox3, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox1, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox2, 0, 2);
-            this.tableLayoutPanel7.Controls.Add(this.txtNombre, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.cmbTipo, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.txtNombre, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.txtPrecio, 2, 1);
+            this.tableLayoutPanel7.Controls.Add(this.cmbTipo, 2, 2);
+            this.tableLayoutPanel7.Controls.Add(this.label13, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.label1, 1, 1);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -314,6 +321,7 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.93103F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.72414F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 107F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(592, 395);
             this.tableLayoutPanel7.TabIndex = 2;
             // 
@@ -321,7 +329,7 @@
             // 
             this.txtPrecio.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(256, 206);
+            this.txtPrecio.Location = new System.Drawing.Point(270, 206);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(278, 35);
             this.txtPrecio.TabIndex = 2;
@@ -331,10 +339,10 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::BarberOS.Properties.Resources._91315291;
-            this.pictureBox3.Location = new System.Drawing.Point(61, 45);
+            this.pictureBox3.Image = global::BarberOS.Properties.Resources.Cortes_icon_blue_png11;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 45);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(75, 70);
+            this.pictureBox3.Size = new System.Drawing.Size(70, 70);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 136;
             this.pictureBox3.TabStop = false;
@@ -342,10 +350,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::BarberOS.Properties.Resources.Home_icon1;
-            this.pictureBox1.Location = new System.Drawing.Point(63, 196);
+            this.pictureBox1.Image = global::BarberOS.Properties.Resources._2399022;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 196);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(72, 55);
+            this.pictureBox1.Size = new System.Drawing.Size(70, 55);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 137;
             this.pictureBox1.TabStop = false;
@@ -353,10 +361,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Image = global::BarberOS.Properties.Resources._52462901;
-            this.pictureBox2.Location = new System.Drawing.Point(60, 303);
+            this.pictureBox2.Image = global::BarberOS.Properties.Resources.Etiqueta_png;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 303);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 75);
+            this.pictureBox2.Size = new System.Drawing.Size(70, 75);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 138;
             this.pictureBox2.TabStop = false;
@@ -365,7 +373,7 @@
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(256, 63);
+            this.txtNombre.Location = new System.Drawing.Point(270, 63);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(278, 35);
             this.txtNombre.TabIndex = 1;
@@ -377,10 +385,14 @@
             this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Location = new System.Drawing.Point(254, 322);
+            this.cmbTipo.Items.AddRange(new object[] {
+            "Cabello ",
+            "Barba"});
+            this.cmbTipo.Location = new System.Drawing.Point(268, 322);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(282, 37);
             this.cmbTipo.TabIndex = 139;
+            this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
             // 
             // tableLayoutPanel8
             // 
@@ -424,6 +436,42 @@
             this.btnActualizar2.TabIndex = 6;
             this.btnActualizar2.Text = "Actualizar";
             this.btnActualizar2.UseVisualStyleBackColor = false;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(85, 56);
+            this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(132, 48);
+            this.label13.TabIndex = 140;
+            this.label13.Text = " Nombre del Producto";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(96, 200);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 48);
+            this.label1.TabIndex = 141;
+            this.label1.Text = "Precio del Producto";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(104, 317);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 48);
+            this.label2.TabIndex = 142;
+            this.label2.Text = "Tipo de Producto";
             // 
             // VistaListaCortesG
             // 
@@ -483,5 +531,8 @@
         public System.Windows.Forms.Button btnActualizar2;
         public System.Windows.Forms.ComboBox cmbTipo;
         public System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label1;
     }
 }
