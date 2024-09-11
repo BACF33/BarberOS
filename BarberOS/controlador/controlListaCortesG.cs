@@ -92,7 +92,7 @@ namespace BarberOS.Controlador
 
         public void searchData()
         {
-            //1 Se obtendran los datos que el usuario ingreso en la barra de busqueda
+            //1 Se obtendran los datos que el usuario ingreso en la barra de busquedas
             string searchingFor = controladaVista.txtSearchingFor.Text;
             //2 Se ejecutara la funcion searchData del dao
             dao.searchData(searchingFor, controladaVista);
