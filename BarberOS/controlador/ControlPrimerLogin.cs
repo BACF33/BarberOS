@@ -10,7 +10,7 @@ namespace BarberOS.Controlador
         public ControlPrimerLogin(VistaPrimerLogin vistaPasada)
         {
             vistaControlada = vistaPasada;
-            vistaControlada.btnNueva.Click += daoThis.
+            //vistaControlada.btnNueva.Click += daoThis.
         }
     }
 }
