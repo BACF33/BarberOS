@@ -31,7 +31,7 @@ namespace BarberOS.Vista
                 e.Handled = true;
             }
         }
-
+        //Test
         private void btnACortes_Click(object sender, EventArgs e)
         {
 

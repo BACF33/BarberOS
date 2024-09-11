@@ -92,15 +92,15 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 5;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.80924F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.81232F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.15543F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.37705F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.52459F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.53485F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.65444F));
             this.tableLayoutPanel2.Controls.Add(this.btnVolver, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnBorrar, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txtSearchingFor, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnBuscar, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.label7, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtSearchingFor, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnBuscar, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -116,10 +116,10 @@
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnVolver.ForeColor = System.Drawing.Color.White;
-            this.btnVolver.Location = new System.Drawing.Point(1043, 25);
+            this.btnVolver.Location = new System.Drawing.Point(1044, 25);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(147, 75);
-            this.btnVolver.TabIndex = 11;
+            this.btnVolver.TabIndex = 4;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
             // 
@@ -130,10 +130,10 @@
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnBorrar.ForeColor = System.Drawing.Color.White;
-            this.btnBorrar.Location = new System.Drawing.Point(833, 25);
+            this.btnBorrar.Location = new System.Drawing.Point(834, 25);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(148, 75);
-            this.btnBorrar.TabIndex = 10;
+            this.btnBorrar.TabIndex = 3;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = false;
             // 
@@ -141,10 +141,10 @@
             // 
             this.txtSearchingFor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSearchingFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchingFor.Location = new System.Drawing.Point(244, 48);
+            this.txtSearchingFor.Location = new System.Drawing.Point(456, 48);
             this.txtSearchingFor.Name = "txtSearchingFor";
-            this.txtSearchingFor.Size = new System.Drawing.Size(345, 29);
-            this.txtSearchingFor.TabIndex = 8;
+            this.txtSearchingFor.Size = new System.Drawing.Size(342, 29);
+            this.txtSearchingFor.TabIndex = 2;
             // 
             // btnBuscar
             // 
@@ -153,10 +153,10 @@
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnBuscar.Location = new System.Drawing.Point(607, 27);
+            this.btnBuscar.Location = new System.Drawing.Point(258, 27);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(178, 71);
-            this.btnBuscar.TabIndex = 9;
+            this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
@@ -332,7 +332,7 @@
             this.txtPrecio.Location = new System.Drawing.Point(270, 206);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(278, 35);
-            this.txtPrecio.TabIndex = 2;
+            this.txtPrecio.TabIndex = 6;
             this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
             // pictureBox3
@@ -376,7 +376,7 @@
             this.txtNombre.Location = new System.Drawing.Point(270, 63);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(278, 35);
-            this.txtNombre.TabIndex = 1;
+            this.txtNombre.TabIndex = 5;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras);
             // 
             // cmbTipo
@@ -393,6 +393,7 @@
             this.cmbTipo.Size = new System.Drawing.Size(282, 37);
             this.cmbTipo.TabIndex = 139;
             this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
+            this.cmbTipo.TabIndex = 7;
             // 
             // tableLayoutPanel8
             // 
@@ -419,7 +420,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(370, 3);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(147, 75);
-            this.btnAgregar.TabIndex = 7;
+            this.btnAgregar.TabIndex = 9;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             // 
@@ -433,7 +434,7 @@
             this.btnActualizar2.Location = new System.Drawing.Point(74, 3);
             this.btnActualizar2.Name = "btnActualizar2";
             this.btnActualizar2.Size = new System.Drawing.Size(147, 75);
-            this.btnActualizar2.TabIndex = 6;
+            this.btnActualizar2.TabIndex = 8;
             this.btnActualizar2.Text = "Actualizar";
             this.btnActualizar2.UseVisualStyleBackColor = false;
             // 
