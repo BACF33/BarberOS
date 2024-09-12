@@ -158,33 +158,30 @@ namespace BarberOS.Modelo.Dao
                 {
                     conexion.Open();
 
-                    //3 Se ejecutara un query donde se seleccionaran toos los datos de la tabla usuarios donde 
-                    //el nombre de usuario coincida con el ingresado
-                    string sql = "SELECT  p.promotionId, p.promotionName, p.promotionPrice, t.promotionTypeName " +
-                        "FROM promotions p " +
-                        "INNER JOIN promotionTypes t ON promotionType = t.promotionTypeId LIKE @searchingFor AND userRole = 1 ";
+                    // Query to select data from promotions with a matching promotion type name
+                    string sql = "SELECT p.promotionId, p.promotionName, p.promotionPrice, p.promotionPower, t.promotionTypeName " +
+                                 "FROM promotions p " +
+                                 "INNER JOIN promotionTypes t ON p.promotionType = t.promotionTypeId " +
+                                 "WHERE promotionName LIKE @searchingFor";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {
-                        //4 Como parametro se utilizara el valor ingresado en la barra de busqueda
                         cmd.Parameters.AddWithValue("@searchingFor", "%" + searchingFor + "%");
 
                         SqlDataReader reader = cmd.ExecuteReader();
 
                         vistaPasada.listPromociones.Items.Clear();
 
-                        //5 Se anadiran a la tabla del formulario los valores obtenidos con el query
                         while (reader.Read())
                         {
                             ListViewItem item = new ListViewItem(reader["promotionId"].ToString());
                             item.SubItems.Add(reader["promotionName"].ToString());
                             item.SubItems.Add(reader["promotionPrice"].ToString());
                             item.SubItems.Add(reader["promotionPower"].ToString());
-                            item.SubItems.Add(reader["promotionType"].ToString());
+                            item.SubItems.Add(reader["promotionTypeName"].ToString());
                             vistaPasada.listPromociones.Items.Add(item);
                         }
                         reader.Close();
-
                     }
                 }
             }

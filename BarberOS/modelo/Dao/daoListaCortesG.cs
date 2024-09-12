@@ -158,8 +158,9 @@ namespace BarberOS.Modelo.Dao
                     //3 Se ejecutara un query donde se seleccionaran toos los datos de la tabla usuarios donde 
                     //el nombre de usuario coincida con el ingresado
                     string sql = @"
-                SELECT productId, productName, productPrice, productType
+                SELECT p.productId, p.productName, p.productPrice, t.productTypeName
                 FROM products
+                INNER JOIN productTypes t ON productType = t.productTypeId
                 WHERE productName LIKE @searchingFor";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))

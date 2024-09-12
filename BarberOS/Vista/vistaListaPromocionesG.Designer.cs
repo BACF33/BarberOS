@@ -272,11 +272,11 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(57, 23);
+            this.label5.Location = new System.Drawing.Point(28, 23);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(247, 39);
+            this.label5.Size = new System.Drawing.Size(305, 39);
             this.label5.TabIndex = 122;
-            this.label5.Text = "Agregar Personal";
+            this.label5.Text = "Agregar Promociones";
             // 
             // txtId
             // 
@@ -309,7 +309,6 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.38622F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.29518F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.41566F));
-            this.tableLayoutPanel7.Controls.Add(this.txtPoder, 2, 2);
             this.tableLayoutPanel7.Controls.Add(this.label3, 1, 3);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox3, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox1, 0, 1);
@@ -321,6 +320,7 @@
             this.tableLayoutPanel7.Controls.Add(this.label2, 1, 2);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox2, 0, 2);
             this.tableLayoutPanel7.Controls.Add(this.cmbTipo, 2, 3);
+            this.tableLayoutPanel7.Controls.Add(this.txtPoder, 2, 2);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -339,7 +339,7 @@
             this.txtPoder.Location = new System.Drawing.Point(333, 227);
             this.txtPoder.Name = "txtPoder";
             this.txtPoder.Size = new System.Drawing.Size(228, 35);
-            this.txtPoder.TabIndex = 147;
+            this.txtPoder.TabIndex = 7;
             this.txtPoder.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
             // label3
@@ -467,7 +467,7 @@
             this.cmbTipo.Location = new System.Drawing.Point(333, 326);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(228, 37);
-            this.cmbTipo.TabIndex = 7;
+            this.cmbTipo.TabIndex = 8;
             // 
             // tableLayoutPanel8
             // 
@@ -494,7 +494,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(349, 3);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(147, 75);
-            this.btnAgregar.TabIndex = 9;
+            this.btnAgregar.TabIndex = 10;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             // 
@@ -508,7 +508,7 @@
             this.btnActualizar2.Location = new System.Drawing.Point(67, 3);
             this.btnActualizar2.Name = "btnActualizar2";
             this.btnActualizar2.Size = new System.Drawing.Size(147, 75);
-            this.btnActualizar2.TabIndex = 8;
+            this.btnActualizar2.TabIndex = 9;
             this.btnActualizar2.Text = "Actualizar";
             this.btnActualizar2.UseVisualStyleBackColor = false;
             // 

@@ -33,5 +33,15 @@ namespace BarberOS.Vista
         {
 
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtNewPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

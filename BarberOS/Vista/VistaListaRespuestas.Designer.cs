@@ -48,6 +48,7 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.cmbUsuarios = new System.Windows.Forms.ComboBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtRespuesta = new System.Windows.Forms.TextBox();
@@ -55,11 +56,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.cmbPreguntas = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar2 = new System.Windows.Forms.Button();
-            this.cmbPreguntas = new System.Windows.Forms.ComboBox();
-            this.cmbUsuarios = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -268,11 +268,11 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(89, 23);
+            this.label5.Location = new System.Drawing.Point(72, 23);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(247, 39);
+            this.label5.Size = new System.Drawing.Size(281, 39);
             this.label5.TabIndex = 122;
-            this.label5.Text = "Agregar Personal";
+            this.label5.Text = "Agregar Respuestas";
             // 
             // txtId
             // 
@@ -324,6 +324,17 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(664, 391);
             this.tableLayoutPanel7.TabIndex = 2;
+            // 
+            // cmbUsuarios
+            // 
+            this.cmbUsuarios.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbUsuarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbUsuarios.FormattingEnabled = true;
+            this.cmbUsuarios.Location = new System.Drawing.Point(400, 307);
+            this.cmbUsuarios.Name = "cmbUsuarios";
+            this.cmbUsuarios.Size = new System.Drawing.Size(252, 37);
+            this.cmbUsuarios.TabIndex = 149;
             // 
             // pictureBox3
             // 
@@ -404,6 +415,17 @@
             this.pictureBox2.TabIndex = 138;
             this.pictureBox2.TabStop = false;
             // 
+            // cmbPreguntas
+            // 
+            this.cmbPreguntas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbPreguntas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPreguntas.FormattingEnabled = true;
+            this.cmbPreguntas.Location = new System.Drawing.Point(400, 167);
+            this.cmbPreguntas.Name = "cmbPreguntas";
+            this.cmbPreguntas.Size = new System.Drawing.Size(252, 37);
+            this.cmbPreguntas.TabIndex = 148;
+            // 
             // tableLayoutPanel8
             // 
             this.tableLayoutPanel8.ColumnCount = 2;
@@ -446,28 +468,6 @@
             this.btnActualizar2.TabIndex = 8;
             this.btnActualizar2.Text = "Actualizar";
             this.btnActualizar2.UseVisualStyleBackColor = false;
-            // 
-            // cmbPreguntas
-            // 
-            this.cmbPreguntas.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cmbPreguntas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPreguntas.FormattingEnabled = true;
-            this.cmbPreguntas.Location = new System.Drawing.Point(400, 175);
-            this.cmbPreguntas.Name = "cmbPreguntas";
-            this.cmbPreguntas.Size = new System.Drawing.Size(252, 37);
-            this.cmbPreguntas.TabIndex = 148;
-            // 
-            // cmbUsuarios
-            // 
-            this.cmbUsuarios.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cmbUsuarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbUsuarios.FormattingEnabled = true;
-            this.cmbUsuarios.Location = new System.Drawing.Point(400, 307);
-            this.cmbUsuarios.Name = "cmbUsuarios";
-            this.cmbUsuarios.Size = new System.Drawing.Size(252, 37);
-            this.cmbUsuarios.TabIndex = 149;
             // 
             // VistaListaRespuestas
             // 

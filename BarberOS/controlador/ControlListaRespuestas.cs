@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BarberOS.Controlador
 {
@@ -13,7 +14,7 @@ namespace BarberOS.Controlador
         VistaListaRespuestas vistaControlada;
         DaoListaRespuestas daoThis = new DaoListaRespuestas();
 
-        public ControlListaRespuestas(VistaListaRespuestas vistaPasada) 
+        public ControlListaRespuestas(VistaListaRespuestas vistaPasada, vistaMenu menuForm) 
         {
             vistaControlada = vistaPasada;
             daoThis.Populate(vistaPasada);
@@ -23,6 +24,9 @@ namespace BarberOS.Controlador
             vistaControlada.btnAgregar.Click += (sender, e) => Agregar();
             vistaControlada.btnActualizar2.Click += (sender, e) => Actualizar();
             vistaControlada.btnBorrar.Click += (sender, e) => Borrar();
+
+            vistaControlada.listRespuestas.SelectedIndexChanged += (sender, e) => ShowData();
+            vistaControlada.btnBorrar += (sender, e) => 
         }
 
         public void Agregar()
@@ -41,6 +45,25 @@ namespace BarberOS.Controlador
         {
             daoThis.Delete(vistaControlada);
             daoThis.Populate(vistaControlada);
+        }
+
+        public void ShowData()
+        {
+            if (vistaControlada.listRespuestas.SelectedItems.Count > 0)
+            {
+                ListViewItem seleccionado = vistaControlada.listRespuestas.SelectedItems[0];
+                vistaControlada.txtId.Text = seleccionado.SubItems[0].Text;
+                vistaControlada.txtRespuesta.Text = seleccionado.SubItems[1].Text;
+                vistaControlada.cmbPreguntas.SelectedItem = seleccionado.SubItems[2].Text;
+                vistaControlada.cmbUsuarios.SelectedItem = seleccionado.SubItems[3].Text;
+            }
+            else
+            {
+                vistaControlada.txtId.Text = null;
+                vistaControlada.txtRespuesta.Text = null;
+                vistaControlada.cmbPreguntas.SelectedItem = null;
+                vistaControlada.cmbUsuarios.SelectedItem = null;
+            }
         }
     }
 }

@@ -124,14 +124,14 @@ namespace BarberOS.Modelo.Dao
                     using (SqlCommand cmd = new SqlCommand("" +
                     "UPDATE answers " +
                     "SET answerText = @answerText, " +
-                    "    answerQuestion = (SELECT questionText FROM questions WHERE questionId = @selectedQuestionId), " +
-                    "    answerUser = (SELECT userName FROM users WHERE userId = @selectedUserId) " +
-                    "WHERE answerId = @selectedAnswerId", conexion))
+                    "answerQuestion = (SELECT questionText FROM questions WHERE questionId = @selectedId), " +
+                    "answerUser = (SELECT userName FROM users WHERE userId = @selectedUserId) " +
+                    "WHERE answerId = @selectedId", conexion))
                     {
 
                         //Los parametros de la query seran los valores obtenidos de los textboxes
                         cmd.Parameters.AddWithValue("@selectedId", vistaPasada.txtId.Text);
-                        cmd.Parameters.AddWithValue("@answerText", vistaPasada.txtRespuesta);
+                        cmd.Parameters.AddWithValue("@answerText", vistaPasada.txtRespuesta.Text);
                         cmd.Parameters.AddWithValue("@answerQuestion", vistaPasada.cmbPreguntas.Text);
                         cmd.Parameters.AddWithValue("@answerUser", vistaPasada.cmbUsuarios.Text);
 

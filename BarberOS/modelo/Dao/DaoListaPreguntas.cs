@@ -117,8 +117,8 @@ namespace BarberOS.Modelo.Dao
                     //sean iguales a los que estan en las textboxes
                     using (SqlCommand cmd = new SqlCommand("" +
                         "UPDATE questions SET " +
-                        "questionText = @questionText, " +
-                        "WHERE userId = @selectedId", conexion))
+                        "questionText = @questionText " +
+                        "WHERE questionId = @selectedId", conexion))
                     {
 
                         //Los parametros de la query seran los valores obtenidos de los textboxes
