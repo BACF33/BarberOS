@@ -16,7 +16,7 @@ namespace BarberOS.Vista
         public VistaListaRespuestas()
         {
             InitializeComponent();
-            new ControlListaRespuestas(this);
+            //new ControlListaRespuestas(this);
         }
 
         private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
