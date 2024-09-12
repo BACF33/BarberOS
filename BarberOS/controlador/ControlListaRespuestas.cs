@@ -26,7 +26,7 @@ namespace BarberOS.Controlador
             vistaControlada.btnBorrar.Click += (sender, e) => Borrar();
 
             vistaControlada.listRespuestas.SelectedIndexChanged += (sender, e) => ShowData();
-            vistaControlada.btnBorrar += (sender, e) => 
+            //vistaControlada.btnBorrar += (sender, e) => 
         }
 
         public void Agregar()
