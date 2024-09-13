@@ -23,17 +23,18 @@ namespace BarberOS.Modelo.Dao
                     conexion.Open();
                     using (SqlCommand cmd = new SqlCommand("UPDATE users SET userPassword = @userPass WHERE userName = @userName", conexion))
                     {
+                        string password;
                         using (SHA256 crypt = SHA256.Create())
                         {
                             byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(vistaPasada.txtNueva.Text));
                             StringBuilder builder = new StringBuilder();
                             for (int i = 0; i < bytes.Length; i++)
                                 builder.Append(bytes[i].ToString("X2"));
-                            vistaPasada.txtNueva.Text = builder.ToString();
+                            password = builder.ToString();
                         }
 
                         //Los parametros de la query seran los valores obtenidos de los textboxes
-                        cmd.Parameters.AddWithValue("@userPass", vistaPasada.txtNueva.Text);
+                        cmd.Parameters.AddWithValue("@userPass", password);
                         cmd.Parameters.AddWithValue("@userName", user);
 
                         cmd.ExecuteNonQuery();

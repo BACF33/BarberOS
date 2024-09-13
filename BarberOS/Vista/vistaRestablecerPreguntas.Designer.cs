@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRestablecer = new System.Windows.Forms.Button();
+            this.cmbQuestion = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtAnswer = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.cmbQuestion = new System.Windows.Forms.ComboBox();
-            this.btnRestablecer = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +57,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(726, 471);
             this.panel1.TabIndex = 11;
+            // 
+            // btnRestablecer
+            // 
+            this.btnRestablecer.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnRestablecer.Location = new System.Drawing.Point(269, 366);
+            this.btnRestablecer.Name = "btnRestablecer";
+            this.btnRestablecer.Size = new System.Drawing.Size(210, 85);
+            this.btnRestablecer.TabIndex = 12;
+            this.btnRestablecer.Text = "Restablecer";
+            this.btnRestablecer.UseVisualStyleBackColor = true;
+            // 
+            // cmbQuestion
+            // 
+            this.cmbQuestion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbQuestion.FormattingEnabled = true;
+            this.cmbQuestion.Location = new System.Drawing.Point(210, 162);
+            this.cmbQuestion.Name = "cmbQuestion";
+            this.cmbQuestion.Size = new System.Drawing.Size(306, 37);
+            this.cmbQuestion.TabIndex = 11;
             // 
             // label6
             // 
@@ -117,25 +137,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1264, 681);
             this.tableLayoutPanel1.TabIndex = 12;
-            // 
-            // cmbQuestion
-            // 
-            this.cmbQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbQuestion.FormattingEnabled = true;
-            this.cmbQuestion.Location = new System.Drawing.Point(210, 162);
-            this.cmbQuestion.Name = "cmbQuestion";
-            this.cmbQuestion.Size = new System.Drawing.Size(306, 37);
-            this.cmbQuestion.TabIndex = 11;
-            // 
-            // btnRestablecer
-            // 
-            this.btnRestablecer.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnRestablecer.Location = new System.Drawing.Point(269, 366);
-            this.btnRestablecer.Name = "btnRestablecer";
-            this.btnRestablecer.Size = new System.Drawing.Size(210, 85);
-            this.btnRestablecer.TabIndex = 12;
-            this.btnRestablecer.Text = "Restablecer";
-            this.btnRestablecer.UseVisualStyleBackColor = true;
             // 
             // vistaRestablecerPreguntas
             // 

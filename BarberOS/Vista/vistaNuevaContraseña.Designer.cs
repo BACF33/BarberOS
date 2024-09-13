@@ -61,7 +61,7 @@
             this.btnNueva.Location = new System.Drawing.Point(152, 314);
             this.btnNueva.Name = "btnNueva";
             this.btnNueva.Size = new System.Drawing.Size(169, 64);
-            this.btnNueva.TabIndex = 1;
+            this.btnNueva.TabIndex = 2;
             this.btnNueva.Text = "Nueva contraseña";
             this.btnNueva.UseVisualStyleBackColor = false;
             this.btnNueva.Click += new System.EventHandler(this.btnNueva_Click);
@@ -72,7 +72,7 @@
             this.txtNueva.Location = new System.Drawing.Point(92, 244);
             this.txtNueva.Name = "txtNueva";
             this.txtNueva.Size = new System.Drawing.Size(320, 29);
-            this.txtNueva.TabIndex = 2;
+            this.txtNueva.TabIndex = 1;
             // 
             // panel3
             // 

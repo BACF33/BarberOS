@@ -206,7 +206,7 @@
             this.txtContraseña.Location = new System.Drawing.Point(235, 283);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(238, 26);
-            this.txtContraseña.TabIndex = 17;
+            this.txtContraseña.TabIndex = 2;
             // 
             // txtEmail
             // 
@@ -216,7 +216,7 @@
             this.txtEmail.Location = new System.Drawing.Point(235, 443);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(238, 26);
-            this.txtEmail.TabIndex = 16;
+            this.txtEmail.TabIndex = 4;
             // 
             // txtPuntos
             // 
@@ -226,7 +226,7 @@
             this.txtPuntos.Location = new System.Drawing.Point(235, 366);
             this.txtPuntos.Name = "txtPuntos";
             this.txtPuntos.Size = new System.Drawing.Size(238, 26);
-            this.txtPuntos.TabIndex = 15;
+            this.txtPuntos.TabIndex = 3;
             this.txtPuntos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
             // txtName
@@ -237,7 +237,7 @@
             this.txtName.Location = new System.Drawing.Point(235, 206);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(238, 26);
-            this.txtName.TabIndex = 14;
+            this.txtName.TabIndex = 1;
             // 
             // pictureBox3
             // 
@@ -285,7 +285,7 @@
             this.txtLugar.Location = new System.Drawing.Point(235, 520);
             this.txtLugar.Name = "txtLugar";
             this.txtLugar.Size = new System.Drawing.Size(238, 26);
-            this.txtLugar.TabIndex = 19;
+            this.txtLugar.TabIndex = 5;
             // 
             // panel1
             // 
