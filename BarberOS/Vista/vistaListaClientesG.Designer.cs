@@ -293,6 +293,7 @@
             // txtId
             // 
             this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtId.Enabled = false;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(398, 25);
             this.txtId.Name = "txtId";

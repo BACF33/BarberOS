@@ -24,7 +24,7 @@ namespace BarberOS.Modelo.Dao
                     //Se ejecutara un query donde se obtendran los valores de la base de datos, se usa un inner join 
                     //dado a que userType es una llave foranea
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT  p.productId, p.productName, p.productPrice, t.productTypeName " +
+                    using (SqlCommand cmd = new SqlCommand("SELECT p.productId, p.productName, p.productPrice, t.productTypeName " +
                         "FROM products p " +
                         "INNER JOIN productTypes t ON productType = t.productTypeId ", conexion))
                     {
@@ -158,10 +158,10 @@ namespace BarberOS.Modelo.Dao
                     //3 Se ejecutara un query donde se seleccionaran toos los datos de la tabla usuarios donde 
                     //el nombre de usuario coincida con el ingresado
                     string sql = @"
-                SELECT p.productId, p.productName, p.productPrice, t.productTypeName
-                FROM products
-                INNER JOIN productTypes t ON productType = t.productTypeId
-                WHERE productName LIKE @searchingFor";
+                    SELECT p.productId, p.productName, p.productType, p.productPrice, t.productTypeName
+                    FROM products p
+                    INNER JOIN productTypes t ON p.productType = t.productTypeId
+                    WHERE p.productName LIKE @searchingFor";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {

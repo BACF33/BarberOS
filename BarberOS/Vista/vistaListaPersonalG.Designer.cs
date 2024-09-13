@@ -286,6 +286,7 @@
             // txtId
             // 
             this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtId.Enabled = false;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(487, 25);
             this.txtId.Name = "txtId";
@@ -349,7 +350,7 @@
             this.txtEmail.Location = new System.Drawing.Point(391, 333);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(270, 35);
-            this.txtEmail.TabIndex = 148;
+            this.txtEmail.TabIndex = 9;
             // 
             // txtPuntos
             // 
@@ -358,7 +359,7 @@
             this.txtPuntos.Location = new System.Drawing.Point(391, 176);
             this.txtPuntos.Name = "txtPuntos";
             this.txtPuntos.Size = new System.Drawing.Size(270, 35);
-            this.txtPuntos.TabIndex = 147;
+            this.txtPuntos.TabIndex = 7;
             this.txtPuntos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
             // label3
@@ -508,7 +509,7 @@
             this.cmbCargo.Location = new System.Drawing.Point(391, 253);
             this.cmbCargo.Name = "cmbCargo";
             this.cmbCargo.Size = new System.Drawing.Size(270, 37);
-            this.cmbCargo.TabIndex = 7;
+            this.cmbCargo.TabIndex = 8;
             // 
             // tableLayoutPanel8
             // 
@@ -535,7 +536,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(424, 3);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(147, 75);
-            this.btnAgregar.TabIndex = 9;
+            this.btnAgregar.TabIndex = 11;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             // 
@@ -549,7 +550,7 @@
             this.btnActualizar2.Location = new System.Drawing.Point(92, 3);
             this.btnActualizar2.Name = "btnActualizar2";
             this.btnActualizar2.Size = new System.Drawing.Size(147, 75);
-            this.btnActualizar2.TabIndex = 8;
+            this.btnActualizar2.TabIndex = 10;
             this.btnActualizar2.Text = "Actualizar";
             this.btnActualizar2.UseVisualStyleBackColor = false;
             // 

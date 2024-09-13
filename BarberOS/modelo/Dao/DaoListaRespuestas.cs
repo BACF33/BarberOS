@@ -119,21 +119,20 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    //Se ejecutara un query update donde se hara que  valores de la tabla usuarios en la base de datos
-                    //sean iguales a los que estan en las textboxes
-                    using (SqlCommand cmd = new SqlCommand("" +
-                    "UPDATE answers " +
-                    "SET answerText = @answerText, " +
-                    "answerQuestion = (SELECT questionText FROM questions WHERE questionId = @selectedId), " +
-                    "answerUser = (SELECT userName FROM users WHERE userId = @selectedUserId) " +
-                    "WHERE answerId = @selectedId", conexion))
-                    {
 
-                        //Los parametros de la query seran los valores obtenidos de los textboxes
+                    string sql = @"
+                UPDATE answers
+                SET answerText = @answerText,
+                    answerQuestion = (SELECT questionId FROM questions WHERE questionText = @answerQuestionText),
+                    answerUser = (SELECT userId FROM users WHERE userName = @answerUserName)
+                WHERE answerId = @selectedId";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conexion))
+                    {
                         cmd.Parameters.AddWithValue("@selectedId", vistaPasada.txtId.Text);
                         cmd.Parameters.AddWithValue("@answerText", vistaPasada.txtRespuesta.Text);
-                        cmd.Parameters.AddWithValue("@answerQuestion", vistaPasada.cmbPreguntas.Text);
-                        cmd.Parameters.AddWithValue("@answerUser", vistaPasada.cmbUsuarios.Text);
+                        cmd.Parameters.AddWithValue("@answerQuestionText", vistaPasada.cmbPreguntas.Text);
+                        cmd.Parameters.AddWithValue("@answerUserName", vistaPasada.cmbUsuarios.Text);
 
                         cmd.ExecuteNonQuery();
                     }
@@ -141,7 +140,7 @@ namespace BarberOS.Modelo.Dao
             }
             catch (Exception ex)
             {
-                System.Windows.MessageBox.Show(ex.ToString());
+                MessageBox.Show(ex.ToString());
             }
         }
 
@@ -205,7 +204,44 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
+        public void Search(string searchingFor, VistaListaRespuestas vistaPasada)
+        {
+            try
+            {
+                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
+                using (SqlConnection conexion = new SqlConnection(cnn))
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(
+                        "SELECT a.answerId, a.answerText, u.userName, q.questionText " +
+                        "FROM answers a " +
+                        "INNER JOIN users u ON a.answerUser = u.userId " +
+                        "INNER JOIN questions q ON a.answerQuestion = q.questionId " +
+                        "WHERE a.answerText LIKE @searchingFor", conexion))
+                    {
+                        cmd.Parameters.AddWithValue("@searchingFor", "%" + searchingFor + "%");
 
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        vistaPasada.listRespuestas.Items.Clear();
+
+                        while (reader.Read())
+                        {
+                            ListViewItem item = new ListViewItem(reader["answerId"].ToString());
+                            item.SubItems.Add(reader["answerText"].ToString());
+                            item.SubItems.Add(reader["userName"].ToString());
+                            item.SubItems.Add(reader["questionText"].ToString());
+                            vistaPasada.listRespuestas.Items.Add(item);
+                        }
+
+                        reader.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show(ex.ToString());
+            }
+        }
 
     }
 }

@@ -20,7 +20,8 @@ namespace BarberOS.Controlador
             vistaPasada.btnAgregar.Click += (sender, e) => Insertar();
             vistaPasada.btnBorrar.Click += (sender, e) => Borrar();
             vistaPasada.btnActualizar.Click += (sender, e) => Actualizar();
-            vistaControlada.btnARespuestas.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new VistaListaRespuestas());
+            vistaPasada.btnBuscar.Click += (sender, e) => Search();
+            vistaControlada.btnARespuestas.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new VistaListaRespuestas(menuPasado));
             vistaControlada.btnVolver.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new VistaInicioGestion(menuPasado));
 
             vistaControlada.listPreguntas.SelectedIndexChanged += (sender, e) => ShowData();
@@ -57,6 +58,12 @@ namespace BarberOS.Controlador
         {
             daoThis.Update(vistaControlada);
             daoThis.Populate(vistaControlada);
+        }
+
+        public void Search()
+        {
+            string searchingFor = vistaControlada.txtSearchingFor.Text;
+            daoThis.searchData(searchingFor, vistaControlada);
         }
 
     }

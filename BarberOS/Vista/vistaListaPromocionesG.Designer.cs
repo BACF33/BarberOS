@@ -48,7 +48,6 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtPoder = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -60,6 +59,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
+            this.txtPoder = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar2 = new System.Windows.Forms.Button();
@@ -281,6 +281,7 @@
             // txtId
             // 
             this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtId.Enabled = false;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(405, 25);
             this.txtId.Name = "txtId";
@@ -331,16 +332,6 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(564, 395);
             this.tableLayoutPanel7.TabIndex = 2;
-            // 
-            // txtPoder
-            // 
-            this.txtPoder.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPoder.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPoder.Location = new System.Drawing.Point(333, 227);
-            this.txtPoder.Name = "txtPoder";
-            this.txtPoder.Size = new System.Drawing.Size(228, 35);
-            this.txtPoder.TabIndex = 7;
-            this.txtPoder.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
             // label3
             // 
@@ -468,6 +459,16 @@
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(228, 37);
             this.cmbTipo.TabIndex = 8;
+            // 
+            // txtPoder
+            // 
+            this.txtPoder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPoder.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPoder.Location = new System.Drawing.Point(333, 227);
+            this.txtPoder.Name = "txtPoder";
+            this.txtPoder.Size = new System.Drawing.Size(228, 35);
+            this.txtPoder.TabIndex = 7;
+            this.txtPoder.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloPuntos);
             // 
             // tableLayoutPanel8
             // 

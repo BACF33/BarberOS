@@ -113,19 +113,51 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    //Se ejecutara un query update donde se hara que  valores de la tabla usuarios en la base de datos
-                    //sean iguales a los que estan en las textboxes
                     using (SqlCommand cmd = new SqlCommand("" +
                         "UPDATE questions SET " +
                         "questionText = @questionText " +
                         "WHERE questionId = @selectedId", conexion))
                     {
-
-                        //Los parametros de la query seran los valores obtenidos de los textboxes
                         cmd.Parameters.AddWithValue("@selectedId", vistaPasada.txtId.Text);
                         cmd.Parameters.AddWithValue("@questionText", vistaPasada.txtPregunta.Text);
 
                         cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show(ex.ToString());
+            }
+        }
+
+        public void searchData(string searchingFor, vistaListaPreguntas vistaPasada)
+        {
+            try
+            {
+                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
+                using (SqlConnection conexion = new SqlConnection(cnn))
+                {
+                    conexion.Open();
+
+                    string sql = @"
+                SELECT * FROM questions WHERE questionText LIKE @searchingFor";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conexion))
+                    {
+                        cmd.Parameters.AddWithValue("@searchingFor", "%" + searchingFor + "%");
+
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+                        vistaPasada.listPreguntas.Items.Clear();
+
+                        while (reader.Read())
+                        {
+                            ListViewItem item = new ListViewItem(reader["questionId"].ToString());
+                            item.SubItems.Add(reader["questionText"].ToString());
+                            vistaPasada.listPreguntas.Items.Add(item);
+                        }
+                        reader.Close();
                     }
                 }
             }

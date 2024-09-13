@@ -13,10 +13,11 @@ namespace BarberOS.Vista
 {
     public partial class VistaListaRespuestas : Form
     {
-        public VistaListaRespuestas()
+        public VistaListaRespuestas(vistaMenu menuPasado)
+
         {
             InitializeComponent();
-            //new ControlListaRespuestas(this);
+            new ControlListaRespuestas(this, menuPasado);
         }
 
         private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)

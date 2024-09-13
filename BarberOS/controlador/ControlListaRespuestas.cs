@@ -24,8 +24,10 @@ namespace BarberOS.Controlador
             vistaControlada.btnAgregar.Click += (sender, e) => Agregar();
             vistaControlada.btnActualizar2.Click += (sender, e) => Actualizar();
             vistaControlada.btnBorrar.Click += (sender, e) => Borrar();
+            vistaControlada.btnBuscar.Click += (sender, e) => Buscar();
 
             vistaControlada.listRespuestas.SelectedIndexChanged += (sender, e) => ShowData();
+            vistaControlada.btnVolver.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(menuForm));
             //vistaControlada.btnBorrar += (sender, e) => 
         }
 
@@ -64,6 +66,12 @@ namespace BarberOS.Controlador
                 vistaControlada.cmbPreguntas.SelectedItem = null;
                 vistaControlada.cmbUsuarios.SelectedItem = null;
             }
+        }
+
+        public void Buscar()
+        {
+            string searchingFor = vistaControlada.txtSearchingFor.Text;
+            daoThis.Search(searchingFor, vistaControlada);
         }
     }
 }
