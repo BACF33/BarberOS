@@ -29,8 +29,15 @@ namespace BarberOS.Controlador
 
         public void Insertar()
         {
-            daoThis.insertar(vistaControlada);
-            daoThis.Populate(vistaControlada);
+            if (vistaControlada.txtPregunta.Text.Equals(""))
+            {
+                MessageBox.Show("Hay campos vacios");
+            }
+            else
+            {
+                daoThis.insertar(vistaControlada);
+                daoThis.Populate(vistaControlada);
+            }
         }
 
         public void Borrar() 
@@ -56,8 +63,15 @@ namespace BarberOS.Controlador
 
         public void Actualizar()
         {
-            daoThis.Update(vistaControlada);
-            daoThis.Populate(vistaControlada);
+            if (vistaControlada.txtPregunta.Text.Equals(""))
+            {
+                MessageBox.Show("Hay campos vacios");
+            }
+            else
+            {
+                daoThis.Update(vistaControlada);
+                daoThis.Populate(vistaControlada);
+            }
         }
 
         public void Search()

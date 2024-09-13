@@ -33,14 +33,28 @@ namespace BarberOS.Controlador
 
         public void Agregar()
         {
-            daoThis.insertar(vistaControlada);
-            daoThis.Populate(vistaControlada);
+            if (vistaControlada.txtRespuesta.Text.Equals("") || vistaControlada.txtRespuesta.Text.Equals(""))
+            {
+                MessageBox.Show("Hay campos vacios");
+            }
+            else
+            {
+                daoThis.insertar(vistaControlada);
+                daoThis.Populate(vistaControlada);
+            }
         }
 
         public void Actualizar()
         {
-            daoThis.Update(vistaControlada);
-            daoThis.Populate(vistaControlada);
+            if (vistaControlada.txtRespuesta.Text.Equals("") || vistaControlada.cmbPreguntas.Text.Equals("") || vistaControlada.cmbUsuarios.Text.Equals(""))
+            {
+                MessageBox.Show("Hay campos vacios");
+            }
+            else
+            {
+                daoThis.Update(vistaControlada);
+                daoThis.Populate(vistaControlada);
+            }
         }
 
         public void Borrar()
