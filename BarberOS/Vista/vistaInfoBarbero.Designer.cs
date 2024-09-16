@@ -239,7 +239,7 @@
             this.button3.Text = "Informacion";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // vistaInfoBarbero
+            // VistaInfoBarbero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -265,7 +265,7 @@
             this.Controls.Add(this.pictureBox11);
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.MinimumSize = new System.Drawing.Size(800, 600);
-            this.Name = "vistaInfoBarbero";
+            this.Name = "VistaInfoBarbero";
             this.Text = "vistaInfoBarbero";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();

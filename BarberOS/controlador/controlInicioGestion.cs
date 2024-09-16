@@ -30,7 +30,7 @@ namespace BarberOS.Controlador
             //Si se presiona registros se abrirar un formulario vistaListaRegistrosG
             controladaVista.btnRegistros.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaRegistros(passedMenuForm));
 
-            controladaVista.btnAgenda.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaAgendas());
+            controladaVista.btnAgenda.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaAgendas(passedMenuForm));
         }
     }
 }

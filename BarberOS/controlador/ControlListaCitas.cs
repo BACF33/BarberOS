@@ -12,10 +12,11 @@ namespace BarberOS.Controlador
     {
         DaoListaCitas daoThis = new DaoListaCitas();
         VistaListaAgendas vistaControlada;
-        public ControlListaCitas(VistaListaAgendas vistaPasada) 
+        public ControlListaCitas(VistaListaAgendas vistaPasada, vistaMenu menuPasado) 
         {
             vistaControlada = vistaPasada;
             daoThis.Populate(vistaPasada);
+            vistaControlada.btnVolver.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new VistaInicioGestion(menuPasado));
             vistaPasada.btnBorrar.Click += (sender, e) => Delete();
         }
 

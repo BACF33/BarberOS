@@ -239,7 +239,7 @@
             this.pictureBox11.TabIndex = 77;
             this.pictureBox11.TabStop = false;
             // 
-            // vistaInfoCliente
+            // VistaInfoCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -263,7 +263,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox11);
-            this.Name = "vistaInfoCliente";
+            this.Name = "VistaInfoCliente";
             this.Text = "vistaInfoClientes";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();

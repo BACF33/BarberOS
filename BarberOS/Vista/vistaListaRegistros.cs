@@ -27,5 +27,15 @@ namespace BarberOS.Vista
                 e.SuppressKeyPress = true;
             }
         }
+
+        private void listRegistros_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

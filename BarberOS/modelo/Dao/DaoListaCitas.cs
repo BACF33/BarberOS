@@ -57,7 +57,7 @@ namespace BarberOS.Modelo.Dao
                     //Usando la id de la fila seleccionada por el usuaio se eliminara el valor de la base de datos con
                     //el mismo id 
                     conexion.Open();
-                    string sql = "DELETE FROM appointments WHERE promotionId = @toDelete";
+                    string sql = "DELETE FROM appointments WHERE appointmentId = @toDelete";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conexion))
                     {

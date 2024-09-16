@@ -13,10 +13,10 @@ namespace BarberOS.Vista
 {
     public partial class VistaListaAgendas : Form
     {
-        public VistaListaAgendas()
+        public VistaListaAgendas(vistaMenu menuPasado)
         {
             InitializeComponent();
-            new ControlListaCitas(this);
+            new ControlListaCitas(this, menuPasado);
         }
     }
 }
