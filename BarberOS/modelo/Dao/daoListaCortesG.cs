@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,6 +41,8 @@ namespace BarberOS.Modelo.Dao
                             item.SubItems.Add(reader["productName"].ToString());
                             item.SubItems.Add(reader["productPrice"].ToString());
                             item.SubItems.Add(reader["productTypeName"].ToString());
+                            item.SubItems.Add(reader["productImage"].ToString());
+                            item.SubItems.Add(reader["productImage"].ToString());
                             vistaPasada.listCortes.Items.Add(item);
                         }
 
@@ -54,6 +58,8 @@ namespace BarberOS.Modelo.Dao
 
         public void Insert(VistaListaCortesG vistaPasada)
         {
+            MemoryStream archivoMemoria = new MemoryStream();
+            vistaPasada.picProducto.Image.Save(archivoMemoria, ImageFormat.Bmp);
             try
             {
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
@@ -76,6 +82,8 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@Nombre", vistaPasada.txtNombre.Text);
                         cmd.Parameters.AddWithValue("@Precio", vistaPasada.txtPrecio.Text);
                         cmd.Parameters.AddWithValue("@Tipo", vistaPasada.cmbTipo.Text);
+                        cmd.Parameters.AddWithValue("@Image", archivoMemoria.GetBuffer());
+
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
                 }

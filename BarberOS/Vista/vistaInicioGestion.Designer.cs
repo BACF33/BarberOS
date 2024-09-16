@@ -36,9 +36,10 @@
             this.btnPersonal = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnAgenda = new System.Windows.Forms.Button();
             this.btnPreguntas = new System.Windows.Forms.Button();
             this.btnRegistros = new System.Windows.Forms.Button();
-            this.btnAgenda = new System.Windows.Forms.Button();
+            this.btnInventario = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -150,18 +151,33 @@
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.btnInventario, 0, 3);
             this.tableLayoutPanel4.Controls.Add(this.btnAgenda, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.btnPreguntas, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.btnRegistros, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(845, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowCount = 4;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.08995F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.91005F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 214F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 159F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 149F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(277, 593);
             this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // btnAgenda
+            // 
+            this.btnAgenda.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnAgenda.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnAgenda.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnAgenda.Location = new System.Drawing.Point(31, 319);
+            this.btnAgenda.Name = "btnAgenda";
+            this.btnAgenda.Size = new System.Drawing.Size(215, 89);
+            this.btnAgenda.TabIndex = 7;
+            this.btnAgenda.Text = "AGENDACIONES";
+            this.btnAgenda.UseVisualStyleBackColor = false;
             // 
             // btnPreguntas
             // 
@@ -169,7 +185,7 @@
             this.btnPreguntas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
             this.btnPreguntas.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnPreguntas.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnPreguntas.Location = new System.Drawing.Point(31, 233);
+            this.btnPreguntas.Location = new System.Drawing.Point(31, 164);
             this.btnPreguntas.Name = "btnPreguntas";
             this.btnPreguntas.Size = new System.Drawing.Size(215, 89);
             this.btnPreguntas.TabIndex = 6;
@@ -182,25 +198,25 @@
             this.btnRegistros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
             this.btnRegistros.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnRegistros.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnRegistros.Location = new System.Drawing.Point(31, 44);
+            this.btnRegistros.Location = new System.Drawing.Point(31, 22);
             this.btnRegistros.Name = "btnRegistros";
             this.btnRegistros.Size = new System.Drawing.Size(215, 89);
             this.btnRegistros.TabIndex = 5;
             this.btnRegistros.Text = "REGISTROS";
             this.btnRegistros.UseVisualStyleBackColor = false;
             // 
-            // btnAgenda
+            // btnInventario
             // 
-            this.btnAgenda.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAgenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnAgenda.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnAgenda.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnAgenda.Location = new System.Drawing.Point(31, 441);
-            this.btnAgenda.Name = "btnAgenda";
-            this.btnAgenda.Size = new System.Drawing.Size(215, 89);
-            this.btnAgenda.TabIndex = 7;
-            this.btnAgenda.Text = "AGENDACIONES";
-            this.btnAgenda.UseVisualStyleBackColor = false;
+            this.btnInventario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnInventario.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnInventario.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnInventario.Location = new System.Drawing.Point(31, 473);
+            this.btnInventario.Name = "btnInventario";
+            this.btnInventario.Size = new System.Drawing.Size(215, 89);
+            this.btnInventario.TabIndex = 8;
+            this.btnInventario.Text = "INVENTARIO";
+            this.btnInventario.UseVisualStyleBackColor = false;
             // 
             // VistaInicioGestion
             // 
@@ -231,5 +247,6 @@
         public System.Windows.Forms.Button btnRegistros;
         public System.Windows.Forms.Button btnPreguntas;
         public System.Windows.Forms.Button btnAgenda;
+        public System.Windows.Forms.Button btnInventario;
     }
 }

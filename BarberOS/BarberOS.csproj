@@ -75,6 +75,7 @@
   <ItemGroup>
     <Compile Include="Controlador\ControlActualizarRegistro.cs" />
     <Compile Include="Controlador\ControlCitas.cs" />
+    <Compile Include="Controlador\ControlInventario.cs" />
     <Compile Include="Controlador\ControlListaCitas.cs" />
     <Compile Include="Controlador\ControlListaPregunas.cs" />
     <Compile Include="Controlador\ControlListaRespuestas.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Controlador\ControlTotal.cs" />
     <Compile Include="Modelo\Dao\DaoActualizarRegistro.cs" />
     <Compile Include="Modelo\Dao\DaoCitas.cs" />
+    <Compile Include="Modelo\Dao\DaoInventario.cs" />
     <Compile Include="Modelo\Dao\DaoListaCitas.cs" />
     <Compile Include="Modelo\Dao\DaoListaPreguntas.cs" />
     <Compile Include="Modelo\Dao\DaoListaRespuestas.cs" />

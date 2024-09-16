@@ -60,6 +60,9 @@
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar2 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.picProducto = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -71,6 +74,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tableLayoutPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picProducto)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -303,26 +308,29 @@
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 3;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.57933F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.42066F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 367F));
-            this.tableLayoutPanel7.Controls.Add(this.label2, 0, 2);
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.42568F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.30405F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.27027F));
+            this.tableLayoutPanel7.Controls.Add(this.label3, 1, 3);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox3, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox1, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.pictureBox2, 0, 2);
             this.tableLayoutPanel7.Controls.Add(this.txtNombre, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.txtPrecio, 2, 1);
             this.tableLayoutPanel7.Controls.Add(this.cmbTipo, 2, 2);
             this.tableLayoutPanel7.Controls.Add(this.label13, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.label1, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox4, 0, 3);
+            this.tableLayoutPanel7.Controls.Add(this.picProducto, 2, 3);
+            this.tableLayoutPanel7.Controls.Add(this.label2, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox2, 0, 2);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 3;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.93103F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.72414F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 107F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel7.RowCount = 4;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.68966F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.31034F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 103F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(592, 395);
             this.tableLayoutPanel7.TabIndex = 2;
             // 
@@ -331,10 +339,10 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(102, 317);
+            this.label2.Location = new System.Drawing.Point(133, 235);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 48);
+            this.label2.Size = new System.Drawing.Size(172, 24);
             this.label2.TabIndex = 142;
             this.label2.Text = "Tipo de Producto";
             // 
@@ -343,7 +351,7 @@
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::BarberOS.Properties.Resources.Cortes_icon_blue_png11;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 45);
+            this.pictureBox3.Location = new System.Drawing.Point(23, 10);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(69, 70);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -354,7 +362,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::BarberOS.Properties.Resources._2399022;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 196);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 115);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(69, 55);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -365,7 +373,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::BarberOS.Properties.Resources.Etiqueta_png;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 303);
+            this.pictureBox2.Location = new System.Drawing.Point(23, 210);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(69, 75);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -376,9 +384,9 @@
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(269, 63);
+            this.txtNombre.Location = new System.Drawing.Point(327, 27);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(278, 35);
+            this.txtNombre.Size = new System.Drawing.Size(262, 35);
             this.txtNombre.TabIndex = 5;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras);
             // 
@@ -386,9 +394,9 @@
             // 
             this.txtPrecio.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(269, 206);
+            this.txtPrecio.Location = new System.Drawing.Point(327, 125);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(278, 35);
+            this.txtPrecio.Size = new System.Drawing.Size(262, 35);
             this.txtPrecio.TabIndex = 6;
             this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
@@ -401,9 +409,9 @@
             this.cmbTipo.Items.AddRange(new object[] {
             "Cabello ",
             "Barba"});
-            this.cmbTipo.Location = new System.Drawing.Point(267, 322);
+            this.cmbTipo.Location = new System.Drawing.Point(327, 229);
             this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(282, 37);
+            this.cmbTipo.Size = new System.Drawing.Size(262, 37);
             this.cmbTipo.TabIndex = 7;
             this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
             // 
@@ -412,7 +420,7 @@
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(83, 56);
+            this.label13.Location = new System.Drawing.Point(153, 21);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(132, 48);
@@ -424,10 +432,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(94, 200);
+            this.label1.Location = new System.Drawing.Point(122, 131);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 48);
+            this.label1.Size = new System.Drawing.Size(195, 24);
             this.label1.TabIndex = 141;
             this.label1.Text = "Precio del Producto";
             // 
@@ -475,6 +483,41 @@
             this.btnActualizar2.UseVisualStyleBackColor = false;
             this.btnActualizar2.Click += new System.EventHandler(this.btnActualizar2_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox4.Image = global::BarberOS.Properties.Resources._54751231;
+            this.pictureBox4.Location = new System.Drawing.Point(19, 306);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(76, 82);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 143;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(120, 335);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(199, 24);
+            this.label3.TabIndex = 144;
+            this.label3.Text = "Imagen de Producto";
+            // 
+            // picProducto
+            // 
+            this.picProducto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picProducto.Image = global::BarberOS.Properties.Resources.Negro;
+            this.picProducto.Location = new System.Drawing.Point(392, 302);
+            this.picProducto.Name = "picProducto";
+            this.picProducto.Size = new System.Drawing.Size(131, 90);
+            this.picProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picProducto.TabIndex = 145;
+            this.picProducto.TabStop = false;
+            this.picProducto.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
             // VistaListaCortesG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -498,6 +541,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tableLayoutPanel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picProducto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -536,5 +581,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.PictureBox picProducto;
     }
 }

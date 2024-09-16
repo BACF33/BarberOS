@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BarberOS.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,13 @@ namespace BarberOS.Vista
 {
     public partial class VistaInventario : Form
     {
-        public VistaInventario()
+        public VistaInventario(vistaMenu menuPasado)
         {
             InitializeComponent();
             this.KeyPreview = true;
             this.KeyDown += Form_KeyDown;
+
+            new ControlInventario(menuPasado, this);
         }
 
         private void Form_KeyDown(object sender, KeyEventArgs e)
