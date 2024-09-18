@@ -2,6 +2,8 @@
 using System;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
@@ -20,7 +22,7 @@ namespace BarberOS.Modelo.Dao
                     //Se ejecutara un query donde se obtendran los valores de la base de datos, se usa un inner join 
                     //dado a que userType es una llave foranea
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT u.userId, u.userName, u.userPassword, u.userPoints, r.roleName, u.userEmail, u.userBirthPlace " +
+                    using (SqlCommand cmd = new SqlCommand("SELECT u.userId, u.userName, u.userPassword, u.userPoints, r.roleName, u.userEmail, u.userBirthPlace, u.userImage " +
                         "FROM users u " +
                         "INNER JOIN userRoles r ON u.userRole = r.roleId " +
                         "WHERE r.roleName = 'Cliente'", conexion))
@@ -28,6 +30,12 @@ namespace BarberOS.Modelo.Dao
                         SqlDataReader reader = cmd.ExecuteReader();
 
                         vistaPasada.listClientes.Items.Clear();
+
+                        ImageList imageList = new ImageList();
+                        imageList.ImageSize = new System.Drawing.Size(64, 64);
+                        vistaPasada.listClientes.SmallImageList = imageList;
+
+                        int index = 0;
 
                         //Se le añade a la lista presente en la vista los valores obtenidos con el query
                         while (reader.Read())
@@ -39,6 +47,19 @@ namespace BarberOS.Modelo.Dao
                             item.SubItems.Add(reader["roleName"].ToString());
                             item.SubItems.Add(reader["userEmail"].ToString());
                             item.SubItems.Add(reader["userBirthPlace"].ToString());
+
+                            if (!DBNull.Value.Equals(reader["userImage"]))
+                            {
+                                byte[] imageData = (byte[])reader["userImage"];
+                                using (MemoryStream ms = new MemoryStream(imageData))
+                                {
+                                    Image productImage = Image.FromStream(ms);
+                                    imageList.Images.Add(productImage);
+                                }
+                                item.ImageIndex = index;
+                                index++;
+                            }
+
                             vistaPasada.listClientes.Items.Add(item);
                         }
 
@@ -59,18 +80,24 @@ namespace BarberOS.Modelo.Dao
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
+                    MemoryStream archivoMemoria = new MemoryStream();
+                    vistaPasada.picClientes.Image.Save(archivoMemoria, System.Drawing.Imaging.ImageFormat.Jpeg);
+
+                    byte[] imageData = archivoMemoria.ToArray();
+
                     //Usando la id de la fila seleccionada por el usuaio se eliminara el valor de la base de datos con
                     //el mismo id 
                     conexion.Open();
                     string query = @"
-                    INSERT INTO users (userName, userPassword, userPoints, userRole, userEmail, userRequiresRestart)
+                    INSERT INTO users (userName, userPassword, userPoints, userRole, userEmail, userRequiresRestart, userImage)
                     VALUES (
                     @userName, 
                     @userPassword, 
                     @userPoints, 
                     (SELECT roleId FROM userRoles WHERE roleName = @roleName),
                     @userEmail,
-                    @userRequiresRestart
+                    @userRequiresRestart,
+                    @Imagen
                     )";
 
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
@@ -93,6 +120,7 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@roleName", "Cliente");
                         cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
                         cmd.Parameters.AddWithValue("@userRequiresRestart", true);
+                        cmd.Parameters.AddWithValue("@Imagen", imageData);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
                 }
@@ -105,6 +133,10 @@ namespace BarberOS.Modelo.Dao
 
         public void Update(VistaListaClientesG vistaPasada)
         {
+            MemoryStream archivoMemoria = new MemoryStream();
+            vistaPasada.picClientes.Image.Save(archivoMemoria, System.Drawing.Imaging.ImageFormat.Png);
+            byte[] imageBytes = archivoMemoria.ToArray();
+
             try
             {
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
@@ -119,7 +151,8 @@ namespace BarberOS.Modelo.Dao
                         "userPoints = @userPoints, " +
                         "userPassword = @userPassword, " +
                         "userRole = (SELECT roleId FROM userRoles WHERE roleName = @roleName), " +
-                        "userEmail = @userEmail " +
+                        "userEmail = @userEmail, " +
+                        "userImage = @Image " +
                         "WHERE userId = @selectedId", conexion))
                     {
 
@@ -140,6 +173,7 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtPuntos.Text);
                         cmd.Parameters.AddWithValue("@roleName", "Cliente");
                         cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
+                        cmd.Parameters.AddWithValue("@Image", imageBytes);
 
                         cmd.ExecuteNonQuery();
                     }

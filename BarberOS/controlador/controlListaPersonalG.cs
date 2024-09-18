@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,7 +33,21 @@ namespace BarberOS.Controlador
             controladaVista.btnActualizar2.Click += (sender, e) => UpdateData();
             controladaVista.btnBuscar.Click += (sender, e) => searchData();
             controladaVista.btnVolver.Click += (sender, e) => passedMenuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(passedMenuForm));
+            controladaVista.picPersonal.Click += (sender, e) => LoadImage();
+
             dao.Populate(controladaVista);
+        }
+
+        public void LoadImage()
+        {
+            OpenFileDialog dialogo = new OpenFileDialog();
+            DialogResult resultado = dialogo.ShowDialog();
+
+            if (resultado == DialogResult.OK)
+            {
+                controladaVista.picPersonal.Image = Image.FromFile(dialogo.FileName);
+                controladaVista.picPersonal.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
         }
 
         public void ShowData()
