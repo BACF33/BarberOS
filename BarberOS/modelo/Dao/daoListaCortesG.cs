@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Drawing.Imaging;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -23,10 +23,9 @@ namespace BarberOS.Modelo.Dao
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
-                    //Se ejecutara un query donde se obtendran los valores de la base de datos, se usa un inner join 
-                    //dado a que userType es una llave foranea
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT p.productId, p.productName, p.productPrice, t.productTypeName " +
+                    using (SqlCommand cmd = new SqlCommand(
+                        "SELECT p.productId, p.productName, p.productPrice, t.productTypeName, p.productImage " +
                         "FROM products p " +
                         "INNER JOIN productTypes t ON productType = t.productTypeId ", conexion))
                     {
@@ -34,13 +33,31 @@ namespace BarberOS.Modelo.Dao
 
                         vistaPasada.listCortes.Items.Clear();
 
-                        //Se le añade a la lista presente en la vista los valores obtenidos con el query
+                        ImageList imageList = new ImageList();
+                        imageList.ImageSize = new System.Drawing.Size(64, 64);
+                        vistaPasada.listCortes.SmallImageList = imageList;
+
+                        int index = 0;
+
                         while (reader.Read())
                         {
                             ListViewItem item = new ListViewItem(reader["productId"].ToString());
                             item.SubItems.Add(reader["productName"].ToString());
                             item.SubItems.Add(reader["productPrice"].ToString());
                             item.SubItems.Add(reader["productTypeName"].ToString());
+
+                            if (!DBNull.Value.Equals(reader["productImage"]))
+                            {
+                                byte[] imageData = (byte[])reader["productImage"];
+                                using (MemoryStream ms = new MemoryStream(imageData))
+                                {
+                                    Image productImage = Image.FromStream(ms);
+                                    imageList.Images.Add(productImage);
+                                }
+                                item.ImageIndex = index;
+                                index++;
+                            }
+
                             vistaPasada.listCortes.Items.Add(item);
                         }
 
@@ -56,32 +73,34 @@ namespace BarberOS.Modelo.Dao
 
         public void Insert(VistaListaCortesG vistaPasada)
         {
-            MemoryStream archivoMemoria = new MemoryStream();
-            vistaPasada.picProducto.Image.Save(archivoMemoria, ImageFormat.Bmp);
             try
             {
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
-                    //Usando la id de la fila seleccionada por el usuaio se eliminara el valor de la base de datos con
-                    //el mismo id 
-                    conexion.Open();
-                    string query = @"
-                    INSERT INTO products (productName, productPrice, productType )
-                    VALUES (
-                    @Nombre , 
-                    @Precio , 
-                    (SELECT productTypeId FROM productTypes WHERE productTypeName = @Tipo)
-                    )";
+                    MemoryStream archivoMemoria = new MemoryStream();
+                    vistaPasada.picProducto.Image.Save(archivoMemoria, System.Drawing.Imaging.ImageFormat.Jpeg);
 
+                    byte[] imageData = archivoMemoria.ToArray();
+
+                    string query = @"
+            INSERT INTO products (productName, productPrice, productType, productImage)
+            VALUES (
+            @Nombre, 
+            @Precio, 
+            (SELECT productTypeId FROM productTypes WHERE productTypeName = @Tipo), 
+            @Imagen
+            )";
+
+                    conexion.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
-                        //Se usara la string selectedId como parametro
                         cmd.Parameters.AddWithValue("@Nombre", vistaPasada.txtNombre.Text);
                         cmd.Parameters.AddWithValue("@Precio", vistaPasada.txtPrecio.Text);
                         cmd.Parameters.AddWithValue("@Tipo", vistaPasada.cmbTipo.Text);
+                        cmd.Parameters.AddWithValue("@Imagen", imageData);
 
-                        int rowsAffected = cmd.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery();
                     }
                 }
             }
@@ -93,26 +112,30 @@ namespace BarberOS.Modelo.Dao
 
         public void Update(VistaListaCortesG vistaPasada)
         {
+            MemoryStream archivoMemoria = new MemoryStream();
+            vistaPasada.picProducto.Image.Save(archivoMemoria, System.Drawing.Imaging.ImageFormat.Png);
+            byte[] imageBytes = archivoMemoria.ToArray();
+
             try
             {
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    //Se ejecutara un query update donde se hara que  valores de la tabla usuarios en la base de datos
-                    //sean iguales a los que estan en las textboxes
+
                     using (SqlCommand cmd = new SqlCommand("" +
                         "UPDATE products SET " +
                         "productName = @Name, " +
                         "productPrice = @Price, " +
-                        "productType = (SELECT productTypeId FROM productTypes WHERE productTypeName = @Type)" +
+                        "productType = (SELECT productTypeId FROM productTypes WHERE productTypeName = @Type), " +
+                        "productImage = @Image " +
                         "WHERE productId = @selectedId", conexion))
                     {
-                        //Los parametros de la query seran los valores obtenidos de los textboxes
                         cmd.Parameters.AddWithValue("@selectedId", vistaPasada.txtId.Text);
                         cmd.Parameters.AddWithValue("@Name", vistaPasada.txtNombre.Text);
                         cmd.Parameters.AddWithValue("@Price", vistaPasada.txtPrecio.Text);
                         cmd.Parameters.AddWithValue("@Type", vistaPasada.cmbTipo.Text);
+                        cmd.Parameters.AddWithValue("@Image", imageBytes);
 
                         cmd.ExecuteNonQuery();
                     }
