@@ -41,8 +41,6 @@ namespace BarberOS.Modelo.Dao
                             item.SubItems.Add(reader["productName"].ToString());
                             item.SubItems.Add(reader["productPrice"].ToString());
                             item.SubItems.Add(reader["productTypeName"].ToString());
-                            item.SubItems.Add(reader["productImage"].ToString());
-                            item.SubItems.Add(reader["productImage"].ToString());
                             vistaPasada.listCortes.Items.Add(item);
                         }
 
