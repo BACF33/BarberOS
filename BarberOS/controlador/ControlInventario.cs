@@ -32,8 +32,8 @@ namespace BarberOS.Controlador
 
         public void Delete() 
         {
-            daoThis.
-            daoThis.Obtener(vistaControlada);
+            //daoThis.
+            //daoThis.Obtener(vistaControlada);
         }
     }
 }

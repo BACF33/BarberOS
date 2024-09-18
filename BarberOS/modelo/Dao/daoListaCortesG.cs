@@ -82,7 +82,6 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@Nombre", vistaPasada.txtNombre.Text);
                         cmd.Parameters.AddWithValue("@Precio", vistaPasada.txtPrecio.Text);
                         cmd.Parameters.AddWithValue("@Tipo", vistaPasada.cmbTipo.Text);
-                        cmd.Parameters.AddWithValue("@Image", archivoMemoria.GetBuffer());
 
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
