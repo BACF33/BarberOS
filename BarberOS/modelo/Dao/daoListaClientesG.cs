@@ -113,7 +113,7 @@ namespace BarberOS.Modelo.Dao
                             password = builder.ToString();
                         }
 
-                        //Se usara la string selectedId como parametro
+                        //Como argumentos del query se usaran los valores del panel izquierdo
                         cmd.Parameters.AddWithValue("@userName", vistaPasada.txtName.Text);
                         cmd.Parameters.AddWithValue("@userPassword", password);
                         cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtPuntos.Text);

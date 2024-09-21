@@ -15,8 +15,11 @@ namespace BarberOS.Controlador
         vistaListaPreguntas vistaControlada;
         public ControlListaPregunas(vistaListaPreguntas vistaPasada, vistaMenu menuPasado)
         {
+            //Se ejecuta la funcion populate del dao para obtener la tabla
             daoThis.Populate(vistaPasada);
             vistaControlada = vistaPasada;
+            //Cuando se presionen los botones marcados en la izquierda se ejecutaran las funciones a la derech
+            //por ejemplo si se presiona agregar se ejecutara la funcion insertData
             vistaPasada.btnAgregar.Click += (sender, e) => Insertar();
             vistaPasada.btnBorrar.Click += (sender, e) => Borrar();
             vistaPasada.btnActualizar.Click += (sender, e) => Actualizar();
@@ -27,6 +30,7 @@ namespace BarberOS.Controlador
             vistaControlada.listPreguntas.SelectedIndexChanged += (sender, e) => ShowData();
         }
 
+        //Se ejecutara la funcion insert del dao y obtener para actualizar la tabla
         public void Insertar()
         {
             if (vistaControlada.txtPregunta.Text.Equals(""))
@@ -40,12 +44,14 @@ namespace BarberOS.Controlador
             }
         }
 
+        //Se ejecutara la funcion delete del dao y obtener para actualizar la tabla
         public void Borrar() 
         {
             daoThis.Delete(vistaControlada);
             daoThis.Populate(vistaControlada);
         }
 
+        //Esto se ejecuta cuando el usuario presione una fila, los valores de la fila se aplicaran a los texboxes del panel izquierdo
         public void ShowData()
         {
             if (vistaControlada.listPreguntas.SelectedItems.Count > 0)
@@ -61,6 +67,7 @@ namespace BarberOS.Controlador
             }
         }
 
+        //Se ejecutara la funcion update del dao y obtener para actualizar la tabla
         public void Actualizar()
         {
             if (vistaControlada.txtPregunta.Text.Equals(""))
@@ -76,7 +83,9 @@ namespace BarberOS.Controlador
 
         public void Search()
         {
+            //1 Se obtendran los datos que el usuario ingreso en la barra de busqueda
             string searchingFor = vistaControlada.txtSearchingFor.Text;
+            //2 Se ejecutara la funcion searchData del dao
             daoThis.searchData(searchingFor, vistaControlada);
         }
 

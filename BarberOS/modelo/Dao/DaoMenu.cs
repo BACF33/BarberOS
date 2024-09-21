@@ -21,7 +21,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    //7 Se ejecutara un query que obtenga la informacion que tenga la casilla con la id seleccionada
+                    //Query que hara un select * a la tabla de usuarios
                     using (SqlCommand cmd = new SqlCommand("SELECT * FROM users", conexion))
                     {
 
@@ -34,6 +34,7 @@ namespace BarberOS.Modelo.Dao
                         }
                         else
                         {
+                            //Si no detecta datos se ejecuta lo de primer uso
                             controlPasado.AbrirFormulario(new VistaPrimerUsoUsuario(controlPasado));
                             controlPasado.controladaVista.btnAgendar.Visible = false;
                             controlPasado.controladaVista.btnBarberos.Visible = false;
@@ -60,7 +61,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    //7 Se ejecutara un query que obtenga la informacion que tenga la casilla con la id seleccionada
+                    //Query que hara un select * a la tabla de negocios
                     using (SqlCommand cmd = new SqlCommand("SELECT * FROM business", conexion))
                     {
 
@@ -72,6 +73,7 @@ namespace BarberOS.Modelo.Dao
                         }
                         else
                         {
+                            //Si no detecta datos se ejecuta lo de primer uso
                             controlPasado.AbrirFormulario(new VistaPrimerUsoNegocio());
                             controlPasado.controladaVista.btnAgendar.Visible = false;
                             controlPasado.controladaVista.btnBarberos.Visible = false;

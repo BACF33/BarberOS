@@ -19,7 +19,7 @@ namespace BarberOS.Controlador
         public ControlListaPersonal(VistaListaPersonal enviadaVista) 
         {
             controladaVista = enviadaVista;
-
+            //Solo se ejecutara la funcion del constructor del dao para obtener el personal
             DaoListaPersonal daoThis = new DaoListaPersonal(enviadaVista);
         }
     }

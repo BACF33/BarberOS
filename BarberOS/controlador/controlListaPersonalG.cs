@@ -25,7 +25,6 @@ namespace BarberOS.Controlador
 
             controladaVista.listEmpleados.SelectedIndexChanged += (sender, e) => ShowData();
 
-
             //Cuando se presionen los botones marcados en la izquierda se ejecutaran las funciones a la derech
             //por ejemplo si se presiona agregar se ejecutara la funcion insertData
             controladaVista.btnBorrar.Click += (sender, e) => deleteData();
@@ -38,6 +37,7 @@ namespace BarberOS.Controlador
             dao.Populate(controladaVista);
         }
 
+        //Funcion para que cuando el usuario presione la picturebox abra el explorador de archivos y el usuario suba una imagen al picturebox
         public void LoadImage()
         {
             OpenFileDialog dialogo = new OpenFileDialog();
@@ -50,6 +50,7 @@ namespace BarberOS.Controlador
             }
         }
 
+        //Esto se ejecuta cuando el usuario presione una fila, los valores de la fila se aplicaran a los texboxes del panel izquierdo
         public void ShowData()
         {
             if (controladaVista.listEmpleados.SelectedItems.Count > 0)
@@ -75,18 +76,21 @@ namespace BarberOS.Controlador
             }
         }
 
+        //Se ejecutara la funcion insert del dao y obtener para actualizar la tabla
         public void InsertData()
         {
             dao.Insert(controladaVista);
             dao.Populate(controladaVista);
         }
 
+        //Se ejecutara la funcion update del dao y obtener para actualizar la tabla
         public void UpdateData()
         {
             dao.Update(controladaVista);
             dao.Populate(controladaVista);
         }
 
+        //Se ejecutara la funcion delete del dao y obtener para actualizar la tabla
         public void deleteData()
         {
             //1 Si existe una fila en la tabla de la vista que el usuario haya seleccionado se ejecutara lo siguiente

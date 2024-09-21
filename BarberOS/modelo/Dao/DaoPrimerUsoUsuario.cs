@@ -34,6 +34,7 @@ namespace BarberOS.Modelo.Dao
                     @userBirthPlace
                     )";
 
+                    //Se encripta la contraseña
                     string password = vistaPasada.txtContraseña.Text;
                     using (SHA256 crypt = SHA256.Create())
                     {
@@ -44,6 +45,7 @@ namespace BarberOS.Modelo.Dao
                         password = builder.ToString();
                     }
 
+                    //Se encrip
                     string lugar = vistaPasada.txtLugar.Text;
                     using (SHA256 crypt = SHA256.Create())
                     {

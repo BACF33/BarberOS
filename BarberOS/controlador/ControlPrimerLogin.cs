@@ -13,11 +13,13 @@ namespace BarberOS.Controlador
         {
             vistaControlada = vistaPasada;
             menu = pasadoMenu;
+            //Cuando se presione nueva se ejecutara insert
             vistaControlada.btnNueva.Click += (sender, e) => Insert(userPasado);
         }
 
         public void Insert(string userPasado)
         {
+            //Se ejecutara insert y abrira el formulario de vista login
             daoThis.Insert(vistaControlada, userPasado);
             menu.controladorMenu.AbrirFormulario(new vistaLogin(menu));
         }

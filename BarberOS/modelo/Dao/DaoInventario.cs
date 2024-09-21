@@ -86,6 +86,7 @@ namespace BarberOS.Modelo.Dao
 
                     byte[] imageData = archivoMemoria.ToArray();
 
+                    //Se define una query que hara un insert a la tabla de productos
                     string query = @"
                     INSERT INTO products (productName, productPrice, productType, productQuantity, productImage)
                     VALUES (
@@ -101,7 +102,7 @@ namespace BarberOS.Modelo.Dao
 
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
-                        //Se usara la string selectedId como parametro
+                        //Como argumentos del query se usaran los valores del panel izquierdo
                         cmd.Parameters.AddWithValue("@Nombre", vistaPasada.txtName.Text);
                         cmd.Parameters.AddWithValue("@Precio", vistaPasada.txtPrice.Text);
                         cmd.Parameters.AddWithValue("@Tipo", 3);

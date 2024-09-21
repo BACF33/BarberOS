@@ -18,6 +18,7 @@ namespace BarberOS.Controlador
 
         public ControlPanelPromocion(PanelPromocion pasadoPanel, vistaMenu pasadoMenu, DtoPanelProducto pasadoProducto, int testId, string testName, string testPower, string testType)
         {
+            //Los valores que se obtuvieron de una fila de la tabla de promociones se le asignaran al panel (control de usuario) de una promocion y se creara el control de usuario
 
             infoEste.PromocionId = testId;
             infoEste.PromocionName = testName;
@@ -33,6 +34,7 @@ namespace BarberOS.Controlador
             menu = pasadoMenu;
             seleccionadoProducto = pasadoProducto;
 
+            //Cuando se presione aplicar se ejecutara evaluarpuntosusuario que lo enviara a la vista para confirmar compra
             controladoPanel.btnAplicar.Click += (sender, e) => evaluarPuntosUsuario();
         }
         public void evaluarPuntosUsuario()

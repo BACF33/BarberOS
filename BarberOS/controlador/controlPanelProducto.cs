@@ -9,6 +9,7 @@ namespace BarberOS.Controlador
         DtoPanelProducto dtoThis = new DtoPanelProducto();
         public ControlPanelProducto(PanelProducto pasadoPanel, vistaMenu pasadoMenu, string passedId, string passedName, string passedPrice, string passedType)
         {
+            //Los valores que se obtuvieron de una fila de la tabla de productos se le asignaran al panel (control de usuario) de un producto y se creara el control de usuario
             dtoThis.ProductoId = passedId;
             dtoThis.ProductoName = passedName;
             dtoThis.ProductoPrecio = passedPrice;
@@ -17,6 +18,7 @@ namespace BarberOS.Controlador
             pasadoPanel.lblName.Text = dtoThis.ProductoName;
             pasadoPanel.lblPrice.Text = dtoThis.ProductoPrecio;
 
+            //Cuando se presione comprar se mandara al usuario a la lista de promociones
             pasadoPanel.btnComprar.Click += (sender, e) => pasadoMenu.controladorMenu.AbrirFormulario(new VistaListaPromociones(pasadoMenu, dtoThis));
         }
     }

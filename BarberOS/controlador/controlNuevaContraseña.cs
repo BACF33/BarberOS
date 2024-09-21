@@ -18,11 +18,13 @@ namespace BarberOS.Controlador
             vistaControlada = vistaPasada;
             daoThis = new DaoNuevaContraseña();
             user = userPasado;
+            //Cuando se presione el boton nueva se ejecutara nuevacontraseña
             vistaPasada.btnNueva.Click += (sender, e) => nuevaContraseña();
         }
 
         public void nuevaContraseña()
         {
+            //Se ejecutara la funcion nuevacontraseña del dao y se cerrara el formulario activo
             daoThis.nuevaContaseña(vistaControlada, user);
             vistaControlada.Close();
         }

@@ -18,6 +18,7 @@ namespace BarberOS.Controlador
         public ControlListaPromociones(VistaListaPromociones enviadaVista, vistaMenu pasadoMenu, DtoPanelProducto seleccionadoProducto)
         {
             controladaVista = enviadaVista;
+            //Solo se ejecutara la funcion del constructor del dao para obtener las promocioens
             DaoListaPromociones daoThis = new DaoListaPromociones(enviadaVista, pasadoMenu, seleccionadoProducto);
         }
     }

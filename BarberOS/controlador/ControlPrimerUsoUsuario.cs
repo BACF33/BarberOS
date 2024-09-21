@@ -16,11 +16,14 @@ namespace BarberOS.Controlador
         public ControlPrimerUsoUsuario(VistaPrimerUsoUsuario vistaPasada, ControlMenu pasadoControl)
         {
             control = pasadoControl;
+            //Cuando se presione enviar se ejecutararegistrarformulario
             vistaPasada.btnEnviar.Click += (sender, e) => RegistrarFormulario(vistaPasada);
         }
         public void RegistrarFormulario(VistaPrimerUsoUsuario vistaPasada)
         {
+            //Se ejecutara la funcion registrar del dao
             primer.Registrar(vistaPasada);
+            //Se verificara si ademas no hay un negocio vinculado
             porNegocio.PrimerNegocio(control);
             
         }

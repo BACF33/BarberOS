@@ -16,6 +16,7 @@ namespace BarberOS.Controlador
         PanelBarbero controladoPanel = null;
         public ControlPanelBarbero(PanelBarbero pasadoPanel, string passedId, string passedName, string passedRole)
         {
+            //Los valores que se obtuvieron de una fila de la tabla de personal se le asignaran al panel (control de usuario) de un barberos y se creara el control de usuario
             controladoPanel = pasadoPanel;
             DtoPanelBarbero infoEste = new DtoPanelBarbero();
             infoEste.BarberoId = passedId;

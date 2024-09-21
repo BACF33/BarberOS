@@ -16,23 +16,26 @@ namespace BarberOS.Controlador
         {
             controladaVista = vistaPasada;
             menuForm = passedMenuForm;
-            //Si se presiona personal se abrirar un formulario vistaListaPersonalG
+            //Si se presiona personal se abrira un formulario vistaListaPersonalG
             controladaVista.btnPersonal.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaPersonalG(menuForm));
             //Si se presiona clientes se abrirar un formulario vistaListaClientesG
             controladaVista.btnClientes.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaClientesG(menuForm));
 
+            //Si se presiona productos se abrira un formulario vistaListaCortesG
             controladaVista.btnProductos.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaCortesG(menuForm));
 
+            //Si se presiona promociones se abrira un formulario vistaListaPromocionesG
             controladaVista.btnPromo.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaPromocionesG(menuForm));
 
             controladaVista.btnPreguntas.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new vistaListaPreguntas(menuForm));
 
-            //Si se presiona registros se abrirar un formulario vistaListaRegistrosG
             controladaVista.btnRegistros.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaRegistros(passedMenuForm));
 
             controladaVista.btnAgenda.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaAgendas(passedMenuForm));
 
             controladaVista.btnInventario.Click += (sender,e) => menuForm.controladorMenu.AbrirFormulario(new VistaInventario(passedMenuForm));
+
+            controladaVista.btnServidor.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaConfigServidor(passedMenuForm));
         }
     }
 }

@@ -21,6 +21,8 @@ namespace BarberOS.Controlador
             daoThis.PopulateUsers(vistaPasada);
             daoThis.PopulateQuestions(vistaPasada);
 
+            //Cuando se presionen los botones marcados en la izquierda se ejecutaran las funciones a la derech
+            //por ejemplo si se presiona agregar se ejecutara la funcion insertData
             vistaControlada.btnAgregar.Click += (sender, e) => Agregar();
             vistaControlada.btnActualizar2.Click += (sender, e) => Actualizar();
             vistaControlada.btnBorrar.Click += (sender, e) => Borrar();
@@ -33,12 +35,14 @@ namespace BarberOS.Controlador
 
         public void Agregar()
         {
+            //Valida que no haya campos vacios
             if (vistaControlada.txtRespuesta.Text.Equals("") || vistaControlada.txtRespuesta.Text.Equals(""))
             {
                 MessageBox.Show("Hay campos vacios");
             }
             else
             {
+                //Se ejecuta la funcion insertar y populate del dao para actualizar la tabla
                 daoThis.insertar(vistaControlada);
                 daoThis.Populate(vistaControlada);
             }
@@ -46,23 +50,27 @@ namespace BarberOS.Controlador
 
         public void Actualizar()
         {
+            //Valida que no haya campos vacios
             if (vistaControlada.txtRespuesta.Text.Equals("") || vistaControlada.cmbPreguntas.Text.Equals("") || vistaControlada.cmbUsuarios.Text.Equals(""))
             {
                 MessageBox.Show("Hay campos vacios");
             }
             else
             {
+                //Se ejecuta la funcion update y populate del dao para actualizar la tabla
                 daoThis.Update(vistaControlada);
                 daoThis.Populate(vistaControlada);
             }
         }
 
+        //Se ejecutara la funcion delete del dao y obtener para actualizar la tabla
         public void Borrar()
         {
             daoThis.Delete(vistaControlada);
             daoThis.Populate(vistaControlada);
         }
 
+        //Esto se ejecuta cuando el usuario presione una fila, los valores de la fila se aplicaran a los texboxes del panel izquierdo
         public void ShowData()
         {
             if (vistaControlada.listRespuestas.SelectedItems.Count > 0)

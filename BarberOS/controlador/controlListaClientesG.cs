@@ -23,6 +23,7 @@ namespace BarberOS.Controlador
             controladaVista = vistaPasada;
             menuForm = passedMenuForm;
 
+            //Cuando se presione una fila se ejecutara showdata
             controladaVista.listClientes.SelectedIndexChanged += (sender, e) => ShowData();
 
 
@@ -39,6 +40,7 @@ namespace BarberOS.Controlador
             dao.Populate(controladaVista);
         }
 
+        //Funcion para que cuando el usuario presione la picturebox abra el explorador de archivos y el usuario suba una imagen al picturebox
         public void LoadImage()
         {
             OpenFileDialog dialogo = new OpenFileDialog();
@@ -76,12 +78,14 @@ namespace BarberOS.Controlador
 
         public void InsertData()
         {
+            //Se verificara que no haya campos vacios
             if(controladaVista.txtName.Text.Equals("") || controladaVista.txtContraseña.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.txtEmail.Text.Equals("") || controladaVista.txtPuntos.Text.Equals(""))
             {
                 MessageBox.Show("Hay campos vacios");
             }
             else
             {
+                //Se ejecutara la funcion insert y populate del dao para actualizar la tabla
                 dao.Insert(controladaVista);
                 dao.Populate(controladaVista);
 
@@ -90,12 +94,14 @@ namespace BarberOS.Controlador
 
         public void UpdateData()
         {
+            //Se verificara que no haya campos vacios
             if (controladaVista.txtName.Text.Equals("") || controladaVista.txtContraseña.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.txtEmail.Text.Equals("") || controladaVista.txtPuntos.Text.Equals(""))
             {
                 MessageBox.Show("Hay campos vacios");
             }
             else
             {
+                //Se ejecutara la funcion update y populate del dao para actualizar la tabla
                 dao.Update(controladaVista);
                 dao.Populate(controladaVista);
             }

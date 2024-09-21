@@ -35,6 +35,7 @@ namespace BarberOS.Controlador
             dao.Populate(controladaVista);
         }
 
+        //Esto se ejecuta cuando el usuario presione una fila, los valores de la fila se aplicaran a los texboxes del panel izquierdo
         public void ShowData()
         {
             if (controladaVista.listPromociones.SelectedItems.Count > 0)
@@ -56,6 +57,7 @@ namespace BarberOS.Controlador
             }
         }
 
+        //Se ejecutara la funcion insert del dao y obtener para actualizar la tabla
         public void InsertData()
         {
             if (controladaVista.txtNombre.Text.Equals("") || controladaVista.txtPoder.Text.Equals("") || controladaVista.txtPrecio.Text.Equals("") || controladaVista.cmbTipo.Equals(""))
@@ -69,6 +71,7 @@ namespace BarberOS.Controlador
             }
         }
 
+        //Se ejecutara la funcion update del dao y obtener para actualizar la tabla
         public void UpdateData()
         {
             if (controladaVista.txtNombre.Text.Equals("") || controladaVista.txtPoder.Text.Equals("") || controladaVista.txtPrecio.Text.Equals("") || controladaVista.cmbTipo.Equals(""))
@@ -82,6 +85,7 @@ namespace BarberOS.Controlador
             }
         }
 
+        //Se ejecutara la funcion delete del dao y obtener para actualizar la tabla
         public void deleteData()
         {
             //1 Si existe una fila en la tabla de la vista que el usuario haya seleccionado se ejecutara lo siguiente

@@ -27,11 +27,6 @@ namespace BarberOS.Controlador
             dao.Populate(controladaVista);
         }
 
-        public void UpdateData()
-        {
-            dao.Populate(controladaVista);
-        }
-
         public void deleteData()
         {
             //1 Si existe una fila en la tabla de la vista que el usuario haya seleccionado se ejecutara lo siguiente

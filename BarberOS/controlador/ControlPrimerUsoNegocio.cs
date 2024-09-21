@@ -13,6 +13,7 @@ namespace BarberOS.Controlador
         DaoPrimerUsoNegocio daoThis = new DaoPrimerUsoNegocio();
         public ControlPrimerUsoNegocio(VistaPrimerUsoNegocio vistaPasada) 
         {
+            //Cuando se presione enviar se ejecutara la funcion registrar donde se registrara el nogicio asociado
             vistaPasada.btnEnviar.Click += (sender, e) => daoThis.Registrar(vistaPasada);
         }
     }

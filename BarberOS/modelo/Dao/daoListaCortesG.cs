@@ -24,6 +24,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
+                    //Se define un query con inner joins para obtener los datos de la tabla
                     using (SqlCommand cmd = new SqlCommand(
                         "SELECT p.productId, p.productName, p.productPrice, t.productTypeName, p.productImage " +
                         "FROM products p " +
@@ -41,11 +42,13 @@ namespace BarberOS.Modelo.Dao
 
                         while (reader.Read())
                         {
+                            //Se añadiran los daots obtenidos a la lista en la aplicacion
                             ListViewItem item = new ListViewItem(reader["productId"].ToString());
                             item.SubItems.Add(reader["productName"].ToString());
                             item.SubItems.Add(reader["productPrice"].ToString());
                             item.SubItems.Add(reader["productTypeName"].ToString());
 
+                            //Se convierten los datos binarios de la imagen a imagen para poder ser vista
                             if (!DBNull.Value.Equals(reader["productImage"]))
                             {
                                 byte[] imageData = (byte[])reader["productImage"];
@@ -78,11 +81,13 @@ namespace BarberOS.Modelo.Dao
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
+                    //Se convierte la imagen a datos binarios para ingresarse en la tabla
                     MemoryStream archivoMemoria = new MemoryStream();
                     vistaPasada.picProducto.Image.Save(archivoMemoria, System.Drawing.Imaging.ImageFormat.Jpeg);
 
                     byte[] imageData = archivoMemoria.ToArray();
 
+                    //Se define un insert para ingresar datos a la tabla
                     string query = @"
             INSERT INTO products (productName, productPrice, productType, productImage)
             VALUES (
@@ -95,6 +100,7 @@ namespace BarberOS.Modelo.Dao
                     conexion.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
+                        //Se usan como parametros los valores del panel izquierdo
                         cmd.Parameters.AddWithValue("@Nombre", vistaPasada.txtNombre.Text);
                         cmd.Parameters.AddWithValue("@Precio", vistaPasada.txtPrecio.Text);
                         cmd.Parameters.AddWithValue("@Tipo", vistaPasada.cmbTipo.Text);
@@ -123,6 +129,7 @@ namespace BarberOS.Modelo.Dao
                 {
                     conexion.Open();
 
+                    //Se define un query para actualizar la tabla productos
                     using (SqlCommand cmd = new SqlCommand("" +
                         "UPDATE products SET " +
                         "productName = @Name, " +
@@ -131,6 +138,7 @@ namespace BarberOS.Modelo.Dao
                         "productImage = @Image " +
                         "WHERE productId = @selectedId", conexion))
                     {
+                        //Se usan como parametros los valores del panel izquierdo
                         cmd.Parameters.AddWithValue("@selectedId", vistaPasada.txtId.Text);
                         cmd.Parameters.AddWithValue("@Name", vistaPasada.txtNombre.Text);
                         cmd.Parameters.AddWithValue("@Price", vistaPasada.txtPrecio.Text);
