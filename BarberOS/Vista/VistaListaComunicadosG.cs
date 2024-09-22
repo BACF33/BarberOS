@@ -11,15 +11,15 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class VistaPrimerUsoNegocio : Form
+    public partial class VistaListaComunicadosG : Form
     {
-        public VistaPrimerUsoNegocio()
+        public VistaListaComunicadosG(vistaMenu menuPasado)
         {
             InitializeComponent();
-            new ControlPrimerUsoNegocio(this);
+            new ControlListaComunicadosG(this, menuPasado);
         }
 
-        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        private void listComunicados_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

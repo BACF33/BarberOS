@@ -13,7 +13,7 @@ namespace BarberOS.Controlador
             menuControlado = pasadoMenu;
             enviadaVista.btnConfirmar.Click += (sender, e) => ConfirmarYSalir(pasadoMenu, pasadaPromocion, seleccionadoProducto);
 
-            PanelProducto testBarbero = new PanelProducto(pasadoMenu, seleccionadoProducto.ProductoId, seleccionadoProducto.ProductoName, seleccionadoProducto.ProductoPrecio, seleccionadoProducto.ProductoTipo);
+            PanelProducto testBarbero = new PanelProducto(pasadoMenu, seleccionadoProducto.ProductoId, seleccionadoProducto.ProductoName, seleccionadoProducto.ProductoPrecio, seleccionadoProducto.ProductoTipo, seleccionadoProducto.ProductoImagen);
 
             PanelPromocion testPromocion = new PanelPromocion(pasadoMenu, seleccionadoProducto, pasadaPromocion.PromocionId, pasadaPromocion.PromocionName, pasadaPromocion.PromocionPoder, pasadaPromocion.PromocionTipo);
 

@@ -77,6 +77,7 @@
     <Compile Include="Controlador\ControlConfigServidor.cs" />
     <Compile Include="Controlador\ControlInventario.cs" />
     <Compile Include="Controlador\ControlListaCitas.cs" />
+    <Compile Include="Controlador\ControlListaComunicadosG.cs" />
     <Compile Include="Controlador\ControlListaPregunas.cs" />
     <Compile Include="Controlador\ControlListaRespuestas.cs" />
     <Compile Include="Controlador\ControlObtenerPin.cs" />
@@ -107,6 +108,7 @@
     <Compile Include="Modelo\Dao\DaoCitas.cs" />
     <Compile Include="Modelo\Dao\DaoInventario.cs" />
     <Compile Include="Modelo\Dao\DaoListaCitas.cs" />
+    <Compile Include="Modelo\Dao\DaoListaComunicadosG.cs" />
     <Compile Include="Modelo\Dao\DaoListaPreguntas.cs" />
     <Compile Include="Modelo\Dao\DaoListaRespuestas.cs" />
     <Compile Include="Modelo\Dao\DaoMenu.cs" />
@@ -145,6 +147,12 @@
     <Compile Include="Vista\vistaCitas.Designer.cs">
       <DependentUpon>vistaCitas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\VistaComunicados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaComunicados.Designer.cs">
+      <DependentUpon>VistaComunicados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\VistaConfigServidor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +170,12 @@
     </Compile>
     <Compile Include="Vista\VistaListaAgendas.Designer.cs">
       <DependentUpon>VistaListaAgendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaListaComunicadosG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaListaComunicadosG.Designer.cs">
+      <DependentUpon>VistaListaComunicadosG.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\vistaListaPersonalG.cs">
       <SubType>Form</SubType>
@@ -394,6 +408,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaListaClientesG.resx">
       <DependentUpon>VistaListaClientesG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaListaComunicadosG.resx">
+      <DependentUpon>VistaListaComunicadosG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaListaCortes.resx">
       <DependentUpon>VistaListaCortes.cs</DependentUpon>

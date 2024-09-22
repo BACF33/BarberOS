@@ -32,9 +32,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgProducto = new System.Windows.Forms.PictureBox();
             this.btnComprar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgProducto)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -77,16 +77,16 @@
             this.lblName.TabIndex = 8;
             this.lblName.Text = "Nombre";
             // 
-            // pictureBox1
+            // imgProducto
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Image = global::BarberOS.Properties.Resources.Captura5;
-            this.pictureBox1.Location = new System.Drawing.Point(67, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 160);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.imgProducto.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.imgProducto.Image = global::BarberOS.Properties.Resources.img;
+            this.imgProducto.Location = new System.Drawing.Point(67, 19);
+            this.imgProducto.Name = "imgProducto";
+            this.imgProducto.Size = new System.Drawing.Size(142, 160);
+            this.imgProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgProducto.TabIndex = 7;
+            this.imgProducto.TabStop = false;
             // 
             // btnComprar
             // 
@@ -109,10 +109,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblName);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.imgProducto);
             this.Name = "PanelProducto";
             this.Size = new System.Drawing.Size(289, 427);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgProducto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,7 +124,7 @@
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label lblPrice;
         public System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Button btnComprar;
+        public System.Windows.Forms.PictureBox imgProducto;
     }
 }

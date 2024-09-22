@@ -1,5 +1,4 @@
-﻿using BarberOS.Controlador;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,17 +10,11 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class VistaPrimerUsoNegocio : Form
+    public partial class VistaComunicados : Form
     {
-        public VistaPrimerUsoNegocio()
+        public VistaComunicados()
         {
             InitializeComponent();
-            new ControlPrimerUsoNegocio(this);
-        }
-
-        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

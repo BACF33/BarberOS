@@ -20,7 +20,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT productId, productName, productPrice, productType FROM products";
+                    string query = "SELECT productId, productName, productPrice, productType, productImage FROM products";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -35,7 +35,9 @@ namespace BarberOS.Modelo.Dao
                                 testName = reader["productName"].ToString();
                                 testPrecio = reader["productPrice"].ToString();
                                 testTipo = reader["productType"].ToString();
-                                PanelProducto panelUsado = new PanelProducto(pasadoMenu, testId, testName, testPrecio, testTipo);
+                                byte[] imageData = reader["productImage"] as byte[];
+
+                                PanelProducto panelUsado = new PanelProducto(pasadoMenu, testId, testName, testPrecio, testTipo, imageData);
 
                                 enviadaVista.flpCabello.Controls.Add(panelUsado);
 
