@@ -46,6 +46,7 @@ namespace BarberOS.Controlador
                 connectionStringsSection.ConnectionStrings[name].ConnectionString = newConnectionString;
                 configFile.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("connectionStrings");
+            System.Windows.Forms.Application.Exit();
         }
     }
     }

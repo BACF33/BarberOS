@@ -47,9 +47,9 @@ namespace BarberOS.Modelo.Dao
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.ToString());
+                controlPasado.AbrirFormulario(new VistaConfigServidor(controlPasado.controladaVista));
             }
         }
 

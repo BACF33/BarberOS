@@ -696,6 +696,7 @@
     <None Include="Resources\direccion1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\server.png" />
     <None Include="Resources\question.png" />
     <None Include="Resources\13%3b 27%3b 33 %281%291.png" />
     <None Include="Resources\13%3b 27%3b 331.png" />
