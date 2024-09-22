@@ -86,8 +86,8 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.DimGray;
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
             this.flowLayoutPanel1.Controls.Add(this.label3);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
             this.flowLayoutPanel1.Controls.Add(this.btnCurrentUser);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
@@ -104,24 +104,25 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BarberOS.Properties.Resources._13__27__33__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 101);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(123, 124);
+            this.pictureBox1.Size = new System.Drawing.Size(123, 173);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Uighur", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(139, 52);
+            this.label3.Location = new System.Drawing.Point(3, 52);
             this.label3.Margin = new System.Windows.Forms.Padding(3, 52, 3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 43);
+            this.label3.Size = new System.Drawing.Size(179, 39);
             this.label3.TabIndex = 109;
             this.label3.Text = "BarberOS";
             // 
@@ -129,9 +130,9 @@
             // 
             this.btnCurrentUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
             this.btnCurrentUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCurrentUser.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCurrentUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCurrentUser.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCurrentUser.Location = new System.Drawing.Point(3, 153);
+            this.btnCurrentUser.Location = new System.Drawing.Point(3, 293);
             this.btnCurrentUser.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
             this.btnCurrentUser.Name = "btnCurrentUser";
             this.btnCurrentUser.Size = new System.Drawing.Size(271, 44);
@@ -144,7 +145,7 @@
             // 
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.btnBarberos);
-            this.panel2.Location = new System.Drawing.Point(3, 203);
+            this.panel2.Location = new System.Drawing.Point(3, 343);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(270, 71);
             this.panel2.TabIndex = 112;
@@ -165,7 +166,7 @@
             // 
             this.btnBarberos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.btnBarberos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBarberos.Font = new System.Drawing.Font("Microsoft Uighur", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBarberos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBarberos.ForeColor = System.Drawing.SystemColors.Control;
             this.btnBarberos.Location = new System.Drawing.Point(0, 2);
             this.btnBarberos.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
@@ -180,7 +181,7 @@
             // 
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.btnCortes);
-            this.panel3.Location = new System.Drawing.Point(3, 280);
+            this.panel3.Location = new System.Drawing.Point(3, 420);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(292, 74);
             this.panel3.TabIndex = 113;
@@ -201,7 +202,7 @@
             // 
             this.btnCortes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.btnCortes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCortes.Font = new System.Drawing.Font("Microsoft Uighur", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCortes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCortes.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCortes.Location = new System.Drawing.Point(-3, 5);
             this.btnCortes.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
@@ -216,7 +217,7 @@
             // 
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Controls.Add(this.btnInicio);
-            this.panel4.Location = new System.Drawing.Point(3, 360);
+            this.panel4.Location = new System.Drawing.Point(3, 500);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(281, 65);
             this.panel4.TabIndex = 114;
@@ -237,7 +238,7 @@
             // 
             this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnInicio.Font = new System.Drawing.Font("Microsoft Uighur", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInicio.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnInicio.Location = new System.Drawing.Point(0, 0);
             this.btnInicio.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
@@ -252,7 +253,7 @@
             // 
             this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.Controls.Add(this.btnIngresar);
-            this.panel5.Location = new System.Drawing.Point(3, 431);
+            this.panel5.Location = new System.Drawing.Point(3, 571);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(281, 68);
             this.panel5.TabIndex = 115;
@@ -273,7 +274,7 @@
             // 
             this.btnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Uighur", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnIngresar.Location = new System.Drawing.Point(0, 4);
             this.btnIngresar.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
@@ -281,14 +282,14 @@
             this.btnIngresar.Size = new System.Drawing.Size(271, 58);
             this.btnIngresar.TabIndex = 104;
             this.btnIngresar.TabStop = false;
-            this.btnIngresar.Text = "         INGRESAR";
+            this.btnIngresar.Text = "      INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.pictureBox6);
             this.panel6.Controls.Add(this.btnAgendar);
-            this.panel6.Location = new System.Drawing.Point(3, 505);
+            this.panel6.Location = new System.Drawing.Point(3, 645);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(281, 60);
             this.panel6.TabIndex = 116;
@@ -309,7 +310,7 @@
             // 
             this.btnAgendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.btnAgendar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAgendar.Font = new System.Drawing.Font("Microsoft Uighur", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnAgendar.Location = new System.Drawing.Point(0, 2);
             this.btnAgendar.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
@@ -317,7 +318,7 @@
             this.btnAgendar.Size = new System.Drawing.Size(270, 54);
             this.btnAgendar.TabIndex = 105;
             this.btnAgendar.TabStop = false;
-            this.btnAgendar.Text = "         AGENDAR";
+            this.btnAgendar.Text = "      AGENDAR";
             this.btnAgendar.UseVisualStyleBackColor = false;
             // 
             // vistaMenu

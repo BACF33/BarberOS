@@ -40,5 +40,10 @@ namespace BarberOS.Vista
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -66,11 +66,11 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(229, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 39);
+            this.label1.Size = new System.Drawing.Size(208, 39);
             this.label1.TabIndex = 14;
             this.label1.Text = "¡Bienvenido!";
             // 
@@ -109,11 +109,11 @@
             this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLogin.Location = new System.Drawing.Point(236, 395);
+            this.btnLogin.Location = new System.Drawing.Point(236, 389);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(183, 63);
+            this.btnLogin.Size = new System.Drawing.Size(180, 69);
             this.btnLogin.TabIndex = 103;
             this.btnLogin.Text = "INICIAR SESION";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -123,11 +123,11 @@
             this.btnRestPass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnRestPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
             this.btnRestPass.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRestPass.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestPass.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRestPass.ForeColor = System.Drawing.Color.White;
-            this.btnRestPass.Location = new System.Drawing.Point(34, 605);
+            this.btnRestPass.Location = new System.Drawing.Point(34, 591);
             this.btnRestPass.Name = "btnRestPass";
-            this.btnRestPass.Size = new System.Drawing.Size(215, 52);
+            this.btnRestPass.Size = new System.Drawing.Size(215, 76);
             this.btnRestPass.TabIndex = 105;
             this.btnRestPass.Text = "Restablecer Contraseña";
             this.btnRestPass.UseVisualStyleBackColor = false;
@@ -138,14 +138,15 @@
             this.btnCreate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
             this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCreate.Font = new System.Drawing.Font("Microsoft Uighur", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.Color.White;
-            this.btnCreate.Location = new System.Drawing.Point(34, 461);
+            this.btnCreate.Location = new System.Drawing.Point(34, 449);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(215, 52);
+            this.btnCreate.Size = new System.Drawing.Size(215, 59);
             this.btnCreate.TabIndex = 104;
             this.btnCreate.Text = " Crear Cuenta";
             this.btnCreate.UseVisualStyleBackColor = false;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // panel4
             // 
@@ -191,12 +192,12 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(130, 286);
             this.label2.Margin = new System.Windows.Forms.Padding(17, 15, 20, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 24);
+            this.label2.Size = new System.Drawing.Size(123, 25);
             this.label2.TabIndex = 108;
             this.label2.Text = "Contraseña";
             // 
@@ -204,12 +205,12 @@
             // 
             this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblUsuario.Location = new System.Drawing.Point(130, 196);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(17, 15, 5, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(90, 24);
+            this.lblUsuario.Size = new System.Drawing.Size(86, 25);
             this.lblUsuario.TabIndex = 107;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -232,11 +233,11 @@
             this.lblLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLogin.AutoSize = true;
             this.lblLogin.BackColor = System.Drawing.Color.Transparent;
-            this.lblLogin.Font = new System.Drawing.Font("Microsoft Uighur", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblLogin.Location = new System.Drawing.Point(213, 20);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(246, 57);
+            this.lblLogin.Size = new System.Drawing.Size(370, 55);
             this.lblLogin.TabIndex = 17;
             this.lblLogin.Text = "Inicio de sesión";
             // 
@@ -254,7 +255,7 @@
             this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
             this.pictureBox7.Image = global::BarberOS.Properties.Resources._9252943;
-            this.pictureBox7.Location = new System.Drawing.Point(115, 551);
+            this.pictureBox7.Location = new System.Drawing.Point(115, 527);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(43, 48);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -266,7 +267,7 @@
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(36)))), ((int)(((byte)(51)))));
             this.pictureBox5.Image = global::BarberOS.Properties.Resources._93569281;
-            this.pictureBox5.Location = new System.Drawing.Point(115, 405);
+            this.pictureBox5.Location = new System.Drawing.Point(115, 385);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(51, 46);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
