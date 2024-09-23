@@ -18,7 +18,7 @@ namespace BarberOS.Controlador
             menuControlado = pasadoMenu;
             panelControlado = pasadoPanel;
 
-            //Los valores que se obtuvieron de una fila de la tabla de productos se le asignaran al panel (control de usuario) de un producto y se creara el control de usuario
+            //Los valores que se obtuvieron de una fila de la tabla de productos se le asignaran al panel (control de usuario) de un producto y se creara el control de usuario.
             dtoThis.ProductoId = passedId;
             dtoThis.ProductoName = passedName;
             dtoThis.ProductoPrecio = passedPrice;
