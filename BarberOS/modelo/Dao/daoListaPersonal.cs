@@ -40,6 +40,7 @@ namespace BarberOS.Modelo.Dao
                                 PanelBarbero panelUsado = new PanelBarbero(testId, testName, testRole, imageData);
 
                                 enviadaVista.flpPersonal.Controls.Add(panelUsado);
+                                //Test
                             }
                         }
                     }
