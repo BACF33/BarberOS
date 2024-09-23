@@ -89,10 +89,10 @@ namespace BarberOS.Controlador
                 else
                 {
                     menuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(menuForm));
-                    menuForm.btnBarberos.Visible = false;
-                    menuForm.btnCortes.Visible = false;
-                    menuForm.btnAgendar.Visible = false;
-                    menuForm.btnInicio.Visible = false;
+                    menuForm.pnlBarberos.Visible = false;
+                    menuForm.pnlCortes.Visible = false;
+                    menuForm.pnlAgendar.Visible = false;
+                    menuForm.pnlInicio.Visible = false;
                 }
             }
             else if (answer == 1 && daoThis.FirstLogin == true)

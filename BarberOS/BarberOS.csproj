@@ -74,6 +74,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controlador\ControlCitas.cs" />
+    <Compile Include="Controlador\ControlComunicado.cs" />
+    <Compile Include="Controlador\ControlComunicados.cs" />
     <Compile Include="Controlador\ControlConfigServidor.cs" />
     <Compile Include="Controlador\ControlInventario.cs" />
     <Compile Include="Controlador\ControlListaCitas.cs" />
@@ -106,6 +108,7 @@
     <Compile Include="Controlador\ControlRestablecerCorreo.cs" />
     <Compile Include="Controlador\ControlTotal.cs" />
     <Compile Include="Modelo\Dao\DaoCitas.cs" />
+    <Compile Include="Modelo\Dao\DaoComunicados.cs" />
     <Compile Include="Modelo\Dao\DaoInventario.cs" />
     <Compile Include="Modelo\Dao\DaoListaCitas.cs" />
     <Compile Include="Modelo\Dao\DaoListaComunicadosG.cs" />
@@ -387,6 +390,9 @@
     </Compile>
     <EmbeddedResource Include="Vista\PanelBarbero.resx">
       <DependentUpon>PanelBarbero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\PanelComunicado.resx">
+      <DependentUpon>PanelComunicado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\PanelProducto.resx">
       <DependentUpon>PanelProducto.cs</DependentUpon>
