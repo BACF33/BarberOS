@@ -21,7 +21,14 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT promotionId, promotionName, promotionPrice, promotionPower, promotionType FROM promotions";
+                    string query = "SELECT " +
+                    "promotionId, " +
+                    "promotionName, " +
+                    "promotionPrice, " +
+                    "promotionPower, " +
+                    "promotionType, " +
+                    "(SELECT promotionTypeName FROM promotionTypes WHERE promotionTypeId = promotions.promotionType) AS promotionTypeName " +
+                    "FROM promotions";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -35,7 +42,7 @@ namespace BarberOS.Modelo.Dao
                                 testName = reader["promotionName"].ToString();
                                 testPrice = reader["promotionPrice"].ToString();
                                 testPower = reader["promotionPower"].ToString();
-                                testType = reader["promotionType"].ToString();
+                                testType = reader["promotionTypeName"].ToString();
                                 PanelPromocion panelUsado = new PanelPromocion(pasadoMenu, seleccionadoProducto, int.Parse(testId), testName, testPower, testType);
 
                                 enviadaVista.flpPromociones.Controls.Add(panelUsado);

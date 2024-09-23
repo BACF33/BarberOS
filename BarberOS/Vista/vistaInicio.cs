@@ -4,7 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +39,22 @@ namespace BarberOS.Vistas
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnDocumentacion_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string relativePath = @"Manual.pdf";
+
+                string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, relativePath);
+
+                Process.Start(filePath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

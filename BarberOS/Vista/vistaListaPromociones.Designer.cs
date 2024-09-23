@@ -33,17 +33,19 @@
             // 
             // flpPromociones
             // 
+            this.flpPromociones.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS1;
             this.flpPromociones.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpPromociones.Location = new System.Drawing.Point(0, 0);
             this.flpPromociones.Name = "flpPromociones";
-            this.flpPromociones.Size = new System.Drawing.Size(747, 406);
+            this.flpPromociones.Size = new System.Drawing.Size(1350, 729);
             this.flpPromociones.TabIndex = 0;
             // 
             // VistaListaPromociones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 406);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(103)))));
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.flpPromociones);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "VistaListaPromociones";

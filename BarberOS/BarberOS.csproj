@@ -159,6 +159,12 @@
     <Compile Include="Vista\VistaConfigServidor.Designer.cs">
       <DependentUpon>VistaConfigServidor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\VistaDocumentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaDocumentacion.Designer.cs">
+      <DependentUpon>VistaDocumentacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\VistaInsertarPin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -736,6 +742,8 @@
     <None Include="Resources\BarberOS Logo oficial Blanco2.png" />
     <None Include="Resources\BarberOS Logo oficial Blanco3.png" />
     <None Include="Resources\BarberOS Logo oficial Blanco21.png" />
+    <None Include="Resources\corte.jpg" />
+    <None Include="Resources\corrompe.jpg" />
     <Content Include="Resources\Cortes icon blue png1.png" />
     <None Include="Resources\Cortes icon blue png11.png" />
     <None Include="Resources\Cortes icon blue png12.png" />

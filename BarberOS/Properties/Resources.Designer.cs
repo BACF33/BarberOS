@@ -723,6 +723,26 @@ namespace BarberOS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap corrompe {
+            get {
+                object obj = ResourceManager.GetObject("corrompe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap corte {
+            get {
+                object obj = ResourceManager.GetObject("corte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cortes_icon_blue_png1 {
             get {
                 object obj = ResourceManager.GetObject("Cortes icon blue png1", resourceCulture);

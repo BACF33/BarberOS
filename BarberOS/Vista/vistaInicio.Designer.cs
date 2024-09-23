@@ -36,6 +36,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnCortes = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnDocumentacion = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -60,6 +61,7 @@
             this.tableLayoutPanel3.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS;
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.btnDocumentacion, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.btnComunicados, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.lbInicio, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.btnBarberos, 0, 3);
@@ -68,12 +70,13 @@
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 5;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.RowCount = 6;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.82979F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.70213F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.51064F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.08511F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.87234F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 108F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(772, 549);
             this.tableLayoutPanel3.TabIndex = 50;
             // 
@@ -83,7 +86,7 @@
             this.btnComunicados.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnComunicados.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComunicados.ForeColor = System.Drawing.Color.White;
-            this.btnComunicados.Location = new System.Drawing.Point(267, 452);
+            this.btnComunicados.Location = new System.Drawing.Point(267, 335);
             this.btnComunicados.Name = "btnComunicados";
             this.btnComunicados.Size = new System.Drawing.Size(237, 81);
             this.btnComunicados.TabIndex = 49;
@@ -97,7 +100,7 @@
             this.lbInicio.BackColor = System.Drawing.Color.Transparent;
             this.lbInicio.Font = new System.Drawing.Font("Microsoft Uighur", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbInicio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbInicio.Location = new System.Drawing.Point(261, 26);
+            this.lbInicio.Location = new System.Drawing.Point(261, 1);
             this.lbInicio.Name = "lbInicio";
             this.lbInicio.Size = new System.Drawing.Size(250, 57);
             this.lbInicio.TabIndex = 48;
@@ -109,7 +112,7 @@
             this.btnBarberos.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnBarberos.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBarberos.ForeColor = System.Drawing.Color.White;
-            this.btnBarberos.Location = new System.Drawing.Point(267, 349);
+            this.btnBarberos.Location = new System.Drawing.Point(267, 243);
             this.btnBarberos.Name = "btnBarberos";
             this.btnBarberos.Size = new System.Drawing.Size(237, 65);
             this.btnBarberos.TabIndex = 47;
@@ -122,7 +125,7 @@
             this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.button2.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(267, 239);
+            this.button2.Location = new System.Drawing.Point(267, 162);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(237, 66);
             this.button2.TabIndex = 46;
@@ -135,7 +138,7 @@
             this.btnCortes.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnCortes.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCortes.ForeColor = System.Drawing.Color.White;
-            this.btnCortes.Location = new System.Drawing.Point(267, 128);
+            this.btnCortes.Location = new System.Drawing.Point(267, 72);
             this.btnCortes.Name = "btnCortes";
             this.btnCortes.Size = new System.Drawing.Size(237, 70);
             this.btnCortes.TabIndex = 23;
@@ -156,6 +159,20 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(784, 561);
             this.tableLayoutPanel2.TabIndex = 47;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
+            // 
+            // btnDocumentacion
+            // 
+            this.btnDocumentacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDocumentacion.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnDocumentacion.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDocumentacion.ForeColor = System.Drawing.Color.White;
+            this.btnDocumentacion.Location = new System.Drawing.Point(267, 452);
+            this.btnDocumentacion.Name = "btnDocumentacion";
+            this.btnDocumentacion.Size = new System.Drawing.Size(237, 81);
+            this.btnDocumentacion.TabIndex = 50;
+            this.btnDocumentacion.Text = "Documentacion";
+            this.btnDocumentacion.UseVisualStyleBackColor = false;
+            this.btnDocumentacion.Click += new System.EventHandler(this.btnDocumentacion_Click);
             // 
             // VistaInicio
             // 
@@ -186,5 +203,6 @@
         public System.Windows.Forms.Button btnBarberos;
         private System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button btnCortes;
+        public System.Windows.Forms.Button btnDocumentacion;
     }
 }

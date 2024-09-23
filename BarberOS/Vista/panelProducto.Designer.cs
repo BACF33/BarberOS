@@ -34,46 +34,52 @@
             this.lblName = new System.Windows.Forms.Label();
             this.imgProducto = new System.Windows.Forms.PictureBox();
             this.btnComprar = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.imgProducto)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(37, 269);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(24, 85);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 32);
+            this.label3.Size = new System.Drawing.Size(57, 20);
             this.label3.TabIndex = 13;
             this.label3.Text = "Precio:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(37, 207);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(24, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 32);
+            this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 12;
             this.label2.Text = "Nombre:";
             // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(118, 269);
+            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblPrice.Location = new System.Drawing.Point(105, 85);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(146, 32);
+            this.lblPrice.Size = new System.Drawing.Size(99, 20);
             this.lblPrice.TabIndex = 9;
             this.lblPrice.Text = "Especialidad";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(141, 207);
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblName.Location = new System.Drawing.Point(115, 23);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(103, 32);
+            this.lblName.Size = new System.Drawing.Size(65, 20);
             this.lblName.TabIndex = 8;
             this.lblName.Text = "Nombre";
             // 
@@ -99,22 +105,32 @@
             this.btnComprar.Text = "COMPRAR";
             this.btnComprar.UseVisualStyleBackColor = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(42)))), ((int)(((byte)(68)))));
+            this.panel2.Controls.Add(this.lblName);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.lblPrice);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(29, 207);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(229, 190);
+            this.panel2.TabIndex = 29;
+            // 
             // PanelProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(103)))));
             this.Controls.Add(this.btnComprar);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblPrice);
-            this.Controls.Add(this.lblName);
             this.Controls.Add(this.imgProducto);
+            this.Controls.Add(this.panel2);
             this.Name = "PanelProducto";
             this.Size = new System.Drawing.Size(289, 427);
             ((System.ComponentModel.ISupportInitialize)(this.imgProducto)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -126,5 +142,6 @@
         public System.Windows.Forms.Label lblName;
         public System.Windows.Forms.Button btnComprar;
         public System.Windows.Forms.PictureBox imgProducto;
+        private System.Windows.Forms.Panel panel2;
     }
 }

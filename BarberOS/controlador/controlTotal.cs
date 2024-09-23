@@ -19,7 +19,7 @@ namespace BarberOS.Controlador
 
 
             enviadaVista.flpPromocion.Controls.Add(testPromocion);
-            enviadaVista.flpPromocion.Controls.Add(testBarbero);
+            enviadaVista.flpPromocion2.Controls.Add(testBarbero);
         }
         public void ConfirmarYSalir(vistaMenu pasadoMenu, DtoPanelPromocion pasadaPromocion, DtoPanelProducto seleccionadoProducto) 
         {
