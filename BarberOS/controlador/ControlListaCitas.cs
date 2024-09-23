@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Segundo
 namespace BarberOS.Controlador
 {
     internal class ControlListaCitas
