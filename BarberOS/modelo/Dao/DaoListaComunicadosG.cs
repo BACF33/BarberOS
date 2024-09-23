@@ -5,6 +5,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,9 +14,40 @@ namespace BarberOS.Modelo.Dao
 {
     internal class DaoListaComunicadosG
     {
-        public void Agregar(VistaListaComunicadosG vistaPasada)
+        public void Agregar(VistaListaComunicadosG vistaPasada, vistaMenu menuPasado)
         {
+            try
+            {
+                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
+                using (SqlConnection conexion = new SqlConnection(cnn))
+                {
 
+                    //Usando la id de la fila seleccionada por el usuaio se eliminara el valor de la base de datos con
+                    //el mismo id 
+                    conexion.Open();
+                    string query = @"
+                    INSERT INTO announcements (announcementText, announcementPoster, announcementPrivacy)
+                    VALUES (
+                    @announcementText, 
+                    (SELECT userId FROM users WHERE userName = @announcementPoster),
+                    @announcementPrivacy 
+                    )";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        //Se usara la string selectedId como parametro
+                        cmd.Parameters.AddWithValue("@announcementText", vistaPasada.txtText.Text);
+                        cmd.Parameters.AddWithValue("@announcementPoster", menuPasado.btnCurrentUser.Text);
+                        cmd.Parameters.AddWithValue("@announcementPrivacy", vistaPasada.cmbPrivacy.Text);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                    }
+                    //Test
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         public void Obtener(VistaListaComunicadosG vistaPasada)
@@ -28,7 +60,10 @@ namespace BarberOS.Modelo.Dao
                     //Se ejecutara un query donde se obtendran los valores de la base de datos, se usa un inner join 
                     //dado a que userType es una llave foranea
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM announcements", conexion))
+                    using (SqlCommand cmd = new SqlCommand(
+                        "SELECT a.announcementId, a.announcementText, u.userName, a.announcementPrivacy " +
+                        "FROM announcements a " +
+                        "INNER JOIN users u ON u.userId = a.announcementPoster ", conexion))
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
@@ -39,7 +74,7 @@ namespace BarberOS.Modelo.Dao
                         {
                             ListViewItem item = new ListViewItem(reader["announcementId"].ToString());
                             item.SubItems.Add(reader["announcementText"].ToString());
-                            item.SubItems.Add(reader["announcementPoster"].ToString());
+                            item.SubItems.Add(reader["userName"].ToString());
                             item.SubItems.Add(reader["announcementPrivacy"].ToString());
                             vistaPasada.listComunicados.Items.Add(item);
                         }

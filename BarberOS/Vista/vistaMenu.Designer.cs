@@ -31,36 +31,36 @@
             this.PanelContenedor = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCurrentUser = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlBarberos = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnBarberos = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlCortes = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnCortes = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlInicio = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnInicio = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnlIngresar = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnIngresar = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.pnlAgendar = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnAgendar = new System.Windows.Forms.Button();
             this.PanelContenedor.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.pnlBarberos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.pnlCortes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.pnlInicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.pnlIngresar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel6.SuspendLayout();
+            this.pnlAgendar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,29 +89,17 @@
             this.flowLayoutPanel1.Controls.Add(this.label3);
             this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
             this.flowLayoutPanel1.Controls.Add(this.btnCurrentUser);
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Controls.Add(this.panel4);
-            this.flowLayoutPanel1.Controls.Add(this.panel5);
-            this.flowLayoutPanel1.Controls.Add(this.panel6);
+            this.flowLayoutPanel1.Controls.Add(this.pnlBarberos);
+            this.flowLayoutPanel1.Controls.Add(this.pnlCortes);
+            this.flowLayoutPanel1.Controls.Add(this.pnlInicio);
+            this.flowLayoutPanel1.Controls.Add(this.pnlAgendar);
+            this.flowLayoutPanel1.Controls.Add(this.pnlIngresar);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.ForeColor = System.Drawing.Color.DimGray;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(276, 729);
             this.flowLayoutPanel1.TabIndex = 31;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BarberOS.Properties.Resources._13__27__33__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 101);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(123, 173);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label3
             // 
@@ -125,6 +113,18 @@
             this.label3.Size = new System.Drawing.Size(179, 39);
             this.label3.TabIndex = 109;
             this.label3.Text = "BarberOS";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BarberOS.Properties.Resources._13__27__33__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 101);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(123, 173);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnCurrentUser
             // 
@@ -141,14 +141,14 @@
             this.btnCurrentUser.Text = "No has iniciado sesion";
             this.btnCurrentUser.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // pnlBarberos
             // 
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.btnBarberos);
-            this.panel2.Location = new System.Drawing.Point(3, 343);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(270, 71);
-            this.panel2.TabIndex = 112;
+            this.pnlBarberos.Controls.Add(this.pictureBox2);
+            this.pnlBarberos.Controls.Add(this.btnBarberos);
+            this.pnlBarberos.Location = new System.Drawing.Point(3, 343);
+            this.pnlBarberos.Name = "pnlBarberos";
+            this.pnlBarberos.Size = new System.Drawing.Size(270, 71);
+            this.pnlBarberos.TabIndex = 112;
             // 
             // pictureBox2
             // 
@@ -177,14 +177,14 @@
             this.btnBarberos.Text = "     BARBEROS";
             this.btnBarberos.UseVisualStyleBackColor = false;
             // 
-            // panel3
+            // pnlCortes
             // 
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.btnCortes);
-            this.panel3.Location = new System.Drawing.Point(3, 420);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(292, 74);
-            this.panel3.TabIndex = 113;
+            this.pnlCortes.Controls.Add(this.pictureBox3);
+            this.pnlCortes.Controls.Add(this.btnCortes);
+            this.pnlCortes.Location = new System.Drawing.Point(3, 420);
+            this.pnlCortes.Name = "pnlCortes";
+            this.pnlCortes.Size = new System.Drawing.Size(292, 74);
+            this.pnlCortes.TabIndex = 113;
             // 
             // pictureBox3
             // 
@@ -213,14 +213,14 @@
             this.btnCortes.Text = "    CORTES";
             this.btnCortes.UseVisualStyleBackColor = false;
             // 
-            // panel4
+            // pnlInicio
             // 
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Controls.Add(this.btnInicio);
-            this.panel4.Location = new System.Drawing.Point(3, 500);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(281, 65);
-            this.panel4.TabIndex = 114;
+            this.pnlInicio.Controls.Add(this.pictureBox4);
+            this.pnlInicio.Controls.Add(this.btnInicio);
+            this.pnlInicio.Location = new System.Drawing.Point(3, 500);
+            this.pnlInicio.Name = "pnlInicio";
+            this.pnlInicio.Size = new System.Drawing.Size(281, 65);
+            this.pnlInicio.TabIndex = 114;
             // 
             // pictureBox4
             // 
@@ -249,14 +249,14 @@
             this.btnInicio.Text = "INICIO";
             this.btnInicio.UseVisualStyleBackColor = false;
             // 
-            // panel5
+            // pnlIngresar
             // 
-            this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Controls.Add(this.btnIngresar);
-            this.panel5.Location = new System.Drawing.Point(3, 571);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(281, 68);
-            this.panel5.TabIndex = 115;
+            this.pnlIngresar.Controls.Add(this.pictureBox5);
+            this.pnlIngresar.Controls.Add(this.btnIngresar);
+            this.pnlIngresar.Location = new System.Drawing.Point(3, 637);
+            this.pnlIngresar.Name = "pnlIngresar";
+            this.pnlIngresar.Size = new System.Drawing.Size(281, 68);
+            this.pnlIngresar.TabIndex = 115;
             // 
             // pictureBox5
             // 
@@ -285,20 +285,20 @@
             this.btnIngresar.Text = "      INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = false;
             // 
-            // panel6
+            // pnlAgendar
             // 
-            this.panel6.Controls.Add(this.pictureBox6);
-            this.panel6.Controls.Add(this.btnAgendar);
-            this.panel6.Location = new System.Drawing.Point(3, 645);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(281, 60);
-            this.panel6.TabIndex = 116;
+            this.pnlAgendar.Controls.Add(this.pictureBox6);
+            this.pnlAgendar.Controls.Add(this.btnAgendar);
+            this.pnlAgendar.Location = new System.Drawing.Point(3, 571);
+            this.pnlAgendar.Name = "pnlAgendar";
+            this.pnlAgendar.Size = new System.Drawing.Size(281, 60);
+            this.pnlAgendar.TabIndex = 118;
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.pictureBox6.Image = global::BarberOS.Properties.Resources._52462901;
-            this.pictureBox6.Location = new System.Drawing.Point(7, 10);
+            this.pictureBox6.Location = new System.Drawing.Point(10, 10);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(50, 46);
@@ -312,7 +312,7 @@
             this.btnAgendar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAgendar.Location = new System.Drawing.Point(0, 2);
+            this.btnAgendar.Location = new System.Drawing.Point(3, 3);
             this.btnAgendar.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(270, 54);
@@ -338,15 +338,15 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
+            this.pnlBarberos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel3.ResumeLayout(false);
+            this.pnlCortes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel4.ResumeLayout(false);
+            this.pnlInicio.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel5.ResumeLayout(false);
+            this.pnlIngresar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel6.ResumeLayout(false);
+            this.pnlAgendar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
@@ -359,21 +359,21 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Button btnCurrentUser;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.Button btnBarberos;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         public System.Windows.Forms.Button btnCortes;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox4;
         public System.Windows.Forms.Button btnInicio;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox5;
         public System.Windows.Forms.Button btnIngresar;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Panel pnlBarberos;
+        public System.Windows.Forms.Panel pnlCortes;
+        public System.Windows.Forms.Panel pnlInicio;
+        public System.Windows.Forms.Panel pnlIngresar;
+        public System.Windows.Forms.Panel pnlAgendar;
         private System.Windows.Forms.PictureBox pictureBox6;
         public System.Windows.Forms.Button btnAgendar;
-        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -55,10 +55,10 @@ namespace BarberOS.Controlador
 
             if (controladaVista.btnIngresar.Text != "SALIR")
             {
-                controladaVista.btnBarberos.Visible = true; 
-                controladaVista.btnCortes.Visible = true;
-                controladaVista.btnAgendar.Visible = true;
-                controladaVista.btnInicio.Visible = true;
+                controladaVista.pnlBarberos.Visible = true; 
+                controladaVista.pnlCortes.Visible = true;
+                controladaVista.pnlAgendar.Visible = true;
+                controladaVista.pnlInicio.Visible = true;
                 //Lo que sea 
             }
 

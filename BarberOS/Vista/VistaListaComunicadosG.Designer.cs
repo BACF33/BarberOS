@@ -40,6 +40,7 @@
             this.promocionId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionPrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,14 +49,13 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtText = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbPrivacy = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar2 = new System.Windows.Forms.Button();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -218,6 +218,11 @@
             this.promocionPrecio.Text = "Publicador";
             this.promocionPrecio.Width = 124;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Privacidad";
+            this.columnHeader1.Width = 120;
+            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
@@ -293,10 +298,10 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.52599F));
             this.tableLayoutPanel7.Controls.Add(this.pictureBox3, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox1, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.txtName, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.txtText, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.label13, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.label1, 1, 1);
-            this.tableLayoutPanel7.Controls.Add(this.comboBox1, 2, 1);
+            this.tableLayoutPanel7.Controls.Add(this.cmbPrivacy, 2, 1);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -329,15 +334,15 @@
             this.pictureBox1.TabIndex = 137;
             this.pictureBox1.TabStop = false;
             // 
-            // txtName
+            // txtText
             // 
-            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(266, 19);
-            this.txtName.Multiline = true;
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(354, 273);
-            this.txtName.TabIndex = 5;
+            this.txtText.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtText.Location = new System.Drawing.Point(266, 19);
+            this.txtText.Multiline = true;
+            this.txtText.Name = "txtText";
+            this.txtText.Size = new System.Drawing.Size(354, 273);
+            this.txtText.TabIndex = 5;
             // 
             // label13
             // 
@@ -364,15 +369,15 @@
             this.label1.Text = "Privacidad";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // cmbPrivacy
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(338, 334);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(210, 37);
-            this.comboBox1.TabIndex = 142;
+            this.cmbPrivacy.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbPrivacy.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPrivacy.FormattingEnabled = true;
+            this.cmbPrivacy.Location = new System.Drawing.Point(338, 334);
+            this.cmbPrivacy.Name = "cmbPrivacy";
+            this.cmbPrivacy.Size = new System.Drawing.Size(210, 37);
+            this.cmbPrivacy.TabIndex = 142;
             // 
             // tableLayoutPanel8
             // 
@@ -416,11 +421,6 @@
             this.btnActualizar2.TabIndex = 8;
             this.btnActualizar2.Text = "Actualizar";
             this.btnActualizar2.UseVisualStyleBackColor = false;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Privacidad";
-            this.columnHeader1.Width = 120;
             // 
             // VistaListaComunicadosG
             // 
@@ -470,13 +470,13 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.TextBox txtName;
+        public System.Windows.Forms.TextBox txtText;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         public System.Windows.Forms.Button btnAgregar;
         public System.Windows.Forms.Button btnActualizar2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
+        public System.Windows.Forms.ComboBox cmbPrivacy;
     }
 }
