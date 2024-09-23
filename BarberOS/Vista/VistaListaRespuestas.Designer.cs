@@ -75,6 +75,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS1;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
@@ -90,6 +91,7 @@
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS1;
             this.tableLayoutPanel2.ColumnCount = 5;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.80924F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.65574F));
@@ -114,11 +116,11 @@
             this.btnVolver.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnVolver.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.Color.White;
-            this.btnVolver.Location = new System.Drawing.Point(1176, 25);
+            this.btnVolver.Location = new System.Drawing.Point(1176, 36);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(147, 75);
+            this.btnVolver.Size = new System.Drawing.Size(147, 52);
             this.btnVolver.TabIndex = 4;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
@@ -128,11 +130,11 @@
             this.btnBorrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnBorrar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrar.ForeColor = System.Drawing.Color.White;
-            this.btnBorrar.Location = new System.Drawing.Point(941, 25);
+            this.btnBorrar.Location = new System.Drawing.Point(941, 36);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(148, 75);
+            this.btnBorrar.Size = new System.Drawing.Size(148, 52);
             this.btnBorrar.TabIndex = 3;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = false;
@@ -141,9 +143,9 @@
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.Control;
+            this.label7.BackColor = System.Drawing.Color.Black;
             this.label7.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(56, 40);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(157, 44);
@@ -166,9 +168,9 @@
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnBuscar.Location = new System.Drawing.Point(669, 27);
+            this.btnBuscar.Location = new System.Drawing.Point(669, 37);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(178, 71);
+            this.btnBuscar.Size = new System.Drawing.Size(178, 50);
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -250,6 +252,7 @@
             // 
             // tableLayoutPanel5
             // 
+            this.tableLayoutPanel5.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS1;
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.46864F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.53136F));
@@ -267,7 +270,9 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(72, 23);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(281, 39);
@@ -279,9 +284,9 @@
             this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtId.Enabled = false;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(487, 25);
+            this.txtId.Location = new System.Drawing.Point(457, 25);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(121, 35);
+            this.txtId.Size = new System.Drawing.Size(180, 35);
             this.txtId.TabIndex = 123;
             this.txtId.TabStop = false;
             // 
@@ -302,10 +307,11 @@
             // 
             // tableLayoutPanel7
             // 
+            this.tableLayoutPanel7.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS1;
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.38622F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.29518F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.41566F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.16265F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.54819F));
             this.tableLayoutPanel7.Controls.Add(this.cmbUsuarios, 2, 2);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox3, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox1, 0, 1);
@@ -324,6 +330,7 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(664, 391);
             this.tableLayoutPanel7.TabIndex = 2;
+            this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Paint);
             // 
             // cmbUsuarios
             // 
@@ -331,9 +338,9 @@
             this.cmbUsuarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbUsuarios.FormattingEnabled = true;
-            this.cmbUsuarios.Location = new System.Drawing.Point(400, 307);
+            this.cmbUsuarios.Location = new System.Drawing.Point(368, 307);
             this.cmbUsuarios.Name = "cmbUsuarios";
-            this.cmbUsuarios.Size = new System.Drawing.Size(252, 37);
+            this.cmbUsuarios.Size = new System.Drawing.Size(261, 37);
             this.cmbUsuarios.TabIndex = 149;
             // 
             // pictureBox3
@@ -351,11 +358,12 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS1;
             this.pictureBox1.Image = global::BarberOS.Properties.Resources.password_icon_1903x2048_m0d1f305;
             this.pictureBox1.Location = new System.Drawing.Point(39, 158);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(69, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 137;
             this.pictureBox1.TabStop = false;
             // 
@@ -363,7 +371,7 @@
             // 
             this.txtRespuesta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRespuesta.Location = new System.Drawing.Point(391, 38);
+            this.txtRespuesta.Location = new System.Drawing.Point(364, 38);
             this.txtRespuesta.MaxLength = 50;
             this.txtRespuesta.Name = "txtRespuesta";
             this.txtRespuesta.Size = new System.Drawing.Size(270, 35);
@@ -373,8 +381,10 @@
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Black;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(184, 43);
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(157, 43);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(167, 24);
@@ -385,11 +395,13 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(169, 173);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(184, 161);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 24);
+            this.label1.Size = new System.Drawing.Size(114, 48);
             this.label1.TabIndex = 141;
             this.label1.Text = "Respuesta Pregunta";
             // 
@@ -397,22 +409,26 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(175, 313);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(184, 301);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 24);
+            this.label2.Size = new System.Drawing.Size(114, 48);
             this.label2.TabIndex = 142;
             this.label2.Text = "Respuesta Usuario";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS1;
             this.pictureBox2.Image = global::BarberOS.Properties.Resources.Points_png_icon;
             this.pictureBox2.Location = new System.Drawing.Point(39, 297);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(69, 56);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 138;
             this.pictureBox2.TabStop = false;
             // 
@@ -422,13 +438,14 @@
             this.cmbPreguntas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPreguntas.FormattingEnabled = true;
-            this.cmbPreguntas.Location = new System.Drawing.Point(400, 167);
+            this.cmbPreguntas.Location = new System.Drawing.Point(364, 167);
             this.cmbPreguntas.Name = "cmbPreguntas";
-            this.cmbPreguntas.Size = new System.Drawing.Size(252, 37);
+            this.cmbPreguntas.Size = new System.Drawing.Size(269, 37);
             this.cmbPreguntas.TabIndex = 148;
             // 
             // tableLayoutPanel8
             // 
+            this.tableLayoutPanel8.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS1;
             this.tableLayoutPanel8.ColumnCount = 2;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -447,11 +464,11 @@
             this.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnAgregar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(424, 3);
+            this.btnAgregar.Location = new System.Drawing.Point(424, 15);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(147, 75);
+            this.btnAgregar.Size = new System.Drawing.Size(147, 51);
             this.btnAgregar.TabIndex = 9;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -461,11 +478,11 @@
             this.btnActualizar2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnActualizar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
             this.btnActualizar2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnActualizar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnActualizar2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar2.ForeColor = System.Drawing.Color.White;
-            this.btnActualizar2.Location = new System.Drawing.Point(92, 3);
+            this.btnActualizar2.Location = new System.Drawing.Point(92, 14);
             this.btnActualizar2.Name = "btnActualizar2";
-            this.btnActualizar2.Size = new System.Drawing.Size(147, 75);
+            this.btnActualizar2.Size = new System.Drawing.Size(147, 52);
             this.btnActualizar2.TabIndex = 8;
             this.btnActualizar2.Text = "Actualizar";
             this.btnActualizar2.UseVisualStyleBackColor = false;

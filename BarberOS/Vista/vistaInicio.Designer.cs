@@ -86,9 +86,9 @@
             this.btnDocumentacion.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnDocumentacion.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDocumentacion.ForeColor = System.Drawing.Color.White;
-            this.btnDocumentacion.Location = new System.Drawing.Point(267, 456);
+            this.btnDocumentacion.Location = new System.Drawing.Point(267, 450);
             this.btnDocumentacion.Name = "btnDocumentacion";
-            this.btnDocumentacion.Size = new System.Drawing.Size(237, 62);
+            this.btnDocumentacion.Size = new System.Drawing.Size(237, 74);
             this.btnDocumentacion.TabIndex = 50;
             this.btnDocumentacion.Text = "Documentacion";
             this.btnDocumentacion.UseVisualStyleBackColor = false;

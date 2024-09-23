@@ -100,7 +100,7 @@
             this.btnProductos.Location = new System.Drawing.Point(66, 233);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(213, 91);
-            this.btnProductos.TabIndex = 6;
+            this.btnProductos.TabIndex = 4;
             this.btnProductos.Text = "PRODUCTOS";
             this.btnProductos.UseVisualStyleBackColor = false;
             // 
@@ -113,7 +113,7 @@
             this.btnInventario.Location = new System.Drawing.Point(461, 231);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Size = new System.Drawing.Size(220, 94);
-            this.btnInventario.TabIndex = 7;
+            this.btnInventario.TabIndex = 5;
             this.btnInventario.Text = "INVENTARIO";
             this.btnInventario.UseVisualStyleBackColor = false;
             // 
@@ -126,7 +126,7 @@
             this.btnServidor.Location = new System.Drawing.Point(70, 399);
             this.btnServidor.Name = "btnServidor";
             this.btnServidor.Size = new System.Drawing.Size(204, 92);
-            this.btnServidor.TabIndex = 4;
+            this.btnServidor.TabIndex = 7;
             this.btnServidor.Text = "SERVIDOR";
             this.btnServidor.UseVisualStyleBackColor = false;
             // 
@@ -139,7 +139,7 @@
             this.btnComunicados.Location = new System.Drawing.Point(463, 399);
             this.btnComunicados.Name = "btnComunicados";
             this.btnComunicados.Size = new System.Drawing.Size(216, 92);
-            this.btnComunicados.TabIndex = 9;
+            this.btnComunicados.TabIndex = 8;
             this.btnComunicados.Text = "COMUNICADOS";
             this.btnComunicados.UseVisualStyleBackColor = false;
             // 
@@ -165,7 +165,7 @@
             this.btnPersonal.Location = new System.Drawing.Point(63, 49);
             this.btnPersonal.Name = "btnPersonal";
             this.btnPersonal.Size = new System.Drawing.Size(219, 89);
-            this.btnPersonal.TabIndex = 10;
+            this.btnPersonal.TabIndex = 1;
             this.btnPersonal.Text = "PERSONAL";
             this.btnPersonal.UseVisualStyleBackColor = false;
             // 
@@ -178,7 +178,7 @@
             this.btnPromo.Location = new System.Drawing.Point(851, 230);
             this.btnPromo.Name = "btnPromo";
             this.btnPromo.Size = new System.Drawing.Size(214, 97);
-            this.btnPromo.TabIndex = 10;
+            this.btnPromo.TabIndex = 6;
             this.btnPromo.Text = "PROMOCIONES";
             this.btnPromo.UseVisualStyleBackColor = false;
             // 
@@ -191,7 +191,7 @@
             this.btnPreguntas.Location = new System.Drawing.Point(851, 400);
             this.btnPreguntas.Name = "btnPreguntas";
             this.btnPreguntas.Size = new System.Drawing.Size(215, 89);
-            this.btnPreguntas.TabIndex = 8;
+            this.btnPreguntas.TabIndex = 9;
             this.btnPreguntas.Text = "PREGUNTAS";
             this.btnPreguntas.UseVisualStyleBackColor = false;
             // 
@@ -204,7 +204,7 @@
             this.btnClientes.Location = new System.Drawing.Point(462, 48);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(219, 91);
-            this.btnClientes.TabIndex = 11;
+            this.btnClientes.TabIndex = 2;
             this.btnClientes.Text = "CLIENTES";
             this.btnClientes.UseVisualStyleBackColor = false;
             // 
