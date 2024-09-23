@@ -88,5 +88,32 @@ namespace BarberOS.Modelo.Dao
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        public void Borrar(VistaListaComunicadosG vistaPasada)
+        {
+            string selectedId = vistaPasada.listComunicados.SelectedItems[0].Text;
+            try
+            {
+                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
+                using (SqlConnection conexion = new SqlConnection(cnn))
+                {
+                    //Usando la id de la fila seleccionada por el usuaio se eliminara el valor de la base de datos con
+                    //el mismo id 
+                    conexion.Open();
+                    string sql = "DELETE FROM announcements WHERE announcementId = @toDelete";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conexion))
+                    {
+                        //Se usara la string selectedId como parametro
+                        cmd.Parameters.AddWithValue("@toDelete", selectedId);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }

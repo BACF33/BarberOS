@@ -13,10 +13,10 @@ namespace BarberOS.Vista
 {
     public partial class PanelComunicado : UserControl
     {
-        public PanelComunicado(string testText, string testPoster, string testPrivacy)
+        public PanelComunicado(string testText, string testPoster, string testPrivacy, byte[] imageData)
         {
             InitializeComponent();
-            new ControlComunicado(testText, testPoster, testPrivacy, this);
+            new ControlComunicado(testText, testPoster, testPrivacy, this, imageData);
         }
     }
 }

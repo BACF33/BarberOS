@@ -79,15 +79,29 @@ namespace BarberOS.Controlador
         //Se ejecutara la funcion insert del dao y obtener para actualizar la tabla
         public void InsertData()
         {
-            dao.Insert(controladaVista);
-            dao.Populate(controladaVista);
+            if (controladaVista.txtContraseña.Text.Equals("") || controladaVista.txtEmail.Text.Equals("") || controladaVista.cmbCargo.Text.Equals("") || controladaVista.txtName.Text.Equals("") || controladaVista.txtPuntos.Text.Equals(""))
+            {
+                MessageBox.Show("Hay campos vacios");
+            }
+            else
+            {
+                dao.Insert(controladaVista);
+                dao.Populate(controladaVista);
+            }
         }
 
         //Se ejecutara la funcion update del dao y obtener para actualizar la tabla
         public void UpdateData()
         {
-            dao.Update(controladaVista);
-            dao.Populate(controladaVista);
+            if (controladaVista.txtContraseña.Text.Equals("") || controladaVista.txtEmail.Text.Equals("") || controladaVista.txtId.Text.Equals("") || controladaVista.cmbCargo.Text.Equals("") || controladaVista.txtName.Text.Equals("") || controladaVista.txtPuntos.Text.Equals(""))
+            {
+                MessageBox.Show("Hay campos vacios");
+            }
+            else
+            {
+                dao.Update(controladaVista);
+                dao.Populate(controladaVista);
+            }
         }
 
         //Se ejecutara la funcion delete del dao y obtener para actualizar la tabla

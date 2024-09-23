@@ -20,7 +20,9 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT announcementText, announcementPoster, announcementPrivacy FROM announcements";
+                    string query = "SELECT a.announcementText, a.announcementPoster, a.announcementPrivacy, u.userImage " +
+                        "FROM announcements a " +
+                        "INNER JOIN users u ON userId = announcementPoster";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -34,8 +36,9 @@ namespace BarberOS.Modelo.Dao
                                 testText = reader["announcementText"].ToString();
                                 testPoster = reader["announcementPoster"].ToString();
                                 testPrivacy = reader["announcementPrivacy"].ToString();
+                                byte[] imageData = reader["userImage"] as byte[];
 
-                                PanelComunicado panelUsado = new PanelComunicado(testText, testPoster, testPrivacy);
+                                PanelComunicado panelUsado = new PanelComunicado(testText, testPoster, testPrivacy, imageData);
 
                                 vistaPasada.flpComunicados.Controls.Add(panelUsado);
 

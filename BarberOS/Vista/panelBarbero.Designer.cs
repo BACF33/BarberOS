@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgBarbero = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
             this.lblRole = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBarbero)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // imgBarbero
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Image = global::BarberOS.Properties.Resources.img;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 159);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.imgBarbero.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.imgBarbero.Image = global::BarberOS.Properties.Resources.img;
+            this.imgBarbero.Location = new System.Drawing.Point(24, 28);
+            this.imgBarbero.Name = "imgBarbero";
+            this.imgBarbero.Size = new System.Drawing.Size(184, 159);
+            this.imgBarbero.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgBarbero.TabIndex = 0;
+            this.imgBarbero.TabStop = false;
             // 
             // panel2
             // 
@@ -122,10 +122,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(103)))));
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.imgBarbero);
             this.Name = "PanelBarbero";
             this.Size = new System.Drawing.Size(233, 424);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBarbero)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -133,13 +133,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label lblId;
         public System.Windows.Forms.Label lblRole;
         public System.Windows.Forms.Label lblName;
+        public System.Windows.Forms.PictureBox imgBarbero;
     }
 }

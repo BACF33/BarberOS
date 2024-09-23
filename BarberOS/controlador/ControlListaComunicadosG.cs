@@ -22,11 +22,25 @@ namespace BarberOS.Controlador
             daoThis.Obtener(vistaControlada);
             vistaPasada.btnAgregar.Click += (sender, e) => Agregar();
             vistaPasada.btnVolver.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new VistaInicioGestion(menuPasado));
+            vistaPasada.btnBorrar.Click += (sender, e) => Borrar();
         }
 
         public void Agregar() 
         {
-            daoThis.Agregar(vistaControlada, menuControlado);
+            if (vistaControlada.txtText.Text.Equals(""))
+            {
+                MessageBox.Show("Hay campos vacios");
+            }
+            else
+            {
+                daoThis.Agregar(vistaControlada, menuControlado);
+                daoThis.Obtener(vistaControlada);
+            }
+        }
+
+        public void Borrar()
+        {
+            daoThis.Borrar(vistaControlada);
             daoThis.Obtener(vistaControlada);
         }
     }

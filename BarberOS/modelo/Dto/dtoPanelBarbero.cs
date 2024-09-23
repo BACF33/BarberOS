@@ -12,9 +12,11 @@ namespace BarberOS.Modelo.Dto
         private string barberoId;
         private string barberoName;
         private string barberoRole;
+        private byte[] barberoImage;
 
         public string BarberoId { get => barberoId; set => barberoId = value; }
         public string BarberoName { get => barberoName; set => barberoName = value; }
         public string BarberoRole { get => barberoRole; set => barberoRole = value; }
+        public byte[] BarberoImage { get => barberoImage; set => barberoImage = value; }
     }
 }
