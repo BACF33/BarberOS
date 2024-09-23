@@ -141,6 +141,12 @@
     <Compile Include="Modelo\Dto\DtoServicioCorreo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\PanelComunicado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\PanelComunicado.Designer.cs">
+      <DependentUpon>PanelComunicado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\vistaCitas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,12 @@
     </Compile>
     <Compile Include="Vista\VistaListaRespuestas.Designer.cs">
       <DependentUpon>VistaListaRespuestas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaLogin.Designer.cs">
+      <DependentUpon>VistaLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\VistaNuevaContraseña.cs">
       <SubType>Form</SubType>
@@ -345,12 +357,6 @@
     <Compile Include="Vista\VistaRecompensas.Designer.cs">
       <DependentUpon>VistaRecompensas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\VistaLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\VistaLogin.Designer.cs">
-      <DependentUpon>VistaLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vista\VistaRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -390,6 +396,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaCitas.resx">
       <DependentUpon>vistaCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaComunicados.resx">
+      <DependentUpon>VistaComunicados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaConfigServidor.resx">
       <DependentUpon>VistaConfigServidor.cs</DependentUpon>
@@ -445,17 +454,20 @@
     <EmbeddedResource Include="Vista\VistaListaRespuestas.resx">
       <DependentUpon>VistaListaRespuestas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaLogin.resx">
+      <DependentUpon>VistaLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaMenu.resx">
       <DependentUpon>VistaMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaInicioGestion.resx">
       <DependentUpon>VistaInicioGestion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\VistaLogin.resx">
-      <DependentUpon>VistaLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaNuevaContraseña.resx">
       <DependentUpon>VistaNuevaContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaPerfilUsuario.resx">
+      <DependentUpon>VistaPerfilUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaPrimerLogin.resx">
       <DependentUpon>VistaPrimerLogin.cs</DependentUpon>

@@ -54,6 +54,7 @@
         }
 
         #endregion
+
         public System.Windows.Forms.FlowLayoutPanel flpCabello;
     }
 }

@@ -37,5 +37,20 @@ namespace BarberOS.Vista
         {
 
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VistaInicioGestion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -364,6 +364,7 @@
             this.txtRespuesta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRespuesta.Location = new System.Drawing.Point(391, 38);
+            this.txtRespuesta.MaxLength = 50;
             this.txtRespuesta.Name = "txtRespuesta";
             this.txtRespuesta.Size = new System.Drawing.Size(270, 35);
             this.txtRespuesta.TabIndex = 5;

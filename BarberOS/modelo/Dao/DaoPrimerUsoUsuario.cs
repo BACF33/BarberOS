@@ -24,14 +24,14 @@ namespace BarberOS.Modelo.Dao
                     //el mismo id 
                     conexion.Open();
                     string query = @"
-                    INSERT INTO users (userName, userPassword, userPoints, userRole, userEmail, userBirthPlace)
+                    INSERT INTO users (userName, userPassword, userPoints, userRole, userEmail, userRequiresRestart)
                     VALUES (
                     @userName, 
                     @userPassword, 
                     @userPoints, 
                     (SELECT roleId FROM userRoles WHERE roleName = @roleName),
                     @userEmail,
-                    @userBirthPlace
+                    @userRequiresRestart
                     )";
 
                     //Se encripta la contraseña
@@ -45,16 +45,7 @@ namespace BarberOS.Modelo.Dao
                         password = builder.ToString();
                     }
 
-                    //Se encrip
-                    string lugar = vistaPasada.txtLugar.Text;
-                    using (SHA256 crypt = SHA256.Create())
-                    {
-                        byte[] bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(lugar));
-                        StringBuilder builder = new StringBuilder();
-                        for (int i = 0; i < bytes.Length; i++)
-                            builder.Append(bytes[i].ToString("X2"));
-                        lugar = builder.ToString();
-                    }
+
 
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
@@ -64,7 +55,7 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtPuntos.Text);
                         cmd.Parameters.AddWithValue("@roleName", "Admin");
                         cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
-                        cmd.Parameters.AddWithValue("@userBirthPlace", lugar);
+                        cmd.Parameters.AddWithValue("@userRequiresRestart", false);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
                     //Test

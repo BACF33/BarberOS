@@ -49,16 +49,16 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.txtQuant = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.picProducto = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar2 = new System.Windows.Forms.Button();
-            this.picProducto = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -66,8 +66,8 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto)).BeginInit();
+            this.tableLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -327,39 +327,33 @@
             this.txtQuant.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtQuant.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuant.Location = new System.Drawing.Point(386, 227);
+            this.txtQuant.MaxLength = 50;
             this.txtQuant.Name = "txtQuant";
             this.txtQuant.Size = new System.Drawing.Size(265, 35);
             this.txtQuant.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(180, 332);
-            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 24);
-            this.label3.TabIndex = 145;
-            this.label3.Text = "Producto Imagen";
+            this.txtQuant.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
             // txtName
             // 
             this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(386, 24);
+            this.txtName.MaxLength = 50;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(265, 35);
             this.txtName.TabIndex = 5;
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras);
             // 
             // txtPrice
             // 
             this.txtPrice.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrice.Location = new System.Drawing.Point(386, 122);
+            this.txtPrice.MaxLength = 50;
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(265, 35);
             this.txtPrice.TabIndex = 6;
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
             // label13
             // 
@@ -396,6 +390,29 @@
             this.label2.Size = new System.Drawing.Size(182, 24);
             this.label2.TabIndex = 142;
             this.label2.Text = "Producto Cantidad";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(180, 332);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(169, 24);
+            this.label3.TabIndex = 145;
+            this.label3.Text = "Producto Imagen";
+            // 
+            // picProducto
+            // 
+            this.picProducto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picProducto.Image = global::BarberOS.Properties.Resources.Negro;
+            this.picProducto.Location = new System.Drawing.Point(453, 299);
+            this.picProducto.Name = "picProducto";
+            this.picProducto.Size = new System.Drawing.Size(131, 90);
+            this.picProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picProducto.TabIndex = 146;
+            this.picProducto.TabStop = false;
             // 
             // tableLayoutPanel8
             // 
@@ -440,17 +457,6 @@
             this.btnActualizar2.Text = "Actualizar";
             this.btnActualizar2.UseVisualStyleBackColor = false;
             // 
-            // picProducto
-            // 
-            this.picProducto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picProducto.Image = global::BarberOS.Properties.Resources.Negro;
-            this.picProducto.Location = new System.Drawing.Point(453, 299);
-            this.picProducto.Name = "picProducto";
-            this.picProducto.Size = new System.Drawing.Size(131, 90);
-            this.picProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picProducto.TabIndex = 146;
-            this.picProducto.TabStop = false;
-            // 
             // VistaInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -470,8 +476,8 @@
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
-            this.tableLayoutPanel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picProducto)).EndInit();
+            this.tableLayoutPanel8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
