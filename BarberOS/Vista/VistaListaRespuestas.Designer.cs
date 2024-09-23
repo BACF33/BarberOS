@@ -201,6 +201,7 @@
             this.promocionPoder});
             this.listRespuestas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listRespuestas.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listRespuestas.ForeColor = System.Drawing.Color.White;
             this.listRespuestas.FullRowSelect = true;
             this.listRespuestas.GridLines = true;
             this.listRespuestas.HideSelection = false;

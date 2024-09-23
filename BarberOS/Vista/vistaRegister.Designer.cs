@@ -98,7 +98,7 @@
             // 
             this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 29.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Font = new System.Drawing.Font("Palatino Linotype", 29.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.Transparent;
             this.btnRegister.Location = new System.Drawing.Point(254, 461);
             this.btnRegister.Name = "btnRegister";
@@ -152,7 +152,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::BarberOS.Properties.Resources.Correo_png;
-            this.pictureBox5.Location = new System.Drawing.Point(47, 343);
+            this.pictureBox5.Location = new System.Drawing.Point(42, 376);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(54, 50);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -162,7 +162,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::BarberOS.Properties.Resources._6220807__1_;
-            this.pictureBox4.Location = new System.Drawing.Point(42, 239);
+            this.pictureBox4.Location = new System.Drawing.Point(42, 273);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(54, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -172,7 +172,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::BarberOS.Properties.Resources._9187604;
-            this.pictureBox3.Location = new System.Drawing.Point(42, 137);
+            this.pictureBox3.Location = new System.Drawing.Point(42, 172);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(54, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

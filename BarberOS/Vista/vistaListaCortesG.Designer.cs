@@ -208,6 +208,7 @@
             this.promocionPoder});
             this.listCortes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listCortes.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listCortes.ForeColor = System.Drawing.Color.White;
             this.listCortes.FullRowSelect = true;
             this.listCortes.GridLines = true;
             this.listCortes.HideSelection = false;

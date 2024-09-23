@@ -224,6 +224,7 @@
             this.promocionPoder});
             this.listClientes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listClientes.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listClientes.ForeColor = System.Drawing.Color.White;
             this.listClientes.FullRowSelect = true;
             this.listClientes.GridLines = true;
             this.listClientes.HideSelection = false;

@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.btnBorrar = new System.Windows.Forms.Button();
-            this.btnVolver = new System.Windows.Forms.Button();
             this.listRegistros = new System.Windows.Forms.ListView();
             this.registroId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.registroProductoNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -42,12 +36,19 @@
             this.regisroPromocionNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.registroPromocionPoder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.registroTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS1;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.listRegistros, 0, 1);
@@ -60,92 +61,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.83453F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1334, 695);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 5;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txtSearch, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnSearch, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnBorrar, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnVolver, 4, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1328, 155);
-            this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(54, 55);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(157, 44);
-            this.label3.TabIndex = 115;
-            this.label3.Text = "BarberOs";
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(268, 63);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(259, 29);
-            this.txtSearch.TabIndex = 132;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(102)))), ((int)(((byte)(133)))));
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSearch.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSearch.Location = new System.Drawing.Point(596, 37);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(132, 80);
-            this.btnSearch.TabIndex = 133;
-            this.btnSearch.Text = "Buscar";
-            this.btnSearch.UseVisualStyleBackColor = false;
-            // 
-            // btnBorrar
-            // 
-            this.btnBorrar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
-            this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBorrar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.ForeColor = System.Drawing.Color.White;
-            this.btnBorrar.Location = new System.Drawing.Point(862, 35);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(131, 84);
-            this.btnBorrar.TabIndex = 134;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = false;
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(102)))), ((int)(((byte)(133)))));
-            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnVolver.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.ForeColor = System.Drawing.Color.White;
-            this.btnVolver.Location = new System.Drawing.Point(1127, 38);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(134, 78);
-            this.btnVolver.TabIndex = 135;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = false;
             // 
             // listRegistros
             // 
@@ -199,6 +114,94 @@
             // 
             this.registroTotal.Text = "Total";
             this.registroTotal.Width = 120;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel2.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS1;
+            this.tableLayoutPanel2.ColumnCount = 5;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.87349F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.036144F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtSearch, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnSearch, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnBorrar, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnVolver, 4, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1328, 155);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(54, 55);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(157, 44);
+            this.label3.TabIndex = 115;
+            this.label3.Text = "BarberOs";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(290, 63);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(359, 29);
+            this.txtSearch.TabIndex = 132;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(102)))), ((int)(((byte)(133)))));
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSearch.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSearch.Location = new System.Drawing.Point(678, 57);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(114, 41);
+            this.btnSearch.TabIndex = 133;
+            this.btnSearch.Text = "Buscar";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            // 
+            // btnBorrar
+            // 
+            this.btnBorrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
+            this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBorrar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.ForeColor = System.Drawing.Color.White;
+            this.btnBorrar.Location = new System.Drawing.Point(862, 49);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(131, 56);
+            this.btnBorrar.TabIndex = 134;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = false;
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(102)))), ((int)(((byte)(133)))));
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVolver.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.ForeColor = System.Drawing.Color.White;
+            this.btnVolver.Location = new System.Drawing.Point(1127, 55);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(134, 45);
+            this.btnVolver.TabIndex = 135;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
             // 
             // VistaListaRegistros
             // 
