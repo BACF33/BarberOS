@@ -30,13 +30,13 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnDocumentacion = new System.Windows.Forms.Button();
             this.btnComunicados = new System.Windows.Forms.Button();
             this.lbInicio = new System.Windows.Forms.Label();
             this.btnBarberos = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnCortes = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnDocumentacion = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -76,9 +76,23 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.51064F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.08511F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.87234F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 108F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 122F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(772, 549);
             this.tableLayoutPanel3.TabIndex = 50;
+            // 
+            // btnDocumentacion
+            // 
+            this.btnDocumentacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDocumentacion.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnDocumentacion.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDocumentacion.ForeColor = System.Drawing.Color.White;
+            this.btnDocumentacion.Location = new System.Drawing.Point(267, 456);
+            this.btnDocumentacion.Name = "btnDocumentacion";
+            this.btnDocumentacion.Size = new System.Drawing.Size(237, 62);
+            this.btnDocumentacion.TabIndex = 50;
+            this.btnDocumentacion.Text = "Documentacion";
+            this.btnDocumentacion.UseVisualStyleBackColor = false;
+            this.btnDocumentacion.Click += new System.EventHandler(this.btnDocumentacion_Click);
             // 
             // btnComunicados
             // 
@@ -86,9 +100,9 @@
             this.btnComunicados.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnComunicados.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComunicados.ForeColor = System.Drawing.Color.White;
-            this.btnComunicados.Location = new System.Drawing.Point(267, 335);
+            this.btnComunicados.Location = new System.Drawing.Point(267, 331);
             this.btnComunicados.Name = "btnComunicados";
-            this.btnComunicados.Size = new System.Drawing.Size(237, 81);
+            this.btnComunicados.Size = new System.Drawing.Size(237, 70);
             this.btnComunicados.TabIndex = 49;
             this.btnComunicados.Text = "Comunicados";
             this.btnComunicados.UseVisualStyleBackColor = false;
@@ -112,7 +126,7 @@
             this.btnBarberos.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnBarberos.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBarberos.ForeColor = System.Drawing.Color.White;
-            this.btnBarberos.Location = new System.Drawing.Point(267, 243);
+            this.btnBarberos.Location = new System.Drawing.Point(267, 236);
             this.btnBarberos.Name = "btnBarberos";
             this.btnBarberos.Size = new System.Drawing.Size(237, 65);
             this.btnBarberos.TabIndex = 47;
@@ -125,7 +139,7 @@
             this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.button2.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(267, 162);
+            this.button2.Location = new System.Drawing.Point(267, 157);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(237, 66);
             this.button2.TabIndex = 46;
@@ -138,7 +152,7 @@
             this.btnCortes.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnCortes.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCortes.ForeColor = System.Drawing.Color.White;
-            this.btnCortes.Location = new System.Drawing.Point(267, 72);
+            this.btnCortes.Location = new System.Drawing.Point(267, 70);
             this.btnCortes.Name = "btnCortes";
             this.btnCortes.Size = new System.Drawing.Size(237, 70);
             this.btnCortes.TabIndex = 23;
@@ -159,20 +173,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(784, 561);
             this.tableLayoutPanel2.TabIndex = 47;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
-            // 
-            // btnDocumentacion
-            // 
-            this.btnDocumentacion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDocumentacion.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnDocumentacion.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDocumentacion.ForeColor = System.Drawing.Color.White;
-            this.btnDocumentacion.Location = new System.Drawing.Point(267, 452);
-            this.btnDocumentacion.Name = "btnDocumentacion";
-            this.btnDocumentacion.Size = new System.Drawing.Size(237, 81);
-            this.btnDocumentacion.TabIndex = 50;
-            this.btnDocumentacion.Text = "Documentacion";
-            this.btnDocumentacion.UseVisualStyleBackColor = false;
-            this.btnDocumentacion.Click += new System.EventHandler(this.btnDocumentacion_Click);
             // 
             // VistaInicio
             // 

@@ -32,10 +32,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnAgendar = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dtpHora = new System.Windows.Forms.DateTimePicker();
+            this.btnAgendar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -56,25 +56,25 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(369, 42);
+            this.label1.Location = new System.Drawing.Point(333, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 31);
+            this.label1.Size = new System.Drawing.Size(283, 32);
             this.label1.TabIndex = 146;
-            this.label1.Text = "Seleccionar fecha";
+            this.label1.Text = "SELECCIONAR FECHA";
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(373, 272);
+            this.label2.Location = new System.Drawing.Point(337, 271);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 31);
+            this.label2.Size = new System.Drawing.Size(275, 32);
             this.label2.TabIndex = 147;
-            this.label2.Text = "Seleccionar hora";
+            this.label2.Text = "SELECCIONAR HORA";
             // 
             // tableLayoutPanel1
             // 
@@ -98,19 +98,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(950, 578);
             this.tableLayoutPanel1.TabIndex = 149;
-            // 
-            // btnAgendar
-            // 
-            this.btnAgendar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAgendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
-            this.btnAgendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgendar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnAgendar.Location = new System.Drawing.Point(368, 478);
-            this.btnAgendar.Name = "btnAgendar";
-            this.btnAgendar.Size = new System.Drawing.Size(214, 82);
-            this.btnAgendar.TabIndex = 148;
-            this.btnAgendar.Text = "Agendar";
-            this.btnAgendar.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -138,6 +125,19 @@
             this.dtpHora.Name = "dtpHora";
             this.dtpHora.Size = new System.Drawing.Size(427, 35);
             this.dtpHora.TabIndex = 146;
+            // 
+            // btnAgendar
+            // 
+            this.btnAgendar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
+            this.btnAgendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAgendar.Location = new System.Drawing.Point(368, 489);
+            this.btnAgendar.Name = "btnAgendar";
+            this.btnAgendar.Size = new System.Drawing.Size(214, 60);
+            this.btnAgendar.TabIndex = 148;
+            this.btnAgendar.Text = "Agendar";
+            this.btnAgendar.UseVisualStyleBackColor = false;
             // 
             // vistaCitas
             // 
