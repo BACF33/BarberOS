@@ -199,6 +199,7 @@
             this.promocionPoder});
             this.listEmpleados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listEmpleados.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listEmpleados.ForeColor = System.Drawing.Color.White;
             this.listEmpleados.FullRowSelect = true;
             this.listEmpleados.GridLines = true;
             this.listEmpleados.HideSelection = false;
