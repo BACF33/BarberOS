@@ -13,10 +13,10 @@ namespace BarberOS.Vista
 {
     public partial class VistaInsertarPin : Form
     {
-        public VistaInsertarPin(int pin, string user)
+        public VistaInsertarPin(int pin, string user, vistaMenu menuPasado)
         {
             InitializeComponent();
-            new ControlObtenerPin(pin, this, user);
+            new ControlObtenerPin(pin, this, user, menuPasado);
         }
     }
 }

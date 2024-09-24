@@ -43,7 +43,7 @@ vistaRestablecerPreguntas(menuPasado));
 
         private void getPin(int pin)
         {
-            menuControlado.controladorMenu.AbrirFormulario(new VistaInsertarPin(pin, vistaControlada.txtUser.Text));
+            menuControlado.controladorMenu.AbrirFormulario(new VistaInsertarPin(pin, vistaControlada.txtUser.Text, menuControlado));
         }
 
 

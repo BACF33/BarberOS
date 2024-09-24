@@ -10,10 +10,13 @@ namespace BarberOS.Controlador
     internal class ControlObtenerPin
     {
         VistaInsertarPin vistaControlada;
+        vistaMenu menuControlado;
+
         int pin2;
         string user2;
-        public ControlObtenerPin(int pin, VistaInsertarPin vistaPasada, string user) 
+        public ControlObtenerPin(int pin, VistaInsertarPin vistaPasada, string user, vistaMenu menuPasado) 
         {
+            menuControlado = menuPasado;
             pin2 = pin;
             user2 = user;
             vistaControlada = vistaPasada;
@@ -26,13 +29,8 @@ namespace BarberOS.Controlador
             //Se verificara que el ping ingresado por el usuario sea el mismo que se le envio a su email
             if (vistaControlada.txtPin.Text == pin2.ToString())
             {
-                VistaNuevaContraseña nPass = new VistaNuevaContraseña(user2);
-                nPass.Show();
-                //Se cerrara el formulario actual
-                vistaControlada.Close();
+                menuControlado.controladorMenu.AbrirFormulario(new VistaNuevaContraseña(user2));
             }
-
-
         }
     }
 }
