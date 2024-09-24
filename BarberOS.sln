@@ -5,8 +5,6 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberOS", "BarberOS\BarberOS.csproj", "{6DF11929-485C-4711-9209-63FD361AED05}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BOInstall", "BOInstall\BOInstall.vdproj", "{0F512CE9-06B2-4E21-B5A5-6EA7850E5A5C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +15,6 @@ Global
 		{6DF11929-485C-4711-9209-63FD361AED05}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{6DF11929-485C-4711-9209-63FD361AED05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DF11929-485C-4711-9209-63FD361AED05}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0F512CE9-06B2-4E21-B5A5-6EA7850E5A5C}.Debug|Any CPU.ActiveCfg = Debug
-		{0F512CE9-06B2-4E21-B5A5-6EA7850E5A5C}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

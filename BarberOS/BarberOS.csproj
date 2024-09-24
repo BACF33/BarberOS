@@ -750,6 +750,7 @@
     <None Include="Resources\Points png icon1.png" />
     <None Include="Resources\ID icon png.png" />
     <None Include="Resources\img.png" />
+    <None Include="Resources\Perfil.png" />
     <Content Include="Resources\Proyecto nuevo %288%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

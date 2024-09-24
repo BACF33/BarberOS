@@ -37,7 +37,7 @@
             // txtTexto
             // 
             this.txtTexto.Enabled = false;
-            this.txtTexto.Location = new System.Drawing.Point(43, 129);
+            this.txtTexto.Location = new System.Drawing.Point(37, 129);
             this.txtTexto.Multiline = true;
             this.txtTexto.Name = "txtTexto";
             this.txtTexto.Size = new System.Drawing.Size(518, 248);
@@ -57,7 +57,7 @@
             // picPerfil
             // 
             this.picPerfil.BackColor = System.Drawing.Color.Red;
-            this.picPerfil.Location = new System.Drawing.Point(99, 13);
+            this.picPerfil.Location = new System.Drawing.Point(98, 13);
             this.picPerfil.Name = "picPerfil";
             this.picPerfil.Size = new System.Drawing.Size(134, 110);
             this.picPerfil.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(103)))));
             this.Controls.Add(this.picPerfil);
             this.Controls.Add(this.txtPoster);
             this.Controls.Add(this.txtTexto);

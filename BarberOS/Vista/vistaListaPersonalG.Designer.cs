@@ -69,6 +69,7 @@
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar2 = new System.Windows.Forms.Button();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -213,7 +214,8 @@
             this.promocionNombre,
             this.promocionPrecio,
             this.promocionTipo,
-            this.promocionPoder});
+            this.promocionPoder,
+            this.columnHeader1});
             this.listEmpleados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listEmpleados.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listEmpleados.ForeColor = System.Drawing.Color.White;
@@ -238,17 +240,17 @@
             // 
             // promocionPrecio
             // 
-            this.promocionPrecio.Text = "Precio";
+            this.promocionPrecio.Text = "Contraseña";
             this.promocionPrecio.Width = 124;
             // 
             // promocionTipo
             // 
-            this.promocionTipo.Text = "Tipo";
+            this.promocionTipo.Text = "Puntos";
             this.promocionTipo.Width = 149;
             // 
             // promocionPoder
             // 
-            this.promocionPoder.Text = "Descuento";
+            this.promocionPoder.Text = "Cargo";
             this.promocionPoder.Width = 120;
             // 
             // tableLayoutPanel4
@@ -552,10 +554,11 @@
             // picPersonal
             // 
             this.picPersonal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picPersonal.Image = global::BarberOS.Properties.Resources.Negro;
+            this.picPersonal.Image = global::BarberOS.Properties.Resources.Perfil;
             this.picPersonal.Location = new System.Drawing.Point(415, 334);
             this.picPersonal.Name = "picPersonal";
             this.picPersonal.Size = new System.Drawing.Size(105, 70);
+            this.picPersonal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPersonal.TabIndex = 148;
             this.picPersonal.TabStop = false;
             // 
@@ -628,6 +631,10 @@
             this.btnActualizar2.TabIndex = 10;
             this.btnActualizar2.Text = "Actualizar";
             this.btnActualizar2.UseVisualStyleBackColor = false;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Email";
             // 
             // VistaListaPersonalG
             // 
@@ -703,5 +710,6 @@
         public System.Windows.Forms.PictureBox picPersonal;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -24,14 +25,15 @@ namespace BarberOS.Modelo.Dao
                     //el mismo id 
                     conexion.Open();
                     string query = @"
-                    INSERT INTO users (userName, userPassword, userPoints, userRole, userEmail, userRequiresRestart)
+                    INSERT INTO users (userName, userPassword, userPoints, userRole, userEmail, userRequiresRestart, userImage)
                     VALUES (
                     @userName, 
                     @userPassword, 
                     @userPoints, 
                     (SELECT roleId FROM userRoles WHERE roleName = @roleName),
                     @userEmail,
-                    @userRequiresRestart
+                    @userRequiresRestart,
+                    @userImage
                     )";
 
                     //Se encripta la contraseña
@@ -45,6 +47,10 @@ namespace BarberOS.Modelo.Dao
                         password = builder.ToString();
                     }
 
+                    MemoryStream archivoMemoria = new MemoryStream();
+                    vistaPasada.imgSeleccionada.Image.Save(archivoMemoria, System.Drawing.Imaging.ImageFormat.Jpeg);
+
+                    byte[] imageData = archivoMemoria.ToArray();
 
 
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
@@ -56,6 +62,7 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@roleName", "Admin");
                         cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
                         cmd.Parameters.AddWithValue("@userRequiresRestart", false);
+                        cmd.Parameters.AddWithValue("@userImage", imageData);
                         int rowsAffected = cmd.ExecuteNonQuery();
                     }
                     //Test
