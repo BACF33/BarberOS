@@ -34,7 +34,7 @@
             this.btnComunicados = new System.Windows.Forms.Button();
             this.lbInicio = new System.Windows.Forms.Label();
             this.btnBarberos = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAgendar = new System.Windows.Forms.Button();
             this.btnCortes = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
@@ -65,7 +65,7 @@
             this.tableLayoutPanel3.Controls.Add(this.btnComunicados, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.lbInicio, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.btnBarberos, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.button2, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.btnAgendar, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.btnCortes, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
@@ -133,18 +133,18 @@
             this.btnBarberos.Text = "Barberos";
             this.btnBarberos.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnAgendar
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button2.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(267, 157);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(237, 66);
-            this.button2.TabIndex = 46;
-            this.button2.Text = "Agendar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAgendar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgendar.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnAgendar.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendar.ForeColor = System.Drawing.Color.White;
+            this.btnAgendar.Location = new System.Drawing.Point(267, 157);
+            this.btnAgendar.Name = "btnAgendar";
+            this.btnAgendar.Size = new System.Drawing.Size(237, 66);
+            this.btnAgendar.TabIndex = 46;
+            this.btnAgendar.Text = "Agendar";
+            this.btnAgendar.UseVisualStyleBackColor = false;
             // 
             // btnCortes
             // 
@@ -201,8 +201,8 @@
         public System.Windows.Forms.Button btnComunicados;
         private System.Windows.Forms.Label lbInicio;
         public System.Windows.Forms.Button btnBarberos;
-        private System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button btnCortes;
         public System.Windows.Forms.Button btnDocumentacion;
+        public System.Windows.Forms.Button btnAgendar;
     }
 }

@@ -18,5 +18,15 @@ namespace BarberOS.Vista
             InitializeComponent();
             new ControlComunicados(this);
         }
+
+        private void flpComunicados_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

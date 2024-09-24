@@ -13,10 +13,10 @@ namespace BarberOS.Vista
 {
     public partial class vistaCitas : Form
     {
-        public vistaCitas()
+        public vistaCitas(vistaMenu menuPasado)
         {
             InitializeComponent();
-            new ControlCitas(this);
+            new ControlCitas(this, menuPasado);
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)

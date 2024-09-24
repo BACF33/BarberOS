@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Forms;
 
 namespace BarberOS.Modelo.Dao
 {
@@ -39,7 +40,7 @@ namespace BarberOS.Modelo.Dao
                                 byte[] imageData = reader["userImage"] as byte[];
 
                                 PanelComunicado panelUsado = new PanelComunicado(testText, testPoster, testPrivacy, imageData);
-
+                                panelUsado.Dock = DockStyle.Right;
                                 vistaPasada.flpComunicados.Controls.Add(panelUsado);
 
                             }
@@ -49,7 +50,7 @@ namespace BarberOS.Modelo.Dao
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred: " + ex.Message);
+                System.Windows.MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
     }
