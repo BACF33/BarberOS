@@ -60,6 +60,7 @@
             this.picPerfil.Location = new System.Drawing.Point(98, 13);
             this.picPerfil.Name = "picPerfil";
             this.picPerfil.Size = new System.Drawing.Size(134, 110);
+            this.picPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPerfil.TabIndex = 2;
             this.picPerfil.TabStop = false;
             // 

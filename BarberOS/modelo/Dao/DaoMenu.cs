@@ -36,12 +36,12 @@ namespace BarberOS.Modelo.Dao
                         {
                             //Si no detecta datos se ejecuta lo de primer uso
                             controlPasado.AbrirFormulario(new VistaPrimerUsoUsuario(controlPasado));
-                            controlPasado.controladaVista.btnAgendar.Visible = false;
-                            controlPasado.controladaVista.btnBarberos.Visible = false;
-                            controlPasado.controladaVista.btnCortes.Visible = false; 
+                            controlPasado.controladaVista.pnlAgendar.Visible = false;
+                            controlPasado.controladaVista.pnlBarberos.Visible = false;
+                            controlPasado.controladaVista.pnlCortes.Visible = false; 
                             controlPasado.controladaVista.btnCurrentUser.Visible = false;
-                            controlPasado.controladaVista.btnInicio.Visible = false;
-                            controlPasado.controladaVista.btnIngresar.Visible = false;
+                            controlPasado.controladaVista.pnlInicio.Visible = false;
+                            controlPasado.controladaVista.pnlIngresar.Visible = false;
                         }
                         reader.Close();
                     }
@@ -75,12 +75,12 @@ namespace BarberOS.Modelo.Dao
                         {
                             //Si no detecta datos se ejecuta lo de primer uso
                             controlPasado.AbrirFormulario(new VistaPrimerUsoNegocio());
-                            controlPasado.controladaVista.btnAgendar.Visible = false;
-                            controlPasado.controladaVista.btnBarberos.Visible = false;
-                            controlPasado.controladaVista.btnCortes.Visible = false;
+                            controlPasado.controladaVista.pnlAgendar.Visible = false;
+                            controlPasado.controladaVista.pnlBarberos.Visible = false;
+                            controlPasado.controladaVista.pnlCortes.Visible = false;
                             controlPasado.controladaVista.btnCurrentUser.Visible = false;
-                            controlPasado.controladaVista.btnInicio.Visible = false;
-                            controlPasado.controladaVista.btnIngresar.Visible = false;
+                            controlPasado.controladaVista.pnlInicio.Visible = false;
+                            controlPasado.controladaVista.pnlIngresar.Visible = false;
                         }
                         reader.Close();
                     }
@@ -91,8 +91,5 @@ namespace BarberOS.Modelo.Dao
                 MessageBox.Show(ex.ToString());
             }
         }
-
-
     }
 }
-

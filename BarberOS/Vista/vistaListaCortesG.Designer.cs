@@ -41,7 +41,6 @@
             this.promocionNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionPrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.promocionPoder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
@@ -204,8 +203,7 @@
             this.promocionId,
             this.promocionNombre,
             this.promocionPrecio,
-            this.promocionTipo,
-            this.promocionPoder});
+            this.promocionTipo});
             this.listCortes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listCortes.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listCortes.ForeColor = System.Drawing.Color.White;
@@ -237,11 +235,6 @@
             // 
             this.promocionTipo.Text = "Tipo";
             this.promocionTipo.Width = 149;
-            // 
-            // promocionPoder
-            // 
-            this.promocionPoder.Text = "Descuento";
-            this.promocionPoder.Width = 120;
             // 
             // tableLayoutPanel4
             // 
@@ -587,7 +580,6 @@
         private System.Windows.Forms.ColumnHeader promocionNombre;
         private System.Windows.Forms.ColumnHeader promocionPrecio;
         private System.Windows.Forms.ColumnHeader promocionTipo;
-        private System.Windows.Forms.ColumnHeader promocionPoder;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label5;

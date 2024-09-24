@@ -527,7 +527,7 @@
             // picClientes
             // 
             this.picClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picClientes.Image = global::BarberOS.Properties.Resources.Negro;
+            this.picClientes.Image = global::BarberOS.Properties.Resources.Perfil;
             this.picClientes.Location = new System.Drawing.Point(390, 314);
             this.picClientes.Name = "picClientes";
             this.picClientes.Size = new System.Drawing.Size(100, 71);

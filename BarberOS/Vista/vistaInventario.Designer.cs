@@ -41,7 +41,6 @@
             this.promocionNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionPrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.promocionPoder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,12 +49,12 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.txtQuant = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.txtPrice = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.picProducto = new System.Windows.Forms.PictureBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar2 = new System.Windows.Forms.Button();
@@ -195,8 +194,7 @@
             this.promocionId,
             this.promocionNombre,
             this.promocionPrecio,
-            this.promocionTipo,
-            this.promocionPoder});
+            this.promocionTipo});
             this.listEmpleados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listEmpleados.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listEmpleados.ForeColor = System.Drawing.Color.White;
@@ -226,13 +224,8 @@
             // 
             // promocionTipo
             // 
-            this.promocionTipo.Text = "Tipo";
+            this.promocionTipo.Text = "Cantidad";
             this.promocionTipo.Width = 149;
-            // 
-            // promocionPoder
-            // 
-            this.promocionPoder.Text = "Descuento";
-            this.promocionPoder.Width = 120;
             // 
             // tableLayoutPanel4
             // 
@@ -284,7 +277,7 @@
             this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtId.Enabled = false;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(332, 25);
+            this.txtId.Location = new System.Drawing.Point(331, 25);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(296, 35);
             this.txtId.TabIndex = 123;
@@ -347,23 +340,12 @@
             // 
             this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(332, 24);
+            this.txtName.Location = new System.Drawing.Point(331, 24);
             this.txtName.MaxLength = 50;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(289, 35);
             this.txtName.TabIndex = 5;
             this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras);
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(332, 122);
-            this.txtPrice.MaxLength = 50;
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(289, 35);
-            this.txtPrice.TabIndex = 6;
-            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
             // label13
             // 
@@ -372,7 +354,7 @@
             this.label13.BackColor = System.Drawing.Color.Black;
             this.label13.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(60, 28);
+            this.label13.Location = new System.Drawing.Point(59, 28);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(187, 28);
@@ -414,7 +396,7 @@
             this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(69, 332);
+            this.label3.Location = new System.Drawing.Point(68, 332);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(169, 24);
@@ -425,12 +407,23 @@
             // 
             this.picProducto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picProducto.Image = global::BarberOS.Properties.Resources.Negro;
-            this.picProducto.Location = new System.Drawing.Point(411, 299);
+            this.picProducto.Location = new System.Drawing.Point(410, 299);
             this.picProducto.Name = "picProducto";
             this.picProducto.Size = new System.Drawing.Size(131, 90);
             this.picProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picProducto.TabIndex = 146;
             this.picProducto.TabStop = false;
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrice.Location = new System.Drawing.Point(331, 122);
+            this.txtPrice.MaxLength = 50;
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(289, 35);
+            this.txtPrice.TabIndex = 6;
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
             // tableLayoutPanel8
             // 
@@ -516,7 +509,6 @@
         private System.Windows.Forms.ColumnHeader promocionNombre;
         private System.Windows.Forms.ColumnHeader promocionPrecio;
         private System.Windows.Forms.ColumnHeader promocionTipo;
-        private System.Windows.Forms.ColumnHeader promocionPoder;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label5;

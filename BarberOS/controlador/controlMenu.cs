@@ -61,9 +61,6 @@ namespace BarberOS.Controlador
                 controladaVista.pnlInicio.Visible = true;
                 //Lo que sea 
             }
-
-               
-            
         }
     }
 }

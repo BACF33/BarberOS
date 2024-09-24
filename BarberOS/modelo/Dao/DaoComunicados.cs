@@ -21,7 +21,7 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT a.announcementText, a.announcementPoster, a.announcementPrivacy, u.userImage " +
+                    string query = "SELECT a.announcementText, u.userName, a.announcementPrivacy, u.userImage " +
                         "FROM announcements a " +
                         "INNER JOIN users u ON userId = announcementPoster";
 
@@ -35,7 +35,7 @@ namespace BarberOS.Modelo.Dao
                                 string testText, testPoster, testPrivacy;
 
                                 testText = reader["announcementText"].ToString();
-                                testPoster = reader["announcementPoster"].ToString();
+                                testPoster = reader["userName"].ToString();
                                 testPrivacy = reader["announcementPrivacy"].ToString();
                                 byte[] imageData = reader["userImage"] as byte[];
 

@@ -15,8 +15,10 @@ namespace BarberOS.Controlador
     {
         DaoRestablecerCorreo daoThis = new DaoRestablecerCorreo();
         vistaRestablecerCorreo vistaControlada;
+        vistaMenu menuControlado;
         public ControlRestablecerCorreo(vistaRestablecerCorreo vistaPasada, vistaMenu menuPasado)
         {
+            menuControlado = menuPasado;
             vistaControlada = vistaPasada;
             vistaControlada.btnEnviar.Click += (sender, e) => Enviar();
             vistaControlada.btnOtro.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new 
@@ -41,9 +43,7 @@ vistaRestablecerPreguntas(menuPasado));
 
         private void getPin(int pin)
         {
-            VistaInsertarPin insertarPin = new VistaInsertarPin(pin, vistaControlada.txtUser.Text);
-            insertarPin.Show();
-            vistaControlada.Close();
+            menuControlado.controladorMenu.AbrirFormulario(new VistaInsertarPin(pin, vistaControlada.txtUser.Text));
         }
 
 
