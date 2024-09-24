@@ -1,4 +1,4 @@
-﻿using System.Data.SqlClient;
+﻿  using System.Data.SqlClient;
 using System;
 using System.Windows.Forms;
 using System.Configuration;
@@ -79,6 +79,11 @@ namespace BarberOS.Vista
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
         {
 
         }

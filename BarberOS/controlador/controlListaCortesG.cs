@@ -76,10 +76,11 @@ namespace BarberOS.Controlador
         {
             if (controladaVista.txtNombre.Text.Equals("") || controladaVista.txtPrecio.Text.Equals("") || controladaVista.cmbTipo.Text.Equals(""))
             {
-                MessageBox.Show("Hay campos vacios");
+                MessageBox.Show($"Hay Campos vacíos, asegurate de haber llenado todos los campos antes de insertar", "¡CUIDADO!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
-            {
+            {   
+                
                 dao.Insert(controladaVista);
                 dao.Populate(controladaVista);
             }
@@ -90,7 +91,7 @@ namespace BarberOS.Controlador
         {
             if (controladaVista.txtNombre.Text.Equals("") || controladaVista.txtPrecio.Text.Equals("") || controladaVista.cmbTipo.Text.Equals(""))
             {
-                MessageBox.Show("Hay campos vacios");
+                MessageBox.Show($"Hay campos vacíos, asegurate de haber llenado todos los campos antes de actualizar", "¡CUIDADO!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {

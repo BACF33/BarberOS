@@ -293,6 +293,7 @@
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(405, 25);
             this.txtId.Name = "txtId";
+            this.txtId.ShortcutsEnabled = false;
             this.txtId.Size = new System.Drawing.Size(121, 35);
             this.txtId.TabIndex = 123;
             this.txtId.TabStop = false;
@@ -388,6 +389,7 @@
             this.txtNombre.Location = new System.Drawing.Point(307, 24);
             this.txtNombre.MaxLength = 50;
             this.txtNombre.Name = "txtNombre";
+            this.txtNombre.ShortcutsEnabled = false;
             this.txtNombre.Size = new System.Drawing.Size(228, 35);
             this.txtNombre.TabIndex = 5;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras);

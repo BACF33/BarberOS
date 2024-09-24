@@ -81,7 +81,7 @@ namespace BarberOS.Controlador
             //Se verificara que no haya campos vacios
             if(controladaVista.txtName.Text.Equals("") || controladaVista.txtContraseña.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.txtEmail.Text.Equals("") || controladaVista.txtPuntos.Text.Equals(""))
             {
-                MessageBox.Show("Hay campos vacios");
+                MessageBox.Show($"Hay Campos vacíos, asegurate de haber llenado todos los campos antes de insertar", "¡CUIDADO!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -97,7 +97,7 @@ namespace BarberOS.Controlador
             //Se verificara que no haya campos vacios
             if (controladaVista.txtName.Text.Equals("") || controladaVista.txtContraseña.Text.Equals("") || controladaVista.txtPuntos.Text.Equals("") || controladaVista.txtEmail.Text.Equals("") || controladaVista.txtPuntos.Text.Equals(""))
             {
-                MessageBox.Show("Hay campos vacios");
+                MessageBox.Show($"Hay Campos vacíos, asegurate de haber llenado todos los campos antes de actualizar", "¡CUIDADO!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
