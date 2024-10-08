@@ -11,6 +11,7 @@ namespace BarberOS.Modelo.Dao
 {
     internal class DaoRestablecerCorreo
     {
+        //Funcion para verificar si el correo que esta siendo usado para restablecer contraseña esta vinclado con el usuario al que se le cambiara la contraseña
         public bool verificarCorreo(string usuario, string correo)
         {
             try
