@@ -12,6 +12,7 @@ namespace BarberOS.Modelo.Dao
 {
     internal class DaoListaPersonal
     {
+        //Funcion que al ejecutarse obtendra valores sobre la lista de productos, a partir de estos valores creara paneles de productos con los valores obtenidos
         public DaoListaPersonal(VistaListaPersonal enviadaVista)
         {
             try
@@ -28,7 +29,6 @@ namespace BarberOS.Modelo.Dao
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
 
-                            //Se convierten filas a datos de los controles de usuario que saldran como listas
                             while (reader.Read())
                             {
                                 string testId, testName, testRole;
@@ -39,8 +39,8 @@ namespace BarberOS.Modelo.Dao
                                 byte[] imageData = reader["userImage"] as byte[];
                                 PanelBarbero panelUsado = new PanelBarbero(testId, testName, testRole, imageData);
 
+                                //Despues de crear los paneles de productos estos se añadiran a un flowlayoutpanel para que puedan verse en forma de lista
                                 enviadaVista.flpPersonal.Controls.Add(panelUsado);
-                                //Test
                             }
                         }
                     }

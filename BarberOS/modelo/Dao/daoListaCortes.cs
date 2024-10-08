@@ -12,6 +12,7 @@ namespace BarberOS.Modelo.Dao
 {
     internal class DaoListaCortes
     {
+        //Funcion que al ejecutarse obtendra valores sobre la lista de productos, a partir de estos valores creara paneles de productos con los valores obtenidos
         public DaoListaCortes(VistaListaCortes enviadaVista, vistaMenu pasadoMenu)
         {
             try
@@ -39,6 +40,7 @@ namespace BarberOS.Modelo.Dao
 
                                 PanelProducto panelUsado = new PanelProducto(pasadoMenu, testId, testName, testPrecio, testTipo, imageData);
 
+                                //Despues de crear los paneles de productos estos se añadiran a un flowlayoutpanel para que puedan verse en forma de lista
                                 enviadaVista.flpCabello.Controls.Add(panelUsado);
 
                             }

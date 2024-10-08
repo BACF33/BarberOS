@@ -13,9 +13,8 @@ namespace BarberOS.Controlador
         DaoComunicados daoThis = new DaoComunicados();
         public ControlComunicados(VistaComunicados vistaPasada) 
         {
+            //Solo se ejecutara la funcion del constructor del dao para obtener los comunicados
             daoThis.Obtener(vistaPasada);
-
-
         }
     }
 }

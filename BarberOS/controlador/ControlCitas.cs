@@ -19,17 +19,19 @@ namespace BarberOS.Controlador
         {
             menuControlado = menuPasado;
             vistaControlada = vistaPasada;
-            //Cuando se presione el boton agendar se ejecutara la funcion agendar
+            //Aqui se evaluara cuando el usuario presione uno de los botones del menu, dependiendo del que toque la 
+            //funcion de la izquierda se evaluara (si toca el boton agendar se ejecutara agendar())
             vistaPasada.btnAgendar.Click += (sender, e) => Agendar();
         }
 
         public void Agendar()
         {
-            //Se ejecutara la funcion insertar del dao
+            //Se verificara si el usuario ha iniciado sesion o no revisando el usuario actual
             if (menuControlado.btnCurrentUser.Text != "No has iniciado sesion")
-                daoThis.Insertar(vistaControlada);
+                daoThis.Insertar(vistaControlada); //En caso de que haya iniciado sesion se ejecutara la funcion insertar del dao
             else
             {
+                //De lo contrario mostrara un mensaje y el programa se volvera a vista inicio
                 MessageBox.Show("Es necesario iniciar sesion");
                 menuControlado.controladorMenu.AbrirFormulario(new VistaInicio(menuControlado));
             }

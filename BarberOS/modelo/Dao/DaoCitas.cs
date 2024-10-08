@@ -13,6 +13,7 @@ namespace BarberOS.Modelo.Dao
 {
     internal class DaoCitas
     {
+        //Funcion que insertara en la base de datos valores encontrados en los textboxes de la vista de citas
         public void Insertar(vistaCitas vistaPasada)
         {
                 try
@@ -20,8 +21,6 @@ namespace BarberOS.Modelo.Dao
                     string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
                     using (SqlConnection conexion = new SqlConnection(cnn))
                     {
-                        //Usando la id de la fila seleccionada por el usuaio se eliminara el valor de la base de datos con
-                        //el mismo id 
                         conexion.Open();
                         string query = @"
                         INSERT INTO appointments (appointmentDate, appointmentTime)

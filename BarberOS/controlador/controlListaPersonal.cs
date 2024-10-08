@@ -15,11 +15,9 @@ namespace BarberOS.Controlador
 {
     internal class ControlListaPersonal
     {
-        VistaListaPersonal controladaVista;
         public ControlListaPersonal(VistaListaPersonal enviadaVista) 
         {
-            controladaVista = enviadaVista;
-            //Solo se ejecutara la funcion del constructor del dao para obtener el personal
+            //Solo se ejecutara la funcion del constructor del dao para obtener los personales
             DaoListaPersonal daoThis = new DaoListaPersonal(enviadaVista);
         }
     }

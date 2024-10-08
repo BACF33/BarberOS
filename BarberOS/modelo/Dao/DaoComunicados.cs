@@ -13,6 +13,7 @@ namespace BarberOS.Modelo.Dao
 {
     internal class DaoComunicados
     {
+        //Funcion que al ejecutarse obtendra valores sobre la lista de comunicados, a partir de estos valores creara paneles de comunicados con los valores obtenidos
         public void Obtener(VistaComunicados vistaPasada)
         {
             try
@@ -41,6 +42,8 @@ namespace BarberOS.Modelo.Dao
 
                                 PanelComunicado panelUsado = new PanelComunicado(testText, testPoster, testPrivacy, imageData);
                                 panelUsado.Dock = DockStyle.Right;
+
+                                //Despues de crear los paneles de productos estos se añadiran a un flowlayoutpanel para que puedan verse en forma de lista
                                 vistaPasada.flpComunicados.Controls.Add(panelUsado);
 
                             }

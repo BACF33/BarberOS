@@ -13,6 +13,7 @@ namespace BarberOS.Vista
 {
     public partial class vistaListaPreguntas : Form
     {
+        //Este es un constructor, lo que esta dentro de el se ejecutara cuando se cree el formulario
         public vistaListaPreguntas(vistaMenu menuPasado)
         {
             InitializeComponent();

@@ -11,7 +11,7 @@ namespace BarberOS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //1 Este sera el primer formulario que se ejecutara al abrir el programa
+            //En esta linea se declara que el primer formulario que abrira el programa sera el de vistaMenu, por lo que creara uno
             Application.Run(new vistaMenu());
         }
     }
