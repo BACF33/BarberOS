@@ -1,4 +1,4 @@
-﻿using BarberOS.Vista;
+﻿    using BarberOS.Vista;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Forms;
 
 namespace BarberOS.Modelo.Dao
 {
@@ -48,7 +49,8 @@ namespace BarberOS.Modelo.Dao
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred: " + ex.Message);
+                System.Windows.MessageBox.Show($"Este es un mensaje de alerta:" + ex.Message, "alerta.", (MessageBoxButton)MessageBoxIcon.Error);
+
             }
         }
     }

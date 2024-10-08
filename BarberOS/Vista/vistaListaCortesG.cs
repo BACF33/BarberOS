@@ -2,6 +2,7 @@
 using System;
 using System.Configuration;
 using System.Data.SqlClient;
+//using System.Windows;
 using System.Windows.Forms;
 
 namespace BarberOS.Vista
@@ -22,6 +23,7 @@ namespace BarberOS.Vista
         //Codigo que anulara los comandos ctrC y ctrlV que puedan suceder en este formulario
         private void Form_KeyDown(object sender, KeyEventArgs e)
         {
+            //No permite ni copiar ni pegar
             if (e.Control && (e.KeyCode == Keys.C || e.KeyCode == Keys.V))
             {
                 e.SuppressKeyPress = true;
@@ -73,7 +75,7 @@ namespace BarberOS.Vista
 
         private void btnActualizar2_Click(object sender, EventArgs e)
         {
-
+        
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)

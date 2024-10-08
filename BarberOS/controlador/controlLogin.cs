@@ -101,7 +101,7 @@ namespace BarberOS.Controlador
             }
             //Si el valor obtenido por answer no es 1 (inicio de sesion incorrecto esto se ejecuta)
             else
-                MessageBox.Show("Login fallido");
+                MessageBox.Show($"Probable estes ingresando mal las credenciales, vuelve a intentarlo", "¡ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         public void register()
