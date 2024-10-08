@@ -17,6 +17,8 @@ namespace BarberOS.Vista
         public vistaListaPreguntas(vistaMenu menuPasado)
         {
             InitializeComponent();
+            //Como todos los formularios se creara un archivo de codigo "controlador" para controlar todos los eventos en el formulario
+            //como cuando el usuario presione un boton, al crear el controlador se le pasara a este la vista como referencia (no copia) para que esten conectados
             new ControlListaPregunas(this, menuPasado);
         }
 

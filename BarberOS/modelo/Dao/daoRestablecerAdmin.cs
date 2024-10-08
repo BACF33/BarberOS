@@ -16,6 +16,7 @@ namespace BarberOS.Modelo.Dao
 {
     internal class DaoRestablecerAdmin : DtoRestablecerAdmin
     {
+        //Funcion para hacer un select a la tabla de usuarios usando como parametros los valores de los textboxes, estos deberan ser equivalentes a la cuenta de un admin
         public int restpass()
         {
             try
@@ -45,6 +46,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
+        //Obsoleto
         public int restPass2()
         {
             try
@@ -74,6 +76,7 @@ namespace BarberOS.Modelo.Dao
             }
         }
 
+        //Funcion para actualizar la contraseña en caso de que restPass haya tenido exito, esto haciendo un update a la tabla de usuarios
         public void doChange()
         {
             try
