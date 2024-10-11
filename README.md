@@ -2,5 +2,5 @@ Tecnologias utilizadas
 -
 -Visual Studio
 - C#
-- Microsoft Teams
 - .NET Framework
+- Sql Server Management Studio
