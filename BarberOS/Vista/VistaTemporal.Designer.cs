@@ -28,55 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.flpComunicados = new System.Windows.Forms.FlowLayoutPanel();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.picPerfil = new System.Windows.Forms.PictureBox();
+            this.txtPoster = new System.Windows.Forms.Label();
+            this.txtTexto = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // picPerfil
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.73171F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 591F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.26829F));
-            this.tableLayoutPanel1.Controls.Add(this.flpComunicados, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1139, 564);
-            this.tableLayoutPanel1.TabIndex = 2;
+            this.picPerfil.BackColor = System.Drawing.Color.Red;
+            this.picPerfil.Location = new System.Drawing.Point(30, -52);
+            this.picPerfil.Name = "picPerfil";
+            this.picPerfil.Size = new System.Drawing.Size(218, 207);
+            this.picPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPerfil.TabIndex = 8;
+            this.picPerfil.TabStop = false;
             // 
-            // flpComunicados
+            // txtPoster
             // 
-            this.flpComunicados.AutoScroll = true;
-            this.flpComunicados.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpComunicados.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flpComunicados.Location = new System.Drawing.Point(281, 3);
-            this.flpComunicados.Name = "flpComunicados";
-            this.flpComunicados.Size = new System.Drawing.Size(585, 558);
-            this.flpComunicados.TabIndex = 2;
-            this.flpComunicados.WrapContents = false;
+            this.txtPoster.AutoSize = true;
+            this.txtPoster.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPoster.ForeColor = System.Drawing.SystemColors.Control;
+            this.txtPoster.Location = new System.Drawing.Point(724, 23);
+            this.txtPoster.Name = "txtPoster";
+            this.txtPoster.Size = new System.Drawing.Size(326, 73);
+            this.txtPoster.TabIndex = 7;
+            this.txtPoster.Text = "Posteador";
+            // 
+            // txtTexto
+            // 
+            this.txtTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTexto.Location = new System.Drawing.Point(-44, 199);
+            this.txtTexto.Multiline = true;
+            this.txtTexto.Name = "txtTexto";
+            this.txtTexto.Size = new System.Drawing.Size(1226, 417);
+            this.txtTexto.TabIndex = 6;
             // 
             // VistaTemporal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1139, 564);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.picPerfil);
+            this.Controls.Add(this.txtPoster);
+            this.Controls.Add(this.txtTexto);
             this.Name = "VistaTemporal";
             this.Text = "VistaTemporal";
             this.Load += new System.EventHandler(this.VistaTemporal_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        public System.Windows.Forms.FlowLayoutPanel flpComunicados;
+        public System.Windows.Forms.PictureBox picPerfil;
+        public System.Windows.Forms.Label txtPoster;
+        public System.Windows.Forms.TextBox txtTexto;
     }
 }

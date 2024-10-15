@@ -83,6 +83,7 @@
     <Compile Include="Controlador\ControlListaComunicadosG.cs" />
     <Compile Include="Controlador\ControlListaPregunas.cs" />
     <Compile Include="Controlador\ControlListaRespuestas.cs" />
+    <Compile Include="Controlador\ControlNuevoPost.cs" />
     <Compile Include="Controlador\ControlObtenerPin.cs" />
     <Compile Include="Controlador\ControlInicio.cs" />
     <Compile Include="Controlador\ControlInicioGestion.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Controlador\ControlLogin.cs" />
     <Compile Include="Controlador\ControlMenu.cs" />
     <Compile Include="Controlador\ControlNuevaContraseña.cs" />
+    <Compile Include="Controlador\ControlOrdenes.cs" />
     <Compile Include="Controlador\ControlPanelBarbero.cs" />
     <Compile Include="Controlador\ControlPanelProducto.cs" />
     <Compile Include="Controlador\ControlPanelPromocion.cs" />
@@ -118,6 +120,8 @@
     <Compile Include="Modelo\Dao\DaoListaRespuestas.cs" />
     <Compile Include="Modelo\Dao\DaoMenu.cs" />
     <Compile Include="Modelo\Dao\DaoNuevaContraseña.cs" />
+    <Compile Include="Modelo\Dao\DaoNuevoPost.cs" />
+    <Compile Include="Modelo\Dao\DaoOrdenes.cs" />
     <Compile Include="Modelo\Dao\DaoPrimerLogin.cs" />
     <Compile Include="Modelo\Dao\DaoPrimerUsoNegocio.cs" />
     <Compile Include="Modelo\Dao\DaoPrimerUsoUsuario.cs" />
@@ -230,6 +234,12 @@
     </Compile>
     <Compile Include="Vista\VistaNuevoPost.Designer.cs">
       <DependentUpon>VistaNuevoPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaOrdenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaOrdenes.Designer.cs">
+      <DependentUpon>VistaOrdenes.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\VistaPerfilUsuario.cs">
       <SubType>Form</SubType>
@@ -480,6 +490,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaNuevoPost.resx">
       <DependentUpon>VistaNuevoPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaOrdenes.resx">
+      <DependentUpon>VistaOrdenes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaPerfilUsuario.resx">
       <DependentUpon>VistaPerfilUsuario.cs</DependentUpon>

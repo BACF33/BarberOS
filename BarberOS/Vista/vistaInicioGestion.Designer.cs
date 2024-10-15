@@ -30,17 +30,17 @@
         {
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnPromo = new System.Windows.Forms.Button();
-            this.btnPreguntas = new System.Windows.Forms.Button();
-            this.btnProductos = new System.Windows.Forms.Button();
-            this.btnAgenda = new System.Windows.Forms.Button();
-            this.btnInventario = new System.Windows.Forms.Button();
-            this.btnServidor = new System.Windows.Forms.Button();
-            this.btnComunicados = new System.Windows.Forms.Button();
-            this.btnRegistros = new System.Windows.Forms.Button();
-            this.btnPersonal = new System.Windows.Forms.Button();
+            this.btnOrdenes = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPersonal = new System.Windows.Forms.Button();
+            this.btnRegistros = new System.Windows.Forms.Button();
+            this.btnComunicados = new System.Windows.Forms.Button();
+            this.btnServidor = new System.Windows.Forms.Button();
+            this.btnInventario = new System.Windows.Forms.Button();
+            this.btnAgenda = new System.Windows.Forms.Button();
+            this.btnProductos = new System.Windows.Forms.Button();
+            this.btnPreguntas = new System.Windows.Forms.Button();
+            this.btnPromo = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -58,7 +58,7 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 735F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1125, 735);
             this.tableLayoutPanel3.TabIndex = 1;
             this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint_1);
@@ -69,8 +69,8 @@
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.19809F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.80191F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 320F));
-            this.tableLayoutPanel5.Controls.Add(this.button1, 1, 3);
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 321F));
+            this.tableLayoutPanel5.Controls.Add(this.btnOrdenes, 1, 3);
             this.tableLayoutPanel5.Controls.Add(this.btnClientes, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.btnPersonal, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.btnRegistros, 2, 0);
@@ -92,96 +92,44 @@
             this.tableLayoutPanel5.TabIndex = 1;
             this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint_1);
             // 
-            // btnPromo
+            // btnOrdenes
             // 
-            this.btnPromo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnPromo.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnPromo.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPromo.Location = new System.Drawing.Point(851, 230);
-            this.btnPromo.Name = "btnPromo";
-            this.btnPromo.Size = new System.Drawing.Size(214, 97);
-            this.btnPromo.TabIndex = 6;
-            this.btnPromo.Text = "PROMOCIONES";
-            this.btnPromo.UseVisualStyleBackColor = false;
+            this.btnOrdenes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnOrdenes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnOrdenes.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnOrdenes.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnOrdenes.Location = new System.Drawing.Point(472, 578);
+            this.btnOrdenes.Name = "btnOrdenes";
+            this.btnOrdenes.Size = new System.Drawing.Size(196, 94);
+            this.btnOrdenes.TabIndex = 11;
+            this.btnOrdenes.Text = "ORDENES";
+            this.btnOrdenes.UseVisualStyleBackColor = false;
             // 
-            // btnPreguntas
+            // btnClientes
             // 
-            this.btnPreguntas.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPreguntas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnPreguntas.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnPreguntas.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnPreguntas.Location = new System.Drawing.Point(851, 400);
-            this.btnPreguntas.Name = "btnPreguntas";
-            this.btnPreguntas.Size = new System.Drawing.Size(215, 89);
-            this.btnPreguntas.TabIndex = 9;
-            this.btnPreguntas.Text = "PREGUNTAS";
-            this.btnPreguntas.UseVisualStyleBackColor = false;
+            this.btnClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnClientes.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnClientes.ForeColor = System.Drawing.Color.White;
+            this.btnClientes.Location = new System.Drawing.Point(461, 48);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(219, 91);
+            this.btnClientes.TabIndex = 2;
+            this.btnClientes.Text = "CLIENTES";
+            this.btnClientes.UseVisualStyleBackColor = false;
             // 
-            // btnProductos
+            // btnPersonal
             // 
-            this.btnProductos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnProductos.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnProductos.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnProductos.Location = new System.Drawing.Point(66, 233);
-            this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(213, 91);
-            this.btnProductos.TabIndex = 4;
-            this.btnProductos.Text = "PRODUCTOS";
-            this.btnProductos.UseVisualStyleBackColor = false;
-            // 
-            // btnAgenda
-            // 
-            this.btnAgenda.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAgenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnAgenda.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnAgenda.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnAgenda.Location = new System.Drawing.Point(74, 578);
-            this.btnAgenda.Name = "btnAgenda";
-            this.btnAgenda.Size = new System.Drawing.Size(196, 94);
-            this.btnAgenda.TabIndex = 10;
-            this.btnAgenda.Text = "AGENDACIONES";
-            this.btnAgenda.UseVisualStyleBackColor = false;
-            // 
-            // btnInventario
-            // 
-            this.btnInventario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnInventario.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnInventario.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnInventario.Location = new System.Drawing.Point(461, 231);
-            this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(220, 94);
-            this.btnInventario.TabIndex = 5;
-            this.btnInventario.Text = "INVENTARIO";
-            this.btnInventario.UseVisualStyleBackColor = false;
-            // 
-            // btnServidor
-            // 
-            this.btnServidor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnServidor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnServidor.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnServidor.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnServidor.Location = new System.Drawing.Point(70, 399);
-            this.btnServidor.Name = "btnServidor";
-            this.btnServidor.Size = new System.Drawing.Size(204, 92);
-            this.btnServidor.TabIndex = 7;
-            this.btnServidor.Text = "SERVIDOR";
-            this.btnServidor.UseVisualStyleBackColor = false;
-            // 
-            // btnComunicados
-            // 
-            this.btnComunicados.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnComunicados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnComunicados.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnComunicados.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnComunicados.Location = new System.Drawing.Point(463, 399);
-            this.btnComunicados.Name = "btnComunicados";
-            this.btnComunicados.Size = new System.Drawing.Size(216, 92);
-            this.btnComunicados.TabIndex = 8;
-            this.btnComunicados.Text = "COMUNICADOS";
-            this.btnComunicados.UseVisualStyleBackColor = false;
+            this.btnPersonal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnPersonal.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnPersonal.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPersonal.Location = new System.Drawing.Point(62, 49);
+            this.btnPersonal.Name = "btnPersonal";
+            this.btnPersonal.Size = new System.Drawing.Size(219, 89);
+            this.btnPersonal.TabIndex = 1;
+            this.btnPersonal.Text = "PERSONAL";
+            this.btnPersonal.UseVisualStyleBackColor = false;
             // 
             // btnRegistros
             // 
@@ -196,44 +144,96 @@
             this.btnRegistros.Text = "REGISTROS";
             this.btnRegistros.UseVisualStyleBackColor = false;
             // 
-            // btnPersonal
+            // btnComunicados
             // 
-            this.btnPersonal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnPersonal.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnPersonal.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPersonal.Location = new System.Drawing.Point(63, 49);
-            this.btnPersonal.Name = "btnPersonal";
-            this.btnPersonal.Size = new System.Drawing.Size(219, 89);
-            this.btnPersonal.TabIndex = 1;
-            this.btnPersonal.Text = "PERSONAL";
-            this.btnPersonal.UseVisualStyleBackColor = false;
+            this.btnComunicados.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnComunicados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnComunicados.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnComunicados.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnComunicados.Location = new System.Drawing.Point(462, 399);
+            this.btnComunicados.Name = "btnComunicados";
+            this.btnComunicados.Size = new System.Drawing.Size(216, 92);
+            this.btnComunicados.TabIndex = 8;
+            this.btnComunicados.Text = "COMUNICADOS";
+            this.btnComunicados.UseVisualStyleBackColor = false;
             // 
-            // btnClientes
+            // btnServidor
             // 
-            this.btnClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnClientes.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnClientes.ForeColor = System.Drawing.Color.White;
-            this.btnClientes.Location = new System.Drawing.Point(462, 48);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(219, 91);
-            this.btnClientes.TabIndex = 2;
-            this.btnClientes.Text = "CLIENTES";
-            this.btnClientes.UseVisualStyleBackColor = false;
+            this.btnServidor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnServidor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnServidor.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnServidor.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnServidor.Location = new System.Drawing.Point(70, 399);
+            this.btnServidor.Name = "btnServidor";
+            this.btnServidor.Size = new System.Drawing.Size(204, 92);
+            this.btnServidor.TabIndex = 7;
+            this.btnServidor.Text = "SERVIDOR";
+            this.btnServidor.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnInventario
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.button1.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Location = new System.Drawing.Point(473, 578);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 94);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "ORDENES";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnInventario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnInventario.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnInventario.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnInventario.Location = new System.Drawing.Point(460, 231);
+            this.btnInventario.Name = "btnInventario";
+            this.btnInventario.Size = new System.Drawing.Size(220, 94);
+            this.btnInventario.TabIndex = 5;
+            this.btnInventario.Text = "INVENTARIO";
+            this.btnInventario.UseVisualStyleBackColor = false;
+            // 
+            // btnAgenda
+            // 
+            this.btnAgenda.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnAgenda.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnAgenda.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnAgenda.Location = new System.Drawing.Point(74, 578);
+            this.btnAgenda.Name = "btnAgenda";
+            this.btnAgenda.Size = new System.Drawing.Size(196, 94);
+            this.btnAgenda.TabIndex = 10;
+            this.btnAgenda.Text = "AGENDACIONES";
+            this.btnAgenda.UseVisualStyleBackColor = false;
+            // 
+            // btnProductos
+            // 
+            this.btnProductos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnProductos.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnProductos.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnProductos.Location = new System.Drawing.Point(65, 233);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.Size = new System.Drawing.Size(213, 91);
+            this.btnProductos.TabIndex = 4;
+            this.btnProductos.Text = "PRODUCTOS";
+            this.btnProductos.UseVisualStyleBackColor = false;
+            // 
+            // btnPreguntas
+            // 
+            this.btnPreguntas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPreguntas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnPreguntas.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnPreguntas.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnPreguntas.Location = new System.Drawing.Point(850, 400);
+            this.btnPreguntas.Name = "btnPreguntas";
+            this.btnPreguntas.Size = new System.Drawing.Size(215, 89);
+            this.btnPreguntas.TabIndex = 9;
+            this.btnPreguntas.Text = "PREGUNTAS";
+            this.btnPreguntas.UseVisualStyleBackColor = false;
+            // 
+            // btnPromo
+            // 
+            this.btnPromo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnPromo.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnPromo.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPromo.Location = new System.Drawing.Point(851, 230);
+            this.btnPromo.Name = "btnPromo";
+            this.btnPromo.Size = new System.Drawing.Size(214, 97);
+            this.btnPromo.TabIndex = 6;
+            this.btnPromo.Text = "PROMOCIONES";
+            this.btnPromo.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel1
             // 
@@ -273,7 +273,7 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button btnOrdenes;
         public System.Windows.Forms.Button btnClientes;
         public System.Windows.Forms.Button btnPersonal;
         public System.Windows.Forms.Button btnRegistros;

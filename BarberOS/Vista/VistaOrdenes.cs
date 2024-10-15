@@ -11,15 +11,15 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class VistaNuevoPost : Form
+    public partial class VistaOrdenes : Form
     {
-        public VistaNuevoPost(vistaMenu menuPasado)
+        public VistaOrdenes(vistaMenu pasadoMenu)
         {
             InitializeComponent();
-            new ControlNuevoPost(this, menuPasado);
+            new ControlOrdenes(pasadoMenu, this);
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
         {
 
         }

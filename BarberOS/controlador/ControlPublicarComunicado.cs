@@ -15,7 +15,7 @@ namespace BarberOS.Controlador
         public ControlPublicarComunicado(VistaPublicarComunicado vistaPasada, vistaMenu menuPasado) 
         {
             daoThis.Obtener(vistaPasada);
-            vistaPasada.btnPost.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new VistaNuevoPost());
+            vistaPasada.btnPost.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new VistaNuevoPost(menuPasado));
         }
     }
 }
