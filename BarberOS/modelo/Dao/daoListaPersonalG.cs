@@ -29,7 +29,7 @@ namespace BarberOS.Modelo.Dao
                     using (SqlCommand cmd = new SqlCommand("SELECT u.userId, u.userName, u.userPassword, u.userPoints, r.roleName, u.userEmail, u.userImage " +
                         "FROM users u " +
                         "INNER JOIN userRoles r ON u.userRole = r.roleId " +
-                        "WHERE r.roleName = 'Admin'", conexion))
+                        "WHERE r.roleName = 'Admin' OR r.roleName = 'Barbero'", conexion))
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
@@ -174,7 +174,7 @@ namespace BarberOS.Modelo.Dao
                         cmd.Parameters.AddWithValue("@userName", vistaPasada.txtName.Text);
                         cmd.Parameters.AddWithValue("@userPassword", password);
                         cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtPuntos.Text);
-                        cmd.Parameters.AddWithValue("@roleName", "Admin");
+                        cmd.Parameters.AddWithValue("@roleName", vistaPasada.cmbCargo.Text);
                         cmd.Parameters.AddWithValue("@userEmail", vistaPasada.txtEmail.Text);
                         cmd.Parameters.AddWithValue("@Image", imageBytes);
 

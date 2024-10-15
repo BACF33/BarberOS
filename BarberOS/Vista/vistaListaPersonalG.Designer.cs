@@ -42,6 +42,7 @@
             this.promocionPrecio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.promocionPoder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.txtId = new System.Windows.Forms.TextBox();
@@ -69,7 +70,6 @@
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar2 = new System.Windows.Forms.Button();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -252,6 +252,10 @@
             // 
             this.promocionPoder.Text = "Cargo";
             this.promocionPoder.Width = 120;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Email";
             // 
             // tableLayoutPanel4
             // 
@@ -531,7 +535,7 @@
             this.cmbCargo.FormattingEnabled = true;
             this.cmbCargo.Items.AddRange(new object[] {
             "Admin",
-            "Cliente"});
+            "Barbero"});
             this.cmbCargo.Location = new System.Drawing.Point(307, 210);
             this.cmbCargo.Name = "cmbCargo";
             this.cmbCargo.Size = new System.Drawing.Size(320, 37);
@@ -631,10 +635,6 @@
             this.btnActualizar2.TabIndex = 10;
             this.btnActualizar2.Text = "Actualizar";
             this.btnActualizar2.UseVisualStyleBackColor = false;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Email";
             // 
             // VistaListaPersonalG
             // 

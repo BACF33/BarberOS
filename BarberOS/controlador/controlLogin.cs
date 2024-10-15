@@ -86,6 +86,14 @@ namespace BarberOS.Controlador
                     menuForm.controladorMenu.AbrirFormulario(new VistaInicio(menuForm));
 
                 }
+                else if (daoThis.Role == "Barbero")
+                {
+                    menuForm.controladorMenu.AbrirFormulario(new VistaInicioBarbero(menuForm));
+                    menuForm.pnlBarberos.Visible = false;
+                    menuForm.pnlCortes.Visible = false;
+                    menuForm.pnlAgendar.Visible = false;
+                    menuForm.pnlInicio.Visible = false;
+                }
                 else
                 {
                     menuForm.controladorMenu.AbrirFormulario(new VistaInicioGestion(menuForm));

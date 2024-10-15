@@ -28,40 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnPromo = new System.Windows.Forms.Button();
+            this.btnPreguntas = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
+            this.btnAgenda = new System.Windows.Forms.Button();
             this.btnInventario = new System.Windows.Forms.Button();
             this.btnServidor = new System.Windows.Forms.Button();
             this.btnComunicados = new System.Windows.Forms.Button();
             this.btnRegistros = new System.Windows.Forms.Button();
             this.btnPersonal = new System.Windows.Forms.Button();
-            this.btnPromo = new System.Windows.Forms.Button();
-            this.btnPreguntas = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
-            this.btnAgenda = new System.Windows.Forms.Button();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // tableLayoutPanel3
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(103)))));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 741F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1131, 749);
-            this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.tableLayoutPanel3.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS;
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.22222F));
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 11);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1125, 735);
+            this.tableLayoutPanel3.TabIndex = 1;
+            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint_1);
             // 
             // tableLayoutPanel5
             // 
@@ -70,6 +70,7 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.19809F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.80191F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 320F));
+            this.tableLayoutPanel5.Controls.Add(this.button1, 1, 3);
             this.tableLayoutPanel5.Controls.Add(this.btnClientes, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.btnPersonal, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.btnRegistros, 2, 0);
@@ -91,6 +92,32 @@
             this.tableLayoutPanel5.TabIndex = 1;
             this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint_1);
             // 
+            // btnPromo
+            // 
+            this.btnPromo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnPromo.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnPromo.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPromo.Location = new System.Drawing.Point(851, 230);
+            this.btnPromo.Name = "btnPromo";
+            this.btnPromo.Size = new System.Drawing.Size(214, 97);
+            this.btnPromo.TabIndex = 6;
+            this.btnPromo.Text = "PROMOCIONES";
+            this.btnPromo.UseVisualStyleBackColor = false;
+            // 
+            // btnPreguntas
+            // 
+            this.btnPreguntas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPreguntas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnPreguntas.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnPreguntas.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnPreguntas.Location = new System.Drawing.Point(851, 400);
+            this.btnPreguntas.Name = "btnPreguntas";
+            this.btnPreguntas.Size = new System.Drawing.Size(215, 89);
+            this.btnPreguntas.TabIndex = 9;
+            this.btnPreguntas.Text = "PREGUNTAS";
+            this.btnPreguntas.UseVisualStyleBackColor = false;
+            // 
             // btnProductos
             // 
             this.btnProductos.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -103,6 +130,19 @@
             this.btnProductos.TabIndex = 4;
             this.btnProductos.Text = "PRODUCTOS";
             this.btnProductos.UseVisualStyleBackColor = false;
+            // 
+            // btnAgenda
+            // 
+            this.btnAgenda.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.btnAgenda.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnAgenda.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnAgenda.Location = new System.Drawing.Point(74, 578);
+            this.btnAgenda.Name = "btnAgenda";
+            this.btnAgenda.Size = new System.Drawing.Size(196, 94);
+            this.btnAgenda.TabIndex = 10;
+            this.btnAgenda.Text = "AGENDACIONES";
+            this.btnAgenda.UseVisualStyleBackColor = false;
             // 
             // btnInventario
             // 
@@ -169,32 +209,6 @@
             this.btnPersonal.Text = "PERSONAL";
             this.btnPersonal.UseVisualStyleBackColor = false;
             // 
-            // btnPromo
-            // 
-            this.btnPromo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnPromo.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnPromo.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPromo.Location = new System.Drawing.Point(851, 230);
-            this.btnPromo.Name = "btnPromo";
-            this.btnPromo.Size = new System.Drawing.Size(214, 97);
-            this.btnPromo.TabIndex = 6;
-            this.btnPromo.Text = "PROMOCIONES";
-            this.btnPromo.UseVisualStyleBackColor = false;
-            // 
-            // btnPreguntas
-            // 
-            this.btnPreguntas.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPreguntas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnPreguntas.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnPreguntas.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnPreguntas.Location = new System.Drawing.Point(851, 400);
-            this.btnPreguntas.Name = "btnPreguntas";
-            this.btnPreguntas.Size = new System.Drawing.Size(215, 89);
-            this.btnPreguntas.TabIndex = 9;
-            this.btnPreguntas.Text = "PREGUNTAS";
-            this.btnPreguntas.UseVisualStyleBackColor = false;
-            // 
             // btnClientes
             // 
             this.btnClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -208,34 +222,35 @@
             this.btnClientes.Text = "CLIENTES";
             this.btnClientes.UseVisualStyleBackColor = false;
             // 
-            // btnAgenda
+            // button1
             // 
-            this.btnAgenda.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAgenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
-            this.btnAgenda.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnAgenda.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnAgenda.Location = new System.Drawing.Point(74, 578);
-            this.btnAgenda.Name = "btnAgenda";
-            this.btnAgenda.Size = new System.Drawing.Size(196, 94);
-            this.btnAgenda.TabIndex = 10;
-            this.btnAgenda.Text = "AGENDACIONES";
-            this.btnAgenda.UseVisualStyleBackColor = false;
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.button1.Font = new System.Drawing.Font("PMingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button1.Location = new System.Drawing.Point(473, 578);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(196, 94);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "ORDENES";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // tableLayoutPanel3
+            // tableLayoutPanel1
             // 
-            this.tableLayoutPanel3.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS;
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.22222F));
-            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 11);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1125, 735);
-            this.tableLayoutPanel3.TabIndex = 1;
-            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint_1);
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(103)))));
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 741F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1131, 749);
+            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // VistaInicioGestion
             // 
@@ -247,17 +262,18 @@
             this.Name = "VistaInicioGestion";
             this.Text = "vistaInicioGestion";
             this.Load += new System.EventHandler(this.VistaInicioGestion_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        public System.Windows.Forms.Button button1;
         public System.Windows.Forms.Button btnClientes;
         public System.Windows.Forms.Button btnPersonal;
         public System.Windows.Forms.Button btnRegistros;
@@ -268,5 +284,6 @@
         public System.Windows.Forms.Button btnProductos;
         public System.Windows.Forms.Button btnPreguntas;
         public System.Windows.Forms.Button btnPromo;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

@@ -2,10 +2,12 @@
 using BarberOS.Vista;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BarberOS.Controlador
 {
@@ -18,6 +20,7 @@ namespace BarberOS.Controlador
             controladaVista = pasadaVista;
             //Cuando se presione el boton de registrarse se ejecutara la funcion reister
             controladaVista.btnRegister.Click += (sender, e) => register();
+            controladaVista.picClientes.Click += (sender, e) => LoadImage();
         }
 
         public void register() 
@@ -38,7 +41,19 @@ namespace BarberOS.Controlador
             daoThis.NewEmail = controladaVista.txtNewMail.Text;
 
             //Se ejecutara la funcion register del dao
-            daoThis.register();
+            daoThis.register(controladaVista);
+        }
+
+        public void LoadImage()
+        {
+            OpenFileDialog dialogo = new OpenFileDialog();
+            DialogResult resultado = dialogo.ShowDialog();
+
+            if (resultado == DialogResult.OK)
+            {
+                controladaVista.picClientes.Image = Image.FromFile(dialogo.FileName);
+                controladaVista.picClientes.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
         }
     }
 }

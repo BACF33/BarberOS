@@ -1,6 +1,6 @@
 ﻿namespace BarberOS.Vista
 {
-    partial class VistaComunicados
+    partial class VistaTemporal
     {
         /// <summary>
         /// Required designer variable.
@@ -46,31 +46,29 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1350, 729);
-            this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
+            this.tableLayoutPanel1.TabIndex = 2;
             // 
             // flpComunicados
             // 
             this.flpComunicados.AutoScroll = true;
             this.flpComunicados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpComunicados.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flpComunicados.Location = new System.Drawing.Point(388, 3);
+            this.flpComunicados.Location = new System.Drawing.Point(109, 3);
             this.flpComunicados.Name = "flpComunicados";
-            this.flpComunicados.Size = new System.Drawing.Size(585, 723);
+            this.flpComunicados.Size = new System.Drawing.Size(585, 444);
             this.flpComunicados.TabIndex = 2;
             this.flpComunicados.WrapContents = false;
             // 
-            // VistaComunicados
+            // VistaTemporal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS1;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "VistaComunicados";
-            this.Text = "VistaComunicados";
+            this.Name = "VistaTemporal";
+            this.Text = "VistaTemporal";
+            this.Load += new System.EventHandler(this.VistaTemporal_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

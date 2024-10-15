@@ -77,6 +77,7 @@
     <Compile Include="Controlador\ControlComunicado.cs" />
     <Compile Include="Controlador\ControlComunicados.cs" />
     <Compile Include="Controlador\ControlConfigServidor.cs" />
+    <Compile Include="Controlador\ControlInicioBarbero.cs" />
     <Compile Include="Controlador\ControlInventario.cs" />
     <Compile Include="Controlador\ControlListaCitas.cs" />
     <Compile Include="Controlador\ControlListaComunicadosG.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="Controlador\ControlPrimerLogin.cs" />
     <Compile Include="Controlador\ControlPrimerUsoNegocio.cs" />
     <Compile Include="Controlador\ControlPrimerUsoUsuario.cs" />
+    <Compile Include="Controlador\ControlPublicarComunicado.cs" />
     <Compile Include="Controlador\ControlReestablecerAdmin.cs" />
     <Compile Include="Controlador\ControlReestablecerPreguntas.cs" />
     <Compile Include="Controlador\ControlRegistrarse.cs" />
@@ -119,6 +121,7 @@
     <Compile Include="Modelo\Dao\DaoPrimerLogin.cs" />
     <Compile Include="Modelo\Dao\DaoPrimerUsoNegocio.cs" />
     <Compile Include="Modelo\Dao\DaoPrimerUsoUsuario.cs" />
+    <Compile Include="Modelo\Dao\DaoPublicarComunicado.cs" />
     <Compile Include="Modelo\Dao\DaoRecuperar.cs" />
     <Compile Include="Modelo\Dao\DaoReestablecerPreguntas.cs" />
     <Compile Include="Modelo\Dao\DaoRestablecerCorreo.cs" />
@@ -167,6 +170,12 @@
     </Compile>
     <Compile Include="Vista\VistaConfigServidor.Designer.cs">
       <DependentUpon>VistaConfigServidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaInicioBarbero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaInicioBarbero.Designer.cs">
+      <DependentUpon>VistaInicioBarbero.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\VistaInsertarPin.cs">
       <SubType>Form</SubType>
@@ -245,6 +254,12 @@
     </Compile>
     <Compile Include="Vista\VistaPrimerUsoUsuario.Designer.cs">
       <DependentUpon>VistaPrimerUsoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaPublicarComunicado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaPublicarComunicado.Designer.cs">
+      <DependentUpon>VistaPublicarComunicado.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\VistaReestablecerAdmin.cs">
       <SubType>Form</SubType>
@@ -360,6 +375,12 @@
     <Compile Include="Vista\vistaRestablecerPreguntas.Designer.cs">
       <DependentUpon>vistaRestablecerPreguntas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\VistaTemporal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaTemporal.Designer.cs">
+      <DependentUpon>VistaTemporal.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -393,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaInicio.resx">
       <DependentUpon>VistaInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaInicioBarbero.resx">
+      <DependentUpon>VistaInicioBarbero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaInsertarPin.resx">
       <DependentUpon>VistaInsertarPin.cs</DependentUpon>
@@ -463,6 +487,9 @@
     <EmbeddedResource Include="Vista\VistaPrimerUsoUsuario.resx">
       <DependentUpon>VistaPrimerUsoUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaPublicarComunicado.resx">
+      <DependentUpon>VistaPublicarComunicado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\VistaRecompensas.resx">
       <DependentUpon>VistaRecompensas.cs</DependentUpon>
     </EmbeddedResource>
@@ -477,6 +504,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\vistaRestablecerPreguntas.resx">
       <DependentUpon>vistaRestablecerPreguntas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaTemporal.resx">
+      <DependentUpon>VistaTemporal.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
@@ -751,6 +781,8 @@
     <None Include="Resources\ID icon png.png" />
     <None Include="Resources\img.png" />
     <None Include="Resources\Perfil.png" />
+    <None Include="Resources\logo.jpg" />
+    <None Include="Resources\logo2.jpg" />
     <Content Include="Resources\Proyecto nuevo %288%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
