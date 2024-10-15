@@ -1,4 +1,5 @@
-﻿using BarberOS.Vistas;
+﻿using BarberOS.Controlador;
+using BarberOS.Vistas;
 using System;
 using System.Windows.Forms;
 
@@ -6,51 +7,45 @@ namespace BarberOS.Vista
 {
     public partial class vistaMenu : Form
     {
-        private Form currentForm = null;
-
+        public ControlMenu controladorMenu;
+        //Este es un constructor, lo que esta dentro de el se ejecutara cuando se cree el formulario
         public vistaMenu()
         {
             InitializeComponent();
+            //Como todos los formularios se creara un archivo de codigo "controlador" para controlar todos los eventos en el formulario
+            //como cuando el usuario presione un boton, al crear el controlador se le pasara a este la vista como referencia (no copia) para que esten conectados
+            controladorMenu = new ControlMenu(this);
+            this.KeyPreview = true;
+            this.KeyDown += Form_KeyDown;
         }
 
-        public void AbrirFormulario(Form form)
+        //Codigo que anulara los comandos ctrC y ctrlV que puedan suceder en este formulario
+        private void Form_KeyDown(object sender, KeyEventArgs e)
         {
-            if (currentForm != null)
+            if (e.Control && (e.KeyCode == Keys.C || e.KeyCode == Keys.V))
             {
-                currentForm.Close();
-                PanelContenedor.Controls.Remove(currentForm);
+                e.SuppressKeyPress = true;
             }
-
-            currentForm = form;
-            form.TopLevel = false;
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Dock = DockStyle.Fill;
-            form.Opacity = 0.75;
-
-            PanelContenedor.Controls.Add(form);
-            PanelContenedor.Tag = form;
-            form.Show();
-            form.BringToFront();
         }
 
-        private void btnIngresar_Click(object sender, EventArgs e)
+        private void vistaMenu_Load(object sender, EventArgs e)
         {
-            AbrirFormulario(new vistaLogin(this));
-        }
 
-        private void btnInicio_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new vistaInicio());
-        }
-
-        private void btnBarberos_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new vistaBarberos());
         }
 
         private void btnCortes_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new vistaCortes());
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

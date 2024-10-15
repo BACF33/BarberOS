@@ -28,127 +28,352 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnIngresar = new System.Windows.Forms.Button();
-            this.btnBarberos = new System.Windows.Forms.Button();
-            this.btnCortes = new System.Windows.Forms.Button();
-            this.btnInicio = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCurrentUser = new System.Windows.Forms.Button();
+            this.pnlBarberos = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnBarberos = new System.Windows.Forms.Button();
+            this.pnlCortes = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnCortes = new System.Windows.Forms.Button();
+            this.pnlInicio = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnInicio = new System.Windows.Forms.Button();
+            this.pnlIngresar = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btnIngresar = new System.Windows.Forms.Button();
+            this.pnlAgendar = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btnAgendar = new System.Windows.Forms.Button();
+            this.PanelContenedor.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlBarberos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnlCortes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pnlInicio.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.pnlIngresar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.pnlAgendar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnIngresar
-            // 
-            this.btnIngresar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnIngresar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnIngresar.Location = new System.Drawing.Point(3, 336);
-            this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(196, 44);
-            this.btnIngresar.TabIndex = 25;
-            this.btnIngresar.Text = "INGRESAR";
-            this.btnIngresar.UseVisualStyleBackColor = false;
-            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
-            // 
-            // btnBarberos
-            // 
-            this.btnBarberos.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBarberos.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBarberos.Location = new System.Drawing.Point(3, 286);
-            this.btnBarberos.Name = "btnBarberos";
-            this.btnBarberos.Size = new System.Drawing.Size(196, 44);
-            this.btnBarberos.TabIndex = 26;
-            this.btnBarberos.Text = "BARBEROS";
-            this.btnBarberos.UseVisualStyleBackColor = false;
-            this.btnBarberos.Click += new System.EventHandler(this.btnBarberos_Click);
-            // 
-            // btnCortes
-            // 
-            this.btnCortes.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCortes.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCortes.Location = new System.Drawing.Point(3, 236);
-            this.btnCortes.Name = "btnCortes";
-            this.btnCortes.Size = new System.Drawing.Size(196, 44);
-            this.btnCortes.TabIndex = 24;
-            this.btnCortes.Text = "CORTES";
-            this.btnCortes.UseVisualStyleBackColor = false;
-            this.btnCortes.Click += new System.EventHandler(this.btnCortes_Click);
-            // 
-            // btnInicio
-            // 
-            this.btnInicio.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnInicio.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnInicio.Location = new System.Drawing.Point(3, 186);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(196, 44);
-            this.btnInicio.TabIndex = 23;
-            this.btnInicio.Text = "INICIO";
-            this.btnInicio.UseVisualStyleBackColor = false;
-            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.DimGray;
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
-            this.flowLayoutPanel1.Controls.Add(this.btnInicio);
-            this.flowLayoutPanel1.Controls.Add(this.btnCortes);
-            this.flowLayoutPanel1.Controls.Add(this.btnBarberos);
-            this.flowLayoutPanel1.Controls.Add(this.btnIngresar);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.ForeColor = System.Drawing.Color.DimGray;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(197, 561);
-            this.flowLayoutPanel1.TabIndex = 27;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BarberOS.Properties.Resources.BarberOs;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 177);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // PanelContenedor
             // 
             this.PanelContenedor.BackColor = System.Drawing.Color.Silver;
+            this.PanelContenedor.Controls.Add(this.panel1);
             this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedor.Location = new System.Drawing.Point(197, 0);
+            this.PanelContenedor.Location = new System.Drawing.Point(276, 0);
             this.PanelContenedor.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.PanelContenedor.MinimumSize = new System.Drawing.Size(800, 600);
             this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(800, 600);
-            this.PanelContenedor.TabIndex = 28;
+            this.PanelContenedor.Size = new System.Drawing.Size(1074, 729);
+            this.PanelContenedor.TabIndex = 32;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(0, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1074, 706);
+            this.panel1.TabIndex = 0;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.DimGray;
+            this.flowLayoutPanel1.Controls.Add(this.label3);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
+            this.flowLayoutPanel1.Controls.Add(this.btnCurrentUser);
+            this.flowLayoutPanel1.Controls.Add(this.pnlBarberos);
+            this.flowLayoutPanel1.Controls.Add(this.pnlCortes);
+            this.flowLayoutPanel1.Controls.Add(this.pnlInicio);
+            this.flowLayoutPanel1.Controls.Add(this.pnlAgendar);
+            this.flowLayoutPanel1.Controls.Add(this.pnlIngresar);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowLayoutPanel1.ForeColor = System.Drawing.Color.DimGray;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(276, 729);
+            this.flowLayoutPanel1.TabIndex = 31;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(3, 52);
+            this.label3.Margin = new System.Windows.Forms.Padding(3, 52, 3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(179, 39);
+            this.label3.TabIndex = 109;
+            this.label3.Text = "BarberOS";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BarberOS.Properties.Resources._13__27__33__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 101);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(123, 173);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btnCurrentUser
+            // 
+            this.btnCurrentUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
+            this.btnCurrentUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCurrentUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCurrentUser.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCurrentUser.Location = new System.Drawing.Point(3, 293);
+            this.btnCurrentUser.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
+            this.btnCurrentUser.Name = "btnCurrentUser";
+            this.btnCurrentUser.Size = new System.Drawing.Size(271, 44);
+            this.btnCurrentUser.TabIndex = 110;
+            this.btnCurrentUser.TabStop = false;
+            this.btnCurrentUser.Text = "No has iniciado sesion";
+            this.btnCurrentUser.UseVisualStyleBackColor = false;
+            // 
+            // pnlBarberos
+            // 
+            this.pnlBarberos.Controls.Add(this.pictureBox2);
+            this.pnlBarberos.Controls.Add(this.btnBarberos);
+            this.pnlBarberos.Location = new System.Drawing.Point(3, 343);
+            this.pnlBarberos.Name = "pnlBarberos";
+            this.pnlBarberos.Size = new System.Drawing.Size(270, 71);
+            this.pnlBarberos.TabIndex = 112;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.pictureBox2.Image = global::BarberOS.Properties.Resources.Proyecto_nuevo__8_;
+            this.pictureBox2.Location = new System.Drawing.Point(7, 10);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 44);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 110;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnBarberos
+            // 
+            this.btnBarberos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.btnBarberos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBarberos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBarberos.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnBarberos.Location = new System.Drawing.Point(0, 2);
+            this.btnBarberos.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
+            this.btnBarberos.Name = "btnBarberos";
+            this.btnBarberos.Size = new System.Drawing.Size(281, 66);
+            this.btnBarberos.TabIndex = 102;
+            this.btnBarberos.TabStop = false;
+            this.btnBarberos.Text = "     BARBEROS";
+            this.btnBarberos.UseVisualStyleBackColor = false;
+            // 
+            // pnlCortes
+            // 
+            this.pnlCortes.Controls.Add(this.pictureBox3);
+            this.pnlCortes.Controls.Add(this.btnCortes);
+            this.pnlCortes.Location = new System.Drawing.Point(3, 420);
+            this.pnlCortes.Name = "pnlCortes";
+            this.pnlCortes.Size = new System.Drawing.Size(292, 74);
+            this.pnlCortes.TabIndex = 113;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.pictureBox3.Image = global::BarberOS.Properties.Resources.Cortes_icon_blue_png1;
+            this.pictureBox3.Location = new System.Drawing.Point(10, 17);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 44);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 111;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnCortes
+            // 
+            this.btnCortes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.btnCortes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCortes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCortes.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCortes.Location = new System.Drawing.Point(-3, 5);
+            this.btnCortes.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
+            this.btnCortes.Name = "btnCortes";
+            this.btnCortes.Size = new System.Drawing.Size(273, 66);
+            this.btnCortes.TabIndex = 103;
+            this.btnCortes.TabStop = false;
+            this.btnCortes.Text = "    CORTES";
+            this.btnCortes.UseVisualStyleBackColor = false;
+            // 
+            // pnlInicio
+            // 
+            this.pnlInicio.Controls.Add(this.pictureBox4);
+            this.pnlInicio.Controls.Add(this.btnInicio);
+            this.pnlInicio.Location = new System.Drawing.Point(3, 500);
+            this.pnlInicio.Name = "pnlInicio";
+            this.pnlInicio.Size = new System.Drawing.Size(281, 65);
+            this.pnlInicio.TabIndex = 114;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.pictureBox4.Image = global::BarberOS.Properties.Resources.Home_icon1;
+            this.pictureBox4.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(50, 46);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 112;
+            this.pictureBox4.TabStop = false;
+            // 
+            // btnInicio
+            // 
+            this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnInicio.Location = new System.Drawing.Point(0, 0);
+            this.btnInicio.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(270, 66);
+            this.btnInicio.TabIndex = 101;
+            this.btnInicio.TabStop = false;
+            this.btnInicio.Text = "INICIO";
+            this.btnInicio.UseVisualStyleBackColor = false;
+            // 
+            // pnlIngresar
+            // 
+            this.pnlIngresar.Controls.Add(this.pictureBox5);
+            this.pnlIngresar.Controls.Add(this.btnIngresar);
+            this.pnlIngresar.Location = new System.Drawing.Point(3, 637);
+            this.pnlIngresar.Name = "pnlIngresar";
+            this.pnlIngresar.Size = new System.Drawing.Size(281, 68);
+            this.pnlIngresar.TabIndex = 115;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.pictureBox5.Image = global::BarberOS.Properties.Resources._6220807__1_;
+            this.pictureBox5.Location = new System.Drawing.Point(10, 12);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(43, 45);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 113;
+            this.pictureBox5.TabStop = false;
+            // 
+            // btnIngresar
+            // 
+            this.btnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnIngresar.Location = new System.Drawing.Point(0, 4);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(271, 58);
+            this.btnIngresar.TabIndex = 104;
+            this.btnIngresar.TabStop = false;
+            this.btnIngresar.Text = "      INGRESAR";
+            this.btnIngresar.UseVisualStyleBackColor = false;
+            // 
+            // pnlAgendar
+            // 
+            this.pnlAgendar.Controls.Add(this.pictureBox6);
+            this.pnlAgendar.Controls.Add(this.btnAgendar);
+            this.pnlAgendar.Location = new System.Drawing.Point(3, 571);
+            this.pnlAgendar.Name = "pnlAgendar";
+            this.pnlAgendar.Size = new System.Drawing.Size(281, 60);
+            this.pnlAgendar.TabIndex = 118;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.pictureBox6.Image = global::BarberOS.Properties.Resources._52462901;
+            this.pictureBox6.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(50, 46);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 114;
+            this.pictureBox6.TabStop = false;
+            // 
+            // btnAgendar
+            // 
+            this.btnAgendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.btnAgendar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAgendar.Location = new System.Drawing.Point(3, 3);
+            this.btnAgendar.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
+            this.btnAgendar.Name = "btnAgendar";
+            this.btnAgendar.Size = new System.Drawing.Size(270, 54);
+            this.btnAgendar.TabIndex = 105;
+            this.btnAgendar.TabStop = false;
+            this.btnAgendar.Text = "      AGENDAR";
+            this.btnAgendar.UseVisualStyleBackColor = false;
             // 
             // vistaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.MaximumSize = new System.Drawing.Size(1366, 768);
+            this.MinimumSize = new System.Drawing.Size(1200, 600);
             this.Name = "vistaMenu";
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.vistaMenu_Load);
+            this.PanelContenedor.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlBarberos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnlCortes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.pnlInicio.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.pnlIngresar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.pnlAgendar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnIngresar;
-        private System.Windows.Forms.Button btnBarberos;
-        private System.Windows.Forms.Button btnCortes;
-        private System.Windows.Forms.Button btnInicio;
+        public System.Windows.Forms.Panel PanelContenedor;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel PanelContenedor;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Button btnCurrentUser;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.Button btnBarberos;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.Button btnCortes;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        public System.Windows.Forms.Button btnInicio;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        public System.Windows.Forms.Button btnIngresar;
+        private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Panel pnlBarberos;
+        public System.Windows.Forms.Panel pnlCortes;
+        public System.Windows.Forms.Panel pnlInicio;
+        public System.Windows.Forms.Panel pnlIngresar;
+        public System.Windows.Forms.Panel pnlAgendar;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.Button btnAgendar;
     }
 }

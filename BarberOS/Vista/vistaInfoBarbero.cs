@@ -10,13 +10,21 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaInfoBarbero : Form
+    public partial class VistaInfoBarbero : Form
     {
-        public vistaInfoBarbero()
+        public VistaInfoBarbero()
         {
             InitializeComponent();
+            this.KeyPreview = true;
+            this.KeyDown += Form_KeyDown;
         }
-
+        private void Form_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && (e.KeyCode == Keys.C || e.KeyCode == Keys.V))
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
 
     }
 }

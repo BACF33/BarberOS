@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BarberOS.Controlador;
+using BarberOS.Modelo.Dto;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,13 +12,26 @@ using System.Windows.Forms;
 
 namespace BarberOS.Vista
 {
-    public partial class vistaRecompensas : Form
+    public partial class VistaRecompensas : Form
     {
-        public vistaRecompensas()
+        public VistaRecompensas(DtoPanelPromocion pasadaPromocion, vistaMenu pasadoMenu, DtoPanelProducto seleccionadoProducto)
         {
             InitializeComponent();
+            ControlTotal controladorVista = new ControlTotal(pasadoMenu, this, pasadaPromocion, seleccionadoProducto);
+            this.KeyPreview = true;
+            this.KeyDown += Form_KeyDown;
+        }
+        private void Form_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && (e.KeyCode == Keys.C || e.KeyCode == Keys.V))
+            {
+                e.SuppressKeyPress = true;
+            }
         }
 
-      
+        private void VistaRecompensas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

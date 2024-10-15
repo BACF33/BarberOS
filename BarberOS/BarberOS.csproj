@@ -73,85 +73,319 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\ControlCitas.cs" />
+    <Compile Include="Controlador\ControlComunicado.cs" />
+    <Compile Include="Controlador\ControlComunicados.cs" />
+    <Compile Include="Controlador\ControlConfigServidor.cs" />
+    <Compile Include="Controlador\ControlInicioBarbero.cs" />
+    <Compile Include="Controlador\ControlInventario.cs" />
+    <Compile Include="Controlador\ControlListaCitas.cs" />
+    <Compile Include="Controlador\ControlListaComunicadosG.cs" />
+    <Compile Include="Controlador\ControlListaPregunas.cs" />
+    <Compile Include="Controlador\ControlListaRespuestas.cs" />
+    <Compile Include="Controlador\ControlObtenerPin.cs" />
+    <Compile Include="Controlador\ControlInicio.cs" />
+    <Compile Include="Controlador\ControlInicioGestion.cs" />
+    <Compile Include="Controlador\ControlListaClientesG.cs" />
+    <Compile Include="Controlador\ControlListaCortes.cs" />
+    <Compile Include="Controlador\ControlListaCortesG.cs" />
+    <Compile Include="Controlador\ControlListaPersonal.cs" />
+    <Compile Include="Controlador\ControlListaPersonalG.cs" />
+    <Compile Include="Controlador\ControlListaPromociones.cs" />
+    <Compile Include="Controlador\ControlListaPromocionesG.cs" />
+    <Compile Include="Controlador\ControlListaRegistros.cs" />
+    <Compile Include="Controlador\ControlLogin.cs" />
+    <Compile Include="Controlador\ControlMenu.cs" />
+    <Compile Include="Controlador\ControlNuevaContraseña.cs" />
+    <Compile Include="Controlador\ControlPanelBarbero.cs" />
+    <Compile Include="Controlador\ControlPanelProducto.cs" />
+    <Compile Include="Controlador\ControlPanelPromocion.cs" />
+    <Compile Include="Controlador\ControlPrimerLogin.cs" />
+    <Compile Include="Controlador\ControlPrimerUsoNegocio.cs" />
+    <Compile Include="Controlador\ControlPrimerUsoUsuario.cs" />
+    <Compile Include="Controlador\ControlPublicarComunicado.cs" />
+    <Compile Include="Controlador\ControlReestablecerAdmin.cs" />
+    <Compile Include="Controlador\ControlReestablecerPreguntas.cs" />
+    <Compile Include="Controlador\ControlRegistrarse.cs" />
+    <Compile Include="Controlador\ControlRestablecerCorreo.cs" />
+    <Compile Include="Controlador\ControlTotal.cs" />
+    <Compile Include="Modelo\Dao\DaoCitas.cs" />
+    <Compile Include="Modelo\Dao\DaoComunicados.cs" />
+    <Compile Include="Modelo\Dao\DaoInventario.cs" />
+    <Compile Include="Modelo\Dao\DaoListaCitas.cs" />
+    <Compile Include="Modelo\Dao\DaoListaComunicadosG.cs" />
+    <Compile Include="Modelo\Dao\DaoListaPreguntas.cs" />
+    <Compile Include="Modelo\Dao\DaoListaRespuestas.cs" />
+    <Compile Include="Modelo\Dao\DaoMenu.cs" />
+    <Compile Include="Modelo\Dao\DaoNuevaContraseña.cs" />
+    <Compile Include="Modelo\Dao\DaoPrimerLogin.cs" />
+    <Compile Include="Modelo\Dao\DaoPrimerUsoNegocio.cs" />
+    <Compile Include="Modelo\Dao\DaoPrimerUsoUsuario.cs" />
+    <Compile Include="Modelo\Dao\DaoPublicarComunicado.cs" />
+    <Compile Include="Modelo\Dao\DaoRecuperar.cs" />
+    <Compile Include="Modelo\Dao\DaoReestablecerPreguntas.cs" />
+    <Compile Include="Modelo\Dao\DaoRestablecerCorreo.cs" />
+    <Compile Include="Modelo\Dao\DaoTotal.cs" />
+    <Compile Include="Modelo\Dao\DaoListaClientesG.cs" />
+    <Compile Include="Modelo\Dao\DaoListaCortes.cs" />
+    <Compile Include="Modelo\Dao\DaoListaCortesG.cs" />
+    <Compile Include="Modelo\Dao\DaoListaPersonal.cs" />
+    <Compile Include="Modelo\Dao\DaoListaPersonalG.cs" />
+    <Compile Include="Modelo\Dao\DaoListaPromociones.cs" />
+    <Compile Include="Modelo\Dao\DaoListaPromocionesG.cs" />
+    <Compile Include="Modelo\Dao\DaoListaRegistrosG.cs" />
+    <Compile Include="Modelo\Dao\DaoLogin.cs" />
+    <Compile Include="Modelo\Dao\DaoRegistrarse.cs" />
+    <Compile Include="Modelo\Dao\DaoRestablecerAdmin.cs" />
+    <Compile Include="Modelo\Dto\DtoLogin.cs" />
+    <Compile Include="Modelo\Dto\DtoPanelBarbero.cs" />
+    <Compile Include="Modelo\Dto\DtoPanelProducto.cs" />
+    <Compile Include="Modelo\Dto\DtoPanelPromocion.cs" />
+    <Compile Include="Modelo\Dto\DtoRecuperar.cs" />
+    <Compile Include="Modelo\Dto\DtoRegister.cs" />
+    <Compile Include="Modelo\Dto\DtoRestablecerAdmin.cs" />
+    <Compile Include="Modelo\Dto\DtoServicioCorreo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vista\vistaFacturaTotal.cs">
+    <Compile Include="Vista\PanelComunicado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\PanelComunicado.Designer.cs">
+      <DependentUpon>PanelComunicado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaCitas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaFacturaTotal.Designer.cs">
-      <DependentUpon>vistaFacturaTotal.cs</DependentUpon>
+    <Compile Include="Vista\vistaCitas.Designer.cs">
+      <DependentUpon>vistaCitas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaInicio.cs">
+    <Compile Include="Vista\VistaComunicados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaInicio.Designer.cs">
-      <DependentUpon>vistaInicio.cs</DependentUpon>
+    <Compile Include="Vista\VistaComunicados.Designer.cs">
+      <DependentUpon>VistaComunicados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaInventario.cs">
+    <Compile Include="Vista\VistaConfigServidor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaInventario.Designer.cs">
-      <DependentUpon>vistaInventario.cs</DependentUpon>
+    <Compile Include="Vista\VistaConfigServidor.Designer.cs">
+      <DependentUpon>VistaConfigServidor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaInfoBarbero.cs">
+    <Compile Include="Vista\VistaInicioBarbero.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaInfoBarbero.Designer.cs">
-      <DependentUpon>vistaInfoBarbero.cs</DependentUpon>
+    <Compile Include="Vista\VistaInicioBarbero.Designer.cs">
+      <DependentUpon>VistaInicioBarbero.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaInfoCliente.cs">
+    <Compile Include="Vista\VistaInsertarPin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaInfoCliente.Designer.cs">
-      <DependentUpon>vistaInfoCliente.cs</DependentUpon>
+    <Compile Include="Vista\VistaInsertarPin.Designer.cs">
+      <DependentUpon>VistaInsertarPin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaListaBarbero.cs">
+    <Compile Include="Vista\VistaListaAgendas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaListaBarbero.Designer.cs">
-      <DependentUpon>vistaListaBarbero.cs</DependentUpon>
+    <Compile Include="Vista\VistaListaAgendas.Designer.cs">
+      <DependentUpon>VistaListaAgendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaMenu.cs">
+    <Compile Include="Vista\VistaListaComunicadosG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaMenu.Designer.cs">
-      <DependentUpon>vistaMenu.cs</DependentUpon>
+    <Compile Include="Vista\VistaListaComunicadosG.Designer.cs">
+      <DependentUpon>VistaListaComunicadosG.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaInicioGestion.cs">
+    <Compile Include="Vista\vistaListaPersonalG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaInicioGestion.Designer.cs">
-      <DependentUpon>vistaInicioGestion.cs</DependentUpon>
+    <Compile Include="Vista\vistaListaPersonalG.Designer.cs">
+      <DependentUpon>vistaListaPersonalG.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaRecompensas.cs">
+    <Compile Include="Vista\vistaListaPreguntas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaRecompensas.Designer.cs">
-      <DependentUpon>vistaRecompensas.cs</DependentUpon>
+    <Compile Include="Vista\vistaListaPreguntas.Designer.cs">
+      <DependentUpon>vistaListaPreguntas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaBarberos.cs">
+    <Compile Include="Vista\VistaListaRespuestas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaBarberos.Designer.cs">
-      <DependentUpon>vistaBarberos.cs</DependentUpon>
+    <Compile Include="Vista\VistaListaRespuestas.Designer.cs">
+      <DependentUpon>VistaListaRespuestas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaCortes.cs">
+    <Compile Include="Vista\VistaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaCortes.Designer.cs">
-      <DependentUpon>vistaCortes.cs</DependentUpon>
+    <Compile Include="Vista\VistaLogin.Designer.cs">
+      <DependentUpon>VistaLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaLogin.cs">
+    <Compile Include="Vista\VistaNuevaContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaLogin.Designer.cs">
-      <DependentUpon>vistaLogin.cs</DependentUpon>
+    <Compile Include="Vista\VistaNuevaContraseña.Designer.cs">
+      <DependentUpon>VistaNuevaContraseña.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\vistaRegistroDetallado.cs">
+    <Compile Include="Vista\VistaNuevoPost.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\vistaRegistroDetallado.Designer.cs">
-      <DependentUpon>vistaRegistroDetallado.cs</DependentUpon>
+    <Compile Include="Vista\VistaNuevoPost.Designer.cs">
+      <DependentUpon>VistaNuevoPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaPerfilUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaPerfilUsuario.Designer.cs">
+      <DependentUpon>VistaPerfilUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaPrimerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaPrimerLogin.Designer.cs">
+      <DependentUpon>VistaPrimerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaPrimerUsoArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaPrimerUsoArchivo.Designer.cs">
+      <DependentUpon>VistaPrimerUsoArchivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaPrimerUsoNegocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaPrimerUsoNegocio.Designer.cs">
+      <DependentUpon>VistaPrimerUsoNegocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaPrimerUsoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaPrimerUsoUsuario.Designer.cs">
+      <DependentUpon>VistaPrimerUsoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaPublicarComunicado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaPublicarComunicado.Designer.cs">
+      <DependentUpon>VistaPublicarComunicado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaReestablecerAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaReestablecerAdmin.Designer.cs">
+      <DependentUpon>VistaReestablecerAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\PanelBarbero.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\PanelBarbero.Designer.cs">
+      <DependentUpon>PanelBarbero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\PanelProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\PanelProducto.Designer.cs">
+      <DependentUpon>PanelProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\PanelPromocion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\PanelPromocion.Designer.cs">
+      <DependentUpon>PanelPromocion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaInicio.Designer.cs">
+      <DependentUpon>VistaInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaInventario.Designer.cs">
+      <DependentUpon>VistaInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaListaClientesG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaListaClientesG.Designer.cs">
+      <DependentUpon>VistaListaClientesG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaListaCortes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaListaCortes.Designer.cs">
+      <DependentUpon>VistaListaCortes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaListaPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaListaPersonal.Designer.cs">
+      <DependentUpon>VistaListaPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaListaCortesG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaListaCortesG.Designer.cs">
+      <DependentUpon>VistaListaCortesG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaListaPromociones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaListaPromociones.Designer.cs">
+      <DependentUpon>VistaListaPromociones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaListaPromocionesG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaListaPromocionesG.Designer.cs">
+      <DependentUpon>VistaListaPromocionesG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaListaRegistros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaListaRegistros.Designer.cs">
+      <DependentUpon>VistaListaRegistros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaMenu.Designer.cs">
+      <DependentUpon>VistaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaInicioGestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaInicioGestion.Designer.cs">
+      <DependentUpon>VistaInicioGestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaRecompensas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaRecompensas.Designer.cs">
+      <DependentUpon>VistaRecompensas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaRegister.Designer.cs">
+      <DependentUpon>VistaRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaRestablecerCorreo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaRestablecerCorreo.Designer.cs">
+      <DependentUpon>VistaRestablecerCorreo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaRestablecerPreguntas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaRestablecerPreguntas.Designer.cs">
+      <DependentUpon>vistaRestablecerPreguntas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaTemporal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaTemporal.Designer.cs">
+      <DependentUpon>VistaTemporal.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -163,45 +397,127 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Vista\vistaBarberos.resx">
-      <DependentUpon>vistaBarberos.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\PanelBarbero.resx">
+      <DependentUpon>PanelBarbero.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaCortes.resx">
-      <DependentUpon>vistaCortes.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\PanelComunicado.resx">
+      <DependentUpon>PanelComunicado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaFacturaTotal.resx">
-      <DependentUpon>vistaFacturaTotal.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\PanelProducto.resx">
+      <DependentUpon>PanelProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaInfoBarbero.resx">
-      <DependentUpon>vistaInfoBarbero.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\PanelPromocion.resx">
+      <DependentUpon>PanelPromocion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaInfoCliente.resx">
-      <DependentUpon>vistaInfoCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\vistaCitas.resx">
+      <DependentUpon>vistaCitas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaInicio.resx">
-      <DependentUpon>vistaInicio.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaComunicados.resx">
+      <DependentUpon>VistaComunicados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaInventario.resx">
-      <DependentUpon>vistaInventario.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaConfigServidor.resx">
+      <DependentUpon>VistaConfigServidor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaListaBarbero.resx">
-      <DependentUpon>vistaListaBarbero.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaInicio.resx">
+      <DependentUpon>VistaInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaMenu.resx">
-      <DependentUpon>vistaMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaInicioBarbero.resx">
+      <DependentUpon>VistaInicioBarbero.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaInicioGestion.resx">
-      <DependentUpon>vistaInicioGestion.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaInsertarPin.resx">
+      <DependentUpon>VistaInsertarPin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaLogin.resx">
-      <DependentUpon>vistaLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaInventario.resx">
+      <DependentUpon>VistaInventario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaRecompensas.resx">
-      <DependentUpon>vistaRecompensas.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaListaAgendas.resx">
+      <DependentUpon>VistaListaAgendas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\vistaRegistroDetallado.resx">
-      <DependentUpon>vistaRegistroDetallado.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VistaListaClientesG.resx">
+      <DependentUpon>VistaListaClientesG.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaListaComunicadosG.resx">
+      <DependentUpon>VistaListaComunicadosG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaListaCortes.resx">
+      <DependentUpon>VistaListaCortes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaListaCortesG.resx">
+      <DependentUpon>VistaListaCortesG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaListaPersonal.resx">
+      <DependentUpon>VistaListaPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaListaPersonalG.resx">
+      <DependentUpon>vistaListaPersonalG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaListaPreguntas.resx">
+      <DependentUpon>vistaListaPreguntas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaListaPromociones.resx">
+      <DependentUpon>VistaListaPromociones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaListaPromocionesG.resx">
+      <DependentUpon>VistaListaPromocionesG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaListaRegistros.resx">
+      <DependentUpon>VistaListaRegistros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaListaRespuestas.resx">
+      <DependentUpon>VistaListaRespuestas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaLogin.resx">
+      <DependentUpon>VistaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaMenu.resx">
+      <DependentUpon>VistaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaInicioGestion.resx">
+      <DependentUpon>VistaInicioGestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaNuevaContraseña.resx">
+      <DependentUpon>VistaNuevaContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaNuevoPost.resx">
+      <DependentUpon>VistaNuevoPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaPerfilUsuario.resx">
+      <DependentUpon>VistaPerfilUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaPrimerLogin.resx">
+      <DependentUpon>VistaPrimerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaPrimerUsoArchivo.resx">
+      <DependentUpon>VistaPrimerUsoArchivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaPrimerUsoNegocio.resx">
+      <DependentUpon>VistaPrimerUsoNegocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaPrimerUsoUsuario.resx">
+      <DependentUpon>VistaPrimerUsoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaPublicarComunicado.resx">
+      <DependentUpon>VistaPublicarComunicado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaRecompensas.resx">
+      <DependentUpon>VistaRecompensas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaReestablecerAdmin.resx">
+      <DependentUpon>VistaReestablecerAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaRegister.resx">
+      <DependentUpon>VistaRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaRestablecerCorreo.resx">
+      <DependentUpon>VistaRestablecerCorreo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaRestablecerPreguntas.resx">
+      <DependentUpon>vistaRestablecerPreguntas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaTemporal.resx">
+      <DependentUpon>VistaTemporal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -212,9 +528,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BarberOs.png" />
@@ -289,9 +602,7 @@
     <None Include="Resources\barbe.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controlador\" />
-    <Folder Include="Modelo\Dao\" />
-    <Folder Include="Modelo\Dto\" />
+    <None Include="Resources\casa.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\00third-small.png" />
@@ -301,6 +612,187 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\61457.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pilar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pilar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barSim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barSim2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barSim3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mason.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barLog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9356928.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6220807 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Correo png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9187604.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background BarberOS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13%3b 27%3b 33 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3237472.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6220807 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93569281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9252943.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\92529431.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93569282.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email Reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13%3b 27%3b 33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32374721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6195699 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password-icon-1903x2048-m0d1f305.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-warning-icon-png-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93569283.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\456112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7847599.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo negro de barberia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78475991.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9131529.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5246290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93569284.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email-IconPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\92529432.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background BarberOS1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\92529433.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91876041.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\92529434.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telefono.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telefono1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\direccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\direccion1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server.png" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\13%3b 27%3b 33 %281%291.png" />
+    <None Include="Resources\13%3b 27%3b 331.png" />
+    <None Include="Resources\13%3b 27%3b 33 %281%292.png" />
+    <Content Include="Resources\1427060.png" />
+    <None Include="Resources\Proyecto nuevo %288%2911.png" />
+    <None Include="Resources\52462902.png" />
+    <None Include="Resources\14270601.png" />
+    <None Include="Resources\2399022.png" />
+    <None Include="Resources\5029056.png" />
+    <Content Include="Resources\52462901.png" />
+    <None Include="Resources\8539336.png" />
+    <None Include="Resources\92529435.png" />
+    <None Include="Resources\85393361.png" />
+    <None Include="Resources\91315291.png" />
+    <None Include="Resources\54751231.png" />
+    <Content Include="Resources\BarberOS Logo oficial Blanco.png" />
+    <None Include="Resources\Correo png1.png" />
+    <None Include="Resources\BarberOS Logo oficial Blanco1.png" />
+    <None Include="Resources\BarberOS Logo oficial Blanco2.png" />
+    <None Include="Resources\BarberOS Logo oficial Blanco3.png" />
+    <None Include="Resources\BarberOS Logo oficial Blanco21.png" />
+    <None Include="Resources\corte.jpg" />
+    <None Include="Resources\corrompe.jpg" />
+    <Content Include="Resources\Cortes icon blue png1.png" />
+    <None Include="Resources\Cortes icon blue png11.png" />
+    <None Include="Resources\Cortes icon blue png12.png" />
+    <None Include="Resources\Etiqueta png.png" />
+    <None Include="Resources\escuela.png" />
+    <Content Include="Resources\Home icon1.png" />
+    <None Include="Resources\Proyecto nuevo %288%291.png" />
+    <None Include="Resources\Home icon11.png" />
+    <None Include="Resources\Points png icon.png" />
+    <None Include="Resources\Points png icon1.png" />
+    <None Include="Resources\ID icon png.png" />
+    <None Include="Resources\img.png" />
+    <None Include="Resources\Perfil.png" />
+    <None Include="Resources\logo.jpg" />
+    <None Include="Resources\logo2.jpg" />
+    <Content Include="Resources\Proyecto nuevo %288%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
