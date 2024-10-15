@@ -12,9 +12,10 @@ namespace BarberOS.Controlador
     {
         DaoPublicarComunicado daoThis = new DaoPublicarComunicado();
 
-        public ControlPublicarComunicado(VistaPublicarComunicado vistaPasada) 
+        public ControlPublicarComunicado(VistaPublicarComunicado vistaPasada, vistaMenu menuPasado) 
         {
             daoThis.Obtener(vistaPasada);
+            vistaPasada.btnPost.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new VistaNuevoPost());
         }
     }
 }

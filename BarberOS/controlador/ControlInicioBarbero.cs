@@ -11,7 +11,7 @@ namespace BarberOS.Controlador
     {
         public ControlInicioBarbero(VistaInicioBarbero vistaPasada, vistaMenu menuPasado) 
         {
-            vistaPasada.btnCortes.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new VistaPublicarComunicado());
+            vistaPasada.btnCortes.Click += (sender, e) => menuPasado.controladorMenu.AbrirFormulario(new VistaPublicarComunicado(menuPasado));
         }
     }
 }

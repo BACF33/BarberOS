@@ -13,10 +13,10 @@ namespace BarberOS.Vista
 {
     public partial class VistaPublicarComunicado : Form
     {
-        public VistaPublicarComunicado()
+        public VistaPublicarComunicado(vistaMenu menuPasado)
         {
             InitializeComponent();
-            new ControlPublicarComunicado(this);
+            new ControlPublicarComunicado(this, menuPasado);
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -25,6 +25,16 @@ namespace BarberOS.Vista
         }
 
         private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint_2(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint_3(object sender, PaintEventArgs e)
         {
 
         }
