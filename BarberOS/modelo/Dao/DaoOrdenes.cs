@@ -130,16 +130,17 @@ namespace BarberOS.Modelo.Dao
                     //sean iguales a los que estan en las textboxes
                     using (SqlCommand cmd = new SqlCommand(
                         "UPDATE orders SET " +
-                        "orderUser = @userName, " +
-                        "orderTime = @userPoints, " +
-                        "orderText = @userPassword, " + conexion))
+                        "orderUser = (SELECT userId FROM users WHERE userName = @userName), " +
+                        "orderTime = @orderDate, " +
+                        "orderText = @orderText " +
+                        "WHERE orderId = @selectedId", conexion))
                     {
 
                         //Los parametros de la query seran los valores obtenidos de los textboxes
                         cmd.Parameters.AddWithValue("@selectedId", vistaPasada.txtId.Text);
                         cmd.Parameters.AddWithValue("@userName", vistaPasada.cmbUsers.Text);
-                        cmd.Parameters.AddWithValue("@userPassword", vistaPasada.dtpTime);
-                        cmd.Parameters.AddWithValue("@userPoints", vistaPasada.txtOrder.Text);
+                        cmd.Parameters.AddWithValue("@orderDate", vistaPasada.dtpTime.Value);
+                        cmd.Parameters.AddWithValue("@orderText", vistaPasada.txtOrder.Text);
 
                         cmd.ExecuteNonQuery();
                     }
