@@ -127,6 +127,9 @@
   <data name="barbe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\barbe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="telefono" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telefono.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Home icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home icon11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,9 +157,6 @@
   <data name="barSim3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\barSim3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="barLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\barLog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Correo png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Correo png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -168,6 +168,9 @@
   </data>
   <data name="7847599" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7847599.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barSim2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barSim2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="direccion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\direccion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,14 +283,11 @@
   <data name="92529435" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\92529435.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="8539336" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\8539336.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Background " type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background .jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5029056" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5029056.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="barLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barLog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Background BarberOS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background BarberOS1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -304,11 +304,14 @@
   <data name="Proyecto nuevo (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Proyecto nuevo (8)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="13; 27; 33 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>"..\Resources\13; 27; 33 (1)1.png";System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chque21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chque21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BarberOS Logo oficial Blanco2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BarberOS Logo oficial Blanco21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="13; 27; 33 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>"..\Resources\13; 27; 33 (1)1.png";System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fondo negro de barberia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fondo negro de barberia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,8 +322,8 @@
   <data name="imagenes 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imagenes 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="barSim2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\barSim2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="8539336" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8539336.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -367,8 +370,8 @@
   <data name="Captura5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura5.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="telefono" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\telefono.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="5029056" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5029056.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imganes 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imganes 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -399,6 +402,9 @@
   </data>
   <data name="52462901" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\52462902.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gradient1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gradient.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="13; 27; 33" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>"..\Resources\13; 27; 33.png";System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -451,7 +457,7 @@
   <data name="00third-small" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\00third-small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chque21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chque21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gradient2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gradient1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

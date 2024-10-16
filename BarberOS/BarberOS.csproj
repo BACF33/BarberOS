@@ -820,6 +820,8 @@
     <None Include="Resources\Cortes icon blue png12.png" />
     <None Include="Resources\Etiqueta png.png" />
     <None Include="Resources\escuela.png" />
+    <None Include="Resources\gradient.jpg" />
+    <None Include="Resources\gradient1.jpg" />
     <Content Include="Resources\Home icon1.png" />
     <None Include="Resources\Proyecto nuevo %288%291.png" />
     <None Include="Resources\Home icon11.png" />
