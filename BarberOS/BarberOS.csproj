@@ -73,6 +73,7 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\ControlAsignacion.cs" />
     <Compile Include="Controlador\ControlAsignaciones.cs" />
     <Compile Include="Controlador\ControlCitas.cs" />
     <Compile Include="Controlador\ControlComunicado.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="Controlador\ControlRegistrarse.cs" />
     <Compile Include="Controlador\ControlRestablecerCorreo.cs" />
     <Compile Include="Controlador\ControlTotal.cs" />
+    <Compile Include="Modelo\Dao\DaoAsignacion.cs" />
     <Compile Include="Modelo\Dao\DaoAsignaciones.cs" />
     <Compile Include="Modelo\Dao\DaoCitas.cs" />
     <Compile Include="Modelo\Dao\DaoComunicados.cs" />
@@ -810,6 +812,9 @@
     <None Include="Resources\BarberOS Logo oficial Blanco21.png" />
     <None Include="Resources\corte.jpg" />
     <None Include="Resources\corrompe.jpg" />
+    <None Include="Resources\cheque.png" />
+    <None Include="Resources\chque2.png" />
+    <None Include="Resources\chque21.png" />
     <Content Include="Resources\Cortes icon blue png1.png" />
     <None Include="Resources\Cortes icon blue png11.png" />
     <None Include="Resources\Cortes icon blue png12.png" />

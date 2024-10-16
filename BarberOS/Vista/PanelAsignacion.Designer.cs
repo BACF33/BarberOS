@@ -28,57 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnCompletar = new System.Windows.Forms.Button();
+            this.dtpLimite = new System.Windows.Forms.DateTimePicker();
+            this.txtOrden = new System.Windows.Forms.TextBox();
+            this.imgCompletado = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCompletado)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnCompletar
             // 
-            this.button1.Location = new System.Drawing.Point(465, 155);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(185, 88);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Completado";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCompletar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(103)))), ((int)(((byte)(89)))));
+            this.btnCompletar.Location = new System.Drawing.Point(465, 155);
+            this.btnCompletar.Name = "btnCompletar";
+            this.btnCompletar.Size = new System.Drawing.Size(185, 88);
+            this.btnCompletar.TabIndex = 0;
+            this.btnCompletar.Text = "Completado";
+            this.btnCompletar.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker1
+            // dtpLimite
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(465, 50);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(185, 44);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dtpLimite.Enabled = false;
+            this.dtpLimite.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpLimite.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpLimite.Location = new System.Drawing.Point(465, 50);
+            this.dtpLimite.Name = "dtpLimite";
+            this.dtpLimite.Size = new System.Drawing.Size(185, 44);
+            this.dtpLimite.TabIndex = 1;
             // 
-            // textBox1
+            // txtOrden
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(33, 50);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(367, 193);
-            this.textBox1.TabIndex = 2;
+            this.txtOrden.Enabled = false;
+            this.txtOrden.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrden.Location = new System.Drawing.Point(33, 50);
+            this.txtOrden.Multiline = true;
+            this.txtOrden.Name = "txtOrden";
+            this.txtOrden.Size = new System.Drawing.Size(367, 193);
+            this.txtOrden.TabIndex = 2;
+            // 
+            // imgCompletado
+            // 
+            this.imgCompletado.Image = global::BarberOS.Properties.Resources.chque21;
+            this.imgCompletado.Location = new System.Drawing.Point(217, 16);
+            this.imgCompletado.Name = "imgCompletado";
+            this.imgCompletado.Size = new System.Drawing.Size(242, 200);
+            this.imgCompletado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgCompletado.TabIndex = 3;
+            this.imgCompletado.TabStop = false;
+            this.imgCompletado.Visible = false;
             // 
             // PanelAsignacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(100)))));
+            this.Controls.Add(this.imgCompletado);
+            this.Controls.Add(this.txtOrden);
+            this.Controls.Add(this.dtpLimite);
+            this.Controls.Add(this.btnCompletar);
             this.Name = "PanelAsignacion";
             this.Size = new System.Drawing.Size(674, 279);
+            this.Load += new System.EventHandler(this.PanelAsignacion_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.imgCompletado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txtOrden;
+        public System.Windows.Forms.DateTimePicker dtpLimite;
+        public System.Windows.Forms.Button btnCompletar;
+        public System.Windows.Forms.PictureBox imgCompletado;
     }
 }

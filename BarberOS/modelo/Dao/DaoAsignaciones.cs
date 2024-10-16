@@ -20,9 +20,9 @@ namespace BarberOS.Modelo.Dao
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT orderDate, orderText," +
-                        "FROM announcements a" +
-                        "WHERE orderName = @userName ";
+                    string query = "SELECT orderTime, orderText, orderId " +
+                        "FROM orders " +
+                        "WHERE orderUser = (SELECT userId FROM users WHERE userName = @userName)";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -35,9 +35,10 @@ namespace BarberOS.Modelo.Dao
                                 DateTime testDateTime;
 
                                 testText = reader["orderText"].ToString();
-                                testDateTime = (DateTime)reader["orderDate"];
+                                testDateTime = (DateTime)reader["orderTime"];
+                                int id = (int)reader["orderId"];
 
-                                PanelAsignacion panelUsado = new PanelAsignacion(testText, testDateTime, menuPasado);
+                                PanelAsignacion panelUsado = new PanelAsignacion(testText, testDateTime, menuPasado, id);
                                 panelUsado.Dock = DockStyle.Right;
 
                                 vistaPasada.flpAsignaciones.Controls.Add(panelUsado);

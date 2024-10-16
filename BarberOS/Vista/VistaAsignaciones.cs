@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BarberOS.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,10 @@ namespace BarberOS.Vista
 {
     public partial class VistaAsignaciones : Form
     {
-        public VistaAsignaciones()
+        public VistaAsignaciones(vistaMenu menuPasado)
         {
             InitializeComponent();
+            new ControlAsignaciones(this, menuPasado);
         }
     }
 }

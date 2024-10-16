@@ -13,9 +13,16 @@ namespace BarberOS.Vista
 {
     public partial class PanelAsignacion : UserControl
     {
-        public PanelAsignacion(string pasadoTexto, DateTime pasadaFecha, vistaMenu pasadoMenu)
+        public ControlAsignacion controladorThis;
+        public PanelAsignacion(string pasadoTexto, DateTime pasadaFecha, vistaMenu pasadoMenu, int pasadaId)
         {
             InitializeComponent();
+            controladorThis = new ControlAsignacion(this, pasadoTexto, pasadaFecha, pasadaId);
+        }
+
+        private void PanelAsignacion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
