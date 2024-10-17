@@ -40,7 +40,7 @@
             // btnConfirmar
             // 
             this.btnConfirmar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(103)))));
+            this.btnConfirmar.BackColor = System.Drawing.Color.Coral;
             this.btnConfirmar.Location = new System.Drawing.Point(528, 545);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(294, 127);
@@ -50,6 +50,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.btnConfirmar, 0, 1);
@@ -101,7 +102,7 @@
             // 
             // VistaRecompensas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BarberOS.Properties.Resources.Background_BarberOS1;
             this.ClientSize = new System.Drawing.Size(1350, 729);

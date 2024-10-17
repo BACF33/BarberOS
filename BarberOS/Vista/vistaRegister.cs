@@ -29,6 +29,13 @@ namespace BarberOS.Vista
             }
         }
 
+        private void SoloLetras(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -40,6 +47,11 @@ namespace BarberOS.Vista
         }
 
         private void txtNewPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_KeyDown(object sender, KeyPressEventArgs e)
         {
 
         }

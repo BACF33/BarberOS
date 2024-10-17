@@ -87,5 +87,10 @@ namespace BarberOS.Vista
         {
 
         }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

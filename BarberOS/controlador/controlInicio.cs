@@ -24,6 +24,7 @@ namespace BarberOS.Controlador
             controladaVista.btnBarberos.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaPersonal());
             controladaVista.btnComunicados.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaComunicados());
             controladaVista.btnAgendar.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new vistaCitas(menuForm));
+            controladaVista.btnCortes.Click += (sender, e) => menuForm.controladorMenu.AbrirFormulario(new VistaListaCortes(menuForm));
         }
     }
 }
