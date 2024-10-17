@@ -86,12 +86,13 @@
             // btnActualizar
             // 
             this.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnActualizar.BackColor = System.Drawing.Color.Coral;
             this.btnActualizar.Location = new System.Drawing.Point(167, 293);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(206, 104);
             this.btnActualizar.TabIndex = 4;
-            this.btnActualizar.Text = "button1";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Text = "CONFIGURAR";
+            this.btnActualizar.UseVisualStyleBackColor = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // tableLayoutPanel1

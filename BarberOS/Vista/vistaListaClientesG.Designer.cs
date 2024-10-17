@@ -246,17 +246,17 @@
             // 
             // promocionPrecio
             // 
-            this.promocionPrecio.Text = "Precio";
+            this.promocionPrecio.Text = "Contraseña";
             this.promocionPrecio.Width = 124;
             // 
             // promocionTipo
             // 
-            this.promocionTipo.Text = "Tipo";
+            this.promocionTipo.Text = "Puntos";
             this.promocionTipo.Width = 149;
             // 
             // promocionPoder
             // 
-            this.promocionPoder.Text = "Descuento";
+            this.promocionPoder.Text = "Rol";
             this.promocionPoder.Width = 120;
             // 
             // tableLayoutPanel4
